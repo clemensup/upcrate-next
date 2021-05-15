@@ -1,16 +1,22 @@
-html,
-body {
-  padding: 0;
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
-    Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
+@font-face {
+  font-family: "Neue Montreal";
+  src: url("/fonts/NeueMontreal-Bold.eot");
+  src: url("/fonts/NeueMontreal-Bold.eot?#iefix") format("embedded-opentype"),
+    url("/fonts/NeueMontreal-Bold.woff2") format("woff2"),
+    url("/fonts/NeueMontreal-Bold.woff") format("woff"),
+    url("/fonts/NeueMontreal-Bold.ttf") format("truetype");
 }
 
-a {
-  color: inherit;
-  text-decoration: none;
+@font-face {
+  font-family: "Right Grotesk";
+  src: url("/fonts/RightGrotesk-SpatialBlack.eot");
+  src: url("/fonts/RightGrotesk-SpatialBlack.eot?#iefix")
+      format("embedded-opentype"),
+    url("/fonts/RightGrotesk-SpatialBlack.woff2") format("woff2"),
+    url("/fonts/RightGrotesk-SpatialBlack.woff") format("woff"),
+    url("/fonts/RightGrotesk-SpatialBlack.ttf") format("truetype");
 }
 
-* {
-  box-sizing: border-box;
-}
+@tailwind base;
+@tailwind components;
+@tailwind utilities;

@@ -13,7 +13,7 @@ export function Layout({ children }): JSX.Element {
 
       <Header />
 
-      <main>{children}</main>
+      <main className="container mx-auto">{children}</main>
 
       <Footer />
     </div>
