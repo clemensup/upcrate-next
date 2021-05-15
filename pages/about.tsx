@@ -1,11 +1,13 @@
 import { Layout } from "../components/layout";
 import Image from "next/image";
+import useTranslation from "next-translate/useTranslation";
 
 export default function About() {
+  const { t } = useTranslation("about");
   return (
     <Layout>
       <section>
-        <h1>ABOUT US</h1>
+        <h1>{t("page_title")}</h1>
         <Image
           src="/about-us-hero.jpg"
           width="100%"
