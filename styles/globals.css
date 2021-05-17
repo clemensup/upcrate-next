@@ -20,3 +20,12 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+@layer utilities {
+  .background-gradient {
+    background-image: radial-gradient(currentColor 50%, transparent 50%);
+    background-size: 500px 500px;
+    background-repeat: no-repeat;
+    background-position: center center;
+  }
+}

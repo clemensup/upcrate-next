@@ -1,10 +1,11 @@
 {
-  "language_switch_de": "german",
-  "language_switch_en": "english",
+  "language_switch_de": "ger",
+  "language_switch_en": "eng",
   "navlink_shop": "shop",
   "navlink_crates": "crates",
   "navlink_artcrew": "art crew",
   "navlink_about": "about us",
+  "subscribe_now_button_text": "Subscribe now",
   "legal": "legal",
   "imprint": "imprint",
   "privacy": "privacy",

@@ -1,8 +1,9 @@
 {
-  "language_switch_de": "deutsch",
-  "language_switch_en": "englisch",
+  "language_switch_de": "de",
+  "language_switch_en": "en",
   "navlink_shop": "Shop",
   "navlink_crates": "Boxen",
   "navlink_artcrew": "Art Crew",
-  "navlink_about": "Über uns"
+  "navlink_about": "Über uns",
+  "subscribe_now_button_text": "Abonnieren"
 }
