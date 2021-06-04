@@ -1,6 +1,9 @@
 {
   "language_switch_de": "ger",
+  "language_switch_de_long": "Deutsch",
   "language_switch_en": "eng",
+  "language_switch_en_long": "English",
+  "language_switch_dialog_title": "Which language would you like to use?",
   "navlink_shop": "shop",
   "navlink_crates": "crates",
   "navlink_artcrew": "art crew",
@@ -15,5 +18,7 @@
   "help_contact": "help / contact",
   "faqs": "faqs",
   "signup": "signup",
-  "login": "login"
+  "login": "login",
+  "cancel": "Cancel",
+  "save": "Save"
 }

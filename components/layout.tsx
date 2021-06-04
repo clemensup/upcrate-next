@@ -16,6 +16,8 @@ export function Layout({ children }): JSX.Element {
       <main className="container mx-auto">{children}</main>
 
       <Footer />
+
+      <div id="modal-root"></div>
     </div>
   );
 }
