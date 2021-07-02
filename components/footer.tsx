@@ -1,15 +1,14 @@
 import Image from "next/image";
+import { CaptainCrateSvg } from "./svg/cpt-crate-svg";
 
 export function Footer(): JSX.Element {
   return (
     <footer className="bg-purple-dark text-white pt-20">
-      <div className="container mx-auto sm:flex mb-4">
+      <div className="container mx-auto p-5 md:p-0 w-full grid mb-4 md:grid-cols-6">
+        <CaptainCrateSvg variant="head-only" classes="text-white mb-5" />
         <div>
-          <Image src="/captain-crate.svg" width="100%" height="auto" />
-        </div>
-        <div>
-          <h4>Legal</h4>
-          <ul className="list-reset leading-normal">
+          <h4 className="mb-4 text-xl uppercase">Legal</h4>
+          <ul className="list-reset leading-normal text-red text-xl">
             <li>
               <a href="">imprint</a>
             </li>
@@ -26,9 +25,9 @@ export function Footer(): JSX.Element {
 
           <Image src="/tube.svg" width="100%" height="auto" />
         </div>
-        <div>
-          <h4>Info</h4>
-          <ul>
+        <div className="md:col-span-2">
+          <h4 className="mb-4 text-xl uppercase">Info</h4>
+          <ul className="text-blue text-xl">
             <li>
               <a href="">refer a friend</a>
             </li>
@@ -44,23 +43,27 @@ export function Footer(): JSX.Element {
           </ul>
           <Image src="/pen.svg" width="100%" height="auto" />
         </div>
-        <div>
-          <h4>
+        <div className="md:col-span-2">
+          <h4 className="text-xl mb-4">
             Join our mailing list to get updates on special offers, the art crew
             and more!
           </h4>
           <form action="">
-            <label>
-              <input type="checkbox" name="" id="" />I have read and agree to
-              the terms & conditions
+            <label className="mb-3 flex gap-4 items-center cursor-pointer">
+              <input type="checkbox" name="" id="" className="" />I have read
+              and agree to the terms & conditions
             </label>
-            <input type="text" placeholder="Your e-mail address" />
+            <input
+              type="email"
+              placeholder="Your e-mail address"
+              className="w-full p-4 text-purple-dark"
+            />
           </form>
         </div>
       </div>
 
-      <div className="container mx-auto sm:flex mb-4">
-        <ul className="flex gap-8">
+      <div className="p-5 md:p-0 container mx-auto sm:flex mb-4">
+        <ul className="flex flex-wrap gap-8">
           <li>
             <a href="">Facebook</a>
           </li>

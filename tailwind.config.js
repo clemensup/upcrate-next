@@ -20,6 +20,12 @@ module.exports = {
         orange: {
           DEFAULT: "#FF481D",
         },
+        red: {
+          DEFAULT: "#DD4059",
+        },
+        blue: {
+          DEFAULT: "#1644EF",
+        },
       },
     },
   },

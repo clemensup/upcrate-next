@@ -1,33 +1,39 @@
-import { Layout } from "../components/layout";
+import { Layout, Button } from "../components";
 import Image from "next/image";
 import useTranslation from "next-translate/useTranslation";
 
 export default function About() {
   const { t } = useTranslation("about");
+  const { t: common } = useTranslation("common");
+
   return (
     <Layout>
-      <section>
+      <section className="relative bg-green">
         <h1>{t("page_title")}</h1>
         <Image
           src="/about-us-hero.jpg"
-          width="100%"
-          height="auto"
           layout="responsive"
+          height={739}
+          width={1704}
         />
       </section>
-      <h2 className="font-display text-5xl text-center">
+      <h2 className="font-display text-2xl text-purple-dark py-10 sm:text-5xl text-center">
         Upcrate – The Story of Captain Crate and his subscription crate
       </h2>
 
-      <section className="grid grid-cols-2">
-        <div>
-          <Image src="/about-us-1.jpg" alt="" width={938} height={748} />
-        </div>
-        <div className="bg-purple-light text-center text-white flex flex-col justify-center content-center p-24 text-2xl">
-          <h3 className="text-5xl text-purple-dark font-display">
+      <section className="grid md:grid-cols-2">
+        <Image
+          src="/about-us-1.jpg"
+          alt=""
+          layout="responsive"
+          width={938}
+          height={748}
+        />
+        <div className="bg-purple-light text-center text-white flex flex-col justify-center content-center p-12 sm:p-24 text-2xl">
+          <h3 className="text-2xl sm:text-5xl text-purple-dark font-display">
             Captain Crate…
           </h3>
-          <p className="mt-8">
+          <p className="mt-8 text-xl">
             Captain Crate, an internationally acclaimed art-loving sailor , has
             located the most well-known pens and art supplies factories around
             the world. During his years of travel he built up long-term
@@ -46,9 +52,9 @@ export default function About() {
           </small>
         </div>
       </section>
-      <section className="grid grid-cols-2">
-        <div className="bg-purple-lightest text-center text-purple-dark flex flex-col justify-center content-center p-24 text-2xl">
-          <h3 className="text-5xl text-purple-dark font-display">
+      <section className="flex flex-col-reverse md:grid md:grid-cols-2">
+        <div className="bg-purple-lightest text-center text-purple-dark flex flex-col justify-center content-center p-12 sm:p-24 text-2xl">
+          <h3 className="text-2xl sm:text-5xl text-purple-dark font-display">
             …delivers monthly…
           </h3>
           <p className="mt-8">
@@ -71,15 +77,27 @@ export default function About() {
           </small>
         </div>
         <div>
-          <Image src="/about-us-2.jpg" alt="" width={938} height={748} />
+          <Image
+            src="/about-us-2.jpg"
+            alt=""
+            layout="responsive"
+            width={938}
+            height={748}
+          />
         </div>
       </section>
-      <section className="grid grid-cols-2">
+      <section className="grid md:grid-cols-2">
         <div>
-          <Image src="/about-us-3.jpg" alt="" width={938} height={748} />
+          <Image
+            src="/about-us-3.jpg"
+            alt=""
+            layout="responsive"
+            width={938}
+            height={748}
+          />
         </div>
-        <div className="bg-purple-light text-center text-white flex flex-col justify-center content-center p-24 text-2xl">
-          <h3 className="text-5xl text-purple-dark font-display">
+        <div className="bg-purple-light text-center text-white flex flex-col justify-center content-center p-12 sm:p-24 text-2xl">
+          <h3 className="text-2xl sm:text-5xl text-purple-dark font-display">
             …for the art crew
           </h3>
           <p className="mt-8">
@@ -103,9 +121,9 @@ export default function About() {
           </small>
         </div>
       </section>
-      <section className="grid grid-cols-2">
-        <div className="bg-purple-lightest text-center text-purple-dark flex flex-col justify-center content-center p-24 text-2xl">
-          <h3 className="text-5xl text-purple-dark font-display">
+      <section className="flex flex-col-reverse md:grid md:grid-cols-2">
+        <div className="bg-purple-lightest text-center text-purple-dark flex flex-col justify-center content-center p-12 sm:p-24 text-2xl">
+          <h3 className="text-2xl sm:text-5xl text-purple-dark font-display">
             behind the scenes
           </h3>
           <p className="mt-8">
@@ -130,7 +148,13 @@ export default function About() {
           </small>
         </div>
         <div>
-          <Image src="/about-us-4.jpg" alt="" width={938} height={748} />
+          <Image
+            src="/about-us-4.jpg"
+            alt=""
+            layout="responsive"
+            width={938}
+            height={748}
+          />
         </div>
       </section>
 
@@ -138,8 +162,8 @@ export default function About() {
         <h3>Instagram</h3>
       </section>
 
-      <section className="text-center p-24 bg-purple background-gradient text-green backdrop-blur">
-        <h3 className="text-7xl font-display text-purple-dark">
+      <section className="text-center p-12 sm:p-24 bg-purple background-gradient text-green backdrop-blur">
+        <h3 className="xs:text-3xl sm:text-5xl md:text-7xl font-display text-purple-dark">
           Let’s draw as one.
           <br />
           Let’s connect worldwide and live art together
@@ -158,20 +182,24 @@ export default function About() {
         <Image
           src="/about-us-5.jpg"
           layout="responsive"
-          width="auto"
-          height="100%"
+          width={1920}
+          height={768}
         />
       </section>
 
-      <section className="text-center p-40">
+      <section className="text-center p-10 sm:p-40 bg-green">
         <Image src="/unbox-your-creativity.svg" width="280" height="100%" />
 
-        <h3>
-          You’re one of the chosen ones who scrolled all the way down. Now you
-          can also subscribe:)
+        <h3 className="text-3xl text-purple-dark">
+          You’re one of the chosen ones who scrolled all the way down. <br />
+          Now you can also subscribe:)
         </h3>
 
-        <a href="">Subscribe Now</a>
+        <Button
+          text={common("subscribe_now_button_text")}
+          colorClass="bg-purple text-white"
+          href="/TODO"
+        />
       </section>
     </Layout>
   );
