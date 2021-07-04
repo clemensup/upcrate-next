@@ -1,6 +1,6 @@
 interface ButtonProps {
-  variant?: "default" | "outline";
   className: string;
+  variant?: "default" | "outline";
   onClick?: () => void;
   href?: string;
 }
