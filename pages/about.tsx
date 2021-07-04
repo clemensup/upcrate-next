@@ -9,13 +9,19 @@ export default function About() {
   return (
     <Layout>
       <section className="relative bg-green">
-        <h1>{t("page_title")}</h1>
-        <Image
-          src="/about-us-hero.jpg"
-          layout="responsive"
-          height={739}
-          width={1704}
-        />
+        <div className="container mx-auto pt-5">
+          <div className="container mx-auto">
+            <h1 className="text-3xl text-purple-dark absolute inset-x-5 left-40 z-10">
+              {t("page_title")}
+            </h1>
+          </div>
+          <Image
+            src="/about-us-hero.png"
+            layout="responsive"
+            height={739}
+            width={1704}
+          />
+        </div>
       </section>
       <h2 className="font-display text-2xl text-purple-dark py-10 sm:text-5xl text-center">
         Upcrate – The Story of Captain Crate and his subscription crate
@@ -195,11 +201,9 @@ export default function About() {
           Now you can also subscribe:)
         </h3>
 
-        <Button
-          text={common("subscribe_now_button_text")}
-          colorClass="bg-purple text-white"
-          href="/TODO"
-        />
+        <Button className="bg-purple text-white" href="/TODO">
+          {common("subscribe_now_button_text")}
+        </Button>
       </section>
     </Layout>
   );

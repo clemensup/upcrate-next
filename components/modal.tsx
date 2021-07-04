@@ -2,7 +2,18 @@ import * as React from "react";
 import ReactDOM from "react-dom";
 import { Dialog, Transition } from "@headlessui/react";
 
-export function Modal({ children, open, onClose }) {
+interface ModalProps {
+  open: boolean;
+  onClose: () => void;
+  className?: string;
+}
+
+export function Modal({
+  children,
+  open,
+  onClose,
+  className,
+}: React.PropsWithChildren<ModalProps>) {
   const [isBrowser, setIsBrowser] = React.useState(false);
 
   React.useEffect(() => {
@@ -50,10 +61,16 @@ export function Modal({ children, open, onClose }) {
             leaveFrom="opacity-100 translate-y-0 sm:scale-100"
             leaveTo="opacity-0 translate-y-4 sm:translate-y-0 sm:scale-95"
           >
-            <div className="inline-block align-bottom bg-white rounded-lg text-left overflow-hidden shadow-xl transform transition-all sm:my-8 sm:align-middle sm:max-w-lg sm:w-full">
-              <div className="bg-white px-4 pt-5 pb-4 sm:p-6 sm:pb-4">
+            <div
+              className={`${className} p-10 inline-block align-bottom border-grey border-1 text-left text-purple-dark overflow-hidden shadow-xl transform transition-all sm:my-8 sm:align-middle sm:max-w-2xl sm:w-full`}
+            >
+              <div className="sm:p-6 sm:pb-4">
                 <div className="sm:flex sm:items-start">
-                  <button onClick={onClose}>Close</button>
+                  <button onClick={onClose} className="absolute right-2 top-2">
+                    <span className="text-4xl font-display inline-block p-2">
+                      X
+                    </span>
+                  </button>
                   <div className="mt-3 text-center sm:mt-0 sm:ml-4 sm:text-left">
                     {children}
                   </div>

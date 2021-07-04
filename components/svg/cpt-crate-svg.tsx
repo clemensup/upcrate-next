@@ -1,5 +1,5 @@
 interface CaptainCrateSvgProps {
-  variant: "head-only" | "default";
+  variant?: "head-only" | "default";
   classes?: string;
 }
 export function CaptainCrateSvg({

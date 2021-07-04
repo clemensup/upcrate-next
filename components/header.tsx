@@ -4,7 +4,7 @@ import React from "react";
 import useTranslation from "next-translate/useTranslation";
 import { CaptainCrateSvg } from "./svg/cpt-crate-svg";
 import { Logo } from "./svg/logo";
-import { Modal } from "./modal";
+import { Modal, Checkbox, Button } from ".";
 import { Dialog } from "@headlessui/react";
 
 export function Header(): JSX.Element {
@@ -86,49 +86,44 @@ export function Header(): JSX.Element {
                 <Modal
                   open={languageSelectModalOpen}
                   onClose={() => setLanguageSelectModalOpen(false)}
+                  className="bg-orange"
                 >
                   <Dialog.Title
                     as="h3"
-                    className="text-lg leading-6 font-medium text-gray-900"
+                    className="text-4xl sm:text-5xl text-purple-dark font-medium text-center font-display"
                   >
                     {t("language_switch_dialog_title")}
                   </Dialog.Title>
-                  <div className="mt-2">
-                    <label className="flex items-center space-x-3">
-                      <input
-                        type="checkbox"
-                        name="checked-de"
-                        value="de"
-                        checked={selectedLanguage === "de"}
-                        className="form-tick appearance-none h-6 w-6 border border-gray-300 rounded-md checked:bg-blue-600 checked:border-transparent focus:outline-none"
-                        onChange={(e) => setSelectedLanguage(e.target.value)}
-                      />
-                      <span className="text-gray-900 font-medium">
-                        {t("language_switch_de_long")}
-                      </span>
-                    </label>
-                    <label className="flex items-center space-x-3">
-                      <input
-                        type="checkbox"
-                        name="checked-en"
-                        value="en"
-                        checked={selectedLanguage === "en"}
-                        className="form-tick appearance-none h-6 w-6 border border-gray-300 rounded-md checked:bg-blue-600 checked:border-transparent focus:outline-none"
-                        onChange={(e) => setSelectedLanguage(e.target.value)}
-                      />
-                      <span className="text-gray-900 font-medium">
-                        {t("language_switch_en_long")}
-                      </span>
-                    </label>
-
-                    <div>
-                      <button onClick={() => setLanguageSelectModalOpen(false)}>
-                        {t("cancel")}
-                      </button>
-                      <button onClick={saveSelectedLanguage}>
-                        {t("save")}
-                      </button>
-                    </div>
+                  <div className="my-10 grid gap-4 sm:gap-8 sm:pl-20">
+                    <Checkbox
+                      name="checked-de"
+                      value="de"
+                      checked={selectedLanguage === "de"}
+                      label={t("language_switch_de_long")}
+                      onChange={(e) => setSelectedLanguage(e.target.value)}
+                    />
+                    <Checkbox
+                      name="checked-en"
+                      value="en"
+                      checked={selectedLanguage === "en"}
+                      label={t("language_switch_en_long")}
+                      onChange={(e) => setSelectedLanguage(e.target.value)}
+                    />
+                  </div>
+                  <div className="flex gap-4 sm:gap-10 text-center justify-center">
+                    <Button
+                      onClick={() => setLanguageSelectModalOpen(false)}
+                      className="border-purple border-2 text-purple"
+                    >
+                      {t("cancel")}
+                    </Button>
+                    <Button
+                      variant="outline"
+                      onClick={saveSelectedLanguage}
+                      className="bg-purple text-white border-2 border-purple"
+                    >
+                      {t("save")}
+                    </Button>
                   </div>
                 </Modal>
               </li>
