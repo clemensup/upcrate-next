@@ -2,8 +2,8 @@ import Link from "next/link";
 import { useRouter } from "next/router";
 import React from "react";
 import useTranslation from "next-translate/useTranslation";
-import { CaptainCrateSvg } from "./svg/cpt-crate-svg";
-import { Logo } from "./svg/logo";
+import { CaptainCrateSvg } from "./elements/svg/cpt-crate-svg";
+import { Logo } from "./elements/svg/logo";
 import { Modal, Checkbox, Button } from ".";
 import { Dialog } from "@headlessui/react";
 

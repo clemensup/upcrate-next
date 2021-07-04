@@ -1,5 +1,5 @@
 import Image from "next/image";
-import { CaptainCrateSvg } from "./svg/cpt-crate-svg";
+import { CaptainCrateSvg } from "./elements/svg/cpt-crate-svg";
 
 export function Footer(): JSX.Element {
   return (
