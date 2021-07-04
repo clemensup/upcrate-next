@@ -1,17 +1,15 @@
-import { Layout, Button, Caret } from "../components";
+import { Layout, HeroSection, SubscribeNowSection } from "../components";
 import Image from "next/image";
 import useTranslation from "next-translate/useTranslation";
-import { HeroSection } from "../components/hero-section";
 
 export default function About() {
-  const { t } = useTranslation("about");
-  const { t: common } = useTranslation("common");
+  const { t } = useTranslation("common");
 
   return (
     <Layout>
       <HeroSection
         className="bg-green"
-        title={t("page_title")}
+        title={t("pages.about.page_title")}
         image="/about-us-hero.png"
         mobileImage="/about-us-hero-xs.png"
       />
@@ -186,19 +184,11 @@ export default function About() {
         />
       </section>
 
-      <section className="text-center p-10 sm:p-40 bg-green">
-        <Image src="/unbox-your-creativity.svg" width="280" height="100%" />
-
-        <h3 className="text-3xl text-purple-dark">
-          You’re one of the chosen ones who scrolled all the way down. <br />
-          Now you can also subscribe:)
-        </h3>
-
-        <Button className="bg-purple text-white" href="/TODO">
-          {common("subscribe_now_button_text")}
-          <Caret />
-        </Button>
-      </section>
+      <SubscribeNowSection
+        className="bg-green"
+        description={t("pages.about.subscribe_now_section_description")}
+        buttonClassName="bg-purple"
+      />
     </Layout>
   );
 }
