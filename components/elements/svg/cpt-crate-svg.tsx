@@ -1,20 +1,22 @@
 interface CaptainCrateSvgProps {
   variant?: "head-only" | "default";
-  classes?: string;
+  className?: string;
+  width?: number;
 }
 export function CaptainCrateSvg({
   variant = "default",
-  classes = "text-purple-dark",
+  className = "text-purple-dark",
+  width = 42,
 }: CaptainCrateSvgProps): JSX.Element {
   return (
-    <div className={classes}>
+    <div className={className}>
       {variant === "default" && (
         <svg
           xmlns="http://www.w3.org/2000/svg"
-          width="42"
+          width={width}
           height="47.355"
           viewBox="0 0 42 47.355"
-          className={`fill-current ${classes}`}
+          className={`fill-current ${className}`}
         >
           <g
             id="Group_693"
@@ -54,10 +56,10 @@ export function CaptainCrateSvg({
       {variant === "head-only" && (
         <svg
           xmlns="http://www.w3.org/2000/svg"
-          width="78.253"
+          width={width}
           height="86.665"
           viewBox="0 0 78.253 86.665"
-          className={`fill-current ${classes}`}
+          className={`fill-current ${className}`}
         >
           <g
             id="Group_328"

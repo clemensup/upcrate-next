@@ -1,6 +1,7 @@
-import { Layout, Button } from "../components";
+import { Layout, Button, Caret } from "../components";
 import Image from "next/image";
 import useTranslation from "next-translate/useTranslation";
+import { HeroSection } from "../components/hero-section";
 
 export default function About() {
   const { t } = useTranslation("about");
@@ -8,21 +9,13 @@ export default function About() {
 
   return (
     <Layout>
-      <section className="relative bg-green">
-        <div className="container mx-auto pt-5">
-          <div className="container mx-auto">
-            <h1 className="text-3xl text-purple-dark absolute inset-x-5 left-40 z-10">
-              {t("page_title")}
-            </h1>
-          </div>
-          <Image
-            src="/about-us-hero.png"
-            layout="responsive"
-            height={739}
-            width={1704}
-          />
-        </div>
-      </section>
+      <HeroSection
+        className="bg-green"
+        title={t("page_title")}
+        image="/about-us-hero.png"
+        mobileImage="/about-us-hero-xs.png"
+      />
+
       <h2 className="font-display text-2xl text-purple-dark py-10 sm:text-5xl text-center">
         Upcrate – The Story of Captain Crate and his subscription crate
       </h2>
@@ -203,6 +196,7 @@ export default function About() {
 
         <Button className="bg-purple text-white" href="/TODO">
           {common("subscribe_now_button_text")}
+          <Caret />
         </Button>
       </section>
     </Layout>

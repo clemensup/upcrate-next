@@ -22,10 +22,10 @@ export function Header(): JSX.Element {
 
   return (
     <header>
-      <div className="container mx-auto p-10">
+      <div className="mx-auto p-10">
         <nav className="flex justify-between">
           <div>
-            <a href="#">
+            <a href="/">
               <Logo />
             </a>
           </div>

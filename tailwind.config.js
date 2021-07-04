@@ -29,6 +29,9 @@ module.exports = {
         grey: {
           DEFAULT: "#707070",
         },
+        rose: {
+          DEFAULT: "#F1A8BA",
+        },
       },
     },
   },
