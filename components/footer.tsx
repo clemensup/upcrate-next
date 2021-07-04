@@ -5,7 +5,7 @@ export function Footer(): JSX.Element {
   return (
     <footer className="bg-purple-dark text-white pt-20">
       <div className="container mx-auto p-5 md:p-0 w-full grid mb-4 md:grid-cols-6">
-        <CaptainCrateSvg variant="head-only" classes="text-white mb-5" />
+        <CaptainCrateSvg variant="head-only" className="text-white mb-5" />
         <div>
           <h4 className="mb-4 text-xl uppercase">Legal</h4>
           <ul className="list-reset leading-normal text-red text-xl">
