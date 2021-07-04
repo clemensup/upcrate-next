@@ -4,3 +4,6 @@ export * from "./footer";
 export * from "./header";
 export * from "./modal";
 export * from "./elements/checkbox";
+export * from "./elements/svg";
+export * from "./hero-section";
+export * from "./subscribe-now-section";

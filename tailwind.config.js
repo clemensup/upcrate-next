@@ -21,6 +21,7 @@ module.exports = {
           DEFAULT: "#FF481D",
         },
         red: {
+          light: "#E54158",
           DEFAULT: "#DD4059",
         },
         blue: {
@@ -28,6 +29,9 @@ module.exports = {
         },
         grey: {
           DEFAULT: "#707070",
+        },
+        rose: {
+          DEFAULT: "#F1A8BA",
         },
       },
     },

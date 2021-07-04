@@ -1,28 +1,19 @@
-import { Layout, Button } from "../components";
+import { Layout, HeroSection, SubscribeNowSection } from "../components";
 import Image from "next/image";
 import useTranslation from "next-translate/useTranslation";
 
 export default function About() {
-  const { t } = useTranslation("about");
-  const { t: common } = useTranslation("common");
+  const { t } = useTranslation("common");
 
   return (
     <Layout>
-      <section className="relative bg-green">
-        <div className="container mx-auto pt-5">
-          <div className="container mx-auto">
-            <h1 className="text-3xl text-purple-dark absolute inset-x-5 left-40 z-10">
-              {t("page_title")}
-            </h1>
-          </div>
-          <Image
-            src="/about-us-hero.png"
-            layout="responsive"
-            height={739}
-            width={1704}
-          />
-        </div>
-      </section>
+      <HeroSection
+        className="bg-green"
+        title={t("pages.about.page_title")}
+        image="/about-us-hero.png"
+        mobileImage="/about-us-hero-xs.png"
+      />
+
       <h2 className="font-display text-2xl text-purple-dark py-10 sm:text-5xl text-center">
         Upcrate – The Story of Captain Crate and his subscription crate
       </h2>
@@ -193,18 +184,11 @@ export default function About() {
         />
       </section>
 
-      <section className="text-center p-10 sm:p-40 bg-green">
-        <Image src="/unbox-your-creativity.svg" width="280" height="100%" />
-
-        <h3 className="text-3xl text-purple-dark">
-          You’re one of the chosen ones who scrolled all the way down. <br />
-          Now you can also subscribe:)
-        </h3>
-
-        <Button className="bg-purple text-white" href="/TODO">
-          {common("subscribe_now_button_text")}
-        </Button>
-      </section>
+      <SubscribeNowSection
+        className="bg-green"
+        description={t("pages.about.subscribe_now_section_description")}
+        buttonClassName="bg-purple"
+      />
     </Layout>
   );
 }

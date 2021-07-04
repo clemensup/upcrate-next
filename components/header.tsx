@@ -6,6 +6,7 @@ import { CaptainCrateSvg } from "./elements/svg/cpt-crate-svg";
 import { Logo } from "./elements/svg/logo";
 import { Modal, Checkbox, Button } from ".";
 import { Dialog } from "@headlessui/react";
+import { BurgerSvg } from "./elements/svg";
 
 export function Header(): JSX.Element {
   const { t, lang } = useTranslation("common");
@@ -22,35 +23,50 @@ export function Header(): JSX.Element {
 
   return (
     <header>
-      <div className="container mx-auto p-10">
-        <nav className="flex justify-between">
-          <div>
-            <a href="#">
+      <div className="mx-auto p-2 lg:p-4 lg:p-10 relative">
+        <nav className="flex justify-between items-center">
+          <a href="/" className="inline-block">
+            <span className="inline-block lg:hidden">
+              <CaptainCrateSvg variant="head-only" />
+            </span>
+            <span className="hidden lg:inline-block">
               <Logo />
-            </a>
-          </div>
+            </span>
+          </a>
+          <a
+            href="https://upcrate.art/subscribe"
+            className="lg:hidden bg-orange p-0 font-display py-1"
+          >
+            <span className="text-white text-lg">
+              {t("subscribe_now_button_text")}
+            </span>
+          </a>
           <div>
             <button
-              className="md:hidden bg-purple"
+              className="lg:hidden"
               onClick={() => setIsMenuActive(!isMenuActive)}
             >
-              MENU
+              <BurgerSvg className={isMenuActive ? "active" : ""} />
             </button>
-            <ul className="hidden md:flex md:flex-row text-purple-dark text-2xl items-center">
-              <li className="pr-5">
+            <ul
+              className={`${
+                !isMenuActive ? "hidden" : ""
+              } absolute top-full width-full z-40 left-0 right-0 bg-white text-center lg:relative lg:block lg:flex lg:flex-row text-purple-dark text-2xl lg:items-center`}
+            >
+              <li className="lg:pr-5">
                 <a href="https://shop.upcrate.art">{t("navlink_shop")}</a>
               </li>
-              <li className="pr-5">
+              <li className="lg:pr-5">
                 <a href="/crates">{t("navlink_crates")}</a>
               </li>
-              <li className="pr-5">
+              <li className="lg:pr-5">
                 <a href="/artcrew">{t("navlink_artcrew")}</a>
               </li>
-              <li className="pr-15">
+              <li className="lg:pr-15">
                 <a href="/about">{t("navlink_about")}</a>
               </li>
 
-              <li className="pr-10 pl-20">
+              <li className="lg:pr-10 lg:pl-20 hidden lg:block">
                 <a
                   href="https://shop.upcrate.art/account"
                   className="fill-current text-purple-dark"
@@ -62,14 +78,14 @@ export function Header(): JSX.Element {
               <li>
                 <a
                   href="https://shop.upcrate.art/subscribe"
-                  className="font-display bg-orange text-white pt-2 pb-3 text-3xl"
+                  className="font-display bg-orange text-white pt-2 pb-3 text-3xl hidden lg:block"
                 >
                   {t("subscribe_now_button_text")}
                 </a>
               </li>
 
               <li
-                className="flex gap-3 ml-7"
+                className="flex items-center gap-3 justify-center py-4 lg:p-0 lg:ml-7"
                 onClick={() => setLanguageSelectModalOpen(true)}
               >
                 {lang === "en" && (

@@ -2,7 +2,6 @@
   "locales": ["en", "de"],
   "defaultLocale": "en",
   "pages": {
-    "*": ["common"],
-    "/about": ["about"]
+    "*": ["common"]
   }
 }
