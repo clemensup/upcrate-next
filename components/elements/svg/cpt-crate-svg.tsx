@@ -1,5 +1,5 @@
 interface CaptainCrateSvgProps {
-  variant?: "head-only" | "default";
+  variant?: "head-only" | "default" | "plus";
   className?: string;
   width?: number;
 }
@@ -75,6 +75,62 @@ export function CaptainCrateSvg({
               id="Path_351"
               data-name="Path 351"
               d="M205.564,113.312l76.654,10.75.868-25.333-78.253.295Z"
+            />
+          </g>
+        </svg>
+      )}
+
+      {variant === "plus" && (
+        <svg
+          id="Group_224"
+          data-name="Group 224"
+          xmlns="http://www.w3.org/2000/svg"
+          width="47.613"
+          height="38.212"
+          viewBox="0 0 47.613 38.212"
+        >
+          <g
+            id="Group_122"
+            data-name="Group 122"
+            transform="translate(36 11.155)"
+          >
+            <g id="Group_121" data-name="Group 121">
+              <path
+                id="Path_241"
+                data-name="Path 241"
+                d="M261.588,2740.738h-4.057v4.891l-3.383-.139v-4.752h-3.94l-.232-2.827h4.172v-4.566l3.383.047v4.52h3.824Z"
+                transform="translate(-249.976 -2733.345)"
+                fill="#fff"
+              />
+            </g>
+          </g>
+          <g id="Group_124" data-name="Group 124" transform="translate(0)">
+            <g
+              id="Group_123"
+              data-name="Group 123"
+              transform="translate(7.805)"
+            >
+              <path
+                id="Path_242"
+                data-name="Path 242"
+                d="M238.6,2729.848v5.043l-6.5.589-.217-6.529-10.214-1.365.8,16.962,18.433-.706.518-13.617Zm-10.012,5.4-3.359-.234v-5.022h3.6Z"
+                transform="translate(-221.408 -2722.114)"
+                fill="#fff"
+              />
+              <path
+                id="Path_243"
+                data-name="Path 243"
+                d="M221.58,2725.753l19.9,2.867.25-6.578H221.4Z"
+                transform="translate(-221.405 -2722.042)"
+                fill="#fff"
+              />
+            </g>
+            <path
+              id="Path_244"
+              data-name="Path 244"
+              d="M213.5,2758.415l1.838-7.709,6.9-4.841,19.231.538,5.424,6.993.493,7.171Z"
+              transform="translate(-213.496 -2722.355)"
+              fill="#fff"
             />
           </g>
         </svg>

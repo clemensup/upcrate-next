@@ -2,6 +2,9 @@ module.exports = {
   purge: ["./pages/**/*.{js,ts,jsx,tsx}", "./components/**/*.{js,ts,jsx,tsx}"],
   darkMode: false, // or 'media' or 'class'
   theme: {
+    borderRadius: {
+      DEFAULT: "30px",
+    },
     extend: {
       fontFamily: {
         sans: ["Neue Montreal", "sans"],
@@ -33,7 +36,13 @@ module.exports = {
         rose: {
           DEFAULT: "#F1A8BA",
         },
+        pink: {
+          DEFAULT: "#E52663",
+        },
       },
+      backgroundImage: (theme) => ({
+        "subscribe-now": "url('/subscribe-now/background.png')",
+      }),
     },
   },
   variants: {

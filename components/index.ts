@@ -7,3 +7,4 @@ export * from "./elements/checkbox";
 export * from "./elements/svg";
 export * from "./hero-section";
 export * from "./unbox-your-creativity-section";
+export * from "./subscribe-now-section";
