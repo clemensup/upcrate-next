@@ -40,8 +40,9 @@ module.exports = {
           DEFAULT: "#E52663",
         },
       },
-      backgroundImage: (theme) => ({
+      backgroundImage: () => ({
         "subscribe-now": "url('/subscribe-now/background.png')",
+        "upcrate-as-gift": "url('/upcrate-as-gift/background.png')",
       }),
     },
   },
