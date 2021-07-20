@@ -1,4 +1,4 @@
-import { Layout, HeroSection, SubscribeNowSection } from "../components";
+import { Layout, HeroSection, UnboxYourCreativitySection } from "../components";
 import Image from "next/image";
 import useTranslation from "next-translate/useTranslation";
 
@@ -184,9 +184,9 @@ export default function About() {
         />
       </section>
 
-      <SubscribeNowSection
+      <UnboxYourCreativitySection
         className="bg-green"
-        description={t("pages.about.subscribe_now_section_description")}
+        description={t("unbox_your_creativity_section")}
         buttonClassName="bg-purple"
       />
     </Layout>

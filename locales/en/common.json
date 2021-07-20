@@ -21,14 +21,13 @@
   "login": "login",
   "cancel": "Cancel",
   "save": "Save",
+  "unbox_your_creativity_section": "You’re one of the chosen ones who scrolled all the way down.\nNow you can also subscribe:)",
   "pages": {
     "artcrew": {
-      "page_title": "Art Crew",
-      "subscribe_now_section_description": "You are one of the chosen ones who scrolled all the way down!\nCheck out Captain Crate’s offers here:"
+      "page_title": "Art Crew"
     },
     "about": {
-      "page_title": "About us",
-      "subscribe_now_section_description": "You’re one of the chosen ones who scrolled all the way down.\nNow you can also subscribe:)"
+      "page_title": "About us"
     }
   }
 }

@@ -1,5 +1,5 @@
 import useTranslation from "next-translate/useTranslation";
-import { Layout, HeroSection, SubscribeNowSection } from "../components";
+import { Layout, HeroSection, UnboxYourCreativitySection } from "../components";
 
 export default function ArtCrew() {
   const { t } = useTranslation("common");
@@ -12,9 +12,9 @@ export default function ArtCrew() {
         image="/artcrew-hero.png"
         mobileImage="/artcrew-hero-xs.png"
       />
-      <SubscribeNowSection
+      <UnboxYourCreativitySection
         className="bg-rose"
-        description={t("pages.artcrew.subscribe_now_section_description")}
+        description={t("unbox_your_creativity_section")}
         buttonClassName="bg-red-light"
       />
     </Layout>

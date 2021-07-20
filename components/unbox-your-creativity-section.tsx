@@ -8,7 +8,7 @@ interface SubscribeNowSectionProps {
   buttonClassName: string;
 }
 
-export function SubscribeNowSection({
+export function UnboxYourCreativitySection({
   className,
   description,
   buttonClassName,
