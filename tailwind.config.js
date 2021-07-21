@@ -10,6 +10,9 @@ module.exports = {
         sans: ["Neue Montreal", "sans"],
         display: ["Right Grotesk", "sans"],
       },
+      fontSize: {
+        countdown: "207px",
+      },
       colors: {
         purple: {
           dark: "#372152",
