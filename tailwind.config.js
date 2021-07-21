@@ -6,8 +6,10 @@ module.exports = {
       DEFAULT: "30px",
     },
     minHeight: {
-      sectionxs: "440px",
-      section: "775px",
+      sectionBig: "440px",
+      sectionBigMd: "775px",
+      sectionSmall: "200px",
+      sectionSmallMd: "460px",
     },
     extend: {
       fontFamily: {
@@ -50,6 +52,8 @@ module.exports = {
       backgroundImage: () => ({
         "subscribe-now": "url('/subscribe-now/background.png')",
         "upcrate-as-gift": "url('/upcrate-as-gift/background.png')",
+        "cpt-in-forest": "url('/cpt-in-forest.png')",
+        leuchtturm: "url('/leuchtturm.png')",
       }),
     },
   },

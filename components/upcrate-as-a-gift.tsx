@@ -2,7 +2,7 @@ import { Button } from "./elements/button";
 
 export function UpcrateAsGiftSection() {
   return (
-    <section className="bg-upcrate-as-gift bg-center bg-cover text-center relative min-h-sectionxs md:min-h-section">
+    <section className="bg-upcrate-as-gift bg-center bg-cover text-center relative min-h-sectionBig md:min-h-sectionBigMd">
       <h3 className="font-display text-purple-dark text-2xl md:text-5xl absolute top-5 md:top-10 left-0 right-0">
         upcrate as a gift
       </h3>
