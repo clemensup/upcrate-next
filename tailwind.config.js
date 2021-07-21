@@ -5,6 +5,10 @@ module.exports = {
     borderRadius: {
       DEFAULT: "30px",
     },
+    minHeight: {
+      sectionxs: "440px",
+      section: "775px",
+    },
     extend: {
       fontFamily: {
         sans: ["Neue Montreal", "sans"],

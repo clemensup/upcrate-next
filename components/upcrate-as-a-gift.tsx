@@ -2,12 +2,12 @@ import { Button } from "./elements/button";
 
 export function UpcrateAsGiftSection() {
   return (
-    <section className="bg-upcrate-as-gift bg-center bg-cover py-10 md:py-40 px-10 text-center flex flex-col md:gap-80">
-      <h3 className="font-display text-purple-dark text-2xl md:text-5xl mb-10 md:-mt-10 lg:-mt-32">
+    <section className="bg-upcrate-as-gift bg-center bg-cover text-center relative min-h-sectionxs md:min-h-section">
+      <h3 className="font-display text-purple-dark text-2xl md:text-5xl absolute top-5 md:top-10 left-0 right-0">
         upcrate as a gift
       </h3>
       <Button
-        className="bg-orange text-white mt-20"
+        className="bg-orange text-white mt-20 absolute bottom-16 md:bottom-36 left-0 right-0"
         href="https://shop.upcrate.art/product/upcrategift/"
       >
         Give a gift
