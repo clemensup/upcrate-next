@@ -1,5 +1,6 @@
 import Image from "next/image";
 import { SubscribeNowSection } from "../components";
+import { FlowingHeads } from "../components/flowing-heads";
 import { JoinTheArtCrewSection } from "../components/join-the-art-crew-section";
 import { Layout } from "../components/layout";
 import { UpcrateAsGiftSection } from "../components/upcrate-as-a-gift";
@@ -14,7 +15,7 @@ export default function Home() {
       <SubscribeNowSection />
       <WhyUpcrateSection />
       <UpcrateAsGiftSection />
-      laufband lol
+      <FlowingHeads />
       <div className="min-h-sectionSmall md:min-h-sectionSmallMd bg-cpt-in-forest bg-center bg-cover"></div>
       <WhatTheArtCrewSaysSection />
       <div className="min-h-sectionBig md:min-h-sectionBigMd">

@@ -28,6 +28,7 @@ module.exports = {
         },
         green: {
           DEFAULT: "#80D7B6",
+          dark: "#30BFA7",
         },
         orange: {
           DEFAULT: "#FF481D",
@@ -54,6 +55,7 @@ module.exports = {
         "upcrate-as-gift": "url('/upcrate-as-gift/background.png')",
         "cpt-in-forest": "url('/cpt-in-forest.png')",
         leuchtturm: "url('/leuchtturm.png')",
+        "flowing-heads": "url('/flowing-heads.svg')",
       }),
     },
   },
