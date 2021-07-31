@@ -3,6 +3,7 @@ import { SubscribeNowSection } from "../components";
 import { JoinTheArtCrewSection } from "../components/join-the-art-crew-section";
 import { Layout } from "../components/layout";
 import { UpcrateAsGiftSection } from "../components/upcrate-as-a-gift";
+import { WhatTheArtCrewSaysSection } from "../components/what-the-artcrew-says-section";
 import { WhyUpcrateSection } from "../components/why-upcrate-section";
 
 export default function Home() {
@@ -15,7 +16,7 @@ export default function Home() {
       <UpcrateAsGiftSection />
       laufband lol
       <div className="min-h-sectionSmall md:min-h-sectionSmallMd bg-cpt-in-forest bg-center bg-cover"></div>
-      what the art crew says:
+      <WhatTheArtCrewSaysSection />
       <div className="min-h-sectionBig md:min-h-sectionBigMd">
         unbox your creativity
       </div>
