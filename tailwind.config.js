@@ -56,6 +56,7 @@ module.exports = {
         "cpt-in-forest": "url('/cpt-in-forest.png')",
         leuchtturm: "url('/leuchtturm.png')",
         "flowing-heads": "url('/flowing-heads.svg')",
+        "cotman-tubes": "url('/cotman-tubes.png')",
       }),
     },
   },

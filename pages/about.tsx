@@ -186,9 +186,10 @@ export default function About() {
 
       <UnboxYourCreativitySection
         className="bg-green"
-        description={t("unbox_your_creativity_section")}
         buttonClassName="bg-purple"
-      />
+      >
+        {t("unbox_your_creativity_section")}
+      </UnboxYourCreativitySection>
     </Layout>
   );
 }

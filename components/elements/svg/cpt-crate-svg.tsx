@@ -108,7 +108,7 @@ export function CaptainCrateSvg({
                 id="Group_541"
                 data-name="Group 541"
                 transform="translate(106.608 171.208)"
-                clip-path="url(#clip-path)"
+                clipPath="url(#clip-path)"
               >
                 <g
                   id="Group_526"

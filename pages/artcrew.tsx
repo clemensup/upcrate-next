@@ -14,9 +14,10 @@ export default function ArtCrew() {
       />
       <UnboxYourCreativitySection
         className="bg-rose"
-        description={t("unbox_your_creativity_section")}
         buttonClassName="bg-red-light"
-      />
+      >
+        {t("unbox_your_creativity_section")}
+      </UnboxYourCreativitySection>
     </Layout>
   );
 }

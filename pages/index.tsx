@@ -1,11 +1,18 @@
 import Image from "next/image";
-import { CaptainCrateSvg, SubscribeNowSection } from "../components";
+import {
+  CaptainCrateSvg,
+  SubscribeNowSection,
+  UnboxYourCreativitySection,
+} from "../components";
 import { AsFeaturedInSection } from "../components/as-featured-in-section";
 import { ConnectSloganSection } from "../components/connect-slogan-section";
+import { BattleSvg } from "../components/elements/svg/battle-svg";
 import { FlowingHeads } from "../components/flowing-heads";
+import { FollowUsOnInstagramSection } from "../components/follow-us-on-instagram-section";
 import { JoinTheArtCrewSection } from "../components/join-the-art-crew-section";
 import { Layout } from "../components/layout";
 import { UpcrateAsGiftSection } from "../components/upcrate-as-a-gift";
+import { UpcrateBattleSection } from "../components/upcrate-battle-section";
 import { WhatTheArtCrewSaysSection } from "../components/what-the-artcrew-says-section";
 import { WhyUpcrateSection } from "../components/why-upcrate-section";
 
@@ -20,9 +27,8 @@ export default function Home() {
       <FlowingHeads className="bg-green-dark" />
       <div className="min-h-sectionSmall md:min-h-sectionSmallMd bg-cpt-in-forest bg-center bg-cover"></div>
       <WhatTheArtCrewSaysSection />
-      <div className="min-h-sectionBig md:min-h-sectionBigMd">
-        unbox your creativity
-      </div>
+      <UnboxYourCreativitySection className="bg-purple" />
+
       <div className="min-h-sectionBig md:min-h-sectionBigMd bg-leuchtturm bg-center bg-cover"></div>
       <FlowingHeads className="bg-purple" />
       <AsFeaturedInSection />
@@ -38,6 +44,19 @@ export default function Home() {
           <br /> and <span className="font-display">live art</span> together
         </h4>
       </ConnectSloganSection>
+      <UpcrateBattleSection />
+      <div className="min-h-sectionBig md:min-h-sectionBigMd bg-cotman-tubes bg-center bg-cover"></div>
+
+      <FollowUsOnInstagramSection />
+
+      <UnboxYourCreativitySection
+        className="bg-pink"
+        buttonClassName="bg-purple"
+      >
+        You’re one of the chosen ones who scrolled all the way down.
+        <br />
+        Now you can also subscribe:)
+      </UnboxYourCreativitySection>
     </Layout>
   );
 }
