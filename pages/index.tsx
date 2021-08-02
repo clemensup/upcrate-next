@@ -28,9 +28,10 @@ export default function Home() {
       <ImageSection bg="leuchtturm" variant="medium" />
       <FlowingHeads className="bg-purple" />
       <AsFeaturedInSection />
-      <FormerArtistsSection />
 
-      <div className="p-48">TODO: Featured artists we worked with</div>
+      <div className="p-48">TODO: Former crates in a row</div>
+
+      <FormerArtistsSection />
 
       <ConnectSloganSection>
         <h4 className="text-3xl sm:text-5xl md:text-7xl text-white">
