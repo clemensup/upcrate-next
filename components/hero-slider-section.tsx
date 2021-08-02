@@ -39,7 +39,7 @@ function Slide({ background, image }: { background: string; image: string }) {
       />
       <img src={image} alt="" />
       <div className="flex flex-col absolute top-0 right-0 bottom-0 left-0 text-purple-dark items-center justify-center">
-        <h3 className="text-center text-3xl lg:text-8xl font-display">
+        <h3 className="text-center text-3xl md:text-5xl lg:text-6xl xl:text-8xl font-display">
           Mystery
           <br /> Art Supplies
           <br /> in a monthly

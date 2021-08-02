@@ -3,9 +3,11 @@ import { AsFeaturedInSection } from "../components/as-featured-in-section";
 import { ConnectSloganSection } from "../components/connect-slogan-section";
 import { FlowingHeads } from "../components/flowing-heads";
 import { FollowUsOnInstagramSection } from "../components/follow-us-on-instagram-section";
+import { FormerArtistsSection } from "../components/former-artists-section";
 import { HeroSliderSection } from "../components/hero-slider-section";
 import { JoinTheArtCrewSection } from "../components/join-the-art-crew-section";
 import { Layout } from "../components/layout";
+import { ImageSection } from "../components/image-section";
 import { UpcrateAsGiftSection } from "../components/upcrate-as-a-gift";
 import { UpcrateBattleSection } from "../components/upcrate-battle-section";
 import { WhatTheArtCrewSaysSection } from "../components/what-the-artcrew-says-section";
@@ -20,19 +22,15 @@ export default function Home() {
       <WhyUpcrateSection />
       <UpcrateAsGiftSection />
       <FlowingHeads className="bg-green-dark" />
-      <div className="min-h-sectionSmall md:min-h-sectionSmallMd bg-cpt-in-forest bg-center bg-cover"></div>
+      <ImageSection variant="small" bg="cpt-in-forest" />
       <WhatTheArtCrewSaysSection />
       <UnboxYourCreativitySection className="bg-purple" />
-
-      <div className="min-h-sectionBig md:min-h-sectionBigMd bg-leuchtturm bg-center bg-cover"></div>
+      <ImageSection bg="leuchtturm" variant="medium" />
       <FlowingHeads className="bg-purple" />
       <AsFeaturedInSection />
+      <FormerArtistsSection />
 
-      <div className="min-h-sectionBig md:min-h-sectionBigMd">
-        Former crates in a row
-      </div>
-
-      <div>Featured artists we worked with</div>
+      <div className="p-48">TODO: Featured artists we worked with</div>
 
       <ConnectSloganSection>
         <h4 className="text-3xl sm:text-5xl md:text-7xl text-white">
@@ -43,10 +41,8 @@ export default function Home() {
         </h4>
       </ConnectSloganSection>
       <UpcrateBattleSection />
-      <div className="min-h-sectionBig md:min-h-sectionBigMd bg-cotman-tubes bg-center bg-cover"></div>
-
+      <ImageSection bg="cotman-tubes" />
       <FollowUsOnInstagramSection />
-
       <UnboxYourCreativitySection
         className="bg-pink"
         buttonClassName="bg-purple"

@@ -15,6 +15,8 @@ export function Countdown() {
     moment().diff(moment().endOf("day"), "hour")
   );
 
+  console.log(nextCrateHours);
+
   React.useEffect(() => {
     const myInterval = setInterval(() => {
       setNextCrateWeeks(nextCrate.diff(moment(), "week"));

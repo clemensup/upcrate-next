@@ -16,7 +16,6 @@ export function UpcrateBattleSection() {
           Every month a new topic awaits to inspire you!
         </p>
       </div>
-
       <div className="md:flex align-center justify-center gap-20 md:text-xl text-purple-dark">
         <div className="mt-10">
           <h4 className="text-left mb-3">TOPIC: Colorless beauty</h4>
@@ -78,8 +77,8 @@ export function UpcrateBattleSection() {
             </a>
           </div>
         </div>
-        TODO: Win great prizes every month
       </div>
+      <div className="p-48">TODO: Win great prizes every month</div>
     </section>
   );
 }
