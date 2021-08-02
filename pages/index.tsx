@@ -1,12 +1,6 @@
-import Image from "next/image";
-import {
-  CaptainCrateSvg,
-  SubscribeNowSection,
-  UnboxYourCreativitySection,
-} from "../components";
+import { SubscribeNowSection, UnboxYourCreativitySection } from "../components";
 import { AsFeaturedInSection } from "../components/as-featured-in-section";
 import { ConnectSloganSection } from "../components/connect-slogan-section";
-import { BattleSvg } from "../components/elements/svg/battle-svg";
 import { FlowingHeads } from "../components/flowing-heads";
 import { FollowUsOnInstagramSection } from "../components/follow-us-on-instagram-section";
 import { JoinTheArtCrewSection } from "../components/join-the-art-crew-section";
@@ -32,10 +26,13 @@ export default function Home() {
       <div className="min-h-sectionBig md:min-h-sectionBigMd bg-leuchtturm bg-center bg-cover"></div>
       <FlowingHeads className="bg-purple" />
       <AsFeaturedInSection />
+
       <div className="min-h-sectionBig md:min-h-sectionBigMd">
         Former crates in a row
       </div>
+
       <div>Featured artists we worked with</div>
+
       <ConnectSloganSection>
         <h4 className="text-3xl sm:text-5xl md:text-7xl text-white">
           Let’s draw <span className="font-display">as one.</span>

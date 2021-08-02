@@ -7,17 +7,31 @@ export function AsFeaturedInSection() {
         As featured in
       </h3>
       <div className="flex gap-20 justify-center mt-10 md:mt-32">
-        <Image src="/palette.png" width={222} height={103} />
+        <a href="https://www.palette-magazin.de" target="_blank">
+          <Image src="/palette.png" width={222} height={103} />
+        </a>
 
-        <div className="hidden md:block">
+        <a
+          href="https://www.palette-magazin.de"
+          target="_blank"
+          className="hidden md:block"
+        >
           <Image src="/palette.png" width={222} height={103} />
-        </div>
-        <div className="hidden md:block">
+        </a>
+        <a
+          href="https://www.palette-magazin.de"
+          target="_blank"
+          className="hidden md:block"
+        >
           <Image src="/palette.png" width={222} height={103} />
-        </div>
-        <div className="hidden md:block">
+        </a>
+        <a
+          href="https://www.palette-magazin.de"
+          target="_blank"
+          className="hidden md:block"
+        >
           <Image src="/palette.png" width={222} height={103} />
-        </div>
+        </a>
       </div>
     </div>
   );

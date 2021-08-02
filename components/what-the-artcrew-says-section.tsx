@@ -1,6 +1,26 @@
 import React from "react";
-import { useWindowSize } from "../hooks/use-window-size";
 import { ArrowSvg } from "./elements/svg/arrow-svg";
+import styled from "styled-components";
+
+const StyledSpeechBubble = styled.div`
+  /* height: 40px;
+  width: 40px;
+  clip-path: polygon(100% 0, 0 0, 100% 100%);
+  top: 80%;
+  position: absolute;
+
+  ::before {
+    content: "";
+    display: block;
+    position: relative;
+    top: 5px;
+    left: 5px;
+    height: 150px;
+    width: 150px;
+    background-color: black;
+    clip-path: polygon(100% 0, 0 0, 100% 100%);
+  } */
+`;
 
 function SpeechBubble({
   children,
@@ -8,7 +28,10 @@ function SpeechBubble({
 }: React.PropsWithChildren<{ author: string }>) {
   return (
     <div className="mt-10">
-      <div className="border-2 border-purple-dark px-5 py-12">{children}</div>
+      <div className="border-2 border-purple-dark px-5 py-12">
+        {children}
+        <StyledSpeechBubble />
+      </div>
       <span className="author text-xl">{author}</span>
     </div>
   );
