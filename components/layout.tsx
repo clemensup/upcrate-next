@@ -13,7 +13,7 @@ export function Layout({ children }): JSX.Element {
 
       <Header />
 
-      <main className="mx-auto">{children}</main>
+      <main className="mx-auto overflow-x-hidden">{children}</main>
 
       <Footer />
 

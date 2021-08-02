@@ -3,6 +3,7 @@ import { AsFeaturedInSection } from "../components/as-featured-in-section";
 import { ConnectSloganSection } from "../components/connect-slogan-section";
 import { FlowingHeads } from "../components/flowing-heads";
 import { FollowUsOnInstagramSection } from "../components/follow-us-on-instagram-section";
+import { HeroSliderSection } from "../components/hero-slider-section";
 import { JoinTheArtCrewSection } from "../components/join-the-art-crew-section";
 import { Layout } from "../components/layout";
 import { UpcrateAsGiftSection } from "../components/upcrate-as-a-gift";
@@ -13,7 +14,7 @@ import { WhyUpcrateSection } from "../components/why-upcrate-section";
 export default function Home() {
   return (
     <Layout>
-      <h1>test</h1>
+      <HeroSliderSection />
       <JoinTheArtCrewSection />
       <SubscribeNowSection />
       <WhyUpcrateSection />
