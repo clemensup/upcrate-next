@@ -1,6 +1,8 @@
 import { Layout, HeroSection, UnboxYourCreativitySection } from "../components";
 import Image from "next/image";
 import useTranslation from "next-translate/useTranslation";
+import { FollowUsOnInstagramSection } from "../components/follow-us-on-instagram-section";
+import { FlowingHeads } from "../components/flowing-heads";
 
 export default function About() {
   const { t } = useTranslation("common");
@@ -155,11 +157,9 @@ export default function About() {
         </div>
       </section>
 
-      <section>
-        <h3>Instagram</h3>
-      </section>
+      <FollowUsOnInstagramSection />
 
-      <section className="text-center p-12 sm:p-24 bg-purple background-gradient text-green backdrop-blur">
+      <section className="text-center p-12 sm:p-24 bg-purple background-gradient text-green backdrop-blur md:my-2">
         <h3 className="xs:text-3xl sm:text-5xl md:text-7xl font-display text-purple-dark">
           Let’s draw as one.
           <br />
@@ -183,6 +183,8 @@ export default function About() {
           height={768}
         />
       </section>
+
+      <FlowingHeads className="bg-green" />
 
       <UnboxYourCreativitySection
         className="bg-green"
