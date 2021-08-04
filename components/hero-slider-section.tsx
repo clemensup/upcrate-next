@@ -20,7 +20,7 @@ function SliderArrow({
     >
       <button
         onClick={onClick}
-        className={variant === "next" && `transform rotate-180`}
+        className={variant === "next" ? `transform rotate-180` : ""}
       >
         <ArrowSvg />
       </button>

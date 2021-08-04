@@ -12,6 +12,7 @@ import { UpcrateAsGiftSection } from "../components/upcrate-as-a-gift";
 import { UpcrateBattleSection } from "../components/upcrate-battle-section";
 import { WhatTheArtCrewSaysSection } from "../components/what-the-artcrew-says-section";
 import { WhyUpcrateSection } from "../components/why-upcrate-section";
+import { FormerCratesInARowSection } from "../components/former-crates-in-a-row-section";
 
 export default function Home() {
   return (
@@ -28,11 +29,8 @@ export default function Home() {
       <ImageSection bg="leuchtturm" variant="medium" />
       <FlowingHeads className="bg-purple" />
       <AsFeaturedInSection />
-
-      <div className="p-48">TODO: Former crates in a row</div>
-
+      <FormerCratesInARowSection />
       <FormerArtistsSection />
-
       <ConnectSloganSection>
         <h4 className="text-3xl sm:text-5xl md:text-7xl text-white">
           Let’s draw <span className="font-display">as one.</span>

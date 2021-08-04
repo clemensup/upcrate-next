@@ -11,7 +11,7 @@ export function ArrowSvg() {
         data-name="Path 5151"
         d="M921.6,1213.562l4.279,7.365-16.458,15.506,15.8,12.017-4.279,5.427-22.053-17.057Z"
         transform="translate(-898.891 -1213.563)"
-        fill="#372152"
+        fill="currentColor"
       />
     </svg>
   );
