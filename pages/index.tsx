@@ -1,4 +1,8 @@
-import { SubscribeNowSection, UnboxYourCreativitySection } from "../components";
+import {
+  CaptainCrateSvg,
+  SubscribeNowSection,
+  UnboxYourCreativitySection,
+} from "../components";
 import { AsFeaturedInSection } from "../components/as-featured-in-section";
 import { ConnectSloganSection } from "../components/connect-slogan-section";
 import { FlowingHeads } from "../components/flowing-heads";
@@ -13,6 +17,8 @@ import { UpcrateBattleSection } from "../components/upcrate-battle-section";
 import { WhatTheArtCrewSaysSection } from "../components/what-the-artcrew-says-section";
 import { WhyUpcrateSection } from "../components/why-upcrate-section";
 import { FormerCratesInARowSection } from "../components/former-crates-in-a-row-section";
+import Image from "next/image";
+import { UnboxYourCreativitySvg } from "../components/elements/svg/unbox-your-creativity";
 
 export default function Home() {
   return (
@@ -25,7 +31,14 @@ export default function Home() {
       <FlowingHeads className="bg-green-dark" />
       <ImageSection variant="small" bg="cpt-in-forest" />
       <WhatTheArtCrewSaysSection />
-      <UnboxYourCreativitySection className="bg-purple" />
+      <section className="hidden md:flex flex-col bg-purple justify-center items-center py-44">
+        <CaptainCrateSvg variant="head-only" width={100} />
+        <UnboxYourCreativitySvg />
+        <img
+          src="/home/unbox-your-creativity/unbox-box.png"
+          className="-my-44"
+        />
+      </section>
       <ImageSection bg="leuchtturm" variant="medium" />
       <FlowingHeads className="bg-purple" />
       <AsFeaturedInSection />

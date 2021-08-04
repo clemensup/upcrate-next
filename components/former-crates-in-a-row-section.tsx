@@ -57,24 +57,19 @@ export function TripleSlider() {
     prevArrow: <SliderArrow variant="prev" />,
   };
 
+  const slides = Array.from(Array(20).keys());
+
   return (
     <Slider {...settings} className="md:mt-20 -mx-10 md:mx-0">
-      <Slide className="flex flex-col gap-5 text-xl md:text-3xl">
-        <img src="/home/former-crates/upcrate19.png" />
-        <p>#upcrate18</p>
-      </Slide>
-      <Slide className="flex flex-col gap-5 text-xl md:text-3xl">
-        <img src="/home/former-crates/upcrate19.png" />
-        <p>#upcrate19</p>
-      </Slide>
-      <Slide className="flex flex-col gap-5 text-xl md:text-3xl">
-        <img src="/home/former-crates/upcrate19.png" />
-        <p>#upcrate20</p>
-      </Slide>
-      <Slide className="flex flex-col gap-5 text-xl md:text-3xl">
-        <img src="/home/former-crates/upcrate19.png" />
-        <p>#upcrate21</p>
-      </Slide>
+      {slides.map((slide) => (
+        <Slide
+          key={slide + 1}
+          className="flex flex-col gap-5 text-xl md:text-3xl"
+        >
+          <img src={`/home/former-crates/upcrate${slide + 1}.png`} />
+          <p>#upcrate{slide + 1}</p>
+        </Slide>
+      ))}
     </Slider>
   );
 }

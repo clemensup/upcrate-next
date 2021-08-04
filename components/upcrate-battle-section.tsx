@@ -1,4 +1,5 @@
 import Image from "next/image";
+import { CaptainCrateSvg } from "./elements/svg";
 import { BattleSvg } from "./elements/svg/battle-svg";
 
 export function UpcrateBattleSection() {
@@ -20,7 +21,7 @@ export function UpcrateBattleSection() {
         <div className="mt-10">
           <h4 className="text-left mb-3">TOPIC: Colorless beauty</h4>
           <Image
-            src="/battle-01.png"
+            src="/home/battle/battle-01.png"
             layout="responsive"
             width={330}
             height={330}
@@ -40,7 +41,7 @@ export function UpcrateBattleSection() {
         <div className="mt-10">
           <h4 className="text-left mb-3">TOPIC: Crystal clear</h4>
           <Image
-            src="/battle-02.png"
+            src="/home/battle/battle-02.png"
             layout="responsive"
             width={330}
             height={330}
@@ -60,7 +61,7 @@ export function UpcrateBattleSection() {
         <div className="mt-10">
           <h4 className="text-left mb-3">TOPIC: Magical fantasy</h4>
           <Image
-            src="/battle-03.png"
+            src="/home/battle/battle-03.png"
             layout="responsive"
             width={330}
             height={330}
@@ -78,7 +79,17 @@ export function UpcrateBattleSection() {
           </div>
         </div>
       </div>
-      <div className="p-48">TODO: Win great prizes every month</div>
+      <div className="mt-20 md:mt-48 text-center flex flex-col items-center justify-center text-purple-dark">
+        <CaptainCrateSvg variant="default" />
+        <div className="flex gap-4 justify-between p-10 border-1">
+          <img src="/home/battle/win-prizes.png" alt="" />
+          <p className="text-left">
+            <b>Win great prizes every month</b>
+            <br />
+            E.G. 60 Rembrandt Soft Pastels
+          </p>
+        </div>
+      </div>
     </section>
   );
 }
