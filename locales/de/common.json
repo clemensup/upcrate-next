@@ -1,12 +1,17 @@
 {
   "language_switch_de": "de",
+  "language_switch_de_long": "German",
   "language_switch_en": "en",
+  "language_switch_en_long": "Englisch",
+  "language_switch_dialog_title": "Welche Sprache darf es sein?",
   "navlink_how_it_works": "Wie es funktionert",
   "navlink_shop": "Shop",
   "navlink_crates": "Boxen",
   "navlink_artcrew": "Art Crew",
   "navlink_about": "Über uns",
   "subscribe_now_button_text": "Abonnieren",
+  "cancel": "Abbrechen",
+  "save": "Speichern",
   "pages": {
     "about": {
       "page_title": "Über uns"
