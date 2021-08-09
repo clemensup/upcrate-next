@@ -10,16 +10,16 @@ export function Footer(): JSX.Element {
           <h4 className="mb-4 text-xl uppercase">Legal</h4>
           <ul className="list-reset leading-normal text-red text-xl">
             <li>
-              <a href="">imprint</a>
+              <a href="/imprint">imprint</a>
             </li>
             <li>
-              <a href="">privacy</a>
+              <a href="/privacy">privacy</a>
             </li>
             <li>
-              <a href="">general terms and conditions</a>
+              <a href="/terms-and-conditions">general terms and conditions</a>
             </li>
             <li>
-              <a href="">cancellation policy</a>
+              <a href="/cancellation-policy">cancellation policy</a>
             </li>
           </ul>
 
@@ -29,16 +29,16 @@ export function Footer(): JSX.Element {
           <h4 className="mb-4 text-xl uppercase">Info</h4>
           <ul className="text-blue text-xl">
             <li>
-              <a href="">refer a friend</a>
+              <a href="/refer-a-friend">refer a friend</a>
             </li>
             <li>
-              <a href="">help / contact</a>
+              <a href="/help-contact">help / contact</a>
             </li>
             <li>
-              <a href="">FAQs</a>
+              <a href="/faqs">FAQs</a>
             </li>
             <li>
-              <a href="">sign up / login </a>
+              <a href="https://shop.upcrate.art/account/">sign up / login </a>
             </li>
           </ul>
           <Image src="/pen.svg" width="100%" height="auto" />

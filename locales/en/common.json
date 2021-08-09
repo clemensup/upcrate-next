@@ -29,6 +29,9 @@
     },
     "about": {
       "page_title": "About us"
+    },
+    "imprint": {
+      "page_title": "Imprint"
     }
   }
 }
