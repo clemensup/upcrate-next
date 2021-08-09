@@ -1,10 +1,22 @@
-import { Layout, UnboxYourCreativitySection } from "../components";
+import Image from "next/image";
+import {
+  CaptainCrateSvg,
+  HeroSection,
+  Layout,
+  UnboxYourCreativitySection,
+} from "../components";
 import { JoinTheArtCrewSection } from "../components/join-the-art-crew-section";
 
 export default function Crates() {
   return (
     <Layout>
-      <h3 className="my-20">TODO: HEADER SECTION</h3>
+      <HeroSection
+        className="bg-orange"
+        title={"Crates"}
+        image="/crates/hero-image.png"
+        mobileImage="/about-us-hero-xs.png"
+      />
+
       <h3 className="my-20">TODO: Our previous crates</h3>
 
       <JoinTheArtCrewSection />

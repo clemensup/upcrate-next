@@ -64,6 +64,7 @@ module.exports = {
         "artcrew-image-section03": "url('/artcrew/image-section03.png')",
         "artcrew-image-section04": "url('/artcrew/image-section04.png')",
         "artcrew-image-section05": "url('/artcrew/image-section05.png')",
+        "crates-hero": "url('/crates/hero-image.png')",
       }),
     },
   },

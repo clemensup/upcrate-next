@@ -8,20 +8,23 @@ export function Countdown() {
   const [nextCrateWeeks, setNextCrateWeeks] = React.useState(
     nextCrate.diff(moment(), "week")
   );
+
   const [nextCrateDays, setNextCrateDays] = React.useState(
     nextCrate.diff(moment(), "day")
   );
-  const [nextCrateHours, setNextCrateHours] = React.useState(
-    moment().diff(moment().endOf("day"), "hour")
-  );
 
-  console.log(nextCrateHours);
+  const [nextCrateHours, setNextCrateHours] = React.useState(
+    moment().endOf("day").diff(moment(), "hours")
+  );
 
   React.useEffect(() => {
     const myInterval = setInterval(() => {
-      setNextCrateWeeks(nextCrate.diff(moment(), "week"));
-      setNextCrateDays(nextCrate.diff(moment(), "day"));
-      setNextCrateHours(moment().diff(moment().endOf("day"), "hour"));
+      const nextWeeks = nextCrate.diff(moment(), "days") / 7;
+      const nextDays = nextCrate.diff(moment(), "days") % 7;
+
+      setNextCrateWeeks(Math.floor(nextWeeks));
+      setNextCrateDays(Math.floor(nextDays));
+      setNextCrateHours(moment().endOf("day").diff(moment(), "hours"));
     }, 1000);
     return () => {
       clearInterval(myInterval);

@@ -14,7 +14,7 @@ export function CaptainCrateSvg({
         <svg
           xmlns="http://www.w3.org/2000/svg"
           width={width}
-          height="47.355"
+          height={width}
           viewBox="0 0 42 47.355"
           className={`fill-current ${className}`}
         >
@@ -57,7 +57,7 @@ export function CaptainCrateSvg({
         <svg
           xmlns="http://www.w3.org/2000/svg"
           width={width}
-          height="86.665"
+          height={width}
           viewBox="0 0 78.253 86.665"
           className={`fill-current ${className}`}
         >
