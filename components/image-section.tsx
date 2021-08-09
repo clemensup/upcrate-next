@@ -1,19 +1,23 @@
-export function ImageSection({
-  variant = "medium",
-  bg,
-}: {
-  variant?: "small" | "medium";
+export interface ImageSectionProps {
+  variant?: "xs" | "small" | "medium";
   bg: string;
-}) {
-  const sizeClasses =
-    variant === "medium"
-      ? "min-h-sectionBig md:min-h-sectionBigMd"
-      : "min-h-sectionSmall md:min-h-sectionSmallMd";
+}
+
+export function ImageSection({ variant = "medium", bg }: ImageSectionProps) {
+  let sizeClasses = "min-h-sectionBig md:min-h-sectionBigMd";
+
+  if (variant === "xs") {
+    sizeClasses = "min-h-sectionXs";
+  }
+
+  if (variant === "small") {
+    sizeClasses = "min-h-sectionSmall md:min-h-sectionSmallMd";
+  }
 
   return (
     <div
-      className={`${sizeClasses} bg-center bg-cover`}
-      style={{ background: `url('/${bg}.png')` }}
+      className={`${sizeClasses} bg-center bg-cover bg-no-repeat`}
+      style={{ backgroundImage: `url('/${bg}.png')` }}
     ></div>
   );
 }

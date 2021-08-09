@@ -6,6 +6,7 @@ module.exports = {
       DEFAULT: "30px",
     },
     minHeight: {
+      sectionXs: "160px",
       sectionBig: "440px",
       sectionBigMd: "775px",
       sectionSmall: "200px",

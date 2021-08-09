@@ -54,6 +54,9 @@ export function Header(): JSX.Element {
               } absolute top-full width-full z-40 left-0 right-0 bg-white text-center lg:relative lg:block lg:flex lg:flex-row text-purple-dark text-2xl lg:items-center`}
             >
               <li className="lg:pr-5">
+                <a href="/how-it-works">{t("navlink_how_it_works")}</a>
+              </li>
+              <li className="lg:pr-5">
                 <a href="https://shop.upcrate.art">{t("navlink_shop")}</a>
               </li>
               <li className="lg:pr-5">
