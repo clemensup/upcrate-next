@@ -4,6 +4,7 @@ import { ConnectSloganSection } from "../components/connect-slogan-section";
 import { FlowingHeads } from "../components/flowing-heads";
 import { FollowUsOnInstagramSection } from "../components/follow-us-on-instagram-section";
 import { FormerArtistsSection } from "../components/former-artists-section";
+import { TheGoldenCrateSection } from "../components/the-golden-crate-section";
 import { UpcrateAsGiftSection } from "../components/upcrate-as-a-gift";
 import { UpcrateBattleSection } from "../components/upcrate-battle-section";
 
@@ -25,7 +26,7 @@ export default function ArtCrew() {
       <UpcrateAsGiftSection />
       <UpcrateBattleSection />
       <div className="min-h-sectionSmall md:min-h-sectionSmallMd bg-artcrew-image-section02 bg-center bg-cover bg-no-repeat"></div>
-      TODO: The golden crate
+      <TheGoldenCrateSection />
       <div className="min-h-sectionSmall md:min-h-sectionSmallMd bg-artcrew-image-section03 bg-center bg-cover bg-no-repeat"></div>
       TODO: The bottlepost
       <div className="min-h-sectionSmall md:min-h-sectionSmallMd bg-artcrew-image-section04 bg-center bg-cover bg-no-repeat"></div>
