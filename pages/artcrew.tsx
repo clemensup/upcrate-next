@@ -8,6 +8,7 @@ import { TheBottlePostSection } from "../components/sections/the-bottle-post-sec
 import { TheGoldenCrateSection } from "../components/sections/the-golden-crate-section";
 import { UpcrateAsGiftSection } from "../components/sections/upcrate-as-a-gift-section";
 import { UpcrateBattleSection } from "../components/sections/upcrate-battle-section";
+import { ProfessionalHowToVideosSection } from "../components/sections/professional-howto-videos-section";
 
 export default function ArtCrew() {
   const { t } = useTranslation("common");
@@ -32,7 +33,7 @@ export default function ArtCrew() {
       <TheBottlePostSection />
       <div className="min-h-sectionSmall md:min-h-sectionSmallMd bg-artcrew-image-section04 bg-center bg-cover bg-no-repeat"></div>
       <FormerArtistsSection />
-      TODO: Professional How-to-do Videos
+      <ProfessionalHowToVideosSection />
       <ConnectSloganSection>
         <h4 className="text-3xl sm:text-5xl md:text-7xl text-white">
           <span className="font-display">We draw artists</span> together

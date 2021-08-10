@@ -19,6 +19,7 @@ module.exports = {
         display: ["Right Grotesk", "sans"],
       },
       fontSize: {
+        xxs: ".5rem",
         countdown: "207px",
       },
       colors: {
