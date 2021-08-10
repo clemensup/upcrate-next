@@ -5,7 +5,7 @@ import {
   Layout,
   UnboxYourCreativitySection,
 } from "../components";
-import { JoinTheArtCrewSection } from "../components/join-the-art-crew-section";
+import { JoinTheArtCrewSection } from "../components/sections/join-the-art-crew-section";
 
 export default function Crates() {
   return (

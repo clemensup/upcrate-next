@@ -1,7 +1,7 @@
 import useTranslation from "next-translate/useTranslation";
 import Image from "next/image";
 import React from "react";
-import { Button, Caret } from ".";
+import { Button, Caret } from "..";
 
 interface SubscribeNowSectionProps {
   className?: string;

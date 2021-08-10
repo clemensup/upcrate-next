@@ -1,4 +1,4 @@
-import { Button } from "./elements/button";
+import { Button } from "../elements/button";
 
 export function UpcrateAsGiftSection() {
   return (

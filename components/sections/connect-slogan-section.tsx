@@ -1,5 +1,5 @@
 import React from "react";
-import { CaptainCrateSvg } from "./elements/svg";
+import { CaptainCrateSvg } from "../elements/svg";
 
 export function ConnectSloganSection({
   children,

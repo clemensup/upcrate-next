@@ -3,20 +3,20 @@ import {
   SubscribeNowSection,
   UnboxYourCreativitySection,
 } from "../components";
-import { AsFeaturedInSection } from "../components/as-featured-in-section";
-import { ConnectSloganSection } from "../components/connect-slogan-section";
+import { AsFeaturedInSection } from "../components/sections/as-featured-in-section";
+import { ConnectSloganSection } from "../components/sections/connect-slogan-section";
 import { FlowingHeads } from "../components/flowing-heads";
-import { FollowUsOnInstagramSection } from "../components/follow-us-on-instagram-section";
-import { FormerArtistsSection } from "../components/former-artists-section";
-import { HeroSliderSection } from "../components/hero-slider-section";
-import { JoinTheArtCrewSection } from "../components/join-the-art-crew-section";
+import { FollowUsOnInstagramSection } from "../components/sections/follow-us-on-instagram-section";
+import { FormerArtistsSection } from "../components/sections/former-artists-section";
+import { HeroSliderSection } from "../components/sections/hero-slider-section";
+import { JoinTheArtCrewSection } from "../components/sections/join-the-art-crew-section";
 import { Layout } from "../components/layout";
-import { ImageSection } from "../components/image-section";
-import { UpcrateAsGiftSection } from "../components/upcrate-as-a-gift";
-import { UpcrateBattleSection } from "../components/upcrate-battle-section";
-import { WhatTheArtCrewSaysSection } from "../components/what-the-artcrew-says-section";
-import { WhyUpcrateSection } from "../components/why-upcrate-section";
-import { FormerCratesInARowSection } from "../components/former-crates-in-a-row-section";
+import { ImageSection } from "../components/sections/image-section";
+import { UpcrateAsGiftSection } from "../components/sections/upcrate-as-a-gift-section";
+import { UpcrateBattleSection } from "../components/sections/upcrate-battle-section";
+import { WhatTheArtCrewSaysSection } from "../components/sections/what-the-artcrew-says-section";
+import { WhyUpcrateSection } from "../components/sections/why-upcrate-section";
+import { FormerCratesInARowSection } from "../components/sections/former-crates-in-a-row-section";
 import Image from "next/image";
 import { UnboxYourCreativitySvg } from "../components/elements/svg/unbox-your-creativity";
 

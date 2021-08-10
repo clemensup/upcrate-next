@@ -1,6 +1,6 @@
 import Image from "next/image";
-import { CaptainCrateSvg } from "./elements/svg";
-import { BattleSvg } from "./elements/svg/battle-svg";
+import { CaptainCrateSvg } from "../elements/svg";
+import { BattleSvg } from "../elements/svg/battle-svg";
 
 export function UpcrateBattleSection() {
   return (

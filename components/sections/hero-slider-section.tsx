@@ -1,9 +1,9 @@
 import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
-import { CaptainCrateSvg } from "./elements/svg";
-import { Button } from "./elements/button";
-import { ArrowSvg } from "./elements/svg/arrow-svg";
+import { CaptainCrateSvg } from "../elements/svg";
+import { Button } from "../elements/button";
+import { ArrowSvg } from "../elements/svg/arrow-svg";
 
 function SliderArrow({
   variant,

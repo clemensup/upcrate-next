@@ -1,6 +1,6 @@
 import Image from "next/image";
-import { Countdown } from "./countdown";
-import { CaptainCrateSvg } from "./elements/svg";
+import { Countdown } from "../countdown";
+import { CaptainCrateSvg } from "../elements/svg";
 
 export function WhyUpcrateSection() {
   return (

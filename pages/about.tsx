@@ -1,7 +1,7 @@
 import { Layout, HeroSection, UnboxYourCreativitySection } from "../components";
 import Image from "next/image";
 import useTranslation from "next-translate/useTranslation";
-import { FollowUsOnInstagramSection } from "../components/follow-us-on-instagram-section";
+import { FollowUsOnInstagramSection } from "../components/sections/follow-us-on-instagram-section";
 import { FlowingHeads } from "../components/flowing-heads";
 
 export default function About() {

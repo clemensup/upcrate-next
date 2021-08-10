@@ -1,6 +1,6 @@
 import Image from "next/image";
-import { Button } from "./elements/button";
-import { CaptainCrateSvg } from "./elements/svg";
+import { Button } from "../elements/button";
+import { CaptainCrateSvg } from "../elements/svg";
 
 export function SubscribeNowSection() {
   return (

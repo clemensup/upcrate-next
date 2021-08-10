@@ -1,9 +1,9 @@
 import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
-import { ArrowSvg } from "./elements/svg/arrow-svg";
+import { ArrowSvg } from "../elements/svg/arrow-svg";
 import React from "react";
-import { useWindowSize } from "../hooks/use-window-size";
+import { useWindowSize } from "../../hooks/use-window-size";
 
 function SliderArrow({
   variant,

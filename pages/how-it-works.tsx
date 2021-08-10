@@ -1,14 +1,14 @@
 import { UnboxYourCreativitySection } from "../components";
-import { ConnectSloganSection } from "../components/connect-slogan-section";
+import { ConnectSloganSection } from "../components/sections/connect-slogan-section";
 import { FlowingHeads } from "../components/flowing-heads";
-import { FollowUsOnInstagramSection } from "../components/follow-us-on-instagram-section";
-import { HeroSliderSection } from "../components/hero-slider-section";
-import { JoinTheArtCrewSection } from "../components/join-the-art-crew-section";
+import { FollowUsOnInstagramSection } from "../components/sections/follow-us-on-instagram-section";
+import { HeroSliderSection } from "../components/sections/hero-slider-section";
+import { JoinTheArtCrewSection } from "../components/sections/join-the-art-crew-section";
 import { Layout } from "../components/layout";
-import { ImageSection } from "../components/image-section";
-import { UpcrateAsGiftSection } from "../components/upcrate-as-a-gift";
-import { WhyUpcrateSection } from "../components/why-upcrate-section";
-import { HowItWorksSection } from "../components/how-it-works-section";
+import { ImageSection } from "../components/sections/image-section";
+import { UpcrateAsGiftSection } from "../components/sections/upcrate-as-a-gift-section";
+import { WhyUpcrateSection } from "../components/sections/why-upcrate-section";
+import { HowItWorksSection } from "../components/sections/how-it-works-section";
 
 export default function HowItWorks() {
   return (

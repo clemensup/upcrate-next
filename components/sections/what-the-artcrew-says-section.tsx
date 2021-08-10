@@ -1,5 +1,5 @@
 import React from "react";
-import { ArrowSvg } from "./elements/svg/arrow-svg";
+import { ArrowSvg } from "../elements/svg/arrow-svg";
 
 function SpeechBubble({
   children,

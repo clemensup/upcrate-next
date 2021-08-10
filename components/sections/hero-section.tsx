@@ -1,6 +1,6 @@
 import React from "react";
 import Image from "next/image";
-import { CaptainCrateSvg } from "./elements/svg";
+import { CaptainCrateSvg } from "../elements/svg";
 
 interface HeroSectionProps {
   className?: string;

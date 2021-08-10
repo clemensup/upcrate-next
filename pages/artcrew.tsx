@@ -1,13 +1,13 @@
 import useTranslation from "next-translate/useTranslation";
 import { Layout, HeroSection, UnboxYourCreativitySection } from "../components";
-import { ConnectSloganSection } from "../components/connect-slogan-section";
+import { ConnectSloganSection } from "../components/sections/connect-slogan-section";
 import { FlowingHeads } from "../components/flowing-heads";
-import { FollowUsOnInstagramSection } from "../components/follow-us-on-instagram-section";
-import { FormerArtistsSection } from "../components/former-artists-section";
-import { TheBottlePostSection } from "../components/the-bottle-post-section";
-import { TheGoldenCrateSection } from "../components/the-golden-crate-section";
-import { UpcrateAsGiftSection } from "../components/upcrate-as-a-gift";
-import { UpcrateBattleSection } from "../components/upcrate-battle-section";
+import { FollowUsOnInstagramSection } from "../components/sections/follow-us-on-instagram-section";
+import { FormerArtistsSection } from "../components/sections/former-artists-section";
+import { TheBottlePostSection } from "../components/sections/the-bottle-post-section";
+import { TheGoldenCrateSection } from "../components/sections/the-golden-crate-section";
+import { UpcrateAsGiftSection } from "../components/sections/upcrate-as-a-gift-section";
+import { UpcrateBattleSection } from "../components/sections/upcrate-battle-section";
 
 export default function ArtCrew() {
   const { t } = useTranslation("common");
