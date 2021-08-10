@@ -2,6 +2,15 @@
 
 @font-face {
   font-family: "Neue Montreal";
+  src: url("/fonts/NeueMontreal-Regular.eot");
+  src: url("/fonts/NeueMontreal-Regular.eot?#iefix") format("embedded-opentype"),
+    url("/fonts/NeueMontreal-Regular.woff2") format("woff2"),
+    url("/fonts/NeueMontreal-Regular.woff") format("woff"),
+    url("/fonts/NeueMontreal-Regular.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: "Neue Montreal Bold";
   src: url("/fonts/NeueMontreal-Bold.eot");
   src: url("/fonts/NeueMontreal-Bold.eot?#iefix") format("embedded-opentype"),
     url("/fonts/NeueMontreal-Bold.woff2") format("woff2"),

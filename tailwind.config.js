@@ -14,6 +14,7 @@ module.exports = {
     },
     extend: {
       fontFamily: {
+        bold: ["Neue Montreal Bold", "sans"],
         sans: ["Neue Montreal", "sans"],
         display: ["Right Grotesk", "sans"],
       },
