@@ -6,7 +6,7 @@ export function HowItWorksSection() {
       <h3 className="font-display text-purple-dark text-2xl md:text-5xl">
         How it works
       </h3>
-      <p className="mt-8 text-xl max-w-lg mx-auto">
+      <p className="mt-8 text-xl max-w-lg mx-auto text-center">
         If you’re not familiar with subscription boxes then you might be
         wondering how this all works. It’s fairly simple….
       </p>

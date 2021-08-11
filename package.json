@@ -9,6 +9,8 @@
   },
   "dependencies": {
     "@headlessui/react": "^1.2.0",
+    "@types/woocommerce__woocommerce-rest-api": "^1.0.2",
+    "@woocommerce/woocommerce-rest-api": "^1.0.1",
     "i18n": "^0.13.3",
     "next": "10.2.0",
     "next-translate": "^1.0.6",

@@ -5,9 +5,28 @@ import {
   Layout,
   UnboxYourCreativitySection,
 } from "../components";
+import { CratesList } from "../components/crates-list";
 import { JoinTheArtCrewSection } from "../components/sections/join-the-art-crew-section";
+import { fetchCrates } from "../utils/wc-api";
 
-export default function Crates() {
+export interface ProductImage {
+  id: number;
+  name: string;
+  src: string;
+}
+export interface Product {
+  id: string;
+  name: string;
+  images: ProductImage[];
+  permalink: string;
+  stock_status: "instock" | "outofstock";
+  regular_price: string;
+}
+export interface CratesProps {
+  products: Product[];
+}
+
+export default function Crates({ products }: CratesProps) {
   return (
     <Layout>
       <HeroSection
@@ -17,7 +36,7 @@ export default function Crates() {
         mobileImage="/about-us-hero-xs.png"
       />
 
-      <h3 className="my-20">TODO: Our previous crates</h3>
+      <CratesList products={products} />
 
       <JoinTheArtCrewSection />
       <div className="min-h-sectionSmall md:min-h-sectionSmallMd bg-crates-image-section bg-center bg-cover bg-no-repeat relative flex justify-center items-end p-12">
@@ -38,3 +57,19 @@ export default function Crates() {
     </Layout>
   );
 }
+
+export const getStaticProps = async () => {
+  const wooCommerceProducts = await fetchCrates().catch(console.error);
+
+  if (!wooCommerceProducts) {
+    return {
+      notFound: true,
+    };
+  }
+
+  return {
+    props: {
+      products: wooCommerceProducts.data,
+    },
+  };
+};
