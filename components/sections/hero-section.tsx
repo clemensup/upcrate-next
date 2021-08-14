@@ -18,7 +18,7 @@ export function HeroSection({
   return (
     <div
       style={{ height: 560 }}
-      className={`${className} px-20 pt-0 relative mb-40`}
+      className={`${className} px-20 pt-0 relative mb-20`}
     >
       <div className="absolute left-10 right-10 top-10" style={{ height: 500 }}>
         <CaptainCrateSvg
