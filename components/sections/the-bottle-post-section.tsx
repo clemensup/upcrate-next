@@ -21,7 +21,11 @@ export function TheBottlePostSection() {
             </p>
 
             <div className="flex gap-6 md:gap-20 mt-5 md:mt-16">
-              <a href="TODO:" target="_blank" rel="noopener noreferrer">
+              <a
+                href="https://shop.upcrate.art/product/upcrate20-april-2021/"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
                 <Image
                   src="/the-bottle-post/small01.png"
                   width={500}
@@ -30,7 +34,11 @@ export function TheBottlePostSection() {
                 <div className="text-xs md:text-base">#upcrate20</div>
               </a>
 
-              <a href="TODO:" target="_blank" rel="noopener noreferrer">
+              <a
+                href="https://shop.upcrate.art/product/upcrate19-march-2021/"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
                 <Image
                   src="/the-bottle-post/small02.png"
                   width={500}
@@ -39,7 +47,11 @@ export function TheBottlePostSection() {
                 <div className="text-xs md:text-base">#upcrate19</div>
               </a>
 
-              <a href="TODO:" target="_blank" rel="noopener noreferrer">
+              <a
+                href="https://shop.upcrate.art/product/upcrate16-december-2020/"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
                 <Image
                   src="/the-bottle-post/small03.png"
                   width={500}

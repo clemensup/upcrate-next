@@ -29,14 +29,16 @@ export function HeroSection({
         <h1 className="text-white text-3xl absolute z-20 top-12 left-20">
           {title}
         </h1>
-        <div className="sm:hidden">
-          <Image
-            src={mobileImage}
-            layout="responsive"
-            height={619}
-            width={457}
-          />
-        </div>
+        {mobileImage && (
+          <div className="sm:hidden">
+            <Image
+              src={mobileImage}
+              layout="responsive"
+              height={619}
+              width={457}
+            />
+          </div>
+        )}
         <div className="hidden sm:block -mt-3">
           <Image src={image} layout="responsive" width={1700} height={739} />
         </div>

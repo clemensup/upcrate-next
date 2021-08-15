@@ -1,4 +1,3 @@
-import useTranslation from "next-translate/useTranslation";
 import Image from "next/image";
 import React from "react";
 

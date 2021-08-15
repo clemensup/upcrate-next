@@ -57,7 +57,7 @@ function Slide({ background, image }: { background: string; image: string }) {
           <Button
             variant="default"
             className="bg-pink text-white text-xl"
-            href="TODO:"
+            href="https://shop.upcrate.art/de/product/upcrategift/"
           >
             Give a gift
           </Button>

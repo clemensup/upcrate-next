@@ -3,7 +3,7 @@ import React from "react";
 import { Caret } from "../elements/svg";
 import { PensAndBrushesSvg } from "../elements/svg/pens-and-brushes";
 
-export function NewsletterSection() {
+export function NewsletterSection({ children }: React.PropsWithChildren<{}>) {
   const [email, setEmail] = React.useState("");
   const [hasError, setHasError] = React.useState(false);
 
@@ -28,6 +28,7 @@ export function NewsletterSection() {
 
   return (
     <section className="text-center text-purple-dark pt-6 pb-6 md:px-10 md:px-32 md:pt-20 md:pb-24">
+      {children}
       <div
         className={`md:max-w-6xl p-5 md:p-10 py-10 mx-auto md:mt-12 md:pt-32 md:pb-20 text-purple-dark text-xl md:text-3xl bg-green md:rounded md:px-20 relative mb-20 ${
           hasError ? "bg-pink" : ""

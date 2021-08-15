@@ -32,10 +32,10 @@ export default function Newsletter() {
           alt=""
         />
       </div>
-      <UnboxYourCreativitySection className="bg-purple text-white mb-2">
-        <h3 className="text-white">
-          You’re one of the chosen ones who scrolled all the way down. Now you
-          can also subscribe:)
+      <UnboxYourCreativitySection className="bg-purple">
+        <h3 className="text-white text-4xl mx-auto text-center max-w-4xl font-bold">
+          You are one of the chosen ones who scrolled all the way down! Check
+          out Captain Crate’s offers here:
         </h3>
         <a
           className="font-display p-3 pt-2 pb-3 md:text-3xl inline-flex items-center relative mt-5 bg-rose hover:bg-green-darker text-white px-10 mx-auto"
