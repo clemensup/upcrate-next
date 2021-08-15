@@ -1,4 +1,9 @@
-import { Layout, HeroSection, UnboxYourCreativitySection } from "../components";
+import {
+  Layout,
+  HeroSection,
+  UnboxYourCreativitySection,
+  Caret,
+} from "../components";
 import Image from "next/image";
 import useTranslation from "next-translate/useTranslation";
 import { FollowUsOnInstagramSection } from "../components/sections/follow-us-on-instagram-section";
@@ -186,11 +191,18 @@ export default function About() {
 
       <FlowingHeads className="bg-green" />
 
-      <UnboxYourCreativitySection
-        className="bg-green"
-        buttonClassName="bg-purple"
-      >
-        {t("unbox_your_creativity_section")}
+      <UnboxYourCreativitySection className="bg-green">
+        <h3 className="text-white text-4xl mx-auto text-center max-w-4xl font-bold">
+          You are one of the chosen ones who scrolled all the way down! Check
+          out Captain Crate’s offers here:
+        </h3>
+        <a
+          className="font-display p-3 pt-2 pb-3 md:text-3xl inline-flex items-center relative mt-5 bg-purple hover:bg-purple-dark text-white px-10 mx-auto"
+          href="/subscriptions"
+        >
+          Subscribe now &nbsp;
+          <Caret />
+        </a>
       </UnboxYourCreativitySection>
     </Layout>
   );

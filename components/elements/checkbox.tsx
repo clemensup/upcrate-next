@@ -20,7 +20,7 @@ export function Checkbox({
         name={name}
         value={value}
         checked={checked}
-        className="form-tick appearance-none h-6 w-6 border border-gray-300 rounded-full checked:bg-purple-dark blur checked:border-transparent focus:outline-none"
+        className="cursor-pointer form-tick appearance-none h-6 w-6 border border-gray-300 rounded-full checked:bg-purple-dark blur checked:border-transparent focus:outline-none"
         onChange={onChange}
       />
       <span className="text-purple-dark font-medium">{label}</span>

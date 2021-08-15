@@ -53,19 +53,19 @@ export function Header(): JSX.Element {
                 !isMenuActive ? "hidden" : ""
               } font-bold absolute top-full width-full z-40 left-0 right-0 bg-white text-center lg:relative lg:block lg:flex lg:flex-row text-purple-dark text-2xl lg:items-center`}
             >
-              <li className="lg:pr-5">
+              <li className="lg:pr-5 hover:underline">
                 <a href="/how-it-works">{t("navlink_how_it_works")}</a>
               </li>
-              <li className="lg:pr-5">
+              <li className="lg:pr-5 hover:underline">
                 <a href="https://shop.upcrate.art">{t("navlink_shop")}</a>
               </li>
-              <li className="lg:pr-5">
+              <li className="lg:pr-5 hover:underline">
                 <a href="/crates">{t("navlink_crates")}</a>
               </li>
-              <li className="lg:pr-5">
+              <li className="lg:pr-5 hover:underline">
                 <a href="/artcrew">{t("navlink_artcrew")}</a>
               </li>
-              <li className="lg:pr-15">
+              <li className="lg:pr-15 hover:underline">
                 <a href="/about">{t("navlink_about")}</a>
               </li>
 
@@ -88,7 +88,7 @@ export function Header(): JSX.Element {
               </li>
 
               <li
-                className="flex items-center gap-3 justify-center py-4 lg:p-0 lg:ml-7"
+                className="flex items-center gap-3 justify-center py-4 lg:p-0 lg:ml-7 cursor-pointer"
                 onClick={() => setLanguageSelectModalOpen(true)}
               >
                 {lang === "en" && (
