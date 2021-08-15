@@ -32,7 +32,10 @@ export default function Subscriptions() {
           <h3 className="font-display md:text-7xl text-3xl text-white">
             Free shipping worldwide
           </h3>
-          <Button className="bg-orange text-white md:mt-12" href="TODO:">
+          <Button
+            className="bg-orange text-white md:mt-12"
+            href="/subscriptions"
+          >
             Subscribe now
           </Button>
         </div>
