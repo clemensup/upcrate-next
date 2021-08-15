@@ -1,5 +1,6 @@
 import WooCommerceRestApi from "@woocommerce/woocommerce-rest-api";
 
+// TODO: use env vars
 const api = new WooCommerceRestApi({
   url: "https://upcrate.art",
   consumerKey: "ck_d5165055d8c99dc5c682b59dd43155a2f14df688",

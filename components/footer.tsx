@@ -32,7 +32,7 @@ export function Footer(): JSX.Element {
               <a href="/refer-a-friend">refer a friend</a>
             </li>
             <li>
-              <a href="/help-contact">help / contact</a>
+              <a href="/contact">help / contact</a>
             </li>
             <li>
               <a href="/faqs">FAQs</a>
