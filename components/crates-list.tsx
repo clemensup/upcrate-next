@@ -54,12 +54,12 @@ export function CratesList({ products }: { products: Product[] }) {
           ))}
         </ul>
 
-        <Button
+        {/* TODO: PAGINATION <Button
           className="bg-purple text-white"
           onClick={() => fetchMoreProducts()}
         >
           {isFetching ? "Loading" : "Previous Page"}
-        </Button>
+        </Button> */}
       </div>
     </section>
   );
