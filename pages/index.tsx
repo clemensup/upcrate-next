@@ -17,7 +17,6 @@ import { UpcrateBattleSection } from "../components/sections/upcrate-battle-sect
 import { WhatTheArtCrewSaysSection } from "../components/sections/what-the-artcrew-says-section";
 import { WhyUpcrateSection } from "../components/sections/why-upcrate-section";
 import { FormerCratesInARowSection } from "../components/sections/former-crates-in-a-row-section";
-import Image from "next/image";
 import { UnboxYourCreativitySvg } from "../components/elements/svg/unbox-your-creativity";
 
 export default function Home() {

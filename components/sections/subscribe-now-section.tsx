@@ -102,7 +102,7 @@ export function SubscribeNowSection() {
           <p>Pay every month</p>
           <Button
             className="bg-orange text-white mb-4"
-            href="https://shop.upcrate.art/subscribe"
+            href="https://shop.upcrate.art/product/subscription-1-month/"
           >
             Subscribe now
           </Button>
@@ -173,7 +173,7 @@ export function SubscribeNowSection() {
           <p>Pay every 3 months</p>
           <Button
             className="bg-pink text-white mb-4"
-            href="https://shop.upcrate.art/subscribe"
+            href="https://shop.upcrate.art/product/subscription-3-months/"
           >
             Subscribe now
           </Button>
