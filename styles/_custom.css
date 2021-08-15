@@ -12,3 +12,35 @@
   position: relative !important;
   height: unset !important;
 }
+
+.accordion-kink:before {
+   content: '';
+   position: absolute;
+   left: 4rem;
+   top: -50px;
+   width: 0px;
+   height: 0px;
+   border-right: 50px solid transparent;
+   border-bottom: 50px solid currentColor;
+}
+
+.accordion-kink:after {
+  content: '';
+  position: absolute;
+  left: 4.5rem;
+  top: -30px;
+  width: 0px;
+  height: 0px;
+  border-right: 30px solid transparent;
+  border-bottom: 30px solid white;
+}
+
+@media only screen and (min-width: 640px) {
+  .accordion-kink:before {
+    left: 5rem;
+  }
+  
+  .accordion-kink:after {
+    left: 5.5rem;
+  }
+}
