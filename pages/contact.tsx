@@ -1,3 +1,4 @@
+import Image from "next/image";
 import React from "react";
 import { Layout } from "../components";
 import { ContactForm } from "../components/contact-form";
@@ -12,7 +13,14 @@ export default function Contact() {
 
         <ContactForm />
       </section>
-      <section className="min-h-sectionSmall md:min-h-sectionSmallMd bg-contact-image-section bg-center bg-cover bg-no-repeat"></section>
+      <div className="relative min-h-sectionBig md:min-h-sectionBigMd">
+        <Image
+          layout="fill"
+          className="object-center object-cover pointer-events-none"
+          src="/contact/image-section.png"
+          alt=""
+        />
+      </div>
     </Layout>
   );
 }
