@@ -15,9 +15,34 @@ export function HeroSection({
   image,
   mobileImage,
 }: React.PropsWithChildren<HeroSectionProps>): JSX.Element {
+  const [imageHeight, setImageHeight] = React.useState(560);
+  const mobileImageRef = React.useRef<HTMLDivElement>();
+  const desktopImageRef = React.useRef<HTMLDivElement>();
+
+  const handleImageLoad = (
+    event: React.SyntheticEvent<HTMLImageElement, Event>
+  ) => {
+    setImageHeight(event.currentTarget.height);
+  };
+
+  React.useEffect(() => {
+    const handleResize = () => {
+      if (mobileImageRef.current.clientHeight) {
+        setImageHeight(mobileImageRef.current.clientHeight);
+      } else if (desktopImageRef.current.clientHeight) {
+        setImageHeight(desktopImageRef.current.clientHeight);
+      }
+    };
+
+    window.addEventListener("resize", handleResize);
+    handleResize();
+
+    return () => window.removeEventListener("resize", handleResize);
+  }, []);
+
   return (
     <div
-      style={{ height: 560 }}
+      style={{ height: imageHeight }}
       className={`${className} px-20 pt-0 relative mb-20`}
     >
       <div className="absolute left-10 right-10 top-10" style={{ height: 500 }}>
@@ -29,18 +54,23 @@ export function HeroSection({
         <h1 className="text-white text-3xl absolute z-20 top-12 left-20">
           {title}
         </h1>
-        {mobileImage && (
-          <div className="sm:hidden">
-            <Image
-              src={mobileImage}
-              layout="responsive"
-              height={619}
-              width={457}
-            />
-          </div>
-        )}
-        <div className="hidden sm:block -mt-3">
-          <Image src={image} layout="responsive" width={1700} height={739} />
+        <div className="sm:hidden" ref={mobileImageRef}>
+          <Image
+            src={mobileImage}
+            layout="responsive"
+            height={619}
+            width={457}
+            onLoad={(event) => handleImageLoad(event)}
+          />
+        </div>
+        <div className="hidden sm:block -mt-3" ref={desktopImageRef}>
+          <Image
+            src={image}
+            layout="responsive"
+            width={1700}
+            height={739}
+            onLoad={(event) => handleImageLoad(event)}
+          />
         </div>
       </div>
     </div>
