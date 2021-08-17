@@ -8,6 +8,7 @@ import Image from "next/image";
 import useTranslation from "next-translate/useTranslation";
 import { FollowUsOnInstagramSection } from "../components/sections/follow-us-on-instagram-section";
 import { FlowingHeads } from "../components/flowing-heads";
+import { RandomHeadsSection } from "../components/sections/random-heads-section";
 
 export default function About() {
   const { t } = useTranslation("common");
@@ -17,17 +18,15 @@ export default function About() {
       <HeroSection
         className="bg-green"
         title={t("pages.about.page_title")}
-        image="/about-us-hero.png"
-        mobileImage="/about-us-hero-xs.png"
+        image="/about/about-us-hero.png"
+        mobileImage="/about/about-us-hero-xs.png"
       />
 
-      <h2 className="font-display text-2xl text-purple-dark py-10 sm:text-5xl text-center">
-        Upcrate – The Story of Captain Crate and his subscription crate
-      </h2>
+      <RandomHeadsSection />
 
       <section className="grid md:grid-cols-2">
         <Image
-          src="/about-us-1.jpg"
+          src="/about/about-us-1.png"
           alt=""
           layout="responsive"
           width={938}
@@ -38,20 +37,19 @@ export default function About() {
             Captain Crate…
           </h3>
           <p className="mt-8 text-xl">
-            Captain Crate, an internationally acclaimed art-loving sailor , has
-            located the most well-known pens and art supplies factories around
-            the world. During his years of travel he built up long-term
-            relationships with all manufacturers…
+            has gotten to know a wide variety of art materials and their
+            manufacturers on his travels across the seven seas. He is always
+            looking for new connections and treasures for you - his art crew.
           </p>
 
           <small className="mt-16">
             Artwork by{" "}
             <a
-              href="https://instagram.com/karlon.sardin"
+              href="https://instagram.com/thingby_diana"
               target="_blank"
               rel="noopener noreferrer"
             >
-              @karlon.sardin
+              @thingby_diana
             </a>
           </small>
         </div>
@@ -82,7 +80,7 @@ export default function About() {
         </div>
         <div>
           <Image
-            src="/about-us-2.jpg"
+            src="/about/about-us-2.jpg"
             alt=""
             layout="responsive"
             width={938}
@@ -93,7 +91,7 @@ export default function About() {
       <section className="grid md:grid-cols-2">
         <div>
           <Image
-            src="/about-us-3.jpg"
+            src="/about/about-us-3.jpg"
             alt=""
             layout="responsive"
             width={938}
@@ -126,7 +124,7 @@ export default function About() {
         </div>
       </section>
       <section className="flex flex-col-reverse md:grid md:grid-cols-2">
-        <div className="bg-purple-lightest text-center text-purple-dark flex flex-col justify-center content-center p-12 sm:p-24 text-2xl">
+        <div className="bg-purple-lightest text-center text-purple-dark flex flex-col justify-center content-center p-12 sm:p-16 text-2xl">
           <h3 className="text-2xl sm:text-5xl text-purple-dark font-display">
             behind the scenes
           </h3>
@@ -153,7 +151,7 @@ export default function About() {
         </div>
         <div>
           <Image
-            src="/about-us-4.jpg"
+            src="/about/about-us-4.png"
             alt=""
             layout="responsive"
             width={938}
@@ -182,7 +180,7 @@ export default function About() {
 
       <section>
         <Image
-          src="/about-us-5.jpg"
+          src="/about/about-us-5.jpg"
           layout="responsive"
           width={1920}
           height={768}

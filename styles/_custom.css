@@ -14,18 +14,18 @@
 }
 
 .accordion-kink:before {
-   content: '';
-   position: absolute;
-   left: 4rem;
-   top: -50px;
-   width: 0px;
-   height: 0px;
-   border-right: 50px solid transparent;
-   border-bottom: 50px solid currentColor;
+  content: "";
+  position: absolute;
+  left: 4rem;
+  top: -50px;
+  width: 0px;
+  height: 0px;
+  border-right: 50px solid transparent;
+  border-bottom: 50px solid currentColor;
 }
 
 .accordion-kink:after {
-  content: '';
+  content: "";
   position: absolute;
   left: 4.5rem;
   top: -30px;
@@ -39,7 +39,7 @@
   .accordion-kink:before {
     left: 5rem;
   }
-  
+
   .accordion-kink:after {
     left: 5.5rem;
   }
