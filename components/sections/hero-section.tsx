@@ -13,7 +13,7 @@ export function HeroSection({
   className,
   title,
   image,
-  mobileImage,
+  mobileImage = image,
 }: React.PropsWithChildren<HeroSectionProps>): JSX.Element {
   const [imageHeight, setImageHeight] = React.useState(560);
   const mobileImageRef = React.useRef<HTMLDivElement>();

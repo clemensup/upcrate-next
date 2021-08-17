@@ -1,29 +1,44 @@
 import Image from "next/image";
 import React from "react";
+import { addMember } from "../../utils/mailchimp-add-member";
 import { Caret } from "../elements/svg";
 import { PensAndBrushesSvg } from "../elements/svg/pens-and-brushes";
 
 export function NewsletterSection({ children }: React.PropsWithChildren<{}>) {
   const [email, setEmail] = React.useState("");
   const [hasError, setHasError] = React.useState(false);
+  const [isLoading, setIsLoading] = React.useState(false);
+  const [formStatus, setFormStatus] = React.useState<"success" | undefined>(
+    undefined
+  );
 
   const onChange = (event) => {
     setHasError(false);
     setEmail(event.target.value);
+    setFormStatus(undefined);
   };
 
-  const onSubmit = (event) => {
+  const onSubmit = async (event) => {
     event.preventDefault();
     setHasError(false);
+    setIsLoading(true);
 
     if (new RegExp(/^[^\s@]+@[^\s@]+\.[^\s@]+$/).test(email)) {
-      // TODO: mailchimp
-      console.log("send mail");
+      const response = await addMember(email);
+
+      if (response.data) {
+        setIsLoading(false);
+        return setFormStatus("success");
+      }
+
+      setHasError(true);
+      setIsLoading(false);
 
       return;
     }
 
     setHasError(true);
+    setIsLoading(false);
   };
 
   return (
@@ -54,50 +69,64 @@ export function NewsletterSection({ children }: React.PropsWithChildren<{}>) {
             />
           </svg>
           <div className="z-20">
-            <h4 className="text-purple-dark text-3xl md:text-5xl md:max-w-4xl text-center mx-auto font-display text-center">
-              Subscribe to our newsletter for a 15% discount!
-            </h4>
-            <p className="font-bold md:mt-10">
-              - Be among the first to hear about new special offers
-            </p>
-            <p className="font-bold">- Receive exclusive coupon codes </p>
-
-            <form
-              className="md:max-w-md md:mt-10 flex mx-auto flex-col"
-              onSubmit={onSubmit}
-              noValidate
-            >
-              <input
-                type="email"
-                className="font-normal text-base p-4"
-                name="email"
-                value={email}
-                onChange={onChange}
-                placeholder="Enter your email adress"
-              />
-              {hasError && (
-                <p className="text-white text-base bg-pink mt-2">
-                  Please enter a valid email address.
+            {!formStatus && (
+              <>
+                <h4 className="text-purple-dark text-3xl md:text-5xl md:max-w-4xl text-center mx-auto font-display text-center">
+                  Subscribe to our newsletter for a 15% discount!
+                </h4>
+                <p className="font-bold md:mt-10">
+                  - Be among the first to hear about new special offers
                 </p>
-              )}
-              <button
-                type="submit"
-                className="z-30 font-display p-3 pt-2 pb-3 md:text-3xl inline-flex items-center relative mt-5 bg-green-darker hover:bg-green-dark text-white px-10 mx-auto"
-              >
-                Join Email List
-                <span className="inline-block ml-4">
-                  <Caret />
-                </span>
-              </button>
+                <p className="font-bold">- Receive exclusive coupon codes </p>
+              </>
+            )}
 
-              <p className="text-base mt-5 z-30">
-                By entering your email address, you agree to the terms of this{" "}
-                <a href="/privacy" className="underline">
-                  privacy policy
-                </a>
-                .
-              </p>
-            </form>
+            {!formStatus && (
+              <form
+                className="md:max-w-md md:mt-10 flex mx-auto flex-col"
+                onSubmit={onSubmit}
+                noValidate
+              >
+                <input
+                  type="email"
+                  className="font-normal text-base p-4"
+                  name="email"
+                  value={email}
+                  onChange={onChange}
+                  placeholder="Enter your email adress"
+                />
+                {hasError && (
+                  <p className="text-white text-base bg-pink mt-2">
+                    Please enter a valid email address.
+                  </p>
+                )}
+                <button
+                  type="submit"
+                  className="z-30 font-display p-3 pt-2 pb-3 md:text-3xl inline-flex items-center relative mt-5 bg-green-darker hover:bg-green-dark text-white px-10 mx-auto"
+                >
+                  {isLoading ? "Sending..." : "Join Email List"}
+                  <span className="inline-block ml-4">
+                    <Caret />
+                  </span>
+                </button>
+
+                <p className="text-base mt-5 z-30">
+                  By entering your email address, you agree to the terms of this{" "}
+                  <a href="/privacy" className="underline">
+                    privacy policy
+                  </a>
+                  .
+                </p>
+              </form>
+            )}
+
+            {formStatus === "success" && (
+              <div className="text-3xl md:text-6xl text-center text-white font-display pt-10 pb-20 max-w-4xl mx-auto">
+                Thank you.
+                <br />
+                We will answer you as soon as we have finished the artwork
+              </div>
+            )}
             <div className="absolute left-0 right-0 -bottom-36 flex justify-center z-10">
               <PensAndBrushesSvg />
             </div>

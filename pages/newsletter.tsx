@@ -1,6 +1,7 @@
 import Image from "next/image";
 import {
   Caret,
+  HeroSection,
   Layout,
   SubscribeNowSection,
   UnboxYourCreativitySection,
@@ -11,8 +12,11 @@ import { UpcrateAsGiftSection } from "../components/sections/upcrate-as-a-gift-s
 export default function Newsletter() {
   return (
     <Layout>
-      TODO: HERO SECTION
-      <img src="/newsletter/hero-image.png" />
+      <HeroSection
+        className="bg-purple"
+        title={"Newsletter"}
+        image="/newsletter/hero-image.png"
+      />
       <NewsletterSection />
       <div className="relative min-h-sectionBig md:min-h-sectionBigMd mb-2">
         <Image
