@@ -1,45 +1,19 @@
 import Image from "next/image";
 import React from "react";
-import { addMember } from "../../utils/mailchimp-add-member";
+import { useMailchimpForm } from "../../hooks/use-mailchimp-form";
 import { Caret } from "../elements/svg";
 import { PensAndBrushesSvg } from "../elements/svg/pens-and-brushes";
 
 export function NewsletterSection({ children }: React.PropsWithChildren<{}>) {
-  const [email, setEmail] = React.useState("");
-  const [hasError, setHasError] = React.useState(false);
-  const [isLoading, setIsLoading] = React.useState(false);
-  const [formStatus, setFormStatus] = React.useState<"success" | undefined>(
-    undefined
-  );
-
-  const onChange = (event) => {
-    setHasError(false);
-    setEmail(event.target.value);
-    setFormStatus(undefined);
-  };
-
-  const onSubmit = async (event) => {
-    event.preventDefault();
-    setHasError(false);
-    setIsLoading(true);
-
-    if (new RegExp(/^[^\s@]+@[^\s@]+\.[^\s@]+$/).test(email)) {
-      const response = await addMember(email);
-
-      if (response.data) {
-        setIsLoading(false);
-        return setFormStatus("success");
-      }
-
-      setHasError(true);
-      setIsLoading(false);
-
-      return;
-    }
-
-    setHasError(true);
-    setIsLoading(false);
-  };
+  const {
+    email,
+    terms,
+    hasError,
+    isLoading,
+    formStatus,
+    handleSubmit,
+    handleChange,
+  } = useMailchimpForm();
 
   return (
     <section className="text-center text-purple-dark pt-6 pb-6 md:px-10 md:px-32 md:pt-20 md:pb-24">
@@ -84,7 +58,7 @@ export function NewsletterSection({ children }: React.PropsWithChildren<{}>) {
             {!formStatus && (
               <form
                 className="md:max-w-md md:mt-10 flex mx-auto flex-col"
-                onSubmit={onSubmit}
+                onSubmit={handleSubmit}
                 noValidate
               >
                 <input
@@ -92,14 +66,35 @@ export function NewsletterSection({ children }: React.PropsWithChildren<{}>) {
                   className="font-normal text-base p-4"
                   name="email"
                   value={email}
-                  onChange={onChange}
+                  onChange={handleChange}
                   placeholder="Enter your email adress"
                 />
+
+                <label className="mb-3 flex gap-4 items-center cursor-pointer text-base">
+                  <input
+                    type="checkbox"
+                    name="terms"
+                    checked={terms}
+                    onChange={handleChange}
+                  />{" "}
+                  <span>
+                    I have read and agree to the{" "}
+                    <a
+                      className="underline hover:bg-green-darker"
+                      href="/terms-and-conditions"
+                      target="_blank"
+                    >
+                      terms & conditions
+                    </a>
+                  </span>
+                </label>
+
                 {hasError && (
                   <p className="text-white text-base bg-pink mt-2">
-                    Please enter a valid email address.
+                    Please fill out all fields
                   </p>
                 )}
+
                 <button
                   type="submit"
                   className="z-30 font-display p-3 pt-2 pb-3 md:text-3xl inline-flex items-center relative mt-5 bg-green-darker hover:bg-green-dark text-white px-10 mx-auto"

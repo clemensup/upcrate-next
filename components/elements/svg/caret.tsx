@@ -12,7 +12,7 @@ export function Caret() {
         d="M304.22,3262.3l11.445,11.445-11.746,11.746"
         transform="translate(-301.444 -3259.823)"
         fill="none"
-        stroke="#fff"
+        stroke="currentColor"
         strokeMiterlimit="10"
         strokeWidth="7"
       />

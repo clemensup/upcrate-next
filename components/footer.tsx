@@ -1,5 +1,6 @@
 import Image from "next/image";
 import { CaptainCrateSvg } from "./elements/svg/cpt-crate-svg";
+import { FooterNewsletterForm } from "./footer-newsletter-form";
 
 export function Footer(): JSX.Element {
   return (
@@ -44,31 +45,8 @@ export function Footer(): JSX.Element {
           <Image src="/pen.svg" width="100%" height="auto" />
         </div>
         <div className="md:col-span-2 flex flex-col justify-between">
-          <div>
-            <h4 className="text-2xl mb-4">
-              Join our mailing list to get updates on special offers, the art
-              crew and more!
-            </h4>
-            <form action="">
-              <label className="mb-3 flex gap-4 items-center cursor-pointer">
-                <input type="checkbox" name="" id="" className="" />{" "}
-                <span>
-                  I have read and agree to the{" "}
-                  <a
-                    className="underline hover:text-pink"
-                    href="/terms-and-conditions"
-                  >
-                    terms & conditions
-                  </a>
-                </span>
-              </label>
-              <input
-                type="email"
-                placeholder="Your e-mail address"
-                className="w-full p-4 text-purple-dark"
-              />
-            </form>
-          </div>
+          <FooterNewsletterForm />
+
           <p className="text-white text-2xl">
             get support here
             <br />
