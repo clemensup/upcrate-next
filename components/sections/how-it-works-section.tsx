@@ -4,7 +4,6 @@ import { RadialGradient } from "../elements/radial-gradient";
 export function HowItWorksSection() {
   return (
     <section className="text-center text-purple-dark bg-white pt-6 pb-6 px-10 md:pt-20 md:pb-24 relative overflow-hidden">
-      <RadialGradient className="bg-purple" />
       <div className="z-10 relative text-purple-dark">
         <h3 className="font-display text-purple-dark text-2xl md:text-5xl">
           How it works
@@ -117,6 +116,8 @@ export function HowItWorksSection() {
           </div>
         </div>
       </div>
+      <RadialGradient className="bg-purple" />
+      <RadialGradient className="bg-green" variant="center" />
     </section>
   );
 }

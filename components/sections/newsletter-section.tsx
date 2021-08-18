@@ -24,8 +24,9 @@ export function NewsletterSection({ children }: React.PropsWithChildren<{}>) {
         <div
           className={`md:max-w-6xl p-5 md:p-10 py-10 mx-auto md:mt-12 md:pt-32 md:pb-20 text-purple-dark text-xl md:text-3xl bg-green md:rounded md:px-20 relative mb-20 ${
             hasError ? "bg-pink" : ""
-          }`}
+          } relative overflow-hidden`}
         >
+          <RadialGradient className="bg-purple" variant="top-left" />
           <div className="p-10 relative border-l-2 border-b-2 border-white border-r-2">
             <svg
               xmlns="http://www.w3.org/2000/svg"
@@ -133,41 +134,44 @@ export function NewsletterSection({ children }: React.PropsWithChildren<{}>) {
           </div>
         </div>
 
-        <div className="mx-5 mb-10 md:mb-0 md:max-w-6xl mx-auto px-10">
-          <h3 className="font-display text-2xl md:text-5xl md:mt-48 block">
-            Advantages of the newsletter subscription:
-          </h3>
+        <div className="mx-5 mb-10 md:mb-0 md:max-w-6xl mx-auto px-10 relative">
+          <RadialGradient className="bg-orange w-full" variant="center-xl" />
+          <div className="z-10 relative text-purple-dark">
+            <h3 className="font-display text-2xl md:text-5xl md:mt-48 block">
+              Advantages of the newsletter subscription:
+            </h3>
 
-          <div className="md:flex gap-10 md:gap-20 justify-center">
-            <div>
-              <Image
-                src="/newsletter/advantage01.png"
-                width={332}
-                height={332}
-              />
-              <p className="text-2xl font-bold text-center">
-                Be the first to know about special offers
-              </p>
-            </div>
-            <div>
-              <Image
-                src="/newsletter/advantage02.png"
-                width={332}
-                height={332}
-              />
-              <p className="text-2xl font-bold text-center">
-                Receive exclusive discount codes for our shop
-              </p>
-            </div>
-            <div>
-              <Image
-                src="/newsletter/advantage03.png"
-                width={332}
-                height={332}
-              />
-              <p className="text-2xl font-bold text-center">
-                Find out about new events for the art crew!
-              </p>
+            <div className="md:flex gap-10 md:gap-20 justify-center">
+              <div>
+                <Image
+                  src="/newsletter/advantage01.png"
+                  width={332}
+                  height={332}
+                />
+                <p className="text-2xl font-bold text-center">
+                  Be the first to know about special offers
+                </p>
+              </div>
+              <div>
+                <Image
+                  src="/newsletter/advantage02.png"
+                  width={332}
+                  height={332}
+                />
+                <p className="text-2xl font-bold text-center">
+                  Receive exclusive discount codes for our shop
+                </p>
+              </div>
+              <div>
+                <Image
+                  src="/newsletter/advantage03.png"
+                  width={332}
+                  height={332}
+                />
+                <p className="text-2xl font-bold text-center">
+                  Find out about new events for the art crew!
+                </p>
+              </div>
             </div>
           </div>
         </div>

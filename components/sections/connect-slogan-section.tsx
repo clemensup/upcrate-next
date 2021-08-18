@@ -1,13 +1,17 @@
 import React from "react";
+import { RadialGradient } from "../elements/radial-gradient";
 import { CaptainCrateSvg } from "../elements/svg";
 
 export function ConnectSloganSection({
   children,
 }: React.PropsWithChildren<{}>) {
   return (
-    <section className="min-h-sectionSmall md:min-h-sectionSmallMd bg-purple text-center flex justify-center flex-col items-center gap-10 pt-32 pb-20">
-      {children}
-      <CaptainCrateSvg variant="signature" />
+    <section className="min-h-sectionSmall md:min-h-sectionSmallMd bg-purple pt-32 pb-20 relative overflow-hidden">
+      <div className="z-10 relative text-center flex justify-center flex-col items-center gap-10">
+        {children}
+        <CaptainCrateSvg variant="signature" />
+      </div>
+      <RadialGradient className="bg-green" variant="center" />
     </section>
   );
 }

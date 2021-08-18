@@ -49,21 +49,27 @@ export function WhyUpcrateSection() {
           </div>
         </div>
 
-        <h3 className="font-display text-purple-dark text-2xl md:text-5xl md:mt-20">
-          What’s inside?
-        </h3>
-        <p>
-          Hop on board to discover amazing art treasures in a monthly
-          subscription, inspiring you to create.
-        </p>
+        <div className="relative max-w-6xl mx-auto">
+          <div className="z-10 relative text-purple-dark">
+            <h3 className="font-display text-purple-dark text-2xl md:text-5xl md:mt-20">
+              What’s inside?
+            </h3>
+            <p>
+              Hop on board to discover amazing art treasures in a monthly
+              subscription, inspiring you to create.
+            </p>
 
-        <CaptainCrateSvg variant="head-only" />
-        <div className="image-container">
-          <Image
-            className="image"
-            src="/why-upcrate/how-to.png"
-            layout="fill"
-          />
+            <CaptainCrateSvg variant="head-only" />
+            <div className="image-container">
+              <Image
+                className="image"
+                src="/why-upcrate/how-to.png"
+                layout="fill"
+              />
+            </div>
+          </div>
+          <RadialGradient className="bg-orange -mt-64" variant="center" />
+          <RadialGradient className="bg-orange mt-32" variant="center" />
         </div>
 
         <div>

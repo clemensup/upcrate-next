@@ -19,6 +19,7 @@ import { WhatTheArtCrewSaysSection } from "../components/sections/what-the-artcr
 import { WhyUpcrateSection } from "../components/sections/why-upcrate-section";
 import { FormerCratesInARowSection } from "../components/sections/former-crates-in-a-row-section";
 import { UnboxYourCreativitySvg } from "../components/elements/svg/unbox-your-creativity";
+import { RadialGradient } from "../components/elements/radial-gradient";
 
 export default function Home() {
   return (
@@ -31,13 +32,18 @@ export default function Home() {
       <FlowingHeads className="bg-green-dark" />
       <ImageSection variant="small" bg="cpt-in-forest" />
       <WhatTheArtCrewSaysSection />
-      <section className="hidden md:flex flex-col bg-purple justify-center items-center py-44">
-        <CaptainCrateSvg variant="head-only" width={100} />
-        <UnboxYourCreativitySvg />
-        <img
-          src="/home/unbox-your-creativity/unbox-box.png"
-          className="-my-44"
-        />
+      <section className="hidden md:flex flex-col bg-purple justify-center items-center py-44 relative overflow-hidden">
+        <RadialGradient className="bg-pink" variant="center" />
+        <RadialGradient className="bg-orange" variant="bottom-right" />
+        <RadialGradient className="bg-orange" variant="top-left" />
+        <div className="z-10 relative text-purple-dark">
+          <CaptainCrateSvg variant="head-only" width={100} />
+          <UnboxYourCreativitySvg />
+          <img
+            src="/home/unbox-your-creativity/unbox-box.png"
+            className="-my-44"
+          />
+        </div>
       </section>
       <ImageSection bg="leuchtturm" variant="medium" />
       <FlowingHeads className="bg-purple" />

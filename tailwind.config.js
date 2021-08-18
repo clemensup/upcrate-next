@@ -28,6 +28,9 @@ module.exports = {
       blur: {
         gradient: "120px",
       },
+      translate: {
+        gradient: "-50%",
+      },
       colors: {
         purple: {
           dark: "#372152",
