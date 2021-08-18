@@ -1,6 +1,7 @@
 import Image from "next/image";
 import { Button, Layout, SubscribeNowSection } from "../components";
 import { Countdown } from "../components/countdown";
+import { RadialGradient } from "../components/elements/radial-gradient";
 import { FlowingHeads } from "../components/flowing-heads";
 import { JoinTheArtCrewSection } from "../components/sections/join-the-art-crew-section";
 import { SubscriptionInfoSection } from "../components/sections/subscription-info-section";
@@ -10,12 +11,15 @@ export default function Subscriptions() {
   return (
     <Layout>
       <SubscribeNowSection />
-      <section className="text-center md:pt-16 md:pb-20">
-        <h3 className="font-display text-purple-dark text-2xl md:text-5xl">
-          Time to subscribe for <br />
-          our next upcrate
-        </h3>
-        <Countdown />
+      <section className="text-center md:pt-16 md:pb-20 relative overflow-hidden">
+        <RadialGradient className="bg-orange" />
+        <div className="z-10 relative text-purple-dark">
+          <h3 className="font-display text-purple-dark text-2xl md:text-5xl">
+            Time to subscribe for <br />
+            our next upcrate
+          </h3>
+          <Countdown />
+        </div>
       </section>
       <JoinTheArtCrewSection />
       <FlowingHeads className="bg-green" />

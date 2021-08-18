@@ -9,7 +9,6 @@ export default function Faqs() {
         className="bg-rose"
         title={"FAQ"}
         image="/faqs/hero-image.png"
-        mobileImage="/about-us-hero-xs.png"
       />
       <FaqSection />
     </Layout>

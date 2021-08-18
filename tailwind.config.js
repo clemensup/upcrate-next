@@ -12,6 +12,9 @@ module.exports = {
       sectionSmall: "200px",
       sectionSmallMd: "460px",
     },
+    height: {
+      gradient: "500px",
+    },
     extend: {
       fontFamily: {
         bold: ["Neue Montreal Bold", "sans"],
@@ -21,6 +24,9 @@ module.exports = {
       fontSize: {
         xxs: ".5rem",
         countdown: "207px",
+      },
+      blur: {
+        gradient: "120px",
       },
       colors: {
         purple: {
@@ -79,4 +85,7 @@ module.exports = {
     },
   },
   plugins: [],
+  corePlugins: {
+    borderRadius: true,
+  },
 };

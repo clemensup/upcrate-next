@@ -2,16 +2,20 @@ import Image from "next/image";
 import React from "react";
 import { Layout } from "../components";
 import { ContactForm } from "../components/contact-form";
+import { RadialGradient } from "../components/elements/radial-gradient";
 
 export default function Contact() {
   return (
     <Layout>
-      <section className="p-10 md:p-20">
-        <h1 className="font-display text-purple-dark text-2xl md:text-5xl md:mt-20 text-center md:max-w-xl m-auto">
-          Contact
-        </h1>
+      <section className="p-10 md:p-10 relative overflow-hidden">
+        <RadialGradient className="bg-purple" />
+        <div className="z-10 relative text-purple-dark">
+          <h1 className="font-display text-purple-dark text-2xl md:text-5xl md:mt-20 text-center md:max-w-xl m-auto">
+            Contact
+          </h1>
 
-        <ContactForm />
+          <ContactForm />
+        </div>
       </section>
       <div className="relative min-h-sectionBig md:min-h-sectionBigMd">
         <Image

@@ -1,93 +1,97 @@
 import Image from "next/image";
+import { RadialGradient } from "../elements/radial-gradient";
 import { CaptainCrateSvg } from "../elements/svg";
 import { BattleSvg } from "../elements/svg/battle-svg";
 
 export function UpcrateBattleSection() {
   return (
-    <section className="min-h-sectionSmall md:min-h-sectionSmallMd text-center p-10 md:p-20">
-      <div className="md:mt-15 flex flex-col items-center">
-        <BattleSvg />
-        <h3 className="font-display text-purple-dark text-2xl md:text-5xl text-center">
-          #upcratebattle
-        </h3>
-        <p className="md:mt-5 text-purple-dark text-3xl">
-          Take part in our online challenges and get a chance to win great
-          prizes!
-          <br />
-          Every month a new topic awaits to inspire you!
-        </p>
-      </div>
-      <div className="md:flex align-center justify-center gap-20 md:text-xl text-purple-dark">
-        <div className="mt-10">
-          <h4 className="text-left mb-3">TOPIC: Colorless beauty</h4>
-          <Image
-            src="/home/battle/battle-01.png"
-            layout="responsive"
-            width={330}
-            height={330}
-          />
-          <div className="flex items-end justify-between">
-            <div className="text-bold">#upcrate19</div>
-            <a
-              className="text-sm"
-              href="https://www.instagram.com/jj8.kaiser.art/"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              @jj8.kaiser.art
-            </a>
-          </div>
-        </div>
-        <div className="mt-10">
-          <h4 className="text-left mb-3">TOPIC: Crystal clear</h4>
-          <Image
-            src="/home/battle/battle-02.png"
-            layout="responsive"
-            width={330}
-            height={330}
-          />
-          <div className="flex items-end justify-between">
-            <div className="text-bold">#upcrate16</div>
-            <a
-              className="text-sm"
-              href="https://www.instagram.com/@trinkety/"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              @trinkety
-            </a>
-          </div>
-        </div>
-        <div className="mt-10">
-          <h4 className="text-left mb-3">TOPIC: Magical fantasy</h4>
-          <Image
-            src="/home/battle/battle-03.png"
-            layout="responsive"
-            width={330}
-            height={330}
-          />
-          <div className="flex items-end justify-between">
-            <div className="text-bold">#upcrate11</div>
-            <a
-              className="text-sm"
-              href="https://www.instagram.com/rangie_art/"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              @rangie_art
-            </a>
-          </div>
-        </div>
-      </div>
-      <div className="mt-20 md:mt-48 text-center flex flex-col items-center justify-center text-purple-dark">
-        <CaptainCrateSvg variant="default" />
-        <div className="flex gap-4 justify-between p-10 border-1">
-          <img src="/home/battle/win-prizes.png" alt="" />
-          <p className="text-left">
-            <b>Win great prizes every month</b>
+    <section className="min-h-sectionSmall md:min-h-sectionSmallMd text-center p-10 md:p-20 relative overflow-hidden">
+      <RadialGradient className="bg-green" />
+      <div className="z-10 relative text-purple-dark">
+        <div className="md:mt-15 flex flex-col items-center">
+          <BattleSvg />
+          <h3 className="font-display text-purple-dark text-2xl md:text-5xl text-center">
+            #upcratebattle
+          </h3>
+          <p className="md:mt-5 text-purple-dark text-3xl">
+            Take part in our online challenges and get a chance to win great
+            prizes!
             <br />
-            E.G. 60 Rembrandt Soft Pastels
+            Every month a new topic awaits to inspire you!
           </p>
+        </div>
+        <div className="md:flex align-center justify-center gap-20 md:text-xl text-purple-dark">
+          <div className="mt-10">
+            <h4 className="text-left mb-3">TOPIC: Colorless beauty</h4>
+            <Image
+              src="/home/battle/battle-01.png"
+              layout="responsive"
+              width={330}
+              height={330}
+            />
+            <div className="flex items-end justify-between">
+              <div className="text-bold">#upcrate19</div>
+              <a
+                className="text-sm"
+                href="https://www.instagram.com/jj8.kaiser.art/"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                @jj8.kaiser.art
+              </a>
+            </div>
+          </div>
+          <div className="mt-10">
+            <h4 className="text-left mb-3">TOPIC: Crystal clear</h4>
+            <Image
+              src="/home/battle/battle-02.png"
+              layout="responsive"
+              width={330}
+              height={330}
+            />
+            <div className="flex items-end justify-between">
+              <div className="text-bold">#upcrate16</div>
+              <a
+                className="text-sm"
+                href="https://www.instagram.com/@trinkety/"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                @trinkety
+              </a>
+            </div>
+          </div>
+          <div className="mt-10">
+            <h4 className="text-left mb-3">TOPIC: Magical fantasy</h4>
+            <Image
+              src="/home/battle/battle-03.png"
+              layout="responsive"
+              width={330}
+              height={330}
+            />
+            <div className="flex items-end justify-between">
+              <div className="text-bold">#upcrate11</div>
+              <a
+                className="text-sm"
+                href="https://www.instagram.com/rangie_art/"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                @rangie_art
+              </a>
+            </div>
+          </div>
+        </div>
+        <div className="mt-20 md:mt-48 text-center flex flex-col items-center justify-center text-purple-dark">
+          <CaptainCrateSvg variant="default" />
+          <div className="flex gap-4 justify-between p-10 border-1">
+            <img src="/home/battle/win-prizes.png" alt="" />
+            <p className="text-left">
+              <b>Win great prizes every month</b>
+              <br />
+              E.G. 60 Rembrandt Soft Pastels
+            </p>
+          </div>
         </div>
       </div>
     </section>

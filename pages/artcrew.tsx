@@ -27,8 +27,6 @@ export default function ArtCrew() {
         image="/artcrew-hero.png"
         mobileImage="/artcrew-hero-xs.png"
       />
-      <FlowingHeads className="bg-purple" />
-      <div className="min-h-sectionSmall md:min-h-sectionSmallMd bg-artcrew-image-section01 bg-center bg-cover bg-no-repeat"></div>
       <NewsletterSection>
         <h3 className="font-display text-purple-dark text-2xl md:text-5xl mt-5 md:mt-20 text-center m-auto">
           Upcrate – We draw as one
@@ -41,6 +39,10 @@ export default function ArtCrew() {
           art crew.
         </p>
       </NewsletterSection>
+      <FlowingHeads className="bg-purple" />
+      <div className="min-h-sectionSmall md:min-h-sectionSmallMd bg-artcrew-image-section01 bg-center bg-cover bg-no-repeat"></div>
+      TODO: TIME FOR ART!
+      <br />
       TODO: Invite friends to the art crew and save money together!
       <UpcrateAsGiftSection />
       <UpcrateBattleSection />

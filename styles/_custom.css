@@ -44,3 +44,27 @@
     left: 5.5rem;
   }
 }
+
+.color-gradient {
+  position: absolute;
+  width: 40%;
+  height: 500px;
+  left: 30%;
+  border-radius: 100%;
+  filter: blur(120px);
+}
+
+.color-gradient__top {
+  top: -300px;
+}
+
+/* @media screen {
+  position: absolute;
+  top: -400px;
+  width: 80%;
+  height: 500px;
+  left: 10%;
+  right: 0;
+  border-radius: 100%;
+  filter: blur(120px);
+} */

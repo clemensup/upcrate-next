@@ -15,7 +15,11 @@ export default function HowItWorks() {
     <Layout>
       <HeroSliderSection />
       <JoinTheArtCrewSection />
-      <ImageSection bg="how-it-works/image-section" variant="xs" />
+      <ImageSection
+        bg="how-it-works/image-section01"
+        variant="xs"
+        className="my-2"
+      />
       <HowItWorksSection />
       <FlowingHeads className="bg-green-dark" />
       <WhyUpcrateSection />
