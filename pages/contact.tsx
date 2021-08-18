@@ -16,6 +16,7 @@ export default function Contact() {
 
           <ContactForm />
         </div>
+        <RadialGradient className="bg-orange" variant="bottom-right" />
       </section>
       <div className="relative min-h-sectionBig md:min-h-sectionBigMd">
         <Image

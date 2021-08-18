@@ -1,12 +1,13 @@
 import useTranslation from "next-translate/useTranslation";
 import { Layout } from "../components";
+import { RadialGradient } from "../components/elements/radial-gradient";
 
 export default function Imprint() {
   const { t } = useTranslation("common");
 
   return (
     <Layout>
-      <section className="text-center md:p-20 text-purple-dark">
+      <section className="text-center md:p-20 text-purple-dark relative overflow-hidden">
         <h1 className="text-6xl font-display">
           {t("pages.imprint.page_title")}
         </h1>
@@ -27,6 +28,8 @@ export default function Imprint() {
           <br />
           VAT Id. No.: DE257896061
         </address>
+
+        <RadialGradient className="bg-orange" variant="bottom-right" />
       </section>
     </Layout>
   );

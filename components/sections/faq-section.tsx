@@ -121,6 +121,7 @@ export function FaqSection() {
           />
         ))}
       </div>
+      <RadialGradient className="bg-green" variant="bottom-right" />
     </section>
   );
 }
