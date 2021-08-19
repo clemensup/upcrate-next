@@ -144,7 +144,7 @@ export function NewsletterSection({ children }: React.PropsWithChildren<{}>) {
             <div className="md:flex gap-10 md:gap-20 justify-center">
               <div>
                 <Image
-                  src="/newsletter/advantage01.png"
+                  src="/newsletter/advantage01.gif"
                   width={332}
                   height={332}
                 />
@@ -154,7 +154,7 @@ export function NewsletterSection({ children }: React.PropsWithChildren<{}>) {
               </div>
               <div>
                 <Image
-                  src="/newsletter/advantage02.png"
+                  src="/newsletter/advantage02.gif"
                   width={332}
                   height={332}
                 />
@@ -164,7 +164,7 @@ export function NewsletterSection({ children }: React.PropsWithChildren<{}>) {
               </div>
               <div>
                 <Image
-                  src="/newsletter/advantage03.png"
+                  src="/newsletter/advantage03.gif"
                   width={332}
                   height={332}
                 />
