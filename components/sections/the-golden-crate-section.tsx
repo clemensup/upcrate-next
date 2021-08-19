@@ -24,9 +24,9 @@ export function TheGoldenCrateSection() {
               In return you will receive a coupon worth 50 € for our shop.
             </p>
 
-            <div className="flex gap-6 md:gap-20 flex-1 items-end mt-5  md:mt-0">
+            <div className="flex gap-6 md:gap-20 flex-1 items-end mt-5 md:mt-20">
               <a
-                className="w-full"
+                className="w-max-content flex flex-col"
                 href="https://instagram.com/jj8.kaiser.art"
                 target="_blank"
                 rel="noopener noreferrer"
@@ -39,7 +39,7 @@ export function TheGoldenCrateSection() {
                 />
               </a>
               <a
-                className="w-full"
+                className="w-max-content flex flex-col"
                 href="https://instagram.com/hawklbood"
                 target="_blank"
                 rel="noopener noreferrer"

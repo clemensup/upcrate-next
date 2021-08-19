@@ -1,7 +1,9 @@
 import Image from "next/image";
 import { RadialGradient } from "../elements/radial-gradient";
 import { CaptainCrateSvg } from "../elements/svg";
+import { BattleBorderSvg } from "../elements/svg/battle-border";
 import { BattleSvg } from "../elements/svg/battle-svg";
+import { ConnectSloganSection } from "./connect-slogan-section";
 
 export function UpcrateBattleSection() {
   return (
@@ -82,17 +84,87 @@ export function UpcrateBattleSection() {
             </div>
           </div>
         </div>
-        <div className="mt-20 md:mt-48 text-center flex flex-col items-center justify-center text-purple-dark">
-          <CaptainCrateSvg variant="default" />
-          <div className="flex gap-4 justify-between p-10 border-1">
-            <img src="/home/battle/win-prizes.png" alt="" />
-            <p className="text-left">
-              <b>Win great prizes every month</b>
-              <br />
-              E.G. 60 Rembrandt Soft Pastels
-            </p>
+        <div className="mt-20 md:mt-48 text-center flex flex-col items-center justify-center text-purple-dark relative">
+          <RadialGradient variant="center" className="bg-pink" />
+          <div className="hidden md:flex absolute -top-10 left-0 right-0 justify-center">
+            <BattleBorderSvg />
+          </div>
+
+          <div className="z-10">
+            <div className="md:flex gap-4 justify-between p-10 border-1">
+              <img src="/home/battle/win-prizes.png" alt="" />
+              <p className="text-left">
+                <b>Win great prizes every month</b>
+                <br />
+                E.G. 60 Rembrandt Soft Pastels
+              </p>
+            </div>
           </div>
         </div>
+
+        <div className="max-w-6xl mx-auto mt-20">
+          <h4 className="font-bold text-3xl">How to participate:</h4>
+          <div className="md:grid grid-cols-3 gap-10 mt-6">
+            <div className="mt-10 md:mt-0">
+              <Image
+                src="/upcrate-battle/how-to-01.png"
+                width={389}
+                height={311}
+              />
+              <div className="flex justify-between">
+                <span className="font-bold font-display text-5xl">1.</span>
+                Open the upcrate
+              </div>
+            </div>
+            <div className="mt-10 md:mt-0">
+              <Image
+                src="/upcrate-battle/how-to-02.png"
+                width={389}
+                height={311}
+              />
+              <div className="flex justify-between text-right">
+                <span className="font-bold font-display text-5xl">2.</span>
+                Cut out the battle card, find out about this month’s battle
+                theme and use the materials from the Upcrate for your piece.
+              </div>
+            </div>
+            <div className="mt-10 md:mt-0">
+              <Image
+                src="/upcrate-battle/how-to-03.png"
+                width={389}
+                height={311}
+              />
+              <div className="flex justify-between text-right">
+                <span className="font-bold font-display text-5xl">3.</span>
+                Take a photo with your art and the Battle Card and upload it to
+                Instagram using the hashtag #upcratebattle!
+              </div>
+            </div>
+          </div>
+        </div>
+        <section className="min-h-sectionSmall md:min-h-sectionSmallMd pt-32 mt-20 pb-20 relative">
+          <div className="z-10 relative text-center flex justify-center flex-col items-center gap-10">
+            <h4 className="text-3xl sm:text-5xl md:text-7xl text-white font-display text-purple-dark max-w-6xl">
+              Check out all the amazing #upcratebattle entries on{" "}
+              <a
+                href="https://instagram.com/upcrate/"
+                className="hover:underline"
+                target="_blank"
+              >
+                Instagram
+              </a>
+              !
+            </h4>
+            <a
+              href="https://instagram.com/upcrate/"
+              className="hover:underline"
+              target="_blank"
+            >
+              <Image src="/instagram.png" width={88} height={88} />
+            </a>
+          </div>
+          <RadialGradient className="bg-green" variant="center" />
+        </section>
       </div>
     </section>
   );

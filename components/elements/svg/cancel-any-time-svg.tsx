@@ -40,7 +40,7 @@ export function CancelAnyTimeSvg() {
             fill="none"
             stroke="#fff"
             stroke-miterlimit="10"
-            stroke-width="1.5"
+            strokeWidth="1.5"
           />
           <path
             id="Path_163"
@@ -50,7 +50,7 @@ export function CancelAnyTimeSvg() {
             fill="none"
             stroke="#fff"
             stroke-miterlimit="10"
-            stroke-width="3.214"
+            strokeWidth="3.214"
           />
           <path
             id="Path_164"
@@ -60,7 +60,7 @@ export function CancelAnyTimeSvg() {
             fill="none"
             stroke="#fff"
             stroke-miterlimit="10"
-            stroke-width="3.214"
+            strokeWidth="3.214"
           />
         </g>
         <g id="XGrboK" transform="translate(1260.909 724.28)">

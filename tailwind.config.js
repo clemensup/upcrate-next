@@ -26,7 +26,7 @@ module.exports = {
         countdown: "207px",
       },
       blur: {
-        gradient: "120px",
+        gradient: "100px",
       },
       translate: {
         gradient: "-50%",

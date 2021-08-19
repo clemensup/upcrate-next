@@ -67,31 +67,34 @@ export function ProfessionalHowToVideosSection() {
               </p>
             </div>
 
-            <div className="hidden font-display md:flex flex-col gap-5">
-              <p className="text-4xl">
-                Check out the
-                <br />
-                How-to-do videos
-                <br />
-                on YouTube
-              </p>
-              <a
-                href="https://www.youtube.com/channel/UCuBKFplxdLGbCKJaiKnHgcg"
-                target="_blank"
-              >
-                <Image
-                  src="/how-to-videos/youtube-logo.svg"
-                  width={81}
-                  height={56}
-                />
-              </a>
-              <a
-                href="https://www.youtube.com/channel/UCuBKFplxdLGbCKJaiKnHgcg"
-                target="_blank"
-                className="font-sans text-base"
-              >
-                {">> Click here <<"}
-              </a>
+            <div className="hidden md:block relative">
+              <RadialGradient className="bg-green" variant="center" />
+              <div className="z-10 font-display md:flex flex-col gap-5 ">
+                <p className="text-4xl">
+                  Check out the
+                  <br />
+                  How-to-do videos
+                  <br />
+                  on YouTube
+                </p>
+                <a
+                  href="https://www.youtube.com/channel/UCuBKFplxdLGbCKJaiKnHgcg"
+                  target="_blank"
+                >
+                  <Image
+                    src="/how-to-videos/youtube-logo.svg"
+                    width={81}
+                    height={56}
+                  />
+                </a>
+                <a
+                  href="https://www.youtube.com/channel/UCuBKFplxdLGbCKJaiKnHgcg"
+                  target="_blank"
+                  className="font-sans text-base"
+                >
+                  {">> Click here <<"}
+                </a>
+              </div>
             </div>
           </div>
           <div className="gap-5 md:gap-20 grid grid-cols-2 md:grid-cols-1 max-w-max order-3 md:order-3">
@@ -132,31 +135,34 @@ export function ProfessionalHowToVideosSection() {
               </div>
             </div>
           </div>
-          <div className="flex font-display md:hidden order-4 text-center text-purple-dark flex-col gap-5">
-            <p className="text-4xl">
-              Check out the
-              <br />
-              How-to-do videos
-              <br />
-              on YouTube
-            </p>
-            <a
-              href="https://www.youtube.com/channel/UCuBKFplxdLGbCKJaiKnHgcg"
-              target="_blank"
-            >
-              <Image
-                src="/how-to-videos/youtube-logo.svg"
-                width={81}
-                height={56}
-              />
-            </a>
-            <a
-              href="https://www.youtube.com/channel/UCuBKFplxdLGbCKJaiKnHgcg"
-              target="_blank"
-              className="font-sans text-base"
-            >
-              {">> Click here <<"}
-            </a>
+          <div className="flex font-display md:hidden order-4 text-center text-purple-dark gap-5 relative">
+            <RadialGradient className="bg-green" variant="center" />
+            <div className="z-10 flex flex-col">
+              <p className="text-4xl">
+                Check out the
+                <br />
+                How-to-do videos
+                <br />
+                on YouTube
+              </p>
+              <a
+                href="https://www.youtube.com/channel/UCuBKFplxdLGbCKJaiKnHgcg"
+                target="_blank"
+              >
+                <Image
+                  src="/how-to-videos/youtube-logo.svg"
+                  width={81}
+                  height={56}
+                />
+              </a>
+              <a
+                href="https://www.youtube.com/channel/UCuBKFplxdLGbCKJaiKnHgcg"
+                target="_blank"
+                className="font-sans text-base"
+              >
+                {">> Click here <<"}
+              </a>
+            </div>
           </div>
         </div>
       </div>

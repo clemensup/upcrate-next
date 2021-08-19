@@ -17,7 +17,7 @@ export function NewsletterSection({ children }: React.PropsWithChildren<{}>) {
   } = useMailchimpForm();
 
   return (
-    <section className="text-center text-purple-dark pt-6 pb-6 md:px-10 md:px-32 md:pt-20 md:pb-24 relative overflow-hidden">
+    <section className="text-center text-purple-dark pt-6 pb-6 md:px-10 md:px-32 md:pt-20 md:pb-24 relative overflow-hidden -mt-20 md:-mt-10">
       <RadialGradient className="bg-purple" />
       <div className="z-10 relative text-purple-dark">
         {children}

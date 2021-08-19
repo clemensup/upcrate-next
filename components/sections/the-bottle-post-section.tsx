@@ -34,7 +34,7 @@ export function TheBottlePostSection() {
                     width={500}
                     height={500}
                   />
-                  <div className="text-xs md:text-base">#upcrate20</div>
+                  <div className="text-xs md:text-xl">#upcrate20</div>
                 </a>
 
                 <a
@@ -47,7 +47,7 @@ export function TheBottlePostSection() {
                     width={500}
                     height={500}
                   />
-                  <div className="text-xs md:text-base">#upcrate19</div>
+                  <div className="text-xs md:text-xl">#upcrate19</div>
                 </a>
 
                 <a
@@ -60,7 +60,7 @@ export function TheBottlePostSection() {
                     width={500}
                     height={500}
                   />
-                  <div className="text-xs md:text-base">#upcrate16</div>
+                  <div className="text-xs md:text-xl">#upcrate16</div>
                 </a>
               </div>
             </div>
