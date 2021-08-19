@@ -78,6 +78,7 @@ module.exports = {
         "artcrew-image-section05": "url('/artcrew/image-section05.png')",
         "crates-hero": "url('/crates/hero-image.png')",
         "contact-image-section": "url('/contact/image-section.png')",
+        "many-heads": "url('/invite-friends/bg.svg')",
       }),
     },
   },

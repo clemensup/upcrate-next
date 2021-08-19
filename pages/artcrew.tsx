@@ -15,6 +15,7 @@ import { UpcrateAsGiftSection } from "../components/sections/upcrate-as-a-gift-s
 import { UpcrateBattleSection } from "../components/sections/upcrate-battle-section";
 import { ProfessionalHowToVideosSection } from "../components/sections/professional-howto-videos-section";
 import { NewsletterSection } from "../components/sections/newsletter-section";
+import { InviteFriendsSection } from "../components/sections/invite-friends-section";
 
 export default function ArtCrew() {
   const { t } = useTranslation("common");
@@ -42,8 +43,7 @@ export default function ArtCrew() {
       <FlowingHeads className="bg-purple" />
       <div className="min-h-sectionSmall md:min-h-sectionSmallMd bg-artcrew-image-section01 bg-center bg-cover bg-no-repeat"></div>
       TODO: TIME FOR ART!
-      <br />
-      TODO: Invite friends to the art crew and save money together!
+      <InviteFriendsSection />
       <UpcrateAsGiftSection />
       <UpcrateBattleSection />
       <div className="min-h-sectionSmall md:min-h-sectionSmallMd bg-artcrew-image-section02 bg-center bg-cover bg-no-repeat"></div>
