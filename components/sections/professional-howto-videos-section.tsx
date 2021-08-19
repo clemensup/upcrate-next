@@ -69,7 +69,7 @@ export function ProfessionalHowToVideosSection() {
 
             <div className="hidden md:block relative">
               <RadialGradient className="bg-green" variant="center" />
-              <div className="z-10 font-display md:flex flex-col gap-5 ">
+              <div className="z-10 font-display md:flex flex-col gap-5 relative">
                 <p className="text-4xl">
                   Check out the
                   <br />
