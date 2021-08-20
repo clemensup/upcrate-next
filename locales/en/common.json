@@ -141,6 +141,26 @@
       "title": "Featured artists we worked with",
       "text": "These are 4 of the many artists we have worked with in the past. Each of them come with their own unique styles, knowledge and preferences when it comes to art supplies. They curate the contents of their monthly box to make sure that all the materials work well together. Don’t forget to check them out and shower them in love!",
       "text_mobile": "These are 4 of the many artists we have worked with in the past. Each of them come with their own unique styles, knowledge and preferences when it comes to art supplies. They curate the contents of their monthly box to make sure that all the materials work well together. Don’t forget to check them out and shower them in love!"
+    },
+    "upcrate_battle": {
+      "title": "#upcratebattle",
+      "subtitle": "Take part in our online challenges and get a chance to win great prizes!\nEvery month a new topic awaits to inspire you!",
+      "prize_example": "<1>Win great prizes every month</1>E.G. 60 Rembrandt Soft Pastels",
+      "how_to_participate": {
+        "title": "How to participate:",
+        "steps": [
+          {
+            "text": "Open the upcrate"
+          },
+          {
+            "text": "Cut out the battle card, find out about this month’s battle theme and use the materials from the Upcrate for your piece."
+          },
+          {
+            "text": "Take a photo with your art and the Battle Card and upload it to Instagram using the hashtag #upcratebattle!"
+          }
+        ]
+      },
+      "checkout_instagram": "Check out all the amazing #upcratebattle entries on Instagram!"
     }
   }
 }

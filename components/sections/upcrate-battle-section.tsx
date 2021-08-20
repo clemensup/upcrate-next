@@ -1,11 +1,13 @@
+import useTranslation from "next-translate/useTranslation";
 import Image from "next/image";
+import { FormattedText } from "../elements/formatted-text";
 import { RadialGradient } from "../elements/radial-gradient";
-import { CaptainCrateSvg } from "../elements/svg";
 import { BattleBorderSvg } from "../elements/svg/battle-border";
 import { BattleSvg } from "../elements/svg/battle-svg";
-import { ConnectSloganSection } from "./connect-slogan-section";
 
 export function UpcrateBattleSection() {
+  const { t } = useTranslation("common");
+
   return (
     <section className="min-h-sectionSmall md:min-h-sectionSmallMd text-center p-10 md:p-20 relative overflow-hidden">
       <RadialGradient className="bg-green" />
@@ -13,13 +15,10 @@ export function UpcrateBattleSection() {
         <div className="md:mt-15 flex flex-col items-center">
           <BattleSvg />
           <h3 className="font-display text-purple-dark text-2xl md:text-5xl text-center">
-            #upcratebattle
+            {t("sections.upcrate_battle.title")}
           </h3>
-          <p className="md:mt-5 text-purple-dark text-3xl">
-            Take part in our online challenges and get a chance to win great
-            prizes!
-            <br />
-            Every month a new topic awaits to inspire you!
+          <p className="md:mt-5 text-purple-dark text-3xl whitespace-pre-line">
+            {t("sections.upcrate_battle.text")}
           </p>
         </div>
         <div className="md:flex align-center justify-center gap-20 md:text-xl text-purple-dark">
@@ -94,16 +93,19 @@ export function UpcrateBattleSection() {
             <div className="md:flex gap-4 justify-between p-10 border-1">
               <img src="/home/battle/win-prizes.png" alt="" />
               <p className="text-left">
-                <b>Win great prizes every month</b>
-                <br />
-                E.G. 60 Rembrandt Soft Pastels
+                <FormattedText
+                  transKey="common:sections.upcrate_battle.prize_example"
+                  delimiter={[<b className="block font-bold" />]}
+                />
               </p>
             </div>
           </div>
         </div>
 
         <div className="max-w-6xl mx-auto mt-20">
-          <h4 className="font-bold text-3xl">How to participate:</h4>
+          <h4 className="font-bold text-3xl">
+            {t("sections.upcrate_battle.how_to_participate.title")}
+          </h4>
           <div className="md:grid grid-cols-3 gap-10 mt-6">
             <div className="mt-10 md:mt-0">
               <Image
@@ -113,7 +115,7 @@ export function UpcrateBattleSection() {
               />
               <div className="flex justify-between">
                 <span className="font-bold font-display text-5xl">1.</span>
-                Open the upcrate
+                {t("sections.upcrate_battle.how_to_participate.steps.0.text")}
               </div>
             </div>
             <div className="mt-10 md:mt-0">
@@ -124,8 +126,7 @@ export function UpcrateBattleSection() {
               />
               <div className="flex justify-between text-right">
                 <span className="font-bold font-display text-5xl">2.</span>
-                Cut out the battle card, find out about this month’s battle
-                theme and use the materials from the Upcrate for your piece.
+                {t("sections.upcrate_battle.how_to_participate.steps.1.text")}
               </div>
             </div>
             <div className="mt-10 md:mt-0">
@@ -136,8 +137,7 @@ export function UpcrateBattleSection() {
               />
               <div className="flex justify-between text-right">
                 <span className="font-bold font-display text-5xl">3.</span>
-                Take a photo with your art and the Battle Card and upload it to
-                Instagram using the hashtag #upcratebattle!
+                {t("sections.upcrate_battle.how_to_participate.steps.2.text")}
               </div>
             </div>
           </div>
@@ -145,15 +145,7 @@ export function UpcrateBattleSection() {
         <section className="min-h-sectionSmall md:min-h-sectionSmallMd pt-32 mt-20 pb-20 relative">
           <div className="z-10 relative text-center flex justify-center flex-col items-center gap-10">
             <h4 className="text-3xl sm:text-5xl md:text-7xl text-white font-display text-purple-dark max-w-6xl">
-              Check out all the amazing #upcratebattle entries on{" "}
-              <a
-                href="https://instagram.com/upcrate/"
-                className="hover:underline"
-                target="_blank"
-              >
-                Instagram
-              </a>
-              !
+              {t("sections.upcrate_battle.checkout_instagram")}
             </h4>
             <a
               href="https://instagram.com/upcrate/"
