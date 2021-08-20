@@ -91,16 +91,8 @@ export function Header(): JSX.Element {
                 className="flex items-center gap-3 justify-center py-4 lg:p-0 lg:ml-7 cursor-pointer"
                 onClick={() => setLanguageSelectModalOpen(true)}
               >
-                {lang === "en" && (
-                  <Link href="/about" locale="en">
-                    <a>{t("language_switch_en")}</a>
-                  </Link>
-                )}
-                {lang === "de" && (
-                  <Link href="/about" locale="de">
-                    <a>{t("language_switch_de")}</a>
-                  </Link>
-                )}
+                {lang === "en" && <a>{t("language_switch_en")}</a>}
+                {lang === "de" && <a>{t("language_switch_de")}</a>}
                 <img src="/globe.png" alt="" />
                 <Modal
                   open={languageSelectModalOpen}
