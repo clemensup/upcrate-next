@@ -1,8 +1,11 @@
+import useTranslation from "next-translate/useTranslation";
 import Image from "next/image";
 import { CaptainCrateSvg } from "./elements/svg/cpt-crate-svg";
 import { FooterNewsletterForm } from "./footer-newsletter-form";
 
 export function Footer(): JSX.Element {
+  const { t } = useTranslation("common");
+
   return (
     <footer className="bg-purple-dark text-white pt-20">
       <div className="container mx-auto p-5 md:p-0 w-full grid mb-4 md:grid-cols-6">
@@ -48,7 +51,7 @@ export function Footer(): JSX.Element {
           <FooterNewsletterForm />
 
           <p className="text-white text-2xl">
-            get support here
+            {t("footer.get_support")}
             <br />
             <a
               className="underline hover:text-pink"

@@ -22,9 +22,23 @@
   "login": "login",
   "cancel": "Cancel",
   "save": "Save",
+  "terms_label": "I have read and agree to the <1>terms & conditions</1>",
+  "footer": {
+    "newsletter_form": {
+      "title": "Join our mailing list to get updates on special offers, the art crew and more!",
+      "email_label": "Your e-mail address",
+      "error_message": "Please fill out all fields and agree to our terms & conditions.",
+      "success_message": "Thank you.\nWe will answer you as soon as we have finished the artwork"
+    },
+    "get_support": "get support here"
+  },
   "pages": {
     "home": {
-      "draw_as_one_section": "Let’s draw <1>as one.</1><2></2>Let’s connect <1>worldwide</1><2></2> and <1>live art</1> together"
+      "draw_as_one_section": "Let’s draw <1>as one.</1><2></2>Let’s connect <1>worldwide</1><2></2> and <1>live art</1> together",
+      "chosen_one_section": {
+        "title": "You’re one of the chosen ones who scrolled all the way down.\nNow you can also subscribe:)",
+        "cta": "Subscribe now "
+      }
     },
     "artcrew": {
       "title": "Art Crew"
@@ -161,6 +175,9 @@
         ]
       },
       "checkout_instagram": "Check out all the amazing #upcratebattle entries on Instagram!"
+    },
+    "instagram": {
+      "cta": "Follow us on Instagram"
     }
   }
 }

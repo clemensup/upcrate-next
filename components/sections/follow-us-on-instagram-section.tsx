@@ -1,6 +1,9 @@
+import useTranslation from "next-translate/useTranslation";
 import Image from "next/image";
 
 export function FollowUsOnInstagramSection() {
+  const { t } = useTranslation("common");
+
   return (
     <section>
       <a
@@ -44,7 +47,7 @@ export function FollowUsOnInstagramSection() {
         </div>
 
         <div className="absolute m-auto transform rotate-12 left-0 right-0 bg-purple uppercase top-7 md:top-auto md:bottom-1/2 mt-4 w-max p-2 md:p-4 text-white inline-block hover:bg-purple-dark">
-          Follow us on instagram
+          {t("sections.instagram.cta")}
         </div>
       </a>
     </section>
