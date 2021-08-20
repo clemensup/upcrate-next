@@ -9,9 +9,7 @@ export default function Privacy() {
     <Layout>
       <section className="p-10 md:p-20 text-purple-dark pb-20 md:pb-48 relative overflow-hidden">
         <div className="max-w-6xl mx-auto">
-          <h1 className="text-6xl font-display">
-            {t("pages.privacy.page_title")}
-          </h1>
+          <h1 className="text-6xl font-display">{t("pages.privacy.title")}</h1>
           <h2 className="text-2xl font-bold mt-10 md:mt-8">
             Ahoy and welcome to our website!
           </h2>

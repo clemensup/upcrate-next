@@ -14,7 +14,7 @@
   "save": "Speichern",
   "pages": {
     "about": {
-      "page_title": "Über uns"
+      "title": "Über uns"
     }
   }
 }

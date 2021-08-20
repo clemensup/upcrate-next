@@ -24,7 +24,7 @@ export default function ArtCrew() {
     <Layout>
       <HeroSection
         className="bg-rose"
-        title={t("pages.artcrew.page_title")}
+        title={t("pages.artcrew.title")}
         image="/artcrew-hero.png"
         mobileImage="/artcrew-hero-xs.png"
       />

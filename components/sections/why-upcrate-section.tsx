@@ -1,16 +1,19 @@
+import useTranslation from "next-translate/useTranslation";
 import Image from "next/image";
 import { Countdown } from "../countdown";
 import { RadialGradient } from "../elements/radial-gradient";
 import { CaptainCrateSvg } from "../elements/svg";
 
 export function WhyUpcrateSection() {
+  const { t } = useTranslation("common");
+
   return (
     <section className="text-center text-purple-dark bg-white pt-6 pb-6 px-10 md:pt-20 md:pb-24 relative overflow-hidden">
       <RadialGradient className="bg-purple" />
       <div className="z-10 relative text-purple-dark">
-        <h4 className="text-green">WHY UPCRATE?</h4>
+        <h4 className="text-green">{t("sections.why_upcrate.subtitle")}</h4>
         <h3 className="font-display text-purple-dark text-2xl md:text-5xl">
-          Exklusive for monthly subscribers
+          {t("sections.why_upcrate.title")}
         </h3>
 
         <div className="md:flex align-center justify-center gap-20 md:text-xl">
@@ -22,7 +25,7 @@ export function WhyUpcrateSection() {
               height={170}
             />
             <p className="max-w-xs m-auto">
-              Sign up to receive your first crate of art supplies.
+              {t("sections.why_upcrate.steps.0.text")}
             </p>
           </div>
           <div className="mt-10">
@@ -33,7 +36,7 @@ export function WhyUpcrateSection() {
               height={170}
             />
             <p className="max-w-xs m-auto">
-              Your creative tools are selected, packed and posted
+              {t("sections.why_upcrate.steps.1.text")}
             </p>
           </div>
           <div className="mt-10">
@@ -44,7 +47,7 @@ export function WhyUpcrateSection() {
               height={170}
             />
             <p className="max-w-xs m-auto">
-              Your crate arrives!!! Open it up and get creative
+              {t("sections.why_upcrate.steps.2.text")}
             </p>
           </div>
         </div>
@@ -52,12 +55,9 @@ export function WhyUpcrateSection() {
         <div className="relative max-w-6xl mx-auto">
           <div className="z-10 relative text-purple-dark">
             <h3 className="font-display text-purple-dark text-2xl md:text-5xl md:mt-20">
-              What’s inside?
+              {t("sections.why_upcrate.whats_inside.title")}
             </h3>
-            <p>
-              Hop on board to discover amazing art treasures in a monthly
-              subscription, inspiring you to create.
-            </p>
+            <p>{t("sections.why_upcrate.whats_inside.text")}</p>
 
             <CaptainCrateSvg variant="head-only" />
             <div className="image-container">
@@ -72,13 +72,7 @@ export function WhyUpcrateSection() {
           <RadialGradient className="bg-orange mt-32" variant="center" />
         </div>
 
-        <div>
-          <h3 className="font-display text-purple-dark text-xl sm:text-2xl md:text-5xl md:mt-20 md:max-w-2xl mx-auto">
-            Time to subscribe for our next upcrate
-          </h3>
-
-          <Countdown />
-        </div>
+        <Countdown />
       </div>
     </section>
   );

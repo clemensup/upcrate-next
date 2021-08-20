@@ -8,9 +8,7 @@ export default function Imprint() {
   return (
     <Layout>
       <section className="text-center md:p-20 text-purple-dark relative overflow-hidden">
-        <h1 className="text-6xl font-display">
-          {t("pages.imprint.page_title")}
-        </h1>
+        <h1 className="text-6xl font-display">{t("pages.imprint.title")}</h1>
         <address className="mt-20 text-xl pb-20 not-italic">
           Owner
           <br />

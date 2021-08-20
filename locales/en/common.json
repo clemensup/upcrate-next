@@ -24,19 +24,19 @@
   "save": "Save",
   "pages": {
     "artcrew": {
-      "page_title": "Art Crew"
+      "title": "Art Crew"
     },
     "about": {
-      "page_title": "About us"
+      "title": "About us"
     },
     "imprint": {
-      "page_title": "Imprint"
+      "title": "Imprint"
     },
     "privacy": {
-      "page_title": "Privacy Policy"
+      "title": "Privacy Policy"
     },
     "cancellation_policy": {
-      "page_title": "Cancellation Policy",
+      "title": "Cancellation Policy",
       "withdrawal_title": "Withdrawal",
       "withdrawal_text": "<1>You have the right to withdraw from this contract within fourteen days without giving any reason.</1><1>The withdrawal period is fourteen days from the day where you or a third party named by you, who is not the carrier, has or has taken possession of the goods, provided that you have ordered one or more goods under a single order and these are or will be delivered in a uniform manner, or</1><1>where you or a third party named by you, who is not the carrier, has or has taken possession of the last goods, if you have ordered several goods in a single order and these are delivered separately, or</1><1>where you or a third party named by you, other than the carrier, has or has taken possession of the last partial consignment or piece, provided that you have ordered a product that is delivered in multiple consignments or pieces, or</1><1>where you or a third party named by you, other than the carrier, has or has taken possession of the first good, provided that you have a contract for the regular delivery of goods for a fixed period of time.</1><1>To exercise your right of revocation, you must notify us (Clemens Roosen, Suhrsweg 3, 22305 Hamburg, Germany, Germany, e-mail: info@upcrate.art) by means of a clear statement (e.g. a letter sent by post, e-mail) about your decision to withdraw from this contract. You can use the attached model withdrawal form, which is not required.</1><1>In order to maintain the cancellation period, it is sufficient that you send the notice of the exercise of the right of withdrawal before the expiry of the withdrawal period.</1>",
       "consequences_title": "Consequences of the cancellation",
@@ -75,6 +75,32 @@
           "dollar_estimation": "(~ 71 USD)"
         }
       ]
+    },
+    "why_upcrate": {
+      "title": "Exclusive for monthly subscribers",
+      "subtitle": "WHY UPCRATE?",
+      "steps": [
+        {
+          "text": "Sign up to receive your first crate of art supplies."
+        },
+        {
+          "text": "Your creative tools are selected, packed and posted."
+        },
+        {
+          "text": "Your crate arrives!!! Open it up and get creative"
+        }
+      ],
+      "whats_inside": {
+        "title": "What's inside?",
+        "text": "Hop on board to discover amazing art treasures in a monthly subscription, inspiring you to create."
+      }
+    },
+    "countdown": {
+      "title": "Time to subscribe for our next upcrate",
+      "weeks": "Weeks",
+      "days": "Days",
+      "hours": "Hours",
+      "text": "Till the 5th of every month"
     }
   }
 }

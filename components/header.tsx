@@ -7,6 +7,7 @@ import { Logo } from "./elements/svg/logo";
 import { Modal, Checkbox, Button } from ".";
 import { Dialog } from "@headlessui/react";
 import { BurgerSvg } from "./elements/svg";
+import { usePersistLocaleCookie } from "../hooks/use-persistent-locale";
 
 export function Header(): JSX.Element {
   const { t, lang } = useTranslation("common");
@@ -15,6 +16,8 @@ export function Header(): JSX.Element {
   const [languageSelectModalOpen, setLanguageSelectModalOpen] =
     React.useState(false);
   const [selectedLanguage, setSelectedLanguage] = React.useState(lang);
+
+  usePersistLocaleCookie();
 
   const saveSelectedLanguage = () => {
     setLanguageSelectModalOpen(false);

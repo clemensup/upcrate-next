@@ -17,7 +17,7 @@ export default function About() {
     <Layout>
       <HeroSection
         className="bg-green"
-        title={t("pages.about.page_title")}
+        title={t("pages.about.title")}
         image="/about/about-us-hero.png"
         mobileImage="/about/about-us-hero-xs.png"
       />
