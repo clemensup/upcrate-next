@@ -1,13 +1,16 @@
+import useTranslation from "next-translate/useTranslation";
 import Image from "next/image";
 import { RadialGradient } from "../elements/radial-gradient";
 
 export function JoinTheArtCrewSection() {
+  const { t } = useTranslation("common");
+
   return (
     <section className="text-center text-white bg-purple pt-6 pb-10 px-10 md:pt-20 md:pb-24 relative overflow-hidden">
       <RadialGradient className="bg-purple-dark" />
       <div className="z-10 relative text-purple-dark">
         <h3 className="font-display text-white text-2xl md:text-5xl">
-          Join the artcrew
+          {t("sections.join_the_artcrew.title")}
         </h3>
         <div className="md:flex align-center justify-center gap-20">
           <div className="mt-10">
@@ -17,9 +20,11 @@ export function JoinTheArtCrewSection() {
               width={170}
               height={170}
             />
-            <h4 className="text-2xl font-bold text-purple-dark">Subscribe</h4>
+            <h4 className="text-2xl font-bold text-purple-dark">
+              {t("sections.join_the_artcrew.steps.0.title")}
+            </h4>
             <p className="max-w-xs m-auto text-white text-xl">
-              Sign up to receive your first crate of art supplies.
+              {t("sections.join_the_artcrew.steps.0.text")}
             </p>
           </div>
           <div className="mt-10">
@@ -29,9 +34,11 @@ export function JoinTheArtCrewSection() {
               width={170}
               height={170}
             />
-            <h4 className="text-2xl font-bold text-purple-dark">Uncrate</h4>
+            <h4 className="text-2xl font-bold text-purple-dark">
+              {t("sections.join_the_artcrew.steps.1.title")}
+            </h4>
             <p className="max-w-xs m-auto text-white text-xl">
-              Your creative tools are selected, packed and posted
+              {t("sections.join_the_artcrew.steps.1.text")}
             </p>
           </div>
           <div className="mt-10">
@@ -41,9 +48,11 @@ export function JoinTheArtCrewSection() {
               width={170}
               height={170}
             />
-            <h4 className="text-2xl font-bold text-purple-dark">Create</h4>
+            <h4 className="text-2xl font-bold text-purple-dark">
+              {t("sections.join_the_artcrew.steps.2.title")}
+            </h4>
             <p className="max-w-xs m-auto text-white text-xl">
-              Your crate arrives!!! Open it up and get creative
+              {t("sections.join_the_artcrew.steps.2.text")}
             </p>
           </div>
         </div>

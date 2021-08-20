@@ -42,5 +42,24 @@
       "consequences_title": "Consequences of the cancellation",
       "consequences_text": "<1>If you withdraw from this Agreement, we have selected all payments we have received from you, including delivery charges (except for the additional costs arising from your choosing a different delivery method than the most favorable standard delivery we offer have to repay immediately and at the latest within fourteen days from the date on which the notification of your revocation of this contract has reached us. For this repayment, we use the same means of payment that you used in the original transaction, unless otherwise agreed with you; In no case will you be charged for this repayment fees.</1><1>We may refuse to repay you until we have the goods back or until you have provided proof that you have returned the goods, whichever is the earlier.</1><1>You must return the goods to us immediately and in any event not later than fourteen days from the date on which you inform us of the cancellation of this contract. The deadline is met if you send the goods before the expiry of the period of fourteen days. You bear the immediate costs of returning the goods.</1><1>You only have to pay for a possible loss in value of the goods, if this loss of value is due to a handling that is not necessary for the examination of the nature, characteristics and functionality of the goods.</1>"
     }
+  },
+  "sections": {
+    "join_the_artcrew": {
+      "title": "Join the artcrew",
+      "steps": [
+        {
+          "title": "Subscribe",
+          "text": "Sign up to receive your first crate of art supplies."
+        },
+        {
+          "title": "Uncrate",
+          "text": "Your creative tools are selected, packed and posted."
+        },
+        {
+          "title": "Create",
+          "text": "Your crate arrives!!! Open it up and get creative"
+        }
+      ]
+    }
   }
 }
