@@ -23,6 +23,9 @@
   "cancel": "Cancel",
   "save": "Save",
   "pages": {
+    "home": {
+      "draw_as_one_section": "Let’s draw <1>as one.</1><2></2>Let’s connect <1>worldwide</1><2></2> and <1>live art</1> together"
+    },
     "artcrew": {
       "title": "Art Crew"
     },

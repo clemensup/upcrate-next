@@ -20,8 +20,12 @@ import { WhyUpcrateSection } from "../components/sections/why-upcrate-section";
 import { FormerCratesInARowSection } from "../components/sections/former-crates-in-a-row-section";
 import { UnboxYourCreativitySvg } from "../components/elements/svg/unbox-your-creativity";
 import { RadialGradient } from "../components/elements/radial-gradient";
+import useTranslation from "next-translate/useTranslation";
+import { FormattedText } from "../components/elements/formatted-text";
 
 export default function Home() {
+  const { t } = useTranslation("common");
+
   return (
     <Layout>
       <HeroSliderSection />
@@ -51,11 +55,11 @@ export default function Home() {
       <FormerCratesInARowSection />
       <FeaturedArtistsWeWorkedWithSection />
       <ConnectSloganSection>
-        <h4 className="text-3xl sm:text-5xl md:text-7xl text-white">
-          Let’s draw <span className="font-display">as one.</span>
-          <br /> Let’s connect&nbsp;
-          <span className="font-display">worldwide</span>
-          <br /> and <span className="font-display">live art</span> together
+        <h4 className="text-3xl sm:text-5xl md:text-7xl text-white whitespace-pre-line">
+          <FormattedText
+            transKey="common:pages.home.draw_as_one_section"
+            delimiter={[<span className="font-display" />, <br />]}
+          />
         </h4>
       </ConnectSloganSection>
       <UpcrateBattleSection />
