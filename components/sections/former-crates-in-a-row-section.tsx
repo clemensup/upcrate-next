@@ -4,6 +4,7 @@ import "slick-carousel/slick/slick-theme.css";
 import { ArrowSvg } from "../elements/svg/arrow-svg";
 import React from "react";
 import { useWindowSize } from "../../hooks/use-window-size";
+import useTranslation from "next-translate/useTranslation";
 
 function SliderArrow({
   variant,
@@ -75,10 +76,12 @@ export function TripleSlider() {
 }
 
 export function FormerCratesInARowSection() {
+  const { t } = useTranslation("common");
+
   return (
     <section className="text-center text-rose bg-purple py-6 sm:px-10 md:px-32 md:pt-20 md:pb-24">
       <h3 className="font-display text-2xl md:text-5xl">
-        Former crates in a row
+        {t("sections.former_crates_in_a_row.title")}
       </h3>
       <TripleSlider />
     </section>

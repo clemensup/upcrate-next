@@ -8,7 +8,7 @@ import {
 import { ConnectSloganSection } from "../components/sections/connect-slogan-section";
 import { FlowingHeads } from "../components/flowing-heads";
 import { FollowUsOnInstagramSection } from "../components/sections/follow-us-on-instagram-section";
-import { FormerArtistsSection } from "../components/sections/former-artists-section";
+import { FeaturedArtistsWeWorkedWithSection } from "../components/sections/former-artists-section";
 import { TheBottlePostSection } from "../components/sections/the-bottle-post-section";
 import { TheGoldenCrateSection } from "../components/sections/the-golden-crate-section";
 import { UpcrateAsGiftSection } from "../components/sections/upcrate-as-a-gift-section";
@@ -51,7 +51,7 @@ export default function ArtCrew() {
       <div className="min-h-sectionSmall md:min-h-sectionSmallMd bg-artcrew-image-section03 bg-center bg-cover bg-no-repeat"></div>
       <TheBottlePostSection />
       <div className="min-h-sectionSmall md:min-h-sectionSmallMd bg-artcrew-image-section04 bg-center bg-cover bg-no-repeat"></div>
-      <FormerArtistsSection />
+      <FeaturedArtistsWeWorkedWithSection />
       <ProfessionalHowToVideosSection />
       <ConnectSloganSection>
         <h4 className="text-3xl sm:text-5xl md:text-7xl text-white">

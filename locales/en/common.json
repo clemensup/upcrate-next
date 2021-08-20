@@ -127,6 +127,17 @@
           "text": "“Upcrate is like a grab bag full of high quality art supplies. Every month I look forward to the challenge of creating an artwork for the #upcratebattle with new, partly unknown art supplies.”"
         }
       ]
+    },
+    "as_featured_in": {
+      "title": "As featured in"
+    },
+    "former_crates_in_a_row": {
+      "title": "Former crates in a row"
+    },
+    "featured_artists_we_worked_with": {
+      "title": "Featured artists we worked with",
+      "text": "These are 4 of the many artists we have worked with in the past. Each of them come with their own unique styles, knowledge and preferences when it comes to art supplies. They curate the contents of their monthly box to make sure that all the materials work well together. Don’t forget to check them out and shower them in love!",
+      "text_mobile": "These are 4 of the many artists we have worked with in the past. Each of them come with their own unique styles, knowledge and preferences when it comes to art supplies. They curate the contents of their monthly box to make sure that all the materials work well together. Don’t forget to check them out and shower them in love!"
     }
   }
 }

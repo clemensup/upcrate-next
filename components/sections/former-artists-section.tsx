@@ -1,20 +1,20 @@
+import useTranslation from "next-translate/useTranslation";
 import Image from "next/image";
 import { RadialGradient } from "../elements/radial-gradient";
 
-export function FormerArtistsSection() {
+export function FeaturedArtistsWeWorkedWithSection() {
+  const { t } = useTranslation("common");
+
   return (
     <section className="min-h-sectionBig md:min-h-sectionBigMd p-10 md:p-20 relative overflow-hidden">
       <RadialGradient className="bg-rose" />
       <div className="z-10 relative text-purple-dark">
         <h3 className="font-display text-purple-dark text-2xl md:text-5xl mt-5 md:mt-20 text-center md:max-w-xl m-auto">
-          Featured artists we worked with
+          {t("sections.featured_artists_we_worked_with.title")}
         </h3>
 
         <p className="md:hidden text-purple-dark mt-5">
-          “Upcrate is the first art supply box I have ever tried and that I
-          recommend to everyone. You’ll find all you need to make an awesome
-          piece of art and discover new mediums . I personally enjoy the little
-          extras, they never fail to surprise me !”
+          {t("sections.featured_artists_we_worked_with.text_mobile")}
         </p>
 
         <div className="grid md:grid-cols-3 gap-20 relative mt-10 md:mt-20">
@@ -59,11 +59,7 @@ export function FormerArtistsSection() {
             </div>
           </div>
           <div className="text-2xl text-purple-dark text-center hidden md:block">
-            These are 4 of the many artists we have worked with in the past.
-            Each of them come with their own unique styles, knowledge and
-            preferences when it comes to art supplies. They curate the contents
-            of their monthly box to make sure that all the materials work well
-            together. Don’t forget to check them out and shower them in love!
+            {t("sections.featured_artists_we_worked_with.text")}
           </div>
           <div className="gap-20 hidden md:grid">
             <div>
