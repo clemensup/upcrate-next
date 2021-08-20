@@ -73,7 +73,7 @@ export default function Home() {
           className="bg-purple hover:bg-purple-dark font-display p-3 pt-2 pb-3 md:text-3xl inline-flex items-center relative mt-5 text-white px-10 mx-auto gap-4"
           href="/subscriptions"
         >
-          {t("pages.home.chosen_one_section.cta")}
+          {t("subscribe_now_button_text")}
           <Caret />
         </a>
       </UnboxYourCreativitySection>

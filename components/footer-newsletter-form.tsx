@@ -29,7 +29,7 @@ export function FooterNewsletterForm() {
           />{" "}
           <span>
             <FormattedText
-              transKey="common:terms_label"
+              transKey="common:forms.terms_label"
               delimiter={[
                 <a
                   className="underline hover:text-pink"
@@ -43,7 +43,7 @@ export function FooterNewsletterForm() {
           <input
             type="email"
             name="email"
-            placeholder={t("footer.newsletter_form.email_label")}
+            placeholder={t("forms.email_label")}
             className="w-full p-4 text-purple-dark"
             value={email}
             onChange={handleChange}
@@ -57,12 +57,12 @@ export function FooterNewsletterForm() {
         </div>
         {hasError && (
           <p className="text-white text-base bg-pink mt-2 p-2">
-            {t("footer.newsletter_form.error_message")}
+            {t("forms.error_message")}
           </p>
         )}
         {formStatus === "success" && (
           <p className="text-white text-base bg-green mt-2 p-2 whitespace-pre-line">
-            {t("footer.newsletter_form.success_message")}
+            {t("forms.success_message")}
           </p>
         )}
       </form>

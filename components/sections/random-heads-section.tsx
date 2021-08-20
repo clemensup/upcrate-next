@@ -1,3 +1,4 @@
+import useTranslation from "next-translate/useTranslation";
 import React from "react";
 import { RadialGradient } from "../elements/radial-gradient";
 import { CaptainCrateSvg } from "../elements/svg/cpt-crate-svg";
@@ -5,6 +6,8 @@ import { CaptainCrateSvg } from "../elements/svg/cpt-crate-svg";
 const colors = ["pink", "red", "purple", "green", "orange"];
 
 export function RandomHeadsSection() {
+  const { t } = useTranslation("common");
+
   const getRandomInt = (min: number, max: number) =>
     Math.floor(Math.random() * (max - min + 1) + min);
 
@@ -38,9 +41,11 @@ export function RandomHeadsSection() {
       <RadialGradient className="bg-purple" />
       <div className="z-10 relative text-purple-dark flex flex-col relative ">
         <h3 className="font-display text-purple-dark text-2xl md:text-5xl mt-5 md:mt-20 text-center md:max-w-6xl m-auto">
-          Upcrate – The Story of Captain Crate and his subscription crate
+          {t("sections.random_heads.title")}
         </h3>
-        <div className="relative flex flex-1">{heads}</div>
+        <div className="relative flex flex-1 min-h-sectionSmall md:min-h-sectionSmallMd">
+          {heads}
+        </div>
       </div>
     </section>
   );

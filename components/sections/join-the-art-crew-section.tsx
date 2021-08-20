@@ -1,8 +1,11 @@
 import useTranslation from "next-translate/useTranslation";
 import Image from "next/image";
+import React from "react";
 import { RadialGradient } from "../elements/radial-gradient";
 
-export function JoinTheArtCrewSection() {
+export function JoinTheArtCrewSection({
+  children,
+}: React.PropsWithChildren<{}>) {
   const { t } = useTranslation("common");
 
   return (
@@ -56,6 +59,7 @@ export function JoinTheArtCrewSection() {
             </p>
           </div>
         </div>
+        {children && <div className="mt-10">{children}</div>}
       </div>
     </section>
   );

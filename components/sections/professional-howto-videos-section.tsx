@@ -1,15 +1,16 @@
+import useTranslation from "next-translate/useTranslation";
 import Image from "next/image";
 import { RadialGradient } from "../elements/radial-gradient";
 
 export function ProfessionalHowToVideosSection() {
+  const { t } = useTranslation("common");
+
   return (
     <section className="min-h-sectionBig md:min-h-sectionBigMd p-10 md:p-20 relative overflow-hidden">
       <RadialGradient className="bg-purple" />
       <div className="z-10 relative text-purple-dark">
-        <h3 className="font-display text-purple-dark text-2xl md:text-5xl mt-5 md:mt-20 text-center md:max-w-xl m-auto">
-          Professional
-          <br />
-          How-to-do Videos
+        <h3 className="font-display text-purple-dark text-2xl md:text-5xl mt-5 md:mt-20 text-center md:max-w-xl m-auto whitespace-pre-line">
+          {t("sections.professional_howto_videos.title")}
         </h3>
 
         <div className="grid md:grid-cols-3 gap-10 md:gap-20 relative mt-10 md:mt-20">
@@ -59,23 +60,15 @@ export function ProfessionalHowToVideosSection() {
                 height={419}
               />
               <p className="mt-5 md:mt-10">
-                To help you get started, each of our monthly featured artists
-                films a video about their crates, preferred materials and
-                drawing processes! Learn from the best and make the most out of
-                the new supplies you own. Stay tuned over at our YouTube channel
-                for more!
+                {t("sections.professional_howto_videos.text")}
               </p>
             </div>
 
             <div className="hidden md:block relative">
               <RadialGradient className="bg-green" variant="center" />
               <div className="z-10 font-display md:flex flex-col gap-5 relative">
-                <p className="text-4xl">
-                  Check out the
-                  <br />
-                  How-to-do videos
-                  <br />
-                  on YouTube
+                <p className="text-4xl whitespace-pre-line">
+                  {t("sections.professional_howto_videos.checkout_youtube")}
                 </p>
                 <a
                   href="https://www.youtube.com/channel/UCuBKFplxdLGbCKJaiKnHgcg"
@@ -90,9 +83,11 @@ export function ProfessionalHowToVideosSection() {
                 <a
                   href="https://www.youtube.com/channel/UCuBKFplxdLGbCKJaiKnHgcg"
                   target="_blank"
-                  className="font-sans text-base"
+                  className="font-sans text-base hover:underline"
                 >
-                  {">> Click here <<"}
+                  {">>"}{" "}
+                  {t("sections.professional_howto_videos.checkout_youtube_cta")}{" "}
+                  {"<<"}
                 </a>
               </div>
             </div>
@@ -138,12 +133,8 @@ export function ProfessionalHowToVideosSection() {
           <div className="flex font-display md:hidden order-4 text-center text-purple-dark gap-5 relative">
             <RadialGradient className="bg-green" variant="center" />
             <div className="z-10 flex flex-col">
-              <p className="text-4xl">
-                Check out the
-                <br />
-                How-to-do videos
-                <br />
-                on YouTube
+              <p className="text-4xl whitespace-pre-line">
+                {t("sections.professional_howto_videos.checkout_youtube")}
               </p>
               <a
                 href="https://www.youtube.com/channel/UCuBKFplxdLGbCKJaiKnHgcg"
@@ -160,7 +151,9 @@ export function ProfessionalHowToVideosSection() {
                 target="_blank"
                 className="font-sans text-base"
               >
-                {">> Click here <<"}
+                {">>"}{" "}
+                {t("sections.professional_howto_videos.checkout_youtube_cta")}{" "}
+                {"<<"}
               </a>
             </div>
           </div>

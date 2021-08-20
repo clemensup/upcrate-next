@@ -1,11 +1,15 @@
+import useTranslation from "next-translate/useTranslation";
 import Image from "next/image";
 import React from "react";
 import { useMailchimpForm } from "../../hooks/use-mailchimp-form";
+import { FormattedText } from "../elements/formatted-text";
 import { RadialGradient } from "../elements/radial-gradient";
 import { Caret } from "../elements/svg";
 import { PensAndBrushesSvg } from "../elements/svg/pens-and-brushes";
 
 export function NewsletterSection({ children }: React.PropsWithChildren<{}>) {
+  const { t } = useTranslation("common");
+
   const {
     email,
     terms,
@@ -50,12 +54,14 @@ export function NewsletterSection({ children }: React.PropsWithChildren<{}>) {
               {!formStatus && (
                 <>
                   <h4 className="text-purple-dark text-3xl md:text-5xl md:max-w-4xl text-center mx-auto font-display text-center">
-                    Subscribe to our newsletter for a 15% discount!
+                    {t("sections.newsletter_form.title")}
                   </h4>
                   <p className="font-bold md:mt-10">
-                    - Be among the first to hear about new special offers
+                    {t("sections.newsletter_form.benefits.0.text")}
                   </p>
-                  <p className="font-bold">- Receive exclusive coupon codes </p>
+                  <p className="font-bold">
+                    {t("sections.newsletter_form.benefits.1.text")}
+                  </p>
                 </>
               )}
 
@@ -71,7 +77,7 @@ export function NewsletterSection({ children }: React.PropsWithChildren<{}>) {
                     name="email"
                     value={email}
                     onChange={handleChange}
-                    placeholder="Enter your email adress"
+                    placeholder={t("forms.email_label")}
                   />
 
                   <label className="mb-3 flex gap-4 items-center cursor-pointer text-base">
@@ -82,20 +88,21 @@ export function NewsletterSection({ children }: React.PropsWithChildren<{}>) {
                       onChange={handleChange}
                     />{" "}
                     <span>
-                      I have read and agree to the{" "}
-                      <a
-                        className="underline hover:bg-green-darker"
-                        href="/terms-and-conditions"
-                        target="_blank"
-                      >
-                        terms & conditions
-                      </a>
+                      <FormattedText
+                        transKey="common:forms.terms_label"
+                        delimiter={[
+                          <a
+                            className="underline hover:text-pink"
+                            href="/terms-and-conditions"
+                          />,
+                        ]}
+                      />
                     </span>
                   </label>
 
                   {hasError && (
                     <p className="text-white text-base bg-pink mt-2">
-                      Please fill out all fields
+                      {t("forms.error_message")}
                     </p>
                   )}
 
@@ -110,21 +117,22 @@ export function NewsletterSection({ children }: React.PropsWithChildren<{}>) {
                   </button>
 
                   <p className="text-base mt-5 z-30">
-                    By entering your email address, you agree to the terms of
-                    this{" "}
-                    <a href="/privacy" className="underline">
-                      privacy policy
-                    </a>
-                    .
+                    <FormattedText
+                      transKey="common:forms.privacy_label"
+                      delimiter={[
+                        <a
+                          className="underline hover:text-pink"
+                          href="/privacy"
+                        />,
+                      ]}
+                    />
                   </p>
                 </form>
               )}
 
               {formStatus === "success" && (
                 <div className="text-3xl md:text-6xl text-center text-white font-display pt-10 pb-20 max-w-4xl mx-auto">
-                  Thank you.
-                  <br />
-                  We will answer you as soon as we have finished the artwork
+                  {t("forms.success_message")}
                 </div>
               )}
               <div className="absolute left-0 right-0 -bottom-36 flex justify-center z-10">
@@ -138,7 +146,7 @@ export function NewsletterSection({ children }: React.PropsWithChildren<{}>) {
           <RadialGradient className="bg-orange w-full" variant="center-xl" />
           <div className="z-10 relative text-purple-dark">
             <h3 className="font-display text-2xl md:text-5xl md:mt-48 block">
-              Advantages of the newsletter subscription:
+              {t("sections.newsletter_form.advantages.title")}
             </h3>
 
             <div className="md:flex gap-10 md:gap-20 justify-center">
@@ -149,7 +157,7 @@ export function NewsletterSection({ children }: React.PropsWithChildren<{}>) {
                   height={332}
                 />
                 <p className="text-2xl font-bold text-center">
-                  Be the first to know about special offers
+                  {t("sections.newsletter_form.advantages.columns.0.text")}
                 </p>
               </div>
               <div>
@@ -159,7 +167,7 @@ export function NewsletterSection({ children }: React.PropsWithChildren<{}>) {
                   height={332}
                 />
                 <p className="text-2xl font-bold text-center">
-                  Receive exclusive discount codes for our shop
+                  {t("sections.newsletter_form.advantages.columns.1.text")}
                 </p>
               </div>
               <div>
@@ -169,7 +177,7 @@ export function NewsletterSection({ children }: React.PropsWithChildren<{}>) {
                   height={332}
                 />
                 <p className="text-2xl font-bold text-center">
-                  Find out about new events for the art crew!
+                  {t("sections.newsletter_form.advantages.columns.2.text")}
                 </p>
               </div>
             </div>

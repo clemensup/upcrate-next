@@ -1,13 +1,16 @@
+import useTranslation from "next-translate/useTranslation";
 import Image from "next/image";
 import { RadialGradient } from "../elements/radial-gradient";
 
 export function TheBottlePostSection() {
+  const { t } = useTranslation("common");
+
   return (
     <section className="min-h-sectionBig md:min-h-sectionBigMd p-10 md:p-20 relative overflow-hidden">
       <RadialGradient className="bg-purple" />
       <div className="z-10 relative text-purple-dark">
         <h3 className="font-display text-purple-dark text-2xl md:text-5xl md:mt-20 text-center md:max-w-xl m-auto">
-          The bottlepost
+          {t("sections.the_bottle_post.title")}
         </h3>
 
         <div className="max-w-8xl mt-5 md:mt-10 mx-auto text-center">
@@ -16,11 +19,7 @@ export function TheBottlePostSection() {
           <div className="w-full h-full">
             <div className="flex flex-col text-purple-dark h-full justify-items-end mt-5 md:mt-0 md:text-xl">
               <p className="text-center max-w-4xl mx-auto md:mt-16">
-                Each of our boxes comes with yet another treasure for you: the
-                bottlepost is our monthly magazine that provides you with every
-                important information regarding your new art supplies and their
-                brands, Upcrate itself, our artcrew and contests, the monthly
-                featured artist and useful art advice!
+                {t("sections.the_bottle_post.text")}
               </p>
 
               <div className="flex gap-6 md:gap-20 mt-5 md:mt-16">

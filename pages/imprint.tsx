@@ -10,7 +10,7 @@ export default function Imprint() {
       <section className="text-center md:p-20 text-purple-dark relative overflow-hidden">
         <h1 className="text-6xl font-display">{t("pages.imprint.title")}</h1>
         <address className="mt-20 text-xl pb-20 not-italic">
-          Owner
+          {t("pages.imprint.owner")}
           <br />
           <br />
           Clemens Roosen
@@ -21,7 +21,10 @@ export default function Imprint() {
           Germany
           <br />
           <br />
-          E-Mail: <a href="mailto:support@upcrate.art">support@upcrate.art</a>
+          E-Mail:{" "}
+          <a href="mailto:support@upcrate.art" className="hover:underline">
+            support@upcrate.art
+          </a>
           <br />
           <br />
           VAT Id. No.: DE257896061

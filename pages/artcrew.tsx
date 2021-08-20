@@ -16,6 +16,7 @@ import { UpcrateBattleSection } from "../components/sections/upcrate-battle-sect
 import { ProfessionalHowToVideosSection } from "../components/sections/professional-howto-videos-section";
 import { NewsletterSection } from "../components/sections/newsletter-section";
 import { InviteFriendsSection } from "../components/sections/invite-friends-section";
+import { FormattedText } from "../components/elements/formatted-text";
 
 export default function ArtCrew() {
   const { t } = useTranslation("common");
@@ -30,14 +31,10 @@ export default function ArtCrew() {
       />
       <NewsletterSection>
         <h3 className="font-display text-purple-dark text-2xl md:text-5xl mt-5 md:mt-20 text-center m-auto">
-          Upcrate – We draw as one
+          {t("pages.artcrew.newsletter_section.title")}
         </h3>
         <p className="text-2xl text-purple-dark md:mt-10 md:mb-20 md:max-w-6xl md:mx-auto">
-          Captain Crate has hoisted his sails to bring together a community of
-          artists from all over the world and provide them with the best art
-          materials and tips. Every month he sends his mysterious boxes, which
-          he calls UPCRATE, directly to the front door of every member of his
-          art crew.
+          {t("pages.artcrew.newsletter_section.text")}
         </p>
       </NewsletterSection>
       <FlowingHeads className="bg-purple" />
@@ -55,30 +52,23 @@ export default function ArtCrew() {
       <ProfessionalHowToVideosSection />
       <ConnectSloganSection>
         <h4 className="text-3xl sm:text-5xl md:text-7xl text-white">
-          <span className="font-display">We draw artists</span> together
-          <br />
-          <span className="font-display">with</span> our{" "}
-          <span className="font-display">
-            creative passion
-            <br />
-            and give
-          </span>{" "}
-          you the tools <br />
-          to follow <span className="font-display">your heart</span>
+          <FormattedText
+            transKey="common:pages.artcrew.draw_as_one_section.title"
+            delimiter={[<br />, <span className="font-display" />]}
+          />
         </h4>
       </ConnectSloganSection>
       <div className="min-h-sectionSmall md:min-h-sectionSmallMd bg-artcrew-image-section05 bg-center bg-contain bg-no-repeat"></div>
       <FollowUsOnInstagramSection />
       <UnboxYourCreativitySection className="bg-rose">
-        <h3 className="text-white text-4xl mx-auto text-center max-w-4xl font-bold">
-          You are one of the chosen ones who scrolled all the way down! Check
-          out Captain Crate’s offers here:
+        <h3 className="text-purple-dark text-4xl mx-auto text-center max-w-5xl font-bold  whitespace-pre-line">
+          {t("pages.artcrew.chosen_one_section.title")}
         </h3>
         <a
-          className="font-display p-3 pt-2 pb-3 md:text-3xl inline-flex items-center relative mt-5 bg-red hover:bg-green-darker text-white px-10 mx-auto"
+          className="bg-purple hover:bg-purple-dark font-display p-3 pt-2 pb-3 md:text-3xl inline-flex items-center relative mt-5 text-white px-10 mx-auto"
           href="/subscriptions"
         >
-          Subscribe now &nbsp;
+          {t("subscribe_now_button_text")}
           <Caret />
         </a>
       </UnboxYourCreativitySection>

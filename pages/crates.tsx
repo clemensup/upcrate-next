@@ -1,3 +1,4 @@
+import useTranslation from "next-translate/useTranslation";
 import Image from "next/image";
 import {
   CaptainCrateSvg,
@@ -28,35 +29,42 @@ export interface CratesProps {
 }
 
 export default function Crates({ products }: CratesProps) {
+  const { t } = useTranslation("common");
+
   return (
     <Layout>
       <HeroSection
         className="bg-orange"
-        title={"Crates"}
+        title={t("pages.crates.title")}
         image="/crates/hero-image.png"
         mobileImage="/about-us-hero-xs.png"
       />
 
       <CratesList products={products} />
 
-      <JoinTheArtCrewSection />
+      <JoinTheArtCrewSection>
+        <a
+          className="font-display p-3 pt-2 pb-3 md:text-3xl inline-flex items-center relative mt-5 bg-orange hover:bg-pink text-white px-10 mx-auto gap-4"
+          href="/subscriptions"
+        >
+          {t("subscribe_now_button_text")}
+          <Caret />
+        </a>
+      </JoinTheArtCrewSection>
       <div className="min-h-sectionSmall md:min-h-sectionSmallMd bg-crates-image-section bg-center bg-cover bg-no-repeat relative flex justify-center items-end p-12">
-        <h3 className="text-6xl text-white text-center max-w-xl">
-          We found some Art
-          <br />
-          supplies for you{" "}
+        <h3 className="text-6xl text-white text-center whitespace-pre-line font-display">
+          {t("pages.crates.found_some_art")}
         </h3>
       </div>
-      <UnboxYourCreativitySection className="bg-orange">
-        <h3 className="text-white text-4xl mx-auto text-center max-w-4xl font-bold">
-          You are one of the chosen ones who scrolled all the way down! Check
-          out Captain Crate’s offers here:
+      <UnboxYourCreativitySection className="bg-orange my-1">
+        <h3 className="text-purple-dark text-4xl mx-auto text-center max-w-5xl font-bold  whitespace-pre-line">
+          {t("pages.crates.chosen_one_section.title")}
         </h3>
         <a
           className="bg-purple hover:bg-purple-dark font-display p-3 pt-2 pb-3 md:text-3xl inline-flex items-center relative mt-5 text-white px-10 mx-auto"
           href="/subscriptions"
         >
-          Subscribe now &nbsp;
+          {t("subscribe_now_button_text")}
           <Caret />
         </a>
       </UnboxYourCreativitySection>

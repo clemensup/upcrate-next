@@ -1,3 +1,4 @@
+import useTranslation from "next-translate/useTranslation";
 import Image from "next/image";
 import {
   Caret,
@@ -10,6 +11,8 @@ import { NewsletterSection } from "../components/sections/newsletter-section";
 import { UpcrateAsGiftSection } from "../components/sections/upcrate-as-a-gift-section";
 
 export default function Newsletter() {
+  const { t } = useTranslation("common");
+
   return (
     <Layout>
       <HeroSection
@@ -37,15 +40,14 @@ export default function Newsletter() {
         />
       </div>
       <UnboxYourCreativitySection className="bg-purple">
-        <h3 className="text-white text-4xl mx-auto text-center max-w-4xl font-bold">
-          You are one of the chosen ones who scrolled all the way down! Check
-          out Captain Crate’s offers here:
+        <h3 className="text-white text-4xl mx-auto text-center max-w-5xl font-bold whitespace-pre-line">
+          {t("pages.home.chosen_one_section.title")}
         </h3>
         <a
-          className="font-display p-3 pt-2 pb-3 md:text-3xl inline-flex items-center relative mt-5 bg-rose hover:bg-green-darker text-white px-10 mx-auto"
+          className="bg-rose hover:bg-orange font-display p-3 pt-2 pb-3 md:text-3xl inline-flex items-center relative mt-5 text-white px-10 mx-auto gap-4"
           href="/subscriptions"
         >
-          Subscribe now &nbsp;
+          {t("subscribe_now_button_text")}
           <Caret />
         </a>
       </UnboxYourCreativitySection>
