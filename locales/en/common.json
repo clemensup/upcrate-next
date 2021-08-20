@@ -105,6 +105,28 @@
     "upcrate_as_gift": {
       "title": "upcrate as a gift",
       "cta": "Give a gift"
+    },
+    "what_the_artcrew_says": {
+      "title": "what the art crew says:",
+      "text": "If you want to send us a review about upcrate just\nsend us a DM on instagram:)",
+      "quotes": [
+        {
+          "author": "Kaia",
+          "text": "“I use Upcrate to fuel my creativity and experience new art supplies. Each crate is like a little treasure chest I find on my doorstep every month.”"
+        },
+        {
+          "author": "Multicooleur",
+          "text": "“Upcrate is the first art supply box I have ever tried and that I recommend to everyone. You’ll find all you need to make an awesome piece of art and discover new mediums . I personally enjoy the little extras, they never fail to surprise me !”"
+        },
+        {
+          "author": "Karolien",
+          "text": "“I love how upcrate surprises me every month by letting explore art suplies that I never would consider to try out. I get out of my comfort zone discover new media and found new art supplies that I love.”"
+        },
+        {
+          "author": "Sönke",
+          "text": "“Upcrate is like a grab bag full of high quality art supplies. Every month I look forward to the challenge of creating an artwork for the #upcratebattle with new, partly unknown art supplies.”"
+        }
+      ]
     }
   }
 }

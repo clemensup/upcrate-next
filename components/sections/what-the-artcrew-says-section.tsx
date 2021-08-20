@@ -1,20 +1,21 @@
+import useTranslation from "next-translate/useTranslation";
 import React from "react";
 import { RadialGradient } from "../elements/radial-gradient";
 import { ArrowSvg } from "../elements/svg/arrow-svg";
 
-function SpeechBubble({
-  children,
-  author,
-}: React.PropsWithChildren<{ author: string }>) {
+function SpeechBubble({ children }: React.PropsWithChildren<{}>) {
   return (
     <div className="mt-10">
-      <div className="border-2 border-purple-dark px-5 py-12">{children}</div>
-      <span className="author text-xl">{author}</span>
+      <div className="border-2 border-purple-dark px-5 py-12">
+        {children[0]}
+      </div>
+      <span className="author text-xl">{children[1]}</span>
     </div>
   );
 }
 
 export function WhatTheArtCrewSaysSection() {
+  const { t } = useTranslation("common");
   const [activeSlide, setActiveSlide] = React.useState(0);
 
   const slide = (nextSlide) => {
@@ -35,11 +36,10 @@ export function WhatTheArtCrewSaysSection() {
       <RadialGradient className="bg-green left-0" variant="bottom" />
       <div className="z-10 relative">
         <h3 className="font-display text-2xl md:text-5xl">
-          what the art crew says:
+          {t("sections.what_the_artcrew_says.title")}
         </h3>
-        <p className="mt-8 text-xl">
-          If you want to send us a review about upcrate just
-          <br /> send us a DM on instagram:)
+        <p className="mt-8 text-xl whitespace-pre-line">
+          {t("sections.what_the_artcrew_says.text")}
         </p>
         <div className="align-center justify-center gap-20 md:text-3xl relative md:hidden">
           <button
@@ -57,61 +57,49 @@ export function WhatTheArtCrewSaysSection() {
           </button>
 
           {activeSlide === 0 && (
-            <SpeechBubble author="Kaia">
-              “I use Upcrate to fuel my creativity and experience new art
-              supplies. Each crate is like a little treasure chest I find on my
-              doorstep every month.”
+            <SpeechBubble>
+              {t("sections.what_the_artcrew_says.quotes.0.text")}
+              {t("sections.what_the_artcrew_says.quotes.0.author")}
             </SpeechBubble>
           )}
           {activeSlide === 1 && (
-            <SpeechBubble author="Multicooleur">
-              “Upcrate is the first art supply box I have ever tried and that I
-              recommend to everyone. You’ll find all you need to make an awesome
-              piece of art and discover new mediums . I personally enjoy the
-              little extras, they never fail to surprise me !”
+            <SpeechBubble>
+              {t("sections.what_the_artcrew_says.quotes.1.text")}
+              {t("sections.what_the_artcrew_says.quotes.1.author")}
             </SpeechBubble>
           )}
           {activeSlide === 2 && (
-            <SpeechBubble author="Karolien">
-              “I love how upcrate surprises me every month by letting explore
-              art suplies that I never would consider to try out. I get out of
-              my comfort zone discover new media and found new art supplies that
-              I love.”
+            <SpeechBubble>
+              {t("sections.what_the_artcrew_says.quotes.2.text")}
+              {t("sections.what_the_artcrew_says.quotes.2.author")}
             </SpeechBubble>
           )}
           {activeSlide === 3 && (
-            <SpeechBubble author="Sönke">
-              “Upcrate is like a grab bag full of high quality art supplies.
-              Every month I look forward to the challenge of creating an artwork
-              for the #upcratebattle with new, partly unknown art supplies.”
+            <SpeechBubble>
+              {t("sections.what_the_artcrew_says.quotes.3.text")}
+              {t("sections.what_the_artcrew_says.quotes.3.author")}
             </SpeechBubble>
           )}
         </div>
         <div className="md:flex align-center justify-center gap-20 md:text-3xl relative hidden">
-          <SpeechBubble author="Kaia">
-            “I use Upcrate to fuel my creativity and experience new art
-            supplies. Each crate is like a little treasure chest I find on my
-            doorstep every month.”
+          <SpeechBubble>
+            {t("sections.what_the_artcrew_says.quotes.0.text")}
+            {t("sections.what_the_artcrew_says.quotes.0.author")}
           </SpeechBubble>
 
-          <SpeechBubble author="Multicooleur">
-            “Upcrate is the first art supply box I have ever tried and that I
-            recommend to everyone. You’ll find all you need to make an awesome
-            piece of art and discover new mediums . I personally enjoy the
-            little extras, they never fail to surprise me !”
+          <SpeechBubble>
+            {t("sections.what_the_artcrew_says.quotes.1.text")}
+            {t("sections.what_the_artcrew_says.quotes.1.author")}
           </SpeechBubble>
 
-          <SpeechBubble author="Karolien">
-            “I love how upcrate surprises me every month by letting explore art
-            suplies that I never would consider to try out. I get out of my
-            comfort zone discover new media and found new art supplies that I
-            love.”
+          <SpeechBubble>
+            {t("sections.what_the_artcrew_says.quotes.2.text")}
+            {t("sections.what_the_artcrew_says.quotes.2.author")}
           </SpeechBubble>
 
-          <SpeechBubble author="Sönke">
-            “Upcrate is like a grab bag full of high quality art supplies. Every
-            month I look forward to the challenge of creating an artwork for the
-            #upcratebattle with new, partly unknown art supplies.”
+          <SpeechBubble>
+            {t("sections.what_the_artcrew_says.quotes.3.text")}
+            {t("sections.what_the_artcrew_says.quotes.3.author")}
           </SpeechBubble>
         </div>
       </div>
