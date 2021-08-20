@@ -1,12 +1,15 @@
+import useTranslation from "next-translate/useTranslation";
 import Image from "next/image";
 import { Button } from "../elements/button";
 import { CaptainCrateSvg } from "../elements/svg";
 
 export function SubscribeNowSection() {
+  const { t } = useTranslation("common");
+
   return (
     <section className="py-16 md:py-28 px-10 bg-subscribe-now text-center bg-cover">
       <h3 className="font-display text-white text-2xl md:text-5xl mb-10">
-        Subscribe now
+        {t("sections.subscribe_now.title")}
       </h3>
 
       <div className="md:flex gap-32 justify-center align-center">
@@ -99,14 +102,14 @@ export function SubscribeNowSection() {
               </g>
             </svg>
           </div>
-          <p>Pay every month</p>
+          <p>{t("sections.subscribe_now.subscriptions.0.payment_cycle")}</p>
           <Button
             className="bg-orange text-white mb-4"
             href="https://shop.upcrate.art/product/subscription-1-month/"
           >
-            Subscribe now
+            {t("sections.subscribe_now.subscriptions.0.cta")}
           </Button>
-          <p>(~ 25 USD)</p>
+          <p>{t("sections.subscribe_now.subscriptions.0.dollar_estimation")}</p>
         </div>
 
         <div className="bg-purple-dark text-center text-white flex flex-col pt-4 pb-10 rounded mt-16 md:mt-0">
@@ -170,14 +173,14 @@ export function SubscribeNowSection() {
               />
             </svg>
           </div>
-          <p>Pay every 3 months</p>
+          <p>{t("sections.subscribe_now.subscriptions.1.payment_cycle")}</p>
           <Button
             className="bg-pink text-white mb-4"
             href="https://shop.upcrate.art/product/subscription-3-months/"
           >
-            Subscribe now
+            {t("sections.subscribe_now.subscriptions.1.cta")}
           </Button>
-          <p>(~ 71 USD)</p>
+          <p>{t("sections.subscribe_now.subscriptions.1.dollar_estimation")}</p>
         </div>
       </div>
     </section>

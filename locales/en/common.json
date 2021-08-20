@@ -60,6 +60,21 @@
           "text": "Your crate arrives!!! Open it up and get creative"
         }
       ]
+    },
+    "subscribe_now": {
+      "title": "Subscribe now",
+      "subscriptions": [
+        {
+          "payment_cycle": "Pay every month",
+          "cta": "Subscribe now",
+          "dollar_estimation": "(~ 25 USD)"
+        },
+        {
+          "payment_cycle": "Pay every 3 months",
+          "cta": "Subscribe now",
+          "dollar_estimation": "(~ 71 USD)"
+        }
+      ]
     }
   }
 }
