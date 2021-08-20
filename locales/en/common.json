@@ -101,6 +101,10 @@
       "days": "Days",
       "hours": "Hours",
       "text": "Till the 5th of every month"
+    },
+    "upcrate_as_gift": {
+      "title": "upcrate as a gift",
+      "cta": "Give a gift"
     }
   }
 }
