@@ -178,6 +178,28 @@
     },
     "instagram": {
       "cta": "Follow us on Instagram"
+    },
+    "how_it_works": {
+      "title": "How it works",
+      "subtitle": "If you’re not familiar with subscription boxes then you might be wondering how this all works. It’s fairly simple….",
+      "steps": [
+        {
+          "text": "choose your sailing schedule (1 or 3 months), add it to the cart and checkout."
+        },
+        {
+          "text": "our art treasures will be put together by Captain Crates crew and will be shipped out with the next batch of boxes on the 15th of each month."
+        },
+        {
+          "text": "Unbox your creativity with your new supplies and our co-captain’s (artist of the month) video, interview and art advice. Share your artwork your the art crew (#upcrate) and participate in our monthly #upcratebattle!"
+        },
+        {
+          "text": "If you loved your box and want to stay subscribed - relax and wait until the next month. Your subscription automatically renews and your next crate is already saved for you."
+        },
+        {
+          "text": "In case you’re getting seasick on the way and you’d like to cancel your subscription, simply log into your customer account and opt out at any time. No further payments will be taken until you decide to hop on board again."
+        }
+      ],
+      "ready_set_draw": "Ready\nSet\nDraw!"
     }
   }
 }

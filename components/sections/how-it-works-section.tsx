@@ -1,16 +1,18 @@
+import useTranslation from "next-translate/useTranslation";
 import Image from "next/image";
 import { RadialGradient } from "../elements/radial-gradient";
 
 export function HowItWorksSection() {
+  const { t } = useTranslation("common");
+
   return (
     <section className="text-center text-purple-dark bg-white pt-6 pb-6 px-10 md:pt-20 md:pb-24 relative overflow-hidden">
       <div className="z-10 relative text-purple-dark">
         <h3 className="font-display text-purple-dark text-2xl md:text-5xl">
-          How it works
+          {t("sections.how_it_works.title")}
         </h3>
         <p className="mt-8 text-xl max-w-lg mx-auto text-center">
-          If you’re not familiar with subscription boxes then you might be
-          wondering how this all works. It’s fairly simple….
+          {t("sections.how_it_works.subtitle")}
         </p>
 
         <div className="md:grid grid-flow-rows grid-cols-6 grid-rows-2 gap-4 mt-20 align-center justify-center gap-20 md:text-xl relative">
@@ -25,10 +27,7 @@ export function HowItWorksSection() {
                 width={390}
                 height={312}
               />
-              <p>
-                choose your sailing schedule (1 or 3 months), add it to the cart
-                and checkout.
-              </p>
+              <p>{t("sections.how_it_works.steps.0.text")}</p>
             </div>
           </div>
           <div className="md:-mt-16 mt-10 col-span-2 items-center flex justify-center">
@@ -42,11 +41,7 @@ export function HowItWorksSection() {
                 width={482}
                 height={322}
               />
-              <p>
-                our art treasures will be put together by Captain Crates crew
-                and will be shipped out with the next batch of boxes on the 15th
-                of each month
-              </p>
+              <p>{t("sections.how_it_works.steps.1.text")}</p>
             </div>
           </div>
           <div className="mt-10 col-span-2 items-center flex justify-center">
@@ -60,12 +55,7 @@ export function HowItWorksSection() {
                 width={389}
                 height={311}
               />
-              <p>
-                Unbox your creativity with your new supplies and our
-                co-captain’s (artist of the month) video, interview and art
-                advice. Share your artwork your the art crew (#upcrate) and
-                participate in our monthly #upcratebattle!
-              </p>
+              <p>{t("sections.how_it_works.steps.2.text")}</p>
             </div>
           </div>
           <div className="mt-10 col-span-3 items-center flex justify-center md:order-5">
@@ -79,11 +69,7 @@ export function HowItWorksSection() {
                 width={432}
                 height={341}
               />
-              <p>
-                If you loved your box and want to stay subscribed - relax and
-                wait until the next month. Your subscription automatically
-                renews and your next crate is already saved for you.
-              </p>
+              <p>{t("sections.how_it_works.steps.3.text")}</p>
             </div>
           </div>
           <div className="mt-10 col-span-3 items-center flex justify-center md:order-4">
@@ -97,21 +83,12 @@ export function HowItWorksSection() {
                 width={390}
                 height={312}
               />
-              <p>
-                In case you’re getting seasick on the way and you’d like to
-                cancel your subscription, simply log into your customer account
-                and opt out at any time. No further payments will be taken until
-                you decide to hop on board again.
-              </p>
+              <p>{t("sections.how_it_works.steps.4.text")}</p>
             </div>
           </div>
           <div className="hidden md:flex absolute top-0 right-0 bottom-0 left-0 justify-center items-center">
-            <h4 className="text-5xl text-purple font-display">
-              Ready
-              <br />
-              Set
-              <br />
-              Draw!
+            <h4 className="text-5xl text-purple font-display whitespace-pre-line">
+              {t("sections.how_it_works.ready_set_draw")}
             </h4>
           </div>
         </div>
