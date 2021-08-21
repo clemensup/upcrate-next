@@ -11,7 +11,5 @@ export function usePersistLocaleCookie() {
     const expireMs = 100 * 24 * 60 * 60 * 1000; // 100 days
     date.setTime(date.getTime() + expireMs);
     document.cookie = `NEXT_LOCALE=${locale};expires=${date.toUTCString()};path=/`;
-
-    console.log(locale);
   }
 }

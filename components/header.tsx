@@ -38,7 +38,7 @@ export function Header(): JSX.Element {
           </a>
           <a
             href="https://upcrate.art/subscribe"
-            className="lg:hidden bg-orange p-0 font-display py-1"
+            className="lg:hidden bg-orange hover:bg-pink p-0 font-display py-1"
           >
             <span className="text-white text-lg">
               {t("subscribe_now_button_text")}
@@ -72,7 +72,7 @@ export function Header(): JSX.Element {
                 <a href="/about">{t("navlink_about")}</a>
               </li>
 
-              <li className="lg:pr-10 lg:pl-20 hidden lg:block">
+              <li className="lg:pr-10 lg:pl-20 hidden lg:block ">
                 <a
                   href="https://shop.upcrate.art/account"
                   className="fill-current text-purple-dark"
@@ -84,7 +84,7 @@ export function Header(): JSX.Element {
               <li>
                 <a
                   href="https://shop.upcrate.art/subscribe"
-                  className="font-display bg-orange text-white pt-2 pb-3 text-3xl hidden lg:block"
+                  className="font-display bg-orange hover:bg-pink text-white pt-2 pb-3 text-3xl hidden lg:block"
                 >
                   {t("subscribe_now_button_text")}
                 </a>
