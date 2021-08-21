@@ -1,7 +1,5 @@
 import useTranslation from "next-translate/useTranslation";
-import Image from "next/image";
 import {
-  CaptainCrateSvg,
   Caret,
   HeroSection,
   Layout,
@@ -24,11 +22,13 @@ export interface Product {
   stock_status: "instock" | "outofstock";
   regular_price: string;
 }
+
 export interface CratesProps {
   products: Product[];
+  pageCount: number;
 }
 
-export default function Crates({ products }: CratesProps) {
+export default function Crates({ products, pageCount }: CratesProps) {
   const { t } = useTranslation("common");
 
   return (
@@ -40,7 +40,7 @@ export default function Crates({ products }: CratesProps) {
         mobileImage="/about-us-hero-xs.png"
       />
 
-      <CratesList products={products} />
+      <CratesList products={products} pageCount={pageCount} />
 
       <JoinTheArtCrewSection>
         <a
@@ -73,9 +73,9 @@ export default function Crates({ products }: CratesProps) {
 }
 
 export const getStaticProps = async () => {
-  const wooCommerceProducts = await fetchCrates().catch(console.error);
+  const wcData = await fetchCrates().catch(console.error);
 
-  if (!wooCommerceProducts) {
+  if (!wcData) {
     return {
       notFound: true,
     };
@@ -83,7 +83,8 @@ export const getStaticProps = async () => {
 
   return {
     props: {
-      products: wooCommerceProducts.data,
+      products: wcData.data,
+      pageCount: parseInt(wcData.headers["x-wp-totalpages"], 10),
     },
   };
 };

@@ -1,31 +1,39 @@
 import useTranslation from "next-translate/useTranslation";
 import React from "react";
-import { Product } from "../pages/crates";
 import { fetchCrates } from "../utils/wc-api";
 import { RadialGradient } from "./elements/radial-gradient";
+import { Caret } from "./elements/svg";
+import { CratesProps } from "./../pages/crates";
 
-export function CratesList({ products }: { products: Product[] }) {
+export function CratesList({ products, pageCount }: CratesProps) {
   const { t } = useTranslation("common");
   const [page, setPage] = React.useState(1);
   const [state, setState] = React.useState(products);
   const [isFetching, setIsFetching] = React.useState(false);
 
+  const listRef = React.useRef(null);
+
   const fetchMoreProducts = async () => {
     setIsFetching(true);
-
-    const nextProducts = await fetchCrates(page * 9).catch(console.error);
-
+    const nextProducts = await fetchCrates((page - 1) * 9).catch(console.error);
     setState(nextProducts.data);
     setIsFetching(false);
-    setPage(page + 1);
+    listRef.current.scrollIntoView();
   };
+
+  React.useEffect(() => {
+    fetchMoreProducts();
+  }, [page]);
 
   if (!state) {
     return <div>{t("pages.crates.crates_list.no_products_message")}</div>;
   }
 
   return (
-    <section className="min-h-sectionBig md:min-h-sectionBigMd p-10 md:p-20 pt-20 -mt-20 md:-mt-10 relative overflow-hidden">
+    <section
+      className="min-h-sectionBig md:min-h-sectionBigMd p-10 md:p-20 pt-20 -mt-20 md:-mt-10 relative overflow-hidden"
+      ref={listRef}
+    >
       <RadialGradient className="bg-orange" />
       <div className="z-10 relative text-purple-dark">
         <h3 className="font-display text-center text-2xl md:text-5xl">
@@ -40,7 +48,9 @@ export function CratesList({ products }: { products: Product[] }) {
             {state.map((product) => (
               <li key={product.id}>
                 <a href={product.permalink}>
-                  <img src={product.images[0].src} width={340} height={340} />
+                  {product.images && product.images.length > 0 && (
+                    <img src={product.images[0].src} width={340} height={340} />
+                  )}
                   <h5 className="text-3xl font-bold">{product.name}</h5>
                   <div className="flex justify-between mt-2">
                     <span className="text-xl">{product.regular_price} €</span>
@@ -55,12 +65,32 @@ export function CratesList({ products }: { products: Product[] }) {
             ))}
           </ul>
 
-          {/* TODO: PAGINATION <Button
-          className="bg-purple text-white"
-          onClick={() => fetchMoreProducts()}
-        >
-          {isFetching ? "Loading" : "Previous Page"}
-        </Button> */}
+          <div className="flex justify-between items-center">
+            <button
+              className="disabled:opacity-50 font-display p-3 pt-2 pb-3 md:text-3xl inline-flex items-center content-center gap-4 mt-2 md:mt-5 max-w-max mx-auto bg-purple text-white hover:bg-pink"
+              onClick={() => setPage(page - 1)}
+              disabled={page === 1 || isFetching}
+            >
+              <div className="transform rotate-180">
+                <Caret />
+              </div>
+              {t("pages.crates.crates_list.previous_page_button")}
+            </button>
+
+            <div>
+              {isFetching && <div>Loading...</div>}
+              Page {page} of {pageCount}
+            </div>
+
+            <button
+              className="disabled:opacity-50 font-display p-3 pt-2 pb-3 md:text-3xl inline-flex items-center content-center gap-4 mt-2 md:mt-5 max-w-max mx-auto bg-purple text-white hover:bg-pink"
+              onClick={() => setPage(page + 1)}
+              disabled={page === pageCount || isFetching}
+            >
+              {t("pages.crates.crates_list.next_page_button")}
+              <Caret />
+            </button>
+          </div>
         </div>
       </div>
       <RadialGradient className="bg-green" variant="bottom" />

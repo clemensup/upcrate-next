@@ -3,6 +3,7 @@ interface ButtonProps {
   variant?: "default" | "outline";
   onClick?: () => void;
   href?: string;
+  disabled?: boolean;
 }
 
 export function Button({
@@ -11,6 +12,7 @@ export function Button({
   className,
   href,
   onClick,
+  disabled = false,
 }: React.PropsWithChildren<ButtonProps>) {
   const variantClassName = variant === "outline" ? "bg-red" : "bg-none";
 
@@ -19,6 +21,7 @@ export function Button({
       <button
         className={`font-display p-3 pt-2 pb-3 md:text-3xl inline-flex items-center content-center gap-4 mt-2 md:mt-5 max-w-max mx-auto ${variantClassName} ${className}`}
         onClick={onClick}
+        disabled={disabled}
       >
         {children}
       </button>
