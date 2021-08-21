@@ -11,38 +11,48 @@ export function Footer(): JSX.Element {
       <div className="container mx-auto p-5 md:p-0 w-full grid mb-4 md:grid-cols-6">
         <CaptainCrateSvg variant="head-only" className="text-white mb-5" />
         <div>
-          <h4 className="mb-4 text-xl uppercase">Legal</h4>
+          <h4 className="mb-4 text-xl uppercase">
+            {t("navigation.legal_headline")}
+          </h4>
           <ul className="list-reset leading-normal text-red text-xl">
             <li>
-              <a href="/imprint">imprint</a>
+              <a href="/imprint">{t("navigation.imprint")}</a>
             </li>
             <li>
-              <a href="/privacy">privacy</a>
+              <a href="/privacy">{t("navigation.privacy")}</a>
             </li>
             <li>
-              <a href="/terms-and-conditions">general terms and conditions</a>
+              <a href="/terms-and-conditions">
+                {t("navigation.terms_and_conditions")}
+              </a>
             </li>
             <li>
-              <a href="/cancellation-policy">cancellation policy</a>
+              <a href="/cancellation-policy">
+                {t("navigation.cancellation_policy")}
+              </a>
             </li>
           </ul>
 
           <Image src="/tube.svg" width="100%" height="auto" />
         </div>
         <div className="md:col-span-2">
-          <h4 className="mb-4 text-xl uppercase">Info</h4>
+          <h4 className="mb-4 text-xl uppercase">
+            {t("navigation.info_headline")}
+          </h4>
           <ul className="text-blue text-xl">
             <li>
-              <a href="/refer-a-friend">refer a friend</a>
+              <a href="/refer-a-friend">{t("navigation.refer_a_friend")}</a>
             </li>
             <li>
-              <a href="/contact">help / contact</a>
+              <a href="/contact">{t("navigation.help_contact")}</a>
             </li>
             <li>
               <a href="/faqs">FAQs</a>
             </li>
             <li>
-              <a href="https://shop.upcrate.art/account/">sign up / login </a>
+              <a href="https://shop.upcrate.art/account/">
+                {t("navigation.signup_login")}
+              </a>
             </li>
           </ul>
           <Image src="/pen.svg" width="100%" height="auto" />
@@ -66,19 +76,54 @@ export function Footer(): JSX.Element {
       <div className="p-5 md:p-0 container mx-auto sm:flex mb-4">
         <ul className="flex flex-wrap gap-8">
           <li>
-            <a href="">Facebook</a>
+            <a
+              className="hover:underline"
+              target="_blank"
+              rel="noopener noreferrer"
+              href="https://www.facebook.com/Upcrate/"
+            >
+              Facebook
+            </a>
           </li>
           <li>
-            <a href="">Instagram</a>
+            <a
+              className="hover:underline"
+              target="_blank"
+              rel="noopener noreferrer"
+              href="https://www.instagram.com/upcrate/"
+            >
+              Instagram
+            </a>
           </li>
           <li>
-            <a href="">Pinterest</a>
+            <a
+              className="hover:underline"
+              target="_blank"
+              rel="noopener noreferrer"
+              href="https://www.pinterest.de/Upcrate_Art/"
+            >
+              Pinterest
+            </a>
           </li>
           <li>
-            <a href="">Twitter</a>
+            <a
+              className="hover:underline"
+              target="_blank"
+              rel="noopener noreferrer"
+              href="https://twitter.com/upcrateart"
+            >
+              Twitter
+            </a>
           </li>
           <li>
-            <a href="">Youtube</a>
+            <a
+              className="hover:underline"
+              target="_blank"
+              rel="noopener noreferrer"
+              href="https://www.youtube.com/channel/UCuBKFplxdLGbCKJaiKnHgcg"
+            >
+              Youtube
+            </a>
           </li>
         </ul>
       </div>
