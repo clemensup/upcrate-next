@@ -1,8 +1,7 @@
-import { Caret, UnboxYourCreativitySection } from "../components";
+import { Caret, HeroSection, UnboxYourCreativitySection } from "../components";
 import { ConnectSloganSection } from "../components/sections/connect-slogan-section";
 import { FlowingHeads } from "../components/flowing-heads";
 import { FollowUsOnInstagramSection } from "../components/sections/follow-us-on-instagram-section";
-import { HeroSliderSection } from "../components/sections/hero-slider-section";
 import { JoinTheArtCrewSection } from "../components/sections/join-the-art-crew-section";
 import { Layout } from "../components/layout";
 import { ImageSection } from "../components/sections/image-section";
@@ -17,8 +16,12 @@ export default function HowItWorks() {
 
   return (
     <Layout>
-      <HeroSliderSection />
-      <JoinTheArtCrewSection />
+      <HeroSection
+        className="bg-purple-dark"
+        title={"How it works"}
+        image="/how-it-works/hero-image.png"
+      />
+      <JoinTheArtCrewSection className="-mt-10 md:-mt-20 pt-36" />
       <ImageSection
         bg="how-it-works/image-section01"
         variant="xs"

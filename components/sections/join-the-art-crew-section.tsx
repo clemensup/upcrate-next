@@ -5,11 +5,14 @@ import { RadialGradient } from "../elements/radial-gradient";
 
 export function JoinTheArtCrewSection({
   children,
-}: React.PropsWithChildren<{}>) {
+  className = "",
+}: React.PropsWithChildren<{ className?: string }>) {
   const { t } = useTranslation("common");
 
   return (
-    <section className="text-center text-white bg-purple pt-6 pb-10 px-10 md:pt-20 md:pb-24 relative overflow-hidden">
+    <section
+      className={`text-center text-white bg-purple pt-6 pb-10 px-10 md:pt-20 md:pb-24 relative overflow-hidden ${className}`}
+    >
       <RadialGradient className="bg-purple-dark" />
       <div className="z-10 relative text-purple-dark">
         <h3 className="font-display text-white text-2xl md:text-5xl">
