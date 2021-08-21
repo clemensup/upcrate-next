@@ -50,3 +50,20 @@
     transform: translate(-50%, -50%);
   }
 }
+
+.box {
+  offset-rotate: 0deg;
+  position: absolute;
+  top: 10%;
+  left: 0%;
+
+  offset-path: path(
+    "M418.986,0c231.4,0,418.986,102.32,418.986,228.538S650.386,457.076,418.986,457.076,0,354.756,0,228.538,187.586,0,418.986,0Z"
+  );
+}
+
+.gradient-center-xl {
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}

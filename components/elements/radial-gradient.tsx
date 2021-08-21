@@ -41,8 +41,7 @@ export function RadialGradient({
       break;
 
     case "center-xl":
-      posClass =
-        "gradient-center top-0 md:top-1/2 left-1/4 md:left-1/2 w-full h-full";
+      posClass = "gradient-center gradient-center-xl w-full h-full";
       break;
 
     case "bottom-right":

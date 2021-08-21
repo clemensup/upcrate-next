@@ -237,7 +237,7 @@
     },
     "upcrate_battle": {
       "title": "#upcratebattle",
-      "subtitle": "Take part in our online challenges and get a chance to win great prizes!\nEvery month a new topic awaits to inspire you!",
+      "text": "Take part in our online challenges and get a chance to win great prizes!\nEvery month a new topic awaits to inspire you!",
       "prize_example": "<1>Win great prizes every month</1>E.G. 60 Rembrandt Soft Pastels",
       "how_to_participate": {
         "title": "How to participate:",
@@ -347,6 +347,24 @@
           ]
         }
       }
+    },
+    "time_for_art": {
+      "title": "Advantages for members of the art crew:",
+      "advantages": [
+        {
+          "text": "Be surprised by a mystery box full of great materials each month"
+        },
+        {
+          "text": "Receive a wide range of high quality art materials for a small price"
+        },
+        {
+          "text": "Take part in challenges & giveaways via Upcrate’s social media and win great prizes"
+        },
+        {
+          "text": "Expand your artistic skills and learn from professional artists"
+        },
+        { "text": "Use your coordinated materials for your own art projects" }
+      ]
     }
   },
   "faqs": [

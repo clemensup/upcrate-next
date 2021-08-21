@@ -17,6 +17,7 @@ import { ProfessionalHowToVideosSection } from "../components/sections/professio
 import { NewsletterSection } from "../components/sections/newsletter-section";
 import { InviteFriendsSection } from "../components/sections/invite-friends-section";
 import { FormattedText } from "../components/elements/formatted-text";
+import { TimeForArtSection } from "../components/sections/time-for-art-section";
 
 export default function ArtCrew() {
   const { t } = useTranslation("common");
@@ -39,7 +40,7 @@ export default function ArtCrew() {
       </NewsletterSection>
       <FlowingHeads className="bg-purple" />
       <div className="min-h-sectionSmall md:min-h-sectionSmallMd bg-artcrew-image-section01 bg-center bg-cover bg-no-repeat"></div>
-      TODO: TIME FOR ART!
+      <TimeForArtSection />
       <InviteFriendsSection />
       <UpcrateAsGiftSection />
       <UpcrateBattleSection />
