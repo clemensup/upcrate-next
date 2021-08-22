@@ -1,4 +1,5 @@
 import {
+  Button,
   CaptainCrateSvg,
   Caret,
   SubscribeNowSection,
@@ -76,13 +77,13 @@ export default function Home() {
         <h3 className="text-purple-dark text-4xl mx-auto text-center max-w-5xl font-bold whitespace-pre-line">
           {t("pages.home.chosen_one_section.title")}
         </h3>
-        <a
+        <Button
           className="bg-purple hover:bg-purple-dark font-display p-3 pt-2 pb-3 md:text-3xl inline-flex items-center relative mt-5 text-white px-10 mx-auto gap-4"
           href="/subscriptions"
         >
           {t("subscribe_now_button_text")}
           <Caret />
-        </a>
+        </Button>
       </UnboxYourCreativitySection>
     </Layout>
   );

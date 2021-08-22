@@ -1,3 +1,4 @@
+import { motion } from "framer-motion";
 import useTranslation from "next-translate/useTranslation";
 import Image from "next/image";
 import { FormattedText } from "../elements/formatted-text";
@@ -147,13 +148,15 @@ export function UpcrateBattleSection() {
             <h4 className="text-3xl sm:text-5xl md:text-7xl text-white font-display text-purple-dark max-w-6xl">
               {t("sections.upcrate_battle.checkout_instagram")}
             </h4>
-            <a
+            <motion.a
               href="https://instagram.com/upcrate/"
               className="hover:underline"
               target="_blank"
+              whileHover={{ scale: 1.2 }}
+              whileTap={{ scale: 0.8 }}
             >
               <Image src="/instagram.png" width={88} height={88} />
-            </a>
+            </motion.a>
           </div>
           <RadialGradient className="bg-green" variant="center" />
         </section>

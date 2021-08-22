@@ -1,3 +1,4 @@
+import { motion } from "framer-motion";
 import useTranslation from "next-translate/useTranslation";
 import Image from "next/image";
 import { RadialGradient } from "../elements/radial-gradient";
@@ -13,31 +14,39 @@ export function AsFeaturedInSection() {
           {t("sections.as_featured_in.title")}
         </h3>
         <div className="flex gap-20 justify-center mt-10 md:mt-32">
-          <a href="https://www.palette-magazin.de" target="_blank">
-            <Image src="/palette.png" width={222} height={103} />
-          </a>
-
-          <a
+          <motion.a
             href="https://www.palette-magazin.de"
             target="_blank"
+            whileHover={{ scale: 1.2 }}
+            whileTap={{ scale: 0.8 }}
+          >
+            <Image src="/palette.png" width={222} height={103} />
+          </motion.a>
+          <motion.a
+            href="https://www.palette-magazin.de"
+            target="_blank"
+            whileHover={{ scale: 1.2 }}
+            whileTap={{ scale: 0.8 }}
+          >
+            <Image src="/palette.png" width={222} height={103} />
+          </motion.a>
+          <motion.a
+            href="https://www.palette-magazin.de"
+            target="_blank"
+            whileHover={{ scale: 1.2 }}
+            whileTap={{ scale: 0.8 }}
+          >
+            <Image src="/palette.png" width={222} height={103} />
+          </motion.a>
+          <motion.a
+            href="https://www.palette-magazin.de"
+            target="_blank"
+            whileHover={{ scale: 1.2 }}
+            whileTap={{ scale: 0.8 }}
             className="hidden md:block"
           >
             <Image src="/palette.png" width={222} height={103} />
-          </a>
-          <a
-            href="https://www.palette-magazin.de"
-            target="_blank"
-            className="hidden md:block"
-          >
-            <Image src="/palette.png" width={222} height={103} />
-          </a>
-          <a
-            href="https://www.palette-magazin.de"
-            target="_blank"
-            className="hidden md:block"
-          >
-            <Image src="/palette.png" width={222} height={103} />
-          </a>
+          </motion.a>
         </div>
       </div>
     </section>

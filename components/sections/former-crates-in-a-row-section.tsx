@@ -5,6 +5,7 @@ import { ArrowSvg } from "../elements/svg/arrow-svg";
 import React from "react";
 import { useWindowSize } from "../../hooks/use-window-size";
 import useTranslation from "next-translate/useTranslation";
+import { motion } from "framer-motion";
 
 function SliderArrow({
   variant,
@@ -14,10 +15,12 @@ function SliderArrow({
   onClick?: any;
 }) {
   return (
-    <div
+    <motion.div
       className={`absolute top-1/2 -mt-20 md:block text-white z-10 ${
         variant === "next" ? "md:block -right-10" : "-left-10"
       }`}
+      whileHover={{ scale: 1.5 }}
+      whileTap={{ scale: 0.8 }}
     >
       <button
         onClick={onClick}
@@ -25,7 +28,7 @@ function SliderArrow({
       >
         <ArrowSvg />
       </button>
-    </div>
+    </motion.div>
   );
 }
 
@@ -34,11 +37,12 @@ function Slide({
   className,
 }: React.PropsWithChildren<{ className?: string }>) {
   return (
-    <div
+    <motion.div
       className={`${className} md:px-10 pt-6 md:pb-20 relative flex justify-center items-center`}
+      whileHover={{ scale: 1.2 }}
     >
       {children}
-    </div>
+    </motion.div>
   );
 }
 
