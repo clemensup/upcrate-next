@@ -57,18 +57,11 @@ export default function HowItWorks() {
       </ConnectSloganSection>
       <ImageSection bg="how-it-works/image-section" />
       <FollowUsOnInstagramSection />
-      <UnboxYourCreativitySection className="bg-purple">
-        <h3 className="text-white text-4xl mx-auto text-center max-w-5xl font-bold  whitespace-pre-line">
-          {t("pages.how_it_works.chosen_one_section.title")}
-        </h3>
-        <Button
-          className="bg-rose font-display p-3 pt-2 pb-3 md:text-3xl inline-flex items-center relative mt-5 text-white px-10 mx-auto gap-4"
-          href="/subscriptions"
-        >
-          {t("subscribe_now_button_text")}
-          <Caret />
-        </Button>
-      </UnboxYourCreativitySection>
+      <UnboxYourCreativitySection
+        className="bg-purple text-white"
+        title={t("pages.how_it_works.chosen_one_section.title")}
+        buttonColors="bg-rose hover:bg-red text-white"
+      />
     </Layout>
   );
 }

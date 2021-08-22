@@ -73,18 +73,12 @@ export default function ArtCrew() {
       </ConnectSloganSection>
       <div className="min-h-sectionSmall md:min-h-sectionSmallMd bg-artcrew-image-section05 bg-center bg-contain bg-no-repeat"></div>
       <FollowUsOnInstagramSection />
-      <UnboxYourCreativitySection className="bg-rose">
-        <h3 className="text-purple-dark text-4xl mx-auto text-center max-w-5xl font-bold  whitespace-pre-line">
-          {t("pages.artcrew.chosen_one_section.title")}
-        </h3>
-        <Button
-          className="bg-purple hover:bg-purple-dark font-display p-3 pt-2 pb-3 md:text-3xl inline-flex items-center relative mt-5 text-white px-10 mx-auto"
-          href="/subscriptions"
-        >
-          {t("subscribe_now_button_text")}
-          <Caret />
-        </Button>
-      </UnboxYourCreativitySection>
+
+      <UnboxYourCreativitySection
+        className="bg-rose text-purple-dark"
+        title={t("pages.artcrew.chosen_one_section.title")}
+        buttonColors="bg-purple hover:bg-purple-dark text-white"
+      />
     </Layout>
   );
 }
