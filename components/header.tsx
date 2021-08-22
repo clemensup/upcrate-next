@@ -10,6 +10,60 @@ import { BurgerSvg } from "./elements/svg";
 import { usePersistLocaleCookie } from "../hooks/use-persistent-locale";
 import { motion } from "framer-motion";
 
+const pathMotion = {
+  rest: {
+    opacity: 0,
+    pathLength: 0,
+    ease: "linear",
+    duration: 0.5,
+    type: "tween",
+  },
+  hover: {
+    opacity: 1,
+    pathLength: 1,
+    transition: {
+      duration: 0.5,
+      type: "tween",
+      ease: "easeIn",
+    },
+  },
+};
+
+function HeaderNavLink({
+  children,
+  href,
+}: React.PropsWithChildren<{ href: string }>) {
+  return (
+    <motion.div
+      className="relative cursor-pointer"
+      initial="rest"
+      whileHover="hover"
+      animate="rest"
+    >
+      <div className="absolute top-0 left-0">
+        <motion.svg
+          xmlns="http://www.w3.org/2000/svg"
+          viewBox="0 0 124.016 35.815"
+          className="w-full"
+        >
+          <motion.path
+            d="M-227.328-157.688q36.632-.322,73.262.262a270.754,270.754,0,0,1-73.309,27l113.412-13.66A169.871,169.871,0,0,0-210.3-145.5c33.541-4.485,67.086-8.971,100.5-14.3"
+            transform="translate(230.375 163.237)"
+            fill="none"
+            stroke="#94d4b8"
+            strokeLinecap="round"
+            strokeLinejoin="round"
+            strokeMiterlimit="10"
+            strokeWidth="6"
+            variants={pathMotion}
+          />
+        </motion.svg>
+      </div>
+      <Link href={href}>{children}</Link>
+    </motion.div>
+  );
+}
+
 export function Header(): JSX.Element {
   const { t, lang } = useTranslation("common");
   const router = useRouter();
@@ -59,22 +113,30 @@ export function Header(): JSX.Element {
                 !isMenuActive ? "hidden" : ""
               } font-bold absolute top-full width-full z-40 left-0 right-0 bg-white text-center lg:relative lg:block lg:flex lg:flex-row text-purple-dark text-2xl lg:items-center`}
             >
-              <li className="lg:pr-5 hover:underline">
-                <Link href="/how-it-works">{t("navigation.how_it_works")}</Link>
+              <li className="lg:pr-5">
+                <HeaderNavLink href="/how-it-works">
+                  {t("navigation.how_it_works")}
+                </HeaderNavLink>
               </li>
-              <li className="lg:pr-5 hover:underline">
-                <Link href="https://shop.upcrate.art">
+              <li className="lg:pr-5">
+                <HeaderNavLink href="https://shop.upcrate.art">
                   {t("navigation.shop")}
-                </Link>
+                </HeaderNavLink>
               </li>
-              <li className="lg:pr-5 hover:underline">
-                <Link href="/crates">{t("navigation.crates")}</Link>
+              <li className="lg:pr-5">
+                <HeaderNavLink href="/crates">
+                  {t("navigation.crates")}
+                </HeaderNavLink>
               </li>
-              <li className="lg:pr-5 hover:underline">
-                <Link href="/artcrew">{t("navigation.artcrew")}</Link>
+              <li className="lg:pr-5">
+                <HeaderNavLink href="/artcrew">
+                  {t("navigation.artcrew")}
+                </HeaderNavLink>
               </li>
-              <li className="lg:pr-15 hover:underline">
-                <Link href="/about">{t("navigation.about")}</Link>
+              <li className="lg:pr-15">
+                <HeaderNavLink href="/about">
+                  {t("navigation.about")}
+                </HeaderNavLink>
               </li>
 
               <li className="lg:pr-10 lg:pl-20 hidden lg:block ">
