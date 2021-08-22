@@ -22,12 +22,19 @@ import { UnboxYourCreativitySvg } from "../components/elements/svg/unbox-your-cr
 import { RadialGradient } from "../components/elements/radial-gradient";
 import useTranslation from "next-translate/useTranslation";
 import { FormattedText } from "../components/elements/formatted-text";
+import Head from "next/head";
 
 export default function Home() {
   const { t } = useTranslation("common");
 
   return (
     <Layout>
+      <Head>
+        <title>Home | upcrate</title>
+        <meta property="og:title" content="Home | upcrate" key="title" />
+        <meta property="og:image" content="TODO:" />
+        <meta property="og:description" content="TODO:" />
+      </Head>
       <HeroSliderSection />
       <JoinTheArtCrewSection />
       <SubscribeNowSection />

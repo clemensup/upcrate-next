@@ -1,4 +1,5 @@
 import useTranslation from "next-translate/useTranslation";
+import Head from "next/head";
 import {
   Button,
   Caret,
@@ -34,6 +35,16 @@ export default function Crates({ products, pageCount }: CratesProps) {
 
   return (
     <Layout>
+      <Head>
+        <title>{t("pages.crates.title")} | upcrate</title>
+        <meta
+          property="og:title"
+          content={t("pages.crates.title")}
+          key="title"
+        />
+        <meta property="og:image" content="TODO:" />
+        <meta property="og:description" content="TODO:" />
+      </Head>
       <HeroSection
         className="bg-orange"
         title={t("pages.crates.title")}

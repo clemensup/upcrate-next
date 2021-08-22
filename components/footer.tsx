@@ -1,5 +1,6 @@
 import useTranslation from "next-translate/useTranslation";
 import Image from "next/image";
+import Link from "next/link";
 import { CaptainCrateSvg } from "./elements/svg/cpt-crate-svg";
 import { FooterNewsletterForm } from "./footer-newsletter-form";
 
@@ -16,20 +17,20 @@ export function Footer(): JSX.Element {
           </h4>
           <ul className="list-reset leading-normal text-red text-xl">
             <li>
-              <a href="/imprint">{t("navigation.imprint")}</a>
+              <Link href="/imprint">{t("navigation.imprint")}</Link>
             </li>
             <li>
-              <a href="/privacy">{t("navigation.privacy")}</a>
+              <Link href="/privacy">{t("navigation.privacy")}</Link>
             </li>
             <li>
-              <a href="/terms-and-conditions">
+              <Link href="/terms-and-conditions">
                 {t("navigation.terms_and_conditions")}
-              </a>
+              </Link>
             </li>
             <li>
-              <a href="/cancellation-policy">
+              <Link href="/cancellation-policy">
                 {t("navigation.cancellation_policy")}
-              </a>
+              </Link>
             </li>
           </ul>
 
@@ -41,18 +42,20 @@ export function Footer(): JSX.Element {
           </h4>
           <ul className="text-blue text-xl">
             <li>
-              <a href="/refer-a-friend">{t("navigation.refer_a_friend")}</a>
+              <Link href="https://shop.upcrate.art/refer-a-friend">
+                {t("navigation.refer_a_friend")}
+              </Link>
             </li>
             <li>
-              <a href="/contact">{t("navigation.help_contact")}</a>
+              <Link href="/contact">{t("navigation.help_contact")}</Link>
             </li>
             <li>
-              <a href="/faqs">FAQs</a>
+              <Link href="/faqs">FAQs</Link>
             </li>
             <li>
-              <a href="https://shop.upcrate.art/account/">
+              <Link href="https://shop.upcrate.art/account/">
                 {t("navigation.signup_login")}
-              </a>
+              </Link>
             </li>
           </ul>
           <Image src="/pen.svg" width="100%" height="auto" />

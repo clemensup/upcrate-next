@@ -15,12 +15,23 @@ import { WhyUpcrateSection } from "../components/sections/why-upcrate-section";
 import { HowItWorksSection } from "../components/sections/how-it-works-section";
 import useTranslation from "next-translate/useTranslation";
 import { FormattedText } from "../components/elements/formatted-text";
+import Head from "next/head";
 
 export default function HowItWorks() {
   const { t } = useTranslation("common");
 
   return (
     <Layout>
+      <Head>
+        <title>{t("pages.how_it_works.title")} | upcrate</title>
+        <meta
+          property="og:title"
+          content={t("pages.how_it_works.title")}
+          key="title"
+        />
+        <meta property="og:image" content="TODO:" />
+        <meta property="og:description" content="TODO:" />
+      </Head>
       <HeroSection
         className="bg-purple-dark"
         title={"How it works"}

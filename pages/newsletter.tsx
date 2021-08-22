@@ -1,4 +1,5 @@
 import useTranslation from "next-translate/useTranslation";
+import Head from "next/head";
 import Image from "next/image";
 import {
   Button,
@@ -16,6 +17,12 @@ export default function Newsletter() {
 
   return (
     <Layout>
+      <Head>
+        <title>Newsletter | upcrate</title>
+        <meta property="og:title" content="Newsletter | upcrate" key="title" />
+        <meta property="og:image" content="TODO:" />
+        <meta property="og:description" content="TODO:" />
+      </Head>
       <HeroSection
         className="bg-purple"
         title={"Newsletter"}

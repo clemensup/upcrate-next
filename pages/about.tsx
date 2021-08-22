@@ -12,12 +12,23 @@ import { FlowingHeads } from "../components/flowing-heads";
 import { RandomHeadsSection } from "../components/sections/random-heads-section";
 import { ConnectSloganSection } from "../components/sections/connect-slogan-section";
 import { FormattedText } from "../components/elements/formatted-text";
+import Head from "next/head";
 
 export default function About() {
   const { t } = useTranslation("common");
 
   return (
     <Layout>
+      <Head>
+        <title>{t("pages.about.title")} | upcrate</title>
+        <meta
+          property="og:title"
+          content={t("pages.about.title")}
+          key="title"
+        />
+        <meta property="og:image" content="TODO:" />
+        <meta property="og:description" content="TODO:" />
+      </Head>
       <HeroSection
         className="bg-green"
         title={t("pages.about.title")}

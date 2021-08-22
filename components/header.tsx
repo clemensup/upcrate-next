@@ -82,7 +82,7 @@ export function Header(): JSX.Element {
   return (
     <header>
       <div className="mx-auto p-2 lg:p-4 lg:p-10 relative">
-        <nav className="flex justify-between items-center">
+        <nav className="flex justify-between items-center cursor-pointer">
           <Link href="/">
             <div className="inline-block">
               <span className="inline-block lg:hidden">

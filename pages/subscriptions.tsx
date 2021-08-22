@@ -1,4 +1,5 @@
 import useTranslation from "next-translate/useTranslation";
+import Head from "next/head";
 import Image from "next/image";
 import { Button, Layout, SubscribeNowSection } from "../components";
 import { Countdown } from "../components/countdown";
@@ -13,6 +14,16 @@ export default function Subscriptions() {
 
   return (
     <Layout>
+      <Head>
+        <title>{t("pages.subscriptions.title")} | upcrate</title>
+        <meta
+          property="og:title"
+          content={t("pages.subscriptions.title")}
+          key="title"
+        />
+        <meta property="og:image" content="TODO:" />
+        <meta property="og:description" content="TODO:" />
+      </Head>
       <SubscribeNowSection />
       <section className="text-center md:pt-16 md:pb-20 relative overflow-hidden">
         <RadialGradient className="bg-orange" />
