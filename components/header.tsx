@@ -80,15 +80,15 @@ export function Header(): JSX.Element {
   };
 
   return (
-    <header>
-      <div className="mx-auto p-2 lg:p-4 lg:p-10 relative">
+    <header className="sticky top-0 z-30 bg-white">
+      <div className="mx-auto p-2 lg:p-4 relative">
         <nav className="flex justify-between items-center cursor-pointer">
           <Link href="/">
             <div className="inline-block">
               <span className="inline-block lg:hidden">
                 <CaptainCrateSvg variant="head-only" />
               </span>
-              <span className="hidden lg:inline-block">
+              <span className="hidden lg:inline-block max-w-56">
                 <Logo />
               </span>
             </div>
@@ -111,7 +111,7 @@ export function Header(): JSX.Element {
             <ul
               className={`${
                 !isMenuActive ? "hidden" : ""
-              } font-bold absolute top-full width-full z-40 left-0 right-0 bg-white text-center lg:relative lg:block lg:flex lg:flex-row text-purple-dark text-2xl lg:items-center`}
+              } font-bold absolute top-full width-full z-40 left-0 right-0 bg-white text-center lg:relative lg:block lg:flex lg:flex-row text-purple-dark text-xl lg:items-center`}
             >
               <li className="lg:pr-5">
                 <HeaderNavLink href="/how-it-works">
