@@ -8,6 +8,7 @@ import { Modal, Checkbox, Button } from ".";
 import { Dialog } from "@headlessui/react";
 import { BurgerSvg } from "./elements/svg";
 import { usePersistLocaleCookie } from "../hooks/use-persistent-locale";
+import { motion } from "framer-motion";
 
 export function Header(): JSX.Element {
   const { t, lang } = useTranslation("common");
@@ -77,21 +78,26 @@ export function Header(): JSX.Element {
               </li>
 
               <li className="lg:pr-10 lg:pl-20 hidden lg:block ">
-                <a
-                  href="https://shop.upcrate.art/account"
-                  className="fill-current text-purple-dark"
+                <motion.div
+                  whileHover={{ scale: 1.3, rotate: 360 }}
+                  whileTap={{ scale: 0.9 }}
                 >
-                  <CaptainCrateSvg />
-                </a>
+                  <a
+                    href="https://shop.upcrate.art/account"
+                    className="fill-current text-purple-dark"
+                  >
+                    <CaptainCrateSvg />
+                  </a>
+                </motion.div>
               </li>
 
               <li>
-                <a
+                <Button
                   href="https://shop.upcrate.art/subscribe"
                   className="font-display bg-orange hover:bg-pink text-white pt-2 pb-3 text-3xl hidden lg:block"
                 >
                   {t("subscribe_now_button_text")}
-                </a>
+                </Button>
               </li>
 
               <li

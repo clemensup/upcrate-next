@@ -1,5 +1,6 @@
 import useTranslation from "next-translate/useTranslation";
 import {
+  Button,
   Caret,
   HeroSection,
   Layout,
@@ -43,13 +44,13 @@ export default function Crates({ products, pageCount }: CratesProps) {
       <CratesList products={products} pageCount={pageCount} />
 
       <JoinTheArtCrewSection>
-        <a
+        <Button
           className="font-display p-3 pt-2 pb-3 md:text-3xl inline-flex items-center relative mt-5 bg-orange hover:bg-pink text-white px-10 mx-auto gap-4"
           href="/subscriptions"
         >
           {t("subscribe_now_button_text")}
           <Caret />
-        </a>
+        </Button>
       </JoinTheArtCrewSection>
       <div className="min-h-sectionSmall md:min-h-sectionSmallMd bg-crates-image-section bg-center bg-cover bg-no-repeat relative flex justify-center items-end p-12">
         <h3 className="text-6xl text-white text-center whitespace-pre-line font-display">
@@ -60,13 +61,13 @@ export default function Crates({ products, pageCount }: CratesProps) {
         <h3 className="text-purple-dark text-4xl mx-auto text-center max-w-5xl font-bold  whitespace-pre-line">
           {t("pages.crates.chosen_one_section.title")}
         </h3>
-        <a
+        <Button
           className="bg-purple hover:bg-purple-dark font-display p-3 pt-2 pb-3 md:text-3xl inline-flex items-center relative mt-5 text-white px-10 mx-auto"
           href="/subscriptions"
         >
           {t("subscribe_now_button_text")}
           <Caret />
-        </a>
+        </Button>
       </UnboxYourCreativitySection>
     </Layout>
   );

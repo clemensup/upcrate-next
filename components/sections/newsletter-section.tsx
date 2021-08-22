@@ -2,6 +2,7 @@ import useTranslation from "next-translate/useTranslation";
 import Image from "next/image";
 import React from "react";
 import { useMailchimpForm } from "../../hooks/use-mailchimp-form";
+import { Button } from "../elements/button";
 import { FormattedText } from "../elements/formatted-text";
 import { RadialGradient } from "../elements/radial-gradient";
 import { Caret } from "../elements/svg";
