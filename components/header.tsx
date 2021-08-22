@@ -12,14 +12,12 @@ import { motion } from "framer-motion";
 
 const pathMotion = {
   rest: {
-    opacity: 0,
     pathLength: 0,
     ease: "linear",
     duration: 0.5,
     type: "tween",
   },
   hover: {
-    opacity: 1,
     pathLength: 1,
     transition: {
       duration: 0.5,
@@ -40,26 +38,28 @@ function HeaderNavLink({
       whileHover="hover"
       animate="rest"
     >
-      <div className="absolute top-0 left-0">
-        <motion.svg
-          xmlns="http://www.w3.org/2000/svg"
-          viewBox="0 0 124.016 35.815"
-          className="w-full"
-        >
-          <motion.path
-            d="M-227.328-157.688q36.632-.322,73.262.262a270.754,270.754,0,0,1-73.309,27l113.412-13.66A169.871,169.871,0,0,0-210.3-145.5c33.541-4.485,67.086-8.971,100.5-14.3"
-            transform="translate(230.375 163.237)"
-            fill="none"
-            stroke="#94d4b8"
-            strokeLinecap="round"
-            strokeLinejoin="round"
-            strokeMiterlimit="10"
-            strokeWidth="6"
-            variants={pathMotion}
-          />
-        </motion.svg>
-      </div>
-      <Link href={href}>{children}</Link>
+      <Link href={href}>
+        <div>
+          <div className="absolute top-0 left-0">
+            <motion.svg
+              xmlns="http://www.w3.org/2000/svg"
+              viewBox="0 0 124.016 35.815"
+              className="w-full"
+            >
+              <motion.path
+                d="M-227.328-157.688q36.632-.322,73.262.262a270.754,270.754,0,0,1-73.309,27l113.412-13.66A169.871,169.871,0,0,0-210.3-145.5c33.541-4.485,67.086-8.971,100.5-14.3"
+                transform="translate(230.375 163.237)"
+                fill="none"
+                stroke="#94d4b8"
+                strokeMiterlimit="10"
+                strokeWidth="6"
+                variants={pathMotion}
+              />
+            </motion.svg>
+          </div>
+          {children}
+        </div>
+      </Link>
     </motion.div>
   );
 }
