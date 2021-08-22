@@ -8,7 +8,13 @@ import { Modal, Checkbox, Button } from ".";
 import { Dialog } from "@headlessui/react";
 import { BurgerSvg } from "./elements/svg";
 import { usePersistLocaleCookie } from "../hooks/use-persistent-locale";
-import { motion } from "framer-motion";
+import {
+  AnimatePresence,
+  motion,
+  useTransform,
+  useViewportScroll,
+} from "framer-motion";
+import { useScrollPosition } from "../hooks/use-scroll-position";
 
 const pathMotion = {
   rest: {
@@ -71,6 +77,7 @@ export function Header(): JSX.Element {
   const [languageSelectModalOpen, setLanguageSelectModalOpen] =
     React.useState(false);
   const [selectedLanguage, setSelectedLanguage] = React.useState(lang);
+  const { scrollTop } = useScrollPosition();
 
   usePersistLocaleCookie();
 
@@ -81,14 +88,16 @@ export function Header(): JSX.Element {
 
   return (
     <header className="sticky top-0 z-30 bg-white">
-      <div className="mx-auto p-2 lg:p-4 relative">
+      <div
+        className={`mx-auto p-2 lg:px-4 relative transition-all	duration-200`}
+      >
         <nav className="flex justify-between items-center cursor-pointer">
           <Link href="/">
             <div className="inline-block">
               <span className="inline-block lg:hidden">
                 <CaptainCrateSvg variant="head-only" />
               </span>
-              <span className="hidden lg:inline-block max-w-56">
+              <span className="hidden lg:block w-48">
                 <Logo />
               </span>
             </div>
