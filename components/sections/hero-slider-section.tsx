@@ -4,6 +4,8 @@ import "slick-carousel/slick/slick-theme.css";
 import { CaptainCrateSvg } from "../elements/svg";
 import { Button } from "../elements/button";
 import { ArrowSvg } from "../elements/svg/arrow-svg";
+import Image from "next/image";
+import { motion } from "framer-motion";
 
 function SliderArrow({
   variant,
@@ -13,10 +15,12 @@ function SliderArrow({
   onClick?: any;
 }) {
   return (
-    <div
+    <motion.div
       className={`absolute top-1/2 hidden md:block left-10 z-10 ${
         variant === "next" && "hidden md:block right-10 left-auto"
       }`}
+      whileHover={{ scale: 1.5 }}
+      whileTap={{ scale: 0.8 }}
     >
       <button
         onClick={onClick}
@@ -24,7 +28,7 @@ function SliderArrow({
       >
         <ArrowSvg />
       </button>
-    </div>
+    </motion.div>
   );
 }
 
@@ -35,9 +39,9 @@ function Slide({ background, image }: { background: string; image: string }) {
     >
       <CaptainCrateSvg
         variant="head-only"
-        className="hidden md:block w-7 text-purple-dark absolute -top-1 left-16"
+        className="hidden md:block w-7 text-purple-dark absolute xl:top-1 lg:left-16"
       />
-      <img src={image} alt="" />
+      <Image src={image} alt="" width={1704} height={855.35} />
       <div className="flex flex-col absolute top-0 right-0 bottom-0 left-0 text-purple-dark items-center justify-center">
         <h3 className="text-center text-3xl md:text-5xl lg:text-6xl xl:text-8xl font-display">
           Mystery
