@@ -132,7 +132,7 @@ export function ProfessionalHowToVideosSection() {
           </div>
           <div className="flex font-display md:hidden order-4 text-center text-purple-dark gap-5 relative">
             <RadialGradient className="bg-green" variant="center" />
-            <div className="z-10 flex flex-col">
+            <div className="z-10 flex flex-col gap-4">
               <p className="text-4xl whitespace-pre-line">
                 {t("sections.professional_howto_videos.checkout_youtube")}
               </p>

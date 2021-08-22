@@ -4,6 +4,7 @@ import { fetchCrates } from "../utils/wc-api";
 import { RadialGradient } from "./elements/radial-gradient";
 import { Caret } from "./elements/svg";
 import { CratesProps } from "./../pages/crates";
+import { useFirstRender } from "../hooks/use-first-render";
 
 export function CratesList({ products, pageCount }: CratesProps) {
   const { t } = useTranslation("common");
@@ -12,13 +13,17 @@ export function CratesList({ products, pageCount }: CratesProps) {
   const [isFetching, setIsFetching] = React.useState(false);
 
   const listRef = React.useRef(null);
+  const firstRender = useFirstRender();
 
   const fetchMoreProducts = async () => {
     setIsFetching(true);
     const nextProducts = await fetchCrates((page - 1) * 9).catch(console.error);
     setState(nextProducts.data);
     setIsFetching(false);
-    listRef.current.scrollIntoView();
+
+    if (!firstRender) {
+      listRef.current.scrollIntoView();
+    }
   };
 
   React.useEffect(() => {

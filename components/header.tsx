@@ -28,14 +28,16 @@ export function Header(): JSX.Element {
     <header>
       <div className="mx-auto p-2 lg:p-4 lg:p-10 relative">
         <nav className="flex justify-between items-center">
-          <a href="/" className="inline-block">
-            <span className="inline-block lg:hidden">
-              <CaptainCrateSvg variant="head-only" />
-            </span>
-            <span className="hidden lg:inline-block">
-              <Logo />
-            </span>
-          </a>
+          <Link href="/">
+            <div className="inline-block">
+              <span className="inline-block lg:hidden">
+                <CaptainCrateSvg variant="head-only" />
+              </span>
+              <span className="hidden lg:inline-block">
+                <Logo />
+              </span>
+            </div>
+          </Link>
           <a
             href="https://upcrate.art/subscribe"
             className="lg:hidden bg-orange hover:bg-pink p-0 font-display py-1"
@@ -57,19 +59,21 @@ export function Header(): JSX.Element {
               } font-bold absolute top-full width-full z-40 left-0 right-0 bg-white text-center lg:relative lg:block lg:flex lg:flex-row text-purple-dark text-2xl lg:items-center`}
             >
               <li className="lg:pr-5 hover:underline">
-                <a href="/how-it-works">{t("navigation.how_it_works")}</a>
+                <Link href="/how-it-works">{t("navigation.how_it_works")}</Link>
               </li>
               <li className="lg:pr-5 hover:underline">
-                <a href="https://shop.upcrate.art">{t("navigation.shop")}</a>
+                <Link href="https://shop.upcrate.art">
+                  {t("navigation.shop")}
+                </Link>
               </li>
               <li className="lg:pr-5 hover:underline">
-                <a href="/crates">{t("navigation.crates")}</a>
+                <Link href="/crates">{t("navigation.crates")}</Link>
               </li>
               <li className="lg:pr-5 hover:underline">
-                <a href="/artcrew">{t("navigation.artcrew")}</a>
+                <Link href="/artcrew">{t("navigation.artcrew")}</Link>
               </li>
               <li className="lg:pr-15 hover:underline">
-                <a href="/about">{t("navigation.about")}</a>
+                <Link href="/about">{t("navigation.about")}</Link>
               </li>
 
               <li className="lg:pr-10 lg:pl-20 hidden lg:block ">
