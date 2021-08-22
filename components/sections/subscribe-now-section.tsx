@@ -104,7 +104,7 @@ export function SubscribeNowSection() {
           </div>
           <p>{t("sections.subscribe_now.subscriptions.0.payment_cycle")}</p>
           <Button
-            className="bg-orange text-white mb-4"
+            className="bg-orange text-white mb-4 mt-2 md:mt-5"
             href="https://shop.upcrate.art/product/subscription-1-month/"
           >
             {t("sections.subscribe_now.subscriptions.0.cta")}
@@ -175,7 +175,7 @@ export function SubscribeNowSection() {
           </div>
           <p>{t("sections.subscribe_now.subscriptions.1.payment_cycle")}</p>
           <Button
-            className="bg-pink text-white mb-4"
+            className="bg-pink text-white mb-4 mt-2 md:mt-5"
             href="https://shop.upcrate.art/product/subscription-3-months/"
           >
             {t("sections.subscribe_now.subscriptions.1.cta")}

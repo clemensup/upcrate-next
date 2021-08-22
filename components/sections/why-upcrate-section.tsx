@@ -16,7 +16,7 @@ export function WhyUpcrateSection() {
           {t("sections.why_upcrate.title")}
         </h3>
 
-        <div className="md:flex align-center justify-center gap-20 md:text-xl">
+        <div className="md:flex align-center justify-center gap-20 md:text-xl relative z-10">
           <div className="mt-10">
             <Image
               src="/why-upcrate/1.png"

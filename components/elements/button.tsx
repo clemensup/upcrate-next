@@ -1,4 +1,5 @@
 import { motion } from "framer-motion";
+import Link from "next/link";
 
 interface ButtonProps {
   className: string;
@@ -23,7 +24,7 @@ export function Button({
     return (
       <motion.div whileHover={{ scale: 1.1 }} whileTap={{ scale: 0.9 }}>
         <button
-          className={`font-display p-3 pt-2 pb-3 md:text-3xl inline-flex items-center content-center gap-4 mt-2 md:mt-5 max-w-max mx-auto ${variantClassName} ${className}`}
+          className={`cursor-pointer font-display p-3 pt-2 pb-3 md:text-3xl inline-flex items-center content-center gap-4 max-w-max mx-auto ${variantClassName} ${className}`}
           onClick={onClick}
           disabled={disabled}
         >
@@ -35,15 +36,16 @@ export function Button({
 
   if (href) {
     return (
-      <motion.div whileHover={{ scale: 1.1 }} whileTap={{ scale: 0.9 }}>
-        <a
-          href={href}
-          className={`font-display p-3 pt-2 pb-3 md:text-3xl mt-2 md:mt-5 inline-block max-w-max mx-auto ${variantClassName} ${className}`}
-        >
+      <motion.div
+        whileHover={{ scale: 1.1 }}
+        whileTap={{ scale: 0.9 }}
+        className={`cursor-pointer font-display p-3 pt-2 pb-3 md:text-3xl inline-block max-w-max mx-auto ${variantClassName} ${className}`}
+      >
+        <Link href={href}>
           <span className="col-span-2 inline-flex items-center content-center gap-4">
             {children}
           </span>
-        </a>{" "}
+        </Link>{" "}
       </motion.div>
     );
   }
