@@ -9,7 +9,7 @@ import { AsFeaturedInSection } from "../components/sections/as-featured-in-secti
 import { ConnectSloganSection } from "../components/sections/connect-slogan-section";
 import { FlowingHeads } from "../components/flowing-heads";
 import { FollowUsOnInstagramSection } from "../components/sections/follow-us-on-instagram-section";
-import { FeaturedArtistsWeWorkedWithSection } from "../components/sections/former-artists-section";
+import { FeaturedArtistsWeWorkedWithSection } from "../components/sections/featured-artists-section";
 import { HeroSliderSection } from "../components/sections/hero-slider-section";
 import { JoinTheArtCrewSection } from "../components/sections/join-the-art-crew-section";
 import { Layout } from "../components/layout";

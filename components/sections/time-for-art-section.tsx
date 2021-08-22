@@ -89,8 +89,8 @@ export function TimeForArtSection() {
             <motion.div
               key={content}
               className="box"
-              initial={{ offsetDistance: `${i}%`, scale: 0.8 }}
-              animate={{ offsetDistance: `${100 + i}%`, scale: 1 }}
+              initial={{ offsetDistance: `${i}%` }}
+              animate={{ offsetDistance: `${100 + i}%` }}
               transition={transition}
             >
               {type === "text" && (

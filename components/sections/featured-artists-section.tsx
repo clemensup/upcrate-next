@@ -58,7 +58,7 @@ export function FeaturedArtistsWeWorkedWithSection() {
               </div>
             </div>
           </div>
-          <div className="text-2xl text-purple-dark text-center hidden md:block">
+          <div className="text-2xl text-purple-dark text-center hidden md:block sticky top-0">
             {t("sections.featured_artists_we_worked_with.text")}
           </div>
           <div className="gap-20 hidden md:grid">
