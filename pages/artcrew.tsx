@@ -18,12 +18,25 @@ import { NewsletterSection } from "../components/sections/newsletter-section";
 import { InviteFriendsSection } from "../components/sections/invite-friends-section";
 import { FormattedText } from "../components/elements/formatted-text";
 import { TimeForArtSection } from "../components/sections/time-for-art-section";
+import Head from "next/head";
 
 export default function ArtCrew() {
   const { t } = useTranslation("common");
 
   return (
     <Layout>
+      <Head>
+        <title>{t("pages.artcrew.title")}</title>
+        <meta
+          property="og:title"
+          content={t("pages.artcrew.title")}
+          key="title"
+        />
+        <meta
+          property="og:image"
+          content="https://images.unsplash.com/photo-1471897488648-5eae4ac6686b?ixid=MnwxMjA3fDF8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=634&q=80"
+        />
+      </Head>
       <HeroSection
         className="bg-rose"
         title={t("pages.artcrew.title")}
