@@ -16,36 +16,21 @@ export function WhyUpcrateSection() {
           {t("sections.why_upcrate.title")}
         </h3>
 
-        <div className="md:flex align-center justify-center gap-20 md:text-xl relative z-10">
+        <div className="md:flex align-center justify-center gap-20 md:text-xl relative z-10 max-w-6xl mx-auto mb-32">
           <div className="mt-10">
-            <Image
-              src="/why-upcrate/1.png"
-              layout="fixed"
-              width={170}
-              height={170}
-            />
+            <Image src="/why-upcrate/1.png" width={414} height={331} />
             <p className="max-w-xs m-auto">
               {t("sections.why_upcrate.steps.0.text")}
             </p>
           </div>
           <div className="mt-10">
-            <Image
-              src="/why-upcrate/2.png"
-              layout="fixed"
-              width={170}
-              height={170}
-            />
+            <Image src="/why-upcrate/2.png" width={414} height={331} />
             <p className="max-w-xs m-auto">
               {t("sections.why_upcrate.steps.1.text")}
             </p>
           </div>
           <div className="mt-10">
-            <Image
-              src="/why-upcrate/3.png"
-              layout="fixed"
-              width={170}
-              height={170}
-            />
+            <Image src="/why-upcrate/3.png" width={388} height={311} />
             <p className="max-w-xs m-auto">
               {t("sections.why_upcrate.steps.2.text")}
             </p>
