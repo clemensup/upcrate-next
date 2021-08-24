@@ -1,3 +1,4 @@
+import { motion } from "framer-motion";
 import useTranslation from "next-translate/useTranslation";
 import Image from "next/image";
 import { RadialGradient } from "../elements/radial-gradient";
@@ -92,7 +93,7 @@ export function ProfessionalHowToVideosSection() {
               </div>
             </div>
           </div>
-          <div className="gap-5 md:gap-20 grid grid-cols-2 md:grid-cols-1 max-w-max order-3 md:order-3">
+          <div className="gap-5 md:gap-20 grid grid-cols-2 md:grid-cols-1 max-w-max order-3 md:order-3 justify-self-end">
             <div className="md:mt-20">
               <Image
                 src="/how-to-videos/upcrate21.png"

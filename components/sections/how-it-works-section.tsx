@@ -15,7 +15,7 @@ export function HowItWorksSection() {
           {t("sections.how_it_works.subtitle")}
         </p>
 
-        <div className="md:grid grid-flow-rows grid-cols-6 grid-rows-2 gap-4 mt-20 align-center justify-center gap-20 md:text-xl relative">
+        <div className="md:grid grid-flow-rows grid-cols-6 grid-rows-2 gap-4 mt-20 align-center justify-center gap-20 md:text-xl relative max-w-6xl mx-auto">
           <div className="mt-10 col-span-2 items-center flex justify-center">
             <div className="relative max-w-md">
               <span className="text-purple font-display text-6xl absolute -top-8 left-5 z-10">
@@ -58,9 +58,9 @@ export function HowItWorksSection() {
               <p>{t("sections.how_it_works.steps.2.text")}</p>
             </div>
           </div>
-          <div className="mt-10 col-span-3 items-center flex justify-center md:order-5">
+          <div className="mt-20 col-span-3 items-center flex justify-center md:order-5">
             <div className="relative max-w-md">
-              <span className="text-orange font-display text-6xl absolute -top-8 left-5 z-10">
+              <span className="text-orange font-display text-6xl absolute -top-8 md:right-5 z-10">
                 4.
               </span>
               <Image
@@ -72,7 +72,7 @@ export function HowItWorksSection() {
               <p>{t("sections.how_it_works.steps.3.text")}</p>
             </div>
           </div>
-          <div className="mt-10 col-span-3 items-center flex justify-center md:order-4">
+          <div className="mt-10 md:-mt-10 col-span-3 items-center flex justify-center md:order-4">
             <div className="relative max-w-md">
               <span className="text-pink font-display text-6xl absolute -top-8 left-5 z-10">
                 5.
@@ -87,7 +87,7 @@ export function HowItWorksSection() {
             </div>
           </div>
           <div className="hidden md:flex absolute top-0 right-0 bottom-0 left-0 justify-center items-center">
-            <h4 className="text-5xl text-purple font-display whitespace-pre-line">
+            <h4 className="text-8xl text-purple font-display whitespace-pre-line">
               {t("sections.how_it_works.ready_set_draw")}
             </h4>
           </div>

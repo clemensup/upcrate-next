@@ -146,7 +146,7 @@ export function NewsletterSection({ children }: React.PropsWithChildren<{}>) {
         <div className="mx-5 mb-10 md:mb-0 md:max-w-6xl mx-auto px-10 relative">
           <RadialGradient className="bg-orange w-full" variant="center-xl" />
           <div className="z-10 relative text-purple-dark">
-            <h3 className="font-display text-2xl md:text-5xl md:mt-48 block">
+            <h3 className="font-display text-2xl md:text-5xl md:mt-48 block text-white max-w-3xl mx-auto">
               {t("sections.newsletter_form.advantages.title")}
             </h3>
 
@@ -156,6 +156,7 @@ export function NewsletterSection({ children }: React.PropsWithChildren<{}>) {
                   src="/newsletter/advantage01.gif"
                   width={332}
                   height={332}
+                  layout="fixed"
                 />
                 <p className="text-2xl font-bold text-center">
                   {t("sections.newsletter_form.advantages.columns.0.text")}
@@ -166,6 +167,7 @@ export function NewsletterSection({ children }: React.PropsWithChildren<{}>) {
                   src="/newsletter/advantage02.gif"
                   width={332}
                   height={332}
+                  layout="fixed"
                 />
                 <p className="text-2xl font-bold text-center">
                   {t("sections.newsletter_form.advantages.columns.1.text")}
@@ -176,6 +178,7 @@ export function NewsletterSection({ children }: React.PropsWithChildren<{}>) {
                   src="/newsletter/advantage03.gif"
                   width={332}
                   height={332}
+                  layout="fixed"
                 />
                 <p className="text-2xl font-bold text-center">
                   {t("sections.newsletter_form.advantages.columns.2.text")}

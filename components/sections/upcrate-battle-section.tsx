@@ -18,7 +18,7 @@ export function UpcrateBattleSection() {
           <h3 className="font-display text-purple-dark text-2xl md:text-5xl text-center">
             {t("sections.upcrate_battle.title")}
           </h3>
-          <p className="md:mt-5 text-purple-dark text-3xl whitespace-pre-line">
+          <p className="md:mt-5 text-purple-dark text-xl whitespace-pre-line">
             {t("sections.upcrate_battle.text")}
           </p>
         </div>
@@ -93,7 +93,7 @@ export function UpcrateBattleSection() {
           <div className="z-10">
             <div className="md:flex gap-4 justify-between p-10 border-1">
               <img src="/home/battle/win-prizes.png" alt="" />
-              <p className="text-left">
+              <p className="text-xl text-right">
                 <FormattedText
                   transKey="common:sections.upcrate_battle.prize_example"
                   delimiter={[<b className="block font-bold" />]}

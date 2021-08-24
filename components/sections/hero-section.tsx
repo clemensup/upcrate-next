@@ -51,7 +51,7 @@ export function HeroSection({
           variant="head-only"
           className="ml-3 -mt-3 hidden sm:block text-purple-dark"
         />
-        <h1 className="text-white text-3xl absolute z-20 top-12 left-20">
+        <h1 className="text-white font-bold text-3xl absolute z-20 top-12 left-20">
           {title}
         </h1>
         <div className="sm:hidden" ref={mobileImageRef}>

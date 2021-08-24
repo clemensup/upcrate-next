@@ -1,3 +1,4 @@
+import { motion } from "framer-motion";
 import useTranslation from "next-translate/useTranslation";
 import Image from "next/image";
 
@@ -10,7 +11,7 @@ export function TheGoldenCrateSection() {
         {t("sections.the_golden_crate.title")}
       </h3>
 
-      <div className="md:grid grid-cols-2 max-w-8xl gap-20 justify-evenly mt-5 md:mt-20">
+      <div className="md:grid grid-cols-2 max-w-6xl gap-20 justify-evenly mt-5 md:mt-20 mx-auto">
         <div className="w-full h-full">
           <Image src="/golden-crate/big.png" width={610} height={612} />
         </div>
@@ -23,19 +24,26 @@ export function TheGoldenCrateSection() {
               {t("sections.the_golden_crate.text")}
             </p>
 
-            <div className="flex gap-6 md:gap-20 flex-1 items-end mt-5 md:mt-20">
+            <div className="flex gap-6 md:gap-20 flex-1 items-end mt-5 md:mt-12">
               <a
-                className="w-max-content flex flex-col"
+                className="w-max-content flex flex-col overflow-hidden"
                 href="https://instagram.com/jj8.kaiser.art"
                 target="_blank"
                 rel="noopener noreferrer"
               >
                 <span className="text-base">@jj8.kaiser.art</span>
-                <Image
-                  src="/golden-crate/small01.png"
-                  width={236}
-                  height={314}
-                />
+                <div className="overflow-hidden">
+                  <motion.div
+                    whileHover={{ scale: 1.2 }}
+                    whileTap={{ scale: 0.9 }}
+                  >
+                    <Image
+                      src="/golden-crate/small01.png"
+                      width={236}
+                      height={314}
+                    />
+                  </motion.div>
+                </div>
               </a>
               <a
                 className="w-max-content flex flex-col"
@@ -44,11 +52,18 @@ export function TheGoldenCrateSection() {
                 rel="noopener noreferrer"
               >
                 <span className="text-base">@hawklbood</span>
-                <Image
-                  src="/golden-crate/small02.png"
-                  width={236}
-                  height={314}
-                />
+                <div className="overflow-hidden">
+                  <motion.div
+                    whileHover={{ scale: 1.2 }}
+                    whileTap={{ scale: 0.9 }}
+                  >
+                    <Image
+                      src="/golden-crate/small02.png"
+                      width={236}
+                      height={314}
+                    />
+                  </motion.div>
+                </div>
               </a>
             </div>
           </div>

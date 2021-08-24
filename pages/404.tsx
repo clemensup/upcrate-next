@@ -16,7 +16,7 @@ export default function ErrorPage() {
           <h1 className="font-display text-8xl text-rose">Oooops! Wrong way</h1>
           <h2 className="font-display text-red text-5xl my-10">Error</h2>
           <Button href="/" className="bg-purple text-white">
-            Back to the harbor
+            Back to the harbour
           </Button>
         </div>
         <div className="z-0">

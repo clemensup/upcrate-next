@@ -55,11 +55,11 @@ export default function About() {
           <small className="mt-16">
             {t("pages.about.artwork_by")}{" "}
             <a
-              href="https://instagram.com/thingby_diana"
+              href="https://instagram.com/thingsby_diana"
               target="_blank"
               rel="noopener noreferrer"
             >
-              @thingby_diana
+              @thingsby_diana
             </a>
           </small>
         </div>

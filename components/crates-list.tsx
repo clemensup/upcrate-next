@@ -100,7 +100,7 @@ export function CratesList({ products, pageCount }: CratesProps) {
                       </a>
                     </motion.div>
 
-                    <h5 className="text-3xl font-bold">{product.name}</h5>
+                    <h5 className="text-2xl font-bold">{product.name}</h5>
                     <div className="flex justify-between mt-2">
                       <span className="text-xl">{product.regular_price} €</span>
                       {product.stock_status === "outofstock" && (
