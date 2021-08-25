@@ -10,6 +10,7 @@ import useIntersectionObserver from "../../hooks/use-intersection-observer";
 import { fetchCrates } from "../../utils/wc-api";
 import { Product } from "../../pages/crates";
 import Link from "next/link";
+import { RadialGradient } from "../elements/radial-gradient";
 
 export function SliderArrow({
   variant,
@@ -70,21 +71,25 @@ export function TripleSlider({ slides }: { slides: Product[] }) {
   }
 
   return (
-    <Slider {...settings} className="md:mt-20 -mx-10 md:mx-0">
-      {slides.map((crate) => (
-        <Slide
-          key={crate.id}
-          className="flex flex-col gap-5 text-xl md:text-3xl cursor-pointer"
-        >
-          <Link href={crate.permalink}>
-            <div>
-              <img src={crate.images[0].src} />
-              <p className="pt-2">{crate.name}</p>
-            </div>
-          </Link>
-        </Slide>
-      ))}
-    </Slider>
+    <div className="relative">
+      <Slider {...settings} className="md:mt-20 -mx-10 md:mx-0 z-10">
+        {slides.map((crate) => (
+          <Slide
+            key={crate.id}
+            className="flex flex-col gap-5 text-xl md:text-3xl cursor-pointer"
+          >
+            <Link href={crate.permalink}>
+              <div>
+                <img src={crate.images[0].src} />
+                <p className="pt-2">{crate.name}</p>
+              </div>
+            </Link>
+          </Slide>
+        ))}
+      </Slider>
+      <RadialGradient variant="center-left" className="bg-pink" />
+      <RadialGradient variant="center-right" className="bg-pink" />
+    </div>
   );
 }
 

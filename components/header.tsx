@@ -6,9 +6,19 @@ import { CaptainCrateSvg } from "./elements/svg/cpt-crate-svg";
 import { Logo } from "./elements/svg/logo";
 import { Modal, Checkbox, Button } from ".";
 import { Dialog } from "@headlessui/react";
-import { BurgerSvg } from "./elements/svg";
 import { usePersistLocaleCookie } from "../hooks/use-persistent-locale";
 import { motion } from "framer-motion";
+import { BurgerButton } from "./elements/burger-button";
+
+const Path = (props) => (
+  <motion.path
+    fill="transparent"
+    strokeWidth="3"
+    stroke="hsl(0, 0%, 18%)"
+    strokeLinecap="round"
+    {...props}
+  />
+);
 
 const pathMotion = {
   rest: {
@@ -105,10 +115,10 @@ export function Header(): JSX.Element {
           </a>
           <div>
             <button
-              className="lg:hidden"
+              className="lg:hidden absolute right-2 top-4"
               onClick={() => setIsMenuActive(!isMenuActive)}
             >
-              <BurgerSvg className={isMenuActive ? "active" : ""} />
+              <BurgerButton isOpen={isMenuActive} />
             </button>
             <ul
               className={`${

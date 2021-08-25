@@ -94,7 +94,7 @@ export function TimeForArtSection() {
               transition={transition}
             >
               {type === "text" && (
-                <div className="text-xl font-display text-purple-dark w-56 text-center">
+                <div className="text-xl font-display text-purple-dark w-56 text-center leading-tight">
                   {content}
                 </div>
               )}

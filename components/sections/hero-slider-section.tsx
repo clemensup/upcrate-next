@@ -37,10 +37,6 @@ function Slide({ background, image }: { background: string; image: string }) {
     <div
       className={`md:px-10 pt-6 pb-20 relative bg-${background} flex justify-center items-center`}
     >
-      <CaptainCrateSvg
-        variant="head-only"
-        className="hidden md:block w-7 text-purple-dark absolute xl:top-1 lg:left-16"
-      />
       <Image src={image} alt="" width={1704} height={855.35} />
     </div>
   );
@@ -74,31 +70,99 @@ export const HeroSlider = () => {
 export function HeroSliderSection() {
   return (
     <section className="relative">
-      <div className="relativ">
+      <div className="relative">
         <HeroSlider />
+        <CaptainCrateSvg
+          variant="head-only"
+          className="hidden md:block w-5 2xl:w-7 text-purple-dark absolute md:left-6 md:top-0 lg:left-7 lg:top-1 xl:left-9 xl:top-1 2xl:left-10 2xl:top-1"
+        />
         <div className="flex flex-col absolute top-0 right-0 bottom-0 left-0 text-purple-dark items-center justify-center">
-          <h3 className="text-center text-3xl md:text-5xl lg:text-6xl xl:text-8xl font-display">
+          <motion.h3
+            className="text-center text-3xl md:text-5xl lg:text-6xl xl:text-8xl font-display"
+            animate={{ scale: [0, 1.25, 1] }}
+            transition={{ duration: 0.25 }}
+          >
             Mystery
-            <br /> Art Supplies
-            <br /> in a monthly
+          </motion.h3>
+          <motion.h3
+            className="text-center text-3xl md:text-5xl lg:text-6xl xl:text-8xl font-display"
+            animate={{ scale: [0, 1.35, 1] }}
+            transition={{ duration: 0.5, delay: 0.25 }}
+          >
+            {" "}
+            Art Supplies
+          </motion.h3>
+          <motion.h3
+            className="text-center text-3xl md:text-5xl lg:text-6xl xl:text-8xl font-display"
+            animate={{ scale: [0, 1.2, 1] }}
+            transition={{ duration: 0.5, delay: 0.5 }}
+          >
+            {" "}
+            in a monthly
             <br />
-            <span className="text-white text-shadow">Box</span>
-          </h3>
+          </motion.h3>
+          <motion.span
+            className="text-center text-3xl md:text-5xl lg:text-6xl xl:text-8xl font-display text-white text-shadow"
+            initial={{
+              scale: 0,
+            }}
+            animate={{ scale: [0, 2, 1] }}
+            transition={{ duration: 0.5, delay: 1 }}
+          >
+            Box
+          </motion.span>
           <div className="flex md:gap-10 flex-col md:flex-row md:mt-10">
-            <Button
-              variant="default"
-              className="bg-purple text-white"
-              href="https://shop.upcrate.art/subscribe"
+            <motion.div
+              animate={{ scale: [0, 1.7, 1], rotate: 0 }}
+              transition={{ duration: 1, delay: 1, ease: "easeInOut" }}
             >
-              Subscribe Now
-            </Button>
-            <Button
-              variant="default"
-              className="bg-pink text-white text-xl"
-              href="https://shop.upcrate.art/de/product/upcrategift/"
+              <motion.div
+                animate={{
+                  scale: [1, 1.05, 1, 1.06, 1],
+                  rotate: [0, -2, 2, 0, -1.5, 1.5, 0],
+                }}
+                transition={{
+                  duration: 0.55,
+                  delay: 2.5,
+                  repeat: Infinity,
+                  repeatDelay: 2,
+                  easings: "easeInOut",
+                }}
+              >
+                <Button
+                  variant="default"
+                  className="bg-purple text-white"
+                  href="https://shop.upcrate.art/subscribe"
+                >
+                  Subscribe Now
+                </Button>
+              </motion.div>
+            </motion.div>
+            <motion.div
+              animate={{
+                scale: [0, 1.5, 1],
+                rotate: 0,
+              }}
+              transition={{ duration: 1.2, delay: 1.25, ease: "easeInOut" }}
             >
-              Give a gift
-            </Button>
+              <motion.div
+                animate={{ scale: [1, 1.1, 1, 1.2, 1] }}
+                transition={{
+                  duration: 0.75,
+                  delay: 3.5,
+                  repeat: Infinity,
+                  repeatDelay: 2,
+                }}
+              >
+                <Button
+                  variant="default"
+                  className="bg-pink text-white text-xl"
+                  href="https://shop.upcrate.art/de/product/upcrategift/"
+                >
+                  Give a gift
+                </Button>
+              </motion.div>
+            </motion.div>
           </div>
         </div>
       </div>

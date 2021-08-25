@@ -6,6 +6,8 @@ interface RadialGradientProps {
     | "top"
     | "top-left"
     | "top-right"
+    | "center-left"
+    | "center-right"
     | "bottom"
     | "bottom-right"
     | "center"
@@ -29,6 +31,14 @@ export function RadialGradient({
 
     case "top-right":
       posClass = "-top-72 -right-1/4 w-1/2";
+      break;
+
+    case "center-left":
+      posClass = "top-1/2 transform -translate-y-1/2 -left-36 w-1/4";
+      break;
+
+    case "center-right":
+      posClass = "top-1/2 transform -translate-y-1/2 -right-36 w-1/4";
       break;
 
     case "bottom":

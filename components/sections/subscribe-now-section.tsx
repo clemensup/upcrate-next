@@ -1,3 +1,4 @@
+import { motion } from "framer-motion";
 import useTranslation from "next-translate/useTranslation";
 import Image from "next/image";
 import { Button } from "../elements/button";
@@ -115,11 +116,18 @@ export function SubscribeNowSection() {
         <div className="bg-purple-dark text-center text-white flex flex-col pt-4 pb-10 rounded mt-16 md:mt-0">
           <CaptainCrateSvg variant="plus" className="self-center" />
 
-          <Image
-            src="/subscribe-now/3-month-boxes.png"
-            width="532"
-            height="280"
-          />
+          <motion.div
+            animate={{ scale: [0, 1], opacity: [0, 1] }}
+            transition={{
+              duration: 0.55,
+            }}
+          >
+            <Image
+              src="/subscribe-now/3-month-boxes.png"
+              width="532"
+              height="280"
+            />
+          </motion.div>
 
           <div className="flex align-center justify-center">
             <svg

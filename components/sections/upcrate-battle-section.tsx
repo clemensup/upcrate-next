@@ -25,12 +25,7 @@ export function UpcrateBattleSection() {
         <div className="md:flex align-center justify-center gap-20 md:text-xl text-purple-dark">
           <div className="mt-10">
             <h4 className="text-left mb-3">TOPIC: Colorless beauty</h4>
-            <Image
-              src="/home/battle/battle-01.png"
-              layout="responsive"
-              width={330}
-              height={330}
-            />
+            <Image src="/upcrate-battle/topic01.png" width={330} height={330} />
             <div className="flex items-end justify-between">
               <div className="text-bold">#upcrate19</div>
               <a
@@ -45,12 +40,7 @@ export function UpcrateBattleSection() {
           </div>
           <div className="mt-10">
             <h4 className="text-left mb-3">TOPIC: Crystal clear</h4>
-            <Image
-              src="/home/battle/battle-02.png"
-              layout="responsive"
-              width={330}
-              height={330}
-            />
+            <Image src="/upcrate-battle/topic02.png" width={330} height={330} />
             <div className="flex items-end justify-between">
               <div className="text-bold">#upcrate16</div>
               <a
@@ -65,12 +55,7 @@ export function UpcrateBattleSection() {
           </div>
           <div className="mt-10">
             <h4 className="text-left mb-3">TOPIC: Magical fantasy</h4>
-            <Image
-              src="/home/battle/battle-03.png"
-              layout="responsive"
-              width={330}
-              height={330}
-            />
+            <Image src="/upcrate-battle/topic03.png" width={330} height={330} />
             <div className="flex items-end justify-between">
               <div className="text-bold">#upcrate11</div>
               <a

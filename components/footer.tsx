@@ -62,73 +62,77 @@ export function Footer(): JSX.Element {
         </div>
         <div className="md:col-span-2 flex flex-col justify-between">
           <FooterNewsletterForm />
-
-          <p className="text-white text-2xl">
-            {t("footer.get_support")}
-            <br />
-            <a
-              className="underline hover:text-pink"
-              href="mailto:support@upcrate.art"
-            >
-              support@upcrate.art
-            </a>
-          </p>
         </div>
       </div>
 
-      <div className="p-5 md:p-0 container mx-auto sm:flex mb-4">
-        <ul className="flex flex-wrap gap-8">
-          <li>
-            <a
-              className="hover:underline"
-              target="_blank"
-              rel="noopener noreferrer"
-              href="https://www.facebook.com/Upcrate/"
-            >
-              Facebook
-            </a>
-          </li>
-          <li>
-            <a
-              className="hover:underline"
-              target="_blank"
-              rel="noopener noreferrer"
-              href="https://www.instagram.com/upcrate/"
-            >
-              Instagram
-            </a>
-          </li>
-          <li>
-            <a
-              className="hover:underline"
-              target="_blank"
-              rel="noopener noreferrer"
-              href="https://www.pinterest.de/Upcrate_Art/"
-            >
-              Pinterest
-            </a>
-          </li>
-          <li>
-            <a
-              className="hover:underline"
-              target="_blank"
-              rel="noopener noreferrer"
-              href="https://twitter.com/upcrateart"
-            >
-              Twitter
-            </a>
-          </li>
-          <li>
-            <a
-              className="hover:underline"
-              target="_blank"
-              rel="noopener noreferrer"
-              href="https://www.youtube.com/channel/UCuBKFplxdLGbCKJaiKnHgcg"
-            >
-              Youtube
-            </a>
-          </li>
-        </ul>
+      <div
+        className="p-5 md:p-0 container mx-auto mb-4 grid grid-cols-2 items-end"
+        style={{ gridTemplateColumns: "2fr 1fr" }}
+      >
+        <div className="">
+          <ul className="inline-flex flex-wrap gap-8">
+            <li>
+              <a
+                className="hover:underline"
+                target="_blank"
+                rel="noopener noreferrer"
+                href="https://www.facebook.com/Upcrate/"
+              >
+                Facebook
+              </a>
+            </li>
+            <li>
+              <a
+                className="hover:underline"
+                target="_blank"
+                rel="noopener noreferrer"
+                href="https://www.instagram.com/upcrate/"
+              >
+                Instagram
+              </a>
+            </li>
+            <li>
+              <a
+                className="hover:underline"
+                target="_blank"
+                rel="noopener noreferrer"
+                href="https://www.pinterest.de/Upcrate_Art/"
+              >
+                Pinterest
+              </a>
+            </li>
+            <li>
+              <a
+                className="hover:underline"
+                target="_blank"
+                rel="noopener noreferrer"
+                href="https://twitter.com/upcrateart"
+              >
+                Twitter
+              </a>
+            </li>
+            <li>
+              <a
+                className="hover:underline"
+                target="_blank"
+                rel="noopener noreferrer"
+                href="https://www.youtube.com/channel/UCuBKFplxdLGbCKJaiKnHgcg"
+              >
+                Youtube
+              </a>
+            </li>
+          </ul>
+        </div>
+        <p className="text-white text-2xl">
+          {t("footer.get_support")}
+          <br />
+          <a
+            className="underline hover:text-pink"
+            href="mailto:support@upcrate.art"
+          >
+            support@upcrate.art
+          </a>
+        </p>
       </div>
 
       <div className="text-center bg-purple-light text-white p-4">
