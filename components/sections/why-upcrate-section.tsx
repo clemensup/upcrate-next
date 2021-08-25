@@ -42,22 +42,38 @@ export function WhyUpcrateSection() {
             <h3 className="font-display text-purple-dark text-2xl md:text-5xl md:mt-20">
               {t("sections.why_upcrate.whats_inside.title")}
             </h3>
-            <p>{t("sections.why_upcrate.whats_inside.text")}</p>
+            <p className="mt-8 text-xl max-w-2xl mx-auto text-center">
+              {t("sections.why_upcrate.whats_inside.text")}
+            </p>
 
-            <CaptainCrateSvg variant="head-only" />
-            <div className="image-container">
+            <CaptainCrateSvg variant="head-only" className="w-6 ml-2 mt-2" />
+            <div className="image-container -mt-4">
               <Image
                 className="image"
                 src="/why-upcrate/how-to.png"
                 layout="fill"
               />
             </div>
+
+            <div className="absolute bottom-2 left-2 flex justify-center items-center gap-2">
+              <Image
+                src="/how-to-videos/youtube-logo.svg"
+                width={30}
+                height={30}
+              />
+              <p className="font-bold">+ how to video</p>
+            </div>
           </div>
-          <RadialGradient className="bg-orange -mt-64" variant="center" />
-          <RadialGradient className="bg-orange mt-32" variant="center" />
+          <RadialGradient className="bg-orange -mt-64" variant="center-xl" />
+          <RadialGradient className="bg-orange mt-64" variant="center-xl" />
+          <RadialGradient className="bg-orange" variant="center-left" />
+          <RadialGradient className="bg-orange" variant="center-right" />
+          <RadialGradient className="bg-orange" variant="center-xl" />
         </div>
 
-        <Countdown />
+        <div className="z-10 relative">
+          <Countdown />
+        </div>
       </div>
     </section>
   );
