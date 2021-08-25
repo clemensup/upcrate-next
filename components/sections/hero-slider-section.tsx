@@ -42,31 +42,6 @@ function Slide({ background, image }: { background: string; image: string }) {
         className="hidden md:block w-7 text-purple-dark absolute xl:top-1 lg:left-16"
       />
       <Image src={image} alt="" width={1704} height={855.35} />
-      <div className="flex flex-col absolute top-0 right-0 bottom-0 left-0 text-purple-dark items-center justify-center">
-        <h3 className="text-center text-3xl md:text-5xl lg:text-6xl xl:text-8xl font-display">
-          Mystery
-          <br /> Art Supplies
-          <br /> in a monthly
-          <br />
-          <span className="text-white">Box</span>
-        </h3>
-        <div className="flex md:gap-10 flex-col md:flex-row md:mt-10">
-          <Button
-            variant="default"
-            className="bg-purple text-white"
-            href="https://shop.upcrate.art/subscribe"
-          >
-            Subscribe Now
-          </Button>
-          <Button
-            variant="default"
-            className="bg-pink text-white text-xl"
-            href="https://shop.upcrate.art/de/product/upcrategift/"
-          >
-            Give a gift
-          </Button>
-        </div>
-      </div>
     </div>
   );
 }
@@ -76,9 +51,9 @@ export const HeroSlider = () => {
     dots: false,
     arrows: true,
     infinite: true,
-    speed: 2000,
+    speed: 5000,
     autoplay: true,
-    autoplaySpeed: 5000,
+    autoplaySpeed: 7000,
     slidesToShow: 1,
     slidesToScroll: 1,
     nextArrow: <SliderArrow variant="next" />,
@@ -99,10 +74,47 @@ export const HeroSlider = () => {
 export function HeroSliderSection() {
   return (
     <section className="relative">
-      <HeroSlider />
-      <div className="hidden md:block absolute bottom-0 text-white md:text-2xl text-center p-5 text-center left-0 right-0">
-        Hop on board to discover amazing art treasures in a monthly
-        subscription, inspiring you to create.
+      <div className="relativ">
+        <HeroSlider />
+        <div className="flex flex-col absolute top-0 right-0 bottom-0 left-0 text-purple-dark items-center justify-center">
+          <h3 className="text-center text-3xl md:text-5xl lg:text-6xl xl:text-8xl font-display">
+            Mystery
+            <br /> Art Supplies
+            <br /> in a monthly
+            <br />
+            <span className="text-white text-shadow">Box</span>
+          </h3>
+          <div className="flex md:gap-10 flex-col md:flex-row md:mt-10">
+            <Button
+              variant="default"
+              className="bg-purple text-white"
+              href="https://shop.upcrate.art/subscribe"
+            >
+              Subscribe Now
+            </Button>
+            <Button
+              variant="default"
+              className="bg-pink text-white text-xl"
+              href="https://shop.upcrate.art/de/product/upcrategift/"
+            >
+              Give a gift
+            </Button>
+          </div>
+        </div>
+      </div>
+      <div></div>
+      <div className="overflow-hidden">
+        <motion.div
+          initial={{ left: "100%" } as any}
+          animate={{ left: "-100%" } as any}
+          transition={{ duration: 10, repeat: Infinity, ease: "linear" }}
+          className="hidden md:block overflow-hidden text-white md:text-2xl text-center p-5 absolute bottom-0 no-wrap w-full flex gap-20"
+        >
+          <span>
+            Hop on board to discover amazing art treasures in a monthly
+            subscription, inspiring you to create.
+          </span>
+        </motion.div>
       </div>
     </section>
   );

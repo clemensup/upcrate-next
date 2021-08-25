@@ -1,11 +1,11 @@
 import { motion } from "framer-motion";
 
 interface CheckboxProps {
-  value: string | number;
+  value?: string | number;
   name: string;
   checked: boolean;
   onChange: (e) => void;
-  label: string;
+  label: string | JSX.Element;
 }
 
 export function Checkbox({
@@ -16,7 +16,7 @@ export function Checkbox({
   label,
 }: CheckboxProps): JSX.Element | null {
   return (
-    <label className="flex items-center space-x-3 cursor-pointer text-2xl ">
+    <label className="flex items-center space-x-3 cursor-pointer">
       <motion.input
         type="checkbox"
         name={name}

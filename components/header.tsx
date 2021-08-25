@@ -8,13 +8,7 @@ import { Modal, Checkbox, Button } from ".";
 import { Dialog } from "@headlessui/react";
 import { BurgerSvg } from "./elements/svg";
 import { usePersistLocaleCookie } from "../hooks/use-persistent-locale";
-import {
-  AnimatePresence,
-  motion,
-  useTransform,
-  useViewportScroll,
-} from "framer-motion";
-import { useScrollPosition } from "../hooks/use-scroll-position";
+import { motion } from "framer-motion";
 
 const pathMotion = {
   rest: {
@@ -77,7 +71,6 @@ export function Header(): JSX.Element {
   const [languageSelectModalOpen, setLanguageSelectModalOpen] =
     React.useState(false);
   const [selectedLanguage, setSelectedLanguage] = React.useState(lang);
-  const { scrollTop } = useScrollPosition();
 
   usePersistLocaleCookie();
 

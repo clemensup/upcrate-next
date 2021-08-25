@@ -1,3 +1,4 @@
+import { motion } from "framer-motion";
 import useTranslation from "next-translate/useTranslation";
 import Image from "next/image";
 import React from "react";
@@ -64,6 +65,14 @@ export function JoinTheArtCrewSection({
         </div>
         {children && <div className="mt-10">{children}</div>}
       </div>
+      <a
+        href="https://instagram.com/boxadessin"
+        target="_blank"
+        rel="noopener noreferrer"
+        className="absolute -right-16 top-1/2 transform -translate-y-1/2 -rotate-90 bg-purple-dark px-2 inline-block origin-bottom"
+      >
+        by @boxadessin
+      </a>
     </section>
   );
 }
