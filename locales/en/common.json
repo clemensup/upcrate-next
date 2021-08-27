@@ -21,6 +21,7 @@
     "signup_login": "signup / login"
   },
   "subscribe_now_button_text": "Subscribe now",
+  "give_a_gift_button_text": "Give a gift",
   "signup": "signup",
   "login": "login",
   "cancel": "Cancel",
@@ -50,7 +51,14 @@
       "draw_as_one_section": "Let’s draw <1>as one.</1><2></2>Let’s connect <1>worldwide</1><2></2> and <1>live art</1> together",
       "chosen_one_section": {
         "title": "You’re one of the chosen ones who scrolled all the way down.\nNow you can also subscribe:)"
-      }
+      },
+      "slider_content": [
+        { "text": "Mystery" },
+        { "text": "Art Supplies" },
+        { "text": "in a monthly" },
+        { "text": "Box" }
+      ],
+      "marquee_text": "Hop on board to discover amazing art treasures in a monthly subscription, inspiring you to create."
     },
     "how_it_works": {
       "title": "How it works",

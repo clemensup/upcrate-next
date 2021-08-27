@@ -6,6 +6,7 @@ import { Button } from "../elements/button";
 import { ArrowSvg } from "../elements/svg/arrow-svg";
 import Image from "next/image";
 import { motion } from "framer-motion";
+import useTranslation from "next-translate/useTranslation";
 
 function SliderArrow({
   variant,
@@ -68,6 +69,7 @@ export const HeroSlider = () => {
 };
 
 export function HeroSliderSection() {
+  const { t } = useTranslation("common");
   return (
     <section className="relative">
       <div className="relative">
@@ -82,7 +84,7 @@ export function HeroSliderSection() {
             animate={{ scale: [0, 1.25, 1] }}
             transition={{ duration: 0.25 }}
           >
-            Mystery
+            {t("pages.home.slider_content.0.text")}
           </motion.h3>
           <motion.h3
             className="text-center text-3xl md:text-5xl lg:text-6xl xl:text-8xl font-display"
@@ -90,7 +92,7 @@ export function HeroSliderSection() {
             transition={{ duration: 0.5, delay: 0.25 }}
           >
             {" "}
-            Art Supplies
+            {t("pages.home.slider_content.1.text")}
           </motion.h3>
           <motion.h3
             className="text-center text-3xl md:text-5xl lg:text-6xl xl:text-8xl font-display"
@@ -98,7 +100,7 @@ export function HeroSliderSection() {
             transition={{ duration: 0.5, delay: 0.5 }}
           >
             {" "}
-            in a monthly
+            {t("pages.home.slider_content.2.text")}
             <br />
           </motion.h3>
           <motion.span
@@ -109,7 +111,7 @@ export function HeroSliderSection() {
             animate={{ scale: [0, 2, 1] }}
             transition={{ duration: 0.5, delay: 1 }}
           >
-            Box
+            {t("pages.home.slider_content.1.text")}
           </motion.span>
           <div className="flex md:gap-10 flex-col md:flex-row md:mt-10">
             <motion.div
@@ -134,7 +136,7 @@ export function HeroSliderSection() {
                   className="bg-purple text-white"
                   href="https://shop.upcrate.art/subscribe"
                 >
-                  Subscribe Now
+                  {t("subscribe_now_button_text")}
                 </Button>
               </motion.div>
             </motion.div>
@@ -159,7 +161,7 @@ export function HeroSliderSection() {
                   className="bg-pink text-white text-xl"
                   href="https://shop.upcrate.art/de/product/upcrategift/"
                 >
-                  Give a gift
+                  {t("give_a_gift_button_text")}
                 </Button>
               </motion.div>
             </motion.div>
@@ -174,10 +176,7 @@ export function HeroSliderSection() {
           transition={{ duration: 10, repeat: Infinity, ease: "linear" }}
           className="hidden md:block overflow-hidden text-white md:text-2xl text-center p-5 absolute bottom-0 no-wrap w-full flex gap-20"
         >
-          <span>
-            Hop on board to discover amazing art treasures in a monthly
-            subscription, inspiring you to create.
-          </span>
+          <span>{t("pages.home.marquee_text")}</span>
         </motion.div>
       </div>
     </section>

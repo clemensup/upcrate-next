@@ -50,7 +50,13 @@
       "draw_as_one_section": "Let’s draw <1>as one.</1><2></2>Let’s connect <1>worldwide</1><2></2> and <1>live art</1> together",
       "chosen_one_section": {
         "title": "Du gehörst zu den ganz wenigen, die ganz nach unten gescrollt haben.\nJetzt kannste auch gleich abonnieren:):"
-      }
+      },
+      "slider_content": [
+        { "text": "Mystery" },
+        { "text": "Art Supplies" },
+        { "text": "in a monthly" },
+        { "text": "Box" }
+      ]
     },
     "how_it_works": {
       "title": "So geht's",
