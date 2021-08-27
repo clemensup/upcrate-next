@@ -5,7 +5,7 @@
   "language_switch_en_long": "English",
   "language_switch_dialog_title": "Welche Sprache möchtest du nutzen?",
   "navigation": {
-    "shop": "shop",
+    "shop": "Shop",
     "how_it_works": "So geht's",
     "crates": "Boxen",
     "artcrew": "art crew",
@@ -16,7 +16,7 @@
     "terms_and_conditions": "Allgemeine Geschäftsbedingungen",
     "cancellation_policy": "Stornierungsbedingungen",
     "info_headline": "info",
-    "refer_a_friend": "Freund empfehlen",
+    "refer_a_friend": "Freund:in empfehlen",
     "help_contact": "Hilfe / Kontakt",
     "signup_login": "Registrieren / Einloggen"
   },
@@ -67,7 +67,7 @@
       },
       "crates_list": {
         "title": "Unsere Boxen",
-        "subtitle": "Suchst du eine spezielle Box von deinem Lieblingskünstler oder deinen Lieblingsmaterialien?Hier findest du alle unsere ehemaligen Boxen – Wenn du Glück hast kannst du sie sogar noch in unserem Shop finden, bevor sie ausverkauft ist:)",
+        "subtitle": "Suchst du eine spezielle Box von deiner/m Lieblingskünstler:in oder deinen Lieblingsmaterialien? Hier findest du alle unsere ehemaligen Boxen – Wenn du Glück hast kannst du sie sogar noch in unserem Shop finden, bevor sie ausverkauft ist:)",
         "no_products_message": "No products found.",
         "stock_status": "LEIDER AUS:(",
         "previous_page_button": "Zurück",
@@ -78,7 +78,7 @@
       "title": "Art Crew",
       "newsletter_section": {
         "title": "Upcrate – Zusammen Kunst machen",
-        "text": "Captain Crate hat seine Segel gehisst, um eine Community aus Künstlern von überall auf der Welt zusammenzubringen und diese mit den besten Kunstmaterialien und Tipps auszustatten. Jeden Monat verschickt er seine geheimnisvollen Boxen, die er UPCRATE nennt, direkt zur Haustür jedes angeheuerten Mitglieds seiner art crew."
+        "text": "Captain Crate hat seine Segel gehisst, um eine Community aus Künstler:innen von überall auf der Welt zusammenzubringen und diese mit den besten Kunstmaterialien und Tipps auszustatten. Jeden Monat verschickt er seine geheimnisvollen Boxen, die er UPCRATE nennt, direkt zur Haustür jedes angeheuerten Mitglieds seiner art crew."
       },
       "draw_as_one_section": {
         "title": "<2>We draw artists</2> together <1></1> <2>with</2> our <2> creative passion <1></1> and give </2> you the tools <1></1> to follow <2>your heart</2>"
@@ -97,7 +97,7 @@
         },
         {
           "title": "...liefert monatlich das Beste...",
-          "text": "...aus einer handverlesenen Auswahl neuer, mysteriöser Materialien zu euch. Diese werden liebevoll in den Crates zusammengeestellt, um unserer internationalen Crew die beste Qualität zum Ausprobieren neuer Techniken und Marken zum kleinsten Preis zu garantieren. Jede Box bringt dabei eine neue Überraschung zu euch nach Hause!"
+          "text": "...aus einer handverlesenen Auswahl neuer, mysteriöser Materialien zu euch. Diese werden liebevoll in den Crates zusammengestellt, um unserer internationalen Crew die beste Qualität zum Ausprobieren neuer Techniken und Marken zum kleinsten Preis zu garantieren. Jede Box bringt dabei eine neue Überraschung zu euch nach Hause!"
         },
         {
           "title": "…für seine art crew",
@@ -105,7 +105,7 @@
         },
         {
           "title": "Hinter Captain Crate...",
-          "text": "...steht ein Team aus Kunstliebhabern, Designern und Künstlern. Captain Crate selbst wurde von unserem Designer Manuel aus Hamburg zum Leben erweckt, der mit seinen kreativen Einfällen und Gespür für Design alles rund um Upcrate gestaltet. Clemens ist der Gründer von Upcrate und bringt durch seine Verbindungen zu vielen globalen Kunstmaterialherstellern die Magie und Organisation mit in die Box. Ein ausgewähltes Team von Künstlern testet und kurartiert die Materialien für Upcrate, um sicherzustellen, das alles miteinander harmoniert und ihr eurer Kreativität freien Lauf lassen könnt!"
+          "text": "...steht ein Team aus Kunstbegeisterten, Designer:innen und Künstler:innen. Captain Crate selbst wurde von unserem Designer Manuel aus Hamburg zum Leben erweckt, der mit seinen kreativen Einfällen und Gespür für Design alles rund um Upcrate gestaltet. Clemens ist der Gründer von Upcrate und bringt durch seine Verbindungen zu vielen globalen Kunstmaterialherstellern die Magie und Organisation mit in die Box. Ein ausgewähltes Team von Künstler:innen testet und kurartiert die Materialien für Upcrate, um sicherzustellen, das alles miteinander harmoniert und ihr eurer Kreativität freien Lauf lassen könnt!"
         }
       ],
       "chosen_one_section": {
@@ -398,8 +398,8 @@
       "answer": "Dies ist ebenfalls ein Geheimnis und hängt von dem Wert der Materialien ab. Du kannst dir aber sicher sein, dass der Gesamtpreis deiner neuen Materialien höher ist als der Preis, den du für die Box gezahlt hast."
     },
     {
-      "question": "Why is there a cut-off date?",
-      "answer": "Each month we have a cut-off date to ensure we can plan for all the boxes to be packed and shipped. All subscribers that start with their Upcrate after this date will be added to the subscriber list for the next month."
+      "question": "Gibt es einen Stichtag?",
+      "answer": "Jeden Monat gibt es einen Stichtag (5ter des Monats) um sicher zu gehen, das alle Boxen rechtzeitig verschickt werden können.Wenn du Upcrate danach abonnierst, bekommst du im nächsten Monat deine Box."
     },
     {
       "question": "Wie lange dauert es, bis ich meine Box bekomme?",
@@ -438,8 +438,8 @@
       "answer": "Wenn du dein Abonnement kündigst wird es nicht wieder erneuert, aber du erhältst noch alle Boxen, für die du bezahlt hast, bis dein gebuchter Zeitraum abläuft. Falls du dein Geld zurückgezahlt bekommen möchtest hast du darauf eine Chance, wenn die nächsten Boxen noch nicht ausgesendet wurden. Schreib’ uns dazu gerne unter support@upcrate.art an."
     },
     {
-      "question": "Any other questions?",
-      "answer": "Feel free to contact us anytime at support@upcrate.art! We are looking forward to hearing from you!"
+      "question": "Was mache ich, wenn ich keine Antwort auf meine Frage finde?",
+      "answer": "Melde dich einfach bei uns unter support@upcrate.art. Wir helfen dir gerne weiter!"
     },
     {
       "question": "Wann kann ich mein Abonnement kündigen?",
