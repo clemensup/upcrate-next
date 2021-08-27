@@ -93,3 +93,20 @@ body {
   white-space: nowrap;
   animation: marquee 10s linear infinite;
 }
+
+.speechbubble {
+  border-top: 1px solid;
+  border-right: 1px solid;
+  border-left: 1px solid;
+}
+
+.speechbubble::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: -34px;
+  right: 0;
+  height: 50px;
+  background-image: url("/speech-bubble.svg");
+  background-position: 99% bottom;
+}

@@ -5,11 +5,13 @@ import { ArrowSvg } from "../elements/svg/arrow-svg";
 
 function SpeechBubble({ children }: React.PropsWithChildren<{}>) {
   return (
-    <div className="mt-10">
-      <div className="border-2 border-purple-dark px-5 py-12">
+    <div className="relative mt-10 speechbubble">
+      <div className="px-5 py-12 bg-cover font-bold text-2xl">
         {children[0]}
       </div>
-      <span className="author text-xl">{children[1]}</span>
+      <span className="absolute -bottom-20 left-0 right-10 text-right author text-xl">
+        {children[1]}
+      </span>
     </div>
   );
 }
@@ -31,7 +33,7 @@ export function WhatTheArtCrewSaysSection() {
   };
 
   return (
-    <section className="text-center text-purple-dark pt-6 pb-6 px-10 md:px-32 md:pt-20 md:pb-24 relative overflow-hidden">
+    <section className="text-center text-purple-dark pt-6 pb-6 px-10 md:px-32 md:pt-20 md:pb-48 relative overflow-hidden">
       <RadialGradient className="bg-purple" variant="top-right" />
       <RadialGradient className="bg-green left-0" variant="bottom" />
       <div className="z-10 relative">
@@ -81,7 +83,7 @@ export function WhatTheArtCrewSaysSection() {
             </SpeechBubble>
           )}
         </div>
-        <div className="md:flex align-center justify-center gap-20 md:text-3xl relative hidden">
+        <div className="md:grid md:grid-cols-4 align-center justify-center gap-20 md:text-3xl relative hidden">
           <SpeechBubble>
             {t("sections.what_the_artcrew_says.quotes.0.text")}
             {t("sections.what_the_artcrew_says.quotes.0.author")}

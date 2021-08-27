@@ -81,15 +81,17 @@ export function ProfessionalHowToVideosSection() {
                     height={56}
                   />
                 </a>
-                <a
+                <motion.a
                   href="https://www.youtube.com/channel/UCuBKFplxdLGbCKJaiKnHgcg"
                   target="_blank"
                   className="font-sans text-base hover:underline"
+                  whileTap={{ scale: 0.8 }}
+                  whileHover={{ scale: 1.2 }}
                 >
                   {">>"}{" "}
                   {t("sections.professional_howto_videos.checkout_youtube_cta")}{" "}
                   {"<<"}
-                </a>
+                </motion.a>
               </div>
             </div>
           </div>

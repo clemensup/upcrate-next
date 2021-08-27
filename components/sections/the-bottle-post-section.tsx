@@ -22,7 +22,7 @@ export function TheBottlePostSection() {
                 {t("sections.the_bottle_post.text")}
               </p>
 
-              <div className="flex gap-6 md:gap-20 mt-5 md:mt-16">
+              <div className="flex gap-6 md:gap-20 mt-5 md:mt-16 max-w-8xl mx-auto">
                 <a
                   href="https://shop.upcrate.art/product/upcrate20-april-2021/"
                   target="_blank"
