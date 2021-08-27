@@ -2,6 +2,7 @@ import { motion } from "framer-motion";
 import useTranslation from "next-translate/useTranslation";
 import Image from "next/image";
 import { FormattedText } from "../elements/formatted-text";
+import { Parallax } from "../elements/parallax";
 import { RadialGradient } from "../elements/radial-gradient";
 import { BattleBorderSvg } from "../elements/svg/battle-border";
 import { BattleSvg } from "../elements/svg/battle-svg";
@@ -77,7 +78,9 @@ export function UpcrateBattleSection() {
 
           <div className="z-10">
             <div className="md:flex gap-4 justify-between p-10 border-1">
-              <img src="/home/battle/win-prizes.png" alt="" />
+              <Parallax>
+                <img src="/home/battle/win-prizes.png" alt="" />
+              </Parallax>
               <p className="text-xl text-right">
                 <FormattedText
                   transKey="common:sections.upcrate_battle.prize_example"

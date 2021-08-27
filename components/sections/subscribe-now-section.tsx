@@ -1,14 +1,20 @@
 import { motion } from "framer-motion";
 import useTranslation from "next-translate/useTranslation";
 import Image from "next/image";
+import { useInView } from "react-intersection-observer";
 import { Button } from "../elements/button";
+import { Parallax } from "../elements/parallax";
 import { CaptainCrateSvg } from "../elements/svg";
 
 export function SubscribeNowSection() {
   const { t } = useTranslation("common");
+  const [ref, isVisible] = useInView({ threshold: 0.2 });
 
   return (
-    <section className="py-16 md:py-28 px-10 bg-subscribe-now text-center bg-cover">
+    <section
+      className="py-16 md:py-28 px-10 bg-subscribe-now text-center bg-cover"
+      ref={ref}
+    >
       <h3 className="font-display text-white text-2xl md:text-5xl mb-10">
         {t("sections.subscribe_now.title")}
       </h3>
@@ -16,12 +22,13 @@ export function SubscribeNowSection() {
       <div className="md:flex gap-32 justify-center align-center">
         <div className="bg-purple-dark text-center text-white flex flex-col pt-4 pb-10 rounded">
           <CaptainCrateSvg variant="plus" className="self-center" />
-
-          <Image
-            src="/subscribe-now/1-month-box.png"
-            width="532"
-            height="280"
-          />
+          <Parallax>
+            <Image
+              src="/subscribe-now/1-month-box.png"
+              width="532"
+              height="280"
+            />
+          </Parallax>
 
           <div className="flex align-center justify-center">
             <svg
@@ -116,18 +123,13 @@ export function SubscribeNowSection() {
         <div className="bg-purple-dark text-center text-white flex flex-col pt-4 pb-10 rounded mt-16 md:mt-0">
           <CaptainCrateSvg variant="plus" className="self-center" />
 
-          <motion.div
-            animate={{ scale: [0, 1], opacity: [0, 1] }}
-            transition={{
-              duration: 0.55,
-            }}
-          >
+          <Parallax>
             <Image
               src="/subscribe-now/3-month-boxes.png"
               width="532"
               height="280"
             />
-          </motion.div>
+          </Parallax>
 
           <div className="flex align-center justify-center">
             <svg

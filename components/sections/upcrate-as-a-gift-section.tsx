@@ -1,12 +1,30 @@
+import { motion } from "framer-motion";
 import useTranslation from "next-translate/useTranslation";
 import Image from "next/image";
 import { Button } from "../elements/button";
+import { useInView } from "react-intersection-observer";
+import { Parallax } from "../elements/parallax";
+
+const variants = {
+  visible: {
+    opacity: 1,
+    x: 0,
+  },
+  hidden: {
+    opacity: 0,
+    x: -550,
+  },
+};
 
 export function UpcrateAsGiftSection() {
   const { t } = useTranslation("common");
+  const [ref, isVisible] = useInView({ threshold: 0.2 });
 
   return (
-    <section className="bg-center bg-cover text-center relative min-h-sectionBig md:min-h-sectionBigMd py-10 md:py-20">
+    <section
+      ref={ref}
+      className="bg-center bg-cover text-center relative min-h-sectionBig md:min-h-sectionBigMd py-10 md:py-20"
+    >
       <div className="hidden md:block absolute top-0 right-0 bottom-0 left-0 z-0">
         <Image
           src="/upcrate-as-gift/background.jpg"
@@ -27,7 +45,15 @@ export function UpcrateAsGiftSection() {
         <h3 className="font-display text-purple-dark text-2xl md:text-5xl z-10">
           {t("sections.upcrate_as_gift.title")}
         </h3>
-        <Image src="/upcrate-as-gift/box.png" width={808} height={661} />
+        <Parallax>
+          <motion.div
+            variants={variants}
+            animate={isVisible ? "visible" : "hidden"}
+            transition={{ duration: 1, ease: "easeOut" }}
+          >
+            <Image src="/upcrate-as-gift/box.png" width={808} height={661} />
+          </motion.div>
+        </Parallax>
         <Button
           className="bg-orange text-white -mt-10"
           href="https://shop.upcrate.art/product/upcrategift/"

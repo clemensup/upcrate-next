@@ -4,7 +4,9 @@ import {
   useTransform,
   useViewportScroll,
 } from "framer-motion";
+import Image from "next/image";
 import React from "react";
+import { Parallax } from "../elements/parallax";
 import { RadialGradient } from "../elements/radial-gradient";
 import { CaptainCrateSvg } from "../elements/svg";
 import { UnboxYourCreativitySvg } from "../elements/svg/unbox-your-creativity";
@@ -15,7 +17,7 @@ export function AnimatedUnboxYourCreativitySection() {
   const rotation = useSpring(yRange, { stiffness: 400, damping: 200 });
 
   return (
-    <section className="hidden md:flex flex-col bg-purple justify-center items-center py-44 relative overflow-hidden">
+    <section className="hidden md:flex flex-col bg-purple justify-center items-center pt-44 pb-0 relative overflow-hidden">
       <RadialGradient className="bg-pink" variant="center" />
       <RadialGradient className="bg-orange" variant="bottom-right" />
       <RadialGradient className="bg-orange" variant="top-left" />
@@ -24,10 +26,15 @@ export function AnimatedUnboxYourCreativitySection() {
           <CaptainCrateSvg variant="head-only" width={100} />
         </motion.div>
         <UnboxYourCreativitySvg />
-        <img
-          src="/home/unbox-your-creativity/unbox-box.png"
-          className="-my-44"
-        />
+        <div className="-mt-48">
+          <Parallax>
+            <Image
+              src="/home/unbox-your-creativity/unbox-box.png"
+              width={596}
+              height={620}
+            />
+          </Parallax>
+        </div>
       </div>
     </section>
   );
