@@ -11,7 +11,7 @@ import { UnboxYourCreativitySvg } from "../elements/svg/unbox-your-creativity";
 
 export function AnimatedUnboxYourCreativitySection() {
   const { scrollYProgress } = useViewportScroll();
-  const yRange = useTransform(scrollYProgress, [0, 0.9], [0, 3600]);
+  const yRange = useTransform(scrollYProgress, [0, 0.9], [0, 7200]);
   const rotation = useSpring(yRange, { stiffness: 400, damping: 200 });
 
   return (

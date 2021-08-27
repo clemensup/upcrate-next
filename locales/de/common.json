@@ -5,10 +5,10 @@
   "language_switch_en_long": "English",
   "language_switch_dialog_title": "Welche Sprache möchtest du nutzen?",
   "navigation": {
-    "shop": "Shop",
+    "shop": "shop",
     "how_it_works": "So geht's",
     "crates": "Boxen",
-    "artcrew": "art crew",
+    "artcrew": "Art crew",
     "about": "Über uns",
     "legal_headline": "Legal",
     "imprint": "Impressum",
@@ -20,7 +20,8 @@
     "help_contact": "Hilfe / Kontakt",
     "signup_login": "Registrieren / Einloggen"
   },
-  "subscribe_now_button_text": "Jetzt abonnieren",
+  "subscribe_now_button_text": "Abonnieren",
+  "give_a_gift_button_text": "Give a gift",
   "signup": "registrieren",
   "login": "login",
   "cancel": "Abbrechen",
@@ -34,7 +35,7 @@
     "message_error": "Bitte trage deine Nachricht ein.",
     "error_message": "Bitte fülle alle Felder aus und akzeptiere unsere allgemeinen Geschäftsbedingungen.",
     "success_message": "Danke Danke.\nWir malen noch kurz zu Ende und antworten dir dann:)",
-    "terms_label": "Ich habe die <1>Allgemeine Geschäftsbedingungen</1> gelesen und akzeptiere sie",
+    "terms_label": "Ich habe die <1>Allgemeine Geschäftsbedingungen</1> gelesen und akzeptiert",
     "terms_error": "Bitte akzeptiere unsere allgemeinen Geschäftsbedingungen.",
     "privacy_label": "Mit dem Eintragen deiner E-Mail Adresse nimmst du unsere <1>Datenschutzbestimmungen.</1> an"
   },
@@ -52,11 +53,12 @@
         "title": "Du gehörst zu den ganz wenigen, die ganz nach unten gescrollt haben.\nJetzt kannste auch gleich abonnieren:):"
       },
       "slider_content": [
-        { "text": "Mystery" },
-        { "text": "Art Supplies" },
-        { "text": "in a monthly" },
+        { "text": "Geheime" },
+        { "text": "Kunstmaterialien" },
+        { "text": "in einer monatlichen" },
         { "text": "Box" }
-      ]
+      ],
+      "marquee_text": "Komm an Bord und entdecke hochwertige Kunstmaterialien in einer monatlichen Abobox, die dich zum kreativ werden inspiriert."
     },
     "how_it_works": {
       "title": "So geht's",
@@ -152,7 +154,7 @@
   },
   "sections": {
     "join_the_artcrew": {
-      "title": "Komm zur artcrew",
+      "title": "komm an Bord",
       "steps": [
         {
           "title": "Abonnieren",
@@ -164,7 +166,7 @@
         },
         {
           "title": "Create",
-          "text": "Deine bBox kommt an!!! Jetzt heißt es öffnen und kreativ werden."
+          "text": "Deine Box kommt an!!! Jetzt heißt es öffnen und kreativ werden."
         }
       ]
     },
@@ -173,12 +175,12 @@
       "subscriptions": [
         {
           "payment_cycle": "monatlich zahlen",
-          "cta": "Abonniere jetzt",
+          "cta": "Ja ich will!",
           "dollar_estimation": "(~ 25 USD)"
         },
         {
           "payment_cycle": "Alle 3 Monate zahlen",
-          "cta": "Abonniere jetzt",
+          "cta": "Ja ich will³",
           "dollar_estimation": "(~ 71 USD)"
         }
       ]
@@ -194,7 +196,7 @@
           "text": "Wir wählen perfekt abgestimmt Materialien aus, packen sie zusammen und schicken sie direkt zu dir."
         },
         {
-          "text": "Deine bBox kommt an!!! Jetzt heißt es öffnen und kreativ werden."
+          "text": "Deine Box kommt an!!! Jetzt heißt es öffnen und kreativ werden."
         }
       ],
       "whats_inside": {
@@ -203,7 +205,7 @@
       }
     },
     "countdown": {
-      "title": "Die Zeit dich bis zur nächsten Box anzumelden läuft...",
+      "title": "Die Zeit bis zur nächsten Box läuft...",
       "weeks": "Wochen",
       "days": "Tage",
       "hours": "Stunden",
@@ -211,7 +213,7 @@
     },
     "upcrate_as_gift": {
       "title": "upcrate als Geschenk",
-      "cta": "verschenken"
+      "cta": "Box schenken"
     },
     "what_the_artcrew_says": {
       "title": "Was sagt die art crew:",
@@ -310,7 +312,7 @@
     },
     "invite_friends": {
       "title": "Spart zusammen, wenn du deine Freunde in die art crew einlädst!",
-      "text": "Wenn du einen Freund über Facebook, Twitter oder Email an uns weiterleitest und er/sie ein Abonnement abschließt, erhaltet ihr beide einen 15% Nachlass für weitere Käufe. Falls dein Freund beispielsweise ein 3-monatiges Abonnement abschließt, erhältst du einen Rabattcode mit einem Wert von 8,16€, den du in unserem Shop einlösen kannst!",
+      "text": "Wenn du eine:n Freund:in über Facebook, Twitter oder Email an uns weiterleitest und er/sie ein Abonnement abschließt, erhaltet ihr beide einen 15% Nachlass für weitere Käufe. Falls dein:e Freund:in beispielsweise ein 3-monatiges Abonnement abschließt, erhältst du einen Rabattcode mit einem Wert von 8,16€, den du in unserem Shop einlösen kannst!",
       "cta": "Empfehle uns deinen Freunden!"
     },
     "the_golden_crate": {
