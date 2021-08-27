@@ -9,7 +9,26 @@ function SpeechBubble({ children }: React.PropsWithChildren<{}>) {
       <div className="px-5 py-12 bg-cover font-bold text-2xl">
         {children[0]}
       </div>
-      <span className="absolute -bottom-20 left-0 right-10 text-right author text-xl">
+      <span
+        className="absolute left-0 right-0 text-right author text-xl"
+        style={{ top: "calc(100% - 1px)" }}
+      >
+        <svg
+          version="1.1"
+          id="Ebene_1"
+          xmlns="http://www.w3.org/2000/svg"
+          x="0px"
+          y="0px"
+          viewBox="0 0 354.49 34.01"
+          className="md:mb-3"
+        >
+          <path
+            d="M0,0.5h258.97l34.82,32.36V0.5h60.69"
+            stroke="#34234F"
+            fill="none"
+          />
+        </svg>
+
         {children[1]}
       </span>
     </div>
@@ -33,7 +52,7 @@ export function WhatTheArtCrewSaysSection() {
   };
 
   return (
-    <section className="text-center text-purple-dark pt-6 pb-6 px-10 md:px-32 md:pt-20 md:pb-48 relative overflow-hidden">
+    <section className="text-center text-purple-dark pt-6 pb-36 px-10 md:px-32 md:pt-20 md:pb-48 relative overflow-hidden">
       <RadialGradient className="bg-purple" variant="top-right" />
       <RadialGradient className="bg-green left-0" variant="bottom" />
       <div className="z-10 relative">

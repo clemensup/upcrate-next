@@ -24,6 +24,7 @@ import { RadialGradient } from "../components/elements/radial-gradient";
 import useTranslation from "next-translate/useTranslation";
 import { FormattedText } from "../components/elements/formatted-text";
 import Head from "next/head";
+import { AnimatedUnboxYourCreativitySection } from "../components/sections/animated-unbox-your-creativity-section";
 
 export default function Home() {
   const { t } = useTranslation("common");
@@ -44,19 +45,7 @@ export default function Home() {
       <FlowingHeads className="bg-green-dark" />
       <ImageSection variant="small" bg="cpt-in-forest" />
       <WhatTheArtCrewSaysSection />
-      <section className="hidden md:flex flex-col bg-purple justify-center items-center py-44 relative overflow-hidden">
-        <RadialGradient className="bg-pink" variant="center" />
-        <RadialGradient className="bg-orange" variant="bottom-right" />
-        <RadialGradient className="bg-orange" variant="top-left" />
-        <div className="z-10 relative text-purple-dark">
-          <CaptainCrateSvg variant="head-only" width={100} />
-          <UnboxYourCreativitySvg />
-          <img
-            src="/home/unbox-your-creativity/unbox-box.png"
-            className="-my-44"
-          />
-        </div>
-      </section>
+      <AnimatedUnboxYourCreativitySection />
       <ImageSection bg="leuchtturm" variant="medium" />
       <FlowingHeads className="bg-purple" />
       <AsFeaturedInSection />

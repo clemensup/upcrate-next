@@ -50,7 +50,7 @@ export default function About() {
           <h3 className="text-2xl sm:text-5xl text-purple-dark font-display">
             {t("pages.about.sections.0.title")}
           </h3>
-          <p className="mt-8 text-xl">{t("pages.about.sections.0.text")}</p>
+          <p className="mt-8">{t("pages.about.sections.0.text")}</p>
 
           <small className="mt-16">
             {t("pages.about.artwork_by")}{" "}
