@@ -8,14 +8,14 @@ import {
 } from "framer-motion";
 
 type ParallaxProps = {
-  children: ReactNode;
+  className?: string;
   offset?: number;
 };
 
 export function Parallax({
   children,
   offset = 50,
-}: ParallaxProps): JSX.Element {
+}: React.PropsWithChildren<ParallaxProps>): JSX.Element {
   const prefersReducedMotion = useReducedMotion();
   const [elementTop, setElementTop] = useState(0);
   const [clientHeight, setClientHeight] = useState(0);

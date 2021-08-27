@@ -1,25 +1,56 @@
+import { AnimatePresence } from "framer-motion";
 import useTranslation from "next-translate/useTranslation";
+import { useRandomHeads } from "../../hooks/use-random-heads";
 import { Button } from "../elements/button";
+import { Parallax } from "../elements/parallax";
 import { RadialGradient } from "../elements/radial-gradient";
 import { Caret } from "../elements/svg";
 import { UpcrateArtcrewSvg } from "../elements/svg/upcrate-artcrew-svg";
 
 export function InviteFriendsSection() {
   const { t } = useTranslation("common");
+  const heads = useRandomHeads();
 
   return (
     <section className="min-h-sectionSmall md:min-h-sectionSmallMd text-center p-10 md:p-20 relative overflow-hidden">
-      <div className="z-10 relative text-purple-dark max-w-6xl mx-auto pb-28">
-        <div className="md:mt-15 flex flex-col items-center bg-many-heads md:bg-contain bg-no-repeat bg-center">
+      <AnimatePresence>{heads}</AnimatePresence>
+
+      <div className="z-10 relative text-purple-dark max-w-6xl mx-auto pb-28 relative">
+        <div className="md:mt-15 flex flex-col items-center">
           <h3 className="font-display text-purple-dark text-2xl md:text-5xl text-center whitespace-pre-line">
             {t("sections.invite_friends.title")}
           </h3>
 
-          <div className="flex justify-center items-center flex-col gap-20 mt-32 relative">
-            <UpcrateArtcrewSvg />
-            <div className="max-w-4xl mx-auto text-3xl">
-              {t("sections.invite_friends.text")}
+          <div className="relative md:p-10 border-l-2 border-purple-dark border-t-2 border-r-2 mt-10">
+            <div className="flex justify-center items-center flex-col gap-20 mt-32 relative">
+              <Parallax>
+                <UpcrateArtcrewSvg />
+              </Parallax>
+              <div className="max-w-4xl mx-auto text-3xl relative z-10">
+                {t("sections.invite_friends.text")}
+              </div>
             </div>
+            <span
+              className="absolute left-0 right-0 text-right author text-xl"
+              style={{ top: "calc(100% - 2px)" }}
+            >
+              <svg
+                version="1.1"
+                id="Ebene_1"
+                xmlns="http://www.w3.org/2000/svg"
+                x="0px"
+                y="0px"
+                viewBox="0 0 354.49 34.01"
+                className="md:mb-3"
+              >
+                <path
+                  d="M0,0.5h258.97l34.82,32.36V0.5h60.69"
+                  stroke="#34234F"
+                  fill="none"
+                  strokeWidth={1}
+                />
+              </svg>
+            </span>
           </div>
           <div className="mt-10">
             <Button

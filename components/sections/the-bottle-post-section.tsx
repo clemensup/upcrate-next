@@ -1,5 +1,6 @@
 import useTranslation from "next-translate/useTranslation";
 import Image from "next/image";
+import { Parallax } from "../elements/parallax";
 import { RadialGradient } from "../elements/radial-gradient";
 
 export function TheBottlePostSection() {
@@ -23,44 +24,48 @@ export function TheBottlePostSection() {
               </p>
 
               <div className="flex gap-6 md:gap-20 mt-5 md:mt-16 max-w-8xl mx-auto">
-                <a
-                  href="https://shop.upcrate.art/product/upcrate20-april-2021/"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                >
-                  <Image
-                    src="/the-bottle-post/small01.png"
-                    width={500}
-                    height={500}
-                  />
-                  <div className="text-xs md:text-xl">#upcrate20</div>
-                </a>
-
-                <a
-                  href="https://shop.upcrate.art/product/upcrate19-march-2021/"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                >
-                  <Image
-                    src="/the-bottle-post/small02.png"
-                    width={500}
-                    height={500}
-                  />
-                  <div className="text-xs md:text-xl">#upcrate19</div>
-                </a>
-
-                <a
-                  href="https://shop.upcrate.art/product/upcrate16-december-2020/"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                >
-                  <Image
-                    src="/the-bottle-post/small03.png"
-                    width={500}
-                    height={500}
-                  />
-                  <div className="text-xs md:text-xl">#upcrate16</div>
-                </a>
+                <Parallax offset={50}>
+                  <a
+                    href="https://shop.upcrate.art/product/upcrate20-april-2021/"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
+                    <Image
+                      src="/the-bottle-post/small01.png"
+                      width={500}
+                      height={500}
+                    />
+                    <div className="text-xs md:text-xl">#upcrate20</div>
+                  </a>
+                </Parallax>
+                <Parallax offset={50}>
+                  <a
+                    href="https://shop.upcrate.art/product/upcrate19-march-2021/"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
+                    <Image
+                      src="/the-bottle-post/small02.png"
+                      width={500}
+                      height={500}
+                    />
+                    <div className="text-xs md:text-xl">#upcrate19</div>
+                  </a>
+                </Parallax>
+                <Parallax offset={50}>
+                  <a
+                    href="https://shop.upcrate.art/product/upcrate16-december-2020/"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
+                    <Image
+                      src="/the-bottle-post/small03.png"
+                      width={500}
+                      height={500}
+                    />
+                    <div className="text-xs md:text-xl">#upcrate16</div>
+                  </a>
+                </Parallax>
               </div>
             </div>
           </div>
