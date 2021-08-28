@@ -39,8 +39,8 @@ export default function ArtCrew() {
       <HeroSection
         className="bg-rose"
         title={t("pages.artcrew.title")}
-        image="/artcrew-hero.png"
-        mobileImage="/artcrew-hero-xs.png"
+        image="/artcrew/artcrew-hero.png"
+        mobileImage="/artcrew/artcrew-hero-xs.png"
       />
       <NewsletterSection>
         <h3 className="font-display text-purple-dark text-2xl md:text-5xl mt-5 md:mt-20 text-center m-auto">

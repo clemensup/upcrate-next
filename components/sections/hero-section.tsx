@@ -45,7 +45,10 @@ export function HeroSection({
       style={{ height: imageHeight }}
       className={`${className} px-20 pt-0 relative mb-20 z-10`}
     >
-      <div className="absolute left-10 right-10 top-10" style={{ height: 500 }}>
+      <div
+        className="absolute left-0 md:left-10 right-0 md:right-10 top-4 md:top-10"
+        style={{ height: 500 }}
+      >
         <CaptainCrateSvg
           width={24}
           variant="head-only"
@@ -58,8 +61,8 @@ export function HeroSection({
           <Image
             src={mobileImage}
             layout="responsive"
-            height={619}
             width={457}
+            height={490}
             onLoad={(event) => handleImageLoad(event)}
           />
         </div>

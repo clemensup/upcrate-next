@@ -27,6 +27,7 @@ export default function Newsletter() {
         className="bg-purple"
         title={"Newsletter"}
         image="/newsletter/hero-image.png"
+        mobileImage="/newsletter/newsletter-hero-xs.png"
       />
       <NewsletterSection />
       <div className="relative min-h-sectionBig md:min-h-sectionBigMd mb-2">

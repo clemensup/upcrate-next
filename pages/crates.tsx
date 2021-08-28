@@ -49,7 +49,7 @@ export default function Crates({ products, pageCount }: CratesProps) {
         className="bg-orange"
         title={t("pages.crates.title")}
         image="/crates/hero-image.png"
-        mobileImage="/about-us-hero-xs.png"
+        mobileImage="/crates/crates-hero-xs.png"
       />
 
       <CratesList products={products} pageCount={pageCount} />

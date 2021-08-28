@@ -33,12 +33,25 @@ function SliderArrow({
   );
 }
 
-function Slide({ background, image }: { background: string; image: string }) {
+function Slide({
+  background,
+  image,
+  mobileImage,
+}: {
+  background: string;
+  image: string;
+  mobileImage: string;
+}) {
   return (
     <div
       className={`md:px-10 pt-6 pb-20 relative bg-${background} flex justify-center items-center`}
     >
-      <Image src={image} alt="" width={1704} height={855.35} />
+      <div className="hidden md:block">
+        <Image src={image} alt="" width={1704} height={855.35} />
+      </div>
+      <div className="md:hidden">
+        <Image src={mobileImage} alt="" width={457} height={490} />
+      </div>
     </div>
   );
 }
@@ -48,7 +61,7 @@ export const HeroSlider = () => {
     dots: false,
     arrows: true,
     infinite: true,
-    speed: 5000,
+    speed: 2000,
     autoplay: true,
     autoplaySpeed: 7000,
     slidesToShow: 1,
@@ -59,11 +72,31 @@ export const HeroSlider = () => {
 
   return (
     <Slider {...settings}>
-      <Slide background="rose" image="/home/hero-slider/slide-01.png" />
-      <Slide background="green" image="/home/hero-slider/slide-02.png" />
-      <Slide background="purple" image="/home/hero-slider/slide-03.png" />
-      <Slide background="pink" image="/home/hero-slider/slide-04.png" />
-      <Slide background="orange" image="/home/hero-slider/slide-05.png" />
+      <Slide
+        background="rose"
+        image="/home/hero-slider/slide-01.png"
+        mobileImage="/home/hero-slider/slide-xs-01.png"
+      />
+      <Slide
+        background="green"
+        image="/home/hero-slider/slide-02.png"
+        mobileImage="/home/hero-slider/slide-xs-02.png"
+      />
+      <Slide
+        background="purple"
+        image="/home/hero-slider/slide-03.png"
+        mobileImage="/home/hero-slider/slide-xs-03.png"
+      />
+      <Slide
+        background="pink"
+        image="/home/hero-slider/slide-04.png"
+        mobileImage="/home/hero-slider/slide-xs-04.png"
+      />
+      <Slide
+        background="orange"
+        image="/home/hero-slider/slide-05.png"
+        mobileImage="/home/hero-slider/slide-xs-05.png"
+      />
     </Slider>
   );
 };
@@ -113,7 +146,7 @@ export function HeroSliderSection() {
           >
             {t("pages.home.slider_content.1.text")}
           </motion.span>
-          <div className="flex md:gap-10 flex-col md:flex-row md:mt-10">
+          <div className="flex gap-4 md:gap-10 flex-col md:flex-row items-center mt-10">
             <motion.div
               animate={{ scale: [0, 1.7, 1], rotate: 0 }}
               transition={{ duration: 1, delay: 1, ease: "easeInOut" }}

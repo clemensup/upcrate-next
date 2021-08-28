@@ -36,6 +36,7 @@ export default function HowItWorks() {
         className="bg-purple-dark"
         title={"How it works"}
         image="/how-it-works/hero-image.png"
+        mobileImage="/how-it-works/hero-image-xs.png"
       />
       <JoinTheArtCrewSection className="-mt-10 md:-mt-20 pt-36" />
       <ImageSection
