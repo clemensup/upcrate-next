@@ -46,7 +46,12 @@ function Slide({
     <div
       className={`md:px-10 pt-6 pb-20 relative bg-${background} flex justify-center items-center`}
     >
-      <div className="hidden md:block">
+      <div className="hidden md:block relative">
+        <CaptainCrateSvg
+          variant="head-only"
+          className="absolute -top-2 left-1 lg:left-2 xl:left-3 xl:top-0 2xl:left-5 2xl:-top-1 text-purple-dark hidden md:block"
+          width={26}
+        />
         <Image src={image} alt="" width={1704} height={855.35} />
       </div>
       <div className="md:hidden">
@@ -107,10 +112,7 @@ export function HeroSliderSection() {
     <section className="relative">
       <div className="relative">
         <HeroSlider />
-        <CaptainCrateSvg
-          variant="head-only"
-          className="hidden md:block w-5 2xl:w-7 text-purple-dark absolute md:left-6 md:top-0 lg:left-7 lg:top-1 xl:left-9 xl:top-1 2xl:left-10 2xl:top-1"
-        />
+
         <div className="flex flex-col absolute top-0 right-0 bottom-0 left-0 text-purple-dark items-center justify-center">
           <motion.h3
             className="text-center text-3xl md:text-5xl lg:text-6xl xl:text-8xl font-display"
