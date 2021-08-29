@@ -1,13 +1,11 @@
 import { AnimatePresence, motion } from "framer-motion";
 import React from "react";
 import { CaptainCrateSvg } from "../components";
+import { getRandomInt } from "../utils/get-random-int";
 
 const colors = ["pink", "red", "purple", "green", "orange"];
 
 export function useRandomHeads() {
-  const getRandomInt = (min: number, max: number) =>
-    Math.floor(Math.random() * (max - min + 1) + min);
-
   const randomPosition = () => ({
     top: getRandomInt(0, 100) + "%",
     left: getRandomInt(0, 100) + "%",

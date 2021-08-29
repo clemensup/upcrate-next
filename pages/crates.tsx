@@ -4,7 +4,6 @@ import {
   Button,
   Caret,
   HeroSection,
-  Layout,
   UnboxYourCreativitySection,
 } from "../components";
 import { CratesList } from "../components/crates-list";
@@ -34,7 +33,7 @@ export default function Crates({ products, pageCount }: CratesProps) {
   const { t } = useTranslation("common");
 
   return (
-    <Layout>
+    <>
       <Head>
         <title>{t("pages.crates.title")} | upcrate</title>
         <meta
@@ -73,7 +72,7 @@ export default function Crates({ products, pageCount }: CratesProps) {
         title={t("pages.crates.chosen_one_section.title")}
         buttonColors="bg-purple hover:bg-purple-dark text-white"
       />
-    </Layout>
+    </>
   );
 }
 

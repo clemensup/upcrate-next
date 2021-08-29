@@ -1,13 +1,12 @@
 import useTranslation from "next-translate/useTranslation";
 import Head from "next/head";
-import { Layout } from "../components";
 import { RadialGradient } from "../components/elements/radial-gradient";
 
 export default function CancellationPolicy() {
   const { t, lang } = useTranslation("common");
 
   return (
-    <Layout>
+    <>
       <Head>
         <title>{t("pages.terms_and_conditions.title")} | upcrate</title>
         <meta
@@ -183,6 +182,6 @@ export default function CancellationPolicy() {
         </div>
         <RadialGradient className="bg-green" variant="bottom-right" />
       </section>
-    </Layout>
+    </>
   );
 }

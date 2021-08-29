@@ -1,10 +1,4 @@
-import {
-  Button,
-  CaptainCrateSvg,
-  Caret,
-  SubscribeNowSection,
-  UnboxYourCreativitySection,
-} from "../components";
+import { SubscribeNowSection, UnboxYourCreativitySection } from "../components";
 import { AsFeaturedInSection } from "../components/sections/as-featured-in-section";
 import { ConnectSloganSection } from "../components/sections/connect-slogan-section";
 import { FlowingHeads } from "../components/flowing-heads";
@@ -12,15 +6,12 @@ import { FollowUsOnInstagramSection } from "../components/sections/follow-us-on-
 import { FeaturedArtistsWeWorkedWithSection } from "../components/sections/featured-artists-section";
 import { HeroSliderSection } from "../components/sections/hero-slider-section";
 import { JoinTheArtCrewSection } from "../components/sections/join-the-art-crew-section";
-import { Layout } from "../components/layout";
 import { ImageSection } from "../components/sections/image-section";
 import { UpcrateAsGiftSection } from "../components/sections/upcrate-as-a-gift-section";
 import { UpcrateBattleSection } from "../components/sections/upcrate-battle-section";
 import { WhatTheArtCrewSaysSection } from "../components/sections/what-the-artcrew-says-section";
 import { WhyUpcrateSection } from "../components/sections/why-upcrate-section";
 import { FormerCratesInARowSection } from "../components/sections/former-crates-in-a-row-section";
-import { UnboxYourCreativitySvg } from "../components/elements/svg/unbox-your-creativity";
-import { RadialGradient } from "../components/elements/radial-gradient";
 import useTranslation from "next-translate/useTranslation";
 import { FormattedText } from "../components/elements/formatted-text";
 import Head from "next/head";
@@ -30,7 +21,7 @@ export default function Home() {
   const { t } = useTranslation("common");
 
   return (
-    <Layout>
+    <>
       <Head>
         <title>Home | upcrate</title>
         <meta property="og:title" content="Home | upcrate" key="title" />
@@ -67,6 +58,6 @@ export default function Home() {
         title={t("pages.home.chosen_one_section.title")}
         buttonColors="bg-purple hover:bg-purple-dark text-white"
       />
-    </Layout>
+    </>
   );
 }

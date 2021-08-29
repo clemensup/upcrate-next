@@ -1,10 +1,10 @@
 import Head from "next/head";
 import Image from "next/image";
-import { Button, Layout } from "../components";
+import { Button } from "../components";
 
 export default function ErrorPage() {
   return (
-    <Layout>
+    <>
       <Head>
         <title>ERROR 404 | upcrate</title>
         <meta property="og:title" content="ERROR 404" key="title" />
@@ -29,6 +29,6 @@ export default function ErrorPage() {
           />
         </div>
       </div>
-    </Layout>
+    </>
   );
 }

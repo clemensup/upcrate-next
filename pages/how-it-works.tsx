@@ -1,14 +1,8 @@
-import {
-  Button,
-  Caret,
-  HeroSection,
-  UnboxYourCreativitySection,
-} from "../components";
+import { HeroSection, UnboxYourCreativitySection } from "../components";
 import { ConnectSloganSection } from "../components/sections/connect-slogan-section";
 import { FlowingHeads } from "../components/flowing-heads";
 import { FollowUsOnInstagramSection } from "../components/sections/follow-us-on-instagram-section";
 import { JoinTheArtCrewSection } from "../components/sections/join-the-art-crew-section";
-import { Layout } from "../components/layout";
 import { ImageSection } from "../components/sections/image-section";
 import { UpcrateAsGiftSection } from "../components/sections/upcrate-as-a-gift-section";
 import { WhyUpcrateSection } from "../components/sections/why-upcrate-section";
@@ -21,7 +15,7 @@ export default function HowItWorks() {
   const { t } = useTranslation("common");
 
   return (
-    <Layout>
+    <>
       <Head>
         <title>{t("pages.how_it_works.title")} | upcrate</title>
         <meta
@@ -63,6 +57,6 @@ export default function HowItWorks() {
         title={t("pages.how_it_works.chosen_one_section.title")}
         buttonColors="bg-rose hover:bg-red text-white"
       />
-    </Layout>
+    </>
   );
 }

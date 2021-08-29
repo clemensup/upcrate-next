@@ -1,7 +1,7 @@
 import useTranslation from "next-translate/useTranslation";
 import Head from "next/head";
 import Image from "next/image";
-import { Button, Layout, SubscribeNowSection } from "../components";
+import { Button, SubscribeNowSection } from "../components";
 import { Countdown } from "../components/countdown";
 import { RadialGradient } from "../components/elements/radial-gradient";
 import { FlowingHeads } from "../components/flowing-heads";
@@ -13,7 +13,7 @@ export default function Subscriptions() {
   const { t } = useTranslation("common");
 
   return (
-    <Layout>
+    <>
       <Head>
         <title>{t("pages.subscriptions.title")} | upcrate</title>
         <meta
@@ -54,6 +54,6 @@ export default function Subscriptions() {
           </Button>
         </div>
       </div>
-    </Layout>
+    </>
   );
 }

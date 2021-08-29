@@ -1,11 +1,5 @@
 import useTranslation from "next-translate/useTranslation";
-import {
-  Layout,
-  HeroSection,
-  UnboxYourCreativitySection,
-  Caret,
-  Button,
-} from "../components";
+import { HeroSection, UnboxYourCreativitySection } from "../components";
 import { ConnectSloganSection } from "../components/sections/connect-slogan-section";
 import { FlowingHeads } from "../components/flowing-heads";
 import { FollowUsOnInstagramSection } from "../components/sections/follow-us-on-instagram-section";
@@ -25,7 +19,7 @@ export default function ArtCrew() {
   const { t } = useTranslation("common");
 
   return (
-    <Layout>
+    <>
       <Head>
         <title>{t("pages.artcrew.title")} | upcrate</title>
         <meta
@@ -79,6 +73,6 @@ export default function ArtCrew() {
         title={t("pages.artcrew.chosen_one_section.title")}
         buttonColors="bg-purple hover:bg-purple-dark text-white"
       />
-    </Layout>
+    </>
   );
 }

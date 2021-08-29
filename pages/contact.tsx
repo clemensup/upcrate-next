@@ -2,7 +2,6 @@ import useTranslation from "next-translate/useTranslation";
 import Head from "next/head";
 import Image from "next/image";
 import React from "react";
-import { Layout } from "../components";
 import { ContactForm } from "../components/contact-form";
 import { RadialGradient } from "../components/elements/radial-gradient";
 
@@ -10,7 +9,7 @@ export default function Contact() {
   const { t } = useTranslation("common");
 
   return (
-    <Layout>
+    <>
       <Head>
         <title>{t("pages.contact.title")} | upcrate</title>
         <meta
@@ -40,6 +39,6 @@ export default function Contact() {
           alt=""
         />
       </div>
-    </Layout>
+    </>
   );
 }

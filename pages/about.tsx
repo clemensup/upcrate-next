@@ -1,10 +1,4 @@
-import {
-  Layout,
-  HeroSection,
-  UnboxYourCreativitySection,
-  Caret,
-  Button,
-} from "../components";
+import { HeroSection, UnboxYourCreativitySection } from "../components";
 import Image from "next/image";
 import useTranslation from "next-translate/useTranslation";
 import { FollowUsOnInstagramSection } from "../components/sections/follow-us-on-instagram-section";
@@ -18,7 +12,7 @@ export default function About() {
   const { t } = useTranslation("common");
 
   return (
-    <Layout>
+    <>
       <Head>
         <title>{t("pages.about.title")} | upcrate</title>
         <meta
@@ -176,6 +170,6 @@ export default function About() {
         title={t("pages.about.chosen_one_section.title")}
         buttonColors="bg-purple hover:bg-purple-dark text-white"
       />
-    </Layout>
+    </>
   );
 }

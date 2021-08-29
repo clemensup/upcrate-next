@@ -1,6 +1,5 @@
 import useTranslation from "next-translate/useTranslation";
 import Head from "next/head";
-import { Layout } from "../components";
 import { FormattedText } from "../components/elements/formatted-text";
 import { RadialGradient } from "../components/elements/radial-gradient";
 
@@ -8,7 +7,7 @@ export default function CancellationPolicy() {
   const { t } = useTranslation("common");
 
   return (
-    <Layout>
+    <>
       <Head>
         <title>{t("pages.cancellation_policy.title")} | upcrate</title>
         <meta
@@ -38,6 +37,6 @@ export default function CancellationPolicy() {
         </div>
         <RadialGradient className="bg-pink" variant="bottom-right" />
       </section>
-    </Layout>
+    </>
   );
 }

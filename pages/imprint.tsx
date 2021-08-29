@@ -1,13 +1,12 @@
 import useTranslation from "next-translate/useTranslation";
 import Head from "next/head";
-import { Layout } from "../components";
 import { RadialGradient } from "../components/elements/radial-gradient";
 
 export default function Imprint() {
   const { t } = useTranslation("common");
 
   return (
-    <Layout>
+    <>
       <Head>
         <title>{t("pages.imprint.title")} | upcrate</title>
         <meta
@@ -43,6 +42,6 @@ export default function Imprint() {
 
         <RadialGradient className="bg-orange" variant="bottom-right" />
       </section>
-    </Layout>
+    </>
   );
 }

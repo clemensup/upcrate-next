@@ -9,8 +9,8 @@ module.exports = {
       sectionXs: "160px",
       sectionBig: "440px",
       sectionBigMd: "775px",
-      sectionSmall: "200px",
-      sectionSmallMd: "460px",
+      sectionSmall: "300px",
+      sectionSmallMd: "560px",
     },
     height: {
       gradient: "500px",

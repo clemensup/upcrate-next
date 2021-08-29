@@ -1,13 +1,12 @@
 import useTranslation from "next-translate/useTranslation";
 import Head from "next/head";
-import { Layout } from "../components";
 import { RadialGradient } from "../components/elements/radial-gradient";
 
 export default function Privacy() {
   const { t, lang } = useTranslation("common");
 
   return (
-    <Layout>
+    <>
       <Head>
         <title>{t("pages.privacy.title")} | upcrate</title>
         <meta
@@ -639,6 +638,6 @@ export default function Privacy() {
         </div>
         <RadialGradient className="bg-green" variant="bottom-right" />
       </section>
-    </Layout>
+    </>
   );
 }

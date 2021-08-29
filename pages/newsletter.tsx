@@ -2,10 +2,7 @@ import useTranslation from "next-translate/useTranslation";
 import Head from "next/head";
 import Image from "next/image";
 import {
-  Button,
-  Caret,
   HeroSection,
-  Layout,
   SubscribeNowSection,
   UnboxYourCreativitySection,
 } from "../components";
@@ -16,7 +13,7 @@ export default function Newsletter() {
   const { t } = useTranslation("common");
 
   return (
-    <Layout>
+    <>
       <Head>
         <title>Newsletter | upcrate</title>
         <meta property="og:title" content="Newsletter | upcrate" key="title" />
@@ -53,6 +50,6 @@ export default function Newsletter() {
         title={t("pages.home.chosen_one_section.title")}
         buttonColors="bg-rose hover:bg-orange text-white"
       />
-    </Layout>
+    </>
   );
 }
