@@ -1,20 +1,14 @@
-import { motion } from "framer-motion";
 import useTranslation from "next-translate/useTranslation";
 import Image from "next/image";
-import { useInView } from "react-intersection-observer";
 import { Button } from "../elements/button";
 import { Parallax } from "../elements/parallax";
 import { CaptainCrateSvg } from "../elements/svg";
 
 export function SubscribeNowSection() {
   const { t } = useTranslation("common");
-  const [ref, isVisible] = useInView({ threshold: 0.2 });
 
   return (
-    <section
-      className="py-16 md:py-28 px-10 bg-subscribe-now text-center bg-cover"
-      ref={ref}
-    >
+    <section className="py-16 md:py-28 px-10 bg-subscribe-now text-center bg-cover">
       <h3 className="font-display text-white text-2xl md:text-5xl mb-10">
         {t("sections.subscribe_now.title")}
       </h3>

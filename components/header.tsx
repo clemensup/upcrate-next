@@ -10,16 +10,6 @@ import { usePersistLocaleCookie } from "../hooks/use-persistent-locale";
 import { motion } from "framer-motion";
 import { BurgerButton } from "./elements/burger-button";
 
-const Path = (props) => (
-  <motion.path
-    fill="transparent"
-    strokeWidth="3"
-    stroke="hsl(0, 0%, 18%)"
-    strokeLinecap="round"
-    {...props}
-  />
-);
-
 const pathMotion = {
   rest: {
     pathLength: 0,

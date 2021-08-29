@@ -109,6 +109,7 @@ export const HeroSlider = () => {
 
 export function HeroSliderSection() {
   const { t } = useTranslation("common");
+
   return (
     <section className="relative">
       <div className="relative">
