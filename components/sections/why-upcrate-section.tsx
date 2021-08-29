@@ -1,6 +1,7 @@
 import useTranslation from "next-translate/useTranslation";
 import Image from "next/image";
 import { Countdown } from "../countdown";
+import { Parallax } from "../elements/parallax";
 import { RadialGradient } from "../elements/radial-gradient";
 import { CaptainCrateSvg } from "../elements/svg";
 
@@ -17,20 +18,26 @@ export function WhyUpcrateSection() {
         </h3>
 
         <div className="md:flex align-center justify-center gap-20 md:text-xl relative z-10 max-w-6xl mx-auto mb-32">
-          <div className="mt-10">
-            <Image src="/why-upcrate/1.png" width={414} height={331} />
+          <div>
+            <Parallax className="mt-10" offset={-20}>
+              <Image src="/why-upcrate/1.png" width={414} height={331} />
+            </Parallax>
             <p className="max-w-xs m-auto">
               {t("sections.why_upcrate.steps.0.text")}
             </p>
           </div>
-          <div className="mt-10">
-            <Image src="/why-upcrate/2.png" width={414} height={331} />
+          <div>
+            <Parallax className="mt-10" offset={-20}>
+              <Image src="/why-upcrate/2.png" width={414} height={331} />
+            </Parallax>
             <p className="max-w-xs m-auto">
               {t("sections.why_upcrate.steps.1.text")}
             </p>
           </div>
-          <div className="mt-10">
-            <Image src="/why-upcrate/3.png" width={388} height={311} />
+          <div>
+            <Parallax className="mt-10" offset={-20}>
+              <Image src="/why-upcrate/3.png" width={388} height={311} />
+            </Parallax>
             <p className="max-w-xs m-auto">
               {t("sections.why_upcrate.steps.2.text")}
             </p>

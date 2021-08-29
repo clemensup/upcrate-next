@@ -14,11 +14,13 @@ export function LoadingScreen() {
     >
       <div className="max-w-4xl flex flex-col justify-center items-center p-5 relative">
         <div className="z-10 flex flex-col justify-center items-center">
-          <svg
+          <motion.svg
             xmlns="http://www.w3.org/2000/svg"
             width="656"
             height="290"
             viewBox="0 0 656 290"
+            animate={{ scale: [1, 0], rotate: [0, 720], y: [0, -100] }}
+            transition={{ duration: 3, delay: 1.5, ease: "backInOut" }}
           >
             <g id="Group_925" transform="translate(-632 -420)">
               <g id="Group_693" transform="translate(746 462.415)">
@@ -112,11 +114,13 @@ export function LoadingScreen() {
                   transform="translate(6141.679 -1766.438)"
                   fill="#372152"
                 />
-                <path
+                <motion.path
                   id="Path_431"
                   d="M-6067.551,1630.4l-.357-10.749-16.813-2.246,1.322,27.923,30.345-1.164.853-22.415-4.643-.62v8.3Zm-5.774-.388-5.53-.386v-8.267h5.918Z"
                   transform="translate(6281.402 -1608.395)"
                   fill="#372152"
+                  animate={{ opacity: [1, 0.2] }}
+                  transition={{ duration: 4 }}
                 />
                 <path
                   id="Path_432"
@@ -136,11 +140,13 @@ export function LoadingScreen() {
                   transform="translate(6140.78 -1739.968)"
                   fill="#372152"
                 />
-                <path
+                <motion.path
                   id="Path_435"
                   d="M-6052.259,1596.476h-33.455l.289,6.11,32.753,4.719Z"
                   transform="translate(6281.967 -1596.476)"
                   fill="#372152"
+                  animate={{ opacity: [1, 0.2] }}
+                  transition={{ duration: 4 }}
                 />
                 <path
                   id="Path_436"
@@ -171,15 +177,15 @@ export function LoadingScreen() {
                   d="M1,1L655,1 655,289 1,289z"
                   initial={{ pathLength: 0 }}
                   animate={{ pathLength: [1, 0] }}
-                  transition={{ ease: "easeInOut", duration: 2.5 }}
+                  transition={{ ease: "easeInOut", delay: 0.5, duration: 2.5 }}
                 />
               </g>
             </g>
-          </svg>
+          </motion.svg>
         </div>
         <motion.div
-          animate={{ opacity: [0, 1, 0] }}
-          transition={{ ease: "easeInOut", duration: 2, delay: 1 }}
+          animate={{ opacity: [1, 0] }}
+          transition={{ ease: "linear", duration: 2.5, delay: 1 }}
         >
           <RadialGradient variant="center-xl" className={`bg-${randomBg()}`} />
         </motion.div>

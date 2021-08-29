@@ -22,7 +22,7 @@ export function SubscribeNowSection() {
       <div className="md:flex gap-32 justify-center align-center">
         <div className="bg-purple-dark text-center text-white flex flex-col pt-4 pb-10 rounded">
           <CaptainCrateSvg variant="plus" className="self-center" />
-          <Parallax>
+          <Parallax offset={-30}>
             <Image
               src="/subscribe-now/1-month-box.png"
               width="532"
@@ -123,7 +123,7 @@ export function SubscribeNowSection() {
         <div className="bg-purple-dark text-center text-white flex flex-col pt-4 pb-10 rounded mt-16 md:mt-0">
           <CaptainCrateSvg variant="plus" className="self-center" />
 
-          <Parallax>
+          <Parallax offset={-30}>
             <Image
               src="/subscribe-now/3-month-boxes.png"
               width="532"

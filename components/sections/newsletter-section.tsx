@@ -3,6 +3,7 @@ import Image from "next/image";
 import React from "react";
 import { useMailchimpForm } from "../../hooks/use-mailchimp-form";
 import { Checkbox } from "../elements/checkbox";
+import { CreditsBage } from "../elements/credits-badge";
 import { FormattedText } from "../elements/formatted-text";
 import { RadialGradient } from "../elements/radial-gradient";
 import { Caret } from "../elements/svg";
@@ -191,14 +192,12 @@ export function NewsletterSection({ children }: React.PropsWithChildren<{}>) {
             </div>
           </div>
         </div>
-        <a
+        <CreditsBage
+          className="bg-purple-dark"
           href="https://www.instagram.com/sarkasik/"
-          target="_blank"
-          rel="noopener noreferrer"
-          className="absolute -right-16 top-1/2 transform -translate-y-1/2 -rotate-90 bg-purple-dark px-2 inline-block origin-bottom text-white"
         >
           by @sarkasik
-        </a>
+        </CreditsBage>
       </section>
     </>
   );

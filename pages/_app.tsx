@@ -20,33 +20,33 @@ function MyApp({ Component, pageProps }) {
 
   return (
     <div ref={ref}>
-      <Layout>
-        <AnimatePresence initial={false}>
-          {showLoading && (
-            <motion.div
-              initial={{ y: -1000, opacity: 0 }}
-              animate={{ y: 0, opacity: 1 }}
-              exit={{ y: -1000, opacity: 0 }}
-              transition={{ duration: 1 }}
-            >
-              <LoadingScreen />
-            </motion.div>
-          )}
-        </AnimatePresence>
+      <AnimatePresence>
+        {showLoading && (
+          <motion.div
+            initial={{ y: 0 }}
+            animate={{ y: 0 }}
+            exit={{ y: -1000 }}
+            transition={{ duration: 1 }}
+          >
+            <LoadingScreen />
+          </motion.div>
+        )}
+      </AnimatePresence>
 
-        <AnimatePresence exitBeforeEnter initial={false}>
-          {!showLoading && (
+      <AnimatePresence>
+        {!showLoading && (
+          <Layout>
             <motion.div
-              initial={{ y: 1000 }}
-              animate={{ y: 0 }}
+              initial={{ y: 1000, opacity: 0 }}
+              animate={{ y: 0, opacity: 1 }}
               exit={{ y: 0 }}
               transition={{ duration: 1 }}
             >
               <Component {...pageProps} />
             </motion.div>
-          )}
-        </AnimatePresence>
-      </Layout>
+          </Layout>
+        )}
+      </AnimatePresence>
     </div>
   );
 }

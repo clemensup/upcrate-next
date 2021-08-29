@@ -90,7 +90,11 @@ export function Header(): JSX.Element {
   };
 
   return (
-    <header className="sticky top-0 z-30 bg-white">
+    <motion.header
+      className="sticky top-0 z-30 bg-white"
+      animate={{ y: [-50, 0] }}
+      transition={{ duration: 1, ease: "easeInOut" }}
+    >
       <div
         className={`mx-auto p-2 lg:px-4 relative transition-all	duration-200`}
       >
@@ -229,6 +233,6 @@ export function Header(): JSX.Element {
           </div>
         </nav>
       </div>
-    </header>
+    </motion.header>
   );
 }
