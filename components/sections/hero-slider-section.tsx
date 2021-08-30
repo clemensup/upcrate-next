@@ -84,12 +84,12 @@ export const HeroSlider = () => {
         mobileImage="/home/hero-slider/slide-xs-01.png"
       />
       <Slide
-        background="green"
+        background="purple"
         image="/home/hero-slider/slide-02.png"
         mobileImage="/home/hero-slider/slide-xs-02.png"
       />
       <Slide
-        background="purple"
+        background="green"
         image="/home/hero-slider/slide-03.png"
         mobileImage="/home/hero-slider/slide-xs-03.png"
       />
@@ -115,16 +115,16 @@ export function HeroSliderSection() {
       <div className="relative">
         <HeroSlider />
 
-        <div className="flex flex-col absolute top-0 right-0 bottom-0 left-0 text-purple-dark items-center justify-center">
+        <div className="flex flex-col absolute top-32 right-0 bottom-0 left-0 text-purple-dark items-center justify-center">
           <motion.h3
-            className="text-center text-3xl md:text-5xl lg:text-6xl xl:text-8xl font-display"
+            className="text-center text-4xl md:text-5xl lg:text-6xl xl:text-8xl font-display"
             animate={{ scale: [0, 1.25, 1] }}
             transition={{ duration: 0.25 }}
           >
             {t("pages.home.slider_content.0.text")}
           </motion.h3>
           <motion.h3
-            className="text-center text-3xl md:text-5xl lg:text-6xl xl:text-8xl font-display"
+            className="text-center text-4xl md:text-5xl lg:text-6xl xl:text-8xl font-display"
             animate={{ scale: [0, 1.35, 1] }}
             transition={{ duration: 0.5, delay: 0.25 }}
           >
@@ -132,7 +132,7 @@ export function HeroSliderSection() {
             {t("pages.home.slider_content.1.text")}
           </motion.h3>
           <motion.h3
-            className="text-center text-3xl md:text-5xl lg:text-6xl xl:text-8xl font-display"
+            className="text-center text-4xl md:text-5xl lg:text-6xl xl:text-8xl font-display"
             animate={{ scale: [0, 1.2, 1] }}
             transition={{ duration: 0.5, delay: 0.5 }}
           >
@@ -141,14 +141,14 @@ export function HeroSliderSection() {
             <br />
           </motion.h3>
           <motion.span
-            className="text-center text-3xl md:text-5xl lg:text-6xl xl:text-8xl font-display text-white text-shadow"
+            className="text-center text-4xl md:text-5xl lg:text-6xl xl:text-8xl font-display text-white text-shadow"
             initial={{
               scale: 0,
             }}
             animate={{ scale: [0, 2, 1] }}
             transition={{ duration: 0.5, delay: 1 }}
           >
-            {t("pages.home.slider_content.1.text")}
+            {t("pages.home.slider_content.3.text")}
           </motion.span>
           <div className="flex gap-4 md:gap-10 flex-col md:flex-row items-center mt-10">
             <motion.div
@@ -207,7 +207,7 @@ export function HeroSliderSection() {
       </div>
       <div className="overflow-hidden">
         <div className="hidden md:block overflow-hidden text-white md:text-2xl text-center py-5 absolute bottom-0 no-wrap w-full flex gap-20">
-          <Marquee speed={150} gradientWidth={0}>
+          <Marquee speed={250} gradientWidth={0}>
             {t("pages.home.marquee_text")}
           </Marquee>
         </div>

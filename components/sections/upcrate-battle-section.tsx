@@ -91,11 +91,11 @@ export function UpcrateBattleSection() {
           </div>
         </div>
 
-        <div className="max-w-6xl mx-auto mt-20">
+        <div className="max-w-7xl mx-auto mt-9 relative z-10">
           <h4 className="font-bold text-3xl">
             {t("sections.upcrate_battle.how_to_participate.title")}
           </h4>
-          <div className="md:grid grid-cols-3 gap-10 mt-6">
+          <div className="md:grid grid-cols-3 gap-20 mt-6">
             <Parallax className="mt-10 md:mt-0" offset={20}>
               <Image
                 src="/upcrate-battle/how-to-01.png"

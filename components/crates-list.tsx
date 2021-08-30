@@ -7,7 +7,7 @@ import { CratesProps } from "./../pages/crates";
 import { useFirstRender } from "../hooks/use-first-render";
 import { AnimatePresence, motion } from "framer-motion";
 
-const transition = { duration: 0.5, ease: [0.43, 0.13, 0.23, 0.96] };
+const transition = { duration: 0.7, ease: [0.43, 0.13, 0.23, 0.96] };
 
 const thumbnailVariants = {
   initial: { scale: 0.7, rotate: 10, opacity: 0 },
@@ -24,7 +24,12 @@ const frameVariants = {
 };
 
 const imageVariants = {
-  hover: { scale: 1.2 },
+  hover: { scale: 0, opacity: 0 },
+};
+
+const zoomeImageVariants = {
+  initial: { scale: 0, opacity: 0 },
+  hover: { scale: 1.2, opacity: 1 },
 };
 
 export function CratesList({ products, pageCount }: CratesProps) {
@@ -78,40 +83,60 @@ export function CratesList({ products, pageCount }: CratesProps) {
             variants={{ exit: { transition: { staggerChildren: 0.1 } } }}
           >
             <AnimatePresence>
-              {state.map((product) => (
-                <li key={product.id}>
-                  <motion.div variants={thumbnailVariants}>
-                    <motion.div
-                      variants={frameVariants}
-                      transition={transition}
-                      className="overflow-hidden"
-                      whileHover="hover"
-                    >
-                      <a href={product.permalink}>
-                        {product.images && product.images.length > 0 && (
-                          <motion.img
-                            src={product.images[0].src}
-                            width={340}
-                            height={340}
-                            variants={imageVariants}
-                            transition={transition}
-                          />
-                        )}
-                      </a>
-                    </motion.div>
+              {state.map((product) => {
+                return (
+                  <li key={product.id}>
+                    <motion.div variants={thumbnailVariants}>
+                      <motion.div
+                        variants={frameVariants}
+                        transition={transition}
+                        className="overflow-hidden"
+                        whileHover="hover"
+                        initial="initial"
+                      >
+                        <a href={product.permalink}>
+                          {product.images && product.images.length > 0 && (
+                            <div
+                              className="relative"
+                              style={{ paddingBottom: "100%" }}
+                            >
+                              <motion.img
+                                className="absolute top-0 left-0 right-0 bottom-0"
+                                src={product.images[0].src}
+                                width={340}
+                                height={340}
+                                variants={imageVariants}
+                                transition={transition}
+                              />
 
-                    <h5 className="text-2xl font-bold">{product.name}</h5>
-                    <div className="flex justify-between mt-2">
-                      <span className="text-xl">{product.regular_price} €</span>
-                      {product.stock_status === "outofstock" && (
-                        <span className="font-display text-red-light text-xl">
-                          {t("pages.crates.crates_list.stock_status")}
+                              <motion.img
+                                className="absolute top-0 left-0 right-0 bottom-0 z-0"
+                                src={product.acf.zoom_image}
+                                width={340}
+                                height={340}
+                                variants={zoomeImageVariants}
+                                transition={transition}
+                              />
+                            </div>
+                          )}
+                        </a>
+                      </motion.div>
+
+                      <h5 className="text-2xl font-bold">{product.name}</h5>
+                      <div className="flex justify-between mt-2">
+                        <span className="text-xl">
+                          {product.regular_price} €
                         </span>
-                      )}
-                    </div>
-                  </motion.div>
-                </li>
-              ))}
+                        {product.stock_status === "outofstock" && (
+                          <span className="font-display text-red-light text-xl">
+                            {t("pages.crates.crates_list.stock_status")}
+                          </span>
+                        )}
+                      </div>
+                    </motion.div>
+                  </li>
+                );
+              })}
             </AnimatePresence>
           </motion.ul>
 

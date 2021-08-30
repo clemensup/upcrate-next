@@ -23,7 +23,7 @@ export function UpcrateAsGiftSection() {
   return (
     <section
       ref={ref}
-      className="bg-center bg-cover text-center relative min-h-sectionBig md:min-h-sectionBigMd py-10 md:py-20"
+      className="bg-center bg-cover text-center relative min-h-sectionBig md:min-h-sectionBigMd py-10 md:py-20 bg-green"
     >
       <div className="hidden md:block absolute top-0 right-0 bottom-0 left-0 z-0">
         <Image

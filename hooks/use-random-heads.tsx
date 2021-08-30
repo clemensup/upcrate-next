@@ -31,7 +31,7 @@ export function useRandomHeads() {
             exit={{ opacity: 0 }}
           >
             <CaptainCrateSvg
-              className={`text-${colors[getRandomInt(0, colors.length)]}`}
+              className={`text-${colors[getRandomInt(0, colors.length - 1)]}`}
               variant="head-only"
             />
           </motion.div>

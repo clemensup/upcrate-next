@@ -22,6 +22,9 @@ export interface Product {
   permalink: string;
   stock_status: "instock" | "outofstock";
   regular_price: string;
+  acf: {
+    zoom_image?: string;
+  };
 }
 
 export interface CratesProps {

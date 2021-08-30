@@ -5,7 +5,7 @@
   "language_switch_en_long": "English",
   "language_switch_dialog_title": "Welche Sprache möchtest du nutzen?",
   "navigation": {
-    "shop": "shop",
+    "shop": "Shop",
     "how_it_works": "So geht's",
     "crates": "Boxen",
     "artcrew": "Art crew",
@@ -21,7 +21,7 @@
     "signup_login": "Registrieren / Einloggen"
   },
   "subscribe_now_button_text": "Abonnieren",
-  "give_a_gift_button_text": "Give a gift",
+  "give_a_gift_button_text": "Verschenken",
   "signup": "registrieren",
   "login": "login",
   "cancel": "Abbrechen",
@@ -50,7 +50,7 @@
     "home": {
       "draw_as_one_section": "Let’s draw <1>as one.</1><2></2>Let’s connect <1>worldwide</1><2></2> and <1>live art</1> together",
       "chosen_one_section": {
-        "title": "Du gehörst zu den ganz wenigen, die ganz nach unten gescrollt haben.\nJetzt kannste auch gleich abonnieren:):"
+        "title": "Du gehörst zu den ganz wenigen,\ndie ganz nach unten gescrollt haben.\nJetzt kannste auch gleich abonnieren:):"
       },
       "slider_content": [
         { "text": "Geheime" },
@@ -64,14 +64,14 @@
       "title": "So geht's",
       "draw_as_one_section": "We connect <2>artists worldwide <1></1> to draw together </2> as one <2>and</2> to get to <2>the heart of the art</2>",
       "chosen_one_section": {
-        "title": "Du gehörst zu den ganz wenigen, die ganz nach unten gescrollt haben.\nJetzt kannste auch gleich abonnieren:):"
+        "title": "Du gehörst zu den ganz wenigen,\ndie ganz nach unten gescrollt haben.\nJetzt kannste auch gleich abonnieren:):"
       }
     },
     "crates": {
       "title": "Boxen",
       "found_some_art": "Wir haben da ein paar\n Kunstmaterialien für dich",
       "chosen_one_section": {
-        "title": "Du gehörst zu den ganz wenigen, die ganz nach unten gescrollt haben.\nJetzt kannste auch gleich abonnieren:):"
+        "title": "Du gehörst zu den ganz wenigen,\ndie ganz nach unten gescrollt haben.\nJetzt kannste auch gleich abonnieren:):"
       },
       "crates_list": {
         "title": "Unsere Boxen",
@@ -92,7 +92,7 @@
         "title": "<2>We draw artists</2> together <1></1> <2>with</2> our <2> creative passion <1></1> and give </2> you the tools <1></1> to follow <2>your heart</2>"
       },
       "chosen_one_section": {
-        "title": "Du gehörst zu den ganz wenigen, die ganz nach unten gescrollt haben.\nJetzt kannste auch gleich abonnieren:):"
+        "title": "Du gehörst zu den ganz wenigen,\ndie ganz nach unten gescrollt haben.\nJetzt kannste auch gleich abonnieren:):"
       }
     },
     "about": {
@@ -140,10 +140,10 @@
     },
     "cancellation_policy": {
       "title": "Stornierungsbedingungen",
-      "withdrawal_title": "Withdrawal",
-      "withdrawal_text": "<1>You have the right to withdraw from this contract within fourteen days without giving any reason.</1><1>The withdrawal period is fourteen days from the day where you or a third party named by you, who is not the carrier, has or has taken possession of the goods, provided that you have ordered one or more goods under a single order and these are or will be delivered in a uniform manner, or</1><1>where you or a third party named by you, who is not the carrier, has or has taken possession of the last goods, if you have ordered several goods in a single order and these are delivered separately, or</1><1>where you or a third party named by you, other than the carrier, has or has taken possession of the last partial consignment or piece, provided that you have ordered a product that is delivered in multiple consignments or pieces, or</1><1>where you or a third party named by you, other than the carrier, has or has taken possession of the first good, provided that you have a contract for the regular delivery of goods for a fixed period of time.</1><1>To exercise your right of revocation, you must notify us (Clemens Roosen, Suhrsweg 3, 22305 Hamburg, Germany, Germany, e-mail: info@upcrate.art) by means of a clear statement (e.g. a letter sent by post, e-mail) about your decision to withdraw from this contract. You can use the attached model withdrawal form, which is not required.</1><1>In order to maintain the cancellation period, it is sufficient that you send the notice of the exercise of the right of withdrawal before the expiry of the withdrawal period.</1>",
-      "consequences_title": "Consequences of the cancellation",
-      "consequences_text": "<1>If you withdraw from this Agreement, we have selected all payments we have received from you, including delivery charges (except for the additional costs arising from your choosing a different delivery method than the most favorable standard delivery we offer have to repay immediately and at the latest within fourteen days from the date on which the notification of your revocation of this contract has reached us. For this repayment, we use the same means of payment that you used in the original transaction, unless otherwise agreed with you; In no case will you be charged for this repayment fees.</1><1>We may refuse to repay you until we have the goods back or until you have provided proof that you have returned the goods, whichever is the earlier.</1><1>You must return the goods to us immediately and in any event not later than fourteen days from the date on which you inform us of the cancellation of this contract. The deadline is met if you send the goods before the expiry of the period of fourteen days. You bear the immediate costs of returning the goods.</1><1>You only have to pay for a possible loss in value of the goods, if this loss of value is due to a handling that is not necessary for the examination of the nature, characteristics and functionality of the goods.</1>"
+      "withdrawal_title": "Rückzug",
+      "withdrawal_text": "<1>Sie haben das Recht, binnen vierzehn Tagen ohne Angabe von Gründen diesen Vertrag zu widerrufen. Die Widerrufsfrist beträgt vierzehn Tage ab dem Tag  Ab dem Sie oder ein von Ihnen benannter Dritter, der nicht Beförderer ist, die Ware in Besitz genommen oder in Besitz genommen hat, sofern Sie eine oder mehrere Waren in einer einzigen Bestellung bestellt haben und diese einheitlich geliefert werden oder geliefert werden, oder wenn Sie oder ein von Ihnen benannter Dritter, der nicht Beförderer ist, die letzte Ware in Besitz genommen hat oder in Besitz genommen hat, wenn Sie mehrere Waren in einer einzigen Bestellung bestellt haben und diese getrennt geliefert werden, oder  wenn Sie oder ein von Ihnen benannter Dritter, der nicht der Beförderer ist, die letzte Teilsendung oder das letzte Stück in Besitz genommen haben oder in Besitz genommen haben, sofern Sie ein Produkt bestellt haben, das in mehreren Sendungen oder Stücken geliefert wird, oder  wenn Sie oder ein von Ihnen benannter Dritter, der nicht der Beförderer ist, die erste Ware in Besitz genommen haben oder haben, sofern Sie einen Vertrag über die regelmäßige Lieferung von Waren für einen bestimmten Zeitraum abgeschlossen haben.  Um Ihr Widerrufsrecht auszuüben, müssen Sie uns (Clemens Roosen, Suhrsweg 3, 22305 Hamburg, Deutschland, E-Mail: info@upcrate.art) mittels einer eindeutigen Erklärung (z.B. ein mit der Post versandter Brief, e -Mail) über Ihren Entschluss, diesen Vertrag zu widerrufen. Sie können dafür das beigefügte Muster-Widerrufsformular verwenden, das jedoch nicht vorgeschrieben ist.  Zur Wahrung der Widerrufsfrist reicht es aus, dass Sie die Mitteilung über die Ausübung des Widerrufsrechts vor Ablauf der Widerrufsfrist absenden.</1>",
+      "consequences_title": "Folgen",
+      "consequences_text": "<1>Wenn Sie von diesem Vertrag zurücktreten, haben wir alle Zahlungen, die wir von Ihnen erhalten haben, einschließlich der Versandkosten (mit Ausnahme der zusätzlichen Kosten, die sich aus der Wahl einer anderen Versandart als der von uns angebotenen günstigsten Standardlieferung ergeben) sofort und zum angegebenen Zeitpunkt zurückgezahlt Für diese Rückzahlung verwenden wir dasselbe Zahlungsmittel, das Sie bei der ursprünglichen Transaktion eingesetzt haben, es sei denn, mit Ihnen wurde etwas anderes vereinbart wegen dieser Rückzahlung werden Ihnen Entgelte berechnet.  Wir können die Rückzahlung verweigern, bis wir die Waren wieder zurückerhalten haben oder bis Sie den Nachweis erbracht haben, dass Sie die Waren zurückgesandt haben, je nachdem, welches der frühere Zeitpunkt ist.  Sie müssen die Waren unverzüglich, spätestens jedoch binnen vierzehn Tagen ab dem Tag, an dem Sie uns über den Widerruf dieses Vertrags unterrichten, an uns zurücksenden. Die Frist ist gewahrt, wenn Sie die Ware vor Ablauf der Frist von vierzehn Tagen absenden. Sie tragen die unmittelbaren Kosten der Rücksendung der Waren.  Sie müssen für einen etwaigen Wertverlust der Waren nur aufkommen, wenn dieser Wertverlust auf einen zur Prüfung der Beschaffenheit, Eigenschaften und Funktionsweise der Waren nicht notwendigen Umgang mit ihnen zurückzuführen ist.</1>"
     },
     "terms_and_conditions": {
       "title": "Allgemeine Geschäftsbedingungen"
@@ -162,7 +162,7 @@
         },
         {
           "title": "Auspacken",
-          "text": "Wir wählen perfekt abgestimmte Materialien aus, packen sie zusammen und schicken sie direkt zu dir."
+          "text": "Wir wählen perfekt abgestimmte Materialien aus, packen deine Box und schon ist sie bei dir."
         },
         {
           "title": "Create",
@@ -186,17 +186,17 @@
       ]
     },
     "why_upcrate": {
-      "title": "Exclusiv für unsere Abonnenten",
+      "title": "Exklusiv für unsere Abonnenten",
       "subtitle": "WARUM UPCRATE?",
       "steps": [
         {
-          "text": "Melde dich an und du bekommst deine erste Upcrate voll mit Kunstmaterialien."
+          "text": "Erhalte monatliche Boxen mit geheimnisvollen Kunstmaterialien."
         },
         {
-          "text": "Wir wählen perfekt abgestimmt Materialien aus, packen sie zusammen und schicken sie direkt zu dir."
+          "text": "Entdecke hochwertige Produkte von Upcrates exklusiver Hausmarke."
         },
         {
-          "text": "Deine Box kommt an!!! Jetzt heißt es öffnen und kreativ werden."
+          "text": "Genieße individuell zusammengestellte Produkte deiner Lieblingsmarken."
         }
       ],
       "whats_inside": {

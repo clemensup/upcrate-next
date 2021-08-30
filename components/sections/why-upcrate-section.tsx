@@ -19,7 +19,7 @@ export function WhyUpcrateSection() {
 
         <div className="md:flex align-center justify-center gap-20 md:text-xl relative z-10 max-w-6xl mx-auto mb-32">
           <div>
-            <Parallax className="mt-10" offset={-20}>
+            <Parallax className="mt-10" offset={-10}>
               <Image src="/why-upcrate/1.png" width={414} height={331} />
             </Parallax>
             <p className="max-w-xs m-auto">
@@ -27,7 +27,7 @@ export function WhyUpcrateSection() {
             </p>
           </div>
           <div>
-            <Parallax className="mt-10" offset={-20}>
+            <Parallax className="mt-10" offset={-10}>
               <Image src="/why-upcrate/2.png" width={414} height={331} />
             </Parallax>
             <p className="max-w-xs m-auto">
@@ -35,7 +35,7 @@ export function WhyUpcrateSection() {
             </p>
           </div>
           <div>
-            <Parallax className="mt-10" offset={-20}>
+            <Parallax className="mt-10" offset={-10}>
               <Image src="/why-upcrate/3.png" width={388} height={311} />
             </Parallax>
             <p className="max-w-xs m-auto">

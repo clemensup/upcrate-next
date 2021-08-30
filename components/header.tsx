@@ -33,7 +33,7 @@ function HeaderNavLink({
 }: React.PropsWithChildren<{ href: string }>) {
   return (
     <motion.div
-      className="relative cursor-pointer p-2"
+      className="relative cursor-pointer p-4 md:p-2"
       initial="rest"
       whileHover="hover"
       animate="rest"

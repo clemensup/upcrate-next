@@ -4,7 +4,7 @@ import Image from "next/image";
 import { TimeForArtSvg } from "../elements/svg/time-for-art-svg";
 import useTranslation from "next-translate/useTranslation";
 import { RadialGradient } from "../elements/radial-gradient";
-const transition = { duration: 45, repeat: Infinity, ease: "linear" };
+const transition = { duration: 70, repeat: Infinity, ease: "linear" };
 
 let i = 0;
 
