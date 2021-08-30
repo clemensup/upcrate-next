@@ -30,7 +30,7 @@ export function HeroSection({
       if (mobileImageRef.current.clientHeight) {
         setImageHeight(mobileImageRef.current.clientHeight);
       } else if (desktopImageRef.current.clientHeight) {
-        setImageHeight(desktopImageRef.current.clientHeight);
+        setImageHeight(desktopImageRef.current.clientHeight - 200);
       }
     };
 
@@ -43,20 +43,12 @@ export function HeroSection({
   return (
     <div
       style={{ height: imageHeight }}
-      className={`${className} px-20 pt-0 relative mb-20 z-10`}
+      className={`${className} px-20 pt-0 relative mb-10 z-10 flex items-center`}
     >
       <div
         className="absolute left-0 md:left-10 right-0 md:right-10 top-4 md:top-10"
-        style={{ height: 500 }}
+        style={{ height: imageHeight }}
       >
-        <CaptainCrateSvg
-          width={24}
-          variant="head-only"
-          className="ml-3 -mt-3 hidden sm:block text-purple-dark"
-        />
-        <h1 className="text-white font-bold text-3xl absolute z-20 top-12 left-20">
-          {title}
-        </h1>
         <div className="sm:hidden" ref={mobileImageRef}>
           <Image
             src={mobileImage}
@@ -66,12 +58,26 @@ export function HeroSection({
             onLoad={(event) => handleImageLoad(event)}
           />
         </div>
-        <div className="hidden sm:block -mt-3" ref={desktopImageRef}>
+        <div
+          className="hidden sm:flex justify-center items-center -mt-3 relative"
+          ref={desktopImageRef}
+        >
+          <CaptainCrateSvg
+            width={24}
+            variant="head-only"
+            className="ml-3 -mt-3 hidden sm:block text-purple-dark absolute top-0 left-0"
+          />
+          <h1
+            className="text-white font-bold text-3xl absolute z-20 top-8 left-0"
+            style={{ maxWidth: 1200 }}
+          >
+            {title}
+          </h1>
           <Image
             src={image}
-            layout="responsive"
-            width={1700}
-            height={739}
+            layout="intrinsic"
+            width={1200}
+            height={521.6}
             onLoad={(event) => handleImageLoad(event)}
           />
         </div>
