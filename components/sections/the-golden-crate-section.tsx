@@ -1,9 +1,30 @@
-import { motion } from "framer-motion";
 import useTranslation from "next-translate/useTranslation";
 import Image from "next/image";
+import React from "react";
 
 export function TheGoldenCrateSection() {
   const { t } = useTranslation("common");
+  const ref = React.useRef<HTMLDivElement>();
+  const [height, setHeight] = React.useState(0);
+
+  const handleImageLoad = (
+    event: React.SyntheticEvent<HTMLImageElement, Event>
+  ) => {
+    setHeight(event.currentTarget.height);
+  };
+
+  React.useEffect(() => {
+    const handleResize = () => {
+      if (ref.current.clientHeight) {
+        setHeight(ref.current.clientHeight);
+      }
+    };
+
+    window.addEventListener("resize", handleResize);
+    handleResize();
+
+    return () => window.removeEventListener("resize", handleResize);
+  }, []);
 
   return (
     <section className="min-h-sectionBig md:min-h-sectionBigMd p-10 md:p-20">
@@ -12,11 +33,19 @@ export function TheGoldenCrateSection() {
       </h3>
 
       <div className="md:grid grid-cols-2 max-w-6xl gap-20 justify-evenly mt-5 md:mt-20 mx-auto">
-        <div className="w-full h-full">
-          <Image src="/golden-crate/big.png" width={610} height={612} />
+        <div className="w-full h-full" ref={ref}>
+          <Image
+            src="/golden-crate/big.png"
+            width={610}
+            height={612}
+            onLoad={(event) => handleImageLoad(event)}
+          />
         </div>
         <div className="w-full h-full">
-          <div className="flex flex-col text-purple-dark h-full justify-items-end mt-5 md:mt-0 md:text-xl">
+          <div
+            className="flex flex-col text-purple-dark h-full justify-items-end mt-5 md:mt-0 md:text-xl"
+            style={{ height }}
+          >
             <h4 className="font-bold text-center md:text-left">
               {t("sections.the_golden_crate.subtitle")}
             </h4>
@@ -24,45 +53,35 @@ export function TheGoldenCrateSection() {
               {t("sections.the_golden_crate.text")}
             </p>
 
-            <div className="flex gap-6 md:gap-20 flex-1 items-end mt-5 md:mt-12">
+            <div className="flex gap-6 md:gap-20 flex-1 items-end mt-5">
               <a
-                className="w-max-content flex flex-col overflow-hidden"
+                className="w-max-content flex flex-col justify-end"
                 href="https://instagram.com/jj8.kaiser.art"
                 target="_blank"
                 rel="noopener noreferrer"
               >
                 <span className="text-base">@jj8.kaiser.art</span>
                 <div className="overflow-hidden">
-                  <motion.div
-                    whileHover={{ scale: 1.2 }}
-                    whileTap={{ scale: 0.9 }}
-                  >
-                    <Image
-                      src="/golden-crate/small01.png"
-                      width={236}
-                      height={314}
-                    />
-                  </motion.div>
+                  <Image
+                    src="/golden-crate/small01.png"
+                    width={236}
+                    height={314}
+                  />
                 </div>
               </a>
               <a
-                className="w-max-content flex flex-col"
+                className="w-max-content flex flex-col justify-end"
                 href="https://instagram.com/hawklbood"
                 target="_blank"
                 rel="noopener noreferrer"
               >
                 <span className="text-base">@hawklbood</span>
                 <div className="overflow-hidden">
-                  <motion.div
-                    whileHover={{ scale: 1.2 }}
-                    whileTap={{ scale: 0.9 }}
-                  >
-                    <Image
-                      src="/golden-crate/small02.png"
-                      width={236}
-                      height={314}
-                    />
-                  </motion.div>
+                  <Image
+                    src="/golden-crate/small02.png"
+                    width={236}
+                    height={314}
+                  />
                 </div>
               </a>
             </div>
