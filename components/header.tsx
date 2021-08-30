@@ -40,11 +40,14 @@ function HeaderNavLink({
     >
       <Link href={href}>
         <div>
-          <div className="absolute top-0 left-0">
+          <div
+            className="absolute top-0 left-0"
+            style={{ width: 100, left: -10, top: 10 }}
+          >
             <motion.svg
               xmlns="http://www.w3.org/2000/svg"
               viewBox="0 0 124.016 35.815"
-              className="w-full"
+              className="w-full cursor-pointer"
             >
               <motion.path
                 d="M-227.328-157.688q36.632-.322,73.262.262a270.754,270.754,0,0,1-73.309,27l113.412-13.66A169.871,169.871,0,0,0-210.3-145.5c33.541-4.485,67.086-8.971,100.5-14.3"
