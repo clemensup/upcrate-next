@@ -54,7 +54,7 @@ export default function ArtCrew() {
       <TheGoldenCrateSection />
       <div className="min-h-sectionSmall md:min-h-sectionSmallMd bg-artcrew-image-section03 bg-center bg-cover bg-no-repeat"></div>
       <TheBottlePostSection />
-      <div className="min-h-sectionSmall md:min-h-sectionSmallMd bg-artcrew-image-section04 bg-center bg-cover bg-no-repeat"></div>
+      <div className="min-h-sectionSmall md:min-h-sectionSmallMd bg-artcrew-image-section04 bg-center bg-cover bg-no-repeat relative z-20"></div>
       <FeaturedArtistsWeWorkedWithSection />
       <ProfessionalHowToVideosSection />
       <ConnectSloganSection>

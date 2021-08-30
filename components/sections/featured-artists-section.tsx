@@ -6,7 +6,7 @@ export function FeaturedArtistsWeWorkedWithSection() {
   const { t } = useTranslation("common");
 
   return (
-    <section className="min-h-sectionBig md:min-h-sectionBigMd p-10 md:p-20 relative overflow-hidden">
+    <section className="min-h-sectionBig md:min-h-sectionBigMd p-10 md:p-20 relative">
       <RadialGradient className="bg-rose" />
       <div className="z-10 relative text-purple-dark">
         <h3 className="font-display text-purple-dark text-2xl md:text-5xl mt-5 md:mt-20 text-center md:max-w-xl m-auto">
@@ -58,7 +58,10 @@ export function FeaturedArtistsWeWorkedWithSection() {
               </div>
             </div>
           </div>
-          <div className="text-2xl text-purple-dark text-center hidden md:block sticky top-0">
+          <div
+            className="text-2xl text-purple-dark text-center hidden md:block sticky top-20"
+            style={{ height: "max-content", alignSelf: "flex-start" }}
+          >
             {t("sections.featured_artists_we_worked_with.text")}
           </div>
           <div className="gap-20 hidden md:grid">

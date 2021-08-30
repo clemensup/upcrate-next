@@ -71,10 +71,22 @@ export function WhyUpcrateSection() {
               <p className="font-bold">+ how to video</p>
             </div>
           </div>
-          <RadialGradient className="bg-orange -mt-64" variant="center-xl" />
-          <RadialGradient className="bg-orange mt-64" variant="center-xl" />
-          <RadialGradient className="bg-orange" variant="center-left" />
-          <RadialGradient className="bg-orange" variant="center-right" />
+          <RadialGradient
+            className="hidden md:block bg-orange -mt-64"
+            variant="center-xl"
+          />
+          <RadialGradient
+            className="hidden md:block bg-orange mt-64"
+            variant="center-xl"
+          />
+          <RadialGradient
+            className="hidden md:block bg-orange"
+            variant="center-left"
+          />
+          <RadialGradient
+            className="hidden md:block bg-orange"
+            variant="center-right"
+          />
           <RadialGradient className="bg-orange" variant="center-xl" />
         </div>
 

@@ -16,6 +16,9 @@ export function useRandomHeads() {
   React.useEffect(() => {
     let interval = null;
     interval = setInterval(() => {
+      if (heads.length > 400) {
+        setHeads([]);
+      }
       setHeads((heads) => [
         ...heads,
 

@@ -123,7 +123,7 @@ export function FormerCratesInARowSection() {
 
   return (
     <section
-      className="text-center text-rose bg-purple py-6 sm:px-10 md:px-32 md:pt-20 md:pb-24 min-h-sectionBig md:min-h-sectionBigMd"
+      className="text-center text-rose bg-purple py-6 sm:px-10 md:px-32 md:pt-20 md:pb-24 min-h-sectionBig md:min-h-sectionBigMd overflow-hidden relative z-20"
       ref={ref}
     >
       <h3 className="font-display text-2xl md:text-5xl">

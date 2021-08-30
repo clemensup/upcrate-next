@@ -100,12 +100,12 @@ body {
   border-left: 1px solid;
 }
 
-/* .speechbubble::before {
+.check-youtube::before {
   content: "";
   position: absolute;
+  top: -40px;
+  height: 60px;
   left: 0;
-  bottom: 0;
   right: 0;
-  background-image: url("/speech-bubble.svg");
-  background-repeat: no-repeat;
-} */
+  background: linear-gradient(rgba(255, 0, 0, 0), white);
+}

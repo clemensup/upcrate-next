@@ -7,7 +7,7 @@ export function ProfessionalHowToVideosSection() {
   const { t } = useTranslation("common");
 
   return (
-    <section className="min-h-sectionBig md:min-h-sectionBigMd p-10 md:p-20 relative overflow-hidden">
+    <section className="min-h-sectionBig md:min-h-sectionBigMd p-10 md:p-20 relative">
       <RadialGradient className="bg-purple" />
       <div className="z-10 relative text-purple-dark">
         <h3 className="font-display text-purple-dark text-2xl md:text-5xl mt-5 md:mt-20 text-center md:max-w-xl m-auto whitespace-pre-line">
@@ -54,7 +54,7 @@ export function ProfessionalHowToVideosSection() {
             </div>
           </div>
           <div className="text-2xl text-purple-dark text-center flex h-full justify-between flex-col order-1 md:order-2">
-            <div>
+            <div className="sticky top-20">
               <Image
                 src="/how-to-videos/youtube.png"
                 width={630}
@@ -65,7 +65,7 @@ export function ProfessionalHowToVideosSection() {
               </p>
             </div>
 
-            <div className="hidden md:block relative">
+            <div className="hidden md:block relative z-30 bg-white check-youtube">
               <RadialGradient className="bg-green" variant="center" />
               <div className="z-10 font-display md:flex flex-col gap-5 relative">
                 <p className="text-4xl whitespace-pre-line">
