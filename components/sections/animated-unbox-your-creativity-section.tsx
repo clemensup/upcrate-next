@@ -27,7 +27,7 @@ export function AnimatedUnboxYourCreativitySection() {
         </motion.div>
         <UnboxYourCreativitySvg />
         <div className="-mt-48">
-          <Parallax>
+          <Parallax offset={-100}>
             <Image
               src="/home/unbox-your-creativity/unbox-box.png"
               width={596}

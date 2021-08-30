@@ -72,7 +72,7 @@ export function TripleSlider({ slides }: { slides: Product[] }) {
 
   return (
     <div className="relative">
-      <Slider {...settings} className="md:mt-20 -mx-10 md:mx-0 z-10">
+      <Slider {...settings} className="md:mt-20 mx-12 md:mx-0 z-10">
         {slides.map((crate) => (
           <Slide
             key={crate.id}
@@ -103,7 +103,7 @@ export function FormerCratesInARowSection() {
 
   const fetchData = async () => {
     setIsFetching(true);
-    const wcData = await fetchCrates().catch(console.error);
+    const wcData = await fetchCrates(0, 100).catch(console.error);
 
     if (!wcData) {
       setIsFetching(false);

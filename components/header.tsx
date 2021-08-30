@@ -68,9 +68,10 @@ export function Header(): JSX.Element {
   const { t, lang } = useTranslation("common");
   const router = useRouter();
   const [isMenuActive, setIsMenuActive] = React.useState(false);
+  const [selectedLanguage, setSelectedLanguage] = React.useState(lang);
+
   const [languageSelectModalOpen, setLanguageSelectModalOpen] =
     React.useState(false);
-  const [selectedLanguage, setSelectedLanguage] = React.useState(lang);
 
   usePersistLocaleCookie();
 
@@ -78,6 +79,10 @@ export function Header(): JSX.Element {
     setLanguageSelectModalOpen(false);
     router.push(router.pathname, router.asPath, { locale: selectedLanguage });
   };
+
+  React.useEffect(() => {
+    setIsMenuActive(false);
+  }, [router.pathname]);
 
   return (
     <motion.header
@@ -88,26 +93,28 @@ export function Header(): JSX.Element {
       <div
         className={`mx-auto p-2 lg:px-4 relative transition-all	duration-200`}
       >
-        <nav className="flex justify-between items-center cursor-pointer">
-          <Link href="/">
-            <div className="inline-block">
-              <span className="inline-block lg:hidden">
-                <CaptainCrateSvg variant="head-only" />
-              </span>
-              <span className="hidden lg:block w-48">
-                <Logo />
-              </span>
-            </div>
-          </Link>
-          <a
-            href="https://upcrate.art/subscribe"
-            className="lg:hidden bg-orange hover:bg-pink p-0 font-display py-1"
-          >
-            <span className="text-white text-lg">
+        <nav className="grid grid-cols-4 md:flex justify-between items-center cursor-pointer">
+          <div className="col-span-1">
+            <Link href="/">
+              <div className="inline-block">
+                <span className="inline-block lg:hidden">
+                  <CaptainCrateSvg variant="head-only" />
+                </span>
+                <span className="hidden lg:block w-48">
+                  <Logo />
+                </span>
+              </div>
+            </Link>
+          </div>
+          <div className="col-span-2">
+            <Button
+              href="https://upcrate.art/subscribe"
+              className="lg:hidden bg-orange hover:bg-pink text-white"
+            >
               {t("subscribe_now_button_text")}
-            </span>
-          </a>
-          <div>
+            </Button>
+          </div>
+          <div className="col-span-1">
             <button
               className="lg:hidden absolute right-2 top-4"
               onClick={() => setIsMenuActive(!isMenuActive)}

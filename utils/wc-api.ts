@@ -8,10 +8,10 @@ const api = new WooCommerceRestApi({
   version: "wc/v3",
 });
 
-export async function fetchCrates(offset?: number) {
+export async function fetchCrates(offset?: number, per_page: number = 9) {
   try {
     return await api.get("products", {
-      per_page: 9,
+      per_page,
       category: 49,
       ...(offset && { offset }),
     });
