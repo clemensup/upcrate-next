@@ -7,7 +7,7 @@ import { ArrowSvg } from "../elements/svg/arrow-svg";
 import Image from "next/image";
 import { motion } from "framer-motion";
 import useTranslation from "next-translate/useTranslation";
-import Marquee from "react-fast-marquee";
+import Ticker from "react-ticker";
 
 function SliderArrow({
   variant,
@@ -206,10 +206,10 @@ export function HeroSliderSection() {
         </div>
       </div>
       <div className="overflow-hidden">
-        <div className="hidden md:block overflow-hidden text-white md:text-2xl text-center py-5 absolute bottom-0 no-wrap w-full flex gap-20">
-          <Marquee speed={250} gradientWidth={0}>
-            {t("pages.home.marquee_text")}
-          </Marquee>
+        <div className="hidden md:block overflow-hidden text-white md:text-xl text-center py-5 absolute bottom-0 no-wrap w-full flex gap-20">
+          <Ticker>
+            {() => <span className="mr-8">{t("pages.home.marquee_text")}</span>}
+          </Ticker>
         </div>
       </div>
     </section>

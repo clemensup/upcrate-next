@@ -76,24 +76,6 @@ body {
   cursor: url(../public/cursor.png), auto;
 }
 
-@keyframes marquee {
-  0% {
-    text-indent: 0%;
-  }
-  100% {
-    text-indent: -100%;
-  }
-}
-
-.marquee {
-  width: 100vw;
-  margin: auto;
-  padding: 2px;
-  overflow: hidden;
-  white-space: nowrap;
-  animation: marquee 10s linear infinite;
-}
-
 .speechbubble {
   border-top: 1px solid;
   border-right: 1px solid;
