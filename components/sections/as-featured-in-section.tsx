@@ -7,19 +7,24 @@ export function AsFeaturedInSection() {
   const { t } = useTranslation("common");
 
   return (
-    <section className="min-h-sectionSmall md:min-h-sectionSmallMd py-10 relative overflow-hidden">
+    <section className="min-h-sectionSmall md:min-h-sectionSmallMd p-10 text-center relative overflow-hidden">
       <RadialGradient className="bg-purple" />
       <div className="z-10 relative text-purple-dark">
         <h3 className="font-display text-purple-dark text-2xl md:text-5xl md:mt-20 text-center">
           {t("sections.as_featured_in.title")}
         </h3>
-        <div className="flex gap-20 justify-center mt-10 md:mt-32">
+        <div className="md:flex gap-20 justify-center mt-10 md:mt-32">
           <motion.a
-            href="https://www.palette-magazin.de"
+            href="https://www.kreativsuechtig.de/wordpress/magazin/"
             target="_blank"
             whileHover={{ scale: 1.2 }}
             whileTap={{ scale: 0.8 }}
           >
+            <Image
+              src="/as-featured-in/kreativ-suechtig.svg"
+              width={400}
+              height={103}
+            />
             <Image src="/palette.png" width={222} height={103} />
           </motion.a>
           <motion.a
@@ -28,24 +33,7 @@ export function AsFeaturedInSection() {
             whileHover={{ scale: 1.2 }}
             whileTap={{ scale: 0.8 }}
           >
-            <Image src="/palette.png" width={222} height={103} />
-          </motion.a>
-          <motion.a
-            href="https://www.palette-magazin.de"
-            target="_blank"
-            whileHover={{ scale: 1.2 }}
-            whileTap={{ scale: 0.8 }}
-          >
-            <Image src="/palette.png" width={222} height={103} />
-          </motion.a>
-          <motion.a
-            href="https://www.palette-magazin.de"
-            target="_blank"
-            whileHover={{ scale: 1.2 }}
-            whileTap={{ scale: 0.8 }}
-            className="hidden md:block"
-          >
-            <Image src="/palette.png" width={222} height={103} />
+            <Image src="/as-featured-in/palette.png" width={222} height={103} />
           </motion.a>
         </div>
       </div>

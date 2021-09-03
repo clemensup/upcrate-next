@@ -47,11 +47,15 @@ function Slide({
   slideIndex: number;
   activeSlideIndex: number;
 }>) {
+  const { width } = useWindowSize();
+
   return (
     <motion.div
       className={`${className} md:px-10 pt-6 md:pb-20 relative flex justify-center items-center`}
       whileHover={{ scale: 1 }}
-      animate={{ scale: activeSlideIndex + 1 === slideIndex ? 1.15 : 0.9 }}
+      animate={{
+        scale: activeSlideIndex + 1 === slideIndex && width > 400 ? 1.15 : 0.9,
+      }}
       transition={{ duration: 0.6, ease: "easeInOut" }}
     >
       {children}

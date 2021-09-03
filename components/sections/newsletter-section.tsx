@@ -155,39 +155,46 @@ export function NewsletterSection({ children }: React.PropsWithChildren<{}>) {
               {t("sections.newsletter_form.advantages.title")}
             </h3>
 
-            <div className="md:flex gap-10 md:gap-20 justify-center">
-              <div>
-                <Image
-                  src="/newsletter/advantage01.gif"
-                  width={332}
-                  height={332}
-                  layout="fixed"
-                />
-                <p className="text-2xl font-bold text-center">
-                  {t("sections.newsletter_form.advantages.columns.0.text")}
-                </p>
-              </div>
-              <div>
-                <Image
-                  src="/newsletter/advantage02.gif"
-                  width={332}
-                  height={332}
-                  layout="fixed"
-                />
-                <p className="text-2xl font-bold text-center">
-                  {t("sections.newsletter_form.advantages.columns.1.text")}
-                </p>
-              </div>
-              <div>
-                <Image
-                  src="/newsletter/advantage03.gif"
-                  width={332}
-                  height={332}
-                  layout="fixed"
-                />
-                <p className="text-2xl font-bold text-center">
-                  {t("sections.newsletter_form.advantages.columns.2.text")}
-                </p>
+            <div className="relative">
+              <RadialGradient variant="top" className="md:hidden bg-orange" />
+              <RadialGradient
+                variant="bottom"
+                className="md:hidden bg-orange"
+              />
+              <div className="md:flex gap-10 md:gap-20 justify-center relative z-10">
+                <div>
+                  <Image
+                    src="/newsletter/advantage01.gif"
+                    width={332}
+                    height={332}
+                    layout="responsive"
+                  />
+                  <p className="text-2xl font-bold text-center">
+                    {t("sections.newsletter_form.advantages.columns.0.text")}
+                  </p>
+                </div>
+                <div>
+                  <Image
+                    src="/newsletter/advantage02.gif"
+                    width={332}
+                    height={332}
+                    layout="responsive"
+                  />
+                  <p className="text-2xl font-bold text-center">
+                    {t("sections.newsletter_form.advantages.columns.1.text")}
+                  </p>
+                </div>
+                <div>
+                  <Image
+                    src="/newsletter/advantage03.gif"
+                    width={332}
+                    height={332}
+                    layout="responsive"
+                  />
+                  <p className="text-2xl font-bold text-center">
+                    {t("sections.newsletter_form.advantages.columns.2.text")}
+                  </p>
+                </div>
               </div>
             </div>
           </div>

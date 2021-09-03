@@ -76,7 +76,7 @@ export function CratesList({ products, pageCount }: CratesProps) {
 
         <div>
           <motion.ul
-            className="list-none md:grid md:grid-cols-3 max-w-6xl gap-20 justify-center mt-5 md:mt-20 mx-auto my-40"
+            className="list-none grid grid-cols-2 md:grid-cols-3 max-w-6xl gap-4 md:gap-20 justify-center mt-5 md:mt-20 mx-auto my-10 md:my-40"
             initial="initial"
             animate="enter"
             exit="exit"
@@ -85,7 +85,7 @@ export function CratesList({ products, pageCount }: CratesProps) {
             <AnimatePresence>
               {state.map((product) => {
                 return (
-                  <li key={product.id}>
+                  <li key={product.id} className="relative">
                     <motion.div variants={thumbnailVariants}>
                       <motion.div
                         variants={frameVariants}
@@ -122,13 +122,15 @@ export function CratesList({ products, pageCount }: CratesProps) {
                         </a>
                       </motion.div>
 
-                      <h5 className="text-2xl font-bold">{product.name}</h5>
+                      <h5 className="text-lg md:text-2xl font-bold">
+                        {product.name}
+                      </h5>
                       <div className="flex justify-between mt-2">
-                        <span className="text-xl">
+                        <span className="md:text-xl">
                           {product.regular_price} €
                         </span>
                         {product.stock_status === "outofstock" && (
-                          <span className="font-display text-red-light text-xl">
+                          <span className="font-display md:text-red-light text-xs absolute md:relative right-0 p-1 md:p-0 bg-red md:bg-transparent text-white top-0 md:text-xl">
                             {t("pages.crates.crates_list.stock_status")}
                           </span>
                         )}
@@ -140,9 +142,9 @@ export function CratesList({ products, pageCount }: CratesProps) {
             </AnimatePresence>
           </motion.ul>
 
-          <div className="flex justify-between items-center">
+          <div className="grid grid-cols-2 gap-4 md:gap-0 md:flex justify-between items-center w-full">
             <motion.button
-              className="disabled:opacity-50 font-display p-3 pt-2 pb-3 md:text-3xl inline-flex items-center content-center gap-4 mt-2 md:mt-5 max-w-max mx-auto bg-purple text-white hover:bg-pink"
+              className="w-full order-2 disabled:opacity-50 font-display p-3 pt-2 pb-3 text-xs md:text-3xl inline-flex items-center content-center gap-4 mt-2 md:mt-5 max-w-max mx-auto bg-purple text-white hover:bg-pink"
               onClick={() => setPage(page - 1)}
               disabled={page === 1 || isFetching}
               whileHover={{ scale: 1.1 }}
@@ -154,13 +156,13 @@ export function CratesList({ products, pageCount }: CratesProps) {
               {t("pages.crates.crates_list.previous_page_button")}
             </motion.button>
 
-            <div>
+            <div className="hidden md:block order-1 text-center">
               {isFetching && <div>Loading...</div>}
               Page {page} of {pageCount}
             </div>
 
             <motion.button
-              className="disabled:opacity-50 font-display p-3 pt-2 pb-3 md:text-3xl inline-flex items-center content-center gap-4 mt-2 md:mt-5 max-w-max mx-auto bg-purple text-white hover:bg-pink"
+              className="order-3 disabled:opacity-50 font-display p-3 pt-2 pb-3 text-xs md:text-3xl inline-flex items-center content-center gap-4 mt-2 md:mt-5 max-w-max mx-auto bg-purple text-white hover:bg-pink"
               onClick={() => setPage(page + 1)}
               disabled={page === pageCount || isFetching}
               whileHover={{ scale: 1.1 }}

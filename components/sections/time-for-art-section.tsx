@@ -120,7 +120,7 @@ export function TimeForArtSection() {
             className="relative w-full flex justify-center items-center z-10"
             style={{ height: "100%" }}
           >
-            <div className="w-96 top-0">
+            <div className="w-2/3 md:w-96 top-0">
               <TimeForArtSvg />
             </div>
             <div className="absolute -bottom-5 w-72">
@@ -130,7 +130,7 @@ export function TimeForArtSection() {
                 height={169.32}
               />
             </div>
-            <div className="absolute -right-5 w-36">
+            <div className="absolute right-0 md:-right-5 w-36">
               <Image src="/time-for-art/cutter.png" width={200} height={100} />
             </div>
           </div>

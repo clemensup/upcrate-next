@@ -101,19 +101,19 @@
       "sections": [
         {
           "title": "Captain Crate…",
-          "text": "has gotten to know a wide variety of art materials and their manufacturers on his travels across the seven seas. He is always looking for new connections and treasures for you - his art crew."
+          "text": "has gotten to know a wide <1>variety of art materials</1> and their manufacturers on his travels across the seven seas. He is always looking for new connections and treasures for you - <2>his art crew.</2>"
         },
         {
-          "title": "…delivers monthly…",
-          "text": "…every month he sends a great selection of mystery art supplies in a crate to all his art-loving crew members around the world. Through his contacts and technical know-how as a pen tester he can guarantee to deliver the latest and most attractive products every month with the best quality and at incredibly low prices…"
+          "title": "...delivers the best every month... ",
+          "text": "...from a handpicked selection of new, mysterious materials to you. These are lovingly put together in the crates in order to guarantee our <1>international crew</1> the best quality for trying out new drawing techniques and brands at the lowest price. Each box delivers a <2>new surprise</2> to your home!..."
         },
         {
           "title": "…for the art crew",
-          "text": "Upcrate is the artist treasure crate that not only upgrades your art materials every month but also enhances your personal artistic abilities. Great – create – crate. In addition to the art materials delivered each month, Captain Crate brings his pirates together through multiple challenges and collaborations with various artists worldwide."
+          "text": "Upcrate not only introduces you to hidden treasures of innovative materials, but also broadens your horizons and sparks your creativity. In addition to <1>new materials</1>, you will receive a magazine full of related advice, challenges and opportunities to exchange ideas and <2>make friends with other artists</2> online in order to become better together. One for all and all for one!"
         },
         {
           "title": "behind the scenes",
-          "text": "…Captain Crate was spring to life by Manuel of Hamburg. He is a designer by profession and a creative mind by nature. Clemens knowing almost every art supplies factory on the planet created Upcrate. He takes special care of all operational matters. A dedicated team of expressive artists tests all art supplies they curate for Upcrate to make sure the best stuff is selected for your creative journey."
+          "text": "...is a team of art lovers, designers and artists. <1>Captain Crate</1> himself was brought to life by our designer Manuel from Hamburg, who designs everything to do with Upcrate with his creative ideas and flair for design. Clemens is the founder of Upcrate and brings the magic and organization into the box through his connections to many global art material manufacturers. <2>A selected team of artists</2> tests and curates the materials for Upcrate to ensure that the materials match so you can let your creativity flow freely!"
         }
       ],
       "chosen_one_section": {

@@ -1,11 +1,13 @@
 import useTranslation from "next-translate/useTranslation";
 import Image from "next/image";
 import React from "react";
+import { useWindowSize } from "../../hooks/use-window-size";
 
 export function TheGoldenCrateSection() {
   const { t } = useTranslation("common");
   const ref = React.useRef<HTMLDivElement>();
   const [height, setHeight] = React.useState(0);
+  const { width } = useWindowSize();
 
   const handleImageLoad = (
     event: React.SyntheticEvent<HTMLImageElement, Event>
@@ -44,7 +46,7 @@ export function TheGoldenCrateSection() {
         <div className="w-full h-full">
           <div
             className="flex flex-col text-purple-dark h-full justify-items-end mt-5 md:mt-0 md:text-xl"
-            style={{ height }}
+            style={{ height: width > 500 ? height : "unset" }}
           >
             <h4 className="font-bold text-center md:text-left">
               {t("sections.the_golden_crate.subtitle")}

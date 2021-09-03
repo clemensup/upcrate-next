@@ -14,7 +14,7 @@ export function UpcrateBattleSection() {
     <section className="min-h-sectionSmall md:min-h-sectionSmallMd text-center p-10 md:p-20 relative overflow-hidden">
       <RadialGradient className="bg-green" />
       <div className="z-10 relative text-purple-dark">
-        <div className="md:mt-15 flex flex-col items-center">
+        <div className="md:mt-15 flex flex-col items-center gap-4 md:gap-0">
           <BattleSvg />
           <h3 className="font-display text-purple-dark text-2xl md:text-5xl text-center">
             {t("sections.upcrate_battle.title")}
@@ -78,7 +78,7 @@ export function UpcrateBattleSection() {
 
           <div className="z-10">
             <div className="md:flex gap-4 justify-between p-10 border-1">
-              <Parallax>
+              <Parallax offset={20}>
                 <img src="/home/battle/win-prizes.png" alt="" />
               </Parallax>
               <p className="text-xl text-right">
@@ -96,7 +96,7 @@ export function UpcrateBattleSection() {
             {t("sections.upcrate_battle.how_to_participate.title")}
           </h4>
           <div className="md:grid grid-cols-3 gap-20 mt-6">
-            <Parallax className="mt-10 md:mt-0" offset={20}>
+            <div className="mt-10 md:mt-0">
               <Image
                 src="/upcrate-battle/how-to-01.png"
                 width={389}
@@ -106,8 +106,8 @@ export function UpcrateBattleSection() {
                 <span className="font-bold font-display text-5xl">1.</span>
                 {t("sections.upcrate_battle.how_to_participate.steps.0.text")}
               </div>
-            </Parallax>
-            <Parallax className="mt-10 md:mt-0" offset={-20}>
+            </div>
+            <div className="mt-10 md:mt-0">
               <Image
                 src="/upcrate-battle/how-to-02.png"
                 width={389}
@@ -117,8 +117,8 @@ export function UpcrateBattleSection() {
                 <span className="font-bold font-display text-5xl">2.</span>
                 {t("sections.upcrate_battle.how_to_participate.steps.1.text")}
               </div>
-            </Parallax>
-            <Parallax className="mt-10 md:mt-0" offset={30}>
+            </div>
+            <div className="mt-10 md:mt-0">
               <Image
                 src="/upcrate-battle/how-to-03.png"
                 width={389}
@@ -128,7 +128,7 @@ export function UpcrateBattleSection() {
                 <span className="font-bold font-display text-5xl">3.</span>
                 {t("sections.upcrate_battle.how_to_participate.steps.2.text")}
               </div>
-            </Parallax>
+            </div>
           </div>
         </div>
         <section className="min-h-sectionSmall md:min-h-sectionSmallMd pt-32 mt-20 pb-20 relative">

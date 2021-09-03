@@ -52,17 +52,27 @@ export function WhyUpcrateSection() {
             <p className="mt-8 text-xl max-w-2xl mx-auto text-center">
               {t("sections.why_upcrate.whats_inside.text")}
             </p>
-
-            <CaptainCrateSvg variant="head-only" className="w-6 ml-2 mt-2" />
-            <div className="image-container -mt-4">
-              <Image
-                className="image"
-                src="/why-upcrate/how-to.png"
-                layout="fill"
-              />
+            <div className="hidden md:block">
+              <CaptainCrateSvg variant="head-only" className="w-6 ml-2 mt-2" />
+              <div className="image-container md:-mt-4">
+                <Image
+                  className="image"
+                  src="/why-upcrate/how-to.png"
+                  layout="fill"
+                />
+              </div>
             </div>
 
-            <div className="absolute bottom-2 left-2 flex justify-center items-center gap-2">
+            <div className="md:hidden -mx-10">
+              <div className="image-container md:-mt-4">
+                <Image
+                  className="image"
+                  src="/why-upcrate/how-to-xs.png"
+                  layout="fill"
+                />
+              </div>
+            </div>
+            <div className="md:absolute bottom-2 left-2 flex justify-center items-center gap-2 mt-2 md:mt-0">
               <Image
                 src="/how-to-videos/youtube-logo.svg"
                 width={30}
@@ -90,7 +100,7 @@ export function WhyUpcrateSection() {
           <RadialGradient className="bg-orange" variant="center-xl" />
         </div>
 
-        <div className="z-10 relative">
+        <div className="z-10 relative mt-10 md:mt-0">
           <Countdown />
         </div>
       </div>

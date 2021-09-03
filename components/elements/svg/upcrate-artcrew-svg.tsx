@@ -5,6 +5,7 @@ export function UpcrateArtcrewSvg() {
       width="531.837"
       height="168.531"
       viewBox="0 0 531.837 168.531"
+      style={{ maxWidth: "100%" }}
     >
       <g
         id="Group_701"

@@ -9,6 +9,8 @@ import { Dialog } from "@headlessui/react";
 import { usePersistLocaleCookie } from "../hooks/use-persistent-locale";
 import { motion } from "framer-motion";
 import { BurgerButton } from "./elements/burger-button";
+import { GlobeSvg } from "./elements/svg/globe-svg";
+import Image from "next/image";
 
 const pathMotion = {
   rest: {
@@ -184,7 +186,7 @@ export function Header(): JSX.Element {
               >
                 {lang === "en" && <a>{t("language_switch_en")}</a>}
                 {lang === "de" && <a>{t("language_switch_de")}</a>}
-                <img src="/globe.png" alt="" />
+                <Image src="/globe.svg" width={36} height={36} />
                 <Modal
                   open={languageSelectModalOpen}
                   onClose={() => setLanguageSelectModalOpen(false)}

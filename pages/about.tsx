@@ -7,6 +7,19 @@ import { RandomHeadsSection } from "../components/sections/random-heads-section"
 import { ConnectSloganSection } from "../components/sections/connect-slogan-section";
 import { FormattedText } from "../components/elements/formatted-text";
 import Head from "next/head";
+import Trans from "next-translate/Trans";
+import { InlineTextSvg } from "../components/elements/svg/inline-text";
+
+function Component(props) {
+  return (
+    <span
+      className={`${props.className} underline relative inline-flex justify-center items-center1 gap-2`}
+    >
+      {props.children}
+      {props.icon}
+    </span>
+  );
+}
 
 export default function About() {
   const { t } = useTranslation("common");
@@ -44,7 +57,25 @@ export default function About() {
           <h3 className="text-2xl sm:text-5xl text-purple-dark font-display">
             {t("pages.about.sections.0.title")}
           </h3>
-          <p className="mt-8">{t("pages.about.sections.0.text")}</p>
+          <p className="mt-8 font-bold">
+            <Trans
+              i18nKey="common:pages.about.sections.0.text"
+              components={{
+                1: (
+                  <Component
+                    className="text-green"
+                    icon={<InlineTextSvg variant="ship" />}
+                  />
+                ),
+                2: (
+                  <Component
+                    className="text-rose"
+                    icon={<InlineTextSvg variant="pen" />}
+                  />
+                ),
+              }}
+            />
+          </p>
 
           <small className="mt-16">
             {t("pages.about.artwork_by")}{" "}
@@ -52,6 +83,7 @@ export default function About() {
               href="https://instagram.com/thingsby_diana"
               target="_blank"
               rel="noopener noreferrer"
+              className="hover:underline"
             >
               @thingsby_diana
             </a>
@@ -63,7 +95,25 @@ export default function About() {
           <h3 className="text-2xl sm:text-5xl text-purple-dark font-display">
             {t("pages.about.sections.1.title")}
           </h3>
-          <p className="mt-8">{t("pages.about.sections.1.text")}</p>
+          <p className="mt-8 font-bold">
+            <Trans
+              i18nKey="common:pages.about.sections.1.text"
+              components={{
+                1: (
+                  <Component
+                    className="text-purple"
+                    icon={<InlineTextSvg variant="shipGlobe" />}
+                  />
+                ),
+                2: (
+                  <Component
+                    className="text-red"
+                    icon={<InlineTextSvg variant="surprise" />}
+                  />
+                ),
+              }}
+            />
+          </p>
 
           <small className="mt-16">
             {t("pages.about.artwork_by")}{" "}
@@ -71,6 +121,7 @@ export default function About() {
               href="https://instagram.com/snowsart"
               target="_blank"
               rel="noopener noreferrer"
+              className="hover:underline"
             >
               @snowsart
             </a>
@@ -100,7 +151,25 @@ export default function About() {
           <h3 className="text-2xl sm:text-5xl text-purple-dark font-display">
             {t("pages.about.sections.2.title")}
           </h3>
-          <p className="mt-8">{t("pages.about.sections.2.text")}</p>
+          <p className="mt-8 font-bold">
+            <Trans
+              i18nKey="common:pages.about.sections.2.text"
+              components={{
+                1: (
+                  <Component
+                    className="text-green"
+                    icon={<InlineTextSvg variant="marker" />}
+                  />
+                ),
+                2: (
+                  <Component
+                    className="text-rose"
+                    icon={<InlineTextSvg variant="heads" />}
+                  />
+                ),
+              }}
+            />
+          </p>
 
           <small className="mt-16">
             {t("pages.about.artwork_by")}{" "}
@@ -108,6 +177,7 @@ export default function About() {
               href="https://instagram.com/sabien-art"
               target="_blank"
               rel="noopener noreferrer"
+              className="hover:underline"
             >
               @sabien-art
             </a>
@@ -119,7 +189,25 @@ export default function About() {
           <h3 className="text-2xl sm:text-5xl text-purple-dark font-display">
             {t("pages.about.sections.3.title")}
           </h3>
-          <p className="mt-8">{t("pages.about.sections.3.text")}</p>
+          <p className="mt-8 font-bold">
+            <Trans
+              i18nKey="common:pages.about.sections.3.text"
+              components={{
+                1: (
+                  <Component
+                    className="text-green"
+                    icon={<InlineTextSvg variant="head" />}
+                  />
+                ),
+                2: (
+                  <Component
+                    className="text-rose"
+                    icon={<InlineTextSvg variant="headPen" />}
+                  />
+                ),
+              }}
+            />
+          </p>
 
           <small className="mt-16">
             {t("pages.about.artwork_by")}{" "}
@@ -127,6 +215,7 @@ export default function About() {
               href="https://instagram.com/sarkasik"
               target="_blank"
               rel="noopener noreferrer"
+              className="hover:underline"
             >
               @sarkasik
             </a>

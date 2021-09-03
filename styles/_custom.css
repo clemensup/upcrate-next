@@ -91,3 +91,10 @@ body {
   right: 0;
   background: linear-gradient(rgba(255, 0, 0, 0), white);
 }
+
+.inline-text-icon {
+  display: inline-block;
+  text-decoration: underline;
+  position: relative;
+  padding-right: 24px;
+}
