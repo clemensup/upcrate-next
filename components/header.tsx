@@ -9,7 +9,6 @@ import { Dialog } from "@headlessui/react";
 import { usePersistLocaleCookie } from "../hooks/use-persistent-locale";
 import { motion } from "framer-motion";
 import { BurgerButton } from "./elements/burger-button";
-import { GlobeSvg } from "./elements/svg/globe-svg";
 import Image from "next/image";
 
 const pathMotion = {

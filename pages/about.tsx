@@ -10,7 +10,7 @@ import Head from "next/head";
 import Trans from "next-translate/Trans";
 import { InlineTextSvg } from "../components/elements/svg/inline-text";
 
-function Component(props) {
+function InlineTextComponent(props) {
   return (
     <span
       className={`${props.className} underline relative inline-flex justify-center items-center1 gap-2`}
@@ -62,13 +62,13 @@ export default function About() {
               i18nKey="common:pages.about.sections.0.text"
               components={{
                 1: (
-                  <Component
+                  <InlineTextComponent
                     className="text-green"
                     icon={<InlineTextSvg variant="ship" />}
                   />
                 ),
                 2: (
-                  <Component
+                  <InlineTextComponent
                     className="text-rose"
                     icon={<InlineTextSvg variant="pen" />}
                   />
@@ -100,13 +100,13 @@ export default function About() {
               i18nKey="common:pages.about.sections.1.text"
               components={{
                 1: (
-                  <Component
+                  <InlineTextComponent
                     className="text-purple"
                     icon={<InlineTextSvg variant="shipGlobe" />}
                   />
                 ),
                 2: (
-                  <Component
+                  <InlineTextComponent
                     className="text-red"
                     icon={<InlineTextSvg variant="surprise" />}
                   />
@@ -156,13 +156,13 @@ export default function About() {
               i18nKey="common:pages.about.sections.2.text"
               components={{
                 1: (
-                  <Component
+                  <InlineTextComponent
                     className="text-green"
                     icon={<InlineTextSvg variant="marker" />}
                   />
                 ),
                 2: (
-                  <Component
+                  <InlineTextComponent
                     className="text-rose"
                     icon={<InlineTextSvg variant="heads" />}
                   />
@@ -194,13 +194,13 @@ export default function About() {
               i18nKey="common:pages.about.sections.3.text"
               components={{
                 1: (
-                  <Component
+                  <InlineTextComponent
                     className="text-green"
                     icon={<InlineTextSvg variant="head" />}
                   />
                 ),
                 2: (
-                  <Component
+                  <InlineTextComponent
                     className="text-rose"
                     icon={<InlineTextSvg variant="headPen" />}
                   />

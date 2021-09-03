@@ -379,7 +379,7 @@ export function InlineTextSvg({ variant }: InlineTextSvgProps) {
               transform="translate(-68.069 -26.763)"
               fill="none"
               stroke="#80d7b6"
-              stroke-width="1"
+              strokeWidth="1"
             />
             <path
               id="Path_475"
@@ -388,7 +388,7 @@ export function InlineTextSvg({ variant }: InlineTextSvgProps) {
               transform="translate(-57.494 -23.452)"
               fill="none"
               stroke="#6048b4"
-              stroke-width="1"
+              strokeWidth="1"
             />
             <path
               id="Path_476"
@@ -397,7 +397,7 @@ export function InlineTextSvg({ variant }: InlineTextSvgProps) {
               transform="translate(-61.538 -30.905)"
               fill="none"
               stroke="#ec5733"
-              stroke-width="1"
+              strokeWidth="1"
             />
             <path
               id="Path_477"
@@ -406,7 +406,7 @@ export function InlineTextSvg({ variant }: InlineTextSvgProps) {
               transform="translate(-64.138 -20.648)"
               fill="none"
               stroke="#e7abba"
-              stroke-width="1"
+              strokeWidth="1"
             />
           </g>
         </svg>
