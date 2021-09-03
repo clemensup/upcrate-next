@@ -89,7 +89,7 @@ export function CaptainCrateSvg({
             viewBox="0 0 179.305 140.204"
           >
             <defs>
-              <clipPath id="clip-path">
+              <clipPath id="captain-clip-path">
                 <path
                   id="Path_472"
                   data-name="Path 472"
@@ -108,7 +108,7 @@ export function CaptainCrateSvg({
                 id="Group_541"
                 data-name="Group 541"
                 transform="translate(106.608 171.208)"
-                clipPath="url(#clip-path)"
+                clipPath="url(#captain-clip-path)"
               >
                 <g
                   id="Group_526"

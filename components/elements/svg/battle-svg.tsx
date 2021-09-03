@@ -7,7 +7,7 @@ export function BattleSvg() {
       viewBox="0 0 97.5 89.04"
     >
       <defs>
-        <clipPath id="clip-path">
+        <clipPath id="battle-clip-path">
           <rect
             id="Rectangle_279"
             data-name="Rectangle 279"
@@ -63,7 +63,11 @@ export function BattleSvg() {
           />
         </g>
         <g id="Group_525" data-name="Group 525">
-          <g id="Group_524" data-name="Group 524" clipPath="url(#clip-path)">
+          <g
+            id="Group_524"
+            data-name="Group 524"
+            clipPath="url(#battle-clip-path)"
+          >
             <g id="Gruppe_382" data-name="Gruppe 382">
               <g id="Gruppe_381" data-name="Gruppe 381">
                 <path
@@ -114,7 +118,11 @@ export function BattleSvg() {
           />
         </g>
         <g id="Group_527" data-name="Group 527">
-          <g id="Group_526" data-name="Group 526" clipPath="url(#clip-path)">
+          <g
+            id="Group_526"
+            data-name="Group 526"
+            clipPath="url(#battle-clip-path)"
+          >
             <g id="Gruppe_391" data-name="Gruppe 391">
               <g id="Gruppe_390" data-name="Gruppe 390">
                 <path

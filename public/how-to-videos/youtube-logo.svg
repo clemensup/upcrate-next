@@ -1,15 +1,15 @@
 <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="81.863" height="56.178" viewBox="0 0 81.863 56.178">
   <defs>
-    <clipPath id="clip-path">
+    <clipPath id="yt-clip-path">
       <rect width="81.863" height="56.178" fill="none"/>
     </clipPath>
-    <clipPath id="clip-path-2">
+    <clipPath id="yt-clip-path-2">
       <rect id="Rectangle_323" data-name="Rectangle 323" width="81.863" height="56.178" fill="#372152"/>
     </clipPath>
   </defs>
-  <g id="Repeat_Grid_1" data-name="Repeat Grid 1" clip-path="url(#clip-path)">
+  <g id="Repeat_Grid_1" data-name="Repeat Grid 1" clip-path="url(#yt-clip-path)">
     <g id="Group_783" data-name="Group 783" transform="translate(-345.532 -178.137)">
-      <g id="Group_783-2" data-name="Group 783" transform="translate(345.532 178.136)" clip-path="url(#clip-path-2)">
+      <g id="Group_783-2" data-name="Group 783" transform="translate(345.532 178.136)" clip-path="url(#yt-clip-path-2)">
         <path id="Path_475" data-name="Path 475" d="M376.286,188.367V224.09c8.539-5.978,16.985-11.9,25.511-17.861-8.553-5.992-16.985-11.89-25.511-17.861m-30.754,24.094V200c.04-.368.1-.729.12-1.1.174-3.19.274-6.386.515-9.569a11.58,11.58,0,0,1,10.706-10.586c9.549-.334,19.112-.609,28.674-.609,10.091.007,20.182.281,30.272.6a11.282,11.282,0,0,1,10.419,8.285,25.736,25.736,0,0,1,.675,5.283,213.37,213.37,0,0,1-.16,30.734,11.589,11.589,0,0,1-9.436,10.492,58.763,58.763,0,0,1-8.125.488c-9.93.147-19.867.334-29.8.3-7.483-.02-14.972-.261-22.448-.588a11.477,11.477,0,0,1-10.585-9.415,56.384,56.384,0,0,1-.509-6.119c-.134-1.906-.214-3.818-.321-5.731" transform="translate(-345.533 -178.139)" fill="#372152"/>
       </g>
     </g>
