@@ -5,7 +5,6 @@ import {
   useViewportScroll,
 } from "framer-motion";
 import Image from "next/image";
-import React from "react";
 import { Parallax } from "../elements/parallax";
 import { RadialGradient } from "../elements/radial-gradient";
 import { CaptainCrateSvg } from "../elements/svg";
@@ -27,7 +26,7 @@ export function AnimatedUnboxYourCreativitySection() {
         </motion.div>
         <UnboxYourCreativitySvg />
         <div className="-mt-48">
-          <Parallax offset={-100}>
+          <Parallax offset={100}>
             <Image
               src="/home/unbox-your-creativity/unbox-box.png"
               width={596}
