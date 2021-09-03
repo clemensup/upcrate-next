@@ -6,7 +6,7 @@ import React from "react";
 import { useWindowSize } from "../../hooks/use-window-size";
 import useTranslation from "next-translate/useTranslation";
 import { motion } from "framer-motion";
-import useIntersectionObserver from "../../hooks/use-intersection-observer";
+import { useInView } from "react-intersection-observer";
 import { fetchCrates } from "../../utils/wc-api";
 import { Product } from "../../pages/crates";
 import Link from "next/link";
@@ -40,11 +40,19 @@ export function SliderArrow({
 function Slide({
   children,
   className,
-}: React.PropsWithChildren<{ className?: string }>) {
+  activeSlideIndex,
+  slideIndex,
+}: React.PropsWithChildren<{
+  className?: string;
+  slideIndex: number;
+  activeSlideIndex: number;
+}>) {
   return (
     <motion.div
       className={`${className} md:px-10 pt-6 md:pb-20 relative flex justify-center items-center`}
-      whileHover={{ scale: 1.2 }}
+      whileHover={{ scale: 1 }}
+      animate={{ scale: activeSlideIndex + 1 === slideIndex ? 1.15 : 0.9 }}
+      transition={{ duration: 0.6, ease: "easeInOut" }}
     >
       {children}
     </motion.div>
@@ -53,6 +61,7 @@ function Slide({
 
 export function TripleSlider({ slides }: { slides: Product[] }) {
   const { width } = useWindowSize();
+  const [activeSlideIndex, setActiveSlideIndex] = React.useState(0);
 
   const settings = {
     dots: false,
@@ -64,6 +73,7 @@ export function TripleSlider({ slides }: { slides: Product[] }) {
     slidesToScroll: 1,
     nextArrow: <SliderArrow variant="next" />,
     prevArrow: <SliderArrow variant="prev" />,
+    beforeChange: (_, next) => setActiveSlideIndex(next),
   };
 
   if (!slides) {
@@ -73,10 +83,12 @@ export function TripleSlider({ slides }: { slides: Product[] }) {
   return (
     <div className="relative">
       <Slider {...settings} className="md:mt-20 mx-12 md:mx-0 z-10">
-        {slides.map((crate) => (
+        {slides.map((crate, key) => (
           <Slide
-            key={crate.id}
+            key={key}
             className="flex flex-col gap-5 text-xl md:text-3xl cursor-pointer"
+            slideIndex={key}
+            activeSlideIndex={activeSlideIndex}
           >
             <Link href={crate.permalink}>
               <div>
@@ -95,9 +107,7 @@ export function TripleSlider({ slides }: { slides: Product[] }) {
 
 export function FormerCratesInARowSection() {
   const { t } = useTranslation("common");
-  const ref = React.useRef<HTMLDivElement | null>(null);
-  const entry = useIntersectionObserver(ref, {});
-  const isVisible = !!entry?.isIntersecting;
+  const [ref, isVisible] = useInView({ threshold: 0.2, triggerOnce: true });
   const [crates, setCrates] = React.useState<Product[]>();
   const [isFetching, setIsFetching] = React.useState(false);
 
