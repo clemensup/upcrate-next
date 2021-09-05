@@ -195,13 +195,13 @@ export default function About() {
               components={{
                 1: (
                   <InlineTextComponent
-                    className="text-green"
+                    className="text-red"
                     icon={<InlineTextSvg variant="head" />}
                   />
                 ),
                 2: (
                   <InlineTextComponent
-                    className="text-rose"
+                    className="text-orange"
                     icon={<InlineTextSvg variant="headPen" />}
                   />
                 ),
