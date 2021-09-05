@@ -27,12 +27,13 @@ export default function HowItWorks() {
         <meta property="og:description" content="TODO:" />
       </Head>
       <HeroSection
-        className="bg-purple-dark"
+        className="bg-purple-dark text-white"
         title={"How it works"}
         image="/how-it-works/hero-image.png"
         mobileImage="/how-it-works/hero-image-xs.png"
+        logoColor="white"
       />
-      <JoinTheArtCrewSection className="-mt-10 md:-mt-20 pt-36" />
+      <JoinTheArtCrewSection className="pt-20 -mt-20 md:-mt-10 pt-36" />
       <ImageSection
         bg="how-it-works/image-section01"
         variant="xs"

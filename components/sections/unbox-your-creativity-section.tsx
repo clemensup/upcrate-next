@@ -24,7 +24,7 @@ export function UnboxYourCreativitySection({
         <Image src="/unbox-your-creativity.svg" width="280" height="100%" />
       </Parallax>
 
-      <h3 className="text-4xl mx-auto text-center max-w-5xl mt-6 font-bold whitespace-pre-line">
+      <h3 className="text-xl md:text-4xl mx-auto text-center max-w-5xl mt-6 font-bold whitespace-pre-line">
         {title}
       </h3>
       <Button

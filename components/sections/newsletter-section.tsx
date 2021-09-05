@@ -9,7 +9,10 @@ import { RadialGradient } from "../elements/radial-gradient";
 import { Caret } from "../elements/svg";
 import { PensAndBrushesSvg } from "../elements/svg/pens-and-brushes";
 
-export function NewsletterSection({ children }: React.PropsWithChildren<{}>) {
+export function NewsletterSection({
+  children,
+  className,
+}: React.PropsWithChildren<{ className?: string }>) {
   const { t } = useTranslation("common");
 
   const {
@@ -23,7 +26,7 @@ export function NewsletterSection({ children }: React.PropsWithChildren<{}>) {
   } = useMailchimpForm();
 
   return (
-    <>
+    <div className={className}>
       <section className="text-center text-purple-dark pt-6 pb-0 md:px-10 md:px-32 md:pt-20 relative overflow-hidden -mt-20 md:-mt-10">
         <RadialGradient className="bg-purple" />
         <div className="z-10 relative text-purple-dark">
@@ -206,6 +209,6 @@ export function NewsletterSection({ children }: React.PropsWithChildren<{}>) {
           by @sarkasik
         </CreditsBage>
       </section>
-    </>
+    </div>
   );
 }

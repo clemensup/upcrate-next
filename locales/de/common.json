@@ -101,19 +101,19 @@
       "sections": [
         {
           "title": "Captain Crate…",
-          "text": "hat auf seinen Reisen kreuz und quer durch die sieben Weltmeere die unterschiedlichsten Kunstmaterialien und ihre Hersteller kennengelernt. Dabei ist er immer auf der Suche nach neuen Verbindungen und Schätzen für euch - seine art crew."
+          "text": "hat auf seinen Reisen kreuz und quer durch die sieben Weltmeere die <1>unterschiedlichsten Kunstmaterialien</1> und ihre Hersteller kennengelernt. Dabei ist er immer auf der Suche nach neuen Verbindungen und Schätzen für euch - <2>seine art crew</2>."
         },
         {
           "title": "...liefert monatlich das Beste...",
-          "text": "...aus einer handverlesenen Auswahl neuer, mysteriöser Materialien zu euch. Diese werden liebevoll in den Crates zusammengestellt, um unserer internationalen Crew die beste Qualität zum Ausprobieren neuer Techniken und Marken zum kleinsten Preis zu garantieren. Jede Box bringt dabei eine neue Überraschung zu euch nach Hause!"
+          "text": "...aus einer handverlesenen Auswahl neuer, mysteriöser Materialien zu euch. Diese werden liebevoll in den Crates zusammengestellt, um unserer <1>internationalen Crew</1> die beste Qualität zum Ausprobieren neuer Techniken und Marken zum kleinsten Preis zu garantieren. Jede Box bringt dabei eine <2>neue Überraschung</2> zu euch nach Hause!"
         },
         {
           "title": "…für seine art crew",
-          "text": "Upcrate ist nicht nur dazu da, dir versteckte Schätze an innovativer Materialien vorzustellen, sondern auch, um deinen Horizont zu erweitern und dir die Möglichkeit zu geben, dich kreativ auszuleben. Zusätzlich zu den Materialien erhältst du ein Magazin voller themenbezogener Tipps, Challenges und Möglichkeiten, dich online mit anderen Künstlern auszutauschen und anzufreunden, um gemeinsam besser zu werden. Einer für alle und alle für einen!"
+          "text": "Upcrate ist nicht nur dazu da, dir versteckte Schätze an innovativer Materialien vorzustellen, sondern auch, um deinen Horizont zu erweitern und dir die Möglichkeit zu geben, dich kreativ auszuleben. Zusätzlich zu den <1>neuen Materialien</1> erhältst du ein Magazin voller themenbezogener Tipps, Challenges und Möglichkeiten, dich online mit <2>anderen Künstlern auszutauschen</2> und anzufreunden, um gemeinsam besser zu werden. Einer für alle und alle für einen!"
         },
         {
           "title": "Hinter Captain Crate...",
-          "text": "...steht ein Team aus Kunstbegeisterten, Designer:innen und Künstler:innen. Captain Crate selbst wurde von unserem Designer Manuel aus Hamburg zum Leben erweckt, der mit seinen kreativen Einfällen und Gespür für Design alles rund um Upcrate gestaltet. Clemens ist der Gründer von Upcrate und bringt durch seine Verbindungen zu vielen globalen Kunstmaterialherstellern die Magie und Organisation mit in die Box. Ein ausgewähltes Team von Künstler:innen testet und kurartiert die Materialien für Upcrate, um sicherzustellen, das alles miteinander harmoniert und ihr eurer Kreativität freien Lauf lassen könnt!"
+          "text": "...steht ein Team aus Kunstbegeisterten, Designer:innen und Künstler:innen. <1>Captain Crat</1>e selbst wurde von unserem Designer Manuel aus Hamburg zum Leben erweckt, der mit seinen kreativen Einfällen und Gespür für Design alles rund um Upcrate gestaltet. Clemens ist der Gründer von Upcrate und bringt durch seine Verbindungen zu vielen globalen Kunstmaterialherstellern die Magie und Organisation mit in die Box. Ein <2>ausgewähltes Team von Künstler:innen</2> testet und kurartiert die Materialien für Upcrate, um sicherzustellen, das alles miteinander harmoniert und ihr eurer Kreativität freien Lauf lassen könnt!"
         }
       ],
       "chosen_one_section": {

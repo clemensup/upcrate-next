@@ -7,15 +7,18 @@ interface HeroSectionProps {
   title: string;
   image: string;
   mobileImage?: string;
+  logoColor?: string;
 }
 
 export function HeroSection({
-  className,
+  className = "text-purple-dark",
   title,
   image,
   mobileImage = image,
+  logoColor = "text-purple-dark",
 }: React.PropsWithChildren<HeroSectionProps>): JSX.Element {
   const [imageHeight, setImageHeight] = React.useState(560);
+  const [imageWidth, setImageWidth] = React.useState(1200);
   const mobileImageRef = React.useRef<HTMLDivElement>();
   const desktopImageRef = React.useRef<HTMLDivElement>();
 
@@ -30,7 +33,8 @@ export function HeroSection({
       if (mobileImageRef.current.clientHeight) {
         setImageHeight(mobileImageRef.current.clientHeight);
       } else if (desktopImageRef.current.clientHeight) {
-        setImageHeight(desktopImageRef.current.clientHeight - 200);
+        setImageHeight(desktopImageRef.current.clientHeight - 100);
+        setImageWidth(desktopImageRef.current.clientWidth - 100);
       }
     };
 
@@ -59,16 +63,21 @@ export function HeroSection({
           />
         </div>
         <div
-          className="hidden sm:flex justify-center items-center -mt-3 relative"
+          className="hidden sm:flex justify-center items-center -mt-3 relative mx-auto"
           ref={desktopImageRef}
+          style={{ width: imageWidth }}
         >
           <CaptainCrateSvg
             width={24}
             variant="head-only"
-            className="ml-3 -mt-3 hidden sm:block text-purple-dark absolute top-0 left-0"
+            className={`${logoColor} ml-3 -mt-3 hidden sm:block absolute top-2 left-0`}
           />
           <h1
-            className="text-white font-bold text-3xl absolute z-20 top-8 left-0"
+            className={`font-bold text-3xl absolute z-20 top-8 left-8 ${
+              logoColor === "text-purple-dark"
+                ? "text-white"
+                : "text-purple-dark"
+            }`}
             style={{ maxWidth: 1200 }}
           >
             {title}

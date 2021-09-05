@@ -1,5 +1,4 @@
 import Head from "next/head";
-import React from "react";
 import { Footer } from "./footer";
 import { Header } from "./header";
 
@@ -12,7 +11,7 @@ export function Layout({ children }): JSX.Element {
         <link rel="icon" href="/favicon.png" />
       </Head>
       <Header />
-      <main className="mx-auto">{children}</main>
+      <main className="mx-autow">{children}</main>
       <Footer />
       <div id="modal-root"></div>
     </div>
