@@ -168,9 +168,8 @@ export function NewsletterSection({
                 <div>
                   <Image
                     src="/newsletter/advantage01.gif"
-                    width={332}
-                    height={332}
-                    layout="responsive"
+                    width={600}
+                    height={600}
                   />
                   <p className="text-2xl font-bold text-center">
                     {t("sections.newsletter_form.advantages.columns.0.text")}
@@ -179,9 +178,8 @@ export function NewsletterSection({
                 <div>
                   <Image
                     src="/newsletter/advantage02.gif"
-                    width={332}
-                    height={332}
-                    layout="responsive"
+                    width={600}
+                    height={600}
                   />
                   <p className="text-2xl font-bold text-center">
                     {t("sections.newsletter_form.advantages.columns.1.text")}
@@ -190,9 +188,8 @@ export function NewsletterSection({
                 <div>
                   <Image
                     src="/newsletter/advantage03.gif"
-                    width={332}
-                    height={332}
-                    layout="responsive"
+                    width={600}
+                    height={600}
                   />
                   <p className="text-2xl font-bold text-center">
                     {t("sections.newsletter_form.advantages.columns.2.text")}
