@@ -21,7 +21,7 @@ export function InviteFriendsSection() {
             {t("sections.invite_friends.title")}
           </h3>
 
-          <div className="relative md:p-10 border-l-2 border-purple-dark border-t-2 border-r-2 mt-10  p-4">
+          <div className="relative md:p-10 border-l-2 border-purple-dark border-t-2 border-r-2 mt-10 p-4 bg-white md:bg-transparent opacity-95 md:opacity-100">
             <div className="flex justify-center items-center flex-col md:gap-20 md:mt-32 relative">
               <Parallax>
                 <UpcrateArtcrewSvg />

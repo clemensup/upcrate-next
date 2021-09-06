@@ -36,7 +36,7 @@ export default function ArtCrew() {
         image="/artcrew/artcrew-hero.png"
         mobileImage="/artcrew/artcrew-hero-xs.png"
       />
-      <NewsletterSection className="-mt-20 md:-mt-10">
+      <NewsletterSection>
         <h3 className="font-display text-purple-dark text-2xl md:text-5xl text-center m-auto">
           {t("pages.artcrew.newsletter_section.title")}
         </h3>

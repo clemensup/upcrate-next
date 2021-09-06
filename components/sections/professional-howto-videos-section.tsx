@@ -60,7 +60,7 @@ export function ProfessionalHowToVideosSection() {
                 width={630}
                 height={419}
               />
-              <p className="mt-5 md:mt-10">
+              <p className="mt-5 md:mt-10 text-base md:text-2xl">
                 {t("sections.professional_howto_videos.text")}
               </p>
             </div>
