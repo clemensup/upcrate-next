@@ -13,7 +13,7 @@ import { InlineTextSvg } from "../components/elements/svg/inline-text";
 function InlineTextComponent(props) {
   return (
     <span
-      className={`${props.className} underline relative inline-flex justify-center items-center1 gap-2`}
+      className={`${props.className} underline relative inline-flex justify-center items-center gap-2`}
     >
       {props.children}
       {props.icon}

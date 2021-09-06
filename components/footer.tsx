@@ -69,8 +69,8 @@ export function Footer(): JSX.Element {
         className="p-5 md:p-0 container mx-auto mb-4 grid grid-cols-2 items-end"
         style={{ gridTemplateColumns: "2fr 1fr" }}
       >
-        <div className="">
-          <ul className="inline-flex flex-wrap gap-8">
+        <div>
+          <ul className="grid md:inline-flex flex-wrap gap-8">
             <li>
               <a
                 className="hover:underline"
@@ -123,7 +123,7 @@ export function Footer(): JSX.Element {
             </li>
           </ul>
         </div>
-        <p className="text-white text-2xl">
+        <p className="text-white text-xl md:text-2xl">
           {t("footer.get_support")}
           <br />
           <a

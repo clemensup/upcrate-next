@@ -13,7 +13,7 @@ export function FeaturedArtistsWeWorkedWithSection() {
           {t("sections.featured_artists_we_worked_with.title")}
         </h3>
 
-        <p className="md:hidden text-purple-dark mt-5">
+        <p className="text-center md:hidden text-purple-dark mt-5">
           {t("sections.featured_artists_we_worked_with.text_mobile")}
         </p>
 
