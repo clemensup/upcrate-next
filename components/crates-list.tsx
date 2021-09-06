@@ -144,7 +144,7 @@ export function CratesList({ products, pageCount }: CratesProps) {
 
           <div className="grid grid-cols-2 gap-4 md:gap-0 md:flex justify-between items-center w-full">
             <motion.button
-              className="w-full order-2 disabled:opacity-50 font-display p-3 pt-2 pb-3 text-xs md:text-3xl inline-flex items-center content-center gap-4 mt-2 md:mt-5 max-w-max mx-auto bg-purple text-white hover:bg-pink"
+              className="w-full disabled:opacity-50 font-display p-3 pt-2 pb-3 text-xs md:text-3xl inline-flex items-center content-center gap-4 mt-2 md:mt-5 max-w-max mx-auto bg-purple text-white hover:bg-pink"
               onClick={() => setPage(page - 1)}
               disabled={page === 1 || isFetching}
               whileHover={{ scale: 1.1 }}
@@ -156,13 +156,13 @@ export function CratesList({ products, pageCount }: CratesProps) {
               {t("pages.crates.crates_list.previous_page_button")}
             </motion.button>
 
-            <div className="hidden md:block order-1 text-center">
+            <div className="hidden md:block text-center">
               {isFetching && <div>Loading...</div>}
               Page {page} of {pageCount}
             </div>
 
             <motion.button
-              className="order-3 disabled:opacity-50 font-display p-3 pt-2 pb-3 text-xs md:text-3xl inline-flex items-center content-center gap-4 mt-2 md:mt-5 max-w-max mx-auto bg-purple text-white hover:bg-pink"
+              className="disabled:opacity-50 font-display p-3 pt-2 pb-3 text-xs md:text-3xl inline-flex items-center content-center gap-4 mt-2 md:mt-5 max-w-max mx-auto bg-purple text-white hover:bg-pink"
               onClick={() => setPage(page + 1)}
               disabled={page === pageCount || isFetching}
               whileHover={{ scale: 1.1 }}
