@@ -124,7 +124,7 @@ export function HeroSliderSection() {
             {t("pages.home.slider_content.0.text")}
           </motion.h3>
           <motion.h3
-            className="text-center text-4xl md:text-5xl lg:text-6xl xl:text-8xl font-display"
+            className="text-center text-3xl md:text-5xl lg:text-6xl xl:text-8xl font-display"
             animate={{ scale: [0, 1.35, 1] }}
             transition={{ duration: 0.5, delay: 0.25 }}
           >

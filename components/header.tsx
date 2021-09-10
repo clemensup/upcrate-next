@@ -113,7 +113,7 @@ export function Header(): JSX.Element {
           <div className="col-span-2">
             <Button
               href="https://upcrate.art/subscribe"
-              className="lg:hidden bg-orange hover:bg-pink text-white"
+              className="lg:hidden bg-orange hover:bg-pink text-white whitespace-nowrap"
             >
               {t("subscribe_now_button_text")}
             </Button>
