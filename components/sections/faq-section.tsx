@@ -83,9 +83,9 @@ export function FaqSection() {
   ];
 
   return (
-    <section className="min-h-sectionBig md:min-h-sectionBigMd p-10 md:p-20 pt-20 -mt-20 md:-mt-10 relative overflow-hidden">
+    <section className="min-h-sectionBig md:min-h-sectionBigMd px-10 md:p-20 pt-20 -mt-20 md:-mt-10 relative overflow-hidden max-w-7xl mx-auto">
       <RadialGradient className="bg-rose" />
-      <div className="z-10 relative">
+      <div className="z-10 relative pt-10 md:pt-20">
         <h3 className="font-display text-purple-dark text-center text-2xl md:text-5xl">
           {t("pages.faqs.title")}
         </h3>
@@ -105,7 +105,6 @@ export function FaqSection() {
           />
         ))}
       </div>
-      <RadialGradient className="bg-green" variant="bottom-right" />
     </section>
   );
 }

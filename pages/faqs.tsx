@@ -1,5 +1,4 @@
 import Head from "next/head";
-import React from "react";
 import { HeroSection } from "../components";
 import { FaqSection } from "../components/sections/faq-section";
 
