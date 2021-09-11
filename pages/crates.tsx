@@ -66,7 +66,7 @@ export default function Crates({ products, pageCount }: CratesProps) {
         </Button>
       </JoinTheArtCrewSection>
       <div className="min-h-sectionSmall md:min-h-sectionSmallMd bg-crates-image-section bg-center bg-cover bg-no-repeat relative flex justify-center items-end p-12">
-        <h3 className="text-6xl text-white text-center whitespace-pre-line font-display text-shadow">
+        <h3 className="text-2xl md:text-6xl text-white text-center whitespace-pre-line font-display text-shadow">
           {t("pages.crates.found_some_art")}
         </h3>
       </div>
