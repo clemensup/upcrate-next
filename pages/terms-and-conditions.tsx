@@ -22,7 +22,7 @@ export default function CancellationPolicy() {
           <h1 className="text-3xl md:text-6xl font-display">
             {t("pages.terms_and_conditions.title")}
           </h1>
-          {lang === "en" && (
+          {lang === "en" ? (
             <div className="mt-20">
               All contracts concluded within the validity of these terms and
               conditions shall be subject to the statutory warranty. In
@@ -177,6 +177,180 @@ export default function CancellationPolicy() {
               <br />
               We are not obligated and unwilling to participate in a dispute
               settlement procedure before a consumer arbitration board.
+            </div>
+          ) : (
+            <div className="mt-20">
+              Für alle Verträge, die im Rahmen der Gültigkeit dieser Bedingungen
+              abgeschlossen werden, gilt die gesetzliche Gewährleistung. Darüber
+              hinaus werden im Einzelnen folgende Gewährleistungsregelungen
+              getroffen:
+              <h2 className="text-2xl font-bold mt-10 md:mt-8">
+                Geltungsbereich
+              </h2>
+              Für die gesamte Geschäftsbeziehung zwischen Upcrate, Inhaber:
+              Clemens Roosen, Suhrsweg 3, D-22305 Hamburg (nachfolgend auch
+              "Upcrate", "Anbieter" oder "wir") und dem Kunden (nachfolgend
+              "Kunde" genannt) gelten ausschließlich die folgenden
+              Geschäftsbedingungen (nachfolgend auch "AGB") des Anbieters.
+              <br />
+              <br />
+              Alle Vereinbarungen, die zwischen dem Kunden und dem Lieferanten
+              über die Lieferung von Waren getroffen werden, ergeben sich
+              insbesondere aus diesen Allgemeinen Geschäftsbedingungen, unserer
+              schriftlichen Auftragsbestätigung und unserer Annahmeerklärung.
+              Entgegenstehende, abweichende oder ergänzende Allgemeine
+              Geschäftsbedingungen des Kunden werden nicht anerkannt.
+              <h2 className="text-2xl font-bold mt-10 md:mt-8">
+                Vertragsabschluss und unverbindliche Informationen
+              </h2>
+              Durch Ausfüllen und Bestätigen des vom Lieferanten zur Verfügung
+              gestellten Bestellformulars kann der Kunde ein verbindliches
+              Angebot zum Abschluss eines Vertrages über die Weiterlieferung von
+              Waren abgeben.
+              <br />
+              <br />
+              Alle Kundeninformationen im Bestellprozess müssen aktuell und
+              wahrheitsgemäß sein. Das Kundenpasswort darf nicht an Dritte
+              weitergegeben werden und muss für Unbefugte unzugänglich
+              aufbewahrt werden. Jeder Verlust oder jede Weitergabe ist dem
+              Anbieter unverzüglich in Textform zu melden. Für missbräuchliche
+              Verwendung, z.B. bei Bestellungen mit seinem Kundenpasswort durch
+              Dritte, haftet der Kunde nach den gesetzlichen Bestimmungen.
+              <br />
+              <br />
+              Der Anbieter bestätigt dem Kunden den Zugriff auf das
+              Bestellformular umgehend elektronisch. Der Anbieter kann dieses
+              Angebot entweder ausdrücklich durch Zusendung einer verbindlichen
+              Annahmeerklärung oder durch Zusendung der bestellten Ware bzw.
+              Abbuchung des Kaufpreises annehmen. Bis zu diesem Zeitpunkt kann
+              der Anbieter die Annahme jederzeit ohne Angabe von Gründen
+              verweigern. Erst mit der Annahme des Angebots durch den Anbieter
+              kommt ein Vertrag zwischen dem Kunden und dem Anbieter wirksam
+              zustande.
+              <h2 className="text-2xl font-bold mt-10 md:mt-8">
+                Vertragslaufzeit, Kündigung und Vertragsverlängerung
+              </h2>
+              With the offer variants (monthly, 3 months, 6 months or 12 months)
+              the subscription runs first over the minimum use period booked by
+              the user. Thereafter, the subscription will be extended for
+              renewal periods of the same duration if it is not terminated in
+              time by the user or upcrate. The notice period is three weeks to
+              the end of each month of the last box and requires notice of the
+              termination function in the user account or the text form.
+              <br />
+              <br />
+              Lieferung, Liefertermine, Teillieferungen und Eigentumsvorbehalt
+              <br />
+              <br />
+              Lieferung, Liefertermine, Teillieferungen und Eigentumsvorbehalt
+              Der Anbieter behält sich das Recht vor, erst nach vollständiger
+              Bezahlung durch den Kunden zu liefern. Ein Anspruch auf vorgängige
+              Lieferung besteht nicht. Unsere Liefertermine oder Lieferfristen
+              sind lediglich unverbindliche Angaben, es sei denn, diese sind
+              zwischen Anbieter und Kunde ausdrücklich als verbindlich geregelt.
+              Der Anbieter ist zu Teillieferungen und Teilleistungen jederzeit
+              berechtigt, soweit dies für den Kunden zumutbar ist.
+              <br />
+              <br />
+              Für den Fall, dass wir von unserem Zurückbehaltungsrecht keinen
+              Gebrauch machen und die Lieferung vor vollständiger Bezahlung
+              veranlassen, behalten wir uns das Eigentum an der Kaufsache bis
+              zur vollständigen Bezahlung des Kaufpreises vor.
+              <h2 className="text-2xl font-bold mt-10 md:mt-8">
+                Preise, Versandkosten, Fälligkeitsdatum, Zahlung, Aufrechnung
+                und Einbehalt
+              </h2>
+              Alle Preise enthalten die jeweils gültige Mehrwertsteuer,
+              Verpackungs- und Versandkosten. Bei Lieferungen außerhalb der
+              Europäischen Union wird keine Mehrwertsteuer berechnet. Der
+              Empfänger ist selbst für die Abführung von eventuellen
+              Einfuhrumsatzsteuer und Zöllen verantwortlich. Bei Abonnements
+              wird die Kaufpreisforderung am 5ten Tag des darauffolgenden Monats
+              abgebucht. Danach wird je nach Laufzeit des Abonnements eine
+              wiederkehrende Gebühr erhoben, die am 5ten des Monats abgebucht
+              wird. Die Laufzeit ist wählbar zwischen monatlich,
+              vierteljährlich, halbjährlich und jährlich.
+              <br />
+              <br />
+              Beispiel für ein Monatsabonnement: Bestellung am 25. April,
+              Abbuchung am 5. Mai, wiederkehrende Abbuchung am 5. Juni, 5. Juli
+              usw.
+              <br />
+              Beispiel für ein vierteljährliches Abonnement: Bestellung am 25.
+              April, Abbuchung am 5. Mai, wiederkehrende Abbuchung am 5. August,
+              5. November usw.
+              <br />
+              Beispiel für ein halbjährliches Abonnement: Bestellung am 25.
+              April, Abbuchung am 25. Mai, wiederkehrende Abbuchung am 25.
+              November, 5. Mai des Folgejahres usw.
+              <br />
+              Beispiel für ein Jahresabonnement: Bestellung am 25. April,
+              Abbuchung am 5. Mai, wiederkehrende Abbuchung am 5. Mai des
+              Folgejahres, usw.
+              <br />
+              <br />
+              For the payment, the customer only has the payment terms agreed
+              and specified in the order.
+              <br />
+              <br />
+              Für die Zahlung stehen dem Kunden nur die in der Bestellung
+              vereinbarten und angegebenen Zahlungsbedingungen zur Verfügung.
+              Ein Recht zur Aufrechnung steht dem Kunden nur zu, wenn seine
+              Gegenansprüche rechtskräftig festgestellt oder vom Anbieter
+              unbestritten sind. Zur Ausübung eines Zurückbehaltungsrechts ist
+              der Kunde nur insoweit befugt, als sein Gegenanspruch auf dem
+              gleichen Vertragsverhältnis beruht.
+              <h2 className="text-2xl font-bold mt-10 md:mt-8">
+                Rechte im Falle von Mängeln und Schäden
+              </h2>
+              Soweit die gelieferte Ware nicht die zwischen dem Anbieter und dem
+              Kunden vereinbarte Beschaffenheit hat, oder sich nicht für die
+              nach dem Vertrag vorausgesetzte Verwendung oder den allgemeinen
+              Gebrauch eignet, oder nicht die Eigenschaften aufweist, die der
+              Kunde nach unseren öffentlichen Äußerungen erwarten konnte, so
+              verpflichtet sich der Anbieter zur Nacherfüllung. Dies gilt nicht,
+              wenn der Anbieter berechtigt ist, die Nacherfüllung aufgrund der
+              gesetzlichen Bestimmungen zu verweigern. Der Kunde hat dem
+              Anbieter eine angemessene Frist zur Nacherfüllung zu gewähren.
+              <br />
+              <br />
+              Die Nacherfüllung erfolgt nach Wahl des Kunden durch Beseitigung
+              des Mangels oder Lieferung einer neuen Ware. Der Kunde ist,
+              während der Nacherfüllungsfrist nicht berechtigt, den Kaufpreis zu
+              mindern oder vom Vertrag zurückzutreten. Hat der Anbieter die
+              Nacherfüllung zweimal vergeblich versucht, so gilt diese als
+              fehlgeschlagen. Ist die Nacherfüllung fehlgeschlagen, ist der
+              Kunde nach seiner Wahl berechtigt, den Kaufpreis zu mindern oder
+              vom Vertrag zurückzutreten.
+              <br />
+              <br />
+              Schadensersatzansprüche wegen eines Mangels nach Maßgabe der
+              folgenden Absätze kann der Kunde erst geltend machen, wenn die
+              Nacherfüllung fehlgeschlagen ist. Das Recht des Kunden zur
+              Geltendmachung von weitergehenden Schadensersatzansprüchen zu den
+              nachfolgenden Bedingungen bleibt hiervon unberührt.
+              <br />
+              <br />
+              Die Europäische Kommission bietet eine Plattform für die
+              Online-Streitbeilegung (OS). Die Plattform ist unter
+              http://ec.europa.eu/consumers/odr/ zu finden.
+              <h2 className="text-2xl font-bold mt-10 md:mt-8">
+                Anwendbares Recht
+              </h2>
+              Es gilt deutsches Recht unter Ausschluss des UN-Kaufrechts.
+              <h2 className="text-2xl font-bold mt-10 md:mt-8">Stornierung</h2>
+              Es gilt das gesetzliche Widerrufsrecht.
+              <h3 className="text-xl font-bold mt-10 md:mt-8">
+                Alternative Streitbeilegung gemäss Art. 14 Abs. 1 ODR-VO und §
+                36 VSBG:
+              </h3>
+              Die Europäische Kommission bietet eine Online-Plattform zur
+              Streitbeilegung (OS) an, die
+              unter https://ec.europa.eu/consumers/odr verfügbar ist.
+              <br />
+              Wir sind nicht verpflichtet und nicht gewillt, an einem
+              Streitbeilegungsverfahren vor einer Verbraucherschlichtungsstelle
+              teilzunehmen.
             </div>
           )}
         </div>
