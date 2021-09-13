@@ -48,6 +48,7 @@
   },
   "pages": {
     "home": {
+      "ogDescription": "Monatlich neue Kunstmaterialien in einer Überraschungsbox",
       "draw_as_one_section": "Let’s draw <1>as one.</1><2></2>Let’s connect <1>worldwide</1><2></2> and <1>live art</1> together",
       "chosen_one_section": {
         "title": "Du gehörst zu den ganz wenigen,\ndie ganz nach unten gescrollt haben.\nJetzt kannste auch gleich abonnieren:):"
@@ -61,6 +62,7 @@
       "marquee_text": "Komm an Bord und entdecke hochwertige Kunstmaterialien in einer monatlichen Abobox, die dich zum kreativ werden inspiriert."
     },
     "how_it_works": {
+      "ogDescription": "Wie werde ich Abonnent bei Upcrate?",
       "title": "So geht's",
       "draw_as_one_section": "We connect <2>artists worldwide <1></1> to draw together </2> as one <2>and</2> to get to <2>the heart of the art</2>",
       "chosen_one_section": {
@@ -68,6 +70,7 @@
       }
     },
     "crates": {
+      "ogDescription": "Jetzt aber fix! Unsere ehemaligen Boxen auf einen Blick",
       "title": "Boxen",
       "found_some_art": "Wir haben da ein paar\n Kunstmaterialien für dich",
       "chosen_one_section": {
@@ -83,6 +86,7 @@
       }
     },
     "artcrew": {
+      "ogDescription": "Alles über Captain Crate und seine Artcrew findest du hier",
       "title": "Art Crew",
       "newsletter_section": {
         "title": "Upcrate – Zusammen Kunst machen",
@@ -96,6 +100,7 @@
       }
     },
     "about": {
+      "ogDescription": "Upcrate – Die Legende von Captain Crate, seinen Boxen und seiner Artcrew",
       "title": "Über uns",
       "artwork_by": "Artwork von",
       "sections": [
@@ -121,10 +126,12 @@
       }
     },
     "subscriptions": {
+      "ogDescription": "Monatlich neue Kunstmaterialien in einer Überraschungsbox",
       "title": "abonnements",
       "free_shipping_worldwide": "Kostenloser Versand weltweit"
     },
     "contact": {
+      "ogDescription": "Monatlich neue Kunstmaterialien in einer Überraschungsbox",
       "title": "Kontakt",
       "form": {
         "title": "Brauchst du Hilfe? Schreib halt!",
@@ -132,13 +139,16 @@
       }
     },
     "imprint": {
+      "ogDescription": "Monatlich neue Kunstmaterialien in einer Überraschungsbox",
       "title": "Impressum",
       "owner": "Inhaber"
     },
     "privacy": {
+      "ogDescription": "Monatlich neue Kunstmaterialien in einer Überraschungsbox",
       "title": "Datenschutz"
     },
     "cancellation_policy": {
+      "ogDescription": "Monatlich neue Kunstmaterialien in einer Überraschungsbox",
       "title": "Stornierungsbedingungen",
       "withdrawal_title": "Rückzug",
       "withdrawal_text": "<1>Sie haben das Recht, binnen vierzehn Tagen ohne Angabe von Gründen diesen Vertrag zu widerrufen. Die Widerrufsfrist beträgt vierzehn Tage ab dem Tag  Ab dem Sie oder ein von Ihnen benannter Dritter, der nicht Beförderer ist, die Ware in Besitz genommen oder in Besitz genommen hat, sofern Sie eine oder mehrere Waren in einer einzigen Bestellung bestellt haben und diese einheitlich geliefert werden oder geliefert werden, oder wenn Sie oder ein von Ihnen benannter Dritter, der nicht Beförderer ist, die letzte Ware in Besitz genommen hat oder in Besitz genommen hat, wenn Sie mehrere Waren in einer einzigen Bestellung bestellt haben und diese getrennt geliefert werden, oder  wenn Sie oder ein von Ihnen benannter Dritter, der nicht der Beförderer ist, die letzte Teilsendung oder das letzte Stück in Besitz genommen haben oder in Besitz genommen haben, sofern Sie ein Produkt bestellt haben, das in mehreren Sendungen oder Stücken geliefert wird, oder  wenn Sie oder ein von Ihnen benannter Dritter, der nicht der Beförderer ist, die erste Ware in Besitz genommen haben oder haben, sofern Sie einen Vertrag über die regelmäßige Lieferung von Waren für einen bestimmten Zeitraum abgeschlossen haben.\nUm Ihr Widerrufsrecht auszuüben, müssen Sie uns (Clemens Roosen, Suhrsweg 3, 22305 Hamburg, Deutschland, E-Mail: info@upcrate.art) mittels einer eindeutigen Erklärung (z.B. ein mit der Post versandter Brief, e -Mail) über Ihren Entschluss, diesen Vertrag zu widerrufen.\nSie können dafür das beigefügte Muster-Widerrufsformular verwenden, das jedoch nicht vorgeschrieben ist.  Zur Wahrung der Widerrufsfrist reicht es aus, dass Sie die Mitteilung über die Ausübung des Widerrufsrechts vor Ablauf der Widerrufsfrist absenden.</1>",
@@ -146,9 +156,11 @@
       "consequences_text": "<1>Wenn Sie von diesem Vertrag zurücktreten, haben wir alle Zahlungen, die wir von Ihnen erhalten haben, einschließlich der Versandkosten (mit Ausnahme der zusätzlichen Kosten, die sich aus der Wahl einer anderen Versandart als der von uns angebotenen günstigsten Standardlieferung ergeben) sofort und zum angegebenen Zeitpunkt zurückgezahlt Für diese Rückzahlung verwenden wir dasselbe Zahlungsmittel, das Sie bei der ursprünglichen Transaktion eingesetzt haben, es sei denn, mit Ihnen wurde etwas anderes vereinbart wegen dieser Rückzahlung werden Ihnen Entgelte berechnet.\nWir können die Rückzahlung verweigern, bis wir die Waren wieder zurückerhalten haben oder bis Sie den Nachweis erbracht haben, dass Sie die Waren zurückgesandt haben, je nachdem, welches der frühere Zeitpunkt ist.  Sie müssen die Waren unverzüglich, spätestens jedoch binnen vierzehn Tagen ab dem Tag, an dem Sie uns über den Widerruf dieses Vertrags unterrichten, an uns zurücksenden.\nDie Frist ist gewahrt, wenn Sie die Ware vor Ablauf der Frist von vierzehn Tagen absenden. Sie tragen die unmittelbaren Kosten der Rücksendung der Waren.  Sie müssen für einen etwaigen Wertverlust der Waren nur aufkommen, wenn dieser Wertverlust auf einen zur Prüfung der Beschaffenheit, Eigenschaften und Funktionsweise der Waren nicht notwendigen Umgang mit ihnen zurückzuführen ist.</1>"
     },
     "terms_and_conditions": {
+      "ogDescription": "Monatlich neue Kunstmaterialien in einer Überraschungsbox",
       "title": "Allgemeine Geschäftsbedingungen"
     },
     "faqs": {
+      "ogDescription": "Monatlich neue Kunstmaterialien in einer Überraschungsbox",
       "title": "Deine Fragen – Unsere Antworten"
     }
   },

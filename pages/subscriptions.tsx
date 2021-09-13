@@ -22,7 +22,10 @@ export default function Subscriptions() {
           key="title"
         />
         <meta property="og:image" content="TODO:" />
-        <meta property="og:description" content="TODO:" />
+        <meta
+          property="og:description"
+          content={t("pages.subscriptions.ogDescription")}
+        />
       </Head>
       <SubscribeNowSection />
       <section className="text-center md:pt-16 md:pb-20 relative overflow-hidden">

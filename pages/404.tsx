@@ -8,8 +8,6 @@ export default function ErrorPage() {
       <Head>
         <title>ERROR 404 | upcrate</title>
         <meta property="og:title" content="ERROR 404" key="title" />
-        <meta property="og:image" content="TODO:" />
-        <meta property="og:description" content="TODO:" />
       </Head>
       <div className="relative">
         <div className="z-10 absolute bottom-32 max-w-4xl left-0 right-0 text-center mx-auto">

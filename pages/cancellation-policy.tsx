@@ -16,7 +16,10 @@ export default function CancellationPolicy() {
           key="title"
         />
         <meta property="og:image" content="TODO:" />
-        <meta property="og:description" content="TODO:" />
+        <meta
+          property="og:description"
+          content={t("pages.cancellation_policy.ogDescription")}
+        />
       </Head>
       <section className="p-10 md:p-20 text-purple-dark pb-20 md:pb-48 relative overflow-hidden">
         <div className="max-w-6xl mx-auto">

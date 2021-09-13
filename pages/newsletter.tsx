@@ -18,7 +18,10 @@ export default function Newsletter() {
         <title>Newsletter | upcrate</title>
         <meta property="og:title" content="Newsletter | upcrate" key="title" />
         <meta property="og:image" content="TODO:" />
-        <meta property="og:description" content="TODO:" />
+        <meta
+          property="og:description"
+          content={t("pages.newsletter.ogDescription")}
+        />
       </Head>
       <HeroSection
         className="bg-purple"

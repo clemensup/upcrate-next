@@ -48,6 +48,7 @@
   },
   "pages": {
     "home": {
+      "ogDescription": "Mystery art supplies in a monthly box",
       "draw_as_one_section": "Let’s draw <1>as one.</1><2></2>Let’s connect <1>worldwide</1><2></2> and <1>live art</1> together",
       "chosen_one_section": {
         "title": "You’re one of the chosen ones who scrolled all the way down.\nNow you can also subscribe:)"
@@ -61,6 +62,7 @@
       "marquee_text": "Hop on board to discover amazing art treasures in a monthly subscription, inspiring you to create."
     },
     "how_it_works": {
+      "ogDescription": "How to subscribe for monthly matters art supplies",
       "title": "How it works",
       "draw_as_one_section": "We connect <2>artists worldwide <1></1> to draw together </2> as one <2>and</2> to get to <2>the heart of the art</2>",
       "chosen_one_section": {
@@ -68,6 +70,7 @@
       }
     },
     "crates": {
+      "ogDescription": "Find all our previous boxes in a row",
       "title": "Crates",
       "found_some_art": "We found some\n Art supplies for you",
       "chosen_one_section": {
@@ -83,6 +86,7 @@
       }
     },
     "artcrew": {
+      "ogDescription": "Captain Crate brings together a community of artists from all over the world",
       "title": "Art Crew",
       "newsletter_section": {
         "title": "Upcrate – We draw as one",
@@ -96,6 +100,7 @@
       }
     },
     "about": {
+      "ogDescription": "Upcrate – The legend of Captain Crate, his Crates and his Crew",
       "title": "About us",
       "artwork_by": "Artwork by",
       "sections": [
@@ -121,10 +126,12 @@
       }
     },
     "subscriptions": {
+      "ogDescription": "Mystery art supplies in a monthly box",
       "title": "Subscriptions",
       "free_shipping_worldwide": "Free shipping worldwide"
     },
     "contact": {
+      "ogDescription": "Mystery art supplies in a monthly box",
       "title": "Contact",
       "form": {
         "title": "Need help? Contact us!",
@@ -132,13 +139,16 @@
       }
     },
     "imprint": {
+      "ogDescription": "Mystery art supplies in a monthly box",
       "title": "Imprint",
       "owner": "Owner"
     },
     "privacy": {
+      "ogDescription": "Mystery art supplies in a monthly box",
       "title": "Privacy Policy"
     },
     "cancellation_policy": {
+      "ogDescription": "Mystery art supplies in a monthly box",
       "title": "Cancellation Policy",
       "withdrawal_title": "Withdrawal",
       "withdrawal_text": "<1>You have the right to withdraw from this contract within fourteen days without giving any reason.</1><1>The withdrawal period is fourteen days from the day where you or a third party named by you, who is not the carrier, has or has taken possession of the goods, provided that you have ordered one or more goods under a single order and these are or will be delivered in a uniform manner, or</1><1>where you or a third party named by you, who is not the carrier, has or has taken possession of the last goods, if you have ordered several goods in a single order and these are delivered separately, or</1><1>where you or a third party named by you, other than the carrier, has or has taken possession of the last partial consignment or piece, provided that you have ordered a product that is delivered in multiple consignments or pieces, or</1><1>where you or a third party named by you, other than the carrier, has or has taken possession of the first good, provided that you have a contract for the regular delivery of goods for a fixed period of time.</1><1>To exercise your right of revocation, you must notify us (Clemens Roosen, Suhrsweg 3, 22305 Hamburg, Germany, Germany, e-mail: info@upcrate.art) by means of a clear statement (e.g. a letter sent by post, e-mail) about your decision to withdraw from this contract. You can use the attached model withdrawal form, which is not required.</1><1>In order to maintain the cancellation period, it is sufficient that you send the notice of the exercise of the right of withdrawal before the expiry of the withdrawal period.</1>",
@@ -146,9 +156,11 @@
       "consequences_text": "<1>If you withdraw from this Agreement, we have selected all payments we have received from you, including delivery charges (except for the additional costs arising from your choosing a different delivery method than the most favorable standard delivery we offer have to repay immediately and at the latest within fourteen days from the date on which the notification of your revocation of this contract has reached us. For this repayment, we use the same means of payment that you used in the original transaction, unless otherwise agreed with you; In no case will you be charged for this repayment fees.</1><1>We may refuse to repay you until we have the goods back or until you have provided proof that you have returned the goods, whichever is the earlier.</1><1>You must return the goods to us immediately and in any event not later than fourteen days from the date on which you inform us of the cancellation of this contract. The deadline is met if you send the goods before the expiry of the period of fourteen days. You bear the immediate costs of returning the goods.</1><1>You only have to pay for a possible loss in value of the goods, if this loss of value is due to a handling that is not necessary for the examination of the nature, characteristics and functionality of the goods.</1>"
     },
     "terms_and_conditions": {
+      "ogDescription": "Mystery art supplies in a monthly box",
       "title": "Terms and Conditions"
     },
     "faqs": {
+      "ogDescription": "Mystery art supplies in a monthly box",
       "title": "Your questions – Our answers"
     }
   },

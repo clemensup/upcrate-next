@@ -18,7 +18,10 @@ export default function Contact() {
           key="title"
         />
         <meta property="og:image" content="TODO:" />
-        <meta property="og:description" content="TODO:" />
+        <meta
+          property="og:description"
+          content={t("pages.contact.ogDescription")}
+        />
       </Head>
       <section className="p-10 md:p-10 relative overflow-hidden">
         <RadialGradient className="bg-purple" />

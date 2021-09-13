@@ -1,15 +1,21 @@
+import useTranslation from "next-translate/useTranslation";
 import Head from "next/head";
 import { HeroSection } from "../components";
 import { FaqSection } from "../components/sections/faq-section";
 
 export default function Faqs() {
+  const { t } = useTranslation("common");
+
   return (
     <>
       <Head>
         <title>FAQ | upcrate</title>
         <meta property="og:title" content="FAQ" key="title" />
         <meta property="og:image" content="TODO:" />
-        <meta property="og:description" content="TODO:" />
+        <meta
+          property="og:description"
+          content={t("pages.faqs.ogDescription")}
+        />
       </Head>
       <HeroSection
         className="bg-rose"

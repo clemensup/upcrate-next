@@ -24,7 +24,10 @@ export default function HowItWorks() {
           key="title"
         />
         <meta property="og:image" content="TODO:" />
-        <meta property="og:description" content="TODO:" />
+        <meta
+          property="og:description"
+          content={t("pages.how_it_works.ogDescription")}
+        />
       </Head>
       <HeroSection
         className="bg-purple-dark text-white"

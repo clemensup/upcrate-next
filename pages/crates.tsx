@@ -45,7 +45,10 @@ export default function Crates({ products, pageCount }: CratesProps) {
           key="title"
         />
         <meta property="og:image" content="TODO:" />
-        <meta property="og:description" content="TODO:" />
+        <meta
+          property="og:description"
+          content={t("pages.crates.ogDescription")}
+        />
       </Head>
       <HeroSection
         className="bg-orange"

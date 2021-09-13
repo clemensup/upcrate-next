@@ -28,7 +28,10 @@ export default function ArtCrew() {
           key="title"
         />
         <meta property="og:image" content="TODO:" />
-        <meta property="og:description" content="TODO:" />
+        <meta
+          property="og:description"
+          content={t("pages.artcrew.ogDescription")}
+        />
       </Head>
       <HeroSection
         className="bg-rose"

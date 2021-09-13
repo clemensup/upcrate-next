@@ -34,7 +34,10 @@ export default function About() {
           key="title"
         />
         <meta property="og:image" content="TODO:" />
-        <meta property="og:description" content="TODO:" />
+        <meta
+          property="og:description"
+          content={t("pages.about.ogDescription")}
+        />
       </Head>
       <HeroSection
         className="bg-green"

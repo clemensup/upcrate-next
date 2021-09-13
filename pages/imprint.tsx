@@ -15,7 +15,10 @@ export default function Imprint() {
           key="title"
         />
         <meta property="og:image" content="TODO:" />
-        <meta property="og:description" content="TODO:" />
+        <meta
+          property="og:description"
+          content={t("pages.imprint.ogDescription")}
+        />
       </Head>
       <section className="text-center md:p-20 text-purple-dark relative overflow-hidden">
         <h1 className="text-6xl font-display">{t("pages.imprint.title")}</h1>
