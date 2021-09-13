@@ -44,7 +44,7 @@ export default function Crates({ products, pageCount }: CratesProps) {
           content={t("pages.crates.title")}
           key="title"
         />
-        <meta property="og:image" content="TODO:" />
+
         <meta
           property="og:description"
           content={t("pages.crates.ogDescription")}

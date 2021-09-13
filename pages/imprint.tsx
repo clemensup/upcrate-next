@@ -14,7 +14,7 @@ export default function Imprint() {
           content={t("pages.imprint.title")}
           key="title"
         />
-        <meta property="og:image" content="TODO:" />
+
         <meta
           property="og:description"
           content={t("pages.imprint.ogDescription")}

@@ -14,7 +14,7 @@ export default function CancellationPolicy() {
           content={t("pages.terms_and_conditions.title")}
           key="title"
         />
-        <meta property="og:image" content="TODO:" />
+
         <meta
           property="og:description"
           content={t("pages.terms.ogDescription")}

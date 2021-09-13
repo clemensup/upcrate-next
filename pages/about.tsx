@@ -33,7 +33,7 @@ export default function About() {
           content={t("pages.about.title")}
           key="title"
         />
-        <meta property="og:image" content="TODO:" />
+
         <meta
           property="og:description"
           content={t("pages.about.ogDescription")}

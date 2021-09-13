@@ -14,7 +14,7 @@ export default function Privacy() {
           content={t("pages.privacy.title")}
           key="title"
         />
-        <meta property="og:image" content="TODO:" />
+
         <meta
           property="og:description"
           content={t("pages.privacy.ogDescription")}

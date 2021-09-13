@@ -17,7 +17,7 @@ export default function Newsletter() {
       <Head>
         <title>Newsletter | upcrate</title>
         <meta property="og:title" content="Newsletter | upcrate" key="title" />
-        <meta property="og:image" content="TODO:" />
+
         <meta
           property="og:description"
           content={t("pages.newsletter.ogDescription")}

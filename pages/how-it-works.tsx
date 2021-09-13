@@ -23,7 +23,7 @@ export default function HowItWorks() {
           content={t("pages.how_it_works.title")}
           key="title"
         />
-        <meta property="og:image" content="TODO:" />
+
         <meta
           property="og:description"
           content={t("pages.how_it_works.ogDescription")}

@@ -11,7 +11,7 @@ export default function Faqs() {
       <Head>
         <title>FAQ | upcrate</title>
         <meta property="og:title" content="FAQ" key="title" />
-        <meta property="og:image" content="TODO:" />
+
         <meta
           property="og:description"
           content={t("pages.faqs.ogDescription")}

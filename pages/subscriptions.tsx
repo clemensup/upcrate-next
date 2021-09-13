@@ -21,7 +21,7 @@ export default function Subscriptions() {
           content={t("pages.subscriptions.title")}
           key="title"
         />
-        <meta property="og:image" content="TODO:" />
+
         <meta
           property="og:description"
           content={t("pages.subscriptions.ogDescription")}
