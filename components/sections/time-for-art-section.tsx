@@ -114,7 +114,7 @@ export function TimeForArtSection() {
           {t("sections.time_for_art.advantages.1.text")}
         </div>
 
-        <div className="relative">
+        <div className="relative -mt-20">
           <div
             className="relative w-full flex justify-center items-center z-10"
             style={{ height: "100%" }}

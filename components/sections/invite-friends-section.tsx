@@ -21,7 +21,7 @@ export function InviteFriendsSection() {
             {t("sections.invite_friends.title")}
           </h3>
 
-          <div className="relative md:p-10 border-l-2 border-purple-dark border-t-2 border-r-2 mt-10 p-4 bg-white md:bg-transparent opacity-95 md:opacity-100">
+          <div className="relative md:p-10 border-l-2 border-purple-dark border-t-2 border-r-2 border-b-2 md:border-b-0 mt-10 p-4 bg-white md:bg-transparent opacity-95 md:opacity-100">
             <div className="flex justify-center items-center flex-col md:gap-20 md:mt-32 relative">
               <Parallax>
                 <UpcrateArtcrewSvg />
@@ -31,7 +31,7 @@ export function InviteFriendsSection() {
               </div>
             </div>
             <span
-              className="absolute left-0 right-0 text-right author text-xl"
+              className="absolute left-0 right-0 text-right author text-xl hidden md:block"
               style={{ top: "calc(100% - 2px)" }}
             >
               <svg

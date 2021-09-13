@@ -34,9 +34,9 @@ export function NewsletterSection({
         <div className="z-10 relative text-purple-dark">
           {children}
           <div
-            className={`md:max-w-6xl p-5 md:p-10 py-10 mx-auto md:mt-12 md:pt-32 md:pb-20 text-purple-dark text-xl md:text-3xl bg-green md:rounded md:px-20 relative mb-20 ${
+            className={`md:max-w-6xl p-5 md:p-10 py-10 md:mx-auto md:mt-12 md:pt-32 md:pb-20 text-purple-dark text-xl md:text-3xl bg-green md:rounded md:px-20 relative mb-20 ${
               hasError ? "bg-pink" : ""
-            } relative overflow-hidden -mx-10 md:mx-0 mt-10 md:mt-0`}
+            } relative overflow-hidden -mx-10 mt-10 md:mt-0`}
           >
             <RadialGradient className="bg-purple" variant="top-left" />
             <div className="p-5 relative border-l-2 border-b-2 border-white border-r-2">

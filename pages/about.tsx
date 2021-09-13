@@ -13,7 +13,7 @@ import { InlineTextSvg } from "../components/elements/svg/inline-text";
 function InlineTextComponent(props) {
   return (
     <span
-      className={`${props.className} underline relative inline-flex justify-center items-center gap-2`}
+      className={`${props.className} underline relative inline-flex justify-center items-center gap-2 pr-8 md:pr-0`}
     >
       {props.children}
       {props.icon}
@@ -56,7 +56,7 @@ export default function About() {
           width={938}
           height={748}
         />
-        <div className="bg-purple-light text-center text-white flex flex-col justify-center content-center p-12 sm:p-24 text-2xl">
+        <div className="bg-purple-light text-center text-white flex flex-col justify-center content-center p-12 sm:p-24 text-xl md:text-2xl">
           <h3 className="text-2xl sm:text-5xl text-purple-dark font-display">
             {t("pages.about.sections.0.title")}
           </h3>
@@ -67,13 +67,21 @@ export default function About() {
                 1: (
                   <InlineTextComponent
                     className="text-green"
-                    icon={<InlineTextSvg variant="ship" />}
+                    icon={
+                      <span className="absolute md:relative right-0">
+                        <InlineTextSvg variant="ship" />
+                      </span>
+                    }
                   />
                 ),
                 2: (
                   <InlineTextComponent
                     className="text-rose"
-                    icon={<InlineTextSvg variant="pen" />}
+                    icon={
+                      <span className="absolute md:relative right-0">
+                        <InlineTextSvg variant="pen" />
+                      </span>
+                    }
                   />
                 ),
               }}
@@ -94,7 +102,7 @@ export default function About() {
         </div>
       </section>
       <section className="flex flex-col-reverse md:grid md:grid-cols-2">
-        <div className="bg-purple-lightest text-center text-purple-dark flex flex-col justify-center content-center p-12 sm:p-24 text-2xl">
+        <div className="bg-purple-lightest text-center text-purple-dark flex flex-col justify-center content-center p-12 sm:p-24 text-xl md:text-2xl">
           <h3 className="text-2xl sm:text-5xl text-purple-dark font-display">
             {t("pages.about.sections.1.title")}
           </h3>
@@ -105,13 +113,21 @@ export default function About() {
                 1: (
                   <InlineTextComponent
                     className="text-purple"
-                    icon={<InlineTextSvg variant="shipGlobe" />}
+                    icon={
+                      <span className="absolute md:relative right-0">
+                        <InlineTextSvg variant="shipGlobe" />
+                      </span>
+                    }
                   />
                 ),
                 2: (
                   <InlineTextComponent
                     className="text-red"
-                    icon={<InlineTextSvg variant="surprise" />}
+                    icon={
+                      <span className="absolute md:relative right-0">
+                        <InlineTextSvg variant="surprise" />
+                      </span>
+                    }
                   />
                 ),
               }}
@@ -150,7 +166,7 @@ export default function About() {
             height={748}
           />
         </div>
-        <div className="bg-purple-light text-center text-white flex flex-col justify-center content-center p-12 sm:p-24 text-2xl">
+        <div className="bg-purple-light text-center text-white flex flex-col justify-center content-center p-12 sm:p-24 text-xl md:text-2xl">
           <h3 className="text-2xl sm:text-5xl text-purple-dark font-display">
             {t("pages.about.sections.2.title")}
           </h3>
@@ -161,13 +177,21 @@ export default function About() {
                 1: (
                   <InlineTextComponent
                     className="text-green"
-                    icon={<InlineTextSvg variant="marker" />}
+                    icon={
+                      <span className="absolute md:relative right-0">
+                        <InlineTextSvg variant="marker" />
+                      </span>
+                    }
                   />
                 ),
                 2: (
                   <InlineTextComponent
                     className="text-rose"
-                    icon={<InlineTextSvg variant="heads" />}
+                    icon={
+                      <span className="absolute md:relative -right-2">
+                        <InlineTextSvg variant="heads" />
+                      </span>
+                    }
                   />
                 ),
               }}
@@ -199,13 +223,21 @@ export default function About() {
                 1: (
                   <InlineTextComponent
                     className="text-red"
-                    icon={<InlineTextSvg variant="head" />}
+                    icon={
+                      <span className="absolute md:relative right-0">
+                        <InlineTextSvg variant="head" />
+                      </span>
+                    }
                   />
                 ),
                 2: (
                   <InlineTextComponent
                     className="text-orange"
-                    icon={<InlineTextSvg variant="headPen" />}
+                    icon={
+                      <span className="absolute md:relative right-0">
+                        <InlineTextSvg variant="headPen" />
+                      </span>
+                    }
                   />
                 ),
               }}

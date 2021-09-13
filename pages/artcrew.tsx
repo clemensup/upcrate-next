@@ -43,7 +43,7 @@ export default function ArtCrew() {
         <h3 className="font-display text-purple-dark text-2xl md:text-5xl text-center m-auto">
           {t("pages.artcrew.newsletter_section.title")}
         </h3>
-        <p className="text-2xl text-purple-dark md:mt-10 md:mb-20 md:max-w-6xl md:mx-auto">
+        <p className="mt-8 text-xl max-w-2xl mx-auto text-center text-purple-dark md:mt-10 md:mb-20 md:max-w-6xl md:mx-auto">
           {t("pages.artcrew.newsletter_section.text")}
         </p>
       </NewsletterSection>

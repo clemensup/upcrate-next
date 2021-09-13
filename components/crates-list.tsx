@@ -70,7 +70,7 @@ export function CratesList({ products, pageCount }: CratesProps) {
         <h3 className="font-display text-center text-2xl md:text-5xl">
           {t("pages.crates.crates_list.title")}
         </h3>
-        <p className="mt-8 text-xl max-w-2xl mx-auto text-center">
+        <p className="mt-8 mb-10 md:mb-0 text-xl max-w-2xl mx-auto text-center">
           {t("pages.crates.crates_list.subtitle")}
         </p>
 
