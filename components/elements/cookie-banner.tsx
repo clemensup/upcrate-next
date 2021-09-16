@@ -1,0 +1,137 @@
+import React from "react";
+import { Button } from "./button";
+import { useRouter } from "next/router";
+import { useCookies } from "react-cookie";
+import { Modal } from "../modal";
+import { Dialog } from "@headlessui/react";
+import { Checkbox } from "./checkbox";
+import useTranslation from "next-translate/useTranslation";
+
+export function CookieBanner() {
+  const { t } = useTranslation("common");
+  const router = useRouter();
+  const [cookies, setCookie] = useCookies(["COOKIE_CONSENT"]);
+  const [showCookieSettings, setShowCookieSettings] = React.useState(false);
+  const [cookieConsent, setCookieConsent] = React.useState(
+    cookies["COOKIE_CONSENT"]
+  );
+
+  React.useEffect(() => {
+    if (!cookies["COOKIE_CONSENT"]) {
+      return;
+    }
+
+    router.push(router.pathname);
+  }, [cookies]);
+
+  return (
+    <>
+      <script
+        async
+        src="https://www.googletagmanager.com/gtag/js?id=UA-138739008-2"
+      ></script>
+      <script
+        dangerouslySetInnerHTML={{
+          __html: `
+            window.dataLayer = window.dataLayer || [];
+            
+            function gtag(){dataLayer.push(arguments);}
+            
+            gtag('consent', 'default', {
+              'analytics_storage': 'denied'
+            });  
+
+            gtag('js', new Date());
+            gtag('config', 'UA-138739008-2'); 
+          `,
+        }}
+      />
+
+      <Modal
+        open={showCookieSettings}
+        onClose={() => setShowCookieSettings(false)}
+        className="bg-orange"
+      >
+        <Dialog.Title
+          as="h3"
+          className="text-3xl sm:text-4xl mb-4 text-purple-dark font-medium text-center font-display"
+        >
+          {t("cookies.settings.title")}
+        </Dialog.Title>
+        {t("cookies.settings.description")}
+        <div className="my-10 grid gap-4 sm:gap-8">
+          <Checkbox
+            name="necessary"
+            value="necessary"
+            checked
+            label={t("cookies.settings.necessary_cookies")}
+            disabled
+          />
+          <Checkbox
+            name="non-necessary"
+            value="non-necessary"
+            checked={cookieConsent}
+            label={t("cookies.settings.unnecessary_cookies")}
+            onChange={() => setCookieConsent(!cookieConsent)}
+          />
+        </div>
+        <div className="flex gap-4 sm:gap-10 text-center justify-center">
+          <Button
+            onClick={() => setShowCookieSettings(false)}
+            className="border-purple border-2 text-purple"
+          >
+            cancel
+          </Button>
+          <Button
+            variant="outline"
+            onClick={() => {
+              setCookie("COOKIE_CONSENT", Boolean(cookieConsent));
+              setShowCookieSettings(false);
+            }}
+            className="bg-purple text-white border-2 border-purple"
+          >
+            save
+          </Button>
+        </div>
+      </Modal>
+      {cookies["COOKIE_CONSENT"] === undefined && (
+        <div className="text-purple-dark">
+          <div className="fixed top-0 right-0 bottom-0 left-0 bg-black opacity-80 z-40"></div>
+
+          <div className="fixed bottom-0 left-0 right-0 bg-orange p-12 z-50">
+            <div className="grid grid-cols-4 gap-x-10 md:gap-x-20">
+              <div className="text-4xl font-display col-span-4 text-left mb-4">
+                {t("cookies.title")}
+              </div>
+              <div className="col-span-4 md:col-span-2">
+                {t("cookies.description")}
+              </div>
+              <div className="col-span-4 md:col-span-1">
+                <Button
+                  className="border-4 border-purple text-purple mt-10 md:mt-0"
+                  onClick={() => setShowCookieSettings(true)}
+                >
+                  {t("cookies.settings_button")}
+                </Button>
+              </div>
+              <div className="col-span-4 md:col-span-1 mt-5 md:mt-0 flex flex-row md:flex-col gap-2 md:gap-5">
+                <Button
+                  className="border-4 border-purple text-white bg-purple"
+                  onClick={() => setCookie("COOKIE_CONSENT", true)}
+                >
+                  {t("cookies.accept_button")}
+                </Button>
+                <Button
+                  className="border-4 border-purple text-purple md:mt-0"
+                  onClick={() => setCookie("COOKIE_CONSENT", false)}
+                >
+                  {t("cookies.deny_button")}
+                </Button>
+              </div>
+            </div>
+          </div>
+        </div>
+      )}
+    </>
+  );
+}

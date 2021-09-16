@@ -16,7 +16,6 @@ import useTranslation from "next-translate/useTranslation";
 import { FormattedText } from "../components/elements/formatted-text";
 import Head from "next/head";
 import { AnimatedUnboxYourCreativitySection } from "../components/sections/animated-unbox-your-creativity-section";
-
 export default function Home() {
   const { t } = useTranslation("common");
 
