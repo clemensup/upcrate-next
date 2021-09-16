@@ -10,14 +10,16 @@ export default function ErrorPage() {
         <meta property="og:title" content="ERROR 404" key="title" />
       </Head>
       <div className="relative">
-        <div className="z-10 absolute bottom-32 max-w-4xl left-0 right-0 text-center mx-auto">
-          <h1 className="font-display text-8xl text-rose">Oooops! Wrong way</h1>
-          <h2 className="font-display text-red text-5xl my-10">Error</h2>
+        <div className="z-10 absolute md:bottom-32 max-w-4xl left-0 right-0 text-center mx-auto">
+          <h1 className="font-display text-3xl md:text-8xl text-rose">
+            Oooops! Wrong way
+          </h1>
+          <h2 className="font-display text-red md:text-5xl my-10">Error</h2>
           <Button href="/" className="bg-purple text-white">
             Back to the harbour
           </Button>
         </div>
-        <div className="z-0">
+        <div className="z-0 bg-black text-center">
           <Image
             src="/404/background.png"
             objectFit="cover"
