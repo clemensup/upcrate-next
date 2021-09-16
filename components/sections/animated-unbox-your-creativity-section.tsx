@@ -25,7 +25,7 @@ export function AnimatedUnboxYourCreativitySection() {
           <CaptainCrateSvg variant="head-only" width={100} />
         </motion.div>
         <UnboxYourCreativitySvg />
-        <div className="-mt-48">
+        <div>
           <Parallax offset={100}>
             <Image
               src="/home/unbox-your-creativity/unbox-box.png"
