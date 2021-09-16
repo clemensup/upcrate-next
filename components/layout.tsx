@@ -14,6 +14,20 @@ export function Layout({ children }): JSX.Element {
       <main className="mx-autow">{children}</main>
       <Footer />
       <div id="modal-root"></div>
+
+      <script
+        async
+        src="https://www.googletagmanager.com/gtag/js?id=UA-138739008-2"
+      ></script>
+      <script
+        dangerouslySetInnerHTML={{
+          __html: `
+            window.dataLayer = window.dataLayer || [];
+            function gtag(){dataLayer.push(arguments);}
+            gtag('js', new Date());
+            gtag('config', 'UA-138739008-2'); `,
+        }}
+      />
     </div>
   );
 }
