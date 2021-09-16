@@ -56,7 +56,7 @@ export default function About() {
           width={938}
           height={748}
         />
-        <div className="bg-purple-light text-center text-white flex flex-col justify-center content-center p-12 sm:p-24 text-xl md:text-2xl">
+        <div className="bg-purple-light text-center text-white flex flex-col justify-center content-center p-8 sm:p-24 text-xl md:text-2xl">
           <h3 className="text-2xl sm:text-5xl text-purple-dark font-display">
             {t("pages.about.sections.0.title")}
           </h3>
@@ -102,7 +102,7 @@ export default function About() {
         </div>
       </section>
       <section className="flex flex-col-reverse md:grid md:grid-cols-2">
-        <div className="bg-purple-lightest text-center text-purple-dark flex flex-col justify-center content-center p-12 sm:p-24 text-xl md:text-2xl">
+        <div className="bg-purple-lightest text-center text-purple-dark flex flex-col justify-center content-center p-8 sm:p-24 text-xl md:text-2xl">
           <h3 className="text-2xl sm:text-5xl text-purple-dark font-display">
             {t("pages.about.sections.1.title")}
           </h3>
@@ -166,7 +166,7 @@ export default function About() {
             height={748}
           />
         </div>
-        <div className="bg-purple-light text-center text-white flex flex-col justify-center content-center p-12 sm:p-24 text-xl md:text-2xl">
+        <div className="bg-purple-light text-center text-white flex flex-col justify-center content-center p-8 sm:p-24 text-xl md:text-2xl">
           <h3 className="text-2xl sm:text-5xl text-purple-dark font-display">
             {t("pages.about.sections.2.title")}
           </h3>
@@ -201,18 +201,18 @@ export default function About() {
           <small className="mt-16">
             {t("pages.about.artwork_by")}{" "}
             <a
-              href="https://instagram.com/sabien-art"
+              href="https://instagram.com/sabeans.art"
               target="_blank"
               rel="noopener noreferrer"
               className="hover:underline"
             >
-              @sabien-art
+              @sabeans.art
             </a>
           </small>
         </div>
       </section>
       <section className="flex flex-col-reverse md:grid md:grid-cols-2">
-        <div className="bg-purple-lightest text-center text-purple-dark flex flex-col justify-center content-center p-12 sm:p-16 text-2xl">
+        <div className="bg-purple-lightest text-center text-purple-dark flex flex-col justify-center content-center p-8 sm:p-16 text-xl md:text-2xl">
           <h3 className="text-2xl sm:text-5xl text-purple-dark font-display">
             {t("pages.about.sections.3.title")}
           </h3>
