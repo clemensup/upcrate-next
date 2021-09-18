@@ -6,6 +6,7 @@ import { Caret } from "./elements/svg";
 import { CratesProps } from "./../pages/crates";
 import { useFirstRender } from "../hooks/use-first-render";
 import { AnimatePresence, motion } from "framer-motion";
+import Trans from "next-translate/Trans";
 
 const transition = { duration: 0.7, ease: [0.43, 0.13, 0.23, 0.96] };
 
@@ -71,7 +72,12 @@ export function CratesList({ products, pageCount }: CratesProps) {
           {t("pages.crates.crates_list.title")}
         </h3>
         <p className="mt-8 mb-10 md:mb-0 text-xl max-w-2xl mx-auto text-center">
-          {t("pages.crates.crates_list.subtitle")}
+          <Trans
+            i18nKey="common:pages.crates.crates_list.subtitle"
+            components={{
+              1: <span className="italic" />,
+            }}
+          />
         </p>
 
         <div>

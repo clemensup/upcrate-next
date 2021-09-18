@@ -96,37 +96,41 @@ export function CookieBanner() {
       </Modal>
       {cookies["COOKIE_CONSENT"] === undefined && (
         <div className="text-purple-dark">
-          <div className="fixed top-0 right-0 bottom-0 left-0 bg-black opacity-80 z-40"></div>
+          <div className="fixed top-0 right-0 bottom-0 left-0 z-40"></div>
 
           <div className="fixed bottom-0 left-0 right-0 bg-orange p-12 z-50">
-            <div className="grid grid-cols-4 gap-x-10 md:gap-x-20">
-              <div className="text-4xl font-display col-span-4 text-left mb-4">
-                {t("cookies.title")}
-              </div>
-              <div className="col-span-4 md:col-span-2">
-                {t("cookies.description")}
-              </div>
-              <div className="col-span-4 md:col-span-1">
-                <Button
-                  className="border-4 border-purple text-purple mt-10 md:mt-0"
-                  onClick={() => setShowCookieSettings(true)}
-                >
-                  {t("cookies.settings_button")}
-                </Button>
-              </div>
-              <div className="col-span-4 md:col-span-1 mt-5 md:mt-0 flex flex-row md:flex-col gap-2 md:gap-5">
-                <Button
-                  className="border-4 border-purple text-white bg-purple"
-                  onClick={() => setCookie("COOKIE_CONSENT", true)}
-                >
-                  {t("cookies.accept_button")}
-                </Button>
-                <Button
-                  className="border-4 border-purple text-purple md:mt-0"
-                  onClick={() => setCookie("COOKIE_CONSENT", false)}
-                >
-                  {t("cookies.deny_button")}
-                </Button>
+            <div className="max-w-8xl mx-auto">
+              <div className="grid grid-cols-4 gap-x-10 md:gap-x-20">
+                <div className="col-span-2 text-left">
+                  <h3 className="text-4xl font-display mb-4">
+                    {t("cookies.title")}
+                  </h3>
+                  <p className="col-span-4 md:col-span-2 whitespace-pre-line">
+                    {t("cookies.description")}
+                  </p>
+                </div>
+                <div className="col-span-4 md:col-span-1 flex flex-row md:flex-col md:gap-5 gap-2">
+                  <Button
+                    className="border-4 border-purple text-purple mt-10 md:mt-0"
+                    onClick={() => setShowCookieSettings(true)}
+                  >
+                    {t("cookies.settings_button")}
+                  </Button>
+                  <Button
+                    className="border-4 border-purple text-purple md:mt-0"
+                    onClick={() => setCookie("COOKIE_CONSENT", false)}
+                  >
+                    {t("cookies.deny_button")}
+                  </Button>
+                </div>
+                <div className="col-span-4 md:col-span-1 mt-5 md:mt-0 flex items-end">
+                  <Button
+                    className="border-4 border-purple text-white bg-purple"
+                    onClick={() => setCookie("COOKIE_CONSENT", true)}
+                  >
+                    {t("cookies.accept_button")}
+                  </Button>
+                </div>
               </div>
             </div>
           </div>
