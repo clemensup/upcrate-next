@@ -1,6 +1,7 @@
 import useTranslation from "next-translate/useTranslation";
 import Image from "next/image";
 import { Countdown } from "../countdown";
+import { CreditsBage } from "../elements/credits-badge";
 import { Parallax } from "../elements/parallax";
 import { RadialGradient } from "../elements/radial-gradient";
 import { CaptainCrateSvg } from "../elements/svg";
@@ -17,6 +18,12 @@ export function WhyUpcrateSection() {
           {t("sections.why_upcrate.title")}
         </h3>
 
+        {/* <CreditsBage
+          className="bg-purple-dark"
+          href="https://www.instagram.com/thingsby_diana/"
+        >
+          by @thingsby_diana
+        </CreditsBage> */}
         <div className="md:flex align-center justify-center gap-20 md:text-xl relative z-10 max-w-6xl mx-auto mb-32">
           <div>
             <Parallax className="mt-10" offset={-10}>

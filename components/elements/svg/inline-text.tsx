@@ -466,45 +466,45 @@ export function InlineTextSvg({ variant }: InlineTextSvgProps) {
           viewBox="0 0 37.148 22.076"
         >
           <g
-            id="Group_701"
-            data-name="Group 701"
+            id="Gruppe_701"
+            data-name="Gruppe 701"
             transform="translate(-1721 -3665.634)"
           >
             <g
-              id="Group_699"
-              data-name="Group 699"
+              id="Gruppe_699"
+              data-name="Gruppe 699"
               transform="translate(1721 3665.634)"
             >
               <path
-                id="Path_179"
-                data-name="Path 179"
+                id="Pfad_179"
+                data-name="Pfad 179"
                 d="M-3292.063,2810.727v4.205l-5.424.491-.181-5.446-8.518-1.137.67,14.146,15.373-.59.432-11.356Zm-8.349,4.5-2.8-.2v-4.188h3Z"
                 transform="translate(3306.402 -2804.277)"
                 fill="#f1a8ba"
               />
               <path
-                id="Path_180"
-                data-name="Path 180"
+                id="Pfad_180"
+                data-name="Pfad 180"
                 d="M-3306.837,2795.1l16.593,2.391.209-5.486h-16.948Z"
                 transform="translate(3306.983 -2792)"
                 fill="#f1a8ba"
               />
             </g>
             <g
-              id="Group_700"
-              data-name="Group 700"
+              id="Gruppe_700"
+              data-name="Gruppe 700"
               transform="translate(1741.2 3669)"
             >
               <path
-                id="Path_179-2"
-                data-name="Path 179"
+                id="Pfad_179-2"
+                data-name="Pfad 179"
                 d="M-3292.063,2810.727v4.205l-5.424.491-.181-5.446-8.518-1.137.67,14.146,15.373-.59.432-11.356Zm-8.349,4.5-2.8-.2v-4.188h3Z"
                 transform="translate(3306.402 -2804.277)"
                 fill="#f1a8ba"
               />
               <path
-                id="Path_180-2"
-                data-name="Path 180"
+                id="Pfad_180-2"
+                data-name="Pfad 180"
                 d="M-3306.837,2795.1l16.593,2.391.209-5.486h-16.948Z"
                 transform="translate(3306.983 -2792)"
                 fill="#f1a8ba"

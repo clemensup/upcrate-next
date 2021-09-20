@@ -21,7 +21,7 @@ export function InviteFriendsSection() {
             {t("sections.invite_friends.title")}
           </h3>
 
-          <div className="relative md:p-10 border-l-2 border-purple-dark border-t-2 border-r-2 border-b-2 md:border-b-0 mt-10 p-4 bg-white md:bg-transparent opacity-95 md:opacity-100">
+          <div className="relative md:p-10 border-l-2 border-purple-dark border-t-2 border-r-2 border-b-2 md:border-b-0 mt-10 p-4 bg-white opacity-95 md:opacity-100">
             <div className="flex justify-center items-center flex-col md:gap-20 md:mt-32 relative">
               <Parallax>
                 <UpcrateArtcrewSvg />
@@ -46,13 +46,13 @@ export function InviteFriendsSection() {
                 <path
                   d="M0,0.5h258.97l34.82,32.36V0.5h60.69"
                   stroke="#34234F"
-                  fill="none"
+                  fill="white"
                   strokeWidth={1}
                 />
               </svg>
             </span>
           </div>
-          <div className="mt-10">
+          <div className="mt-10 z-10">
             <Button
               className="bg-orange text-white hover:bg-red uppcercase"
               href="https://shop.upcrate.art/refer-a-friend/"

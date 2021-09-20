@@ -25,7 +25,6 @@ export function AsFeaturedInSection() {
               width={400}
               height={103}
             />
-            <Image src="/palette.png" width={222} height={103} />
           </motion.a>
           <motion.a
             href="https://www.palette-magazin.de"

@@ -75,7 +75,7 @@ export function CratesList({ products, pageCount }: CratesProps) {
           <Trans
             i18nKey="common:pages.crates.crates_list.subtitle"
             components={{
-              1: <span className="italic" />,
+              1: <span className="italic block" />,
             }}
           />
         </p>

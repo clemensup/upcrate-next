@@ -77,11 +77,11 @@ export function UpcrateBattleSection() {
           </div>
 
           <div className="z-10">
-            <div className="md:flex gap-4 justify-between md:p-10 md:border-1">
-              <Parallax offset={20}>
+            <div className="flex flex-col gap-4 justify-between md:p-10 md:border-1">
+              <Parallax offset={20} className="order-2 md:order-1">
                 <img src="/home/battle/win-prizes.png" alt="" />
               </Parallax>
-              <p className="text-xl md:text-right">
+              <p className="text-xl md:text-right order-1 md:order-2">
                 <FormattedText
                   transKey="common:sections.upcrate_battle.prize_example"
                   delimiter={[<b className="block font-bold" />]}

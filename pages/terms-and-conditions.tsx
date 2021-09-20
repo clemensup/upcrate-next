@@ -1,3 +1,4 @@
+import Trans from "next-translate/Trans";
 import useTranslation from "next-translate/useTranslation";
 import Head from "next/head";
 import { RadialGradient } from "../components/elements/radial-gradient";
@@ -23,7 +24,12 @@ export default function CancellationPolicy() {
       <section className="p-10 md:p-20 text-purple-dark pb-20 md:pb-48 relative overflow-hidden">
         <div className="max-w-6xl mx-auto">
           <h1 className="text-3xl md:text-6xl font-display">
-            {t("pages.terms_and_conditions.title")}
+            <Trans
+              i18nKey="common:pages.terms_and_conditions.title"
+              components={{
+                1: <br className="block md:hidden" />,
+              }}
+            />
           </h1>
           {lang === "en" ? (
             <div className="mt-20">

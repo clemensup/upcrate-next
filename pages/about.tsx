@@ -188,7 +188,7 @@ export default function About() {
                   <InlineTextComponent
                     className="text-rose"
                     icon={
-                      <span className="absolute md:relative -right-2">
+                      <span className="absolute md:relative -right-2 md:right-0">
                         <InlineTextSvg variant="heads" />
                       </span>
                     }
