@@ -13,8 +13,8 @@
     "legal_headline": "Legal",
     "imprint": "Impressum",
     "privacy": "Datenschutz",
-    "terms_and_conditions": "Allgemeine Geschäftsbedingungen",
-    "cancellation_policy": "Stornierungsbedingungen",
+    "terms_and_conditions": "Allgemeine<1></1>Geschäftsbedingungen",
+    "cancellation_policy": "Stornierungs<1></1>bedingungen",
     "info_headline": "info",
     "refer_a_friend": "Freund:in empfehlen",
     "help_contact": "Hilfe / Kontakt",
@@ -257,8 +257,8 @@
     },
     "featured_artists_we_worked_with": {
       "title": "Künstler:innen, mit denen wir zusammen gearbeitet haben",
-      "text": "Dies sind 4 der vielen :innen, mit denen wir in der Vergangenheit zusammengearbeitet haben. Jeder von ihnen hat seine eigenen einzigartigen Stil, Kenntnisse und Vorlieben, wenn es um Künstlerbedarf geht. Sie kuratieren den Inhalt ihrer monatlichen Box, um sicherzustellen, dass alle Materialien gut zusammenarbeiten.",
-      "text_mobile": "Dies sind 4 der vielen :innen, mit denen wir in der Vergangenheit zusammengearbeitet haben. Jeder von ihnen hat seine eigenen einzigartigen Stil, Kenntnisse und Vorlieben, wenn es um Künstlerbedarf geht. Sie kuratieren den Inhalt ihrer monatlichen Box, um sicherzustellen, dass alle Materialien gut zusammenarbeiten."
+      "text": "Dies sind 4 der vielen Künstler:innen, mit denen wir in der Vergangenheit zusammengearbeitet haben. Jeder von ihnen hat seine eigenen einzigartigen Stil, Kenntnisse und Vorlieben, wenn es um Künstlerbedarf geht. Sie stellten den Inhalt ihrer monatlichen Box zusammen, um sicherzustellen, dass alle Materialien gut zusammenpassen.",
+      "text_mobile": "Dies sind 4 der vielen Künstler:innen, mit denen wir in der Vergangenheit zusammengearbeitet haben. Jeder von ihnen hat seine eigenen einzigartigen Stil, Kenntnisse und Vorlieben, wenn es um Künstlerbedarf geht. Sie kuratieren den Inhalt ihrer monatlichen Box, um sicherzustellen, dass alle Materialien gut zusammenarbeiten."
     },
     "upcrate_battle": {
       "title": "#upcratebattle",
@@ -467,18 +467,18 @@
     }
   ],
   "cookies": {
-    "title": "The art of Cookies",
-    "description": "This website uses cookies to improve your experience.\nWe’ll assume you’re ok with this, but you can opt-out if you wish",
-    "accept_button": "Accept",
-    "deny_button": "Don't accept",
-    "settings_button": "Cookie Settings",
+    "title": "Die Kunst der Cookies",
+    "description": "Diese Website verwendet Cookies, um Ihr Erlebnis zu verbessern. Wir gehen davon aus, dass Sie damit einverstanden sind, aber Sie können sich abmelden, wenn Sie möchten.",
+    "accept_button": "Akzeptieren",
+    "deny_button": "Nicht akzeptieren",
+    "settings_button": "Cookie-Einstellungen",
     "settings": {
-      "title": "Privacy Overview",
-      "description": "This website uses cookies to improve your experience while you navigate through the website. Out of these cookies, the cookies that are categorized as necessary are stored on your browser as they are essential for the working of basic functionalities of the website. We also use third-party cookies that help us analyze and understand how you use this website. These cookies will be stored in your browser only with your consent. You also have the option to opt-out of these cookies. But opting out of some of these cookies may have an effect on your browsing experience.",
-      "necessary_cookies": "Necessary cookies (Always enabled)",
-      "unnecessary_cookies": "Non-Necessary",
-      "save_button": "save",
-      "cancel_button": "cancel"
+      "title": "Überblick zum Datenschutz",
+      "description": "Diese Website verwendet Cookies, um Ihre Erfahrungen zu verbessern, während Sie durch die Website navigieren. Von diesen Cookies werden die als notwendig kategorisierten Cookies auf Ihrem Browser gespeichert, da sie für das Funktionieren der Grundfunktionen der Website unerlässlich sind. Wir verwenden auch Cookies von Drittanbietern, die uns helfen zu analysieren und zu verstehen, wie Sie diese Website nutzen. Diese Cookies werden nur mit Ihrer Zustimmung in Ihrem Browser gespeichert. Sie haben auch die Möglichkeit, diese Cookies abzulehnen. Wenn Sie einige dieser Cookies ablehnen, kann dies jedoch Auswirkungen auf Ihr Surfverhalten haben.",
+      "necessary_cookies": "Erforderlich (Immer aktiviert)",
+      "unnecessary_cookies": "Nicht erforderlich",
+      "save_button": "sichern",
+      "cancel_button": "abbrechen"
     }
   }
 }
