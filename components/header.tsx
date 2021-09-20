@@ -180,12 +180,14 @@ export function Header(): JSX.Element {
               </li>
 
               <li
-                className="flex items-center gap-3 justify-center py-4 lg:p-0 lg:ml-7 cursor-pointer"
+                className="flex space-x-3 items-center justify-center py-4 lg:p-0 lg:ml-7 cursor-pointer"
                 onClick={() => setLanguageSelectModalOpen(true)}
               >
                 {lang === "en" && <a>{t("language_switch_en")}</a>}
                 {lang === "de" && <a>{t("language_switch_de")}</a>}
-                <Image src="/globe.svg" width={36} height={36} />
+                <div>
+                  <Image src="/globe.svg" width={36} height={36} />
+                </div>
                 <Modal
                   open={languageSelectModalOpen}
                   onClose={() => setLanguageSelectModalOpen(false)}
@@ -197,7 +199,7 @@ export function Header(): JSX.Element {
                   >
                     {t("language_switch_dialog_title")}
                   </Dialog.Title>
-                  <div className="my-10 grid gap-4 sm:gap-8 sm:pl-20">
+                  <div className="my-10 grid space-y-4 sm:space-y-8 sm:pl-20">
                     <Checkbox
                       name="checked-de"
                       value="de"
@@ -213,7 +215,7 @@ export function Header(): JSX.Element {
                       onChange={(e) => setSelectedLanguage(e.target.value)}
                     />
                   </div>
-                  <div className="flex gap-4 sm:gap-10 text-center justify-center">
+                  <div className="flex space-x-4 sm:space-x-10 text-center justify-center">
                     <Button
                       onClick={() => setLanguageSelectModalOpen(false)}
                       className="border-purple border-2 text-purple"

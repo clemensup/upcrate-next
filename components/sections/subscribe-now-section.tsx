@@ -13,7 +13,7 @@ export function SubscribeNowSection() {
         {t("sections.subscribe_now.title")}
       </h3>
 
-      <div className="md:flex gap-32 justify-center align-center">
+      <div className="md:flex md:space-x-32 justify-center align-center">
         <div className="bg-purple-dark text-center text-white flex flex-col pt-4 pb-10 rounded">
           <CaptainCrateSvg variant="plus" className="self-center" />
           <Parallax offset={-30}>

@@ -150,7 +150,7 @@ export function HeroSliderSection() {
           >
             {t("pages.home.slider_content.3.text")}
           </motion.span>
-          <div className="flex gap-4 md:gap-10 flex-col md:flex-row items-center mt-10">
+          <div className="flex space-x-4 md:space-x-10 flex-col md:flex-row items-center mt-10">
             <motion.div
               animate={{ scale: [0, 1.7, 1], rotate: 0 }}
               transition={{ duration: 1, delay: 1, ease: "easeInOut" }}

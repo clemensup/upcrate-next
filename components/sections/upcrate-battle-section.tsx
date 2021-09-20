@@ -23,7 +23,7 @@ export function UpcrateBattleSection() {
             {t("sections.upcrate_battle.text")}
           </p>
         </div>
-        <div className="md:flex align-center justify-center gap-20 md:text-xl text-purple-dark">
+        <div className="md:flex align-center justify-center md:space-x-20 md:text-xl text-purple-dark">
           <div className="mt-10">
             <h4 className="text-left mb-3">TOPIC: Colorless beauty</h4>
             <Image src="/upcrate-battle/topic01.png" width={330} height={330} />
@@ -77,11 +77,11 @@ export function UpcrateBattleSection() {
           </div>
 
           <div className="z-10">
-            <div className="flex flex-col-reverse mt-10 md:mt-0 md:flex-col gap-4 justify-between md:p-10 md:border-1">
-              <Parallax offset={20} className="order-2 md:order-1">
+            <div className="flex-col-reverse md:flex-row mt-10 md:mt-0 flex gap-4 justify-between md:p-10 md:border-1">
+              <Parallax offset={20}>
                 <img src="/home/battle/win-prizes.png" alt="" />
               </Parallax>
-              <p className="text-xl md:text-right order-1 md:order-2">
+              <p className="text-xl md:text-right">
                 <FormattedText
                   transKey="common:sections.upcrate_battle.prize_example"
                   delimiter={[<b className="block font-bold" />]}

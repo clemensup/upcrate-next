@@ -13,7 +13,7 @@ export function AsFeaturedInSection() {
         <h3 className="font-display text-purple-dark text-2xl md:text-5xl md:mt-20 text-center">
           {t("sections.as_featured_in.title")}
         </h3>
-        <div className="md:flex gap-20 justify-center mt-10 md:mt-32">
+        <div className="md:flex md:space-x-20 justify-center mt-10 md:mt-32">
           <motion.a
             href="https://www.kreativsuechtig.de/wordpress/magazin/"
             target="_blank"

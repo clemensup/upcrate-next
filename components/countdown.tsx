@@ -40,7 +40,7 @@ export function Countdown() {
         {t("sections.countdown.title")}
       </h3>
 
-      <div className="flex gap-5 md:gap-20 justify-between md:justify-center">
+      <div className="flex space-x-5 md:space-x-20 justify-between md:justify-center">
         <div className="font-display text-red text-7xl md:text-countdown">
           {nextCrateWeeks}
           <div className="text-xl md:text-5xl">

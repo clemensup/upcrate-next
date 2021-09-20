@@ -70,7 +70,7 @@ export function Footer(): JSX.Element {
         style={{ gridTemplateColumns: "2fr 1fr" }}
       >
         <div>
-          <ul className="grid md:inline-flex flex-wrap gap-8">
+          <ul className="grid md:inline-flex flex-wrap md:space-x-8">
             <li>
               <a
                 className="hover:underline"

@@ -20,7 +20,7 @@ export function FooterNewsletterForm() {
     <div>
       <h4 className="text-2xl mb-4">{t("footer.newsletter_form.title")}</h4>
       <form onSubmit={handleSubmit}>
-        <label className="mb-3 flex gap-4 items-center cursor-pointer">
+        <label className="mb-3 flex space-x-4 items-center cursor-pointer">
           <input
             type="checkbox"
             name="terms"

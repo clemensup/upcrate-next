@@ -59,7 +59,7 @@ export function CookieBanner() {
           {t("cookies.settings.title")}
         </Dialog.Title>
         {t("cookies.settings.description")}
-        <div className="my-10 grid gap-4 sm:gap-8">
+        <div className="my-10 grid space-y-4 sm:space-y-8">
           <Checkbox
             name="necessary"
             value="necessary"
@@ -75,7 +75,7 @@ export function CookieBanner() {
             onChange={() => setCookieConsent(!cookieConsent)}
           />
         </div>
-        <div className="flex gap-4 sm:gap-10 text-center justify-center">
+        <div className="flex space-x-4 sm:space-x-10 text-center justify-center">
           <Button
             onClick={() => setShowCookieSettings(false)}
             className="border-purple border-2 text-purple"
@@ -100,7 +100,7 @@ export function CookieBanner() {
 
           <div className="fixed bottom-0 left-0 right-0 bg-orange p-12 z-50">
             <div className="max-w-8xl mx-auto">
-              <div className="grid grid-cols-4 gap-x-10 md:gap-x-20">
+              <div className="grid grid-cols-4 space-x-10 md:space-x-20">
                 <div className="col-span-2 text-left">
                   <h3 className="text-4xl font-display mb-4">
                     {t("cookies.title")}
@@ -109,7 +109,7 @@ export function CookieBanner() {
                     {t("cookies.description")}
                   </p>
                 </div>
-                <div className="col-span-4 md:col-span-1 flex flex-row md:flex-col md:gap-5 gap-2">
+                <div className="col-span-4 md:col-span-1 flex flex-row md:flex-col md:space-y-5 space-y-2">
                   <Button
                     className="border-4 border-purple text-purple mt-10 md:mt-0"
                     onClick={() => setShowCookieSettings(true)}
