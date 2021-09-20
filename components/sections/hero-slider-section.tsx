@@ -45,7 +45,7 @@ function Slide({
 }) {
   return (
     <div
-      className={`md:px-10 pt-6 pb-20 relative bg-${background} flex justify-center items-center`}
+      className={`md:px-10 pt-6 pb-16 relative bg-${background} flex justify-center items-center`}
     >
       <div className="hidden md:block relative">
         <CaptainCrateSvg
