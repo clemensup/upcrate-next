@@ -22,7 +22,7 @@ export function JoinTheArtCrewSection({
         <div className="md:flex align-center justify-center gap-20">
           <div className="mt-10">
             <Image
-              src="/join-the-art-crew/1.png"
+              src="/join-the-art-crew/0.png"
               layout="fixed"
               width={170}
               height={170}
@@ -36,7 +36,7 @@ export function JoinTheArtCrewSection({
           </div>
           <div className="mt-10">
             <Image
-              src="/join-the-art-crew/2.png"
+              src="/join-the-art-crew/1.png"
               layout="fixed"
               width={170}
               height={170}
@@ -50,7 +50,7 @@ export function JoinTheArtCrewSection({
           </div>
           <div className="mt-10">
             <Image
-              src="/join-the-art-crew/3.png"
+              src="/join-the-art-crew/2.png"
               layout="fixed"
               width={170}
               height={170}

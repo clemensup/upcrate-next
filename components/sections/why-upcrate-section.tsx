@@ -10,47 +10,49 @@ export function WhyUpcrateSection() {
   const { t } = useTranslation("common");
 
   return (
-    <section className="text-center text-purple-dark bg-white pt-6 pb-6 px-10 md:pt-20 md:pb-24 relative overflow-hidden">
-      <RadialGradient className="bg-purple" />
-      <div className="z-10 relative text-purple-dark">
-        <h4 className="text-green">{t("sections.why_upcrate.subtitle")}</h4>
-        <h3 className="font-display text-purple-dark text-2xl md:text-5xl">
-          {t("sections.why_upcrate.title")}
-        </h3>
-
-        {/* <CreditsBage
-          className="bg-purple-dark"
+    <>
+      <section className="text-center text-purple-dark bg-white pt-6 pb-6 px-10 md:pt-20 relative overflow-hidden">
+        <CreditsBage
+          className="bg-purple-dark top-0"
           href="https://www.instagram.com/thingsby_diana/"
         >
           by @thingsby_diana
-        </CreditsBage> */}
-        <div className="md:flex align-center justify-center gap-20 md:text-xl relative z-10 max-w-6xl mx-auto mb-32">
-          <div>
-            <Parallax className="mt-10" offset={-10}>
-              <Image src="/why-upcrate/1.png" width={414} height={331} />
-            </Parallax>
-            <p className="max-w-xs m-auto">
-              {t("sections.why_upcrate.steps.0.text")}
-            </p>
-          </div>
-          <div>
-            <Parallax className="mt-10" offset={-10}>
-              <Image src="/why-upcrate/2.png" width={414} height={331} />
-            </Parallax>
-            <p className="max-w-xs m-auto">
-              {t("sections.why_upcrate.steps.1.text")}
-            </p>
-          </div>
-          <div>
-            <Parallax className="mt-10" offset={-10}>
-              <Image src="/why-upcrate/3.png" width={388} height={311} />
-            </Parallax>
-            <p className="max-w-xs m-auto">
-              {t("sections.why_upcrate.steps.2.text")}
-            </p>
+        </CreditsBage>
+        <RadialGradient className="bg-purple" />
+        <div className="z-10 relative text-purple-dark">
+          <h4 className="text-green">{t("sections.why_upcrate.subtitle")}</h4>
+          <h3 className="font-display text-purple-dark text-2xl md:text-5xl">
+            {t("sections.why_upcrate.title")}
+          </h3>
+          <div className="md:flex align-center justify-center gap-20 md:text-xl relative z-10 max-w-6xl mx-auto mb-32 mt-10">
+            <div>
+              <Parallax className="mt-10" offset={-10}>
+                <Image src="/why-upcrate/1.png" width={414} height={331} />
+              </Parallax>
+              <p className="max-w-xs m-auto">
+                {t("sections.why_upcrate.steps.0.text")}
+              </p>
+            </div>
+            <div>
+              <Parallax className="mt-10" offset={-10}>
+                <Image src="/why-upcrate/2.png" width={414} height={331} />
+              </Parallax>
+              <p className="max-w-xs m-auto">
+                {t("sections.why_upcrate.steps.1.text")}
+              </p>
+            </div>
+            <div>
+              <Parallax className="mt-10" offset={-10}>
+                <Image src="/why-upcrate/3.png" width={388} height={311} />
+              </Parallax>
+              <p className="max-w-xs m-auto">
+                {t("sections.why_upcrate.steps.2.text")}
+              </p>
+            </div>
           </div>
         </div>
-
+      </section>
+      <section className="text-center text-purple-dark bg-white pt-6 pb-6 px-10 md:pb-24 relative">
         <div className="relative max-w-6xl mx-auto">
           <div className="z-10 relative text-purple-dark">
             <h3 className="font-display text-purple-dark text-2xl md:text-5xl md:mt-20">
@@ -110,7 +112,7 @@ export function WhyUpcrateSection() {
         <div className="z-10 relative mt-10 md:mt-0">
           <Countdown />
         </div>
-      </div>
-    </section>
+      </section>
+    </>
   );
 }

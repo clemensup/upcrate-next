@@ -77,7 +77,7 @@ export function UpcrateBattleSection() {
           </div>
 
           <div className="z-10">
-            <div className="flex flex-col gap-4 justify-between md:p-10 md:border-1">
+            <div className="flex flex-col-reverse mt-10 md:mt-0 md:flex-col gap-4 justify-between md:p-10 md:border-1">
               <Parallax offset={20} className="order-2 md:order-1">
                 <img src="/home/battle/win-prizes.png" alt="" />
               </Parallax>

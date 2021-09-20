@@ -206,7 +206,7 @@ export function HeroSliderSection() {
         </div>
       </div>
       <div className="overflow-hidden">
-        <div className="hidden md:block overflow-hidden text-white md:text-xl text-center py-5 absolute bottom-0 no-wrap w-full flex gap-20">
+        <div className="hidden md:block overflow-hidden text-white md:text-xl text-center py-5 absolute bottom-0 no-wrap w-full flex gap-20 -mt-10">
           <Ticker>
             {() => (
               <span className="mr-8">

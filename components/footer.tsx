@@ -40,7 +40,7 @@ export function Footer(): JSX.Element {
           <h4 className="mb-4 text-xl uppercase">
             {t("navigation.info_headline")}
           </h4>
-          <ul className="text-blue text-xl">
+          <ul className="list-reset leading-normal text-blue text-xl">
             <li>
               <Link href="https://shop.upcrate.art/refer-a-friend">
                 {t("navigation.refer_a_friend")}

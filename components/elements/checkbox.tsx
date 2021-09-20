@@ -31,7 +31,9 @@ export function Checkbox({
         whileTap={{ scale: disabled ? 1 : 0.8 }}
         disabled={disabled}
       />
-      <span className="text-purple-dark font-medium">{label}</span>
+      <span className="text-purple-dark font-medium flex items-center">
+        {label}
+      </span>
     </label>
   );
 }
