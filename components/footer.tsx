@@ -1,3 +1,4 @@
+import Trans from "next-translate/Trans";
 import useTranslation from "next-translate/useTranslation";
 import Image from "next/image";
 import Link from "next/link";
@@ -17,19 +18,43 @@ export function Footer(): JSX.Element {
           </h4>
           <ul className="list-reset leading-normal text-red text-xl">
             <li>
-              <Link href="/imprint">{t("navigation.imprint")}</Link>
+              <Link href="/imprint">
+                <Trans
+                  i18nKey="common:navigation.imprint"
+                  components={{
+                    1: <br />,
+                  }}
+                />
+              </Link>
             </li>
             <li>
-              <Link href="/privacy">{t("navigation.privacy")}</Link>
+              <Link href="/privacy">
+                <Trans
+                  i18nKey="common:navigation.privacy"
+                  components={{
+                    1: <br />,
+                  }}
+                />
+              </Link>
             </li>
             <li>
               <Link href="/terms-and-conditions">
-                {t("navigation.terms_and_conditions")}
+                <Trans
+                  i18nKey="common:navigation.terms_and_conditions"
+                  components={{
+                    1: <br />,
+                  }}
+                />
               </Link>
             </li>
             <li>
               <Link href="/cancellation-policy">
-                {t("navigation.cancellation_policy")}
+                <Trans
+                  i18nKey="common:navigation.cancellation_policy"
+                  components={{
+                    1: <br />,
+                  }}
+                />
               </Link>
             </li>
           </ul>
