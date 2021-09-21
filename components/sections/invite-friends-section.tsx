@@ -52,7 +52,7 @@ export function InviteFriendsSection() {
               </svg>
             </span>
           </div>
-          <div className="mt-10 z-10">
+          <div className="mt-10 md:mt-28 z-10">
             <Button
               className="bg-orange text-white hover:bg-red uppcercase"
               href="https://shop.upcrate.art/refer-a-friend/"
@@ -64,8 +64,6 @@ export function InviteFriendsSection() {
         </div>
       </div>
       <RadialGradient className="bg-purple" />
-      <RadialGradient className="bg-pink" variant="bottom-right" />
-      <RadialGradient className="bg-green" variant="top-left" />
     </section>
   );
 }

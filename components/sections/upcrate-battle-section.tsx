@@ -19,7 +19,7 @@ export function UpcrateBattleSection() {
           <h3 className="font-display text-purple-dark text-2xl md:text-5xl text-center">
             {t("sections.upcrate_battle.title")}
           </h3>
-          <p className="md:mt-5 text-purple-dark text-xl whitespace-pre-line">
+          <p className="md:mt-5 text-purple-dark text-xl whitespace-pre-line max-w-4xl mx-auto">
             {t("sections.upcrate_battle.text")}
           </p>
         </div>
