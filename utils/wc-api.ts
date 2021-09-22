@@ -2,7 +2,7 @@ import WooCommerceRestApi from "@woocommerce/woocommerce-rest-api";
 
 // TODO: use env vars
 const api = new WooCommerceRestApi({
-  url: "https://upcrate.art",
+  url: "https://shop.upcrate.art",
   consumerKey: "ck_d5165055d8c99dc5c682b59dd43155a2f14df688",
   consumerSecret: "cs_b7d992780c1c6596663752280259215cc617e926",
   version: "wc/v3",
