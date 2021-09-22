@@ -6,9 +6,7 @@ import React from "react";
 import { useWindowSize } from "../../hooks/use-window-size";
 import useTranslation from "next-translate/useTranslation";
 import { motion } from "framer-motion";
-import { useInView } from "react-intersection-observer";
-import { fetchCrates } from "../../utils/wc-api";
-import { Product } from "../../pages/crates";
+import { CratesProps, Product } from "../../pages/crates";
 import Link from "next/link";
 import { RadialGradient } from "../elements/radial-gradient";
 
@@ -109,42 +107,16 @@ export function TripleSlider({ slides }: { slides: Product[] }) {
   );
 }
 
-export function FormerCratesInARowSection() {
+export function FormerCratesInARowSection({ products }: CratesProps) {
   const { t } = useTranslation("common");
-  const [ref, isVisible] = useInView({ threshold: 0.2, triggerOnce: true });
-  const [crates, setCrates] = React.useState<Product[]>();
-  const [isFetching, setIsFetching] = React.useState(false);
-
-  const fetchData = async () => {
-    setIsFetching(true);
-    const wcData = await fetchCrates(0, 100).catch(console.error);
-
-    if (!wcData) {
-      setIsFetching(false);
-    }
-
-    setCrates(wcData.data);
-    setIsFetching(false);
-  };
-
-  React.useEffect(() => {
-    if (!isVisible || (crates && crates.length > 0)) {
-      return;
-    }
-
-    fetchData();
-  }, [isVisible]);
 
   return (
-    <section
-      className="text-center text-rose bg-purple py-6 sm:px-10 md:px-32 md:pt-20 md:pb-24 min-h-sectionBig md:min-h-sectionBigMd overflow-hidden relative z-20"
-      ref={ref}
-    >
+    <section className="text-center text-rose bg-purple py-6 sm:px-10 md:px-32 md:pt-20 md:pb-24 min-h-sectionBig md:min-h-sectionBigMd overflow-hidden relative z-20">
       <h3 className="font-display text-2xl md:text-5xl">
         {t("sections.former_crates_in_a_row.title")}
       </h3>
 
-      {isFetching ? "Loading data" : <TripleSlider slides={crates} />}
+      <TripleSlider slides={products} />
     </section>
   );
 }

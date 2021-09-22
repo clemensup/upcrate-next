@@ -1,3 +1,5 @@
+import Head from "next/head";
+import useTranslation from "next-translate/useTranslation";
 import { SubscribeNowSection, UnboxYourCreativitySection } from "../components";
 import { AsFeaturedInSection } from "../components/sections/as-featured-in-section";
 import { ConnectSloganSection } from "../components/sections/connect-slogan-section";
@@ -12,11 +14,12 @@ import { UpcrateBattleSection } from "../components/sections/upcrate-battle-sect
 import { WhatTheArtCrewSaysSection } from "../components/sections/what-the-artcrew-says-section";
 import { WhyUpcrateSection } from "../components/sections/why-upcrate-section";
 import { FormerCratesInARowSection } from "../components/sections/former-crates-in-a-row-section";
-import useTranslation from "next-translate/useTranslation";
 import { FormattedText } from "../components/elements/formatted-text";
-import Head from "next/head";
 import { AnimatedUnboxYourCreativitySection } from "../components/sections/animated-unbox-your-creativity-section";
-export default function Home() {
+import { fetchCrates } from "../utils/wc-api";
+import { CratesProps } from "./crates";
+
+export default function Home({ products }: CratesProps) {
   const { t } = useTranslation("common");
 
   return (
@@ -42,7 +45,7 @@ export default function Home() {
       <ImageSection bg="leuchtturm" variant="medium" />
       <FlowingHeads className="bg-purple" />
       <AsFeaturedInSection />
-      <FormerCratesInARowSection />
+      <FormerCratesInARowSection products={products} />
       <FeaturedArtistsWeWorkedWithSection />
       <ConnectSloganSection>
         <h4 className="text-3xl sm:text-5xl md:text-7xl text-white whitespace-pre-line">
@@ -63,3 +66,19 @@ export default function Home() {
     </>
   );
 }
+
+export const getStaticProps = async () => {
+  const wcData = await fetchCrates().catch(console.error);
+
+  if (!wcData) {
+    return {
+      notFound: true,
+    };
+  }
+
+  return {
+    props: {
+      products: wcData.data,
+    },
+  };
+};

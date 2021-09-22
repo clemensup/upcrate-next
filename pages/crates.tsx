@@ -29,7 +29,7 @@ export interface Product {
 
 export interface CratesProps {
   products: Product[];
-  pageCount: number;
+  pageCount?: number;
 }
 
 export default function Crates({ products, pageCount }: CratesProps) {
