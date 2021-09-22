@@ -63,7 +63,6 @@ export function InviteFriendsSection() {
           </div>
         </div>
       </div>
-      <RadialGradient className="bg-purple" />
     </section>
   );
 }
