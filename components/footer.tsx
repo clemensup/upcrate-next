@@ -19,42 +19,50 @@ export function Footer(): JSX.Element {
           <ul className="list-reset leading-normal text-red text-xl">
             <li>
               <Link href="/imprint">
-                <Trans
-                  i18nKey="common:navigation.imprint"
-                  components={{
-                    1: <br />,
-                  }}
-                />
+                <a>
+                  <Trans
+                    i18nKey="common:navigation.imprint"
+                    components={{
+                      1: <br />,
+                    }}
+                  />
+                </a>
               </Link>
             </li>
             <li>
               <Link href="/privacy">
-                <Trans
-                  i18nKey="common:navigation.privacy"
-                  components={{
-                    1: <br />,
-                  }}
-                />
+                <a>
+                  <Trans
+                    i18nKey="common:navigation.privacy"
+                    components={{
+                      1: <br />,
+                    }}
+                  />
+                </a>
               </Link>
             </li>
             <li>
               <Link href="/terms-and-conditions">
-                <Trans
-                  i18nKey="common:navigation.terms_and_conditions"
-                  components={{
-                    1: <br />,
-                  }}
-                />
+                <a>
+                  <Trans
+                    i18nKey="common:navigation.terms_and_conditions"
+                    components={{
+                      1: <br />,
+                    }}
+                  />
+                </a>
               </Link>
             </li>
             <li>
               <Link href="/cancellation-policy">
-                <Trans
-                  i18nKey="common:navigation.cancellation_policy"
-                  components={{
-                    1: <br />,
-                  }}
-                />
+                <a>
+                  <Trans
+                    i18nKey="common:navigation.cancellation_policy"
+                    components={{
+                      1: <br />,
+                    }}
+                  />
+                </a>
               </Link>
             </li>
           </ul>

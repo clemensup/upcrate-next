@@ -1,34 +1,40 @@
 import React from "react";
 import { Button } from "./button";
-import { useRouter } from "next/router";
 import { useCookies } from "react-cookie";
 import { Modal } from "../modal";
 import { Dialog } from "@headlessui/react";
 import { Checkbox } from "./checkbox";
 import useTranslation from "next-translate/useTranslation";
 
+export function useGoogleAnalytics() {
+  const [cookies] = useCookies(["COOKIE_CONSENT"]);
+
+  // @ts-ignore
+  gtag("consent", "update", {
+    analytics_storage: cookies["COOKIE_CONSENT"] ? "granted" : "denied",
+    ad_storage: cookies["COOKIE_CONSENT"] ? "granted" : "denied",
+  });
+}
+
 export function CookieBanner() {
   const { t } = useTranslation("common");
-  const router = useRouter();
   const [cookies, setCookie] = useCookies(["COOKIE_CONSENT"]);
   const [showCookieSettings, setShowCookieSettings] = React.useState(false);
   const [cookieConsent, setCookieConsent] = React.useState(
     cookies["COOKIE_CONSENT"]
   );
 
+  const updateGoogleAnalytics = () => {
+    // @ts-ignore
+    gtag("consent", "update", {
+      analytics_storage: cookieConsent ? "granted" : "denied",
+      ad_storage: cookieConsent ? "granted" : "denied",
+    });
+  };
+
   React.useEffect(() => {
-    if (!cookies["COOKIE_CONSENT"]) {
-      return;
-    }
-
-    cookieConsent &&
-      // @ts-ignore
-      gtag("consent", "update", {
-        analytics_storage: "granted",
-      });
-
-    router.push(router.pathname);
-  }, [cookies]);
+    updateGoogleAnalytics();
+  }, [cookieConsent]);
 
   return (
     <>
@@ -62,7 +68,10 @@ export function CookieBanner() {
         </div>
         <div className="flex space-x-4 sm:space-x-10 text-center justify-center">
           <Button
-            onClick={() => setShowCookieSettings(false)}
+            onClick={() => {
+              updateGoogleAnalytics();
+              setShowCookieSettings(false);
+            }}
             className="border-purple border-2 text-purple"
           >
             cancel
@@ -71,6 +80,7 @@ export function CookieBanner() {
             variant="outline"
             onClick={() => {
               setCookie("COOKIE_CONSENT", Boolean(cookieConsent));
+              updateGoogleAnalytics();
               setShowCookieSettings(false);
             }}
             className="bg-purple text-white border-2 border-purple"

@@ -1,24 +1,31 @@
 import { motion } from "framer-motion";
-import React from "react";
 import { Layout } from "../components";
+import Script from "next/script";
 import "../styles/globals.css";
+import { CookieBanner } from "../components/elements/cookie-banner";
 
 function MyApp({ Component, pageProps }) {
-  const ref = React.useRef();
-  const [_, setShowLoading] = React.useState(true);
-
-  React.useEffect(() => {
-    if (!ref.current) {
-      setShowLoading(true);
-    }
-    const timer = setTimeout(() => {
-      setShowLoading(false);
-    }, 3000);
-    return () => clearTimeout(timer);
-  }, []);
-
   return (
-    <div ref={ref}>
+    <div>
+      <Script
+        src={`https://www.googletagmanager.com/gtag/js?id=UA-138739008-2`}
+      />
+
+      <Script>
+        {`
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      
+      gtag('consent', 'default', {
+        'ad_storage': 'denied',
+        'analytics_storage': 'denied'
+      });
+
+      gtag('js', new Date());
+    
+      gtag('config', 'UA-138739008-2');
+  `}
+      </Script>
       <Layout>
         <motion.div
           initial={{ y: -1000, opacity: 0 }}
@@ -29,6 +36,8 @@ function MyApp({ Component, pageProps }) {
           <Component {...pageProps} />
         </motion.div>
       </Layout>
+      <div id="modal-root"></div>
+      <CookieBanner />
     </div>
   );
 }
