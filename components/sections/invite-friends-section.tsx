@@ -3,7 +3,6 @@ import useTranslation from "next-translate/useTranslation";
 import { useRandomHeads } from "../../hooks/use-random-heads";
 import { Button } from "../elements/button";
 import { Parallax } from "../elements/parallax";
-import { RadialGradient } from "../elements/radial-gradient";
 import { Caret } from "../elements/svg";
 import { UpcrateArtcrewSvg } from "../elements/svg/upcrate-artcrew-svg";
 
