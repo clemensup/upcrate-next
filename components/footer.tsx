@@ -83,7 +83,7 @@ export function Footer(): JSX.Element {
               <Link href="/contact">{t("navigation.help_contact")}</Link>
             </li>
             <li>
-              <Link href="/faqs">FAQs</Link>
+              <Link href="/faq">FAQs</Link>
             </li>
             <li>
               <Link href="https://shop.upcrate.art/account/">

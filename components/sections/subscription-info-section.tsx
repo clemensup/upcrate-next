@@ -15,14 +15,14 @@ export function SubscriptionInfoSection() {
           </h4>
           <ul className="mt-5 underline flex flex-col gap-2">
             <li>
-              <a href="/faqs">
+              <a href="/faq">
                 {t(
                   "sections.subscription_info.columns.help_contact.links.0.text"
                 )}
               </a>
             </li>
             <li>
-              <a href="/faqs">
+              <a href="/faq">
                 {t(
                   "sections.subscription_info.columns.help_contact.links.1.text"
                 )}
