@@ -21,32 +21,17 @@ export function CookieBanner() {
       return;
     }
 
+    cookieConsent &&
+      // @ts-ignore
+      gtag("consent", "update", {
+        analytics_storage: "granted",
+      });
+
     router.push(router.pathname);
   }, [cookies]);
 
   return (
     <>
-      <script
-        async
-        src="https://www.googletagmanager.com/gtag/js?id=UA-138739008-2"
-      ></script>
-      <script
-        dangerouslySetInnerHTML={{
-          __html: `
-            window.dataLayer = window.dataLayer || [];
-            
-            function gtag(){dataLayer.push(arguments);}
-            
-            gtag('consent', 'default', {
-              'analytics_storage': 'denied'
-            });  
-
-            gtag('js', new Date());
-            gtag('config', 'UA-138739008-2'); 
-          `,
-        }}
-      />
-
       <Modal
         open={showCookieSettings}
         onClose={() => setShowCookieSettings(false)}
