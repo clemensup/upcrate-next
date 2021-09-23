@@ -112,7 +112,7 @@ export function Header(): JSX.Element {
           </div>
           <div className="col-span-2 text-center">
             <Button
-              href="https://upcrate.art/subscribe"
+              href="https://shop.upcrate.art/subscriptions"
               className="lg:hidden bg-orange hover:bg-pink text-white whitespace-nowrap"
             >
               {t("subscribe_now_button_text")}
