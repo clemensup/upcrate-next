@@ -55,7 +55,7 @@ export function UpcrateAsGiftSection() {
           </motion.div>
         </Parallax>
         <Button
-          className="bg-orange text-white -mt-10"
+          className="bg-orange text-white -mt-10 z-10"
           href="https://shop.upcrate.art/product/upcrategift/"
         >
           {t("sections.upcrate_as_gift.cta")}
