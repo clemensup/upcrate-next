@@ -8,6 +8,7 @@ import useTranslation from "next-translate/useTranslation";
 import { motion } from "framer-motion";
 import { CratesProps, Product } from "../../pages/crates";
 import Link from "next/link";
+import Image from "next/image";
 import { RadialGradient } from "../elements/radial-gradient";
 
 export function SliderArrow({
@@ -94,7 +95,7 @@ export function TripleSlider({ slides }: { slides: Product[] }) {
           >
             <Link href={crate.permalink}>
               <div>
-                <img src={crate.images[0].src} />
+                <Image src={crate.images[0].src} width={400} height={400} />
                 <p className="pt-2">{crate.name}</p>
               </div>
             </Link>

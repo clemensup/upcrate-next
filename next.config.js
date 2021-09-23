@@ -1,9 +1,11 @@
 const nextTranslate = require("next-translate");
-module.exports = {
+
+module.exports = nextTranslate({
   i18n: {
     locales: ["en"],
     defaultLocale: "en",
   },
-};
-
-module.exports = nextTranslate();
+  images: {
+    domains: ["shop.upcrate.art"],
+  },
+});
