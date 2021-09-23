@@ -120,6 +120,7 @@ export function Header(): JSX.Element {
           </div>
           <div className="col-span-1">
             <button
+              style={{ paddingTop: 10, marginTop: -6 }}
               className="lg:hidden absolute right-2 top-4"
               onClick={() => setIsMenuActive(!isMenuActive)}
             >
