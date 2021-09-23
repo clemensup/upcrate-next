@@ -171,7 +171,7 @@ export function HeroSliderSection() {
                 <Button
                   variant="default"
                   className="bg-purple text-white"
-                  href="https://shop.upcrate.art/subscribe"
+                  href="https://shop.upcrate.art/subscriptions"
                 >
                   {t("subscribe_now_button_text")}
                 </Button>

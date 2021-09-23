@@ -136,7 +136,7 @@ export function Header(): JSX.Element {
                 </HeaderNavLink>
               </li>
               <li className="lg:pr-5">
-                <HeaderNavLink href="https://shop.upcrate.art">
+                <HeaderNavLink href="https://shop.upcrate.art/shop">
                   {t("navigation.shop")}
                 </HeaderNavLink>
               </li>
