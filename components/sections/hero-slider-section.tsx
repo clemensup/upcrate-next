@@ -170,8 +170,8 @@ export function HeroSliderSection() {
               >
                 <Button
                   variant="default"
-                  className="bg-purple text-white"
-                  href="https://shop.upcrate.art/subscriptions"
+                  className="bg-purple text-white "
+                  href="/subscriptions"
                 >
                   {t("subscribe_now_button_text")}
                 </Button>
@@ -195,7 +195,7 @@ export function HeroSliderSection() {
               >
                 <Button
                   variant="default"
-                  className="bg-pink text-white text-xl"
+                  className="bg-pink text-white text-xl mt-5 md:mt-0"
                   href="https://shop.upcrate.art/de/product/upcrategift/"
                 >
                   {t("give_a_gift_button_text")}
