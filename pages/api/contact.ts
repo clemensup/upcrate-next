@@ -36,12 +36,14 @@ const mailer = ({ senderMail, name, text, recipientMail }) => {
   const from =
     name && senderMail ? `${name} <${senderMail}>` : `${name || senderMail}`;
   const message = {
-    from,
+    from: process.env.NEXT_PUBLIC_RECIPIENT_MAIL,
     to: `${recipientMail}`,
     subject: `New message from ${from}`,
     text,
     replyTo: from,
   };
+
+  console.log(message);
 
   return new Promise((resolve, reject) => {
     transporter.sendMail(message, (error, info) =>
