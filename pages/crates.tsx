@@ -86,6 +86,6 @@ export async function getStaticProps() {
   const data = await getPreviousCrates();
 
   return {
-    props: { products: data.edges },
+    props: { products: data.edges || [] },
   };
 }

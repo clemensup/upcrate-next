@@ -1,13 +1,9 @@
 import useTranslation from "next-translate/useTranslation";
 import React from "react";
-import { fetchCrates } from "../utils/wc-api";
 import { RadialGradient } from "./elements/radial-gradient";
-import { Caret } from "./elements/svg";
 import { CratesProps } from "./../pages/crates";
-import { useFirstRender } from "../hooks/use-first-render";
 import { AnimatePresence, motion } from "framer-motion";
 import Trans from "next-translate/Trans";
-
 const transition = { duration: 0.7, ease: [0.43, 0.13, 0.23, 0.96] };
 
 const thumbnailVariants = {
@@ -25,7 +21,7 @@ const frameVariants = {
 };
 
 const imageVariants = {
-  hover: { scale: 0, opacity: 0 },
+  hover: { scale: 1.2, opacity: 1 },
 };
 
 const zoomeImageVariants = {
@@ -33,40 +29,15 @@ const zoomeImageVariants = {
   hover: { scale: 1.2, opacity: 1 },
 };
 
-export function CratesList({ products, pageCount }: CratesProps) {
+export function CratesList({ products }: CratesProps) {
   const { t } = useTranslation("common");
-  const [page, setPage] = React.useState(1);
-  const [state, setState] = React.useState(products);
-  const [isFetching, setIsFetching] = React.useState(false);
 
-  const listRef = React.useRef(null);
-  const firstRender = useFirstRender();
-
-  const fetchMoreProducts = async () => {
-    return console.log("test123");
-    setIsFetching(true);
-    const nextProducts = await fetchCrates((page - 1) * 9).catch(console.error);
-    setState(nextProducts.data);
-    setIsFetching(false);
-
-    if (!firstRender) {
-      listRef.current.scrollIntoView();
-    }
-  };
-
-  React.useEffect(() => {
-    fetchMoreProducts();
-  }, [page]);
-
-  if (!state) {
+  if (products.length === 0) {
     return <div>{t("pages.crates.crates_list.no_products_message")}</div>;
   }
 
   return (
-    <section
-      className="min-h-sectionBig md:min-h-sectionBigMd p-10 md:p-20 pt-20 -mt-20 md:-mt-10 relative overflow-hidden"
-      ref={listRef}
-    >
+    <section className="min-h-sectionBig md:min-h-sectionBigMd p-10 md:p-20 pt-20 -mt-20 md:-mt-10 relative overflow-hidden">
       <RadialGradient className="bg-orange" />
       <div className="z-10 relative text-purple-dark">
         <h3 className="font-display text-center text-2xl md:text-5xl">
@@ -90,7 +61,7 @@ export function CratesList({ products, pageCount }: CratesProps) {
             variants={{ exit: { transition: { staggerChildren: 0.1 } } }}
           >
             <AnimatePresence>
-              {state.map(({ node }) => {
+              {products.map(({ node }) => {
                 return (
                   <li key={node.id} className="relative">
                     <motion.div variants={thumbnailVariants}>
@@ -135,10 +106,11 @@ export function CratesList({ products, pageCount }: CratesProps) {
                         {node.name}
                       </h5>
                       <div className="flex justify-between mt-2">
-                        <span className="md:text-xl">
-                          {node.regular_price} €
-                        </span>
-                        {node.stock_status === "outofstock" && (
+                        <span
+                          className="md:text-xl"
+                          dangerouslySetInnerHTML={{ __html: node.price }}
+                        />
+                        {node.stockStatus === "OUT_OF_STOCK" && (
                           <span className="font-display md:text-red-light text-xs absolute md:relative right-0 p-1 md:p-0 bg-red md:bg-transparent text-white top-0 md:text-xl">
                             {t("pages.crates.crates_list.stock_status")}
                           </span>
@@ -151,7 +123,7 @@ export function CratesList({ products, pageCount }: CratesProps) {
             </AnimatePresence>
           </motion.ul>
 
-          <div className="grid grid-cols-2 gap-4 md:gap-0 md:flex justify-between items-center w-full">
+          {/* <div className="grid grid-cols-2 gap-4 md:gap-0 md:flex justify-between items-center w-full">
             <motion.button
               className="w-full disabled:opacity-50 font-display p-3 pt-2 pb-3 text-xs md:text-3xl inline-flex items-center content-center gap-4 mt-2 md:mt-5 max-w-max mx-auto bg-purple text-white hover:bg-pink"
               onClick={() => setPage(page - 1)}
@@ -180,7 +152,7 @@ export function CratesList({ products, pageCount }: CratesProps) {
               {t("pages.crates.crates_list.next_page_button")}
               <Caret />
             </motion.button>
-          </div>
+          </div> */}
         </div>
       </div>
       <RadialGradient className="bg-green" variant="bottom" />
