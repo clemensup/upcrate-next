@@ -8,7 +8,7 @@ export function SubscriptionInfoSection() {
 
   return (
     <section>
-      <div className="max-w-6xl mx-auto grid grid-cols-3 md:pt-10 md:pb-16 text-purple-dark">
+      <div className="max-w-6xl mx-auto grid grid-cols-3 md:pt-10 md:pb-16 text-purple-dark p-5 md:p-0">
         <div className="col-span-3">
           <h4 className="font-bold">
             {t("sections.subscription_info.columns.help_contact.title")}
@@ -44,7 +44,7 @@ export function SubscriptionInfoSection() {
             </li>
           </ul>
         </div>
-        <div className="col-span-1 md:mt-12">
+        <div className="col-span-3 md:col-span-1 mt-10 md:mt-12">
           <h4 className="font-bold uppercase text-2xl -mb-5">
             {" "}
             {t("sections.subscription_info.columns.shipping.title")}
@@ -55,7 +55,7 @@ export function SubscriptionInfoSection() {
             height={95}
           />
         </div>
-        <div className="col-span-1 md:mt-12">
+        <div className="col-span-3 md:col-span-1 mt-10 md:mt-12">
           <h4 className="font-bold uppercase text-2xl">
             {" "}
             {t("sections.subscription_info.columns.payment_methods.title")}
@@ -83,7 +83,7 @@ export function SubscriptionInfoSection() {
             />
           </div>
         </div>
-        <div className="col-span-1 md:mt-12">
+        <div className="col-span-3 md:col-span-1 mt-10 md:mt-12 mb-20 md:mb-0">
           <h4 className="font-bold uppercase text-2xl">
             {t("sections.subscription_info.columns.benefits.title")}
           </h4>
