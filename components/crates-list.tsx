@@ -43,7 +43,7 @@ export function CratesList({ products, pageCount }: CratesProps) {
   const firstRender = useFirstRender();
 
   const fetchMoreProducts = async () => {
-    return console.log("test");
+    return console.log("test123");
     setIsFetching(true);
     const nextProducts = await fetchCrates((page - 1) * 9).catch(console.error);
     setState(nextProducts.data);
