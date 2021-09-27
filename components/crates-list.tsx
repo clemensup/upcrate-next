@@ -43,6 +43,7 @@ export function CratesList({ products, pageCount }: CratesProps) {
   const firstRender = useFirstRender();
 
   const fetchMoreProducts = async () => {
+    return console.log("test");
     setIsFetching(true);
     const nextProducts = await fetchCrates((page - 1) * 9).catch(console.error);
     setState(nextProducts.data);
@@ -89,9 +90,9 @@ export function CratesList({ products, pageCount }: CratesProps) {
             variants={{ exit: { transition: { staggerChildren: 0.1 } } }}
           >
             <AnimatePresence>
-              {state.map((product) => {
+              {state.map(({ node }) => {
                 return (
-                  <li key={product.id} className="relative">
+                  <li key={node.id} className="relative">
                     <motion.div variants={thumbnailVariants}>
                       <motion.div
                         variants={frameVariants}
@@ -100,42 +101,44 @@ export function CratesList({ products, pageCount }: CratesProps) {
                         whileHover="hover"
                         initial="initial"
                       >
-                        <a href={product.permalink}>
-                          {product.images && product.images.length > 0 && (
+                        <a href={node.link}>
+                          {node.image && (
                             <div
                               className="relative"
                               style={{ paddingBottom: "100%" }}
                             >
                               <motion.img
                                 className="absolute top-0 left-0 right-0 bottom-0"
-                                src={product.images[0].src}
+                                src={node.image.mediaItemUrl}
                                 width={340}
                                 height={340}
                                 variants={imageVariants}
                                 transition={transition}
                               />
 
-                              <motion.img
-                                className="absolute top-0 left-0 right-0 bottom-0 z-0"
-                                src={product.acf.zoom_image}
-                                width={340}
-                                height={340}
-                                variants={zoomeImageVariants}
-                                transition={transition}
-                              />
+                              {node.acf && (
+                                <motion.img
+                                  className="absolute top-0 left-0 right-0 bottom-0 z-0"
+                                  src={node.acf.zoom_image}
+                                  width={340}
+                                  height={340}
+                                  variants={zoomeImageVariants}
+                                  transition={transition}
+                                />
+                              )}
                             </div>
                           )}
                         </a>
                       </motion.div>
 
                       <h5 className="text-lg md:text-2xl font-bold">
-                        {product.name}
+                        {node.name}
                       </h5>
                       <div className="flex justify-between mt-2">
                         <span className="md:text-xl">
-                          {product.regular_price} €
+                          {node.regular_price} €
                         </span>
-                        {product.stock_status === "outofstock" && (
+                        {node.stock_status === "outofstock" && (
                           <span className="font-display md:text-red-light text-xs absolute md:relative right-0 p-1 md:p-0 bg-red md:bg-transparent text-white top-0 md:text-xl">
                             {t("pages.crates.crates_list.stock_status")}
                           </span>

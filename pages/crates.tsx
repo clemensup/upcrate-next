@@ -8,7 +8,7 @@ import {
 } from "../components";
 import { CratesList } from "../components/crates-list";
 import { JoinTheArtCrewSection } from "../components/sections/join-the-art-crew-section";
-import { fetchCrates } from "../utils/wc-api";
+import { getPreviousCrates } from "../lib/api";
 
 export interface ProductImage {
   id: number;
@@ -28,7 +28,7 @@ export interface Product {
 }
 
 export interface CratesProps {
-  products: Product[];
+  products: any[];
   pageCount?: number;
 }
 
@@ -82,19 +82,10 @@ export default function Crates({ products, pageCount }: CratesProps) {
   );
 }
 
-export const getStaticProps = async () => {
-  const wcData = await fetchCrates().catch(console.error);
-
-  if (!wcData) {
-    return {
-      notFound: true,
-    };
-  }
+export async function getStaticProps() {
+  const data = await getPreviousCrates();
 
   return {
-    props: {
-      products: wcData.data,
-      pageCount: parseInt(wcData.headers["x-wp-totalpages"], 10),
-    },
+    props: { products: data.edges },
   };
-};
+}
