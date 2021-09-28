@@ -14,7 +14,7 @@
     "imprint": "Impressum",
     "privacy": "Datenschutz",
     "terms_and_conditions": "Allgemeine<1></1>Geschäftsbedingungen",
-    "cancellation_policy": "Stornierungs<1></1>bedingungen",
+    "cancellation_policy": "Widerrufs<1></1>belehrung",
     "info_headline": "info",
     "refer_a_friend": "Freund:in empfehlen",
     "help_contact": "Hilfe / Kontakt",
@@ -109,16 +109,16 @@
           "text": "hat auf seinen Reisen kreuz und quer durch die sieben Weltmeere die <1>unterschiedlichsten Kunstmaterialien</1> und ihre Hersteller kennengelernt. Dabei ist er immer auf der Suche nach neuen Verbindungen und Schätzen für euch - <2>seine art crew</2>."
         },
         {
-          "title": "...liefert monatlich das Beste...",
+          "title": "...liefert monatlich das Beste",
           "text": "...aus einer handverlesenen Auswahl neuer, mysteriöser Materialien zu euch. Diese werden liebevoll in den Crates zusammengestellt, um unserer <1>internationalen Crew</1> die beste Qualität zum Ausprobieren neuer Techniken und Marken zum kleinsten Preis zu garantieren. Jede Box bringt dabei eine <2>neue Überraschung</2> zu euch nach Hause!"
         },
         {
           "title": "…für seine art crew",
-          "text": "Upcrate ist nicht nur dazu da, dir versteckte Schätze an innovativer Materialien vorzustellen, sondern auch, um deinen Horizont zu erweitern und dir die Möglichkeit zu geben, dich kreativ auszuleben. Zusätzlich zu den <1>neuen Materialien</1> erhältst du ein Magazin voller themenbezogener Tipps, Challenges und Möglichkeiten, dich online mit <2>anderen Künstlern auszutauschen</2> und anzufreunden, um gemeinsam besser zu werden. Einer für alle und alle für einen!"
+          "text": "Upcrate ist nicht nur dazu da, dir versteckte Schätze an innovativen Materialien vorzustellen, sondern auch, um deinen Horizont zu erweitern und dir die Möglichkeit zu geben, dich kreativ auszuleben. Zusätzlich zu den <1>neuen Materialien</1> erhältst du ein Magazin voller themenbezogener Tipps, Challenges und Möglichkeiten, dich online mit <2>anderen Künstlern auszutauschen</2> und anzufreunden, um gemeinsam besser zu werden. Einer für alle und alle für einen!"
         },
         {
-          "title": "Hinter Captain Crate...",
-          "text": "...steht ein Team aus Kunstbegeisterten, Designer:innen und Künstler:innen. <1>Captain Crate</1> selbst wurde von unserem Designer Manuel aus Hamburg zum Leben erweckt, der mit seinen kreativen Einfällen und Gespür für Design alles rund um Upcrate gestaltet. Clemens ist der Gründer von Upcrate und bringt durch seine Verbindungen zu vielen globalen Kunstmaterialherstellern die Magie und Organisation mit in die Box. Ein <2>ausgewähltes Team von Künstler:innen</2> testet und kurartiert die Materialien für Upcrate, um sicherzustellen, das alles miteinander harmoniert und ihr eurer Kreativität freien Lauf lassen könnt!"
+          "title": "Hinter Captain Crate",
+          "text": "...steht ein Team aus Kunstbegeisterten, Designer:innen und Künstler:innen. <1>Captain Crate</1> selbst wurde von unserem Designer Manuel aus Hamburg zum Leben erweckt, der mit seinen kreativen Einfällen und Gespür für Design alles rund um Upcrate gestaltet. Clemens ist der Gründer von Upcrate und bringt durch seine Verbindungen zu vielen globalen Kunstmaterialherstellern die Magie und Organisation mit in die Box. Ein <2>ausgewähltes Team von Künstler:innen</2> testet und kuratiert die Materialien für Upcrate, um sicherzustellen, das alles miteinander harmoniert und ihr eurer Kreativität freien Lauf lassen könnt!"
         }
       ],
       "chosen_one_section": {
@@ -149,10 +149,10 @@
     },
     "cancellation_policy": {
       "ogDescription": "Monatlich neue Kunstmaterialien in einer Überraschungsbox",
-      "title": "Stornierungs<1></1>bedingungen",
-      "withdrawal_title": "Rückzug",
+      "title": "Widerrufs<1></1>belehrung",
+      "withdrawal_title": "Widerruf",
       "withdrawal_text": "<1>Sie haben das Recht, binnen vierzehn Tagen ohne Angabe von Gründen diesen Vertrag zu widerrufen. Die Widerrufsfrist beträgt vierzehn Tage ab dem Tag  Ab dem Sie oder ein von Ihnen benannter Dritter, der nicht Beförderer ist, die Ware in Besitz genommen oder in Besitz genommen hat, sofern Sie eine oder mehrere Waren in einer einzigen Bestellung bestellt haben und diese einheitlich geliefert werden oder geliefert werden, oder wenn Sie oder ein von Ihnen benannter Dritter, der nicht Beförderer ist, die letzte Ware in Besitz genommen hat oder in Besitz genommen hat, wenn Sie mehrere Waren in einer einzigen Bestellung bestellt haben und diese getrennt geliefert werden, oder  wenn Sie oder ein von Ihnen benannter Dritter, der nicht der Beförderer ist, die letzte Teilsendung oder das letzte Stück in Besitz genommen haben oder in Besitz genommen haben, sofern Sie ein Produkt bestellt haben, das in mehreren Sendungen oder Stücken geliefert wird, oder  wenn Sie oder ein von Ihnen benannter Dritter, der nicht der Beförderer ist, die erste Ware in Besitz genommen haben oder haben, sofern Sie einen Vertrag über die regelmäßige Lieferung von Waren für einen bestimmten Zeitraum abgeschlossen haben.\nUm Ihr Widerrufsrecht auszuüben, müssen Sie uns (Clemens Roosen, Suhrsweg 3, 22305 Hamburg, Deutschland, E-Mail: info@upcrate.art) mittels einer eindeutigen Erklärung (z.B. ein mit der Post versandter Brief, e -Mail) über Ihren Entschluss, diesen Vertrag zu widerrufen.\nSie können dafür das beigefügte Muster-Widerrufsformular verwenden, das jedoch nicht vorgeschrieben ist.  Zur Wahrung der Widerrufsfrist reicht es aus, dass Sie die Mitteilung über die Ausübung des Widerrufsrechts vor Ablauf der Widerrufsfrist absenden.</1>",
-      "consequences_title": "Folgen",
+      "consequences_title": "Folgen des Widerrufs",
       "consequences_text": "<1>Wenn Sie von diesem Vertrag zurücktreten, haben wir alle Zahlungen, die wir von Ihnen erhalten haben, einschließlich der Versandkosten (mit Ausnahme der zusätzlichen Kosten, die sich aus der Wahl einer anderen Versandart als der von uns angebotenen günstigsten Standardlieferung ergeben) sofort und zum angegebenen Zeitpunkt zurückgezahlt Für diese Rückzahlung verwenden wir dasselbe Zahlungsmittel, das Sie bei der ursprünglichen Transaktion eingesetzt haben, es sei denn, mit Ihnen wurde etwas anderes vereinbart wegen dieser Rückzahlung werden Ihnen Entgelte berechnet.\nWir können die Rückzahlung verweigern, bis wir die Waren wieder zurückerhalten haben oder bis Sie den Nachweis erbracht haben, dass Sie die Waren zurückgesandt haben, je nachdem, welches der frühere Zeitpunkt ist.  Sie müssen die Waren unverzüglich, spätestens jedoch binnen vierzehn Tagen ab dem Tag, an dem Sie uns über den Widerruf dieses Vertrags unterrichten, an uns zurücksenden.\nDie Frist ist gewahrt, wenn Sie die Ware vor Ablauf der Frist von vierzehn Tagen absenden. Sie tragen die unmittelbaren Kosten der Rücksendung der Waren.  Sie müssen für einen etwaigen Wertverlust der Waren nur aufkommen, wenn dieser Wertverlust auf einen zur Prüfung der Beschaffenheit, Eigenschaften und Funktionsweise der Waren nicht notwendigen Umgang mit ihnen zurückzuführen ist.</1>"
     },
     "terms_and_conditions": {
@@ -166,7 +166,7 @@
   },
   "sections": {
     "join_the_artcrew": {
-      "title": "komm an Bord",
+      "title": "Komm an Bord",
       "steps": [
         {
           "title": "Abonnieren",
@@ -300,7 +300,7 @@
           "text": "Falls du deine Box geliebt hast und dich schon auf die nächste freust - lehne dich zurück und entspanne dich, denn dein Abonnement verlängert sich ganz automatisch."
         },
         {
-          "text": "loggst. Daraufhin wird kein Geld mehr von deinem Account abgezogen, bis deine Seekrankheit verflogen ist und du dich dazu entscheidest, wieder an Bord der artcrew zu kommen!"
+          "text": "Bei Bedarf kannst du dein Abonnement jederzeit kündigen, wenn du dich in deinen Account einloggst. Daraufhin wird kein Geld mehr von deinem Account abgezogen, bis deine Seekrankheit verflogen ist und du dich dazu entscheidest, wieder an Bord der artcrew zu kommen!"
         }
       ],
       "ready_set_draw": "Ready\nSet\nDraw!"
@@ -388,7 +388,7 @@
           "text": "Nimm über Upcrates soziale Medien an Challenges und Giveaways teil und gewinne tolle Preise"
         },
         {
-          "text": "Erweitere deine künstlerischen Fähigkeiten und lerne von professionellen Künstlern"
+          "text": "Erweitere deine künstlerischen Fähigkeiten und lerne von professionellen Künstler:innen"
         },
         {
           "text": "Nutze deine aufeinander abgestimmten Materialien für deine eigenen Kunstprojekte"
