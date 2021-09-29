@@ -1,5 +1,6 @@
 import useTranslation from "next-translate/useTranslation";
 import React from "react";
+import { Checkbox } from ".";
 import { sendMail } from "../utils/send-mail";
 import { FormattedText } from "./elements/formatted-text";
 
@@ -31,7 +32,9 @@ export function ContactForm() {
       setFormStatus(undefined);
     }
 
-    if (event.target.type === "checkbox") {
+    console.log(event.target.name);
+
+    if (event.target.name === "acceptTerms") {
       return setFormData({
         ...formData,
         [event.target.name]: !formData[event.target.name],
@@ -59,9 +62,7 @@ export function ContactForm() {
 
   const submitForm = async (event) => {
     event.preventDefault();
-
     setIsLoading(true);
-
     setFormStatus("submitted");
 
     //TODO: validate
@@ -104,12 +105,13 @@ export function ContactForm() {
       </p>
 
       <div className="mt-10">
+        <p className="text-lg mb-5">{t("forms.intro")}</p>
         {formStatus !== "success" && (
           <form onSubmit={(event) => submitForm(event)}>
             <div className="flex flex-col gap-5 md:grid md:grid-cols-2 md:gap-y-10 md:gap-x-20 justify-between text-left">
               <div>
                 <label className="font-bold flex flex-col">
-                  {t("forms.name_label")}
+                  {t("forms.name_label")}*
                   <input
                     type="text"
                     className="font-normal text-base p-4"
@@ -124,7 +126,7 @@ export function ContactForm() {
               </div>
               <div>
                 <label className="font-bold flex flex-col">
-                  {t("forms.email_label")}
+                  {t("forms.email_label")}*
                   <input
                     type="email"
                     className="font-normal text-base p-4"
@@ -140,7 +142,7 @@ export function ContactForm() {
 
               <div className="col-span-2">
                 <label className="font-bold flex flex-col">
-                  {t("forms.message_label")}
+                  {t("forms.message_label")}*
                   <textarea
                     className="font-normal text-base p-4"
                     rows={5}
@@ -156,20 +158,22 @@ export function ContactForm() {
 
               <div className="col-span-2">
                 <div className="text-xl flex align-center gap-4">
-                  <input
-                    type="checkbox"
-                    id="accept-terms"
-                    className="cursor-pointer h-16 md:h-6 w-16 md:w-6"
+                  <Checkbox
                     name="acceptTerms"
+                    label={
+                      <FormattedText
+                        transKey="common:forms.privacy_label"
+                        delimiter={[
+                          <a
+                            className="underline inline-block mx-2"
+                            href="/privacy"
+                          />,
+                        ]}
+                      />
+                    }
                     checked={formData.acceptTerms}
                     onChange={handleInputChange}
                   />
-                  <label htmlFor="accept-terms" className="cursor-pointer">
-                    <FormattedText
-                      transKey="common:forms.privacy_label"
-                      delimiter={[<a className="underline" href="/privacy" />]}
-                    />
-                  </label>
                 </div>
 
                 {formStatus === "error" && !formData.acceptTerms && (

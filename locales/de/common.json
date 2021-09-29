@@ -27,6 +27,7 @@
   "cancel": "Abbrechen",
   "save": "Speichern",
   "forms": {
+    "intro": "Bitte geben Sie Ihre Daten ein. Die Pflichtangaben sind mit einem * gekennzeichnet.",
     "name_label": "Dein Name",
     "name_error": "Bitte trage deinen Namen ein.",
     "email_label": "Deine E-mail Adresse",
@@ -37,7 +38,7 @@
     "success_message": "Danke Danke.\nWir malen noch kurz zu Ende und antworten dir dann:)",
     "terms_label": "Ich habe die <1>Allgemeine Geschäftsbedingungen</1> gelesen und akzeptiert",
     "terms_error": "Bitte akzeptiere unsere allgemeinen Geschäftsbedingungen.",
-    "privacy_label": "Mit dem Eintragen deiner E-Mail Adresse nimmst du unsere <1>Datenschutzbestimmungen.</1> an"
+    "privacy_label": "Mit dem Eintragen deiner E-Mail Adresse nimmst du unsere <1>Datenschutzbestimmungen</1> an.*"
   },
 
   "footer": {

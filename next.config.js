@@ -25,6 +25,11 @@ module.exports = nextTranslate({
         destination: "https://shop.upcrate.art/account",
         permanent: true,
       },
+      {
+        source: "/terms",
+        destination: "/terms-and-conditions",
+        permanent: true,
+      },
     ];
   },
 });
