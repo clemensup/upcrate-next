@@ -47,7 +47,7 @@ export default function Crates({ products, pageCount }: CratesProps) {
 
         <meta
           property="og:description"
-          content={t("pages.crates.ogDescription")}
+          content={t("pages.crates.og_description")}
         />
       </Head>
       <HeroSection

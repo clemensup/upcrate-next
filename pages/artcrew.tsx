@@ -30,7 +30,7 @@ export default function ArtCrew() {
 
         <meta
           property="og:description"
-          content={t("pages.artcrew.ogDescription")}
+          content={t("pages.artcrew.og_description")}
         />
       </Head>
       <HeroSection

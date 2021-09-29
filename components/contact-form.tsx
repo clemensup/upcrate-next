@@ -32,8 +32,6 @@ export function ContactForm() {
       setFormStatus(undefined);
     }
 
-    console.log(event.target.name);
-
     if (event.target.name === "acceptTerms") {
       return setFormData({
         ...formData,

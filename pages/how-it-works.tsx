@@ -26,7 +26,7 @@ export default function HowItWorks() {
 
         <meta
           property="og:description"
-          content={t("pages.how_it_works.ogDescription")}
+          content={t("pages.how_it_works.og_description")}
         />
       </Head>
       <HeroSection

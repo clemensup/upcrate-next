@@ -18,7 +18,7 @@ export default function Privacy() {
 
         <meta
           property="og:description"
-          content={t("pages.privacy.ogDescription")}
+          content={t("pages.privacy.og_description")}
         />
       </Head>
       <section className="p-10 md:p-20 text-purple-dark pb-20 md:pb-48 relative overflow-hidden">

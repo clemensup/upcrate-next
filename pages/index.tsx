@@ -30,7 +30,7 @@ export default function Home({ products }: CratesProps) {
 
         <meta
           property="og:description"
-          content={t("pages.home.ogDescription")}
+          content={t("pages.home.og_description")}
         />
       </Head>
       <HeroSliderSection />

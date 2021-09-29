@@ -14,7 +14,7 @@ export default function Faqs() {
 
         <meta
           property="og:description"
-          content={t("pages.faqs.ogDescription")}
+          content={t("pages.faqs.og_description")}
         />
       </Head>
       <HeroSection

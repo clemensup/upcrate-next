@@ -20,7 +20,7 @@ export default function Newsletter() {
 
         <meta
           property="og:description"
-          content={t("pages.newsletter.ogDescription")}
+          content={t("pages.newsletter.og_description")}
         />
       </Head>
       <HeroSection

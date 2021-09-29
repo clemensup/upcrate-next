@@ -36,7 +36,7 @@ export default function About() {
 
         <meta
           property="og:description"
-          content={t("pages.about.ogDescription")}
+          content={t("pages.about.og_description")}
         />
       </Head>
       <HeroSection

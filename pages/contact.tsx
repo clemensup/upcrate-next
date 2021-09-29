@@ -20,7 +20,7 @@ export default function Contact() {
 
         <meta
           property="og:description"
-          content={t("pages.contact.ogDescription")}
+          content={t("pages.contact.og_description")}
         />
       </Head>
       <section className="p-10 md:p-10 relative overflow-hidden">

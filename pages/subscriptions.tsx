@@ -24,7 +24,7 @@ export default function Subscriptions() {
 
         <meta
           property="og:description"
-          content={t("pages.subscriptions.ogDescription")}
+          content={t("pages.subscriptions.og_description")}
         />
       </Head>
       <SubscribeNowSection />

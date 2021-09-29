@@ -18,7 +18,7 @@ export default function Imprint() {
 
         <meta
           property="og:description"
-          content={t("pages.imprint.ogDescription")}
+          content={t("pages.imprint.og_description")}
         />
       </Head>
       <section className="text-center md:p-20 text-purple-dark relative overflow-hidden">
@@ -42,10 +42,13 @@ export default function Imprint() {
           Germany
           <br />
           <br />
-          E-Mail:{" "}
-          <a href="mailto:support@upcrate.art" className="hover:underline">
-            support@upcrate.art
-          </a>
+          {/* <p>{t("pages.imprint.phone_label")}: </p> */}
+          <p>
+            E-Mail:{" "}
+            <a href="mailto:support@upcrate.art" className="hover:underline">
+              support@upcrate.art
+            </a>
+          </p>
           <br />
           <br />
           VAT Id. No.: DE257896061

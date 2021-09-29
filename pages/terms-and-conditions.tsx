@@ -18,7 +18,7 @@ export default function CancellationPolicy() {
 
         <meta
           property="og:description"
-          content={t("pages.terms.ogDescription")}
+          content={t("pages.terms.og_description")}
         />
       </Head>
       <section className="p-10 md:p-20 text-purple-dark pb-20 md:pb-48 relative overflow-hidden">
@@ -169,8 +169,14 @@ export default function CancellationPolicy() {
               <br />
               <br />
               The European Commission provides a platform for online dispute
-              resolution (OS). The platform can be found at
-              http://ec.europa.eu/consumers/odr/
+              resolution (OS). The platform can be found at{" "}
+              <a
+                className="underline"
+                href="https://ec.europa.eu/consumers/odr"
+                target="_blank"
+              >
+                https://ec.europa.eu/consumers/odr
+              </a>
               <h2 className="text-2xl font-bold mt-10 md:mt-8">
                 Applicable law
               </h2>
@@ -182,7 +188,15 @@ export default function CancellationPolicy() {
                 ODR-VO and § 36 VSBG:
               </h3>
               The European Commission provides an online dispute resolution (OS)
-              platform available at https://ec.europa.eu/consumers/odr.
+              platform available at{" "}
+              <a
+                className="underline"
+                href="https://ec.europa.eu/consumers/odr"
+                target="_blank"
+              >
+                https://ec.europa.eu/consumers/odr
+              </a>
+              .
               <br />
               We are not obligated and unwilling to participate in a dispute
               settlement procedure before a consumer arbitration board.
@@ -341,8 +355,15 @@ export default function CancellationPolicy() {
               <br />
               <br />
               Die Europäische Kommission bietet eine Plattform für die
-              Online-Streitbeilegung (OS). Die Plattform ist unter
-              http://ec.europa.eu/consumers/odr/ zu finden.
+              Online-Streitbeilegung (OS). Die Plattform ist unter{" "}
+              <a
+                className="underline"
+                href="https://ec.europa.eu/consumers/odr"
+                target="_blank"
+              >
+                https://ec.europa.eu/consumers/odr
+              </a>{" "}
+              zu finden.
               <h2 className="text-2xl font-bold mt-10 md:mt-8">
                 Anwendbares Recht
               </h2>
@@ -354,8 +375,15 @@ export default function CancellationPolicy() {
                 36 VSBG:
               </h3>
               Die Europäische Kommission bietet eine Online-Plattform zur
-              Streitbeilegung (OS) an, die
-              unter https://ec.europa.eu/consumers/odr verfügbar ist.
+              Streitbeilegung (OS) an, die unter 
+              <a
+                className="underline"
+                href="https://ec.europa.eu/consumers/odr"
+                target="_blank"
+              >
+                https://ec.europa.eu/consumers/odr
+              </a>{" "}
+              verfügbar ist.
               <br />
               Wir sind nicht verpflichtet und nicht gewillt, an einem
               Streitbeilegungsverfahren vor einer Verbraucherschlichtungsstelle

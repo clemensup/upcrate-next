@@ -19,7 +19,7 @@ export default function CancellationPolicy() {
 
         <meta
           property="og:description"
-          content={t("pages.cancellation_policy.ogDescription")}
+          content={t("pages.cancellation_policy.og_description")}
         />
       </Head>
       <section className="p-10 md:p-20 text-purple-dark pb-20 md:pb-48 relative overflow-hidden">
