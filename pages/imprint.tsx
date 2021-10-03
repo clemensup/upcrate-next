@@ -42,7 +42,7 @@ export default function Imprint() {
           Germany
           <br />
           <br />
-          {/* <p>{t("pages.imprint.phone_label")}: </p> */}
+          <p>{t("pages.imprint.phone_label")}: +49 177 543 39 13</p>
           <p>
             E-Mail:{" "}
             <a href="mailto:support@upcrate.art" className="hover:underline">
