@@ -39,7 +39,7 @@ export function CancelAnyTimeSvg() {
             transform="translate(-1282.011 -771.307)"
             fill="none"
             stroke="#fff"
-            stroke-miterlimit="10"
+            strokeMiterlimit="10"
             strokeWidth="1.5"
           />
           <path
@@ -49,7 +49,7 @@ export function CancelAnyTimeSvg() {
             transform="translate(-1305.164 -775.093)"
             fill="none"
             stroke="#fff"
-            stroke-miterlimit="10"
+            strokeMiterlimit="10"
             strokeWidth="3.214"
           />
           <path
@@ -59,7 +59,7 @@ export function CancelAnyTimeSvg() {
             transform="translate(-1280.765 -774.058)"
             fill="none"
             stroke="#fff"
-            stroke-miterlimit="10"
+            strokeMiterlimit="10"
             strokeWidth="3.214"
           />
         </g>

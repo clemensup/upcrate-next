@@ -6,6 +6,12 @@ import { Dialog } from "@headlessui/react";
 import { Checkbox } from "./checkbox";
 import useTranslation from "next-translate/useTranslation";
 
+function getExpirationDate() {
+  const date = new Date();
+  date.setTime(date.getTime() + 365 * 24 * 60 * 60 * 1000);
+  return date;
+}
+
 export function useGoogleAnalytics() {
   const [cookies] = useCookies(["COOKIE_CONSENT"]);
 
@@ -79,7 +85,9 @@ export function CookieBanner() {
           <Button
             variant="outline"
             onClick={() => {
-              setCookie("COOKIE_CONSENT", Boolean(cookieConsent));
+              setCookie("COOKIE_CONSENT", Boolean(cookieConsent), {
+                expires: getExpirationDate(),
+              });
               updateGoogleAnalytics();
               setShowCookieSettings(false);
             }}
@@ -121,7 +129,11 @@ export function CookieBanner() {
                 <div className="col-span-4 md:col-span-1 mt-5 md:mt-0 flex items-end">
                   <Button
                     className="border-4 border-purple text-white bg-purple"
-                    onClick={() => setCookie("COOKIE_CONSENT", true)}
+                    onClick={() =>
+                      setCookie("COOKIE_CONSENT", true, {
+                        expires: getExpirationDate(),
+                      })
+                    }
                   >
                     {t("cookies.accept_button")}
                   </Button>
