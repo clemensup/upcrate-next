@@ -191,6 +191,10 @@ export function SubscribeNowSection() {
           <p>{t("sections.subscribe_now.subscriptions.1.dollar_estimation")}</p>
         </div>
       </div>
+
+      <div className="py-2 px-4 bg-white inline-block text-purple-dark mt-16 text-xl">
+        {t("sections.subscribe_now.cancellation_text")}
+      </div>
     </section>
   );
 }

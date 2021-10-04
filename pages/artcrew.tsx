@@ -61,7 +61,7 @@ export default function ArtCrew() {
       <FeaturedArtistsWeWorkedWithSection />
       <ProfessionalHowToVideosSection />
       <ConnectSloganSection>
-        <h4 className="text-3xl sm:text-5xl md:text-7xl text-white whitespace-pre-line">
+        <h4 className="text-3xl sm:text-5xl md:text-7xl text-white whitespace-pre-line mb-10">
           <FormattedText
             transKey="common:pages.artcrew.draw_as_one_section.title"
             delimiter={[<br />, <span className="font-display" />]}

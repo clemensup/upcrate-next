@@ -197,7 +197,8 @@
           "cta": "Ja ich will³",
           "dollar_estimation": "(~ 71 USD)"
         }
-      ]
+      ],
+      "cancellation_text": "Abo jederzeit kündbar"
     },
     "why_upcrate": {
       "title": "Exklusiv für unsere Abonnenten",

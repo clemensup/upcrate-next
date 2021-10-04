@@ -197,7 +197,8 @@
           "cta": "Subscribe now",
           "dollar_estimation": "(~ 71 USD)"
         }
-      ]
+      ],
+      "cancellation_text": "can be cancelled any time"
     },
     "why_upcrate": {
       "title": "Exclusive for monthly subscribers",
