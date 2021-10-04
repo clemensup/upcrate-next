@@ -87,5 +87,6 @@ export async function getStaticProps() {
 
   return {
     props: { products: data.edges || [] },
+    revalidate: 10,
   };
 }

@@ -90,6 +90,7 @@ export const getStaticProps = async () => {
   return {
     props: {
       products: wcData.data,
+      revalidate: 10,
     },
   };
 };
