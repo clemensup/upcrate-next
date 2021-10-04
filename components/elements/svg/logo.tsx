@@ -1,11 +1,15 @@
 import { AnimatePresence, AnimateSharedLayout, motion } from "framer-motion";
+import React from "react";
 import { useScrollPosition } from "../../../hooks/use-scroll-position";
 
 export function Logo() {
   const { scrollTop } = useScrollPosition();
 
   return (
-    <div className="relative" style={{ height: 50 }}>
+    <div
+      className="relative"
+      style={{ height: 50, marginTop: scrollTop > 0 ? -16 : 0 }}
+    >
       <AnimateSharedLayout type="crossfade">
         <AnimatePresence>
           {scrollTop > 0 ? (
@@ -13,7 +17,7 @@ export function Logo() {
               xmlns="http://www.w3.org/2000/svg"
               viewBox="0 0 78.253 86.665"
               width={50}
-              className={`fill-current text-purple-dark p-2 absolute top-0`}
+              className="fill-current text-purple-dark p-2 absolute top-0"
             >
               <motion.g
                 id="Group_328"
@@ -46,6 +50,8 @@ export function Logo() {
               viewBox="0 0 228.342 74.454"
               whileHover={{ scale: 1.05 }}
               whileTap={{ scale: 0.9 }}
+              style={{ top: 8 }}
+              className="absolute"
             >
               <motion.path
                 d="M4837.927-2444.341l-25.99,2.927-17.988-5.257-3.708,58.442h8.351l2.341-29.254,11,2.2,25.99-3.385Z"
