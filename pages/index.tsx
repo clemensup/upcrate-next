@@ -18,6 +18,8 @@ import { FormattedText } from "../components/elements/formatted-text";
 import { AnimatedUnboxYourCreativitySection } from "../components/sections/animated-unbox-your-creativity-section";
 import { fetchCrates } from "../utils/wc-api";
 import { CratesProps } from "./crates";
+import { FreeShippingWorldWideSvg } from "../components/elements/svg/free-shipping-worldwide";
+import { motion } from "framer-motion";
 
 export default function Home({ products }: CratesProps) {
   const { t } = useTranslation("common");
@@ -33,6 +35,15 @@ export default function Home({ products }: CratesProps) {
           content={t("pages.home.og_description")}
         />
       </Head>
+      <motion.div
+        className="hidden md:block w-32 fixed right-0 top-56 z-50"
+        style={{ top: "75vh" }}
+        initial={{ x: 150 }}
+        animate={{ x: 0 }}
+        transition={{ delay: 1.5 }}
+      >
+        <FreeShippingWorldWideSvg />
+      </motion.div>
       <HeroSliderSection />
       <JoinTheArtCrewSection />
       <SubscribeNowSection />

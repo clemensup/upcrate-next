@@ -80,6 +80,9 @@ module.exports = {
         "contact-image-section": "url('/contact/image-section.png')",
         "many-heads": "url('/invite-friends/bg.svg')",
       }),
+      dropShadow: {
+        flag: "-2px 5px 10px rgba(0, 0, 0, 0.7)",
+      },
     },
   },
   variants: {

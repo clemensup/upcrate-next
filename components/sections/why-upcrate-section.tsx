@@ -55,7 +55,7 @@ export function WhyUpcrateSection() {
       <section className="text-center text-purple-dark bg-white pt-6 pb-6 px-10 md:pb-24 relative">
         <div className="relative max-w-6xl mx-auto">
           <div className="z-10 relative text-purple-dark">
-            <h3 className="font-display text-purple-dark text-2xl md:text-5xl md:mt-20">
+            <h3 className="font-display text-purple-dark text-2xl md:text-5xl">
               {t("sections.why_upcrate.whats_inside.title")}
             </h3>
             <p className="mt-8 text-xl max-w-2xl mx-auto text-center">
