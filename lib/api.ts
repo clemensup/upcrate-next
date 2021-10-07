@@ -26,31 +26,36 @@ async function fetchAPI(query, { variables } = { variables: {} }) {
   return json.data;
 }
 
-export async function getPreviousCrates(offset = 90) {
+export async function getPreviousCrates(offset = 100) {
   const data = await fetchAPI(
     `
     query MyQuery($first: Int, $after: String) {
         products(first: $first, after: $after, where: {categoryId: 49}) {
-            edges {
-                node {
-                  id
-                  link
-                  name
-                  ... on SimpleProduct {
-                    name
-                    price
-                    stockStatus
-                    image {
-                      mediaItemUrl
-                    }
-                  }
+          edges {
+            node {
+              id
+              link
+              name
+              ... on SimpleProduct {
+                name
+                price
+                stockStatus
+                image {
+                  mediaItemUrl
                 }
               }
+              previousCrate {
+                zoomImage {
+                  sourceUrl(size: MEDIUM_LARGE)
+                }
+              }
+            }
+          }
         }
       }
       `,
     { variables: { first: offset } }
   );
 
-  return data.products;
+  return data;
 }

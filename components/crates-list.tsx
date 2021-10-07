@@ -4,7 +4,10 @@ import { RadialGradient } from "./elements/radial-gradient";
 import { CratesProps } from "./../pages/crates";
 import { AnimatePresence, motion } from "framer-motion";
 import Trans from "next-translate/Trans";
+import { Caret } from ".";
 const transition = { duration: 0.7, ease: [0.43, 0.13, 0.23, 0.96] };
+
+const PRODUCTS_PER_PAGE = 9;
 
 const thumbnailVariants = {
   initial: { scale: 0.7, rotate: 10, opacity: 0 },
@@ -21,7 +24,7 @@ const frameVariants = {
 };
 
 const imageVariants = {
-  hover: { scale: 1.2, opacity: 1 },
+  hover: { scale: 0, opacity: 0 },
 };
 
 const zoomeImageVariants = {
@@ -31,6 +34,15 @@ const zoomeImageVariants = {
 
 export function CratesList({ products }: CratesProps) {
   const { t } = useTranslation("common");
+  const [page, setPage] = React.useState(0);
+  const pageCount = Math.round(products.length / PRODUCTS_PER_PAGE);
+  const ref = React.useRef<HTMLDivElement>(null);
+
+  React.useEffect(() => {
+    const c = ref.current.offsetTop;
+    console.log(c);
+    window.scrollTo({ top: c });
+  }, [page]);
 
   if (products.length === 0) {
     return <div>{t("pages.crates.crates_list.no_products_message")}</div>;
@@ -52,7 +64,7 @@ export function CratesList({ products }: CratesProps) {
           />
         </p>
 
-        <div>
+        <div ref={ref}>
           <motion.ul
             className="list-none grid grid-cols-2 md:grid-cols-3 max-w-6xl gap-4 md:gap-20 justify-center mt-5 md:mt-20 mx-auto my-10 md:my-40"
             initial="initial"
@@ -61,73 +73,78 @@ export function CratesList({ products }: CratesProps) {
             variants={{ exit: { transition: { staggerChildren: 0.1 } } }}
           >
             <AnimatePresence>
-              {products.map(({ node }) => {
-                return (
-                  <li key={node.id} className="relative">
-                    <motion.div variants={thumbnailVariants}>
-                      <motion.div
-                        variants={frameVariants}
-                        transition={transition}
-                        className="overflow-hidden"
-                        whileHover="hover"
-                        initial="initial"
-                      >
-                        <a href={node.link}>
-                          {node.image && (
-                            <div
-                              className="relative"
-                              style={{ paddingBottom: "100%" }}
-                            >
-                              <motion.img
-                                className="absolute top-0 left-0 right-0 bottom-0"
-                                src={node.image.mediaItemUrl}
-                                width={340}
-                                height={340}
-                                variants={imageVariants}
-                                transition={transition}
-                              />
-
-                              {node.acf && (
+              {products
+                .slice(
+                  page * PRODUCTS_PER_PAGE,
+                  page * PRODUCTS_PER_PAGE + PRODUCTS_PER_PAGE
+                )
+                .map(({ node }) => {
+                  return (
+                    <li key={node.id} className="relative">
+                      <motion.div variants={thumbnailVariants}>
+                        <motion.div
+                          variants={frameVariants}
+                          transition={transition}
+                          className="overflow-hidden"
+                          whileHover="hover"
+                          initial="initial"
+                        >
+                          <a href={node.link}>
+                            {node.image && (
+                              <div
+                                className="relative"
+                                style={{ paddingBottom: "100%" }}
+                              >
                                 <motion.img
-                                  className="absolute top-0 left-0 right-0 bottom-0 z-0"
-                                  src={node.acf.zoom_image}
+                                  className="absolute top-0 left-0 right-0 bottom-0"
+                                  src={node.image.mediaItemUrl}
                                   width={340}
                                   height={340}
-                                  variants={zoomeImageVariants}
+                                  variants={imageVariants}
                                   transition={transition}
                                 />
-                              )}
-                            </div>
-                          )}
-                        </a>
-                      </motion.div>
 
-                      <h5 className="text-lg md:text-2xl font-bold">
-                        {node.name}
-                      </h5>
-                      <div className="flex justify-between mt-2">
-                        <span
-                          className="md:text-xl"
-                          dangerouslySetInnerHTML={{ __html: node.price }}
-                        />
-                        {node.stockStatus === "OUT_OF_STOCK" && (
-                          <span className="font-display md:text-red-light text-xs absolute md:relative right-0 p-1 md:p-0 bg-red md:bg-transparent text-white top-0 md:text-xl">
-                            {t("pages.crates.crates_list.stock_status")}
-                          </span>
-                        )}
-                      </div>
-                    </motion.div>
-                  </li>
-                );
-              })}
+                                {node?.previousCrate?.zoomImage?.sourceUrl && (
+                                  <motion.img
+                                    className="absolute top-0 left-0 right-0 bottom-0 z-0"
+                                    src={node.previousCrate.zoomImage.sourceUrl}
+                                    width={340}
+                                    height={340}
+                                    variants={zoomeImageVariants}
+                                    transition={transition}
+                                  />
+                                )}
+                              </div>
+                            )}
+                          </a>
+                        </motion.div>
+
+                        <h5 className="text-lg md:text-2xl font-bold">
+                          {node.name}
+                        </h5>
+                        <div className="flex justify-between mt-2">
+                          <span
+                            className="md:text-xl"
+                            dangerouslySetInnerHTML={{ __html: node.price }}
+                          />
+                          {node.stockStatus === "OUT_OF_STOCK" && (
+                            <span className="font-display md:text-red-light text-xs absolute md:relative right-0 p-1 md:p-0 bg-red md:bg-transparent text-white top-0 md:text-xl">
+                              {t("pages.crates.crates_list.stock_status")}
+                            </span>
+                          )}
+                        </div>
+                      </motion.div>
+                    </li>
+                  );
+                })}
             </AnimatePresence>
           </motion.ul>
 
-          {/* <div className="grid grid-cols-2 gap-4 md:gap-0 md:flex justify-between items-center w-full">
+          <div className="grid grid-cols-2 gap-4 md:gap-0 md:flex justify-between items-center w-full">
             <motion.button
               className="w-full disabled:opacity-50 font-display p-3 pt-2 pb-3 text-xs md:text-3xl inline-flex items-center content-center gap-4 mt-2 md:mt-5 max-w-max mx-auto bg-purple text-white hover:bg-pink"
               onClick={() => setPage(page - 1)}
-              disabled={page === 1 || isFetching}
+              disabled={page === 0}
               whileHover={{ scale: 1.1 }}
               whileTap={{ scale: 0.9 }}
             >
@@ -138,21 +155,20 @@ export function CratesList({ products }: CratesProps) {
             </motion.button>
 
             <div className="hidden md:block text-center">
-              {isFetching && <div>Loading...</div>}
-              Page {page} of {pageCount}
+              Page {page + 1} of {pageCount}
             </div>
 
             <motion.button
               className="disabled:opacity-50 font-display p-3 pt-2 pb-3 text-xs md:text-3xl inline-flex items-center content-center gap-4 mt-2 md:mt-5 max-w-max mx-auto bg-purple text-white hover:bg-pink"
               onClick={() => setPage(page + 1)}
-              disabled={page === pageCount || isFetching}
+              disabled={page + 1 === pageCount}
               whileHover={{ scale: 1.1 }}
               whileTap={{ scale: 0.9 }}
             >
               {t("pages.crates.crates_list.next_page_button")}
               <Caret />
             </motion.button>
-          </div> */}
+          </div>
         </div>
       </div>
       <RadialGradient className="bg-green" variant="bottom" />

@@ -85,8 +85,16 @@ export default function Crates({ products, pageCount }: CratesProps) {
 export async function getStaticProps() {
   const data = await getPreviousCrates();
 
+  if (!data) {
+    return {
+      notFound: true,
+    };
+  }
+
   return {
-    props: { products: data.edges || [] },
+    props: {
+      products: data.products.edges || [],
+    },
     revalidate: 10,
   };
 }
