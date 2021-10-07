@@ -98,3 +98,8 @@ body {
   position: relative;
   padding-right: 24px;
 }
+
+#minimized-trustbadge-98e3dadd90eb493088abdc5597a70810 {
+  left: 20px !important;
+  z-index: 1000 !important;
+}

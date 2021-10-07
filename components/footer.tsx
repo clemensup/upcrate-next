@@ -4,6 +4,7 @@ import Image from "next/image";
 import Link from "next/link";
 import { CaptainCrateSvg } from "./elements/svg/cpt-crate-svg";
 import { FooterNewsletterForm } from "./footer-newsletter-form";
+import Script from "next/script";
 
 export function Footer(): JSX.Element {
   const { t } = useTranslation("common");
@@ -171,6 +172,34 @@ export function Footer(): JSX.Element {
       <div className="text-center bg-purple-light text-white p-4">
         © Copyright 2019 - 2021 – Upcrate Art Pirates
       </div>
+
+      <Script
+        type="text/javascript"
+        strategy="lazyOnload"
+        dangerouslySetInnerHTML={{
+          __html: `
+            (function () { 
+              var _tsid = 'XDB7EA39C9DE2A7C57996E689CCBBA016'; 
+              _tsConfig = { 
+                'yOffset': '0', /* offset from page bottom */
+                'variant': 'reviews', /* default, reviews, custom, custom_reviews */
+                'customElementId': '', /* required for variants custom and custom_reviews */
+                'trustcardDirection': '', /* for custom variants: topRight, topLeft, bottomRight, bottomLeft */
+                'customBadgeWidth': '', /* for custom variants: 40 - 90 (in pixels) */
+                'customBadgeHeight': '', /* for custom variants: 40 - 90 (in pixels) */
+                'disableResponsive': 'false', /* deactivate responsive behaviour */
+                'disableTrustbadge': 'false' /* deactivate trustbadge */
+              };
+              var _ts = document.createElement('script');
+              _ts.type = 'text/javascript'; 
+              _ts.charset = 'utf-8'; 
+              _ts.async = true; 
+              _ts.src = '//widgets.trustedshops.com/js/' + _tsid + '.js'; 
+              var __ts = document.getElementsByTagName('script')[0];
+              __ts.parentNode.insertBefore(_ts, __ts);
+            })();`,
+        }}
+      />
     </footer>
   );
 }
