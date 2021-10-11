@@ -31,6 +31,7 @@ export default function CancellationPolicy() {
               }}
             />
           </h1>
+
           {lang === "en" ? (
             <div className="mt-20">
               All contracts concluded within the validity of these terms and
@@ -38,10 +39,11 @@ export default function CancellationPolicy() {
               addition, the following individual warranty provisions are made:
               <h2 className="text-2xl font-bold mt-10 md:mt-8">Scope</h2>
               For the entire business relationship between Upcrate, owner:
-              Clemens Roosen, Suhrsweg 3, D-22305 Hamburg (hereinafter also
-              “Upcrate”, “Provider” or “we”) and the customer (hereinafter
-              referred to as “Customer”), the following terms and conditions
-              apply exclusively ( hereinafter also “GTC”) of the provider
+              Clemens Roosen, Suhrsweg 3, D-22305 Hamburg, +49 177 5433913
+              (hereinafter also “Upcrate”, “Provider” or “we”) and the customer
+              (hereinafter referred to as “Customer”), the following terms and
+              conditions apply exclusively ( hereinafter also “GTC”) of the
+              provider
               <br />
               <br />
               All agreements concluded between the customer and the supplier
@@ -93,12 +95,9 @@ export default function CancellationPolicy() {
               <br />
               <br />
               The provider reserves the right to deliver only after full payment
-              by the customer. There is no entitlement to prior delivery. Our
-              delivery dates or delivery periods are only non-binding
-              information, unless these are expressly regulated as binding
-              between the supplier and the customer. The provider is entitled at
-              any time to partial delivery and partial performance, if this is
-              reasonable for the customer.
+              by the customer. There is no entitlement to prior delivery. The
+              provider is entitled at any time to partial delivery and partial
+              performance, if this is reasonable for the customer.
               <br />
               <br />
               In the event that we do not make use of our right of retention and
@@ -211,9 +210,9 @@ export default function CancellationPolicy() {
                 Geltungsbereich
               </h2>
               Für die gesamte Geschäftsbeziehung zwischen Upcrate, Inhaber:
-              Clemens Roosen, Suhrsweg 3, D-22305 Hamburg (nachfolgend auch
-              "Upcrate", "Anbieter" oder "wir") und dem Kunden (nachfolgend
-              "Kunde" genannt) gelten ausschließlich die folgenden
+              Clemens Roosen, Suhrsweg 3, D-22305 Hamburg, +49 177 5433913
+              (nachfolgend auch "Upcrate", "Anbieter" oder "wir") und dem Kunden
+              (nachfolgend "Kunde" genannt) gelten ausschließlich die folgenden
               Geschäftsbedingungen (nachfolgend auch "AGB") des Anbieters.
               <br />
               <br />
@@ -268,11 +267,9 @@ export default function CancellationPolicy() {
               Lieferung, Liefertermine, Teillieferungen und Eigentumsvorbehalt
               Der Anbieter behält sich das Recht vor, erst nach vollständiger
               Bezahlung durch den Kunden zu liefern. Ein Anspruch auf vorgängige
-              Lieferung besteht nicht. Unsere Liefertermine oder Lieferfristen
-              sind lediglich unverbindliche Angaben, es sei denn, diese sind
-              zwischen Anbieter und Kunde ausdrücklich als verbindlich geregelt.
-              Der Anbieter ist zu Teillieferungen und Teilleistungen jederzeit
-              berechtigt, soweit dies für den Kunden zumutbar ist.
+              Lieferung besteht nicht. Der Anbieter ist zu Teillieferungen und
+              Teilleistungen jederzeit berechtigt, soweit dies für den Kunden
+              zumutbar ist.
               <br />
               <br />
               Für den Fall, dass wir von unserem Zurückbehaltungsrecht keinen
