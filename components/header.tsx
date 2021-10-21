@@ -157,6 +157,12 @@ export function Header(): JSX.Element {
                 </HeaderNavLink>
               </li>
 
+              <li className="md:hidden lg:pr-15">
+                <HeaderNavLink href="https://shop.upcrate.art/account/">
+                  {t("navigation.signup_login")}
+                </HeaderNavLink>
+              </li>
+
               <li className="lg:pr-10 lg:pl-20 hidden lg:block ">
                 <motion.div
                   whileHover={{ scale: 1.3, rotate: 360 }}
