@@ -124,7 +124,7 @@ export function HeroSliderSection() {
             {t("pages.home.slider_content.0.text")}
           </motion.h3>
           <motion.h3
-            className="text-center text-3xl md:text-5xl lg:text-6xl xl:text-8xl font-display"
+            className="text-center text-4xl md:text-5xl lg:text-6xl xl:text-8xl font-display"
             animate={{ scale: [0, 1.35, 1] }}
             transition={{ duration: 0.5, delay: 0.25 }}
           >
@@ -150,7 +150,7 @@ export function HeroSliderSection() {
           >
             {t("pages.home.slider_content.3.text")}
           </motion.span>
-          <div className="flex space-x-4 md:space-x-10 flex-col md:flex-row items-center mt-10">
+          <div className="flex md:space-x-10 flex-col md:flex-row items-center mt-10">
             <motion.div
               animate={{ scale: [0, 1.7, 1], rotate: 0 }}
               transition={{ duration: 1, delay: 1, ease: "easeInOut" }}
@@ -170,7 +170,7 @@ export function HeroSliderSection() {
               >
                 <Button
                   variant="default"
-                  className="bg-purple text-white "
+                  className="bg-purple text-xl text-white "
                   href="/subscriptions"
                 >
                   {t("subscribe_now_button_text")}
