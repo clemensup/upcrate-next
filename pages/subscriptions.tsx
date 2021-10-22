@@ -30,7 +30,7 @@ export default function Subscriptions() {
       <SubscribeNowSection />
       <section className="text-center md:pt-16 md:pb-20 relative overflow-hidden">
         <RadialGradient className="bg-orange" />
-        <div className="z-10 relative text-purple-dark">
+        <div className="z-10 relative text-purple-dark pt-6 pb-6 px-10 md:pb-24">
           <Countdown />
         </div>
       </section>
