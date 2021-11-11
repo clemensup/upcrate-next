@@ -19,7 +19,18 @@ export function RadialGradient({
   className,
   variant = "top",
 }: RadialGradientProps) {
-  console.log(browserName);
+  const [browser, setBrowser] = React.useState("");
+
+  React.useEffect(() => {
+    if (!browser) {
+      setBrowser(browserName);
+    }
+  }, []);
+
+  console.log(browser);
+  if (!browser || browser === "Safari") {
+    return <div></div>;
+  }
 
   let posClass = "";
 
@@ -68,11 +79,7 @@ export function RadialGradient({
 
   return (
     <div
-      className={`absolute ${
-        browserName === "Safari"
-          ? ""
-          : `h-gradient filter blur-gradient ${posClass}`
-      }  ${className}`}
+      className={`absolute h-gradient filter blur-gradient ${posClass} ${className}`}
     ></div>
   );
 }

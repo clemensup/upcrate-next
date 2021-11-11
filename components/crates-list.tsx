@@ -40,7 +40,6 @@ export function CratesList({ products }: CratesProps) {
 
   React.useEffect(() => {
     const c = ref.current.offsetTop;
-    console.log(c);
     window.scrollTo({ top: c });
   }, [page]);
 

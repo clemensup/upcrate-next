@@ -65,7 +65,7 @@ module.exports = {
         },
       },
       backgroundImage: () => ({
-        "subscribe-now": "url('/subscribe-now/background.png')",
+        "subscribe-now": "url('/subscribe-now/background.jpg')",
         "upcrate-as-gift": "url('/upcrate-as-gift/background.png')",
         "cpt-in-forest": "url('/cpt-in-forest.png')",
         leuchtturm: "url('/leuchtturm.png')",

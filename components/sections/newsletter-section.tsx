@@ -145,7 +145,7 @@ export function NewsletterSection({
                     {t("forms.success_message")}
                   </div>
                 )}
-                <div className="absolute left-0 right-0 -bottom-36 flex justify-center z-10">
+                <div className="absolute left-0 right-0 -bottom-48 flex justify-center z-10">
                   <PensAndBrushesSvg />
                 </div>
               </div>
