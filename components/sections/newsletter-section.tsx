@@ -1,6 +1,7 @@
 import useTranslation from "next-translate/useTranslation";
 import Image from "next/image";
 import React from "react";
+import { useIsDesktopSafari } from "../../hooks/use-is-desktop-safari";
 import { useMailchimpForm } from "../../hooks/use-mailchimp-form";
 import { useWindowSize } from "../../hooks/use-window-size";
 import { Checkbox } from "../elements/checkbox";
@@ -16,6 +17,7 @@ export function NewsletterSection({
 }: React.PropsWithChildren<{ className?: string }>) {
   const { t } = useTranslation("common");
   const { width } = useWindowSize();
+  const isDesktopSafari = useIsDesktopSafari();
 
   const {
     email,
@@ -152,7 +154,17 @@ export function NewsletterSection({
         </div>
       </section>
 
-      <section className="text-center text-purple-dark pb-6 md:px-10 md:px-32 md:pb-24 relative overflow-hidden -mt-20">
+      <section
+        className={
+          isDesktopSafari
+            ? "bg-purple-lighter text-center text-purple-dark pb-6 md:px-10 md:px-32 md:pb-24 relative overflow-hidden"
+            : "text-center text-purple-dark pb-6 md:px-10 md:px-32 md:pb-24 relative overflow-hidden -mt-20"
+        }
+        style={{
+          ...(isDesktopSafari ? { marginTop: -250 } : {}),
+          ...(isDesktopSafari ? { paddingTop: 100 } : {}),
+        }}
+      >
         <div className="mx-5 mb-10 md:mb-0 md:max-w-6xl mx-auto px-10 relative">
           <RadialGradient className="bg-orange w-full" variant="center-xl" />
           <div className="z-10 relative text-purple-dark">
