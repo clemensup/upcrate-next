@@ -3,12 +3,14 @@ import Image from "next/image";
 import { TimeForArtSvg } from "../elements/svg/time-for-art-svg";
 import useTranslation from "next-translate/useTranslation";
 import { RadialGradient } from "../elements/radial-gradient";
+import { useIsDesktopSafari } from "../../hooks/use-is-desktop-safari";
 const transition = { duration: 70, repeat: Infinity, ease: "linear" };
 
 let i = 0;
 
 export function TimeForArtSection() {
   const { t } = useTranslation("common");
+  const isDesktopSafari = useIsDesktopSafari();
 
   const animatedElements: { content: string; type: "text" | "image" }[] = [
     {
@@ -41,25 +43,39 @@ export function TimeForArtSection() {
       <h3 className="text-2xl md:text-5xl font-display text-white max-w-md md:max-w-2xl mx-auto text-center">
         {t("sections.time_for_art.title")}
       </h3>
-      <div className="relative max-w-4xl p-20 mt-20 justify-center items-center mx-auto hidden md:flex">
-        <svg
-          xmlns="http://www.w3.org/2000/svg"
-          width="838.972"
-          height="458.076"
-          viewBox="0 0 838.972 458.076"
-        >
-          <path
-            id="Path_5159"
-            data-name="Path 5159"
-            d="M418.986,0c231.4,0,418.986,102.32,418.986,228.538S650.386,457.076,418.986,457.076,0,354.756,0,228.538,187.586,0,418.986,0Z"
-            transform="translate(0.5 0.5)"
-            fill="none"
-            stroke="none"
-            strokeWidth="1"
-          />
-        </svg>
+      <div
+        className="relative max-w-4xl p-20 mt-20 justify-center items-center mx-auto hidden md:flex"
+        style={{
+          ...(isDesktopSafari ? { display: "grid" } : {}),
+        }}
+      >
+        {!isDesktopSafari && (
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            width="838.972"
+            height="458.076"
+            viewBox="0 0 838.972 458.076"
+          >
+            <path
+              id="Path_5159"
+              data-name="Path 5159"
+              d="M418.986,0c231.4,0,418.986,102.32,418.986,228.538S650.386,457.076,418.986,457.076,0,354.756,0,228.538,187.586,0,418.986,0Z"
+              transform="translate(0.5 0.5)"
+              fill="none"
+              stroke="none"
+              strokeWidth="1"
+            />
+          </svg>
+        )}
 
-        <div className="absolute -top-20 right-0 bottom-0 left-0">
+        <div
+          className="absolute -top-20 right-0 bottom-0 left-0"
+          style={{
+            ...(isDesktopSafari
+              ? { position: "relative", textAlign: "center" }
+              : {}),
+          }}
+        >
           <div
             className="relative w-full flex justify-center items-center z-10"
             style={{ height: "100%" }}
@@ -91,6 +107,15 @@ export function TimeForArtSection() {
               initial={{ offsetDistance: `${i}%` }}
               animate={{ offsetDistance: `${100 + i}%` }}
               transition={transition}
+              style={{
+                ...(isDesktopSafari
+                  ? {
+                      position: "relative",
+                      display: "flex",
+                      justifyContent: "center",
+                    }
+                  : {}),
+              }}
             >
               {type === "text" && (
                 <div className="text-xl font-display text-purple-dark w-56 text-center leading-tight">

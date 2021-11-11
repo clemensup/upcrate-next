@@ -1,5 +1,6 @@
 import React from "react";
 import { browserName } from "react-device-detect";
+import { useIsDesktopSafari } from "../../hooks/use-is-desktop-safari";
 
 interface RadialGradientProps {
   className: string;
@@ -19,16 +20,9 @@ export function RadialGradient({
   className,
   variant = "top",
 }: RadialGradientProps) {
-  const [browser, setBrowser] = React.useState("");
+  const isDesktopSafari = useIsDesktopSafari();
 
-  React.useEffect(() => {
-    if (!browser) {
-      setBrowser(browserName);
-    }
-  }, []);
-
-  console.log(browser);
-  if (!browser || browser === "Safari") {
+  if (isDesktopSafari) {
     return <div></div>;
   }
 
