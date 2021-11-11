@@ -1,4 +1,5 @@
 import React from "react";
+import { browserName } from "react-device-detect";
 
 interface RadialGradientProps {
   className: string;
@@ -18,6 +19,10 @@ export function RadialGradient({
   className,
   variant = "top",
 }: RadialGradientProps) {
+  if (browserName === "Safari") {
+    return <></>;
+  }
+
   let posClass = "";
 
   switch (variant) {

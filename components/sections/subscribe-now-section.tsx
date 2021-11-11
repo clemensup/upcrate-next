@@ -8,7 +8,7 @@ export function SubscribeNowSection() {
   const { t } = useTranslation("common");
 
   return (
-    <section className="py-16 md:py-28 px-10 bg-subscribe-now text-center bg-cover">
+    <section className="py-16 md:py-28 px-10 bg-purple-lighter text-center bg-cover">
       <h3 className="font-display text-white text-2xl md:text-5xl mb-10">
         {t("sections.subscribe_now.title")}
       </h3>
