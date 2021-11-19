@@ -12,6 +12,8 @@ export function TimeForArtSection() {
   const { t } = useTranslation("common");
   const isDesktopSafari = useIsDesktopSafari();
 
+  console.log(isDesktopSafari);
+
   const animatedElements: { content: string; type: "text" | "image" }[] = [
     {
       content: t("sections.time_for_art.advantages.0.text"),
