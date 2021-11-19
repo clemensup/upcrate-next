@@ -1,5 +1,4 @@
 import React from "react";
-import { browserName } from "react-device-detect";
 import { useIsDesktopSafari } from "../../hooks/use-is-desktop-safari";
 
 interface RadialGradientProps {
