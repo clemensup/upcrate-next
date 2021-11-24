@@ -6,9 +6,9 @@ import { Dialog } from "@headlessui/react";
 import { Checkbox } from "./checkbox";
 import useTranslation from "next-translate/useTranslation";
 
-function getExpirationDate() {
+export function getExpirationDate(days = 365) {
   const date = new Date();
-  date.setTime(date.getTime() + 365 * 24 * 60 * 60 * 1000);
+  date.setTime(date.getTime() + days * 24 * 60 * 60 * 1000);
   return date;
 }
 
