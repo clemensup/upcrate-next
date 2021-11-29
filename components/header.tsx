@@ -10,7 +10,6 @@ import { usePersistLocaleCookie } from "../hooks/use-persistent-locale";
 import { motion } from "framer-motion";
 import { BurgerButton } from "./elements/burger-button";
 import Image from "next/image";
-import { Banner } from "./elements/banner";
 
 const pathMotion = {
   rest: {
@@ -95,8 +94,6 @@ export function Header(): JSX.Element {
       animate={{ y: [-50, 0] }}
       transition={{ duration: 1, ease: "easeInOut" }}
     >
-      <Banner />
-
       <div
         className={`mx-auto p-2 lg:px-4 relative transition-all	duration-200`}
       >
