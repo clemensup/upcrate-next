@@ -5,7 +5,12 @@ import * as React from "react";
 export function Countdown() {
   const { t } = useTranslation("common");
 
-  const nextMonth = moment().add(1, "months").startOf("month");
+  const dayOfMonth = moment().date();
+  const nextMonth =
+    dayOfMonth < 5
+      ? moment().startOf("month")
+      : moment().add(1, "months").startOf("month");
+
   const nextCrate = nextMonth.add(4, "days");
 
   const [nextCrateWeeks, setNextCrateWeeks] = React.useState(
