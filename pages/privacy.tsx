@@ -36,7 +36,7 @@ export default function Privacy() {
               <h2 className="text-2xl font-bold mt-10 md:mt-8">
                 Ahoy and welcome to our website!
               </h2>
-             Upcrate is committed to protecting your privacy. We hereby inform you which personal information we collect, how we use it and what rights you have when using our website. COLORSPAZE LTD, represented by Clemens Roosen ("Upcrate", "we" or "us") is responsible for the processing of personal data collected through the websites www.upcrate.art, www.upcrate.de, www.shop.upcrate.art.
+              Upcrate is committed to protecting your privacy. We hereby inform you which personal information we collect, how we use it and what rights you have when using our website. COLORSPAZE LTD, represented by Clemens Roosen ("Upcrate", "we" or "us") is responsible for the processing of personal data collected through the websites www.upcrate.art, www.upcrate.de, www.shop.upcrate.art.
               <h2 className="text-2xl font-bold mt-10 md:mt-8">
                 Data protection
               </h2>
@@ -644,14 +644,8 @@ export default function Privacy() {
               <h2 className="text-2xl font-bold mt-10 md:mt-8">
                 Ahoi und willkommen auf unserer Website!
               </h2>
-              Upcrate verpflichtet sich, Ihre Privatsphäre zu schützen. Hiermit
-              informieren wir Sie, welche personenbezogenen Daten wir erheben,
-              wie wir diese verwenden und welche Rechte Sie bei der Nutzung
-              unserer Website haben. Clemens Roosen („Upcrate“, „wir“ oder
-              „uns“) ist verantwortlich für die Verarbeitung personenbezogener
-              Daten, die über die Websites www.upcrate.art und www.upcrate.de
-              erhoben werden.
-              <h2 className="text-2xl font-bold mt-10 md:mt-8">Datenschutz</h2>
+              Upcrate verpflichtet sich, Ihre Privatsphäre zu schützen. Hiermit informieren wir Sie, welche personenbezogenen Daten wir erheben, wie wir diese verwenden und welche Rechte Sie bei der Nutzung unserer Website haben. COLORSPAZE LTD, vertreten durch Clemens Roosen („Upcrate“, „wir“ oder „uns“) ist verantwortlich für die Verarbeitung personenbezogener Daten, die über die Websites www.upcrate.art, www.upcrate.de, www.shop.upcrate.art erhoben werden.
+              <h2 className="text-2xl font-bold mt-10 md:mt-8">_</h2>
               Die Nutzung unserer Website ist in der Regel ohne Angabe
               personenbezogener Daten möglich. Soweit auf unseren Seiten
               personenbezogene Daten (beispielsweise Name, Anschrift oder
@@ -732,12 +726,11 @@ export default function Privacy() {
               organisiert und analysiert. Wenn Sie Daten (z.B. Ihre
               E-Mail-Adresse) angeben, um unseren Newsletter zu abonnieren,
               werden diese auf den Servern von MailChimp in den USA gespeichert.
+               <h2 className="text-2xl font-bold mt-10 md:mt-8">Mailjet</h2>
+              Diese Website nutzt Mailjet für den Versand von Newslettern. Anbieter ist die Mailjet SAS, 13-13 bis, Rue de l’Aubrac – 75012 Paris, Frankreich. Mailjet ist ein Dienst, mit dem der Newsletterversand organisiert und analysiert werden kann. Die von Ihnen zwecks Newsletterbezug eingegebenen Daten (z.B. E-Mail-Adresse) werden auf den Servern von Mailjet in der EU gespeichert.  Unsere mit Mailjet versandten Newsletter ermöglichen uns die Analyse des Verhaltens der Newsletterempfänger. Hierbei kann u. a. analysiert werden, wie viele Empfänger die Newsletternachricht geöffnet haben und wie oft welcher Link im Newsletter angeklickt wurde. Mit Hilfe des sogenannten Conversion-Trackings kann außerdem analysiert werden, ob nach Anklicken des Links im Newsletter eine vorab definierte Aktion (z.B. Kauf eines Produkts auf unserer Website) erfolgt ist. Weitere Informationen zur Datenanalyse durch Mailjet-Newsletter erhalten Sie unter: https://www.mailjet.de/funktion/tracking-tools/.  
               <br />
               <br />
-              MailChimp is a service which organizes and analyzes the
-              distribution of newsletters. If you provide data (e.g. your email
-              address) to subscribe to our newsletter, it will be stored on
-              MailChimp servers in the USA.
+              Die Datenverarbeitung erfolgt auf Grundlage Ihrer Einwilligung (Art. 6 Abs. 1 lit. a DSGVO). Sie können diese Einwilligung jederzeit widerrufen, indem Sie den Newsletter abbestellen. Die Rechtmäßigkeit der bereits erfolgten Datenverarbeitungsvorgänge bleibt vom Widerruf unberührt.  Wenn Sie keine Analyse durch Mailjet wollen, müssen Sie den Newsletter abbestellen. Hierfür stellen wir in jeder Newsletternachricht einen entsprechenden Link zur Verfügung. Des Weiteren können Sie den Newsletter auch direkt auf der Website abbestellen.  Die von Ihnen zum Zwecke des Newsletter-Bezugs bei uns hinterlegten Daten werden von uns bis zu Ihrer Austragung aus dem Newsletter gespeichert und nach der Abbestellung des Newsletters sowohl von unseren Servern als auch von den Servern von Mailjet gelöscht. Daten, die zu anderen Zwecken bei uns gespeichert wurden (z.B. E-Mail-Adressen für den Mitgliederbereich) bleiben hiervon unberührt.  Näheres entnehmen Sie den Informationen zu “Sicherheit und Datenschutz” von Mailjet unter https://www.mailjet.de/sicherheit-datenschutz/ und den Datenschutzbestimmungen von Mailjet unter https://www.mailjet.de/privacy-policy/.  
               <h2 className="text-2xl font-bold mt-10 md:mt-8">
                 Versand Service
               </h2>
@@ -849,14 +842,14 @@ export default function Privacy() {
               wünschen oder Klarna über Änderungen der gespeicherten Daten
               informieren möchten, können Sie sich an datenschutz@klarna.de
               wenden.
-               <h2 className="text-2xl font-bold mt-10 md:mt-8">Stripe</h2>
-              We offer the option to process the payment transaction via the payment service provider Stripe, ℅ Legal Process, 510,Townsend St., San Francisco, CA 94103 (Stripe). This is in line with our legitimate interest in offering an efficient and secure payment method (Art. 6 para. 1 lit. f DSGVO). In this context, we share the following data with Stripe to the extent necessary for the performance of the contract (Art. 6 para. 1 lit b. DSGVO).
+              <h2 className="text-2xl font-bold mt-10 md:mt-8">Stripe</h2>
+              Wir bieten die Möglichkeit, den Zahlungsvorgang über den Zahlungsdienstleister Stripe, ℅ Legal Process, 510,Townsend St., San Francisco, CA 94103 (Stripe) abzuwickeln. Dies entspricht unserem berechtigten Interesse, eine effiziente und sichere Zahlungsmethode anzubieten (Art. 6 Abs. 1 lit. f DSGVO). In dem Zusammenhang geben wir folgende Daten an Stripe weiter, soweit es für die Vertragserfüllung erforderlich ist (Art. 6 Abs. 1 lit b. DSGVO).
               <br />
               <br />
-              Name of the cardholder  E-mail address  Customer number  Order number  Bank details  Credit card data  Credit card validity period  Credit card verification number (CVC)  Date and time of transaction  Transaction amount  Name of the provider  Place  
+              Name des Karteninhabers  E-Mail-Adresse  Kundennummer  Bestellnummer  Bankverbindung  Kreditkartendaten  Gültigkeitsdauer der Kreditkarte  Prüfnummer der Kreditkarte (CVC)  Datum und Uhrzeit der Transaktion  Transaktionssumme  Name des Anbieters  Ort  
               <br />
               <br />
-              Processing of the data provided under this section is not required by law or contract. We cannot process a payment via Stripe without the submission of your personal data. You have the option to choose another payment method.    For more information on opting out and opting out of Stripe, please visit: https://stripe.com/privacy-center/legal  
+              Die Verarbeitung der unter diesem Abschnitt angegebenen Daten ist weder gesetzlich noch vertraglich vorgeschrieben. Ohne die Übermittlung Ihrer personenbezogenen Daten können wir eine Zahlung über Stripe nicht durchführen. Es besteht für Sie die Möglichkeit, eine andere Zahlungsmethode zu wählen.  Weitere Informationen zu Widerspruchs- und Beseitigungsmöglichkeiten gegenüber Stripe finden Sie unter: https://stripe.com/privacy-center/legal  
               <h2 className="text-2xl font-bold mt-10 md:mt-8">Cookies</h2>
               Die Internetseiten verwenden teilweise sogenannte Cookies. Cookies
               richten auf Ihrem Computer keinen Schaden an und enthalten keine
@@ -882,23 +875,9 @@ export default function Privacy() {
               <h2 className="text-2xl font-bold mt-10 md:mt-8">
                 Datenschutzerklärung für die Nutzung von Google Analytics
               </h2>
-              This website uses functions of the web analytics service Google
-              Analytics. Provider is Google Inc., 1600 Amphitheater Parkway
-              Mountain View, CA 94043, USA.
-              <br />
-              <br />
-              Google Analytics uses so-called â€œcookiesâ€. These are text files
-              that are stored on your computer and that allow an analysis of the
-              use of the website by you. The information generated by the cookie
-              about your use of this website is usually transmitted to a Google
-              server in the USA and stored there.
-              <br />
-              <br />
-              For more information on how to handle user data on Google
-              Analytics, please refer to the Google Privacy Policy:
-              https://support.google.com/analytics/answer/6004245?hl=en
+              Diese Website nutzt Funktionen des Webanalysedienstes Google Analytics. Anbieter ist die Google Inc., 1600 Amphitheatre Parkway Mountain View, CA 94043, USA. Google Analytics verwendet sogenannte „Cookies“. Das sind Textdateien, die auf Ihrem Computer gespeichert werden und die eine Analyse der Benutzung der Website durch Sie ermöglichen. Die durch den Cookie erzeugten Informationen über Ihre Benutzung dieser Website werden in der Regel an einen Server von Google in den USA übertragen und dort gespeichert. Mehr Informationen zum Umgang mit Nutzerdaten bei Google Analytics finden Sie in der Datenschutzerklärung von Google: https://support.google.com/analytics/answer/6004245?hl=de
               <h2 className="text-2xl font-bold mt-10 md:mt-8">
-                1. Browser plugin
+                Browser plugin
               </h2>
               Diese Website nutzt Funktionen des Webanalysedienstes Google
               Analytics. Anbieter ist die Google Inc., 1600 Amphitheatre Parkway
@@ -912,7 +891,7 @@ export default function Privacy() {
               Google Analytics finden Sie in der Datenschutzerklärung von
               Google: https://support.google.com/analytics/answer/6004245?hl=de
               <h2 className="text-2xl font-bold mt-10 md:mt-8">
-                2. Widerspruch gegen die Datenerhebung
+                Widerspruch gegen die Datenerhebung
               </h2>
               Sie können die Erfassung Ihrer Daten durch Google Analytics
               verhindern, indem Sie auf folgenden Link klicken. Es wird ein
@@ -1310,16 +1289,19 @@ export default function Privacy() {
               bitte über das Kontaktformular oder über
               <br />
               <br />
-              Clemens Roosen
+              COLORSPAZE LTD
               <br />
-              Suhrsweg 3
+              Makariou 57, Flat/Office 1
               <br />
-              D-22305
+              7100 Aradippou, Larnaca
               <br />
-              Hamburg
+              CYPRUS
               <br />
               <br />
               E-Mail: info@upcrate.art
+              <br />
+              <br />
+              Contact: Clemens Roosen
             </div>
           )}
         </div>
