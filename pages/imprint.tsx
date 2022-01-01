@@ -52,7 +52,8 @@ export default function Imprint() {
           <br />
           VAT ID No.: CY10426598I
           <br />
-          packaged and shipped/gepackt und verschickt in Hammburg, Germany
+          <br />
+          packaged and shipped/gepackt und verschickt in Hamburg, Germany
         </address>
 
         <RadialGradient className="bg-orange" variant="bottom-right" />
