@@ -34,7 +34,7 @@ export default function Imprint() {
           {t("pages.imprint.owner")}
           <br />
           <br />
-          Clemens Roosen
+          COLORSPAZE LTD
           <br />
           Suhrsweg 3<br />
           22305 Hamburg
