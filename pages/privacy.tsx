@@ -36,11 +36,7 @@ export default function Privacy() {
               <h2 className="text-2xl font-bold mt-10 md:mt-8">
                 Ahoy and welcome to our website!
               </h2>
-              Upcrate is committed to protecting your privacy. We hereby inform
-              you which personal information we collect, how we use it and what
-              rights you have when using our website. Clemens Roosen (“Upcrate”,
-              “we” or “us”) is responsible for the processing of personal data
-              collected through the websites www.upcrate.art and www.upcrate.de.
+             Upcrate is committed to protecting your privacy. We hereby inform you which personal information we collect, how we use it and what rights you have when using our website. COLORSPAZE LTD, represented by Clemens Roosen ("Upcrate", "we" or "us") is responsible for the processing of personal data collected through the websites www.upcrate.art, www.upcrate.de, www.shop.upcrate.art.
               <h2 className="text-2xl font-bold mt-10 md:mt-8">
                 Data protection
               </h2>
@@ -117,6 +113,11 @@ export default function Privacy() {
               distribution of newsletters. If you provide data (e.g. your email
               address) to subscribe to our newsletter, it will be stored on
               MailChimp servers in the USA.
+              <h2 className="text-2xl font-bold mt-10 md:mt-8">Mailjet</h2>
+              This website uses Mailjet to send newsletters. The provider is Mailjet SAS, 13-13 bis, Rue de l'Aubrac - 75012 Paris, France. Mailjet is a service that organizes and analyzes the sending of newsletters. The data you enter for the purpose of receiving newsletters (e.g. e-mail address) is stored on Mailjet's servers in the EU.  Our newsletters sent with Mailjet allow us to analyze the behavior of newsletter recipients. Here, among other things, it can be analyzed how many recipients have opened the newsletter message and how often which link in the newsletter was clicked. With the help of so-called conversion tracking, it can also be analyzed whether a predefined action (e.g. purchase of a product on our website) has taken place after clicking on the link in the newsletter. For more information on data analysis by Mailjet Newsletter, please visit: https://www.mailjet.de/funktion/tracking-tools/.  The data processing is based on your consent (Art. 6 para. 1 lit. a DSGVO). You can revoke this consent at any time by unsubscribing from the newsletter. The legality of the data processing operations already carried out remains unaffected by the revocation.  
+              <br />
+              <br />
+              If you do not want any analysis by Mailjet, you must unsubscribe from the newsletter. For this purpose, we provide a corresponding link in every newsletter message. Furthermore, you can also unsubscribe from the newsletter directly on the website.  The data you provide for the purpose of receiving the newsletter will be stored by us until you unsubscribe from the newsletter and will be deleted from our servers as well as from the servers of Mailjet after you unsubscribe from the newsletter. Data stored by us for other purposes (e.g. e-mail addresses for the member area) remain unaffected by this.  For more details, please refer to Mailjet's "Security and Privacy" information at https://www.mailjet.com/security-privacy/and Mailjet's privacy policy at https:// https://www.mailjet.com/privacy-policy/  
               <h2 className="text-2xl font-bold mt-10 md:mt-8">
                 Shipping service
               </h2>
