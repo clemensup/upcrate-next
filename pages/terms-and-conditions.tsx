@@ -103,7 +103,7 @@ export default function CancellationPolicy() {
                 Prices, shipping costs, due date, payment, set-off and retention
               </h2>
               All prices include the applicable value added tax, packaging costs
-              and shipping costs. For subscriptions, the purchase price claim
+              and shipping costs. The recipient is responsible for paying any import sales tax and customs duties. For subscriptions, the purchase price claim
               will be debited on the day of the order. Thereafter, a recurrent
               charge will be made depending on the term of the subscription. The
               term is selectable between monthly, quarterly, semi-annual and
@@ -130,6 +130,10 @@ export default function CancellationPolicy() {
               customer is only authorized to exercise a right of retention
               insofar as his counterclaim is based on the same contractual
               relationship.
+              <br />
+              <br />
+              If, when collecting amounts due via a SEPA direct debit mandate, your account is not covered, we will charge EUR 9.00 incl. VAT for this failed payment. The same applies to contested SEPA direct debit payments that are unfounded. In this case, we only pass on the service fees of our service provider to you without any surcharge.
+Discount codes of any kind (such as percentage or fixed amount, among others) for subscriptions can only be used for the first payment. For recurring debits, the regular, non-discounted amount will be debited. This does not affect the cancellation of the subscription.
               <h2 className="text-2xl font-bold mt-10 md:mt-8">
                 Rights in case of defects and damages
               </h2>
@@ -157,9 +161,7 @@ export default function CancellationPolicy() {
               <br />
               The customer can only assert claims for damages due to a defect in
               accordance with the following paragraphs if the supplementary
-              performance has failed. The right of the customer to assert
-              further claims for damages under the following conditions remains
-              unaffected.
+              performance has failed.
               <br />
               <br />
               The European Commission provides a platform for online dispute
@@ -197,18 +199,13 @@ export default function CancellationPolicy() {
             </div>
           ) : (
             <div className="mt-20">
-              Für alle Verträge, die im Rahmen der Gültigkeit dieser Bedingungen
-              abgeschlossen werden, gilt die gesetzliche Gewährleistung. Darüber
-              hinaus werden im Einzelnen folgende Gewährleistungsregelungen
-              getroffen:
               <h2 className="text-2xl font-bold mt-10 md:mt-8">
                 Geltungsbereich
               </h2>
-              Für die gesamte Geschäftsbeziehung zwischen Upcrate, Inhaber:
-              Clemens Roosen, Suhrsweg 3, D-22305 Hamburg, +49 177 5433913
-              (nachfolgend auch "Upcrate", "Anbieter" oder "wir") und dem Kunden
-              (nachfolgend "Kunde" genannt) gelten ausschließlich die folgenden
-              Geschäftsbedingungen (nachfolgend auch "AGB") des Anbieters.
+              Für die gesamte Geschäftsbeziehung zwischen Upcrate, vertreten durch COLORSPAZE LTD, Makariou 57, Flat/Office 1, 7100 Aradippou, Larnaca, CYPRUS, Telefon: +49 177 543 39 13, Servicezeit: werktags von 12 bis 13 Uhr, E-Mail: info@upcrate.art (nachfolgend auch "Upcrate", "Anbieter" oder "wir") und dem Kunden (nachfolgend "Kunde" genannt) gelten ausschließlich die folgenden Geschäftsbedingungen (nachfolgend auch "AGB") des Anbieters.
+              <br />
+              <br />
+              Upcrate vertreibt Produkte ausschließlich an Verbraucher im Sinne des § 13 Bürgerliches Gesetzbuch (BGB).
               <br />
               <br />
               Alle Vereinbarungen, die zwischen dem Kunden und dem Lieferanten
@@ -247,19 +244,11 @@ export default function CancellationPolicy() {
               <h2 className="text-2xl font-bold mt-10 md:mt-8">
                 Vertragslaufzeit, Kündigung und Vertragsverlängerung
               </h2>
-              With the offer variants (monthly, 3 months, 6 months or 12 months)
-              the subscription runs first over the minimum use period booked by
-              the user. Thereafter, the subscription will be extended for
-              renewal periods of the same duration if it is not terminated in
-              time by the user or upcrate. The notice period is three weeks to
-              the end of each month of the last box and requires notice of the
-              termination function in the user account or the text form.
               <br />
               <br />
               Lieferung, Liefertermine, Teillieferungen und Eigentumsvorbehalt
               <br />
               <br />
-              Lieferung, Liefertermine, Teillieferungen und Eigentumsvorbehalt
               Der Anbieter behält sich das Recht vor, erst nach vollständiger
               Bezahlung durch den Kunden zu liefern. Ein Anspruch auf vorgängige
               Lieferung besteht nicht. Der Anbieter ist zu Teillieferungen und
