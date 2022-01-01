@@ -34,16 +34,11 @@ export default function CancellationPolicy() {
 
           {lang === "en" ? (
             <div className="mt-20">
-              All contracts concluded within the validity of these terms and
-              conditions shall be subject to the statutory warranty. In
-              addition, the following individual warranty provisions are made:
               <h2 className="text-2xl font-bold mt-10 md:mt-8">Scope</h2>
-              For the entire business relationship between Upcrate, owner:
-              Clemens Roosen, Suhrsweg 3, D-22305 Hamburg, +49 177 5433913
-              (hereinafter also “Upcrate”, “Provider” or “we”) and the customer
-              (hereinafter referred to as “Customer”), the following terms and
-              conditions apply exclusively ( hereinafter also “GTC”) of the
-              provider
+              For the entire business relationship between Upcrate, represented by COLORSPAZE LTD, Makariou 57, Flat/Office 1, 7100 Aradippou, Larnaca, CYPRUS, phone: +49 177 543 39 13, service time: weekdays from 12 to 13 o'clock, e-mail: info@upcrate.art (hereinafter also referred to as "Upcrate", "Provider" or "we") and the customer (hereinafter referred to as "Customer"), the following terms and conditions (hereinafter also referred to as "GTC") of the Provider shall apply exclusively.
+              <br />
+              <br />
+              Upcrate sells products exclusively to consumers within the meaning of § 13 of the German Civil Code (BGB).
               <br />
               <br />
               All agreements concluded between the customer and the supplier
