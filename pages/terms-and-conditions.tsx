@@ -265,8 +265,7 @@ Discount codes of any kind (such as percentage or fixed amount, among others) fo
                 und Einbehalt
               </h2>
               Alle Preise enthalten die jeweils gültige Mehrwertsteuer,
-              Verpackungs- und Versandkosten. Bei Lieferungen außerhalb der
-              Europäischen Union wird keine Mehrwertsteuer berechnet. Der
+              Verpackungs- und Versandkosten. Der
               Empfänger ist selbst für die Abführung von eventuellen
               Einfuhrumsatzsteuer und Zöllen verantwortlich. Bei Abonnements
               wird die Kaufpreisforderung am 5ten Tag des darauffolgenden Monats
@@ -291,10 +290,6 @@ Discount codes of any kind (such as percentage or fixed amount, among others) fo
               Beispiel für ein Jahresabonnement: Bestellung am 25. April,
               Abbuchung am 5. Mai, wiederkehrende Abbuchung am 5. Mai des
               Folgejahres, usw.
-              <br />
-              <br />
-              For the payment, the customer only has the payment terms agreed
-              and specified in the order.
               <br />
               <br />
               Für die Zahlung stehen dem Kunden nur die in der Bestellung
@@ -330,9 +325,7 @@ Discount codes of any kind (such as percentage or fixed amount, among others) fo
               <br />
               Schadensersatzansprüche wegen eines Mangels nach Maßgabe der
               folgenden Absätze kann der Kunde erst geltend machen, wenn die
-              Nacherfüllung fehlgeschlagen ist. Das Recht des Kunden zur
-              Geltendmachung von weitergehenden Schadensersatzansprüchen zu den
-              nachfolgenden Bedingungen bleibt hiervon unberührt.
+              Nacherfüllung fehlgeschlagen ist.
               <br />
               <br />
               Die Europäische Kommission bietet eine Plattform für die
