@@ -36,10 +36,9 @@ export default function Imprint() {
           <br />
           COLORSPAZE LTD
           <br />
-          Suhrsweg 3<br />
-          22305 Hamburg
+          Makariou 57<br />Flat/Office 1<br />7100 Aradippou, Larnaca<br />
           <br />
-          Germany
+          CYPRUS
           <br />
           <br />
           <p>{t("pages.imprint.phone_label")}: +49 177 543 39 13</p>
@@ -51,7 +50,9 @@ export default function Imprint() {
           </p>
           <br />
           <br />
-          VAT Id. No.: DE257896061
+          VAT ID No.: CY10426598I
+          <br />
+          packaged and shipped/gepackt und verschickt in Hammburg, Germany
         </address>
 
         <RadialGradient className="bg-orange" variant="bottom-right" />
