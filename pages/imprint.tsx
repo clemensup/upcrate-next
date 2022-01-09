@@ -31,12 +31,12 @@ export default function Imprint() {
           />
         </h1>
         <address className="mt-20 text-xl pb-20 not-italic">
-          {t("pages.imprint.owner")}
-          <br />
-          <br />
           COLORSPAZE LTD
           <br />
-          Makariou 57<br />Flat/Office 1<br />7100 Aradippou, Larnaca<br />
+          Makariou 57
+          <br />
+          Flat/Office 1<br />
+          7100 Aradippou, Larnaca
           <br />
           CYPRUS
           <br />
@@ -49,11 +49,10 @@ export default function Imprint() {
             </a>
           </p>
           <br />
-          <br />
           VAT ID No.: CY10426598I
           <br />
           <br />
-          packaged and shipped/gepackt und verschickt in Hamburg, Germany
+          {t("pages.imprint.shipped_and_packed_label")}
         </address>
 
         <RadialGradient className="bg-orange" variant="bottom-right" />

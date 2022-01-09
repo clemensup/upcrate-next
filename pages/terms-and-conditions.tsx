@@ -35,10 +35,18 @@ export default function CancellationPolicy() {
           {lang === "en" ? (
             <div className="mt-20">
               <h2 className="text-2xl font-bold mt-10 md:mt-8">Scope</h2>
-              For the entire business relationship between Upcrate, represented by COLORSPAZE LTD, Makariou 57, Flat/Office 1, 7100 Aradippou, Larnaca, CYPRUS, phone: +49 177 543 39 13, service time: weekdays from 12 to 13 o'clock, e-mail: info@upcrate.art (hereinafter also referred to as "Upcrate", "Provider" or "we") and the customer (hereinafter referred to as "Customer"), the following terms and conditions (hereinafter also referred to as "GTC") of the Provider shall apply exclusively.
+              For the entire business relationship between Upcrate, represented
+              by COLORSPAZE LTD, Makariou 57, Flat/Office 1, 7100 Aradippou,
+              Larnaca, CYPRUS, phone: +49 177 543 39 13, service time: weekdays
+              from 12 to 13 o'clock, e-mail: info@upcrate.art (hereinafter also
+              referred to as "Upcrate", "Provider" or "we") and the customer
+              (hereinafter referred to as "Customer"), the following terms and
+              conditions (hereinafter also referred to as "GTC") of the Provider
+              shall apply exclusively.
               <br />
               <br />
-              Upcrate sells products exclusively to consumers within the meaning of § 13 of the German Civil Code (BGB).
+              Upcrate sells products exclusively to consumers within the meaning
+              of § 13 of the German Civil Code (BGB).
               <br />
               <br />
               All agreements concluded between the customer and the supplier
@@ -103,11 +111,12 @@ export default function CancellationPolicy() {
                 Prices, shipping costs, due date, payment, set-off and retention
               </h2>
               All prices include the applicable value added tax, packaging costs
-              and shipping costs. The recipient is responsible for paying any import sales tax and customs duties. For subscriptions, the purchase price claim
-              will be debited on the day of the order. Thereafter, a recurrent
-              charge will be made depending on the term of the subscription. The
-              term is selectable between monthly, quarterly, semi-annual and
-              annual.
+              and shipping costs. The recipient is responsible for paying any
+              import sales tax and customs duties. For subscriptions, the
+              purchase price claim will be debited on the day of the order.
+              Thereafter, a recurrent charge will be made depending on the term
+              of the subscription. The term is selectable between monthly,
+              quarterly, semi-annual and annual.
               <br />
               <br />
               Example of a monthly subscription: order on April 25, debit on
@@ -132,8 +141,16 @@ export default function CancellationPolicy() {
               relationship.
               <br />
               <br />
-              If, when collecting amounts due via a SEPA direct debit mandate, your account is not covered, we will charge EUR 9.00 incl. VAT for this failed payment. The same applies to contested SEPA direct debit payments that are unfounded. In this case, we only pass on the service fees of our service provider to you without any surcharge.
-Discount codes of any kind (such as percentage or fixed amount, among others) for subscriptions can only be used for the first payment. For recurring debits, the regular, non-discounted amount will be debited. This does not affect the cancellation of the subscription.
+              If, when collecting amounts due via a SEPA direct debit mandate,
+              your account is not covered, we will charge EUR 9.00 incl. VAT for
+              this failed payment. The same applies to contested SEPA direct
+              debit payments that are unfounded. In this case, we only pass on
+              the service fees of our service provider to you without any
+              surcharge. Discount codes of any kind (such as percentage or fixed
+              amount, among others) for subscriptions can only be used for the
+              first payment. For recurring debits, the regular, non-discounted
+              amount will be debited. This does not affect the cancellation of
+              the subscription.
               <h2 className="text-2xl font-bold mt-10 md:mt-8">
                 Rights in case of defects and damages
               </h2>
@@ -177,6 +194,13 @@ Discount codes of any kind (such as percentage or fixed amount, among others) fo
                 Applicable law
               </h2>
               German law applies to the exclusion of the UN purchase law.
+              <h2 className="text-2xl font-bold mt-10 md:mt-8">Jurisdiction</h2>
+              In accordance with the European Community Regulation No. 44/2001
+              (EC), a consumer's action against the Upcrate Contractual Partner
+              may be brought either before the courts of the Member State where
+              the Contractual Partner has its registered office or before the
+              court of the place where the consumer is domiciled (the so-called
+              consumer's place of jurisdiction).
               <h2 className="text-2xl font-bold mt-10 md:mt-8">Cancellation</h2>
               The legal right of withdrawal applies.
               <h3 className="text-xl font-bold mt-10 md:mt-8">
@@ -202,10 +226,17 @@ Discount codes of any kind (such as percentage or fixed amount, among others) fo
               <h2 className="text-2xl font-bold mt-10 md:mt-8">
                 Geltungsbereich
               </h2>
-              Für die gesamte Geschäftsbeziehung zwischen Upcrate, vertreten durch COLORSPAZE LTD, Makariou 57, Flat/Office 1, 7100 Aradippou, Larnaca, CYPRUS, Telefon: +49 177 543 39 13, Servicezeit: werktags von 12 bis 13 Uhr, E-Mail: info@upcrate.art (nachfolgend auch "Upcrate", "Anbieter" oder "wir") und dem Kunden (nachfolgend "Kunde" genannt) gelten ausschließlich die folgenden Geschäftsbedingungen (nachfolgend auch "AGB") des Anbieters.
+              Für die gesamte Geschäftsbeziehung zwischen Upcrate, vertreten
+              durch COLORSPAZE LTD, Makariou 57, Flat/Office 1, 7100 Aradippou,
+              Larnaca, CYPRUS, Telefon: +49 177 543 39 13, Servicezeit: werktags
+              von 12 bis 13 Uhr, E-Mail: info@upcrate.art (nachfolgend auch
+              "Upcrate", "Anbieter" oder "wir") und dem Kunden (nachfolgend
+              "Kunde" genannt) gelten ausschließlich die folgenden
+              Geschäftsbedingungen (nachfolgend auch "AGB") des Anbieters.
               <br />
               <br />
-              Upcrate vertreibt Produkte ausschließlich an Verbraucher im Sinne des § 13 Bürgerliches Gesetzbuch (BGB).
+              Upcrate vertreibt Produkte ausschließlich an Verbraucher im Sinne
+              des § 13 Bürgerliches Gesetzbuch (BGB).
               <br />
               <br />
               Alle Vereinbarungen, die zwischen dem Kunden und dem Lieferanten
@@ -265,14 +296,13 @@ Discount codes of any kind (such as percentage or fixed amount, among others) fo
                 und Einbehalt
               </h2>
               Alle Preise enthalten die jeweils gültige Mehrwertsteuer,
-              Verpackungs- und Versandkosten. Der
-              Empfänger ist selbst für die Abführung von eventuellen
-              Einfuhrumsatzsteuer und Zöllen verantwortlich. Bei Abonnements
-              wird die Kaufpreisforderung am 5ten Tag des darauffolgenden Monats
-              abgebucht. Danach wird je nach Laufzeit des Abonnements eine
-              wiederkehrende Gebühr erhoben, die am 5ten des Monats abgebucht
-              wird. Die Laufzeit ist wählbar zwischen monatlich,
-              vierteljährlich, halbjährlich und jährlich.
+              Verpackungs- und Versandkosten. Der Empfänger ist selbst für die
+              Abführung von eventuellen Einfuhrumsatzsteuer und Zöllen
+              verantwortlich. Bei Abonnements wird die Kaufpreisforderung am
+              5ten Tag des darauffolgenden Monats abgebucht. Danach wird je nach
+              Laufzeit des Abonnements eine wiederkehrende Gebühr erhoben, die
+              am 5ten des Monats abgebucht wird. Die Laufzeit ist wählbar
+              zwischen monatlich, vierteljährlich, halbjährlich und jährlich.
               <br />
               <br />
               Beispiel für ein Monatsabonnement: Bestellung am 25. April,
@@ -341,7 +371,18 @@ Discount codes of any kind (such as percentage or fixed amount, among others) fo
               <h2 className="text-2xl font-bold mt-10 md:mt-8">
                 Anwendbares Recht
               </h2>
-              Es gilt deutsches Recht unter Ausschluss des UN-Kaufrechts.
+              <p>Es gilt deutsches Recht unter Ausschluss des UN-Kaufrechts.</p>
+              <h2 className="text-2xl font-bold mt-10 md:mt-8">
+                Gerichtsstand
+              </h2>
+              <p>
+                Gemäß der Verordnung der Europäischen Gemeinschaft Nr. 44/2001
+                (EG) kann die Klage eines Verbrauchers gegen den Vertragspartner
+                Upcrate entweder vor den Gerichten des Mitgliedstaates erhoben
+                werden, in dem der Vertragspartner seinen Sitz hat oder vor dem
+                Gericht des Ortes, an dem der Verbraucher seinen Wohnsitz hat
+                (sog. Gerichtsstand des Verbrauchers).
+              </p>
               <h2 className="text-2xl font-bold mt-10 md:mt-8">Stornierung</h2>
               Es gilt das gesetzliche Widerrufsrecht.
               <h3 className="text-xl font-bold mt-10 md:mt-8">

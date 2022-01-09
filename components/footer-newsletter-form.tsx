@@ -35,6 +35,7 @@ export function FooterNewsletterForm() {
                   className="underline hover:text-pink"
                   href="/terms-and-conditions"
                 />,
+                <a className="underline hover:text-pink" href="/privacy" />,
               ]}
             />
           </span>
