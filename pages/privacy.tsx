@@ -36,7 +36,13 @@ export default function Privacy() {
               <h2 className="text-2xl font-bold mt-10 md:mt-8">
                 Ahoy and welcome to our website!
               </h2>
-              Upcrate is committed to protecting your privacy. We hereby inform you which personal information we collect, how we use it and what rights you have when using our website. COLORSPAZE LTD, represented by Clemens Roosen ("Upcrate", "we" or "us") is responsible for the processing of personal data collected through the websites www.upcrate.art, www.upcrate.de, www.shop.upcrate.art.
+              Upcrate is committed to protecting your privacy. We hereby inform
+              you which personal information we collect, how we use it and what
+              rights you have when using our website. COLORSPAZE LTD,
+              represented by Clemens Roosen ("Upcrate", "we" or "us") is
+              responsible for the processing of personal data collected through
+              the websites www.upcrate.art, www.upcrate.de,
+              www.shop.upcrate.art.
               <h2 className="text-2xl font-bold mt-10 md:mt-8">
                 Data protection
               </h2>
@@ -114,10 +120,48 @@ export default function Privacy() {
               address) to subscribe to our newsletter, it will be stored on
               MailChimp servers in the USA.
               <h2 className="text-2xl font-bold mt-10 md:mt-8">Mailjet</h2>
-              This website uses Mailjet to send newsletters. The provider is Mailjet SAS, 13-13 bis, Rue de l'Aubrac - 75012 Paris, France. Mailjet is a service that organizes and analyzes the sending of newsletters. The data you enter for the purpose of receiving newsletters (e.g. e-mail address) is stored on Mailjet's servers in the EU.  Our newsletters sent with Mailjet allow us to analyze the behavior of newsletter recipients. Here, among other things, it can be analyzed how many recipients have opened the newsletter message and how often which link in the newsletter was clicked. With the help of so-called conversion tracking, it can also be analyzed whether a predefined action (e.g. purchase of a product on our website) has taken place after clicking on the link in the newsletter. For more information on data analysis by Mailjet Newsletter, please visit: https://www.mailjet.de/funktion/tracking-tools/.  The data processing is based on your consent (Art. 6 para. 1 lit. a DSGVO). You can revoke this consent at any time by unsubscribing from the newsletter. The legality of the data processing operations already carried out remains unaffected by the revocation.  
+              This website uses Mailjet to send newsletters. The provider is
+              Mailjet SAS, 13-13 bis, Rue de l'Aubrac - 75012 Paris, France.
+              Mailjet is a service that organizes and analyzes the sending of
+              newsletters. The data you enter for the purpose of receiving
+              newsletters (e.g. e-mail address) is stored on Mailjet's servers
+              in the EU. Our newsletters sent with Mailjet allow us to analyze
+              the behavior of newsletter recipients. Here, among other things,
+              it can be analyzed how many recipients have opened the newsletter
+              message and how often which link in the newsletter was clicked.
+              With the help of so-called conversion tracking, it can also be
+              analyzed whether a predefined action (e.g. purchase of a product
+              on our website) has taken place after clicking on the link in the
+              newsletter. For more information on data analysis by Mailjet
+              Newsletter, please visit:{" "}
+              <a href="https://www.mailjet.de/funktion/tracking-tools/">
+                https://www.mailjet.de/funktion/tracking-tools/
+              </a>
+              . The data processing is based on your consent (Art. 6 para. 1
+              lit. a DSGVO). You can revoke this consent at any time by
+              unsubscribing from the newsletter. The legality of the data
+              processing operations already carried out remains unaffected by
+              the revocation.
               <br />
               <br />
-              If you do not want any analysis by Mailjet, you must unsubscribe from the newsletter. For this purpose, we provide a corresponding link in every newsletter message. Furthermore, you can also unsubscribe from the newsletter directly on the website.  The data you provide for the purpose of receiving the newsletter will be stored by us until you unsubscribe from the newsletter and will be deleted from our servers as well as from the servers of Mailjet after you unsubscribe from the newsletter. Data stored by us for other purposes (e.g. e-mail addresses for the member area) remain unaffected by this.  For more details, please refer to Mailjet's "Security and Privacy" information at https://www.mailjet.com/security-privacy/and Mailjet's privacy policy at https:// https://www.mailjet.com/privacy-policy/  
+              If you do not want any analysis by Mailjet, you must unsubscribe
+              from the newsletter. For this purpose, we provide a corresponding
+              link in every newsletter message. Furthermore, you can also
+              unsubscribe from the newsletter directly on the website. The data
+              you provide for the purpose of receiving the newsletter will be
+              stored by us until you unsubscribe from the newsletter and will be
+              deleted from our servers as well as from the servers of Mailjet
+              after you unsubscribe from the newsletter. Data stored by us for
+              other purposes (e.g. e-mail addresses for the member area) remain
+              unaffected by this. For more details, please refer to Mailjet's
+              "Security and Privacy" information at{" "}
+              <a href="https://www.mailjet.com/security-privacy/">
+                https://www.mailjet.com/security-privacy/
+              </a>{" "}
+              and Mailjet's privacy policy at{" "}
+              <a href="https://www.mailjet.com/privacy-policy/">
+                https://www.mailjet.com/privacy-policy/
+              </a>
               <h2 className="text-2xl font-bold mt-10 md:mt-8">
                 Shipping service
               </h2>
@@ -132,8 +176,10 @@ export default function Privacy() {
               </h2>
               <h3 className="text-xl font-bold mt-10 md:mt-8">Use of PayPal</h3>
               All PayPal transactions are subject to the PayPal Privacy Policy.
-              These can be found at
-              https://www.paypal.com/en/webapps/mpp/ua/privacy-full
+              These can be found at{" "}
+              <a href="https://www.paypal.com/en/webapps/mpp/ua/privacy-full">
+                https://www.paypal.com/en/webapps/mpp/ua/privacy-full
+              </a>
               <h3 className="text-xl font-bold mt-10 md:mt-8">
                 Use of the Klarna checkout
               </h3>
@@ -149,8 +195,11 @@ export default function Privacy() {
               all the functions of this website in full.
               <br />
               <br />A detailed list of cookies and an explanation of their
-              purpose can be found here
-              https://cdn.klarna.com/1.0/shared/content/policy/cookie/en_at/checkout.pdf.
+              purpose can be found here{" "}
+              <a href="https://cdn.klarna.com/1.0/shared/content/policy/cookie/en_at/checkout.pdf">
+                https://cdn.klarna.com/1.0/shared/content/policy/cookie/en_at/checkout.pdf
+              </a>
+              .
               <h3 className="text-xl font-bold mt-10 md:mt-8">
                 Use of personal data when choosing Klarna as payment method
               </h3>
@@ -218,14 +267,30 @@ export default function Privacy() {
               Protection Act. If you as a buyer wish this or if you want to
               inform Klarna about changes to the stored data, you can contact
               datenschutz@klarna.de.
-               <h2 className="text-2xl font-bold mt-10 md:mt-8">Stripe</h2>
-              We offer the option to process the payment transaction via the payment service provider Stripe, ℅ Legal Process, 510,Townsend St., San Francisco, CA 94103 (Stripe). This is in line with our legitimate interest in offering an efficient and secure payment method (Art. 6 para. 1 lit. f DSGVO). In this context, we share the following data with Stripe to the extent necessary for the performance of the contract (Art. 6 para. 1 lit b. DSGVO).
+              <h2 className="text-2xl font-bold mt-10 md:mt-8">Stripe</h2>
+              We offer the option to process the payment transaction via the
+              payment service provider Stripe, ℅ Legal Process, 510,Townsend
+              St., San Francisco, CA 94103 (Stripe). This is in line with our
+              legitimate interest in offering an efficient and secure payment
+              method (Art. 6 para. 1 lit. f DSGVO). In this context, we share
+              the following data with Stripe to the extent necessary for the
+              performance of the contract (Art. 6 para. 1 lit b. DSGVO).
               <br />
               <br />
-              Name of the cardholder  E-mail address  Customer number  Order number  Bank details  Credit card data  Credit card validity period  Credit card verification number (CVC)  Date and time of transaction  Transaction amount  Name of the provider  Place  
+              Name of the cardholder E-mail address Customer number Order number
+              Bank details Credit card data Credit card validity period Credit
+              card verification number (CVC) Date and time of transaction
+              Transaction amount Name of the provider Place
               <br />
               <br />
-              Processing of the data provided under this section is not required by law or contract. We cannot process a payment via Stripe without the submission of your personal data. You have the option to choose another payment method.    For more information on opting out and opting out of Stripe, please visit: https://stripe.com/privacy-center/legal 
+              Processing of the data provided under this section is not required
+              by law or contract. We cannot process a payment via Stripe without
+              the submission of your personal data. You have the option to
+              choose another payment method. For more information on opting out
+              and opting out of Stripe, please visit:{" "}
+              <a href="https://stripe.com/privacy-center/legal">
+                https://stripe.com/privacy-center/legal
+              </a>
               <h2 className="text-2xl font-bold mt-10 md:mt-8">Cookies</h2>
               The internet pages partly use so-called cookies. Cookies do not
               harm your computer and do not contain viruses. Cookies are used to
@@ -262,8 +327,10 @@ export default function Privacy() {
               <br />
               <br />
               For more information on how to handle user data on Google
-              Analytics, please refer to the Google Privacy Policy:
-              https://support.google.com/analytics/answer/6004245?hl=en
+              Analytics, please refer to the Google Privacy Policy:{" "}
+              <a href="https://support.google.com/analytics/answer/6004245?hl=en">
+                https://support.google.com/analytics/answer/6004245?hl=en
+              </a>
               <h2 className="text-2xl font-bold mt-10 md:mt-8">
                 Duration of storage
               </h2>
@@ -293,7 +360,6 @@ export default function Privacy() {
               <br />
               You have the right to demand that the data relating to you, which
               you have provided to us, be obtained in accordance with Art. 20
-             
               GDPR and request their transmission to other responsible persons.
               <br />
               <br />
@@ -339,20 +405,27 @@ export default function Privacy() {
                 Google webfonts
               </h2>
               This page uses so-called webfonts to represent the font. These are
-              provided by Google (http://www.google.com/webfonts/). To do this,
-              when you visit our page, your browser loads the required webfont
-              into your browser cache. This is necessary so that your browser
-              can also display a visually improved presentation of our texts. If
-              your browser does not support this feature, a default font will be
-              used by your computer for viewing.
+              provided by Google (
+              <a href="https://www.google.com/webfonts/">
+                https://www.google.com/webfonts/
+              </a>
+              ). To do this, when you visit our page, your browser loads the
+              required webfont into your browser cache. This is necessary so
+              that your browser can also display a visually improved
+              presentation of our texts. If your browser does not support this
+              feature, a default font will be used by your computer for viewing.
               <br />
               <br />
-              For more information about Google Webfonts, visit
-              https://developers.google.com/fonts/faq?hl=en-US&csw=1
+              For more information about Google Webfonts, visit{" "}
+              <a href="https://developers.google.com/fonts/faq?hl=en-US&csw=1">
+                https://developers.google.com/fonts/faq?hl=en-US&csw=1
+              </a>
               <br />
               <br />
-              For general information about privacy at Google, visit
-              http://www.google.com/intl/en-US/policies/privacy/
+              For general information about privacy at Google, visit{" "}
+              <a href="https://www.google.com/intl/en-US/policies/privacy/">
+                https://www.google.com/intl/en-US/policies/privacy/
+              </a>
               <h2 className="text-2xl font-bold mt-10 md:mt-8">Social media</h2>
               We maintain websites within social networks and platforms in order
               to communicate with customers and prospects and to inform about
@@ -374,44 +447,109 @@ export default function Privacy() {
               corresponding contact points regarding the privacy policies of the
               respective networks and platforms.
               <br />
-              <br />
-              • Facebook (Facebook Ireland Ltd., 4 Grand Canal Square, Grand
-              Canal Harbor, Dublin 2, Ireland), Facebook pages based on an
+              <br />• Facebook (Facebook Ireland Ltd., 4 Grand Canal Square,
+              Grand Canal Harbor, Dublin 2, Ireland), Facebook pages based on an
               agreement on joint processing of personal data – Privacy Policy:
-              https://www.facebook.com/about/ privacy / opt-out:
-              https://www.facebook.com/settings?tab=ads and
-              http://www.youronlinechoices.com, Privacy Shield:
-              https://www.privacyshield.gov/participant?id=a2zt0000000GnywAAC&status=Active.
+              <a className="underline" href="https://www.facebook.com/about/">
+                https://www.facebook.com/about/
+              </a>{" "}
+              privacy / opt-out:{" "}
+              <a
+                className="underline"
+                href="https://www.facebook.com/settings?tab=ads"
+              >
+                https://www.facebook.com/settings?tab=ads
+              </a>{" "}
+              and{" "}
+              <a className="underline" href="https://www.youronlinechoices.com">
+                https://www.youronlinechoices.com
+              </a>
+              , Privacy Shield:{" "}
+              <a
+                className="underline"
+                href="https://www.privacyshield.gov/participant?id=a2zt0000000GnywAAC&status=Active"
+              >
+                https://www.privacyshield.gov/participant?id=a2zt0000000GnywAAC&status=Active
+              </a>
+              .
               <br />
+              <br />• Google / YouTube (Google Ireland Limited, Gordon House,
+              Barrow Street, Dublin 4, Ireland) – Privacy Policy:{" "}
+              <a
+                className="underline"
+                href="https://policies.google.com/privacy"
+              >
+                https://policies.google.com/privacy
+              </a>
+              , opt-out:{" "}
+              <a
+                className="underline"
+                href="https://adssettings.google.com/authenticated"
+              >
+                https://adssettings.google.com/authenticated
+              </a>{" "}
+              , Privacy Shield:{" "}
+              <a
+                className="underline"
+                href="https://www.privacyshield.gov/participant?id=a2zt000000001L5AAI&status=Active"
+              >
+                https://www.privacyshield.gov/participant?id=a2zt000000001L5AAI&status=Active
+              </a>
+              .
               <br />
-              • Google / YouTube (Google Ireland Limited, Gordon House, Barrow
-              Street, Dublin 4, Ireland) – Privacy Policy:
-              https://policies.google.com/privacy, opt-out:
-              https://adssettings.google.com/authenticated , Privacy Shield:
-              https://www.privacyshield.gov/participant?id=a2zt000000001L5AAI&status=Active.
+              <br />• Instagram (Instagram Inc., 1601 Willow Road, Menlo Park,
+              Calif., 94025, USA) – Privacy Policy / Opt-Out:{" "}
+              <a
+                className="underline"
+                href="https://instagram.com/about/legal/privacy/"
+              >
+                https://instagram.com/about/legal/privacy/
+              </a>
+              .
               <br />
-              <br />
-              • Instagram (Instagram Inc., 1601 Willow Road, Menlo Park, Calif.,
-              94025, USA) – Privacy Policy / Opt-Out:
-              http://instagram.com/about/legal/privacy/.
-              <br />
-              <br />
-              • Twitter (Twitter Inc., 1355 Market Street, Suite 900, San
-              Francisco, CA 94103, USA) – Privacy Policy:
-              https://twitter.com/privacy, opt-out:
-              https://twitter.com/personalization , Privacy Shield:
-              https://www.privacyshield.gov/participant?id=a2zt0000000TORzAAO&status=Active.
+              <br />• Twitter (Twitter Inc., 1355 Market Street, Suite 900, San
+              Francisco, CA 94103, USA) – Privacy Policy:{" "}
+              <a className="underline" href="https://twitter.com/privacy">
+                https://twitter.com/privacy
+              </a>
+              , opt-out:{" "}
+              <a
+                className="underline"
+                href="https://twitter.com/personalization"
+              >
+                https://twitter.com/personalization
+              </a>{" "}
+              , Privacy Shield:{" "}
+              <a
+                className="underline"
+                href="https://www.privacyshield.gov/participant?id=a2zt0000000TORzAAO&status=Active"
+              >
+                https://www.privacyshield.gov/participant?id=a2zt0000000TORzAAO&status=Active
+              </a>
+              .
               <br />
               <br />
               Tumblr (Tumblr, Inc., 35 East 21st St., 10th Floor, New York, NY
               10010, USA)
               <br />
               <br />
-              Privacy Policy: http://www.tumblr.com/policy/en/privacy
+              Privacy Policy:{" "}
+              <a
+                className="underline"
+                href="https://www.tumblr.com/policy/en/privacy"
+              >
+                https://www.tumblr.com/policy/en/privacy
+              </a>
               <br />
               <br />• Pinterest (Pinterest Inc., 635 High Street, Palo Alto, CA,
-              94301, USA) – Privacy Policy / Opt-Out:
-              https://about.pinterest.com/en/privacy-policy.
+              94301, USA) – Privacy Policy / Opt-Out:{" "}
+              <a
+                className="underline"
+                href="https://about.pinterest.com/en/privacy-policy"
+              >
+                https://about.pinterest.com/en/privacy-policy
+              </a>
+              .
               <h2 className="text-2xl font-bold mt-10 md:mt-8">
                 Use of Facebook social plugins
               </h2>
@@ -426,13 +564,25 @@ export default function Privacy() {
               logos (white “f” on a blue tile, the terms “like”, “like” or a
               “thumbs up” sign ) or are marked with the addition „Facebook
               Social Plugin“. The list and the appearance of the Facebook social
-              plugins can be viewed here:
-              https://developers.facebook.com/docs/plugins/.
+              plugins can be viewed here:{" "}
+              <a
+                className="underline"
+                href="https://developers.facebook.com/docs/plugins/"
+              >
+                https://developers.facebook.com/docs/plugins/
+              </a>
+              .
               <br />
               <br />
               Facebook is certified under the Privacy Shield Agreement and thus
-              offers a guarantee to comply with European data protection law
-              (https://www.privacyshield.gov/participant?id=a2zt0000000GnywAAC&status=Active).
+              offers a guarantee to comply with European data protection law (
+              <a
+                className="underline"
+                href="https://www.privacyshield.gov/participant?id=a2zt0000000GnywAAC&status=Active"
+              >
+                https://www.privacyshield.gov/participant?id=a2zt0000000GnywAAC&status=Active
+              </a>
+              ).
               <br />
               <br />
               When a user calls up a function of this online offer that contains
@@ -460,8 +610,14 @@ export default function Privacy() {
               The purpose and scope of the data collection and the further
               processing and use of the data by Facebook as well as the related
               rights and setting options to protect the privacy of users can be
-              found in Facebook’s data protection information:
-              https://www.facebook.com/about/privacy/.
+              found in Facebook’s data protection information:{" "}
+              <a
+                className="underline"
+                href="https://www.facebook.com/about/privacy/"
+              >
+                https://www.facebook.com/about/privacy/
+              </a>
+              .
               <br />
               <br />
               If a user is a Facebook member and does not want Facebook to
@@ -469,12 +625,26 @@ export default function Privacy() {
               his member data stored on Facebook, he must log out of Facebook
               before using our online offer and delete his cookies. Further
               settings and contradictions to the use of data for advertising
-              purposes are possible within the Facebook profile settings:
-              https://www.facebook.com/settings?tab=ads or via the US website
-              http://www.aboutads.info / choices / or the EU page
-              http://www.youronlinechoices.com/. The settings are
-              platform-independent, i.e. they are adopted for all devices such
-              as desktop computers or mobile devices.
+              purposes are possible within the Facebook profile settings:{" "}
+              <a
+                className="underline"
+                href="https://www.facebook.com/settings?tab=ads"
+              >
+                https://www.facebook.com/settings?tab=ads
+              </a>{" "}
+              or via the US website{" "}
+              <a className="underline" href="https://www.aboutads.info">
+                https://www.aboutads.info
+              </a>{" "}
+              / choices / or the EU page{" "}
+              <a
+                className="underline"
+                href="https://www.youronlinechoices.com/"
+              >
+                https://www.youronlinechoices.com/
+              </a>
+              . The settings are platform-independent, i.e. they are adopted for
+              all devices such as desktop computers or mobile devices.
               <h2 className="text-2xl font-bold mt-10 md:mt-8">Twitter</h2>
               Functions and contents of the Twitter service, offered by Twitter
               Inc., 1355 Market Street, Suite 900, San Francisco, CA 94103, USA,
@@ -486,11 +656,25 @@ export default function Privacy() {
               the above-mentioned content and functions to the profiles of the
               users there. Twitter is certified under the Privacy Shield
               Agreement and thus offers a guarantee to comply with European data
-              protection law
-              (https://www.privacyshield.gov/participant?id=a2zt0000000TORzAAO&status=Active).
-              Data protection declaration: https://twitter.com/de/privacy,
-              Opt-Out: https://twitter.com/personalization.
-              <h2 className="text-2xl font-bold mt-10 md:mt-8">Instagram</h2>
+              protection law (
+              <a
+                className="underline"
+                href="https://www.privacyshield.gov/participant?id=a2zt0000000TORzAAO&status=Active"
+              >
+                https://www.privacyshield.gov/participant?id=a2zt0000000TORzAAO&status=Active
+              </a>
+              ). Data protection declaration:{" "}
+              <a className="underline" href="https://twitter.com/de/privacy">
+                https://twitter.com/de/privacy
+              </a>
+              , Opt-Out:{" "}
+              <a
+                className="underline"
+                href="https://twitter.com/personalization"
+              >
+                https://twitter.com/personalization
+              </a>
+              .<h2 className="text-2xl font-bold mt-10 md:mt-8">Instagram</h2>
               Functions and contents of the Instagram service, offered by
               Instagram Inc., 1601 Willow Road, Menlo Park, CA, 94025, USA, can
               be integrated into our online offer. This can include, for
@@ -499,9 +683,14 @@ export default function Privacy() {
               the authors of the content or our contributions. If the users are
               members of the Instagram platform, Instagram can assign the
               above-mentioned content and functions to the profiles of the users
-              there. Instagram privacy policy:
-              http://instagram.com/about/legal/privacy/.
-              <h2 className="text-2xl font-bold mt-10 md:mt-8">Pinterest</h2>
+              there. Instagram privacy policy:{" "}
+              <a
+                className="underline"
+                href="https://instagram.com/about/legal/privacy/"
+              >
+                https://instagram.com/about/legal/privacy/
+              </a>
+              .<h2 className="text-2xl font-bold mt-10 md:mt-8">Pinterest</h2>
               The controller has integrated components from Pinterest Inc. on
               this website. Pinterest is a so-called social network. A social
               network is an Internet-based social meeting place, an online
@@ -526,10 +715,12 @@ export default function Privacy() {
               technology system of the person concerned is automatically
               pinterested Component causes a representation of the corresponding
               Pinterest component of Pinterest to be downloaded. More
-              information about Pinterest is available at
-              https://pinterest.com/. As part of this technical process,
-              Pinterest is aware of which specific bottom of our website is
-              visited by the person concerned.
+              information about Pinterest is available at{" "}
+              <a className="underline" href="https://pinterest.com/">
+                https://pinterest.com/
+              </a>
+              . As part of this technical process, Pinterest is aware of which
+              specific bottom of our website is visited by the person concerned.
               <br />
               <br />
               If the data subject is logged in to Pinterest at the same time,
@@ -554,10 +745,15 @@ export default function Privacy() {
               your Pinterest account before calling our website.
               <br />
               <br />
-              Pinterest’s Privacy Policy, available at
-              https://about.pinterest.com/privacy-policy, provides insight into
-              the collection, processing and use of personal information by
-              Pinterest.
+              Pinterest’s Privacy Policy, available at{" "}
+              <a
+                className="underline"
+                href="https://about.pinterest.com/privacy-policy"
+              >
+                https://about.pinterest.com/privacy-policy
+              </a>
+              , provides insight into the collection, processing and use of
+              personal information by Pinterest.
               <h2 className="text-2xl font-bold mt-10 md:mt-8">YouTube</h2>
               The controller has integrated YouTube components on this website.
               YouTube is an internet video portal that allows video publishers
@@ -579,9 +775,15 @@ export default function Privacy() {
               information technology system to be represented by the respective
               YouTube component to download an illustration of the corresponding
               YouTube component from YouTube. More information about YouTube can
-              be found at https://www.youtube.com/yt/about/en/. As part of this
-              technical process, YouTube and Google will be aware of which
-              specific bottom of our site the person is visiting.
+              be found at{" "}
+              <a
+                className="underline"
+                href="https://www.youtube.com/yt/about/en/"
+              >
+                https://www.youtube.com/yt/about/en/
+              </a>
+              . As part of this technical process, YouTube and Google will be
+              aware of which specific bottom of our site the person is visiting.
               <br />
               <br />
               If the person is logged in to YouTube at the same time, YouTube
@@ -601,10 +803,15 @@ export default function Privacy() {
               out of their YouTube account before calling our website.
               <br />
               <br />
-              YouTube’s privacy policy, available at
-              https://www.google.com/intl/en/policies/privacy/, identifies the
-              collection, processing, and use of personally identifiable
-              information by YouTube and Google.
+              YouTube’s privacy policy, available at{" "}
+              <a
+                className="underline"
+                href="https://www.google.com/intl/en/policies/privacy/"
+              >
+                https://www.google.com/intl/en/policies/privacy/
+              </a>
+              , identifies the collection, processing, and use of personally
+              identifiable information by YouTube and Google.
               <h2 className="text-2xl font-bold mt-10 md:mt-8">Tumblr</h2>
               Our pages use buttons of the service Tumblr. Provider is Tumblr,
               Inc., 35 East 21st St, 10th Floor, New York, NY 10010, USA. These
@@ -617,8 +824,14 @@ export default function Privacy() {
               URL of the respective website are transmitted.
               <br />
               <br />
-              Further information can be found in the Tumblr privacy policy at
-              http://www.tumblr.com/policy/en/privacy.
+              Further information can be found in the Tumblr privacy policy at{" "}
+              <a
+                className="underline"
+                href="https://www.tumblr.com/policy/en/privacy"
+              >
+                https://www.tumblr.com/policy/en/privacy
+              </a>
+              .
               <br />
               <br />
               If you have questions about our privacy policy, please contact us
@@ -644,7 +857,14 @@ export default function Privacy() {
               <h2 className="text-2xl font-bold mt-10 md:mt-8">
                 Ahoi und willkommen auf unserer Website!
               </h2>
-              Upcrate verpflichtet sich, Ihre Privatsphäre zu schützen. Hiermit informieren wir Sie, welche personenbezogenen Daten wir erheben, wie wir diese verwenden und welche Rechte Sie bei der Nutzung unserer Website haben. COLORSPAZE LTD, vertreten durch Clemens Roosen („Upcrate“, „wir“ oder „uns“) ist verantwortlich für die Verarbeitung personenbezogener Daten, die über die Websites www.upcrate.art, www.upcrate.de, www.shop.upcrate.art erhoben werden.
+              Upcrate verpflichtet sich, Ihre Privatsphäre zu schützen. Hiermit
+              informieren wir Sie, welche personenbezogenen Daten wir erheben,
+              wie wir diese verwenden und welche Rechte Sie bei der Nutzung
+              unserer Website haben. COLORSPAZE LTD, vertreten durch Clemens
+              Roosen („Upcrate“, „wir“ oder „uns“) ist verantwortlich für die
+              Verarbeitung personenbezogener Daten, die über die Websites
+              www.upcrate.art, www.upcrate.de, www.shop.upcrate.art erhoben
+              werden.
               <h2 className="text-2xl font-bold mt-10 md:mt-8">_</h2>
               Die Nutzung unserer Website ist in der Regel ohne Angabe
               personenbezogener Daten möglich. Soweit auf unseren Seiten
@@ -726,11 +946,63 @@ export default function Privacy() {
               organisiert und analysiert. Wenn Sie Daten (z.B. Ihre
               E-Mail-Adresse) angeben, um unseren Newsletter zu abonnieren,
               werden diese auf den Servern von MailChimp in den USA gespeichert.
-               <h2 className="text-2xl font-bold mt-10 md:mt-8">Mailjet</h2>
-              Diese Website nutzt Mailjet für den Versand von Newslettern. Anbieter ist die Mailjet SAS, 13-13 bis, Rue de l’Aubrac – 75012 Paris, Frankreich. Mailjet ist ein Dienst, mit dem der Newsletterversand organisiert und analysiert werden kann. Die von Ihnen zwecks Newsletterbezug eingegebenen Daten (z.B. E-Mail-Adresse) werden auf den Servern von Mailjet in der EU gespeichert.  Unsere mit Mailjet versandten Newsletter ermöglichen uns die Analyse des Verhaltens der Newsletterempfänger. Hierbei kann u. a. analysiert werden, wie viele Empfänger die Newsletternachricht geöffnet haben und wie oft welcher Link im Newsletter angeklickt wurde. Mit Hilfe des sogenannten Conversion-Trackings kann außerdem analysiert werden, ob nach Anklicken des Links im Newsletter eine vorab definierte Aktion (z.B. Kauf eines Produkts auf unserer Website) erfolgt ist. Weitere Informationen zur Datenanalyse durch Mailjet-Newsletter erhalten Sie unter: https://www.mailjet.de/funktion/tracking-tools/.  
+              <h2 className="text-2xl font-bold mt-10 md:mt-8">Mailjet</h2>
+              Diese Website nutzt Mailjet für den Versand von Newslettern.
+              Anbieter ist die Mailjet SAS, 13-13 bis, Rue de l’Aubrac – 75012
+              Paris, Frankreich. Mailjet ist ein Dienst, mit dem der
+              Newsletterversand organisiert und analysiert werden kann. Die von
+              Ihnen zwecks Newsletterbezug eingegebenen Daten (z.B.
+              E-Mail-Adresse) werden auf den Servern von Mailjet in der EU
+              gespeichert. Unsere mit Mailjet versandten Newsletter ermöglichen
+              uns die Analyse des Verhaltens der Newsletterempfänger. Hierbei
+              kann u. a. analysiert werden, wie viele Empfänger die
+              Newsletternachricht geöffnet haben und wie oft welcher Link im
+              Newsletter angeklickt wurde. Mit Hilfe des sogenannten
+              Conversion-Trackings kann außerdem analysiert werden, ob nach
+              Anklicken des Links im Newsletter eine vorab definierte Aktion
+              (z.B. Kauf eines Produkts auf unserer Website) erfolgt ist.
+              Weitere Informationen zur Datenanalyse durch Mailjet-Newsletter
+              erhalten Sie unter:{" "}
+              <a
+                className="underline"
+                href="https://www.mailjet.de/funktion/tracking-tools/"
+              >
+                https://www.mailjet.de/funktion/tracking-tools/
+              </a>
+              .
               <br />
               <br />
-              Die Datenverarbeitung erfolgt auf Grundlage Ihrer Einwilligung (Art. 6 Abs. 1 lit. a DSGVO). Sie können diese Einwilligung jederzeit widerrufen, indem Sie den Newsletter abbestellen. Die Rechtmäßigkeit der bereits erfolgten Datenverarbeitungsvorgänge bleibt vom Widerruf unberührt.  Wenn Sie keine Analyse durch Mailjet wollen, müssen Sie den Newsletter abbestellen. Hierfür stellen wir in jeder Newsletternachricht einen entsprechenden Link zur Verfügung. Des Weiteren können Sie den Newsletter auch direkt auf der Website abbestellen.  Die von Ihnen zum Zwecke des Newsletter-Bezugs bei uns hinterlegten Daten werden von uns bis zu Ihrer Austragung aus dem Newsletter gespeichert und nach der Abbestellung des Newsletters sowohl von unseren Servern als auch von den Servern von Mailjet gelöscht. Daten, die zu anderen Zwecken bei uns gespeichert wurden (z.B. E-Mail-Adressen für den Mitgliederbereich) bleiben hiervon unberührt.  Näheres entnehmen Sie den Informationen zu “Sicherheit und Datenschutz” von Mailjet unter https://www.mailjet.de/sicherheit-datenschutz/ und den Datenschutzbestimmungen von Mailjet unter https://www.mailjet.de/privacy-policy/.  
+              Die Datenverarbeitung erfolgt auf Grundlage Ihrer Einwilligung
+              (Art. 6 Abs. 1 lit. a DSGVO). Sie können diese Einwilligung
+              jederzeit widerrufen, indem Sie den Newsletter abbestellen. Die
+              Rechtmäßigkeit der bereits erfolgten Datenverarbeitungsvorgänge
+              bleibt vom Widerruf unberührt. Wenn Sie keine Analyse durch
+              Mailjet wollen, müssen Sie den Newsletter abbestellen. Hierfür
+              stellen wir in jeder Newsletternachricht einen entsprechenden Link
+              zur Verfügung. Des Weiteren können Sie den Newsletter auch direkt
+              auf der Website abbestellen. Die von Ihnen zum Zwecke des
+              Newsletter-Bezugs bei uns hinterlegten Daten werden von uns bis zu
+              Ihrer Austragung aus dem Newsletter gespeichert und nach der
+              Abbestellung des Newsletters sowohl von unseren Servern als auch
+              von den Servern von Mailjet gelöscht. Daten, die zu anderen
+              Zwecken bei uns gespeichert wurden (z.B. E-Mail-Adressen für den
+              Mitgliederbereich) bleiben hiervon unberührt. Näheres entnehmen
+              Sie den Informationen zu “Sicherheit und Datenschutz” von Mailjet
+              unter{" "}
+              <a
+                className="underline"
+                href="https://www.mailjet.de/sicherheit-datenschutz/"
+              >
+                https://www.mailjet.de/sicherheit-datenschutz/
+              </a>{" "}
+              und den Datenschutzbestimmungen von Mailjet unter{" "}
+              <a
+                className="underline"
+                href="https://www.mailjet.de/privacy-policy/"
+              >
+                https://www.mailjet.de/privacy-policy/
+              </a>
+              .
               <h2 className="text-2xl font-bold mt-10 md:mt-8">
                 Versand Service
               </h2>
@@ -746,8 +1018,13 @@ export default function Privacy() {
                 Nutzung von PayPal
               </h3>
               Alle PayPal-Transaktionen unterliegen der
-              PayPal-Datenschutzerklärung. Diese finden Sie unter
-              https://www.paypal.com/en/webapps/mpp/ua/privacy-full
+              PayPal-Datenschutzerklärung. Diese finden Sie unter{" "}
+              <a
+                className="underline"
+                href="https://www.paypal.com/en/webapps/mpp/ua/privacy-full"
+              >
+                https://www.paypal.com/en/webapps/mpp/ua/privacy-full
+              </a>
               <h3 className="text-xl font-bold mt-10 md:mt-8">
                 Nutzung des Klarna checkout
               </h3>
@@ -767,8 +1044,14 @@ export default function Privacy() {
               <br />
               <br />
               Eine detaillierte Liste der Cookies und eine Erläuterung ihres
-              Zwecks finden Sie hier
-              https://cdn.klarna.com/1.0/shared/content/policy/cookie/en_at/checkout.pdf.
+              Zwecks finden Sie hier{" "}
+              <a
+                className="underline"
+                href="https://cdn.klarna.com/1.0/shared/content/policy/cookie/en_at/checkout.pdf"
+              >
+                https://cdn.klarna.com/1.0/shared/content/policy/cookie/en_at/checkout.pdf
+              </a>
+              .
               <h3 className="text-xl font-bold mt-10 md:mt-8">
                 Verwendung personenbezogener Daten bei der Auswahl von Klarna
                 als Zahlungsmethode
@@ -843,13 +1126,35 @@ export default function Privacy() {
               informieren möchten, können Sie sich an datenschutz@klarna.de
               wenden.
               <h2 className="text-2xl font-bold mt-10 md:mt-8">Stripe</h2>
-              Wir bieten die Möglichkeit, den Zahlungsvorgang über den Zahlungsdienstleister Stripe, ℅ Legal Process, 510,Townsend St., San Francisco, CA 94103 (Stripe) abzuwickeln. Dies entspricht unserem berechtigten Interesse, eine effiziente und sichere Zahlungsmethode anzubieten (Art. 6 Abs. 1 lit. f DSGVO). In dem Zusammenhang geben wir folgende Daten an Stripe weiter, soweit es für die Vertragserfüllung erforderlich ist (Art. 6 Abs. 1 lit b. DSGVO).
+              Wir bieten die Möglichkeit, den Zahlungsvorgang über den
+              Zahlungsdienstleister Stripe, ℅ Legal Process, 510,Townsend St.,
+              San Francisco, CA 94103 (Stripe) abzuwickeln. Dies entspricht
+              unserem berechtigten Interesse, eine effiziente und sichere
+              Zahlungsmethode anzubieten (Art. 6 Abs. 1 lit. f DSGVO). In dem
+              Zusammenhang geben wir folgende Daten an Stripe weiter, soweit es
+              für die Vertragserfüllung erforderlich ist (Art. 6 Abs. 1 lit b.
+              DSGVO).
               <br />
               <br />
-              Name des Karteninhabers  E-Mail-Adresse  Kundennummer  Bestellnummer  Bankverbindung  Kreditkartendaten  Gültigkeitsdauer der Kreditkarte  Prüfnummer der Kreditkarte (CVC)  Datum und Uhrzeit der Transaktion  Transaktionssumme  Name des Anbieters  Ort  
+              Name des Karteninhabers E-Mail-Adresse Kundennummer Bestellnummer
+              Bankverbindung Kreditkartendaten Gültigkeitsdauer der Kreditkarte
+              Prüfnummer der Kreditkarte (CVC) Datum und Uhrzeit der Transaktion
+              Transaktionssumme Name des Anbieters Ort
               <br />
               <br />
-              Die Verarbeitung der unter diesem Abschnitt angegebenen Daten ist weder gesetzlich noch vertraglich vorgeschrieben. Ohne die Übermittlung Ihrer personenbezogenen Daten können wir eine Zahlung über Stripe nicht durchführen. Es besteht für Sie die Möglichkeit, eine andere Zahlungsmethode zu wählen.  Weitere Informationen zu Widerspruchs- und Beseitigungsmöglichkeiten gegenüber Stripe finden Sie unter: https://stripe.com/privacy-center/legal  
+              Die Verarbeitung der unter diesem Abschnitt angegebenen Daten ist
+              weder gesetzlich noch vertraglich vorgeschrieben. Ohne die
+              Übermittlung Ihrer personenbezogenen Daten können wir eine Zahlung
+              über Stripe nicht durchführen. Es besteht für Sie die Möglichkeit,
+              eine andere Zahlungsmethode zu wählen. Weitere Informationen zu
+              Widerspruchs- und Beseitigungsmöglichkeiten gegenüber Stripe
+              finden Sie unter:{" "}
+              <a
+                className="underline"
+                href="https://stripe.com/privacy-center/legal"
+              >
+                https://stripe.com/privacy-center/legal
+              </a>
               <h2 className="text-2xl font-bold mt-10 md:mt-8">Cookies</h2>
               Die Internetseiten verwenden teilweise sogenannte Cookies. Cookies
               richten auf Ihrem Computer keinen Schaden an und enthalten keine
@@ -875,7 +1180,23 @@ export default function Privacy() {
               <h2 className="text-2xl font-bold mt-10 md:mt-8">
                 Datenschutzerklärung für die Nutzung von Google Analytics
               </h2>
-              Diese Website nutzt Funktionen des Webanalysedienstes Google Analytics. Anbieter ist die Google Inc., 1600 Amphitheatre Parkway Mountain View, CA 94043, USA. Google Analytics verwendet sogenannte „Cookies“. Das sind Textdateien, die auf Ihrem Computer gespeichert werden und die eine Analyse der Benutzung der Website durch Sie ermöglichen. Die durch den Cookie erzeugten Informationen über Ihre Benutzung dieser Website werden in der Regel an einen Server von Google in den USA übertragen und dort gespeichert. Mehr Informationen zum Umgang mit Nutzerdaten bei Google Analytics finden Sie in der Datenschutzerklärung von Google: https://support.google.com/analytics/answer/6004245?hl=de
+              Diese Website nutzt Funktionen des Webanalysedienstes Google
+              Analytics. Anbieter ist die Google Inc., 1600 Amphitheatre Parkway
+              Mountain View, CA 94043, USA. Google Analytics verwendet
+              sogenannte „Cookies“. Das sind Textdateien, die auf Ihrem Computer
+              gespeichert werden und die eine Analyse der Benutzung der Website
+              durch Sie ermöglichen. Die durch den Cookie erzeugten
+              Informationen über Ihre Benutzung dieser Website werden in der
+              Regel an einen Server von Google in den USA übertragen und dort
+              gespeichert. Mehr Informationen zum Umgang mit Nutzerdaten bei
+              Google Analytics finden Sie in der Datenschutzerklärung von
+              Google:{" "}
+              <a
+                className="underline"
+                href="https://support.google.com/analytics/answer/6004245?hl=de"
+              >
+                https://support.google.com/analytics/answer/6004245?hl=de
+              </a>
               <h2 className="text-2xl font-bold mt-10 md:mt-8">
                 Browser plugin
               </h2>
@@ -889,7 +1210,13 @@ export default function Privacy() {
               Regel an einen Server von Google in den USA übertragen und dort
               gespeichert. Mehr Informationen zum Umgang mit Nutzerdaten bei
               Google Analytics finden Sie in der Datenschutzerklärung von
-              Google: https://support.google.com/analytics/answer/6004245?hl=de
+              Google:{" "}
+              <a
+                className="underline"
+                href="https://support.google.com/analytics/answer/6004245?hl=de"
+              >
+                https://support.google.com/analytics/answer/6004245?hl=de
+              </a>
               <h2 className="text-2xl font-bold mt-10 md:mt-8">
                 Widerspruch gegen die Datenerhebung
               </h2>
@@ -960,7 +1287,7 @@ export default function Privacy() {
               Übertragung vertraulicher Inhalte, wie zum Beispiel der Anfragen,
               die Sie an uns als Seitenbetreiber senden, eine
               SSL-Verschlüsselung. Eine verschlüsselte Verbindung erkennen Sie
-              daran, dass die Adresszeile des Browsers von „http://“ auf
+              daran, dass die Adresszeile des Browsers von „https://“ auf
               „https://“ wechselt und an dem Schloss-Symbol in Ihrer
               Browserzeile.
               <br />
@@ -971,21 +1298,35 @@ export default function Privacy() {
                 Google webfonts
               </h2>
               Diese Seite verwendet zur Darstellung der Schriftart sogenannte
-              Webfonts. Diese werden von Google
-              (http://www.google.com/webfonts/) bereitgestellt. Dazu lädt Ihr
-              Browser beim Aufruf unserer Seite den benötigten Webfont in Ihren
-              Browsercache. Dies ist notwendig, damit Ihr Browser auch eine
-              optisch verbesserte Darstellung unserer Texte anzeigen kann. Wenn
-              Ihr Browser diese Funktion nicht unterstützt, wird von Ihrem
-              Computer zum Anzeigen eine Standardschrift verwendet.
+              Webfonts. Diese werden von Google (
+              <a className="underline" href="https://www.google.com/webfonts/">
+                https://www.google.com/webfonts/
+              </a>
+              ) bereitgestellt. Dazu lädt Ihr Browser beim Aufruf unserer Seite
+              den benötigten Webfont in Ihren Browsercache. Dies ist notwendig,
+              damit Ihr Browser auch eine optisch verbesserte Darstellung
+              unserer Texte anzeigen kann. Wenn Ihr Browser diese Funktion nicht
+              unterstützt, wird von Ihrem Computer zum Anzeigen eine
+              Standardschrift verwendet.
               <br />
               <br />
-              Weitere Informationen zu Google Webfonts finden Sie unter
-              https://developers.google.com/fonts/faq?hl=en-US&csw=1
+              Weitere Informationen zu Google Webfonts finden Sie unter{" "}
+              <a
+                className="underline"
+                href="https://developers.google.com/fonts/faq?hl=en-US&csw=1"
+              >
+                https://developers.google.com/fonts/faq?hl=en-US&csw=1
+              </a>
               <br />
               <br />
               Allgemeine Informationen zum Datenschutz bei Google finden Sie
-              unter http://www.google.com/intl/en-US/policies/privacy/
+              unter{" "}
+              <a
+                className="underline"
+                href="https://www.google.com/intl/en-US/policies/privacy/"
+              >
+                https://www.google.com/intl/en-US/policies/privacy/
+              </a>
               <h2 className="text-2xl font-bold mt-10 md:mt-8">
                 Soziale Medien
               </h2>
@@ -1014,45 +1355,110 @@ export default function Privacy() {
               corresponding contact points regarding the privacy policies of the
               respective networks and platforms.
               <br />
+              <br />• Facebook (Facebook Ireland Ltd., 4 Grand Canal Square,
+              Grand Canal Harbour, Dublin 2, Irland), Facebook-Seiten auf
+              Grundlage einer Vereinbarung zur gemeinsamen Verarbeitung
+              personenbezogener Daten – Datenschutzerklärung:{" "}
+              <a className="underline" href="https://www.facebook.com/about">
+                https://www.facebook.com/about
+              </a>{" "}
+              / Datenschutz / Opt-Out:{" "}
+              <a
+                className="underline"
+                href="https://www.facebook.com/settings?tab=ads"
+              >
+                https://www.facebook.com/settings?tab=ads
+              </a>
+              und{" "}
+              <a className="underline" href="https://www.youronlinechoices.com">
+                https://www.youronlinechoices.com
+              </a>
+              , Privacy Shield:{" "}
+              <a
+                className="underline"
+                href="https://www.privacyshield.gov/participant?id=a2zt0000000GnywAAC&status=Active"
+              >
+                https://www.privacyshield.gov/participant?id=a2zt0000000GnywAAC&status=Active
+              </a>{" "}
+              .
               <br />
-              • Facebook (Facebook Ireland Ltd., 4 Grand Canal Square, Grand
-              Canal Harbour, Dublin 2, Irland), Facebook-Seiten auf Grundlage
-              einer Vereinbarung zur gemeinsamen Verarbeitung personenbezogener
-              Daten – Datenschutzerklärung: https://www.facebook.com/about /
-              Datenschutz / Opt-Out: https://www.facebook.com/settings? tab=ads
-              und http://www.youronlinechoices.com, Privacy Shield:
-              https://www.privacyshield.gov/participant?id= a2zt0000000GnywAAC &
-              status = Active.
+              <br />• Google / YouTube (Google Ireland Limited, Gordon House,
+              Barrow Street, Dublin 4, Ireland) – Privacy Policy:{" "}
+              <a
+                className="underline"
+                href="https://policies.google.com/privacy"
+              >
+                https://policies.google.com/privacy
+              </a>
+              , opt-out:{" "}
+              <a
+                className="underline"
+                href="https://adssettings.google.com/authenticated"
+              >
+                https://adssettings.google.com/authenticated
+              </a>{" "}
+              , Privacy Shield:{" "}
+              <a
+                className="underline"
+                href="https://www.privacyshield.gov/participant?id=a2zt000000001L5AAI&status=Active"
+              >
+                https://www.privacyshield.gov/participant?id=a2zt000000001L5AAI&status=Active
+              </a>
+              .
               <br />
+              <br />• Instagram (Instagram Inc., 1601 Willow Road, Menlo Park,
+              Calif., 94025, USA) – Privacy Policy / Opt-Out:{" "}
+              <a
+                className="underline"
+                href="https://instagram.com/about/legal/privacy/"
+              >
+                https://instagram.com/about/legal/privacy/
+              </a>
+              .
               <br />
-              • Google / YouTube (Google Ireland Limited, Gordon House, Barrow
-              Street, Dublin 4, Ireland) – Privacy Policy:
-              https://policies.google.com/privacy, opt-out:
-              https://adssettings.google.com/authenticated , Privacy Shield:
-              https://www.privacyshield.gov/participant?id=a2zt000000001L5AAI&status=Active.
-              <br />
-              <br />
-              • Instagram (Instagram Inc., 1601 Willow Road, Menlo Park, Calif.,
-              94025, USA) – Privacy Policy / Opt-Out:
-              http://instagram.com/about/legal/privacy/.
-              <br />
-              <br />
-              • Twitter (Twitter Inc., 1355 Market Street, Suite 900, San
-              Francisco, CA 94103, USA) – Privacy Policy:
-              https://twitter.com/privacy, opt-out:
-              https://twitter.com/personalization , Privacy Shield:
-              https://www.privacyshield.gov/participant?id=a2zt0000000TORzAAO&status=Active.
+              <br />• Twitter (Twitter Inc., 1355 Market Street, Suite 900, San
+              Francisco, CA 94103, USA) – Privacy Policy:{" "}
+              <a className="underline" href="https://twitter.com/privacy">
+                https://twitter.com/privacy
+              </a>
+              , opt-out:{" "}
+              <a
+                className="underline"
+                href="https://twitter.com/personalization"
+              >
+                https://twitter.com/personalization
+              </a>{" "}
+              , Privacy Shield:{" "}
+              <a
+                className="underline"
+                href="https://www.privacyshield.gov/participant?id=a2zt0000000TORzAAO&status=Active"
+              >
+                https://www.privacyshield.gov/participant?id=a2zt0000000TORzAAO&status=Active
+              </a>
+              .
               <br />
               <br />
               Tumblr (Tumblr, Inc., 35 East 21st St., 10th Floor, New York, NY
               10010, USA)
               <br />
               <br />
-              Privacy Policy: http://www.tumblr.com/policy/en/privacy
+              Privacy Policy:{" "}
+              <a
+                className="underline"
+                href="https://www.tumblr.com/policy/en/privacy"
+              >
+                https://www.tumblr.com/policy/en/privacy
+              </a>
               <br />
               <br />• Pinterest (Pinterest Inc., 635 High Street, Palo Alto, CA,
-              94301, USA) – Privacy Policy / Opt-Out:
-              https://about.pinterest.com/en/privacy-policy.
+              94301, USA) – Privacy Policy / Opt-Out:{" "}
+              <a
+                className="underline"
+                href="https://about.pinterest.com/en/privacy-policy"
+              >
+                https://about.pinterest.com/en/privacy-policy
+              </a>
+              .
               <h2 className="text-2xl font-bold mt-10 md:mt-8">
                 Verwendung von Facebook-Social-Plugins
               </h2>
@@ -1068,14 +1474,26 @@ export default function Privacy() {
               Begriffen „Gefällt mir“, „Gefällt mir“ oder einem „Daumen“.
               up“-Zeichen ) oder sind mit dem Zusatz „Facebook Social Plugin“
               gekennzeichnet. Die Liste und das Aussehen der
-              Facebook-Social-Plugins können Sie hier einsehen:
-              https://developers.facebook.com/docs/plugins/.
+              Facebook-Social-Plugins können Sie hier einsehen:{" "}
+              <a
+                className="underline"
+                href="https://developers.facebook.com/docs/plugins/"
+              >
+                https://developers.facebook.com/docs/plugins/
+              </a>
+              .
               <br />
               <br />
               Facebook ist unter dem Privacy-Shield-Abkommen zertifiziert und
               bietet hierdurch eine Garantie, das europäische Datenschutzrecht
-              einzuhalten
-              (https://www.privacyshield.gov/participant?id=a2zt0000000GnywAAC&status=Active).
+              einzuhalten (
+              <a
+                className="underline"
+                href="https://www.privacyshield.gov/participant?id=a2zt0000000GnywAAC&status=Active"
+              >
+                https://www.privacyshield.gov/participant?id=a2zt0000000GnywAAC&status=Active
+              </a>
+              ).
               <br />
               <br />
               Wenn ein Nutzer eine Funktion dieses Onlineangebotes aufruft, die
@@ -1106,7 +1524,14 @@ export default function Privacy() {
               und Nutzung der Daten durch Facebook sowie die diesbezüglichen
               Rechte und Einstellungsmöglichkeiten zum Schutz der Privatsphäre
               der Nutzer können diese den Datenschutzhinweisen von Facebook
-              entnehmen: https://www.facebook .com/about/privacy/ .
+              entnehmen:{" "}
+              <a
+                className="underline"
+                href="https://www.facebook.com/about/privacy/"
+              >
+                https://www.facebook.com/about/privacy/
+              </a>{" "}
+              .
               <br />
               <br />
               Wenn ein Nutzer Facebookmitglied ist und nicht möchte, dass
@@ -1115,12 +1540,26 @@ export default function Privacy() {
               er sich vor der Nutzung unseres Onlineangebotes bei Facebook
               ausloggen und seine Cookies löschen. Weitere Einstellungen und
               Widersprüche zur Nutzung von Daten für Werbezwecke sind innerhalb
-              der Facebook-Profileinstellungen möglich:
-              https://www.facebook.com/settings?tab=ads oder über die
-              US-amerikanische Seite http://www.aboutads.info/ choice / oder die
-              EU-Seite http://www.youronlinechoices.com/. Die Einstellungen sind
-              plattformunabhängig, d.h. sie werden für alle Geräte wie
-              Desktop-Computer oder mobile Geräte übernommen.
+              der Facebook-Profileinstellungen möglich:{" "}
+              <a
+                className="underline"
+                href="https://www.facebook.com/settings?tab=ads"
+              >
+                https://www.facebook.com/settings?tab=ads
+              </a>{" "}
+              oder über die US-amerikanische Seite{" "}
+              <a className="underline" href="https://www.aboutads.info/">
+                https://www.aboutads.info/
+              </a>{" "}
+              choice / oder die EU-Seite{" "}
+              <a
+                className="underline"
+                href="https://www.youronlinechoices.com/"
+              >
+                https://www.youronlinechoices.com/
+              </a>
+              . Die Einstellungen sind plattformunabhängig, d.h. sie werden für
+              alle Geräte wie Desktop-Computer oder mobile Geräte übernommen.
               <h2 className="text-2xl font-bold mt-10 md:mt-8">Twitter</h2>
               Innerhalb unseres Onlineangebotes können Funktionen und Inhalte
               des Dienstes Twitter, angeboten durch die Twitter Inc., 1355
@@ -1133,11 +1572,26 @@ export default function Privacy() {
               Inhalte und Funktionen den dortigen Profilen der Nutzer zuordnen.
               Twitter ist unter dem Privacy-Shield-Abkommen zertifiziert und
               bietet hierdurch eine Garantie, das europäische Datenschutzrecht
-              einzuhalten (https://www.privacyshield.gov/participant?
-              id=a2zt0000000TORzAAO&status=Active). Datenschutzerklärung:
-              https://twitter.com/de/privacy, Opt-Out:
-              https://twitter.com/personalization.
-              <h2 className="text-2xl font-bold mt-10 md:mt-8">Instagram</h2>
+              einzuhalten (
+              <a
+                href="https://www.privacyshield.gov/participant?
+              id=a2zt0000000TORzAAO&status=Active"
+              >
+                https://www.privacyshield.gov/participant?
+                id=a2zt0000000TORzAAO&status=Active
+              </a>
+              ). Datenschutzerklärung:{" "}
+              <a className="underline" href="https://twitter.com/de/privacy">
+                https://twitter.com/de/privacy
+              </a>
+              , Opt-Out:{" "}
+              <a
+                className="underline"
+                href="https://twitter.com/personalization"
+              >
+                https://twitter.com/personalization
+              </a>
+              .<h2 className="text-2xl font-bold mt-10 md:mt-8">Instagram</h2>
               Innerhalb unseres Onlineangebotes können Funktionen und Inhalte
               des Dienstes Instagram, angeboten durch die Instagram Inc., 1601
               Willow Road, Menlo Park, CA, 94025, USA, eingebunden werden.
@@ -1147,8 +1601,14 @@ export default function Privacy() {
               abonnieren können. Sofern die Nutzer Mitglieder der Plattform
               Instagram sind, kann Instagram die o.g. Inhalte und Funktionen den
               dortigen Profilen der Nutzer zuordnen. Datenschutzerklärung von
-              Instagram: http://instagram.com/about/legal/privacy/.
-              <h2 className="text-2xl font-bold mt-10 md:mt-8">Pinterest</h2>
+              Instagram:{" "}
+              <a
+                className="underline"
+                href="https://instagram.com/about/legal/privacy/"
+              >
+                https://instagram.com/about/legal/privacy/
+              </a>
+              .<h2 className="text-2xl font-bold mt-10 md:mt-8">Pinterest</h2>
               Der für die Verarbeitung Verantwortliche hat auf dieser
               Internetseite Komponenten der Pinterest Inc. integriert. Pinterest
               ist ein sogenanntes soziales Netzwerk. Ein soziales Netzwerk ist
@@ -1176,10 +1636,13 @@ export default function Privacy() {
               System der betroffenen Person automatisch durch die
               Pinterest-Komponente veranlasst, eine Darstellung von die
               entsprechende Pinterest-Komponente von Pinterest herunterzuladen.
-              Weitere Informationen zu Pinterest finden Sie unter
-              https://pinterest.com/. Im Rahmen dieses technischen Verfahrens
-              erhält Pinterest Kenntnis darüber, welche konkrete Unterseite
-              unserer Internetseite durch die betroffene Person besucht wird.
+              Weitere Informationen zu Pinterest finden Sie unter{" "}
+              <a className="underline" href="https://pinterest.com/">
+                https://pinterest.com/
+              </a>
+              . Im Rahmen dieses technischen Verfahrens erhält Pinterest
+              Kenntnis darüber, welche konkrete Unterseite unserer Internetseite
+              durch die betroffene Person besucht wird.
               <br />
               <br />
               Sofern die betroffene Person gleichzeitig bei Pinterest eingeloggt
@@ -1208,10 +1671,15 @@ export default function Privacy() {
               unserer Internetseite aus ihrem Pinterest-Account ausloggt.
               <br />
               <br />
-              Die Datenschutzerklärung von Pinterest, abrufbar unter
-              https://about.pinterest.com/privacy-policy, gibt Aufschluss über
-              die Erhebung, Verarbeitung und Nutzung personenbezogener Daten
-              durch Pinterest.
+              Die Datenschutzerklärung von Pinterest, abrufbar unter{" "}
+              <a
+                className="underline"
+                href="https://about.pinterest.com/privacy-policy"
+              >
+                https://about.pinterest.com/privacy-policy
+              </a>
+              , gibt Aufschluss über die Erhebung, Verarbeitung und Nutzung
+              personenbezogener Daten durch Pinterest.
               <h2 className="text-2xl font-bold mt-10 md:mt-8">YouTube</h2>
               Der für die Verarbeitung Verantwortliche hat auf dieser
               Internetseite Komponenten von YouTube integriert. YouTube ist ein
@@ -1238,10 +1706,16 @@ export default function Privacy() {
               automatisch durch die jeweilige YouTube-Komponente veranlasst,
               eine Darstellung der entsprechenden YouTube-Komponente
               herunterzuladen Komponente von YouTube. Weitere Informationen zu
-              YouTube finden Sie unter https://www.youtube.com/yt/about/de/. Im
-              Rahmen dieses technischen Verfahrens erhalten YouTube und Google
-              Kenntnis darüber, welche konkrete Unterseite unserer Website die
-              betroffene Person besucht.
+              YouTube finden Sie unter{" "}
+              <a
+                className="underline"
+                href="https://www.youtube.com/yt/about/de/"
+              >
+                https://www.youtube.com/yt/about/de/
+              </a>
+              . Im Rahmen dieses technischen Verfahrens erhalten YouTube und
+              Google Kenntnis darüber, welche konkrete Unterseite unserer
+              Website die betroffene Person besucht.
               <br />
               <br />
               Sofern die betroffene Person gleichzeitig bei YouTube eingeloggt
@@ -1264,10 +1738,15 @@ export default function Privacy() {
               unserer Internetseite aus ihrem YouTube-Account ausloggt.
               <br />
               <br />
-              Die Datenschutzerklärung von YouTube, abrufbar unter
-              https://www.google.com/intl/en/policies/privacy/, legt die
-              Erhebung, Verarbeitung und Nutzung personenbezogener Daten durch
-              YouTube und Google fest.
+              Die Datenschutzerklärung von YouTube, abrufbar unter{" "}
+              <a
+                className="underline"
+                href="https://www.google.com/intl/en/policies/privacy/"
+              >
+                https://www.google.com/intl/en/policies/privacy/
+              </a>
+              , legt die Erhebung, Verarbeitung und Nutzung personenbezogener
+              Daten durch YouTube und Google fest.
               <h2 className="text-2xl font-bold mt-10 md:mt-8">Tumblr</h2>
               Unsere Seiten verwenden Schaltflächen des Dienstes Tumblr.
               Anbieter ist Tumblr, Inc., 35 East 21st St, 10th Floor, New York,
@@ -1282,7 +1761,14 @@ export default function Privacy() {
               <br />
               <br />
               Weitere Informationen finden Sie in der Datenschutzerklärung von
-              Tumblr unter http://www.tumblr.com/policy/en/privacy.
+              Tumblr unter{" "}
+              <a
+                className="underline"
+                href="https://www.tumblr.com/policy/en/privacy"
+              >
+                https://www.tumblr.com/policy/en/privacy
+              </a>
+              .
               <br />
               <br />
               Bei Fragen zu unserer Datenschutzerklärung kontaktieren Sie uns

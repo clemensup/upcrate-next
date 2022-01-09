@@ -42,7 +42,18 @@ export default function CancellationPolicy() {
             {t("pages.cancellation_policy.consequences_title")}
           </h3>
 
-          <FormattedText transKey="common:pages.cancellation_policy.consequences_text" />
+          <FormattedText
+            transKey="common:pages.cancellation_policy.consequences_text"
+            delimiter={[
+              <p>
+                <br />
+              </p>,
+              <p className="my-5">
+                <br />
+                <br />
+              </p>,
+            ]}
+          />
         </div>
         <RadialGradient className="bg-pink" variant="bottom-right" />
       </section>
