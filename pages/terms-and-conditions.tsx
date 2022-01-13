@@ -120,12 +120,19 @@ export default function CancellationPolicy() {
               <br />
               <br />
               Example of a monthly subscription: order on April 25, debit on
-              April 25, recurring debit on May 25, June 25, etc. Example of a
-              quarterly subscription: order on April 25, debit on April 25,
-              recurring debit on July 25, October 25, etc. Example of a
-              semiannual subscription: order on April 25, debit on April 25,
+              April 25, recurring debit on May 25, June 25, etc.
+              <br />
+              <br />
+              Example of a quarterly subscription: order on April 25, debit on April 25,
+              recurring debit on July 25, October 25, etc.
+              <br />
+              <br />
+              Example of a semiannual subscription: order on April 25, debit on April 25,
               recurring debit on October 25, April 25 of the following year,
-              etc. Example of an annual subscription: order on April 25, debit
+              etc.
+              <br />
+              <br />
+              Example of an annual subscription: order on April 25, debit
               on April 25, recurring debit on April 25 of the following year,
               etc.
               <br />
@@ -146,7 +153,10 @@ export default function CancellationPolicy() {
               this failed payment. The same applies to contested SEPA direct
               debit payments that are unfounded. In this case, we only pass on
               the service fees of our service provider to you without any
-              surcharge. Discount codes of any kind (such as percentage or fixed
+              surcharge.
+              <br />
+              <br />
+              Discount codes of any kind (such as percentage or fixed
               amount, among others) for subscriptions can only be used for the
               first payment. For recurring debits, the regular, non-discounted
               amount will be debited. This does not affect the cancellation of
