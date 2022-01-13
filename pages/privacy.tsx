@@ -865,7 +865,8 @@ export default function Privacy() {
               Verarbeitung personenbezogener Daten, die über die Websites
               www.upcrate.art, www.upcrate.de, www.shop.upcrate.art erhoben
               werden.
-              <h2 className="text-2xl font-bold mt-10 md:mt-8">_</h2>
+              <br />
+              <br />
               Die Nutzung unserer Website ist in der Regel ohne Angabe
               personenbezogener Daten möglich. Soweit auf unseren Seiten
               personenbezogene Daten (beispielsweise Name, Anschrift oder
@@ -1136,10 +1137,10 @@ export default function Privacy() {
               DSGVO).
               <br />
               <br />
-              Name des Karteninhabers E-Mail-Adresse Kundennummer Bestellnummer
-              Bankverbindung Kreditkartendaten Gültigkeitsdauer der Kreditkarte
-              Prüfnummer der Kreditkarte (CVC) Datum und Uhrzeit der Transaktion
-              Transaktionssumme Name des Anbieters Ort
+              Name des Karteninhabers, E-Mail-Adresse, Kundennummer, Bestellnummer, 
+              Bankverbindung, Kreditkartendaten, Gültigkeitsdauer der Kreditkarte,
+              Prüfnummer der Kreditkarte (CVC), Datum und Uhrzeit der Transaktion,
+              Transaktionssumme Name des Anbieters, Ort
               <br />
               <br />
               Die Verarbeitung der unter diesem Abschnitt angegebenen Daten ist
@@ -1200,23 +1201,7 @@ export default function Privacy() {
               <h2 className="text-2xl font-bold mt-10 md:mt-8">
                 Browser plugin
               </h2>
-              Diese Website nutzt Funktionen des Webanalysedienstes Google
-              Analytics. Anbieter ist die Google Inc., 1600 Amphitheatre Parkway
-              Mountain View, CA 94043, USA. Google Analytics verwendet
-              sogenannte „Cookies“. Das sind Textdateien, die auf Ihrem Computer
-              gespeichert werden und die eine Analyse der Benutzung der Website
-              durch Sie ermöglichen. Die durch den Cookie erzeugten
-              Informationen über Ihre Benutzung dieser Website werden in der
-              Regel an einen Server von Google in den USA übertragen und dort
-              gespeichert. Mehr Informationen zum Umgang mit Nutzerdaten bei
-              Google Analytics finden Sie in der Datenschutzerklärung von
-              Google:{" "}
-              <a
-                className="underline"
-                href="https://support.google.com/analytics/answer/6004245?hl=de"
-              >
-                https://support.google.com/analytics/answer/6004245?hl=de
-              </a>
+              Sie können die Speicherung der Cookies durch eine entsprechende Einstellung Ihrer Browser-Software verhindern; wir weisen Sie jedoch darauf hin, dass Sie in diesem Fall gegebenenfalls nicht sämtliche Funktionen dieser Website vollumfänglich werden nutzen können. Sie können darüber hinaus die Erfassung der durch das Cookie erzeugten und auf Ihre Nutzung der Website bezogenen Daten (inkl. Ihrer IP-Adresse) an Google sowie die Verarbeitung dieser Daten durch Google verhindern, indem Sie das unter dem folgenden Link verfügbare Browser-Plugin herunterladen und installieren: https://tools.google.com/dlpage/gaoptout?hl=de
               <h2 className="text-2xl font-bold mt-10 md:mt-8">
                 Widerspruch gegen die Datenerhebung
               </h2>
@@ -1785,9 +1770,7 @@ export default function Privacy() {
               <br />
               <br />
               E-Mail: info@upcrate.art
-              <br />
-              <br />
-              Contact: Clemens Roosen
+              Ansprechpartner: Clemens Roosen
             </div>
           )}
         </div>
