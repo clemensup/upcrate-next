@@ -10,10 +10,13 @@ export default function CancellationPolicy() {
   return (
     <>
       <Head>
-        <title>{t("pages.cancellation_policy.title")} | upcrate</title>
+        <title>
+          {t("pages.cancellation_policy.title").replace("<1></1>", "")} |
+          upcrate
+        </title>
         <meta
           property="og:title"
-          content={t("pages.cancellation_policy.title")}
+          content={t("pages.cancellation_policy.title").replace("<1></1>", "")}
           key="title"
         />
 
@@ -32,6 +35,9 @@ export default function CancellationPolicy() {
               }}
             />
           </h1>
+
+          <FormattedText transKey="common:pages.cancellation_policy.withdrawal_desc" />
+
           <h2 className="text-xl md:text-2xl font-bold mt-10 md:mt-20">
             {" "}
             {t("pages.cancellation_policy.withdrawal_title")}
