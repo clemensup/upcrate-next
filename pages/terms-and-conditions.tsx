@@ -282,8 +282,6 @@ export default function CancellationPolicy() {
               <h2 className="text-2xl font-bold mt-10 md:mt-8">
                 Lieferung, Liefertermine, Teillieferungen und Eigentumsvorbehalt
               </h2>
-              <br />
-              <br />
               Der Anbieter behält sich das Recht vor, erst nach vollständiger
               Bezahlung durch den Kunden zu liefern. Ein Anspruch auf vorgängige
               Lieferung besteht nicht. Der Anbieter ist zu Teillieferungen und
