@@ -333,6 +333,12 @@ export default function CancellationPolicy() {
               unbestritten sind. Zur Ausübung eines Zurückbehaltungsrechts ist
               der Kunde nur insoweit befugt, als sein Gegenanspruch auf dem
               gleichen Vertragsverhältnis beruht.
+              <br />
+              <br />
+              Sollte beim Einzug von fälligen Beträgen über ein SEPA Lastschriftmandat Ihr Konto nicht gedeckt sein, berechnen wir für diese fehlgeschlagene Zahlung EUR 9,00 inkl. MwSt. Das gleiche gilt für angefochtene SEPA-Lastschrift-Zahlungen, die unbegründet sind. Hierbei geben wir lediglich die Servicegebühren unseres Dienstleisters ohne Aufschlag an Sie weiter.
+              <br />
+              <br />
+              Rabattcodes jeglicher Art (wie u.a. prozentual oder fixer Betrag) für Abonnements können nur für die erste Zahlung verwendet werden. Bei wiederkehrenden Abbuchungen wird der reguläre, unrabattierte Betrag abgebucht. Die Kündigung des Abonnements bleibt davon unberührt.
               <h2 className="text-2xl font-bold mt-10 md:mt-8">
                 Rechte im Falle von Mängeln und Schäden
               </h2>
