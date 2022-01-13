@@ -276,8 +276,12 @@ export default function CancellationPolicy() {
                 Vertragslaufzeit, Kündigung und Vertragsverlängerung
               </h2>
               <br />
+              Bei den Angebotsvarianten (monatlich, 3 Monate, 6 Monate oder 12 Monate) läuft das Abonnement zunächst über den vom Nutzer gebuchten Mindestnutzungszeitraum. Danach verlängert sich das Abonnement um Verlängerungszeiträume gleicher Dauer, wenn es nicht rechtzeitig durch den Nutzer oder Upcrate gekündigt wird. Der Vertrag kann bis zum 4ten eines Monats vor dem nächsten Abbuchungszeitpunkt (5ten des Monats) der jeweiligen Vertragslaufzeit gekündigt werden und erfordert eine Kündigung über die Kündigungsfunktion im Benutzerkonto oder in der Textform.
               <br />
-              Lieferung, Liefertermine, Teillieferungen und Eigentumsvorbehalt
+              <br />
+              <h2 className="text-2xl font-bold mt-10 md:mt-8">
+                Lieferung, Liefertermine, Teillieferungen und Eigentumsvorbehalt
+              </h2>
               <br />
               <br />
               Der Anbieter behält sich das Recht vor, erst nach vollständiger
