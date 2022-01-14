@@ -93,10 +93,10 @@ export default function CancellationPolicy() {
               termination function in the user account or the text form.
               <br />
               <br />
-              Delivery, delivery dates, partial deliveries and retention of
+               <h2 className="text-2xl font-bold mt-10 md:mt-8">
+                Delivery, delivery dates, partial deliveries and retention of
               title
-              <br />
-              <br />
+              </h2>
               The provider reserves the right to deliver only after full payment
               by the customer. There is no entitlement to prior delivery. The
               provider is entitled at any time to partial delivery and partial
