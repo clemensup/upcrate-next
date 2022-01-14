@@ -1778,6 +1778,7 @@ export default function Privacy() {
               <br />
               <br />
               E-Mail: info@upcrate.art
+              <br />
               Ansprechpartner: Clemens Roosen
             </div>
           )}
