@@ -340,7 +340,7 @@ export default function Privacy() {
               </h2>
               You can prevent the collection of your data by Google Analytics by clicking on the following link. An opt-out cookie is set that prevents the collection of your data on future visits to this website: disable Google Analytics
               <h2 className="text-2xl font-bold mt-10 md:mt-8">
-                Duration of storage
+                Duration of datastorage
               </h2>
               Your data is initially stored for the duration of the warranty
               period and taking into account legal retention periods. After the
@@ -1219,7 +1219,7 @@ export default function Privacy() {
               zukünftigen Besuchen dieser Website verhindert: Google Analytics
               deaktivieren
               <h2 className="text-2xl font-bold mt-10 md:mt-8">
-                Dauer der Datensicherung
+                Dauer der Datenspeicherung
               </h2>
               Ihre Daten werden zunächst für die Dauer der Gewährleistungsfrist
               und unter Berücksichtigung gesetzlicher Aufbewahrungsfristen
