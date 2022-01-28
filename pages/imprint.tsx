@@ -30,7 +30,7 @@ export default function Imprint() {
             }}
           />
         </h1>
-        <address className="mt-20 text-xl pb-20 not-italic">
+        <address className="mt-20 text-xl mb-20 not-italic">
           COLORSPAZE LTD
           <br />
           Makariou 57
@@ -41,7 +41,11 @@ export default function Imprint() {
           CYPRUS
           <br />
           <br />
-          <p>{t("pages.imprint.phone_label")}: +49 177 543 39 13</p>
+          <p className="mb-10">
+            {t("pages.imprint.phone_label")}: +49 177 543 39 13
+            <br />
+            {t("pages.imprint.phone_service_times")}
+          </p>
           <p>
             E-Mail:{" "}
             <a href="mailto:support@upcrate.art" className="hover:underline">

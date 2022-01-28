@@ -144,7 +144,8 @@
       "title": "Imprint",
       "owner": "Owner",
       "shipped_and_packed_label": "packaged and shipped and shipped in Hamburg, Germany",
-      "phone_label": "Phone"
+      "phone_label": "Phone",
+      "phone_service_times": "Period of service 12pm -13pm"
     },
     "privacy": {
       "og_description": "Mystery art supplies in a monthly box",

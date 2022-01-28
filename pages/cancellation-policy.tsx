@@ -5,7 +5,7 @@ import { FormattedText } from "../components/elements/formatted-text";
 import { RadialGradient } from "../components/elements/radial-gradient";
 
 export default function CancellationPolicy() {
-  const { t } = useTranslation("common");
+  const { t, lang } = useTranslation("common");
 
   return (
     <>
@@ -48,18 +48,71 @@ export default function CancellationPolicy() {
             {t("pages.cancellation_policy.consequences_title")}
           </h3>
 
-          <FormattedText
-            transKey="common:pages.cancellation_policy.consequences_text"
-            delimiter={[
-              <p>
-                <br />
-              </p>,
-              <p className="my-5">
-                <br />
-                <br />
-              </p>,
-            ]}
-          />
+          <div className="mb-20">
+            <FormattedText
+              transKey="common:pages.cancellation_policy.consequences_text"
+              delimiter={[
+                <p>
+                  <br />
+                </p>,
+                <p className="my-5">
+                  <br />
+                  <br />
+                </p>,
+              ]}
+            />
+          </div>
+
+          {lang === "en" ? (
+            <div>
+              <h3 className="text-xl md:text-2xl font-bold mt-10 md:mt-20">
+                Sample revocation form
+              </h3>
+              <p className="mb-4">
+                (If you want to cancel the contract, please fill out this form
+                and send it back).
+              </p>
+              <ul>
+                <li className="mb-4">
+                  - To: COLORSPAZE LTD Makariou 57, Flat/Office 1, 7100
+                  Aradippou, Larnaca CYPRUS email: info@upcrate.art
+                </li>
+                <li className="mb-4">
+                  - I/we (*) hereby cancel the contract concluded by me/us (*)
+                  for the purchase of the following goods (*)/provision of the
+                  following service (*)
+                </li>
+
+                <li className="mb-4">- Ordered on (*)/received on (*) </li>
+                <li className="mb-4">- Name of the consumer(s) </li>
+                <li className="mb-4">- Address of the consumer(s)</li>
+              </ul>
+            </div>
+          ) : (
+            <div>
+              <h3 className="text-xl md:text-2xl font-bold mt-10 md:mt-20">
+                Muster-Widerrufsformular
+              </h3>
+              <p className="mb-4">
+                (Wenn Sie den Vertrag widerrufen wollen, dann füllen Sie bitte
+                dieses Formular aus und senden Sie es zurück.)
+              </p>
+              <ul>
+                <li className="mb-4">
+                  — An COLORSPAZE LTD Makariou 57, Flat/Office 1, 7100
+                  Aradippou, Larnaca CYPRUS E-Mail: info@upcrate.art
+                </li>
+                <li className="mb-4">
+                  — Hiermit widerrufe(n) ich/wir (*) den von mir/uns (*)
+                  abgeschlossenen Vertrag über den Kauf der folgenden Waren (*)/
+                  die Erbringung der folgenden Dienstleistung (*)
+                </li>
+                <li className="mb-4">— Bestellt am (*)/erhalten am (*)</li>
+                <li className="mb-4">— Name des/der Verbraucher(s)</li>
+                <li className="mb-4">— Anschrift des/der Verbraucher(s)</li>
+              </ul>
+            </div>
+          )}
         </div>
         <RadialGradient className="bg-pink" variant="bottom-right" />
       </section>
