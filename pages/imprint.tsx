@@ -45,15 +45,18 @@ export default function Imprint() {
             {t("pages.imprint.phone_label")}: +49 177 543 39 13
             <br />
             {t("pages.imprint.phone_service_times")}
-          </p>
-          <p>
+            <br />
             E-Mail:{" "}
             <a href="mailto:support@upcrate.art" className="hover:underline">
               support@upcrate.art
             </a>
           </p>
           <br />
-          VAT ID No.: CY10426598I
+          <p>{t("pages.imprint.vat_id_label")}: CY10426598I</p>
+          <br />
+          <p>{t("pages.imprint.registration_court_label")}: Nicosia</p>
+          <p>{t("pages.imprint.registration_number_label")}: HE 426598</p>
+          <p>{t("pages.imprint.director_label")}: Clemens Roosen</p>
           <br />
           <br />
           {t("pages.imprint.shipped_and_packed_label")}

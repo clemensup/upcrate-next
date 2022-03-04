@@ -144,7 +144,11 @@
       "title": "Impressum",
       "shipped_and_packed_label": "Verpackt und verschickt in Hamburg, Germany",
       "phone_label": "Tel",
-      "phone_service_times": "Servicezeit 12-13 Uhr"
+      "phone_service_times": "Servicezeit 12-13 Uhr",
+      "vat_id_label": "USt. Nr.",
+      "registration_court_label": "Registergericht",
+      "registration_number_label": "Register Nr.",
+      "director_label": "Geschäftsführer"
     },
     "privacy": {
       "og_description": "Monatlich neue Kunstmaterialien in einer Überraschungsbox",

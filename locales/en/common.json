@@ -145,7 +145,11 @@
       "owner": "Owner",
       "shipped_and_packed_label": "packaged and shipped and shipped in Hamburg, Germany",
       "phone_label": "Phone",
-      "phone_service_times": "Period of service 12pm -13pm"
+      "phone_service_times": "Period of service 12pm -13pm",
+      "vat_id_label": "VAT ID No.",
+      "registration_court_label": "Registration Court",
+      "registration_number_label": "Register No.",
+      "director_label": "Director"
     },
     "privacy": {
       "og_description": "Mystery art supplies in a monthly box",
