@@ -7,11 +7,11 @@ export function Countdown() {
 
   const dayOfMonth = moment().date();
   const nextMonth =
-    dayOfMonth < 5
+    dayOfMonth < 15
       ? moment().startOf("month")
       : moment().add(1, "months").startOf("month");
 
-  const nextCrate = nextMonth.add(4, "days");
+  const nextCrate = nextMonth.add(14, "days");
 
   const [nextCrateWeeks, setNextCrateWeeks] = React.useState(
     nextCrate.diff(moment(), "week")
