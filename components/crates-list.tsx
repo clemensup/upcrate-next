@@ -35,7 +35,7 @@ const zoomeImageVariants = {
 export function CratesList({ products }: CratesProps) {
   const { t } = useTranslation("common");
   const [page, setPage] = React.useState(0);
-  const pageCount = Math.round(products.length / PRODUCTS_PER_PAGE);
+  const pageCount = Math.ceil(products.length / PRODUCTS_PER_PAGE);
   const ref = React.useRef<HTMLDivElement>(null);
 
   React.useEffect(() => {
