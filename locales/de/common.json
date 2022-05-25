@@ -79,7 +79,7 @@
       },
       "crates_list": {
         "title": "Unsere Boxen",
-        "subtitle": "Suchst du eine spezielle Box von deiner/m Lieblingskünstler:in oder deinen Lieblingsmaterialien? Hier findest du alle unsere ehemaligen Boxen – Wenn du Glück hast kannst du sie sogar noch in unserem Shop finden, bevor sie ausverkauft ist:) <1>Angezeigte Preise für einzelne Boxen. Abonnement ab 22€</1>",
+        "subtitle": "Suchst du eine spezielle Box von deiner/m Lieblingskünstler:in oder deinen Lieblingsmaterialien? Hier findest du alle unsere ehemaligen Boxen – Wenn du Glück hast kannst du sie sogar noch in unserem Shop finden, bevor sie ausverkauft ist:) <1>Angezeigte Preise für einzelne Boxen. Abonnement ab 24€</1>",
         "no_products_message": "No products found.",
         "stock_status": "LEIDER AUS:(",
         "previous_page_button": "Zurück",
@@ -129,7 +129,7 @@
     "subscriptions": {
       "og_description": "Monatlich neue Kunstmaterialien in einer Überraschungsbox",
       "title": "abonnements",
-      "free_shipping_worldwide": "Kostenloser Versand weltweit"
+      "free_shipping_worldwide": "Kostenloser Versand innerhalb Deutschlands"
     },
     "contact": {
       "og_description": "Monatlich neue Kunstmaterialien in einer Überraschungsbox",
@@ -201,7 +201,7 @@
         {
           "payment_cycle": "Alle 3 Monate zahlen",
           "cta": "Ja ich will³",
-          "dollar_estimation": "(~ 71 USD)"
+          "dollar_estimation": "(~ 75 USD)"
         }
       ],
       "cancellation_text": "Abo jederzeit kündbar"

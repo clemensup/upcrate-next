@@ -79,7 +79,7 @@
       },
       "crates_list": {
         "title": "Our previous crates",
-        "subtitle": "Looking for a specific box from your favorite artist or new materials to experiment with? Find all of our previous boxes below - you can even reorder them from our stock in case they aren’t sold out yet!\n<1>Displayed prices for individual boxes. Subscription from 22 €</1>",
+        "subtitle": "Looking for a specific box from your favorite artist or new materials to experiment with? Find all of our previous boxes below - you can even reorder them from our stock in case they aren’t sold out yet!\n<1>Displayed prices for individual boxes. Subscription from 24 €</1>",
         "no_products_message": "No products found.",
         "stock_status": "SOLD OUT",
         "previous_page_button": "Previous Page",
@@ -129,7 +129,7 @@
     "subscriptions": {
       "og_description": "Mystery art supplies in a monthly box",
       "title": "Subscriptions",
-      "free_shipping_worldwide": "Free shipping worldwide"
+      "free_shipping_worldwide": "Shipping worldwide"
     },
     "contact": {
       "og_description": "Mystery art supplies in a monthly box",
@@ -202,7 +202,7 @@
         {
           "payment_cycle": "Pay every 3 months",
           "cta": "Subscribe now",
-          "dollar_estimation": "(~ 71 USD)"
+          "dollar_estimation": "(~ 75 USD)"
         }
       ],
       "cancellation_text": "can be cancelled any time"

@@ -46,7 +46,7 @@ export default function Subscriptions() {
           alt=""
         />
         <div className="z-10 absolute bottom-20 left-0 right-0 text-center">
-          <h3 className="font-display md:text-7xl text-3xl text-white">
+          <h3 className="font-display md:text-7xl text-3xl text-white mb-4">
             {t("pages.subscriptions.free_shipping_worldwide")}
           </h3>
           <Button
