@@ -15,6 +15,18 @@ export function AsFeaturedInSection() {
         </h3>
         <div className="md:flex md:space-x-20 justify-center mt-10 md:mt-32">
           <motion.a
+            href="https://www.theguardian.com/international"
+            target="_blank"
+            whileHover={{ scale: 1.2 }}
+            whileTap={{ scale: 0.8 }}
+          >
+            <Image
+              src="/as-featured-in/the-guardian.png"
+              width={400}
+              height={103}
+            />
+          </motion.a>
+          <motion.a
             href="https://www.kreativsuechtig.de/wordpress/magazin/"
             target="_blank"
             whileHover={{ scale: 1.2 }}
