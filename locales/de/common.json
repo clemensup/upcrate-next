@@ -428,7 +428,8 @@
     },
     {
       "question": "Gibt es einen Stichtag?",
-      "answer": "Jeden Monat gibt es einen Stichtag (5ter des Monats) um sicher zu gehen, das alle Boxen rechtzeitig verschickt werden können.Wenn du Upcrate danach abonnierst, bekommst du im nächsten Monat deine Box."
+      "answer": "Jeden Monat gibt es einen Stichtag (15ter des Monats) um sicher zu gehen, das alle Boxen rechtzeitig verschickt werden können.Wenn du Upcrate danach abonnierst, bekommst du im nächsten Monat deine Box."
+"
     },
     {
       "question": "Wie lange dauert es, bis ich meine Box bekomme?",
@@ -436,11 +437,11 @@
     },
     {
       "question": "Ich würde die Box gerne als Geschenk an jemanden verschicken. Wie mache ich das?",
-      "answer": "Klicke einfach auf den passend beschriftete Feld auf der Website oder auf die Geschenk-Option in deinem Einkaufswagen. Dies leitet dich zu unserem Shop weiter, wo du die Rechnungsadresse und die Sendungsaddresse separat eintragen kannst. Die glückliche Person erhält seine oder ihre Box, sobald wir die nächste Ladung verschicken. Eine besondere Captain Crate Geschenkkarte mit deinem Namen und dem Namen des Empfängers liegt mit bei!"
+      "answer": "Klicke einfach auf den passend beschriftete Feld auf der Website. Dies leitet dich zu unserem Shop weiter, wo du die Rechnungsadresse und die Sendungsaddresse separat eintragen kannst. Die glückliche Person erhält eine vorherige oder aktuelle Box. Alle Geschenkboxen werden zwei Mal pro Woche verschickt. Eine besondere Captain Crate Geschenkkarte mit deinem Namen und dem Namen des Empfängers liegt der Box bei."
     },
     {
       "question": "Was ist der Unterschied zwischen der Geschenkbox und einer normalen Upcrate Box?",
-      "answer": "Die Geschenk-Option kann in unserem Shop ausgewählt werden und ist eine einmalige Sendung - das Abonnement einer Geschenkbox erneuert sich nicht automatisch."
+      "answer": "Geschenkboxen sind eine einmalige Bestellung, d.h. es gibt kein Abonnement für diese Option, das sich automatisch erneuern würde. Eine Geschenkbox ist eine zufällige ausgewählte Box vorheriger Boxen, die zweimal pro Woche verschickt wird."
     },
     {
       "question": "Wie werde ich einer der monatlichen Künstler von Upcrate?",
@@ -456,11 +457,12 @@
     },
     {
       "question": "Kann ich auch in anderen Währungen bezahlen?",
-      "answer": "Upcrate kommt aus Deutschland, weshalb alle Preise in EUR angezeigt werden. Falls du aus dem Ausland kommst rechnet dein Zahlungsanbieter die Währungen automatisch um."
+      "answer": "Upcrate kommt aus Europa, weshalb alle Preise in EUR angezeigt werden. Falls du aus dem Ausland kommst rechnet dein Zahlungsanbieter die Währungen automatisch um."
+"
     },
     {
-      "question": "Wann wird mir die Rechnung gestellt?",
-      "answer": "Deine erste Rechnung erhältst du direkt nachdem du dein Abonnement gebucht hast. Bei allen folgenden Boxen hängt es davon ab, welches Angebot du ausgewählt hast."
+      "question": "Wann wird mir der Betrag abgebucht?",
+      "answer": "Deine erste Bezahlung erfolgt sofort nachdem du dein Abonnement gebucht hast. Für alle folgenden Boxen ist das Zahlungsdatum immer der 5. eines jeden Monats. Die Häufigkeit der Zahlung hängt auch von Deinem gewählten Abonnement ab. Schaue dazu in deinem Konto nach."
     },
     {
       "question": "Bekomme ich mein Geld zurückerstattet, wenn ich vor Ablauf meines Abonnenement-Plans kündige?",
