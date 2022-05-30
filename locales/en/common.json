@@ -413,7 +413,7 @@
     },
     {
       "question": "Do I have to expect a delivery charge?",
-      "answer": "Shipping is always free of charge unless you live in a country where our packages have frequently been lost in the process. In that case, a mandatory tracking charge of EUR 2.50 applies to make sure your crate arrives safely. You can see whether you are affected by this on the checkout page."
+      "answer": "Shipping costs within Germany are included in the product price. Shipping is free of charge. For shipments outside of Germany shipping costs will be charged. The shipping costs for your country will be displayed during the check-out process (before payment)."
     },
     {
       "question": "Which art supplies will be in the crate?",
@@ -421,7 +421,7 @@
     },
     {
       "question": "How many items will be in each crate?",
-      "answer": "This is a mystery as well. The box is filled depending on the value of the art supplies. You can be sure that the value of the content is worth more than the price you pay for the subscription."
+      "answer": "This is a mystery as well. The box is filled depending on the value of the art supplies. . But you can be sure that the value of your new art supplies is worth more than the price you pay for your subscription (minus shipping costs)"
     },
     {
       "question": "Why is there a cut-off date?",
