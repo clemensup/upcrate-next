@@ -425,7 +425,7 @@
     },
     {
       "question": "Why is there a cut-off date?",
-      "answer": "Each month we have a cut-off date to ensure we can plan for all the boxes to be packed and shipped. All subscribers that start with their Upcrate after this date will be added to the subscriber list for the next month."
+      "answer": "Each month we have a cut-off date of the 15th to ensure we can plan for all the boxes to be packed and shipped. All subscribers that start with their Upcrate after this date will be added to the subscriber list for the next month."
     },
     {
       "question": "How long until I get my crate?",
@@ -433,11 +433,11 @@
     },
     {
       "question": "I’d love to gift this box to a relative or friend! Is that possible?",
-      "answer": "Yes! Just click the “gift” option in your cart and fill out your invoice address and the delivery address of the person you want to surprise with Upcrate. Your loved one is going to receive their box with the next batch of boxes we ship out into the world… and they’ll even find a Captain Crate card with their name and yours inside!"
+      "answer": "Yes! Just click the “gift” option on our website and fill out your invoice address and the delivery address of the person you want to surprise with Upcrate. Your loved one is going to receive a previous box or current box... and they’ll even find a Captain Crate card with their name and yours inside! All gift boxes ship twice a week."
     },
     {
       "question": "What is the difference between a gift box and a regular subscription?",
-      "answer": "Gift boxes are an one-time order, meaning that there is no subscription to this option that would automatically renew itself."
+      "answer": "Gift boxes are an one-time order, meaning that there is no subscription to this option that would automatically renew itself. A gifts boxes are random draw of a previous box that ships twice a week."
     },
     {
       "question": "How do I become a featured artist in one of the crates?",
@@ -449,15 +449,15 @@
     },
     {
       "question": "How can I pay to subscribe?",
-      "answer": "You have different options like using Paypal, credit cards. Check out our payment options during the check-out process."
+      "answer": "You have different options using Paypal, credit cards, Apple pay or SEPA. Check out our payment options during the check-out process."
     },
     {
       "question": "Can I pay in US dollars or any other currency?",
-      "answer": "As we are based in Germany all prices on the website are listed in EUR. If you are an international subscriber your payment provider will make the conversion to your local currency automatically."
+      "answer": "As we are based in Europe all prices on the website are listed in EUR. If you are an international subscriber your payment provider will make the conversion to your local currency automatically."
     },
     {
       "question": "When will I be billed for my subscription?",
-      "answer": "You will be billed once you start your subscription. For all following boxes it depends on your chosen plan. Have a look here."
+      "answer": "You will be billed once you start your subscription. For all following boxes the payment date is always the 5th of each month. The frequence of payment also depends on your chosen plan. Have a look at your account."
     },
     {
       "question": "If I cancel my subscription, do I get a refund?",
