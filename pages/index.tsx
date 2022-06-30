@@ -27,8 +27,8 @@ export default function Home({ products }: CratesProps) {
   return (
     <>
       <Head>
-        <title>Home | upcrate</title>
-        <meta property="og:title" content="Home | upcrate" key="title" />
+        <title>The Mystery Art Supplies Box | upcrate</title>
+        <meta property="og:title" content="The Mystery Art Supplies Box | upcrate" key="title" />
 
         <meta
           property="og:description"
