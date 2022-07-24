@@ -21,7 +21,7 @@ export function FeaturedArtistsWeWorkedWithSection() {
           <div className="grid gap-10 md:gap-20">
             <div>
               <Image
-                src="/home/featured-artists/featured-01.png"
+                src="/home/featured-artists/featured-01.jpg"
                 width={385}
                 height={385}
                 layout="responsive"
@@ -30,17 +30,17 @@ export function FeaturedArtistsWeWorkedWithSection() {
                 <div className="text-bold">#upcrate14</div>
                 <a
                   className="text-sm"
-                  href="https://www.instagram.com/r.os_art/"
+                  href="https://www.instagram.com/neimykanani/"
                   target="_blank"
                   rel="noopener noreferrer"
                 >
-                  @r.os_art
+                  @neimykanani
                 </a>
               </div>
             </div>
             <div>
               <Image
-                src="/home/featured-artists/featured-02.png"
+                src="/home/featured-artists/featured-02.jpg"
                 width={385}
                 height={385}
                 layout="responsive"
@@ -49,11 +49,11 @@ export function FeaturedArtistsWeWorkedWithSection() {
                 <div className="text-bold">#upcrate7</div>
                 <a
                   className="text-sm"
-                  href="https://www.instagram.com/boxadessin/"
+                  href="https://www.instagram.com/myweirdart_/"
                   target="_blank"
                   rel="noopener noreferrer"
                 >
-                  @boxadessin
+                  @myweirdart_
                 </a>
               </div>
             </div>
@@ -86,20 +86,20 @@ export function FeaturedArtistsWeWorkedWithSection() {
             </div>
             <div>
               <Image
-                src="/home/featured-artists/featured-04.png"
+                src="/home/featured-artists/featured-04.jpg"
                 width={385}
                 height={385}
                 layout="responsive"
               />
               <div className="flex items-end justify-between text-purple-dark text-2xl mt-2">
-                <div className="text-bold">#upcrate1</div>
+                <div className="text-bold">#upcrate5</div>
                 <a
                   className="text-sm"
-                  href="https://www.instagram.com/kloodwig/"
+                  href="https://www.instagram.com/clemstjw/"
                   target="_blank"
                   rel="noopener noreferrer"
                 >
-                  @kloodwig
+                  @clemstjw
                 </a>
               </div>
             </div>

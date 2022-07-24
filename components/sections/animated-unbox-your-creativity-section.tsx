@@ -27,11 +27,7 @@ export function AnimatedUnboxYourCreativitySection() {
         <UnboxYourCreativitySvg />
         <div className="-mt-12">
           <Parallax offset={100}>
-            <Image
-              src="/home/unbox-your-creativity/unbox-box.png"
-              width={596}
-              height={620}
-            />
+            <Image src="/box.png" width={1064} height={560} />
           </Parallax>
         </div>
       </div>

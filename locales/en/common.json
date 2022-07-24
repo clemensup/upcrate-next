@@ -405,7 +405,7 @@
   "faqs": [
     {
       "question": "How do I subscribe to Upcrate?",
-      "answer": "Click here to select your plan. It’s easy and you can cancel at any time!"
+      "answer": "<1>Click here</1> to select your plan. It’s easy and you can cancel at any time!"
     },
     {
       "question": "Where does Upcrate ship to?",

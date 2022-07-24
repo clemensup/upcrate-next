@@ -25,47 +25,47 @@ export function UpcrateBattleSection() {
         </div>
         <div className="md:flex align-center justify-center md:space-x-20 md:text-xl text-purple-dark">
           <div className="mt-10">
-            <h4 className="text-left mb-3">TOPIC: Colorless beauty</h4>
-            <Image src="/upcrate-battle/topic01.png" width={330} height={330} />
+            <h4 className="text-left mb-3">TOPIC: Sketched Dreams</h4>
+            <Image src="/upcrate-battle/topic01.jpg" width={330} height={330} />
             <div className="flex items-end justify-between">
               <div className="text-bold">#upcrate19</div>
               <a
                 className="text-sm"
-                href="https://www.instagram.com/jj8.kaiser.art/"
+                href="https://www.instagram.com/shania_bo/"
                 target="_blank"
                 rel="noopener noreferrer"
               >
-                @jj8.kaiser.art
+                @shania_bo
               </a>
             </div>
           </div>
           <div className="mt-10">
-            <h4 className="text-left mb-3">TOPIC: Crystal clear</h4>
-            <Image src="/upcrate-battle/topic02.png" width={330} height={330} />
+            <h4 className="text-left mb-3">TOPIC: Mysterious Mind</h4>
+            <Image src="/upcrate-battle/topic02.jpg" width={330} height={330} />
             <div className="flex items-end justify-between">
               <div className="text-bold">#upcrate16</div>
               <a
                 className="text-sm"
-                href="https://www.instagram.com/@trinkety/"
+                href="https://www.instagram.com/lapetiteruse/"
                 target="_blank"
                 rel="noopener noreferrer"
               >
-                @trinkety
+                @lapetiteruse
               </a>
             </div>
           </div>
           <div className="mt-10">
-            <h4 className="text-left mb-3">TOPIC: Magical fantasy</h4>
-            <Image src="/upcrate-battle/topic03.png" width={330} height={330} />
+            <h4 className="text-left mb-3">TOPIC: What can you see</h4>
+            <Image src="/upcrate-battle/topic03.jpg" width={330} height={330} />
             <div className="flex items-end justify-between">
               <div className="text-bold">#upcrate11</div>
               <a
                 className="text-sm"
-                href="https://www.instagram.com/rangie_art/"
+                href="https://www.instagram.com/chantalachtelik/"
                 target="_blank"
                 rel="noopener noreferrer"
               >
-                @rangie_art
+                @chantalachtelik
               </a>
             </div>
           </div>
@@ -98,9 +98,9 @@ export function UpcrateBattleSection() {
           <div className="md:grid grid-cols-3 gap-20 mt-6">
             <div className="mt-5 md:mt-0">
               <Image
-                src="/upcrate-battle/how-to-01.png"
-                width={389}
-                height={311}
+                src="/upcrate-battle/how-to-01.jpg"
+                width={600}
+                height={480}
               />
               <div className="flex justify-between">
                 <span className="font-bold font-display text-5xl">1.</span>
@@ -109,9 +109,9 @@ export function UpcrateBattleSection() {
             </div>
             <div className="mt-5 md:mt-0">
               <Image
-                src="/upcrate-battle/how-to-02.png"
-                width={389}
-                height={311}
+                src="/upcrate-battle/how-to-02.jpg"
+                width={600}
+                height={480}
               />
               <div className="flex justify-between text-right">
                 <span className="font-bold font-display text-5xl">2.</span>
@@ -120,9 +120,9 @@ export function UpcrateBattleSection() {
             </div>
             <div className="mt-5 md:mt-0">
               <Image
-                src="/upcrate-battle/how-to-03.png"
-                width={389}
-                height={311}
+                src="/upcrate-battle/how-to-03.jpg"
+                width={600}
+                height={480}
               />
               <div className="flex justify-between text-right">
                 <span className="font-bold font-display text-5xl">3.</span>

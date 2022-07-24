@@ -74,7 +74,7 @@ module.exports = {
         "crates-image-section": "url('/crates/image-section.png')",
         "artcrew-image-section01": "url('/artcrew/image-section01.png')",
         "artcrew-image-section02": "url('/artcrew/image-section02.png')",
-        "artcrew-image-section03": "url('/artcrew/image-section03.png')",
+        "artcrew-image-section03": "url('/artcrew/image-section03.jpg')",
         "artcrew-image-section04": "url('/artcrew/image-section04.png')",
         "artcrew-image-section05": "url('/artcrew/image-section05.png')",
         "crates-hero": "url('/crates/hero-image.png')",

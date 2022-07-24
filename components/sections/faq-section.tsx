@@ -1,6 +1,7 @@
 import useTranslation from "next-translate/useTranslation";
 import React from "react";
 import { Accordion } from "../elements/accordion";
+import { FormattedText } from "../elements/formatted-text";
 import { RadialGradient } from "../elements/radial-gradient";
 
 interface Faq {
@@ -89,7 +90,7 @@ export function FaqSection() {
         <h3 className="font-display text-purple-dark text-center text-2xl md:text-5xl">
           {t("pages.faqs.title")}
         </h3>
-        {faqs.map((faq) => (
+        {faqs.map((faq, key) => (
           <Accordion
             key={faq.question}
             question={
@@ -98,9 +99,20 @@ export function FaqSection() {
               </p>
             }
             answer={
-              <p className="text-xl text-left max-w-4xl font-light text-purple-dark">
-                {faq.answer}
-              </p>
+              <>
+                <p className="text-xl text-left max-w-4xl font-light text-purple-dark">
+                  {key === 0 ? (
+                    <FormattedText
+                      transKey={faq.answer}
+                      delimiter={[
+                        <a className="underline" href="/subscriptions" />,
+                      ]}
+                    />
+                  ) : (
+                    <>{faq.answer}</>
+                  )}
+                </p>
+              </>
             }
           />
         ))}

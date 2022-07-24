@@ -4,7 +4,7 @@ import { useRandomHeads } from "../../hooks/use-random-heads";
 import { Button } from "../elements/button";
 import { Parallax } from "../elements/parallax";
 import { Caret } from "../elements/svg";
-import { UpcrateArtcrewSvg } from "../elements/svg/upcrate-artcrew-svg";
+import Image from "next/image";
 
 export function InviteFriendsSection() {
   const { t } = useTranslation("common");
@@ -21,9 +21,9 @@ export function InviteFriendsSection() {
           </h3>
 
           <div className="relative md:p-10 border-l-2 border-purple-dark border-t-2 border-r-2 border-b-2 md:border-b-0 mt-10 p-4 bg-white opacity-95 md:opacity-100">
-            <div className="flex justify-center items-center flex-col md:gap-20 md:mt-32 relative">
+            <div className="flex justify-center items-center flex-col md:gap-20 md:mt-16 relative">
               <Parallax>
-                <UpcrateArtcrewSvg />
+                <Image src="/artcrew/invite.jpg" width={900} height={542} />
               </Parallax>
               <div className="max-w-4xl mx-auto text-lg md:text-3xl relative z-10 -mx-4 md:m-0 p-4 md:p-0 bg-white md:bg-transparent">
                 {t("sections.invite_friends.text")}

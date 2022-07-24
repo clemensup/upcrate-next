@@ -15,7 +15,7 @@ export function TheBottlePostSection() {
         </h3>
 
         <div className="max-w-8xl mt-5 md:mt-10 mx-auto text-center">
-          <Image src="/the-bottle-post/big.png" width={1620} height={764} />
+          <Image src="/the-bottle-post/big.jpg" width={1951} height={489} />
 
           <div className="w-full h-full">
             <div className="flex flex-col text-purple-dark h-full justify-items-end mt-5 md:mt-0 md:text-xl">
@@ -26,44 +26,44 @@ export function TheBottlePostSection() {
               <div className="flex gap-6 md:gap-20 mt-5 md:mt-16 max-w-8xl mx-auto">
                 <Parallax offset={50}>
                   <a
-                    href="https://shop.upcrate.art/product/upcrate20-april-2021/"
+                    href="https://shop.upcrate.art/product/upcrate31-march-2022_589/"
                     target="_blank"
                     rel="noopener noreferrer"
                   >
                     <Image
-                      src="/the-bottle-post/small01.png"
+                      src="/the-bottle-post/small01.jpg"
                       width={500}
                       height={500}
                     />
-                    <div className="text-xs md:text-xl">#upcrate20</div>
+                    <div className="text-xs md:text-xl">#upcrate31</div>
                   </a>
                 </Parallax>
                 <Parallax offset={50}>
                   <a
-                    href="https://shop.upcrate.art/product/upcrate19-march-2021/"
+                    href="https://shop.upcrate.art/product/upcrate28-december-2021-123/"
                     target="_blank"
                     rel="noopener noreferrer"
                   >
                     <Image
-                      src="/the-bottle-post/small02.png"
+                      src="/the-bottle-post/small02.jpg"
                       width={500}
                       height={500}
                     />
-                    <div className="text-xs md:text-xl">#upcrate19</div>
+                    <div className="text-xs md:text-xl">#upcrate28</div>
                   </a>
                 </Parallax>
                 <Parallax offset={50}>
                   <a
-                    href="https://shop.upcrate.art/product/upcrate16-december-2020/"
+                    href="https://shop.upcrate.art/product/upcrate26-october-2021485843/"
                     target="_blank"
                     rel="noopener noreferrer"
                   >
                     <Image
-                      src="/the-bottle-post/small03.png"
+                      src="/the-bottle-post/small03.jpg"
                       width={500}
                       height={500}
                     />
-                    <div className="text-xs md:text-xl">#upcrate16</div>
+                    <div className="text-xs md:text-xl">#upcrate26</div>
                   </a>
                 </Parallax>
               </div>

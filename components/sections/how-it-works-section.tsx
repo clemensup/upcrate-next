@@ -50,7 +50,7 @@ export function HowItWorksSection() {
                 3.
               </span>
               <Image
-                src="/how-it-works/how-it-works-section03.png"
+                src="/how-it-works/how-it-works-section03.jpg"
                 layout="intrinsic"
                 width={389}
                 height={311}

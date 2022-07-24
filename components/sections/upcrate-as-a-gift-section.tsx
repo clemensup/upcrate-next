@@ -51,7 +51,7 @@ export function UpcrateAsGiftSection() {
             animate={isVisible ? "visible" : "hidden"}
             transition={{ duration: 1, ease: "easeOut" }}
           >
-            <Image src="/upcrate-as-gift/box.png" width={808} height={661} />
+            <Image src="/upcrate-as-gift/box.png" width={900} height={566} />
           </motion.div>
         </Parallax>
         <Button
