@@ -1151,8 +1151,7 @@ export default function Privacy() {
               Transaktionssumme Name des Anbieters, Ort
               <br />
               <br />
-              Die Verarbeitung der unter diesem Abschnitt angegebenen Daten ist
-              weder gesetzlich noch vertraglich vorgeschrieben. Ohne die
+              Bei der Zahlungsabwicklung über Stripe werden personenbezogene Daten an Stripe übermittelt. Ohne die
               Übermittlung Ihrer personenbezogenen Daten können wir eine Zahlung
               über Stripe nicht durchführen. Es besteht für Sie die Möglichkeit,
               eine andere Zahlungsmethode zu wählen. Weitere Informationen zu
@@ -1160,7 +1159,7 @@ export default function Privacy() {
               finden Sie unter:{" "}
               <a
                 className="underline"
-                href="https://stripe.com/privacy-center/legal"
+                href="https://stripe.com/de/ssa#section_d_translation"
               >
                 https://stripe.com/privacy-center/legal
               </a>
