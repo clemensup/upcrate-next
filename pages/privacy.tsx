@@ -283,12 +283,11 @@ export default function Privacy() {
               Transaction amount, Name of the provider, Place
               <br />
               <br />
-              Processing of the data provided under this section is not required
-              by law or contract. We cannot process a payment via Stripe without
+              When processing payments via Stripe, personal data is transmitted to Stripe. We cannot process a payment via Stripe without
               the submission of your personal data. You have the option to
               choose another payment method. For more information on opting out
               and opting out of Stripe, please visit:{" "}
-              <a href="https://stripe.com/privacy-center/legal">
+              <a href="https://stripe.com/de/ssa#section_d_translation">
                 https://stripe.com/privacy-center/legal
               </a>
               <h2 className="text-2xl font-bold mt-10 md:mt-8">Cookies</h2>
