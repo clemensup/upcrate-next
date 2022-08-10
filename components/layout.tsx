@@ -18,6 +18,10 @@ export function Layout({ children }): JSX.Element {
           <title>Upcrate.art</title>
           <meta name="description" content="Unbox your creativity" />
           <link rel="icon" href="/favicon.png" />
+          <meta
+            name="google-site-verification"
+            content="2EeboCOoxIj0bB_9UPHG5M9fYqaXnHP9LF0nBDRDodU"
+          />
         </Head>
 
         <Header />
