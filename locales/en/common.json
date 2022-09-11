@@ -35,6 +35,7 @@
     "message_label": "Your Message",
     "message_error": "Please type in your message.",
     "error_message": "Please fill out all fields and agree to our terms & conditions.",
+    "error_message_already_exists": "This email address is already registered.",
     "success_message": "Thank you.\nWe will answer you as soon as we have finished the artwork",
     "terms_label": "I have read and accepted the <1>terms & conditions</1> and the <2>privacy policy</2>",
     "terms_error": "Please accept our terms and condtions.",

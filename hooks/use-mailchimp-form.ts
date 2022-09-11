@@ -4,7 +4,7 @@ import { addMember } from "../utils/mailchimp-add-member";
 export function useMailchimpForm() {
   const [email, setEmail] = React.useState("");
   const [terms, setTerms] = React.useState(false);
-  const [hasError, setHasError] = React.useState(false);
+  const [error, setError] = React.useState<boolean | number>(false);
   const [isLoading, setIsLoading] = React.useState(false);
 
   const [formStatus, setFormStatus] = React.useState<"success" | undefined>(
@@ -12,7 +12,7 @@ export function useMailchimpForm() {
   );
 
   const handleChange = (event) => {
-    setHasError(false);
+    setError(false);
     setFormStatus(undefined);
 
     if (event.target.name === "email") {
@@ -26,32 +26,40 @@ export function useMailchimpForm() {
 
   const handleSubmit = async (event) => {
     event.preventDefault();
-    setHasError(false);
+    setError(false);
     setIsLoading(true);
     setFormStatus(undefined);
 
     if (new RegExp(/^[^\s@]+@[^\s@]+\.[^\s@]+$/).test(email) && terms) {
       const response = await addMember(email);
 
+      // @ts-ignore
       if (response.data) {
+        if (response.data.status === 400) {
+          setIsLoading(false);
+          setError(400);
+
+          return;
+        }
+
         setIsLoading(false);
         return setFormStatus("success");
       }
 
-      setHasError(true);
+      setError(true);
       setIsLoading(false);
 
       return;
     }
 
     setIsLoading(false);
-    setHasError(true);
+    setError(true);
   };
 
   return {
     email,
     terms,
-    hasError,
+    error,
     isLoading,
     formStatus,
     handleSubmit,

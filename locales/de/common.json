@@ -35,6 +35,7 @@
     "message_label": "Deine Nachricht",
     "message_error": "Bitte trage deine Nachricht ein.",
     "error_message": "Bitte fülle alle Felder aus und akzeptiere unsere allgemeinen Geschäftsbedingungen.",
+    "error_message_already_exists": "Diese E-mail Adresse ist bereits registriert.",
     "success_message": "Danke Danke.\nWir malen noch kurz zu Ende und antworten dir dann:)",
     "terms_label": "Ich habe die <1>AGB</1> und <2>Datenschutzrichtlinie</2> gelesen und akzeptiert",
     "terms_error": "Bitte akzeptiere unsere allgemeinen Geschäftsbedingungen.",

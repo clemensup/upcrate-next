@@ -9,7 +9,7 @@ export function FooterNewsletterForm() {
   const {
     email,
     terms,
-    hasError,
+    error,
     isLoading,
     formStatus,
     handleSubmit,
@@ -56,9 +56,11 @@ export function FooterNewsletterForm() {
             {isLoading ? "Sending..." : <Caret />}
           </button>
         </div>
-        {hasError && (
+        {error && (
           <p className="text-white text-base bg-pink mt-2 p-2">
-            {t("forms.error_message")}
+            {error === 400
+              ? t("forms.error_message_already_exists")
+              : t("forms.error_message")}
           </p>
         )}
         {formStatus === "success" && (

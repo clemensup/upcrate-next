@@ -43,8 +43,6 @@ const mailer = ({ senderMail, name, text, recipientMail }) => {
     replyTo: from,
   };
 
-  console.log(message);
-
   return new Promise((resolve, reject) => {
     transporter.sendMail(message, (error, info) =>
       error ? reject(error) : resolve(info)
