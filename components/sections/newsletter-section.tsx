@@ -22,7 +22,7 @@ export function NewsletterSection({
   const {
     email,
     terms,
-    hasError,
+    error,
     isLoading,
     formStatus,
     handleSubmit,
@@ -37,7 +37,7 @@ export function NewsletterSection({
           {children}
           <div
             className={`md:max-w-6xl p-5 md:p-10 py-10 md:mx-auto md:mt-12 md:pt-32 md:pb-20 text-purple-dark text-xl md:text-3xl bg-green md:rounded md:px-20 relative mb-20 ${
-              hasError ? "bg-pink" : ""
+              error ? "bg-pink" : ""
             } relative overflow-hidden -mx-10 mt-10 md:mt-0`}
           >
             <RadialGradient className="bg-purple" variant="top-left" />
@@ -109,7 +109,7 @@ export function NewsletterSection({
                           </span>
                         }
                       />
-                      {hasError && (
+                      {error && (
                         <p className="text-white text-base bg-pink mt-2">
                           {t("forms.error_message")}
                         </p>
