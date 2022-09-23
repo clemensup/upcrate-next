@@ -1,3 +1,4 @@
+import { GetStaticProps } from "next";
 import useTranslation from "next-translate/useTranslation";
 import Head from "next/head";
 import {
@@ -8,7 +9,7 @@ import {
 } from "../components";
 import { CratesList } from "../components/crates-list";
 import { JoinTheArtCrewSection } from "../components/sections/join-the-art-crew-section";
-import { getPreviousCrates } from "../lib/api";
+import { fetchWooCommerceProducts } from "../lib/api";
 
 export interface ProductImage {
   id: number;
@@ -82,10 +83,12 @@ export default function Crates({ products, pageCount }: CratesProps) {
   );
 }
 
-export async function getStaticProps() {
-  const data = await getPreviousCrates();
+export const getStaticProps: GetStaticProps = async () => {
+  const wooCommerceProducts = await fetchWooCommerceProducts({
+    category: "49",
+  }).catch((error) => console.error(error));
 
-  if (!data) {
+  if (!wooCommerceProducts) {
     return {
       notFound: true,
     };
@@ -93,8 +96,8 @@ export async function getStaticProps() {
 
   return {
     props: {
-      products: data.products.edges || [],
+      products: wooCommerceProducts.data,
     },
-    revalidate: 10,
+    revalidate: 60, // regenerate page with new data fetch after 60 seconds
   };
-}
+};

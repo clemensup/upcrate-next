@@ -16,10 +16,11 @@ import { WhyUpcrateSection } from "../components/sections/why-upcrate-section";
 import { FormerCratesInARowSection } from "../components/sections/former-crates-in-a-row-section";
 import { FormattedText } from "../components/elements/formatted-text";
 import { AnimatedUnboxYourCreativitySection } from "../components/sections/animated-unbox-your-creativity-section";
-import { fetchCrates } from "../utils/wc-api";
 import { CratesProps } from "./crates";
 import { FreeShippingWorldWideSvg } from "../components/elements/svg/free-shipping-worldwide";
 import { motion } from "framer-motion";
+import { GetStaticProps } from "next";
+import { fetchWooCommerceProducts } from "../lib/api";
 
 export default function Home({ products }: CratesProps) {
   const { t } = useTranslation("common");
@@ -28,7 +29,11 @@ export default function Home({ products }: CratesProps) {
     <>
       <Head>
         <title>The Mystery Art Supplies Box | upcrate</title>
-        <meta property="og:title" content="The Mystery Art Supplies Box | upcrate" key="title" />
+        <meta
+          property="og:title"
+          content="The Mystery Art Supplies Box | upcrate"
+          key="title"
+        />
 
         <meta
           property="og:description"
@@ -78,10 +83,12 @@ export default function Home({ products }: CratesProps) {
   );
 }
 
-export const getStaticProps = async () => {
-  const wcData = await fetchCrates().catch(console.error);
+export const getStaticProps: GetStaticProps = async () => {
+  const wooCommerceProducts = await fetchWooCommerceProducts({
+    category: "49",
+  }).catch((error) => console.error(error));
 
-  if (!wcData) {
+  if (!wooCommerceProducts) {
     return {
       notFound: true,
     };
@@ -89,8 +96,8 @@ export const getStaticProps = async () => {
 
   return {
     props: {
-      products: wcData.data,
-      revalidate: 10,
+      products: wooCommerceProducts.data,
     },
+    revalidate: 60, // regenerate page with new data fetch after 60 seconds
   };
 };

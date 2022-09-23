@@ -77,9 +77,9 @@ export function CratesList({ products }: CratesProps) {
                   page * PRODUCTS_PER_PAGE,
                   page * PRODUCTS_PER_PAGE + PRODUCTS_PER_PAGE
                 )
-                .map(({ node }) => {
+                .map((crate) => {
                   return (
-                    <li key={node.id} className="relative">
+                    <li key={crate.id} className="relative">
                       <motion.div variants={thumbnailVariants}>
                         <motion.div
                           variants={frameVariants}
@@ -88,25 +88,25 @@ export function CratesList({ products }: CratesProps) {
                           whileHover="hover"
                           initial="initial"
                         >
-                          <a href={node.link}>
-                            {node.image && (
+                          <a href={crate.permalink}>
+                            {crate.images && crate.images.length > 0 && (
                               <div
                                 className="relative"
                                 style={{ paddingBottom: "100%" }}
                               >
                                 <motion.img
                                   className="absolute top-0 left-0 right-0 bottom-0"
-                                  src={node.image.mediaItemUrl}
+                                  src={crate.images[0].src}
                                   width={340}
                                   height={340}
                                   variants={imageVariants}
                                   transition={transition}
                                 />
 
-                                {node?.previousCrate?.zoomImage?.sourceUrl && (
+                                {crate?.acf?.zoom_image && (
                                   <motion.img
                                     className="absolute top-0 left-0 right-0 bottom-0 z-0"
-                                    src={node.previousCrate.zoomImage.sourceUrl}
+                                    src={crate.acf.zoom_image}
                                     width={340}
                                     height={340}
                                     variants={zoomeImageVariants}
@@ -119,14 +119,14 @@ export function CratesList({ products }: CratesProps) {
                         </motion.div>
 
                         <h5 className="text-lg md:text-2xl font-bold">
-                          {node.name}
+                          {crate.name}
                         </h5>
                         <div className="flex justify-between mt-2">
                           <span
                             className="md:text-xl"
-                            dangerouslySetInnerHTML={{ __html: node.price }}
+                            dangerouslySetInnerHTML={{ __html: crate.price }}
                           />
-                          {node.stockStatus === "OUT_OF_STOCK" && (
+                          {crate.stockStatus === "OUT_OF_STOCK" && (
                             <span className="font-display md:text-red-light text-xs absolute md:relative right-0 p-1 md:p-0 bg-red md:bg-transparent text-white top-0 md:text-xl">
                               {t("pages.crates.crates_list.stock_status")}
                             </span>

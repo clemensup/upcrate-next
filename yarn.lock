@@ -426,12 +426,12 @@
 
 "@types/woocommerce__woocommerce-rest-api@^1.0.2":
   version "1.0.2"
-  resolved "https://registry.yarnpkg.com/@types/woocommerce__woocommerce-rest-api/-/woocommerce__woocommerce-rest-api-1.0.2.tgz#b17434b09dce2c7df48b2b471f6a8b59ae6f9f64"
+  resolved "https://registry.npmjs.org/@types/woocommerce__woocommerce-rest-api/-/woocommerce__woocommerce-rest-api-1.0.2.tgz#b17434b09dce2c7df48b2b471f6a8b59ae6f9f64"
   integrity sha512-u0Wpj8pgYiB28imiQzPU2U8+BTYufQK66c7/IVkZlfZJJKR6fORQpQGUVTd21X1fK3wlwo1gYnjxaAh74KTZQg==
 
 "@woocommerce/woocommerce-rest-api@^1.0.1":
   version "1.0.1"
-  resolved "https://registry.yarnpkg.com/@woocommerce/woocommerce-rest-api/-/woocommerce-rest-api-1.0.1.tgz#112b998e8e3758203a71d5e3e0b24efcb1cff842"
+  resolved "https://registry.npmjs.org/@woocommerce/woocommerce-rest-api/-/woocommerce-rest-api-1.0.1.tgz#112b998e8e3758203a71d5e3e0b24efcb1cff842"
   integrity sha512-YBk3EEYE0zax/egx6Rhpbu6hcCFyZpYQrjH9JO4NUGU3n3T0W9Edn7oAUbjL/c7Oezcg+UaQluCaKjY/B3zwxg==
   dependencies:
     axios "^0.19.0"

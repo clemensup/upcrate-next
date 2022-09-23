@@ -1,61 +1,19 @@
-const API_URL = process.env.WORDPRESS_API_URL;
+import WooCommerceRestApi from "@woocommerce/woocommerce-rest-api";
 
-async function fetchAPI(query, { variables } = { variables: {} }) {
-  const headers = { "Content-Type": "application/json" };
+// initialise the WooCommerceRestApi //
+const api = new WooCommerceRestApi({
+  url: process.env.WC_API_URL!,
+  consumerKey: process.env.WC_API_CONSUMER_KEY!,
+  consumerSecret: process.env.WC_API_CONSUMER_SECRET!,
+  version: "wc/v3",
+});
 
-  if (process.env.WORDPRESS_AUTH_REFRESH_TOKEN) {
-    headers[
-      "Authorization"
-    ] = `Bearer ${process.env.WORDPRESS_AUTH_REFRESH_TOKEN}`;
+// fetch all products from WooCommerce //
+export async function fetchWooCommerceProducts(options: { category?: string }) {
+  try {
+    const response = await api.get("products", { per_page: 100, ...options });
+    return response;
+  } catch (error) {
+    throw new Error(error);
   }
-
-  const res = await fetch(API_URL, {
-    method: "POST",
-    headers,
-    body: JSON.stringify({
-      query,
-      variables,
-    }),
-  });
-
-  const json = await res.json();
-  if (json.errors) {
-    console.error(json.errors);
-    throw new Error("Failed to fetch API");
-  }
-  return json.data;
-}
-
-export async function getPreviousCrates(offset = 100) {
-  const data = await fetchAPI(
-    `
-    query MyQuery($first: Int, $after: String) {
-        products(first: $first, after: $after, where: {categoryId: 49}) {
-          edges {
-            node {
-              id
-              link
-              name
-              ... on SimpleProduct {
-                name
-                price
-                stockStatus
-                image {
-                  mediaItemUrl
-                }
-              }
-              previousCrate {
-                zoomImage {
-                  sourceUrl(size: MEDIUM_LARGE)
-                }
-              }
-            }
-          }
-        }
-      }
-      `,
-    { variables: { first: offset } }
-  );
-
-  return data;
 }
