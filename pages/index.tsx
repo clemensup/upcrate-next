@@ -86,6 +86,7 @@ export default function Home({ products }: CratesProps) {
 export const getStaticProps: GetStaticProps = async () => {
   const wooCommerceProducts = await fetchWooCommerceProducts({
     category: "49",
+    status: "publish",
   }).catch((error) => console.error(error));
 
   if (!wooCommerceProducts) {
