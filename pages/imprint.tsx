@@ -42,7 +42,7 @@ export default function Imprint() {
           <br />
           <br />
           <p className="mb-10">
-            {t("pages.imprint.phone_label")}: +49 177 543 39 13
+            {t("pages.imprint.phone_label")}: +49 1753074992
             <br />
             {t("pages.imprint.phone_service_times")}
             <br />
