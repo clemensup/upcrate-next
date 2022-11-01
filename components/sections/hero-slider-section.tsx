@@ -108,7 +108,7 @@ export const HeroSlider = () => {
 };
 
 export function HeroSliderSection() {
-  const { t } = useTranslation("common");
+  const { t, lang } = useTranslation("common");
 
   return (
     <section className="relative">
@@ -196,7 +196,9 @@ export function HeroSliderSection() {
                 <Button
                   variant="default"
                   className="bg-pink text-white text-xl mt-5 md:mt-0"
-                  href="https://shop.upcrate.art/de/product/upcrategift/"
+                  href={`https://shop.upcrate.art${
+                    lang === "en" ? "" : "/de"
+                  }/product/upcrategift/`}
                 >
                   {t("give_a_gift_button_text")}
                 </Button>

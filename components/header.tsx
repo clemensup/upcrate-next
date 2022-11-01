@@ -137,7 +137,7 @@ export function Header(): JSX.Element {
                 </HeaderNavLink>
               </li>
               <li className="lg:pr-5">
-                <HeaderNavLink href="https://shop.upcrate.art/shop">
+                <HeaderNavLink href={`https://shop.upcrate.art/${lang}/shop`}>
                   {t("navigation.shop")}
                 </HeaderNavLink>
               </li>
@@ -158,7 +158,9 @@ export function Header(): JSX.Element {
               </li>
 
               <li className="md:hidden lg:pr-15">
-                <HeaderNavLink href="https://shop.upcrate.art/account/">
+                <HeaderNavLink
+                  href={`https://shop.upcrate.art/${lang}/account/`}
+                >
                   {t("navigation.signup_login")}
                 </HeaderNavLink>
               </li>
@@ -169,7 +171,7 @@ export function Header(): JSX.Element {
                   whileTap={{ scale: 0.9 }}
                 >
                   <a
-                    href="https://shop.upcrate.art/account"
+                    href={`https://shop.upcrate.art/${lang}/account`}
                     className="fill-current text-purple-dark"
                   >
                     <CaptainCrateSvg />

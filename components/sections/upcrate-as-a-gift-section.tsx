@@ -17,7 +17,7 @@ const variants = {
 };
 
 export function UpcrateAsGiftSection() {
-  const { t } = useTranslation("common");
+  const { t, lang } = useTranslation("common");
   const [ref, isVisible] = useInView({ threshold: 0.2 });
 
   return (
@@ -56,7 +56,9 @@ export function UpcrateAsGiftSection() {
         </Parallax>
         <Button
           className="bg-orange text-white -mt-10 z-10"
-          href="https://shop.upcrate.art/product/upcrategift/"
+          href={`https://shop.upcrate.art${
+            lang === "en" ? "" : "/de"
+          }/product/upcrategift/`}
         >
           {t("sections.upcrate_as_gift.cta")}
         </Button>

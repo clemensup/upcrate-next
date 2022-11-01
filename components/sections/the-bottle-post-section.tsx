@@ -4,7 +4,7 @@ import { Parallax } from "../elements/parallax";
 import { RadialGradient } from "../elements/radial-gradient";
 
 export function TheBottlePostSection() {
-  const { t } = useTranslation("common");
+  const { t, lang } = useTranslation("common");
 
   return (
     <section className="min-h-sectionBig md:min-h-sectionBigMd p-10 md:p-20 relative overflow-hidden">
@@ -26,7 +26,9 @@ export function TheBottlePostSection() {
               <div className="flex gap-6 md:gap-20 mt-5 md:mt-16 max-w-8xl mx-auto">
                 <Parallax offset={50}>
                   <a
-                    href="https://shop.upcrate.art/product/upcrate31-march-2022_589/"
+                    href={`https://shop.upcrate.art${
+                      lang === "en" ? "" : "/de"
+                    }/product/upcrate31-march-2022_589/`}
                     target="_blank"
                     rel="noopener noreferrer"
                   >
@@ -40,7 +42,9 @@ export function TheBottlePostSection() {
                 </Parallax>
                 <Parallax offset={50}>
                   <a
-                    href="https://shop.upcrate.art/product/upcrate28-december-2021-123/"
+                    href={`https://shop.upcrate.art${
+                      lang === "en" ? "" : "/de"
+                    }/product/upcrate28-december-2021-123/`}
                     target="_blank"
                     rel="noopener noreferrer"
                   >
@@ -54,7 +58,9 @@ export function TheBottlePostSection() {
                 </Parallax>
                 <Parallax offset={50}>
                   <a
-                    href="https://shop.upcrate.art/product/upcrate26-october-2021485843/"
+                    href={`https://shop.upcrate.art${
+                      lang === "en" ? "" : "/de"
+                    }/product/upcrate26-october-2021485843/`}
                     target="_blank"
                     rel="noopener noreferrer"
                   >

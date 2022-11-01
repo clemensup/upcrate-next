@@ -5,7 +5,7 @@ import { Parallax } from "../elements/parallax";
 import { CaptainCrateSvg } from "../elements/svg";
 
 export function SubscribeNowSection() {
-  const { t } = useTranslation("common");
+  const { t, lang } = useTranslation("common");
 
   return (
     <section className="py-16 md:py-28 px-10 bg-subscribe-now text-center bg-cover">
@@ -100,7 +100,9 @@ export function SubscribeNowSection() {
           </p>
           <Button
             className="bg-orange text-white mb-4 mt-2 md:mt-5"
-            href="https://shop.upcrate.art/product/subscription-1-month/"
+            href={`https://shop.upcrate.art${
+              lang === "en" ? "" : "/de"
+            }/product/subscription-1-month/`}
           >
             {t("sections.subscribe_now.subscriptions.0.cta")}
           </Button>
@@ -184,7 +186,9 @@ export function SubscribeNowSection() {
           </p>
           <Button
             className="bg-pink text-white mb-4 mt-2 md:mt-5"
-            href="https://shop.upcrate.art/product/subscription-3-months/"
+            href={`https://shop.upcrate.art${
+              lang === "en" ? "" : "/de"
+            }/product/subscription-3-months/`}
           >
             {t("sections.subscribe_now.subscriptions.1.cta")}
           </Button>

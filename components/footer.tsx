@@ -7,7 +7,7 @@ import { FooterNewsletterForm } from "./footer-newsletter-form";
 import Script from "next/script";
 
 export function Footer(): JSX.Element {
-  const { t } = useTranslation("common");
+  const { t, lang } = useTranslation("common");
 
   return (
     <footer className="bg-purple-dark text-white pt-20">
@@ -76,7 +76,7 @@ export function Footer(): JSX.Element {
           </h4>
           <ul className="list-reset leading-normal text-blue text-xl">
             <li>
-              <Link href="https://shop.upcrate.art/refer-a-friend">
+              <Link href={`https://shop.upcrate.art/${lang}/refer-a-friend`}>
                 {t("navigation.refer_a_friend")}
               </Link>
             </li>
@@ -87,7 +87,7 @@ export function Footer(): JSX.Element {
               <Link href="/faq">FAQs</Link>
             </li>
             <li>
-              <Link href="https://shop.upcrate.art/account/">
+              <Link href={`https://shop.upcrate.art/${lang}/account/`}>
                 {t("navigation.signup_login")}
               </Link>
             </li>

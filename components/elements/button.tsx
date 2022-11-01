@@ -42,9 +42,9 @@ export function Button({
         className={`cursor-pointer font-display p-3 pt-2 pb-3 md:text-3xl inline-block max-w-max mx-auto ${variantClassName} ${className}`}
       >
         <Link href={href}>
-          <span className="col-span-2 inline-flex items-center content-center gap-4">
+          <a className="col-span-2 inline-flex items-center content-center gap-4">
             {children}
-          </span>
+          </a>
         </Link>{" "}
       </motion.div>
     );
