@@ -35,7 +35,7 @@ export default function Imprint() {
           <br />
           Akropoleos 27
           <br />
-         5282 Paralimni, Ammochostos
+          5282 Paralimni, Ammochostos
           <br />
           CYPRUS
           <br />
