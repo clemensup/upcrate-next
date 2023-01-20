@@ -74,8 +74,7 @@ export default function CancellationPolicy() {
               </p>
               <ul>
                 <li className="mb-4">
-                  - To: COLORSPAZE LTD Makariou 57, Flat/Office 1, 7100
-                  Aradippou, Larnaca CYPRUS email: info@upcrate.art
+                  - To: COLORSPAZE LTD Akropoleos 27 5282 Paralimni, Ammochostos CYPRUS email: info@upcrate.art
                 </li>
                 <li className="mb-4">
                   - I/we (*) hereby cancel the contract concluded by me/us (*)
@@ -99,8 +98,7 @@ export default function CancellationPolicy() {
               </p>
               <ul>
                 <li className="mb-4">
-                  — An COLORSPAZE LTD Makariou 57, Flat/Office 1, 7100
-                  Aradippou, Larnaca CYPRUS E-Mail: info@upcrate.art
+                  — An COLORSPAZE LTD Akropoleos 27 5282 Paralimni, Ammochostos CYPRUS E-Mail: info@upcrate.art
                 </li>
                 <li className="mb-4">
                   — Hiermit widerrufe(n) ich/wir (*) den von mir/uns (*)
