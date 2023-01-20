@@ -859,9 +859,9 @@ export default function Privacy() {
               <br />
               COLORSPAZE LTD
               <br />
-              Makariou 57, Flat/Office 1
+              Akropoleos 27 
               <br />
-              7100 Aradippou, Larnaca
+              5282 Paralimni, Ammochostos
               <br />
               CYPRUS
               <br />
@@ -1789,9 +1789,9 @@ export default function Privacy() {
               <br />
               COLORSPAZE LTD
               <br />
-              Makariou 57, Flat/Office 1
+              Akropoleos 27
               <br />
-              7100 Aradippou, Larnaca
+              5282 Paralimni, Ammochostos
               <br />
               CYPRUS
               <br />
