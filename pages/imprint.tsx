@@ -33,10 +33,9 @@ export default function Imprint() {
         <address className="mt-20 text-xl mb-20 not-italic">
           COLORSPAZE LTD
           <br />
-          Makariou 57
+          Akropoleos 27
           <br />
-          Flat/Office 1<br />
-          7100 Aradippou, Larnaca
+         5282 Paralimni, Ammochostos
           <br />
           CYPRUS
           <br />
