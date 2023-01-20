@@ -36,8 +36,7 @@ export default function CancellationPolicy() {
             <div className="mt-20">
               <h2 className="text-2xl font-bold mt-10 md:mt-8">Scope</h2>
               For the entire business relationship between Upcrate, represented
-              by COLORSPAZE LTD, Makariou 57, Flat/Office 1, 7100 Aradippou,
-              Larnaca, CYPRUS, phone: +49 177 543 39 13, service time: weekdays
+              by COLORSPAZE LTD Akropoleos 27 5282 Paralimni, Ammochostos CYPRUS, phone: +49 177 543 39 13, service time: weekdays
               from 12 to 13 o'clock, e-mail: info@upcrate.art (hereinafter also
               referred to as "Upcrate", "Provider" or "we") and the customer
               (hereinafter referred to as "Customer"), the following terms and
