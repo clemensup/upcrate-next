@@ -236,8 +236,7 @@ export default function CancellationPolicy() {
                 Geltungsbereich
               </h2>
               Für die gesamte Geschäftsbeziehung zwischen Upcrate, vertreten
-              durch COLORSPAZE LTD, Makariou 57, Flat/Office 1, 7100 Aradippou,
-              Larnaca, CYPRUS, Telefon: +49 177 543 39 13, Servicezeit: werktags
+              durch COLORSPAZE LTD Akropoleos 27 5282 Paralimni, Ammochostos CYPRUS, Telefon: +49 177 543 39 13, Servicezeit: werktags
               von 12 bis 13 Uhr, E-Mail: info@upcrate.art (nachfolgend auch
               "Upcrate", "Anbieter" oder "wir") und dem Kunden (nachfolgend
               "Kunde" genannt) gelten ausschließlich die folgenden
