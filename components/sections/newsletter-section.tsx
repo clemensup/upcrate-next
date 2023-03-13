@@ -2,7 +2,7 @@ import useTranslation from "next-translate/useTranslation";
 import Image from "next/image";
 import React from "react";
 import { useIsDesktopSafari } from "../../hooks/use-is-desktop-safari";
-import { useMailchimpForm } from "../../hooks/use-mailchimp-form";
+import { useNewsletterForm } from "../../hooks/use-newsletter-form";
 import { useWindowSize } from "../../hooks/use-window-size";
 import { Checkbox } from "../elements/checkbox";
 import { CreditsBage } from "../elements/credits-badge";
@@ -27,11 +27,11 @@ export function NewsletterSection({
     formStatus,
     handleSubmit,
     handleChange,
-  } = useMailchimpForm();
+  } = useNewsletterForm();
 
   return (
     <div className={className}>
-      <section className="text-center text-purple-dark pt-32 pb-0 px-10 md:px-10 md:px-32 md:pt-20 relative overflow-hidden -mt-20 md:-mt-10">
+      <section className="text-center text-purple-dark pt-32 pb-0 px-10 md:px-32 md:pt-20 relative overflow-hidden -mt-20 md:-mt-10">
         <RadialGradient className="bg-purple" />
         <div className="z-10 relative text-purple-dark">
           {children}
@@ -109,11 +109,11 @@ export function NewsletterSection({
                           </span>
                         }
                       />
-                      {error && (
+                      {error ? (
                         <p className="text-white text-base bg-pink mt-2">
-                          {t("forms.error_message")}
+                          {error}
                         </p>
-                      )}
+                      ) : null}
                     </div>
 
                     <button

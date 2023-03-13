@@ -1,17 +1,19 @@
 import axios from "axios";
 
-export async function addMember(email_address: string) {
+export async function addMember(email: string) {
   try {
     const response = await axios({
       method: "post",
-      url: "/api/mailchimp",
+      url: "/api/newsletter",
       headers: {
         "Content-Type": "application/json",
       },
       data: {
-        email_address,
+        email,
       },
     });
+
+    console.log(response.data);
 
     return response;
   } catch (error) {

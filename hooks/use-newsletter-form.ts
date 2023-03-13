@@ -1,7 +1,7 @@
 import * as React from "react";
-import { addMember } from "../utils/mailchimp-add-member";
+import { addMember } from "../utils/newsletter-add-member";
 
-export function useMailchimpForm() {
+export function useNewsletterForm() {
   const [email, setEmail] = React.useState("");
   const [terms, setTerms] = React.useState(false);
   const [error, setError] = React.useState<boolean | number>(false);
@@ -33,23 +33,25 @@ export function useMailchimpForm() {
     if (new RegExp(/^[^\s@]+@[^\s@]+\.[^\s@]+$/).test(email) && terms) {
       const response = await addMember(email);
 
-      // @ts-ignore
-      if (response.data) {
-        if (response.data.status === 400) {
-          setIsLoading(false);
-          setError(400);
+      console.log(response.data);
 
-          return;
-        }
-
+      if (!response.data) {
+        setError(true);
         setIsLoading(false);
-        return setFormStatus("success");
+
+        return;
       }
 
-      setError(true);
-      setIsLoading(false);
+      // @ts-ignore
+      if (response.data.success === false) {
+        setIsLoading(false);
+        setError(response.data.data);
 
-      return;
+        return;
+      }
+
+      setIsLoading(false);
+      return setFormStatus("success");
     }
 
     setIsLoading(false);
