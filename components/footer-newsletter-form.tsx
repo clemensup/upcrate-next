@@ -56,13 +56,7 @@ export function FooterNewsletterForm() {
           </button>
         </div>
         {error ? (
-          <p className="text-white text-base bg-pink mt-2 p-2">
-            {error === 400
-              ? t("forms.error_message_already_exists")
-              : error !== 500
-              ? t("forms.error_message")
-              : "Internal Server Error, try again later."}
-          </p>
+          <p className="text-white text-base bg-pink mt-2 p-2">{error}</p>
         ) : null}
         {formStatus === "success" && (
           <p className="text-white text-base bg-green mt-2 p-2 whitespace-pre-line">
