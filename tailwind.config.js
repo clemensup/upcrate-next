@@ -12,6 +12,9 @@ module.exports = {
       sectionSmall: "300px",
       sectionSmallMd: "560px",
     },
+    minWidth: {
+      desktopLogo: "170px",
+    },
     height: {
       gradient: "500px",
     },

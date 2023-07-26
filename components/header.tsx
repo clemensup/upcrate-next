@@ -104,7 +104,7 @@ export function Header(): JSX.Element {
                 <span className="inline-block lg:hidden">
                   <CaptainCrateSvg variant="head-only" />
                 </span>
-                <span className="hidden lg:block w-48">
+                <span className="hidden lg:block min-w-desktopLogo">
                   <Logo />
                 </span>
               </div>
@@ -129,26 +129,33 @@ export function Header(): JSX.Element {
             <ul
               className={`${
                 !isMenuActive ? "hidden" : ""
-              } font-bold absolute top-full width-full z-40 left-0 right-0 bg-white text-center lg:relative lg:block lg:flex lg:flex-row text-purple-dark text-xl lg:items-center`}
+              } font-bold absolute top-full width-full z-40 left-0 right-0 bg-white text-center lg:relative lg:flex lg:flex-row text-purple-dark text-xl lg:items-center`}
             >
-              <li className="lg:pr-5">
+              <li className="lg:pr-3 min-w-max">
                 <HeaderNavLink href="/how-it-works">
                   {t("navigation.how_it_works")}
                 </HeaderNavLink>
               </li>
-              <li className="lg:pr-5">
+              <li className="lg:pr-3 min-w-max">
                 <HeaderNavLink href={`https://shop.upcrate.art/${lang}/shop`}>
                   {t("navigation.shop")}
                 </HeaderNavLink>
               </li>
-              <li className="lg:pr-5">
+              <li className="lg:pr-3 min-w-max">
                 <HeaderNavLink href="/crates">
                   {t("navigation.crates")}
                 </HeaderNavLink>
               </li>
-              <li className="lg:pr-5">
+              <li className="lg:pr-3 min-w-max">
                 <HeaderNavLink href="/artcrew">
                   {t("navigation.artcrew")}
+                </HeaderNavLink>
+              </li>
+              <li className="lg:pr-3 min-w-max">
+                <HeaderNavLink
+                  href={`https://shop.upcrate.art/${lang}/tutorials/`}
+                >
+                  Tutorials
                 </HeaderNavLink>
               </li>
               <li className="lg:pr-15">
@@ -165,7 +172,7 @@ export function Header(): JSX.Element {
                 </HeaderNavLink>
               </li>
 
-              <li className="lg:pr-10 lg:pl-20 hidden lg:block ">
+              <li className="xl:pr-10 lg:pr-5 lg:pl-10 xl:pl-20 hidden lg:block ">
                 <motion.div
                   whileHover={{ scale: 1.3, rotate: 360 }}
                   whileTap={{ scale: 0.9 }}
@@ -194,7 +201,7 @@ export function Header(): JSX.Element {
               >
                 {lang === "en" && <a>{t("language_switch_en")}</a>}
                 {lang === "de" && <a>{t("language_switch_de")}</a>}
-                <div>
+                <div className="w-10">
                   <Image src="/globe.svg" width={36} height={36} />
                 </div>
                 <Modal
