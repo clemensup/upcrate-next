@@ -67,6 +67,7 @@ export function ContactForm() {
     if (hasErrors()) {
       setFormStatus("error");
       setIsLoading(false);
+      return;
     }
 
     const res = await sendMail(

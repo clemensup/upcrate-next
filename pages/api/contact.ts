@@ -1,14 +1,5 @@
 import nodemailer from "nodemailer";
 
-const transporter = nodemailer.createTransport({
-  host: process.env.SMTP_HOST,
-  port: process.env.SMTP_PORT,
-  auth: {
-    user: process.env.SMTP_USER,
-    pass: process.env.SMTP_PASS,
-  },
-});
-
 export default async (req, res) => {
   const { senderMail, name, content, recipientMail } = req.body;
 
@@ -29,8 +20,18 @@ export default async (req, res) => {
     text: content,
     recipientMail,
   });
+
   res.send(mailerRes);
 };
+
+const transporter = nodemailer.createTransport({
+  host: process.env.SMTP_HOST,
+  port: process.env.SMTP_PORT,
+  auth: {
+    user: process.env.SMTP_USER,
+    pass: process.env.SMTP_PASS,
+  },
+});
 
 const mailer = ({ senderMail, name, text, recipientMail }) => {
   const from =
