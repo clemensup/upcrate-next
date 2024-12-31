@@ -198,11 +198,6 @@
           "payment_cycle": "monatlich zahlen",
           "cta": "Ja ich will!",
           "dollar_estimation": "(~ 25 USD)"
-        },
-        {
-          "payment_cycle": "Alle 3 Monate zahlen",
-          "cta": "Ja ich will³",
-          "dollar_estimation": "(~ 75 USD)"
         }
       ],
       "cancellation_text": "Abo jederzeit kündbar"
