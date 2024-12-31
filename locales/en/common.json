@@ -199,11 +199,6 @@
           "payment_cycle": "Pay every month",
           "cta": "Subscribe now",
           "dollar_estimation": "(~ 25 USD)"
-        },
-        {
-          "payment_cycle": "Pay every 3 months",
-          "cta": "Subscribe now",
-          "dollar_estimation": "(~ 75 USD)"
         }
       ],
       "cancellation_text": "can be cancelled any time"
