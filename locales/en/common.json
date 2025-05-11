@@ -80,7 +80,7 @@
       },
       "crates_list": {
         "title": "Our previous crates",
-        "subtitle": "Looking for a specific box from your favorite artist or new materials to experiment with? Find all of our previous boxes below - you can even reorder them from our stock in case they aren’t sold out yet!\n<1>Displayed prices for individual boxes. Subscription from 24 €</1>",
+        "subtitle": "Looking for a specific box from your favorite artist or new materials to experiment with? Find all of our previous boxes below - you can even reorder them from our stock in case they aren’t sold out yet!\n<1>Displayed prices for individual boxes. Subscription from 28 €</1>",
         "no_products_message": "No products found.",
         "stock_status": "SOLD OUT",
         "previous_page_button": "Previous Page",
@@ -92,7 +92,7 @@
       "title": "Art Crew",
       "newsletter_section": {
         "title": "Upcrate – We draw as one",
-        "text": "Captain Crate has hoisted his sails to bring together a community of artists from all over the world and provide them with the best art materials and tips. Every month he sends his mysterious boxes, which he calls UPCRATE, directly to the front door of every member of his art crew."
+        "text": "Captain Crate has hoisted his sails to bring together a community of artists from all over the world and provide them with the best art materials and tips. every second month he sends his mysterious boxes, which he calls UPCRATE, directly to the front door of every member of his art crew."
       },
       "draw_as_one_section": {
         "title": "<2>We draw artists</2> together <1></1> <2>with</2> our <2> creative passion <1></1> and give </2> you the tools <1></1> to follow <2>your heart</2>"
@@ -111,7 +111,7 @@
           "text": "has gotten to know a wide <1>variety of art materials</1> and their manufacturers on his travels across the seven seas. He is always looking for new connections and treasures for you - <2>his art crew.</2>"
         },
         {
-          "title": "...delivers the best every month... ",
+          "title": "...delivers the best every second month... ",
           "text": "...from a handpicked selection of new, mysterious materials to you. These are lovingly put together in the crates in order to guarantee our <1>international crew</1> the best quality for trying out new drawing techniques and brands at the lowest price. Each box delivers a <2>new surprise</2> to your home!..."
         },
         {
@@ -121,7 +121,13 @@
         {
           "title": "behind the scenes",
           "text": "...is a team of art lovers, designers and artists. <1>Captain Crate</1> himself was brought to life from Hamburg, Germany. Clemens is the founder of Upcrate and brings the magic and organization into the box through his connections to many global art material manufacturers. <2>A selected team of artists</2> tests and curates the materials for Upcrate to ensure that the materials match so you can let your creativity flow freely!"
+        },
+        {
+          "countdown": {
+          "text": "Countdown till the 10th of January, March, May, July, September, or November"
         }
+        }
+        
       ],
       "chosen_one_section": {
         "title": "You’re one of the chosen ones who scrolled all the way down.\nCheck out Captain Crate’s offers here:"
@@ -144,7 +150,7 @@
       "og_description": "Mystery art supplies in a monthly box",
       "title": "Imprint",
       "owner": "Owner",
-      "shipped_and_packed_label": "packaged and shipped and shipped in Hamburg, Germany",
+      "shipped_and_packed_label": "packed in and shipped from Northern Germany.",
       "phone_label": "Phone",
       "phone_service_times": "Period of service 12pm -13pm",
       "vat_id_label": "VAT ID No.",
@@ -161,9 +167,9 @@
       "title": "Cancellation Policy",
       "withdrawal_desc": "<1>The following cancellation policy is directed exclusively at consumers within the meaning of Section 13 of the German Civil Code (BGB). Accordingly, a consumer is any natural person who enters into a legal transaction for a purpose that can be attributed neither to his commercial nor to his independent professional activity.</1>",
       "withdrawal_title": "Withdrawal",
-      "withdrawal_text": "<1>You have the right to withdraw from this contract within fourteen days without giving any reason.  The withdrawal period is fourteen days from the day where you or a third party named by you, who is not the carrier, has or has taken possession of the goods, provided that you have ordered one or more goods under a single order and these are or will be delivered in a uniform manner.  To exercise your right of revocation, you must notify us (COLORSPAZE LTD, Akropoleos 27 5282 Paralimni, Ammochostos CYPRUS, Phone: +49 177 543 39 13, opening hours: workdays from 12am to 1pm, email: info@upcrate.art) by means of a clear statement (e.g. a letter sent by post, e-mail) about your decision to withdraw from this contract. You can use the attached model withdrawal form, which is not required.  In order to maintain the cancellation period, it is sufficient that you send the notice of the exercise of the right of withdrawal before the expiry of the withdrawal period.</1>",
+      "withdrawal_text": "<1>You have the right to withdraw from this contract within fourteen days without giving any reason.  The withdrawal period is fourteen days from the day where you or a third party named by you, who is not the carrier, has or has taken possession of the goods, provided that you have ordered one or more goods under a single order and these are or will be delivered in a uniform manner.  To exercise your right of revocation, you must notify us (COLORSPAZE LTD, Akropoleos 27 5282 Paralimni, Ammochostos CYPRUS, Phone: +357 99539389, opening hours: workdays from 12am to 1pm, email: info@upcrate.art) by means of a clear statement (e.g. a letter sent by post, e-mail) about your decision to withdraw from this contract. You can use the attached model withdrawal form, which is not required.  In order to maintain the cancellation period, it is sufficient that you send the notice of the exercise of the right of withdrawal before the expiry of the withdrawal period.</1>",
       "consequences_title": "Consequences of the cancellation",
-      "consequences_text": "If you withdraw from this Agreement, we have selected all payments we have received from you, including delivery charges (except for the additional costs arising from your choosing a different delivery method than the most favorable standard delivery we offer have to repay immediately and at the latest within fourteen days from the date on which the notification of your revocation of this contract has reached us. For this repayment, we use the same means of payment that you used in the original transaction, unless otherwise agreed with you; In no case will you be charged for this repayment fees.  We may refuse to repay you until we have the goods back or until you have provided proof that you have returned the goods, whichever is the earlier.  You must return the goods to the below address immediately and in any event not later than fourteen days from the date on which you inform us of the cancellation of this contract.<2><1>Kultur&gut</1><1>Manuel Friese</1><1>Bahrenfelder Strasse 260</1><1>D-22765 Hamburg</1><1>Germany</1></2>The deadline is met if you send the goods before the expiry of the period of fourteen days. You bear the immediate costs of returning the goods.  You only have to pay for a possible loss in value of the goods, if this loss of value is due to a handling that is not necessary for the examination of the nature, characteristics and functionality of the goods."
+      "consequences_text": "If you revoke this contract, we are obliged to refund all payments we have received from you, including delivery costs (except for additional costs arising from you choosing a different type of delivery than the cheapest standard delivery offered by us), without undue delay and at the latest within fourteen days from the day we receive notification of your revocation of this contract. For this refund, we will use the same means of payment that you used in the original transaction, unless expressly agreed otherwise with you; in no case will you be charged fees for this refund. We may refuse the refund until we have received the goods back or until you have provided proof that you have returned the goods, whichever is earlier. You must return or hand over the goods to the following address without undue delay and in any event no later than fourteen days from the day on which you inform us of the revocation of this contract:<2><1>Güstrower Werkstätten GmbH</1><1>Koppelweg 14</1><1>D-18273 Güstrow</1><1>Germany</1></2>The deadline is met if you dispatch the goods before the period of fourteen days has expired. You bear the direct costs of returning the goods. You are only liable for any diminished value of the goods if this loss in value is due to handling that was not necessary to ascertain the nature, characteristics, and functioning of the goods."
     },
     "terms_and_conditions": {
       "og_description": "Mystery art supplies in a monthly box",
@@ -196,15 +202,16 @@
       "title": "Subscribe now",
       "subscriptions": [
         {
-          "payment_cycle": "Pay every month",
+          "payment_cycle": "Pay and receive your box every two months",
           "cta": "Subscribe now",
           "dollar_estimation": "(~ 31.81 USD)"
         }
+        
       ],
       "cancellation_text": "can be cancelled any time"
     },
     "why_upcrate": {
-      "title": "Exclusive for monthly subscribers",
+      "title": "Exclusive for subscribers",
       "subtitle": "WHY UPCRATE?",
       "steps": [
         {
@@ -219,7 +226,7 @@
       ],
       "whats_inside": {
         "title": "What's inside?",
-        "text": "Hop on board to discover amazing art treasures in a monthly subscription, inspiring you to create."
+        "text": "Hop on board to discover amazing art treasures in a subscription, inspiring you to create."
       }
     },
     "countdown": {
@@ -227,7 +234,7 @@
       "weeks": "Weeks",
       "days": "Days",
       "hours": "Hours",
-      "text": "Till the 15th of every month"
+      "text": "till the 10 th of every second month"
     },
     "upcrate_as_gift": {
       "title": "upcrate as a gift",
@@ -239,7 +246,7 @@
       "quotes": [
         {
           "author": "Kaia",
-          "text": "“I use Upcrate to fuel my creativity and experience new art supplies. Each crate is like a little treasure chest I find on my doorstep every month.”"
+          "text": "“I use Upcrate to fuel my creativity and experience new art supplies. Each crate is like a little treasure chest I find on my doorstep every second month.”"
         },
         {
           "author": "Multicooleur",
@@ -247,11 +254,11 @@
         },
         {
           "author": "Karolien",
-          "text": "“I love how upcrate surprises me every month by letting explore art suplies that I never would consider to try out. I get out of my comfort zone discover new media and found new art supplies that I love.”"
+          "text": "“I love how upcrate surprises me every second month by letting explore art suplies that I never would consider to try out. I get out of my comfort zone discover new media and found new art supplies that I love.”"
         },
         {
           "author": "Sönke",
-          "text": "“Upcrate is like a grab bag full of high quality art supplies. Every month I look forward to the challenge of creating an artwork for the #upcratebattle with new, partly unknown art supplies.”"
+          "text": "“Upcrate is like a grab bag full of high quality art supplies. every second month I look forward to the challenge of creating an artwork for the #upcratebattle with new, partly unknown art supplies.”"
         }
       ]
     },
@@ -263,13 +270,13 @@
     },
     "featured_artists_we_worked_with": {
       "title": "Featured artists we worked with",
-      "text": "These are 4 of the many artists we have worked with in the past. Each of them come with their own unique styles, knowledge and preferences when it comes to art supplies. They curate the contents of their monthly box to make sure that all the materials work well together. Don’t forget to check them out and shower them in love!",
-      "text_mobile": "These are 4 of the many artists we have worked with in the past. Each of them come with their own unique styles, knowledge and preferences when it comes to art supplies. They curate the contents of their monthly box to make sure that all the materials work well together. Don’t forget to check them out and shower them in love!"
+      "text": "These are 4 of the many artists we have worked with in the past. Each of them come with their own unique styles, knowledge and preferences when it comes to art supplies. They curate the contents of their box to make sure that all the materials work well together. Don’t forget to check them out and shower them in love!",
+      "text_mobile": "These are 4 of the many artists we have worked with in the past. Each of them come with their own unique styles, knowledge and preferences when it comes to art supplies. They curate the contents of their  box to make sure that all the materials work well together. Don’t forget to check them out and shower them in love!"
     },
     "upcrate_battle": {
       "title": "#upcratebattle",
-      "text": "Take part in our online challenges and get a chance to win great prizes!\nEvery month a new topic awaits to inspire you!",
-      "prize_example": "<1>Win great prizes every month</1>E.G. 60 Rembrandt Soft Pastels",
+      "text": "Take part in our online challenges and get a chance to win great prizes!\nevery second month a new topic awaits to inspire you!",
+      "prize_example": "<1>Win great prizes every second month</1>E.G. 60 Rembrandt Soft Pastels",
       "how_to_participate": {
         "title": "How to participate:",
         "steps": [
@@ -297,7 +304,7 @@
           "text": "choose your sailing schedule (1 or 3 months), add it to the cart and checkout."
         },
         {
-          "text": "our art treasures will be put together by Captain Crates crew and will be shipped out with the next batch of boxes on the 15th of each month."
+          "text": "our art treasures will be put together by Captain Crates crew and will be shipped out with the next batch of boxes on the till the 10 th of every second month."
         },
         {
           "text": "Unbox your creativity with your new supplies and our co-captain’s (artist of the month) video, interview and art advice. Share your artwork your the art crew (#upcrate) and participate in our monthly #upcratebattle!"
@@ -331,18 +338,13 @@
       "text": "If you refer a friend to us via Facebook, Twitter or email and he/she/they subscribe, you will both receive a 15% discount on further purchases. For example, if your friend subscribes for 3 months, you will receive a discount code with a value of € 8.16 that you can redeem in our shop!",
       "cta": "REFER A FRIEND"
     },
-    "the_golden_crate": {
-      "title": "The golden crate",
-      "subtitle": "Discover our treasure chest!",
-      "text": "Does your box look like this?\nTake a picture and send us an email!\nIn return you will receive a coupon\nworth 50 € for our shop."
-    },
     "the_bottle_post": {
       "title": "The bottlepost",
-      "text": "Each of our boxes comes with yet another treasure for you: the bottlepost is our monthly magazine that provides you with every important information regarding your new art supplies and their brands, Upcrate itself, our artcrew and contests, the monthly featured artist and useful art advice!"
+      "text": "Each of our boxes comes with yet another treasure for you: the bottlepost is our  magazine that provides you with every important information regarding your new art supplies and their brands, Upcrate itself, our artcrew and contests, the featured artist and useful art advice!"
     },
     "professional_howto_videos": {
       "title": "Professional \n How-to-do Videos",
-      "text": "To help you get started, each of our monthly featured artists films a video about their crates, preferred materials and drawing processes! Learn from the best and make the most out of the new supplies you own. Stay tuned over at our YouTube channel for more!",
+      "text": "To help you get started, each of our featured artists films a video about their crates, preferred materials and drawing processes! Learn from the best and make the most out of the new supplies you own. Stay tuned over at our YouTube channel for more!",
       "checkout_youtube": "Check out the \n How-to-do videos \n on YouTube",
       "checkout_youtube_cta": "Click here"
     },
@@ -401,7 +403,7 @@
   "faqs": [
     {
       "question": "How do I subscribe to Upcrate?",
-      "answer": "<1>Click here</1> to select your plan. It’s easy and you can cancel at any time!"
+      "answer": "<1>Click here</1> to subscribe to our bi-monthly box that ships every second month?"
     },
     {
       "question": "Where does Upcrate ship to?",
@@ -421,11 +423,11 @@
     },
     {
       "question": "Why is there a cut-off date?",
-      "answer": "Each month we have a cut-off date of the 15th to ensure we can plan for all the boxes to be packed and shipped. All subscribers that start with their Upcrate after this date will be added to the subscriber list for the next month."
+      "answer": "Each second month we have a cut-off date of the 10th to ensure we can plan for all the boxes to be packed and shipped. All subscribers that start with their Upcrate after this date will be added to the subscriber list for the next month. The cut of dates are 10 th of January, 10 th of March, 10 th of May, 10 th of July, 10 th of September, 10 th of November."
     },
     {
       "question": "How long until I get my crate?",
-      "answer": "Your boxes will be shipped around the 15th of the month. Once your crates have been shipped out, we will notify you. It will take about 4-7 working days for subscribes in Europe and 10-15 working days to reach international subscribers."
+      "answer": "Your box will be shipped around the 10th of every second month. It will take about 2-3 business days to reach subscribers in Germany, 4-7 working days for subscribes in Europe and 10-15 working days to reach international subscribers."
     },
     {
       "question": "I’d love to gift this box to a relative or friend! Is that possible?",
@@ -433,7 +435,7 @@
     },
     {
       "question": "What is the difference between a gift box and a regular subscription?",
-      "answer": "Gift boxes are an one-time order, meaning that there is no subscription to this option that would automatically renew itself. A gifts boxes are random draw of a previous box that ships twice a week."
+      "answer": "A Gift box is a one-time order, meaning that it is not a subscription that automatically renews itself. A gift box is a random draw of a previous box that ships twice a week."
     },
     {
       "question": "How do I become a featured artist in one of the crates?",
@@ -453,11 +455,11 @@
     },
     {
       "question": "When will I be billed for my subscription?",
-      "answer": "You will be billed once you start your subscription. For all following boxes the payment date is always the 5th of each month. The frequence of payment also depends on your chosen plan. Have a look at your account."
+      "answer": "You will be billed once you start your subscription. For all the following boxes the payment date is always the 1 st of every second month. The exact dates are the 1 st of January, 1 st of March, 1 st of May, 1 st of July, 1 st of September, 1 st of November."
     },
     {
       "question": "If I cancel my subscription, do I get a refund?",
-      "answer": "Canceling your subscription only stops the subscription and prevents any more payments being processed. You will still be sent the number of boxes that you had previously paid for before cancelling. You may have the chance to get a refund unless the box has been shipped. Please get in touch with us at support@upcrate.art"
+      "answer": "Canceling your subscription only stops the subscription and prevents any more payments being processed. You will still be sent the box that you had previously paid for before cancelling. You may have the chance to get a refund if the box has not been shipped. Please get in touch with us at support@upcrate.art"
     },
     {
       "question": "Any other questions?",
