@@ -19,8 +19,8 @@ export function SubscribeNowSection() {
           <Parallax offset={-30}>
             <Image
               src="/subscribe-now/1-month-box.png"
-              width="932"
-              height="580"
+              width="532"
+              height="280"
             />
           </Parallax>
 
@@ -30,8 +30,8 @@ export function SubscribeNowSection() {
               xmlns="http://www.w3.org/2000/svg"
               version="1.1"
               viewBox="0 0 180.866 255.795"
-              width="180.866"
-              height="255.795"
+              width="280.866"
+              height="355.795"
             >
               <defs>
                 <style>{`.st0{fill:#fff}`}</style>
