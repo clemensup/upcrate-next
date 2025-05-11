@@ -19,8 +19,8 @@ export function SubscribeNowSection() {
           <Parallax offset={-30}>
             <Image
               src="/subscribe-now/1-month-box.png"
-              width="532"
-              height="280"
+              width="932"
+              height="580"
             />
           </Parallax>
 
