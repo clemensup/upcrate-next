@@ -36,12 +36,13 @@ export default function CancellationPolicy() {
             <div className="mt-20">
               <h2 className="text-2xl font-bold mt-10 md:mt-8">Scope</h2>
               For the entire business relationship between Upcrate, represented
-              by COLORSPAZE LTD Akropoleos 27 5282 Paralimni, Ammochostos CYPRUS, phone: +49 177 543 39 13, service time: weekdays
-              from 12 to 13 o'clock, e-mail: info@upcrate.art (hereinafter also
-              referred to as "Upcrate", "Provider" or "we") and the customer
-              (hereinafter referred to as "Customer"), the following terms and
-              conditions (hereinafter also referred to as "GTC") of the Provider
-              shall apply exclusively.
+              by COLORSPAZE LTD Akropoleos 27 5282 Paralimni, Ammochostos
+              CYPRUS, phone: +49 177 543 39 13, service time: weekdays from 12
+              to 13 o'clock, e-mail: info@upcrate.art (hereinafter also referred
+              to as "Upcrate", "Provider" or "we") and the customer (hereinafter
+              referred to as "Customer"), the following terms and conditions
+              (hereinafter also referred to as "GTC") of the Provider shall
+              apply exclusively.
               <br />
               <br />
               Upcrate sells products exclusively to consumers within the meaning
@@ -83,19 +84,28 @@ export default function CancellationPolicy() {
               <h2 className="text-2xl font-bold mt-10 md:mt-8">
                 Contract period, termination and contract renewal
               </h2>
-              With the offer variants (monthly, 3 months, 6 months or 12 months)
-              the subscription runs first over the minimum use period booked by
-              the user. Thereafter, the subscription will be extended for
-              renewal periods of the same duration if it is not terminated in
-              time by the user or upcrate. The notice period is three weeks to
-              the end of each month of the last box and requires notice of the
-              termination function in the user account or the text form.
+              The subscription is renewed every second month until the
+              subscription is cancelled by the user in his upcrate account or in
+              written by either email or mail.
+              <br />
+              The subscription contract can be canceled up to the last day
+              before the next debit date being the 1 st of January, 1 st of
+              March, 1 st of May, 1 st of July, 1 st of September, 1 st of
+              November and requires cancellation via the cancellation function
+              in the user account or in text form via email or mail.
               <br />
               <br />
-               <h2 className="text-2xl font-bold mt-10 md:mt-8">
+              <h2 className="text-2xl font-bold mt-10 md:mt-8">
                 Delivery, delivery dates, partial deliveries and retention of
-              title
+                title
               </h2>
+              Subscription boxes are sent out on the 1 st of January, 1 st of
+              March, 1 st of May, 1 st of July, 1 st of September, 1 st of
+              November. All other orders are shipped out twice per week unless
+              otherwise specified in the offer (eg. special boxes such as
+              Christmas or Inktober).
+              <br />
+              <br />
               The provider reserves the right to deliver only after full payment
               by the customer. There is no entitlement to prior delivery. The
               provider is entitled at any time to partial delivery and partial
@@ -109,31 +119,18 @@ export default function CancellationPolicy() {
               <h2 className="text-2xl font-bold mt-10 md:mt-8">
                 Prices, shipping costs, due date, payment, set-off and retention
               </h2>
-              All prices include the applicable value added tax, packaging costs
-              and shipping costs. The recipient is responsible for paying any
-              import sales tax and customs duties. For subscriptions, the
-              purchase price claim will be debited on the day of the order.
-              Thereafter, a recurrent charge will be made depending on the term
-              of the subscription. The term is selectable between monthly,
-              quarterly, semi-annual and annual.
+              All prices include the applicable value added tax and packaging
+              costs. Shipping costs are visible in the checkout process if
+              applicable. The recipient is responsible for paying any import
+              sales tax and customs duties. For subscriptions, the purchase
+              price claim will be debited on the day of the order. Thereafter, a
+              recurrent charge will be made with the next renewal of the
+              subscription (every 2 months).
               <br />
               <br />
-              Example of a monthly subscription: order on April 25, debit on
-              April 25, recurring debit on May 25, June 25, etc.
-              <br />
-              <br />
-              Example of a quarterly subscription: order on April 25, debit on April 25,
-              recurring debit on July 25, October 25, etc.
-              <br />
-              <br />
-              Example of a semiannual subscription: order on April 25, debit on April 25,
-              recurring debit on October 25, April 25 of the following year,
-              etc.
-              <br />
-              <br />
-              Example of an annual subscription: order on April 25, debit
-              on April 25, recurring debit on April 25 of the following year,
-              etc.
+              Example of a subscription: order on April 25 th , debit on April
+              25 th , product ships on June 10 th , debit on August 1 st ,
+              October 1 st , etc.
               <br />
               <br />
               For the payment, the customer only has the payment terms agreed
@@ -155,11 +152,11 @@ export default function CancellationPolicy() {
               surcharge.
               <br />
               <br />
-              Discount codes of any kind (such as percentage or fixed
-              amount, among others) for subscriptions can only be used for the
-              first payment. For recurring debits, the regular, non-discounted
-              amount will be debited. This does not affect the cancellation of
-              the subscription.
+              Discount codes of any kind (such as percentage or fixed amount,
+              among others) for subscriptions can only be used for the first
+              payment. For recurring debits, the regular, non-discounted amount
+              will be debited. This does not affect the cancellation of the
+              subscription.
               <h2 className="text-2xl font-bold mt-10 md:mt-8">
                 Rights in case of defects and damages
               </h2>
@@ -236,11 +233,12 @@ export default function CancellationPolicy() {
                 Geltungsbereich
               </h2>
               Für die gesamte Geschäftsbeziehung zwischen Upcrate, vertreten
-              durch COLORSPAZE LTD Akropoleos 27 5282 Paralimni, Ammochostos CYPRUS, Telefon: +49 177 543 39 13, Servicezeit: werktags
-              von 12 bis 13 Uhr, E-Mail: info@upcrate.art (nachfolgend auch
-              "Upcrate", "Anbieter" oder "wir") und dem Kunden (nachfolgend
-              "Kunde" genannt) gelten ausschließlich die folgenden
-              Geschäftsbedingungen (nachfolgend auch "AGB") des Anbieters.
+              durch COLORSPAZE LTD Akropoleos 27 5282 Paralimni, Ammochostos
+              CYPRUS, Telefon: +49 177 543 39 13, Servicezeit: werktags von 12
+              bis 13 Uhr, E-Mail: info@upcrate.art (nachfolgend auch "Upcrate",
+              "Anbieter" oder "wir") und dem Kunden (nachfolgend "Kunde"
+              genannt) gelten ausschließlich die folgenden Geschäftsbedingungen
+              (nachfolgend auch "AGB") des Anbieters.
               <br />
               <br />
               Upcrate vertreibt Produkte ausschließlich an Verbraucher im Sinne
@@ -284,7 +282,15 @@ export default function CancellationPolicy() {
                 Vertragslaufzeit, Kündigung und Vertragsverlängerung
               </h2>
               <br />
-              Bei den Angebotsvarianten (monatlich, 3 Monate, 6 Monate oder 12 Monate) läuft das Abonnement zunächst über den vom Nutzer gebuchten Mindestnutzungszeitraum. Danach verlängert sich das Abonnement um Verlängerungszeiträume gleicher Dauer, wenn es nicht rechtzeitig durch den Nutzer oder Upcrate gekündigt wird. Der Vertrag kann bis zum 4ten eines Monats vor dem nächsten Abbuchungszeitpunkt (5ten des Monats) der jeweiligen Vertragslaufzeit gekündigt werden und erfordert eine Kündigung über die Kündigungsfunktion im Benutzerkonto oder in der Textform.
+              Bei den Angebotsvarianten (monatlich, 3 Monate, 6 Monate oder 12
+              Monate) läuft das Abonnement zunächst über den vom Nutzer
+              gebuchten Mindestnutzungszeitraum. Danach verlängert sich das
+              Abonnement um Verlängerungszeiträume gleicher Dauer, wenn es nicht
+              rechtzeitig durch den Nutzer oder Upcrate gekündigt wird. Der
+              Vertrag kann bis zum 4ten eines Monats vor dem nächsten
+              Abbuchungszeitpunkt (5ten des Monats) der jeweiligen
+              Vertragslaufzeit gekündigt werden und erfordert eine Kündigung
+              über die Kündigungsfunktion im Benutzerkonto oder in der Textform.
               <br />
               <br />
               <h2 className="text-2xl font-bold mt-10 md:mt-8">
@@ -341,10 +347,19 @@ export default function CancellationPolicy() {
               gleichen Vertragsverhältnis beruht.
               <br />
               <br />
-              Sollte beim Einzug von fälligen Beträgen über ein SEPA Lastschriftmandat Ihr Konto nicht gedeckt sein, berechnen wir für diese fehlgeschlagene Zahlung EUR 9,00 inkl. MwSt. Das gleiche gilt für angefochtene SEPA-Lastschrift-Zahlungen, die unbegründet sind. Hierbei geben wir lediglich die Servicegebühren unseres Dienstleisters ohne Aufschlag an Sie weiter.
+              Sollte beim Einzug von fälligen Beträgen über ein SEPA
+              Lastschriftmandat Ihr Konto nicht gedeckt sein, berechnen wir für
+              diese fehlgeschlagene Zahlung EUR 9,00 inkl. MwSt. Das gleiche
+              gilt für angefochtene SEPA-Lastschrift-Zahlungen, die unbegründet
+              sind. Hierbei geben wir lediglich die Servicegebühren unseres
+              Dienstleisters ohne Aufschlag an Sie weiter.
               <br />
               <br />
-              Rabattcodes jeglicher Art (wie u.a. prozentual oder fixer Betrag) für Abonnements können nur für die erste Zahlung verwendet werden. Bei wiederkehrenden Abbuchungen wird der reguläre, unrabattierte Betrag abgebucht. Die Kündigung des Abonnements bleibt davon unberührt.
+              Rabattcodes jeglicher Art (wie u.a. prozentual oder fixer Betrag)
+              für Abonnements können nur für die erste Zahlung verwendet werden.
+              Bei wiederkehrenden Abbuchungen wird der reguläre, unrabattierte
+              Betrag abgebucht. Die Kündigung des Abonnements bleibt davon
+              unberührt.
               <h2 className="text-2xl font-bold mt-10 md:mt-8">
                 Rechte im Falle von Mängeln und Schäden
               </h2>
