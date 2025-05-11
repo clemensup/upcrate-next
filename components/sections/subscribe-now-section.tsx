@@ -31,7 +31,7 @@ export function SubscribeNowSection() {
               version="1.1"
               viewBox="0 0 180.866 255.795"
               width="280.866"
-              height="355.795"
+              height="200.795"
             >
               <defs>
                 <style>{`.st0{fill:#fff}`}</style>
