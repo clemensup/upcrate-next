@@ -50,7 +50,7 @@
   },
   "pages": {
     "home": {
-      "og_description": "Mystery art supplies in a monthly box",
+      "og_description": "Mystery art supplies in a bimonthly box",
       "draw_as_one_section": "Let’s draw <1>as one.</1><2></2>Let’s connect <1>worldwide</1><2></2> and <1>live art</1> together",
       "chosen_one_section": {
         "title": "You’re one of the chosen ones who scrolled all the way down.\nNow you can also subscribe:)"
@@ -58,13 +58,13 @@
       "slider_content": [
         { "text": "Mystery" },
         { "text": "Art Supplies" },
-        { "text": "in a monthly" },
+        { "text": "in a bimonthly" },
         { "text": "Box" }
       ],
-      "marquee_text": "Hop on board to discover amazing art treasures in a monthly subscription, inspiring you to create."
+      "marquee_text": "Hop on board to discover amazing art treasures in a bimonthly subscription, inspiring you to create."
     },
     "how_it_works": {
-      "og_description": "How to subscribe for monthly matters art supplies",
+      "og_description": "How to subscribe for bimonthly matters art supplies",
       "title": "How it works",
       "draw_as_one_section": "We connect <2>artists worldwide <1></1> to draw together </2> as one <2>and</2> to get to <2>the heart of the art</2>",
       "chosen_one_section": {
@@ -134,12 +134,12 @@
       }
     },
     "subscriptions": {
-      "og_description": "Mystery art supplies in a monthly box",
+      "og_description": "Mystery art supplies in a bimonthly box",
       "title": "Subscriptions",
       "free_shipping_worldwide": "Shipping worldwide"
     },
     "contact": {
-      "og_description": "Mystery art supplies in a monthly box",
+      "og_description": "Mystery art supplies in a bimonthly box",
       "title": "Contact",
       "form": {
         "title": "Need help? Contact us!",
@@ -147,7 +147,7 @@
       }
     },
     "imprint": {
-      "og_description": "Mystery art supplies in a monthly box",
+      "og_description": "Mystery art supplies in a bimonthly box",
       "title": "Imprint",
       "owner": "Owner",
       "shipped_and_packed_label": "packed in and shipped from Northern Germany.",
@@ -159,11 +159,11 @@
       "director_label": "Director"
     },
     "privacy": {
-      "og_description": "Mystery art supplies in a monthly box",
+      "og_description": "Mystery art supplies in a bimonthly box",
       "title": "Privacy Policy"
     },
     "cancellation_policy": {
-      "og_description": "Mystery art supplies in a monthly box",
+      "og_description": "Mystery art supplies in a bimonthly box",
       "title": "Cancellation Policy",
       "withdrawal_desc": "<1>The following cancellation policy is directed exclusively at consumers within the meaning of Section 13 of the German Civil Code (BGB). Accordingly, a consumer is any natural person who enters into a legal transaction for a purpose that can be attributed neither to his commercial nor to his independent professional activity.</1>",
       "withdrawal_title": "Withdrawal",
@@ -172,11 +172,11 @@
       "consequences_text": "If you revoke this contract, we are obliged to refund all payments we have received from you, including delivery costs (except for additional costs arising from you choosing a different type of delivery than the cheapest standard delivery offered by us), without undue delay and at the latest within fourteen days from the day we receive notification of your revocation of this contract. For this refund, we will use the same means of payment that you used in the original transaction, unless expressly agreed otherwise with you; in no case will you be charged fees for this refund. We may refuse the refund until we have received the goods back or until you have provided proof that you have returned the goods, whichever is earlier. You must return or hand over the goods to the following address without undue delay and in any event no later than fourteen days from the day on which you inform us of the revocation of this contract:<2><1>Güstrower Werkstätten GmbH</1><1>Koppelweg 14</1><1>D-18273 Güstrow</1><1>Germany</1></2>The deadline is met if you dispatch the goods before the period of fourteen days has expired. You bear the direct costs of returning the goods. You are only liable for any diminished value of the goods if this loss in value is due to handling that was not necessary to ascertain the nature, characteristics, and functioning of the goods."
     },
     "terms_and_conditions": {
-      "og_description": "Mystery art supplies in a monthly box",
+      "og_description": "Mystery art supplies in a bimonthly box",
       "title": "Terms and Conditions"
     },
     "faqs": {
-      "og_description": "Mystery art supplies in a monthly box",
+      "og_description": "Mystery art supplies in a bimonthly box",
       "title": "Your questions – Our answers"
     }
   },
@@ -215,7 +215,7 @@
       "subtitle": "WHY UPCRATE?",
       "steps": [
         {
-          "text": "Monthly mystery art boxes delivered to your doorstep."
+          "text": "bimonthly mystery art boxes delivered to your doorstep."
         },
         {
           "text": "Discover high quality products from Upcrate’s own exclusive brand."
@@ -403,7 +403,7 @@
   "faqs": [
     {
       "question": "How do I subscribe to Upcrate?",
-      "answer": "<1>Click here</1> to subscribe to our bi-monthly box that ships every second month?"
+      "answer": "<1>Click here</1> to subscribe to our bimonthly box that ships every second month?"
     },
     {
       "question": "Where does Upcrate ship to?",
