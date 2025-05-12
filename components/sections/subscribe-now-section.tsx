@@ -51,7 +51,9 @@ export function SubscribeNowSection() {
           </p>
           <Button
             className="bg-orange text-white mb-4 mt-2 md:mt-5"
-            href={`https://shop.upcrate.art/product/bi-monthly-subsc%E2%80%A6ery-second-month/`}
+            href={`https://shop.upcrate.art${
+              lang === "en" ? "" : "/de"
+            }/product/bi-monthly-subsc…ery-second-month/`}
           >
             {t("sections.subscribe_now.subscriptions.0.cta")}
           </Button>
