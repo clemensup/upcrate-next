@@ -53,7 +53,7 @@ export function SubscribeNowSection() {
             className="bg-orange text-white mb-4 mt-2 md:mt-5"
             href={`https://shop.upcrate.art${
               lang === "en" ? "" : "/de"
-            }/product/bi-monthly-subsc…ery-second-month/`}
+            }/bi-monthly-subscription-pay-every-second-month/`}
           >
             {t("sections.subscribe_now.subscriptions.0.cta")}
           </Button>
