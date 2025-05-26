@@ -5,7 +5,6 @@ import { FlowingHeads } from "../components/flowing-heads";
 import { FollowUsOnInstagramSection } from "../components/sections/follow-us-on-instagram-section";
 import { FeaturedArtistsWeWorkedWithSection } from "../components/sections/featured-artists-section";
 import { TheBottlePostSection } from "../components/sections/the-bottle-post-section";
-import { TheGoldenCrateSection } from "../components/sections/the-golden-crate-section";
 import { UpcrateAsGiftSection } from "../components/sections/upcrate-as-a-gift-section";
 import { UpcrateBattleSection } from "../components/sections/upcrate-battle-section";
 import { ProfessionalHowToVideosSection } from "../components/sections/professional-howto-videos-section";
@@ -54,7 +53,6 @@ export default function ArtCrew() {
       <UpcrateAsGiftSection />
       <UpcrateBattleSection />
       <div className="min-h-sectionSmall md:min-h-sectionSmallMd bg-artcrew-image-section02 bg-center bg-cover bg-no-repeat"></div>
-      <TheGoldenCrateSection />
       <div className="min-h-sectionSmall md:min-h-sectionSmallMd bg-artcrew-image-section03 bg-center bg-cover bg-no-repeat"></div>
       <TheBottlePostSection />
       <div className="min-h-sectionSmall md:min-h-sectionSmallMd bg-artcrew-image-section04 bg-center bg-cover bg-no-repeat relative z-20"></div>
