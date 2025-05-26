@@ -75,11 +75,7 @@ export function Footer(): JSX.Element {
             {t("navigation.info_headline")}
           </h4>
           <ul className="list-reset leading-normal text-blue text-xl">
-            <li>
-              <Link href={`https://shop.upcrate.art/${lang}/refer-a-friend`}>
-                {t("navigation.refer_a_friend")}
-              </Link>
-            </li>
+           
             <li>
               <Link href="/contact">{t("navigation.help_contact")}</Link>
             </li>
