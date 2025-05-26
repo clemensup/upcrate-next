@@ -53,4 +53,5 @@ export function InviteFriendsSection() {
       </div>
     </section>
   );
+  
 }
