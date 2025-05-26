@@ -1,7 +1,9 @@
 import { AnimatePresence } from "framer-motion";
 import useTranslation from "next-translate/useTranslation";
 import { useRandomHeads } from "../../hooks/use-random-heads";
+import { Button } from "../elements/button";
 import { Parallax } from "../elements/parallax";
+import { Caret } from "../elements/svg";
 import Image from "next/image";
 
 export function InviteFriendsSection() {
@@ -50,7 +52,9 @@ export function InviteFriendsSection() {
             </span>
           </div>
           <div className="mt-10 md:mt-28 z-10">
-            {/* Button and Caret removed, keeping the spacing div */}
+            <Button className="bg-orange text-white hover:bg-red uppcercase">
+              <Caret />
+            </Button>
           </div>
         </div>
       </div>
