@@ -51,7 +51,9 @@ export function InviteFriendsSection() {
               </svg>
             </span>
           </div>
-          
+          <div className="mt-10 md:mt-28 z-10">
+            
+          </div>
         </div>
       </div>
     </section>
