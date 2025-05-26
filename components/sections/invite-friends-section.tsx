@@ -24,7 +24,37 @@ export function InviteFriendsSection() {
               <Parallax>
                 <Image src="/artcrew/invite.jpg" width={900} height={542} />
               </Parallax>
+              <div className="max-w-4xl mx-auto text-lg md:text-3xl relative z-10 -mx-4 md:m-0 p-4 md:p-0 bg-white md:bg-transparent">
+                {t("sections.invite_friends.text")}
+              </div>
             </div>
+            <span
+              className="absolute left-0 right-0 text-right author text-xl hidden md:block"
+              style={{ top: "calc(100% - 2px)" }}
+            >
+              <svg
+                version="1.1"
+                id="Ebene_1"
+                xmlns="http://www.w3.org/2000/svg"
+                x="0px"
+                y="0px"
+                viewBox="0 0 354.49 34.01"
+                className="md:mb-3"
+              >
+                <path
+                  d="M0,0.5h258.97l34.82,32.36V0.5h60.69"
+                  stroke="#34234F"
+                  fill="white"
+                  strokeWidth={1}
+                />
+              </svg>
+            </span>
+          </div>
+          <div className="mt-10 md:mt-28 z-10">
+            <Button
+              className="bg-orange text-white hover:bg-red uppcercase"
+              href={`https://shop.upcrate.art${lang === "en" ? "" : "/de"}/`}
+            ></Button>
           </div>
         </div>
       </div>
