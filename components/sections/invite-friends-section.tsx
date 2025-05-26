@@ -24,14 +24,7 @@ export function InviteFriendsSection() {
               <Parallax>
                 <Image src="/artcrew/invite.jpg" width={900} height={542} />
               </Parallax>
-              
             </div>
-          </div>
-          <div className="mt-10 md:mt-28 z-10">
-            <Button
-              className="bg-orange text-white hover:bg-red uppcercase"
-              href={`https://shop.upcrate.art${lang === "en" ? "" : "/de"}/`}
-            ></Button>
           </div>
         </div>
       </div>
