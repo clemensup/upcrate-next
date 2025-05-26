@@ -24,9 +24,7 @@ export function InviteFriendsSection() {
               <Parallax>
                 <Image src="/artcrew/invite.jpg" width={900} height={542} />
               </Parallax>
-              <div className="max-w-4xl mx-auto text-lg md:text-3xl relative z-10 -mx-4 md:m-0 p-4 md:p-0 bg-white md:bg-transparent">
-                {t("sections.invite_friends.text")}
-              </div>
+              
             </div>
           </div>
           <div className="mt-10 md:mt-28 z-10">
