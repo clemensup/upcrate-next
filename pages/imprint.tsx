@@ -41,9 +41,7 @@ export default function Imprint() {
           <br />
           <br />
           <p className="mb-10">
-            {t("pages.imprint.phone_label")}: +49 1753074992
-            <br />
-            {t("pages.imprint.phone_service_times")}
+            
             <br />
             E-Mail:{" "}
             <a href="mailto:support@upcrate.art" className="hover:underline">
