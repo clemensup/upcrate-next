@@ -319,7 +319,7 @@
       "ready_set_draw": "Ready\nSet\nDraw!"
     },
     "newsletter_form": {
-      "title": "Subscribe to our newsletter for a 15% discount!",
+      "title": "Subscribe to our newsletter ",
       "benefits": [
         { "text": "- Be among the first to hear about new special offers" },
         { "text": "- Receive exclusive coupon codes" }
@@ -334,8 +334,8 @@
       }
     },
     "invite_friends": {
-      "title": "Invite friends to the art crew\nand save money together!",
-      "text": "If you refer a friend to us via Facebook, Twitter or email and he/she/they subscribe, you will both receive a 15% discount on further purchases. For example, if your friend subscribes for 3 months, you will receive a discount code with a value of € 8.16 that you can redeem in our shop!",
+      "title": "Invite friends to the art crew",
+      "text": "",
       "cta": "REFER A FRIEND"
     },
     "the_bottle_post": {
@@ -385,7 +385,7 @@
       "title": "Advantages for members of the art crew:",
       "advantages": [
         {
-          "text": "Be surprised by a mystery box full of great materials each month"
+          "text": "Be surprised by a mystery box full of great materials every second month"
         },
         {
           "text": "Receive a wide range of high quality art materials for a small price"
