@@ -99,8 +99,8 @@ export default function CancellationPolicy() {
                 Delivery, delivery dates, partial deliveries and retention of
                 title
               </h2>
-              Subscription boxes are sent out on the 1 st of January, 1 st of
-              March, 1 st of May, 1 st of July, 1 st of September, 1 st of
+              Subscription boxes are sent out on the 10th of January, 10th of
+              March, 10th of May, 10th of July, 10th of September, 10th of
               November. All other orders are shipped out twice per week unless
               otherwise specified in the offer (eg. special boxes such as
               Christmas or Inktober).
@@ -282,60 +282,49 @@ export default function CancellationPolicy() {
                 Vertragslaufzeit, Kündigung und Vertragsverlängerung
               </h2>
               <br />
-              Bei den Angebotsvarianten (monatlich, 3 Monate, 6 Monate oder 12
-              Monate) läuft das Abonnement zunächst über den vom Nutzer
-              gebuchten Mindestnutzungszeitraum. Danach verlängert sich das
-              Abonnement um Verlängerungszeiträume gleicher Dauer, wenn es nicht
-              rechtzeitig durch den Nutzer oder Upcrate gekündigt wird. Der
-              Vertrag kann bis zum 4ten eines Monats vor dem nächsten
-              Abbuchungszeitpunkt (5ten des Monats) der jeweiligen
-              Vertragslaufzeit gekündigt werden und erfordert eine Kündigung
-              über die Kündigungsfunktion im Benutzerkonto oder in der Textform.
+              Das Abonnement verlängert sich jeweils um zwei Monate, bis es vom
+              Nutzer in seinem upcrate-Konto oder schriftlich per E-Mail oder
+              Post gekündigt wird. Der Abonnementvertrag kann bis zum letzten
+              Tag vor dem nächsten Abbuchungstermin (1. Januar, 1. März, 1. Mai,
+              1. Juli, 1. September, 1. November) gekündigt werden und muss über
+              die Kündigungsfunktion im Benutzerkonto oder in Textform per
+              E-Mail oder Post erfolgen.
               <br />
               <br />
               <h2 className="text-2xl font-bold mt-10 md:mt-8">
                 Lieferung, Liefertermine, Teillieferungen und Eigentumsvorbehalt
               </h2>
-              Der Anbieter behält sich das Recht vor, erst nach vollständiger
-              Bezahlung durch den Kunden zu liefern. Ein Anspruch auf vorgängige
-              Lieferung besteht nicht. Der Anbieter ist zu Teillieferungen und
-              Teilleistungen jederzeit berechtigt, soweit dies für den Kunden
-              zumutbar ist.
+              Abo-Boxen werden am 10. Januar, 10. März, 10. Mai, 10. Juli, 10.
+              September und 10. November verschickt. Alle anderen Bestellungen
+              werden zweimal wöchentlich versandt, sofern im Angebot nichts
+              anderes angegeben ist (z. B. Sonderboxen wie Weihnachten oder
+              Inktober). Der Anbieter behält sich das Recht vor, erst nach
+              vollständiger Bezahlung durch den Kunden zu liefern. Ein Anspruch
+              auf vorzeitige Lieferung besteht nicht. Der Anbieter ist jederzeit
+              zu Teillieferungen und Teilleistungen berechtigt, sofern dies für
+              den Kunden zumutbar ist.
               <br />
               <br />
-              Für den Fall, dass wir von unserem Zurückbehaltungsrecht keinen
-              Gebrauch machen und die Lieferung vor vollständiger Bezahlung
-              veranlassen, behalten wir uns das Eigentum an der Kaufsache bis
-              zur vollständigen Bezahlung des Kaufpreises vor.
+              Machen wir von unserem Zurückbehaltungsrecht keinen Gebrauch und
+              veranlassen wir die Lieferung vor vollständiger Bezahlung,
+              behalten wir uns das Eigentum an der Kaufsache bis zur
+              vollständigen Bezahlung des Kaufpreises vor.
               <h2 className="text-2xl font-bold mt-10 md:mt-8">
                 Preise, Versandkosten, Fälligkeitsdatum, Zahlung, Aufrechnung
                 und Einbehalt
               </h2>
-              Alle Preise enthalten die jeweils gültige Mehrwertsteuer,
-              Verpackungs- und Versandkosten. Der Empfänger ist selbst für die
-              Abführung von eventuellen Einfuhrumsatzsteuer und Zöllen
-              verantwortlich. Bei Abonnements wird die Kaufpreisforderung am
-              5ten Tag des darauffolgenden Monats abgebucht. Danach wird je nach
-              Laufzeit des Abonnements eine wiederkehrende Gebühr erhoben, die
-              am 5ten des Monats abgebucht wird. Die Laufzeit ist wählbar
-              zwischen monatlich, vierteljährlich, halbjährlich und jährlich.
+              Alle Preise verstehen sich inklusive der jeweils gültigen
+              Mehrwertsteuer und Verpackungskosten. Versandkosten werden
+              gegebenenfalls im Bestellvorgang angezeigt. Die Zahlung eventuell
+              anfallender Einfuhrumsatzsteuer und Zölle obliegt dem Empfänger.
+              Bei Abonnements wird der Kaufpreis am Tag der Bestellung
+              abgebucht. Danach erfolgt eine wiederkehrende Abbuchung bei der
+              nächsten Abonnementverlängerung (alle zwei Monate).
               <br />
               <br />
-              Beispiel für ein Monatsabonnement: Bestellung am 25. April,
-              Abbuchung am 5. Mai, wiederkehrende Abbuchung am 5. Juni, 5. Juli
-              usw.
-              <br />
-              Beispiel für ein vierteljährliches Abonnement: Bestellung am 25.
-              April, Abbuchung am 5. Mai, wiederkehrende Abbuchung am 5. August,
-              5. November usw.
-              <br />
-              Beispiel für ein halbjährliches Abonnement: Bestellung am 25.
-              April, Abbuchung am 25. Mai, wiederkehrende Abbuchung am 25.
-              November, 5. Mai des Folgejahres usw.
-              <br />
-              Beispiel für ein Jahresabonnement: Bestellung am 25. April,
-              Abbuchung am 5. Mai, wiederkehrende Abbuchung am 5. Mai des
-              Folgejahres, usw.
+              Beispiel für ein Abonnement: Bestellung am 25. April, Abbuchung am
+              25. April, Produktversand am 10. Juni, Abbuchung am 1. August, 1.
+              Oktober usw.
               <br />
               <br />
               Für die Zahlung stehen dem Kunden nur die in der Bestellung
