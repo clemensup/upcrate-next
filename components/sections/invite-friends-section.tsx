@@ -51,17 +51,6 @@ export function InviteFriendsSection() {
               </svg>
             </span>
           </div>
-          <div className="mt-10 md:mt-28 z-10">
-            <Button
-              className="bg-orange text-white hover:bg-red uppcercase"
-              href={`https://shop.upcrate.art${
-                lang === "en" ? "" : "/de"
-              }/refer-a-friend/`}
-            >
-              {t("sections.invite_friends.cta")}
-              <Caret />
-            </Button>
-          </div>
         </div>
       </div>
     </section>
