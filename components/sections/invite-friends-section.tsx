@@ -3,7 +3,6 @@ import useTranslation from "next-translate/useTranslation";
 import { useRandomHeads } from "../../hooks/use-random-heads";
 import { Button } from "../elements/button";
 import { Parallax } from "../elements/parallax";
-import { Caret } from "../elements/svg";
 import Image from "next/image";
 
 export function InviteFriendsSection() {
@@ -51,8 +50,11 @@ export function InviteFriendsSection() {
               </svg>
             </span>
           </div>
-          <div>
-            <Button></Button>
+          <div className="mt-10 md:mt-28 z-10">
+            <Button
+              className="bg-orange text-white hover:bg-red uppcercase"
+              href={`https://shop.upcrate.art${lang === "en" ? "" : "/de"}/`}
+            ></Button>
           </div>
         </div>
       </div>
