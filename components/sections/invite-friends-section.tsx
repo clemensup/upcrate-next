@@ -52,13 +52,7 @@ export function InviteFriendsSection() {
             </span>
           </div>
           <div className="mt-10 md:mt-28 z-10">
-            <Button
-              className="bg-orange text-white hover:bg-red uppcercase"
-              href={`https://shop.upcrate.art${
-                lang === "en" ? "" : "/de"
-              }/`}
-            >
-             
+            <Button>
               <Caret />
             </Button>
           </div>
