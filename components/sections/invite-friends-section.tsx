@@ -49,9 +49,11 @@ export function InviteFriendsSection() {
               </svg>
             </span>
           </div>
+          <div className="mt-10 md:mt-28 z-10">
+            {/* Button and Caret removed, keeping the spacing div */}
+          </div>
         </div>
       </div>
     </section>
   );
-  
 }
