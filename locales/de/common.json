@@ -58,10 +58,10 @@
       "slider_content": [
         { "text": "" },
         { "text": "Künstlerbedarf" },
-        { "text": "in einer monatlichen" },
+        { "text": "in einer zweimonatlichen" },
         { "text": "Box" }
       ],
-      "marquee_text": "Komm an Bord und entdecke hochwertige Kunstmaterialien in einer monatlichen Abobox, die dich zum kreativ werden inspiriert."
+      "marquee_text": "Komm an Bord und entdecke hochwertige Kunstmaterialien in einer zweimonatlichen Abobox, die dich zum kreativ werden inspiriert."
     },
     "how_it_works": {
       "og_description": "Wie werde ich Abonnent bei Upcrate?",
@@ -92,7 +92,7 @@
       "title": "Art Crew",
       "newsletter_section": {
         "title": "Upcrate – Zusammen Kunst machen",
-        "text": "Captain Crate hat seine Segel gehisst, um eine Community aus Künstler:innen von überall auf der Welt zusammenzubringen und diese mit den besten Kunstmaterialien und Tipps auszustatten. Jeden Monat verschickt er seine geheimnisvollen Boxen, die er UPCRATE nennt, direkt zur Haustür jedes angeheuerten Mitglieds seiner art crew."
+        "text": "Captain Crate hat seine Segel gehisst, um eine Community aus Künstler:innen von überall auf der Welt zusammenzubringen und diese mit den besten Kunstmaterialien und Tipps auszustatten. Jeden zweiten Monat verschickt er seine geheimnisvollen Boxen, die er UPCRATE nennt, direkt zur Haustür jedes angeheuerten Mitglieds seiner art crew."
       },
       "draw_as_one_section": {
         "title": "<2>We draw artists</2> together <1></1> <2>with</2> our <2> creative passion <1></1> and give </2> you the tools <1></1> to follow <2>your heart</2>"
@@ -111,7 +111,7 @@
           "text": "hat auf seinen Reisen kreuz und quer durch die sieben Weltmeere die <1>unterschiedlichsten Kunstmaterialien</1> und ihre Hersteller kennengelernt. Dabei ist er immer auf der Suche nach neuen Verbindungen und Schätzen für euch - <2>seine art crew</2>."
         },
         {
-          "title": "...liefert monatlich das Beste",
+          "title": "...liefert jeden zweiten Monat das Beste",
           "text": "...aus einer handverlesenen Auswahl neuer, mysteriöser Materialien zu euch. Diese werden liebevoll in den Crates zusammengestellt, um unserer <1>internationalen Crew</1> die beste Qualität zum Ausprobieren neuer Techniken und Marken zum kleinsten Preis zu garantieren. Jede Box bringt dabei eine <2>neue Überraschung</2> zu euch nach Hause!"
         },
         {
@@ -143,7 +143,7 @@
     "imprint": {
       "og_description": "Monatlich neue Kunstmaterialien in einer Überraschungsbox",
       "title": "Impressum",
-      "shipped_and_packed_label": "Verpackt und verschickt in Hamburg, Germany",
+      "shipped_and_packed_label": "Upcrate wird in Norddeutschland verpackt und verschickt",
       "phone_label": "Tel",
       "phone_service_times": "Servicezeit 12-13 Uhr",
       "vat_id_label": "USt. Nr.",
@@ -160,9 +160,9 @@
       "title": "Widerrufs<1></1>belehrung",
       "withdrawal_desc": "<1>Die nachstehende Widerrufsbelehrung richtet sich ausschließlich an Verbraucher im Sinne von § 13 Bürgerliches Gesetzbuch (BGB). Danach ist Verbraucher jede natürliche Person, die ein Rechtsgeschäft zu einem Zwecke abschließt, der weder ihrer gewerblichen noch ihrer selbständigen beruflichen Tätigkeit zugerechnet werden kann.  </1>",
       "withdrawal_title": "Widerrufsrecht",
-      "withdrawal_text": "<1>Sie haben das Recht, binnen vierzehn Tagen ohne Angabe von Gründen diesen Vertrag zu widerrufen. Die Widerrufsfrist beträgt vierzehn Tage ab dem Tag an dem Sie oder ein von Ihnen benannter Dritter, der nicht der Beförderer ist, die Waren in Besitz genommen haben bzw. hat.    Um Ihr Widerrufsrecht auszuüben, müssen Sie uns (COLORSPAZE LTD, Akropoleos 27 5282 Paralimni, Ammochostos CYPRUS, Telefon: +49 177 543 39 13, Servicezeit: werktags von 12 bis 13 Uhr, E-Mail: info@upcrate.art) mittels einer eindeutigen Erklärung (z.B. ein mit der Post versandter Brief, E-Mail) über Ihren Entschluss, diesen Vertrag zu widerrufen, informieren. Sie können dafür das beigefügte Muster-Widerrufsformular verwenden, das jedoch nicht vorgeschrieben ist.    Zur Wahrung der Widerrufsfrist reicht es aus, dass Sie die Mitteilung über die Ausübung des Widerrufsrechts vor Ablauf der Widerrufsfrist absenden.  </1>",
+      "withdrawal_text": "<1>Sie haben das Recht, binnen vierzehn Tagen ohne Angabe von Gründen diesen Vertrag zu widerrufen. Die Widerrufsfrist beträgt vierzehn Tage ab dem Tag an dem Sie oder ein von Ihnen benannter Dritter, der nicht der Beförderer ist, die Waren in Besitz genommen haben bzw. hat.    Um Ihr Widerrufsrecht auszuüben, müssen Sie uns (COLORSPAZE LTD, Akropoleos 27 5282 Paralimni, Ammochostos CYPRUS, Telefon: +357 99539389, Servicezeit: werktags von 12 bis 13 Uhr, E-Mail: info@upcrate.art) mittels einer eindeutigen Erklärung (z.B. ein mit der Post versandter Brief, E-Mail) über Ihren Entschluss, diesen Vertrag zu widerrufen, informieren. Sie können dafür das beigefügte Muster-Widerrufsformular verwenden, das jedoch nicht vorgeschrieben ist.    Zur Wahrung der Widerrufsfrist reicht es aus, dass Sie die Mitteilung über die Ausübung des Widerrufsrechts vor Ablauf der Widerrufsfrist absenden.  </1>",
       "consequences_title": "Folgen des Widerrufs",
-      "consequences_text": "Wenn Sie diesen Vertrag widerrufen, haben wir Ihnen alle Zahlungen, die wir von Ihnen erhalten haben, einschließlich der Lieferkosten (mit Ausnahme der zusätzlichen Kosten, die sich daraus ergeben, dass Sie eine andere Art der Lieferung als die von uns angebotene, günstigste Standardlieferung gewählt haben), unverzüglich und spätestens binnen vierzehn Tagen ab dem Tag zurückzuzahlen, an dem die Mitteilung über Ihren Widerruf dieses Vertrags bei uns eingegangen ist. Für diese Rückzahlung verwenden wir dasselbe Zahlungsmittel, das Sie bei der ursprünglichen Transaktion eingesetzt haben, es sei denn, mit Ihnen wurde ausdrücklich etwas anderes vereinbart; in keinem Fall werden Ihnen wegen dieser Rückzahlung Entgelte berechnet.     Wir können die Rückzahlung verweigern, bis wir die Waren wieder zurückerhalten haben oder bis Sie den Nachweis erbracht haben, dass Sie die Waren zurückgesandt haben, je nachdem, welches der frühere Zeitpunkt ist. Sie haben die Waren unverzüglich und in jedem Fall spätestens binnen vierzehn Tagen ab dem Tag, an dem Sie uns über den Widerruf dieses Vertrags unterrichten, an folgende Adresse zurückzusenden oder zu übergeben.<2><1>Kultur&gut</1><1>Manuel Friese</1><1>Gaußstraße 149</1><1>D-22765 Hamburg</1><1>www.kugu.space</1></2>Die Frist ist gewahrt, wenn Sie die Waren vor Ablauf der Frist von vierzehn Tagen absenden. Sie tragen die unmittelbaren Kosten der Rücksendung der Waren.    Sie müssen für einen etwaigen Wertverlust der Waren nur aufkommen, wenn dieser Wertverlust auf einen zur Prüfung der Beschaffenheit, Eigenschaften und Funktionsweise der Waren nicht notwendigen Umgang mit ihnen zurückzuführen ist."
+      "consequences_text": "Wenn Sie diesen Vertrag widerrufen, haben wir Ihnen alle Zahlungen, die wir von Ihnen erhalten haben, einschließlich der Lieferkosten (mit Ausnahme der zusätzlichen Kosten, die sich daraus ergeben, dass Sie eine andere Art der Lieferung als die von uns angebotene, günstigste Standardlieferung gewählt haben), unverzüglich und spätestens binnen vierzehn Tagen ab dem Tag zurückzuzahlen, an dem die Mitteilung über Ihren Widerruf dieses Vertrags bei uns eingegangen ist. Für diese Rückzahlung verwenden wir dasselbe Zahlungsmittel, das Sie bei der ursprünglichen Transaktion eingesetzt haben, es sei denn, mit Ihnen wurde ausdrücklich etwas anderes vereinbart; in keinem Fall werden Ihnen wegen dieser Rückzahlung Entgelte berechnet.     Wir können die Rückzahlung verweigern, bis wir die Waren wieder zurückerhalten haben oder bis Sie den Nachweis erbracht haben, dass Sie die Waren zurückgesandt haben, je nachdem, welches der frühere Zeitpunkt ist. Sie haben die Waren unverzüglich und in jedem Fall spätestens binnen vierzehn Tagen ab dem Tag, an dem Sie uns über den Widerruf dieses Vertrags unterrichten, an folgende Adresse zurückzusenden oder zu übergeben.<2><1>Güstrower Werkstätten GmbH</1><1>Koppelweg 14</1><1>D-18273 Güstrow</1><1>Koppelweg 14</1><1>D-18273 Güstrow</1></2>Die Frist ist gewahrt, wenn Sie die Waren vor Ablauf der Frist von vierzehn Tagen absenden. Sie tragen die unmittelbaren Kosten der Rücksendung der Waren.    Sie müssen für einen etwaigen Wertverlust der Waren nur aufkommen, wenn dieser Wertverlust auf einen zur Prüfung der Beschaffenheit, Eigenschaften und Funktionsweise der Waren nicht notwendigen Umgang mit ihnen zurückzuführen ist."
     },
     "terms_and_conditions": {
       "og_description": "Monatlich neue Kunstmaterialien in einer Überraschungsbox",
@@ -195,7 +195,7 @@
       "title": "Abonniere jetzt",
       "subscriptions": [
         {
-          "payment_cycle": "monatlich zahlen",
+          "payment_cycle": "Bezahle und erhalte deine Box alle zwei Monate",
           "cta": "Ja ich will!",
           "dollar_estimation": "(~ 31.81 USD)"
         }
@@ -207,7 +207,7 @@
       "subtitle": "WARUM UPCRATE?",
       "steps": [
         {
-          "text": "Erhalte monatliche Boxen mit geheimnisvollen Kunstmaterialien."
+          "text": "Erhalte zweimonatliche Boxen mit geheimnisvollen Kunstmaterialien."
         },
         {
           "text": "Entdecke hochwertige Produkte von Upcrates exklusiver Hausmarke."
@@ -218,15 +218,15 @@
       ],
       "whats_inside": {
         "title": "Was ist drin?",
-        "text": "Werde Teil der artcrew, um von den Schätzen in unseren\nmonatlichen Boxen inspiriert zu werden."
+        "text": "Werde Teil der artcrew, um von den Schätzen in unseren\nzweimonatlichen Boxen inspiriert zu werden."
       }
     },
     "countdown": {
-      "title": "Die Zeit bis zur nächsten Box läuft...",
+      "title": "Verbleibende Zeit, unser nächstes Upcrate zu abonnieren ",
       "weeks": "Wochen",
       "days": "Tage",
       "hours": "Stunden",
-      "text": "Bis zum 15. Tag des kommenden Monats"
+      "text": "Bis zum 10. jedes zweiten Monats"
     },
     "upcrate_as_gift": {
       "title": "upcrate als Geschenk",
@@ -238,7 +238,7 @@
       "quotes": [
         {
           "author": "Kaia",
-          "text": "“Upcrate beflügelt meine Kreativität und gibt mir die Möglichkeit, neue Materialien auszuprobieren. Jede Box ist wie eine kleine Schatztruhe, die ich jeden Monat vor meiner Haustür finde.”"
+          "text": "“Upcrate beflügelt meine Kreativität und gibt mir die Möglichkeit, neue Materialien auszuprobieren. Jede Box ist wie eine kleine Schatztruhe, die ich vor meiner Haustür finde.”"
         },
         {
           "author": "Multicooleur",
@@ -262,13 +262,13 @@
     },
     "featured_artists_we_worked_with": {
       "title": "Künstler:innen, mit denen wir zusammen gearbeitet haben",
-      "text": "Dies sind 4 der vielen Künstler:innen, mit denen wir in der Vergangenheit zusammengearbeitet haben. Jeder von ihnen hat seine eigenen einzigartigen Stil, Kenntnisse und Vorlieben, wenn es um Künstlerbedarf geht. Sie stellten den Inhalt ihrer monatlichen Box zusammen, um sicherzustellen, dass alle Materialien gut zusammenpassen.",
-      "text_mobile": "Dies sind 4 der vielen Künstler:innen, mit denen wir in der Vergangenheit zusammengearbeitet haben. Jeder von ihnen hat seine eigenen einzigartigen Stil, Kenntnisse und Vorlieben, wenn es um Künstlerbedarf geht. Sie kuratieren den Inhalt ihrer monatlichen Box, um sicherzustellen, dass alle Materialien gut zusammenarbeiten."
+      "text": "Dies sind 4 der vielen Künstler:innen, mit denen wir in der Vergangenheit zusammengearbeitet haben. Jeder von ihnen hat seine eigenen einzigartigen Stil, Kenntnisse und Vorlieben, wenn es um Künstlerbedarf geht. Sie stellten den Inhalt ihrer Box zusammen, um sicherzustellen, dass alle Materialien gut zusammenpassen.",
+      "text_mobile": "Dies sind 4 der vielen Künstler:innen, mit denen wir in der Vergangenheit zusammengearbeitet haben. Jeder von ihnen hat seine eigenen einzigartigen Stil, Kenntnisse und Vorlieben, wenn es um Künstlerbedarf geht. Sie kuratieren den Inhalt ihrer zweimonatlichen Box, um sicherzustellen, dass alle Materialien gut zusammenarbeiten."
     },
     "upcrate_battle": {
       "title": "#upcratebattle",
-      "text": "Nimm’ an unseren Online-Wettbewerben teil, um tolle Preise zu gewinnen! Jeden Monat erwartet dich ein/nneues inspirierendes Thema und eine weitere Chance auf den Gewinn!",
-      "prize_example": "<1>Gewinne jeden Monat supi Preise</1>z.B. 60 Rembrandt Soft Pastels",
+      "text": "Nimm’ an unseren Online-Wettbewerben teil, um tolle Preise zu gewinnen! Jeden zweiten Monat erwartet dich ein neues inspirierendes Thema und eine weitere Chance auf den Gewinn!",
+      "prize_example": "<1>Gewinne jeden zweiten Monat supi Preise</1>z.B. 60 Rembrandt Soft Pastels",
       "how_to_participate": {
         "title": "So nimmst du teil:",
         "steps": [
@@ -299,7 +299,7 @@
           "text": "Deine Schatztruhe voller wertvoller Kunstmaterialien wird von Captain Crate und seiner Crew zusammengestellt und mit der nächsten Verschiffung der Boxen zu dir geschickt (am 15. jeden Monats)."
         },
         {
-          "text": "Denke kreativ außerhalb der Box, indem du deine neuen Kunstsachen aus der Box holst und dich von unserem Co-Kapitän (Künstler des Monats) und dessen Video, Interview und Tipps inspirieren lässt. Teile deine Kunst online mit der artcrew (#upcrate) und nehme am monatlichen #upcratebattle teil!"
+          "text": "Denke kreativ außerhalb der Box, indem du deine neuen Kunstsachen aus der Box holst und dich von unserem Co-Kapitän (Künstler des Monats) und dessen Video, Interview und Tipps inspirieren lässt. Teile deine Kunst online mit der artcrew (#upcrate) und nehme am zweimonatlichen #upcratebattle teil!"
         },
         {
           "text": "Falls du deine Box geliebt hast und dich schon auf die nächste freust - lehne dich zurück und entspanne dich, denn dein Abonnement verlängert sich ganz automatisch."
@@ -311,7 +311,7 @@
       "ready_set_draw": "Ready\nSet\nDraw!"
     },
     "newsletter_form": {
-      "title": "Abonniere unseren Newsletter für 15% Rabatt!",
+      "title": "Abonniere unseren Newsletter!",
       "benefits": [
         {
           "text": "- Sei unter den Ersten, die von neuen Sonderangeboten erfahren"
@@ -328,8 +328,8 @@
       }
     },
     "invite_friends": {
-      "title": "Spart zusammen, wenn du deine Freunde in die art crew einlädst!",
-      "text": "Wenn du eine:n Freund:in über Facebook, Twitter oder Email an uns weiterleitest und er/sie ein Abonnement abschließt, erhaltet ihr beide einen 15% Nachlass für weitere Käufe. Falls dein:e Freund:in beispielsweise ein 3-monatiges Abonnement abschließt, erhältst du einen Rabattcode mit einem Wert von 8,16€, den du in unserem Shop einlösen kannst!",
+      "title": "Lade deine Freunde zur Art Crew ein!",
+      "text": "",
       "cta": "Empfehle uns deinen Freunden!"
     },
     "the_golden_crate": {
@@ -339,7 +339,7 @@
     },
     "the_bottle_post": {
       "title": "Die bottlepost",
-      "text": "Jede unserer Boxen enthält einen weiteren Schatz: die Flaschenpost ist unser monatliches Magazin, dass dich mit allen wichtigen Informationen über deine neuen Materialien und ihre Marken, Upcrate selbst, die Artcrew, unsere Wettbewerbe, die Künstler des Monats und nützliche Zeichentipps und -Tricks auf dem Laufenden hält!"
+      "text": "Jede unserer Boxen enthält einen weiteren Schatz: die Flaschenpost ist unser zweimonatliches Magazin, dass dich mit allen wichtigen Informationen über deine neuen Materialien und ihre Marken, Upcrate selbst, die Artcrew, unsere Wettbewerbe, die Künstler des Monats und nützliche Zeichentipps und -Tricks auf dem Laufenden hält!"
     },
     "professional_howto_videos": {
       "title": "Professionelle \n How-to-do Videos",
@@ -384,7 +384,7 @@
       "title": "Vorteile für Mitglieder der art crew:",
       "advantages": [
         {
-          "text": "Lasse dich monatlich von einer neuen Mystery-Box aus tollen Materialien überraschen"
+          "text": "Lasse dich von einer neuen Mystery-Box aus tollen Materialien überraschen"
         },
         {
           "text": "Erhalte eine große Auswahl aus hochqualitativen Kunstmaterialien für einen kleinen Preis"
@@ -404,7 +404,7 @@
   "faqs": [
     {
       "question": "Wie abonniere ich Upcrate?",
-      "answer": "Klicke einfach <1>hier</1>, um dein Abonnement auszuwählen. Du kannst dich jederzeit wieder abmelden."
+      "answer": "Klick  <1>hier</1>, um unsere zweimonatliche Box zu abonnieren, die jeden zweiten Monat versendet wird"
     },
     {
       "question": "Werden die Pakete auch in mein Land versendet?",
@@ -424,22 +424,22 @@
     },
     {
       "question": "Gibt es einen Stichtag?",
-      "answer": "Jeden Monat gibt es einen Stichtag (15ter des Monats) um sicher zu gehen, das alle Boxen rechtzeitig verschickt werden können.Wenn du Upcrate danach abonnierst, bekommst du im nächsten Monat deine Box."
+      "answer": "Jeden zweiten Monat haben wir einen Stichtag am 10., um sicherzustellen, dass alle Boxen gepackt und versendet werden können. Alle Abonnenten, die nach diesem Datum ein Abo abschliessen, werden für die nächste Box in die Abonnentenliste aufgenommen. Stichtage sind der 10. Januar, 10. März, 10. Mai, 10. Juli, 10. September und 10. November."
     },
     {
       "question": "Wie lange dauert es, bis ich meine Box bekomme?",
-      "answer": "Wir verschicken die Boxen immer rund um den 15. Tag des Monats und benachrichtigen dich, sobald dies geschehen ist. Normalerweise dauert es zwischen 4-7 Arbeitstage, bis unsere Boxen in Europa ankommen und 10-15 Arbeitstage, bis sie unsere internationalen artcrew-Mitglieder erreichen."
+      "answer": "Deine Box wird jeweils um den 10. des zweiten Monats versendet. Die Lieferzeit beträgt ca. 2–3 Werktage für Abonnenten in Deutschland, 4–7 Werktage für Abonnenten in Europa und 10–15 Werktage für Abonnenten im Ausland."
     },
     {
       "question": "Ich würde die Box gerne als Geschenk an jemanden verschicken. Wie mache ich das?",
       "answer": "Klicke einfach auf den passend beschriftete Feld auf der Website. Dies leitet dich zu unserem Shop weiter, wo du die Rechnungsadresse und die Sendungsaddresse separat eintragen kannst. Die glückliche Person erhält eine vorherige oder aktuelle Box. Alle Geschenkboxen werden zwei Mal pro Woche verschickt. Eine besondere Captain Crate Geschenkkarte mit deinem Namen und dem Namen des Empfängers liegt der Box bei."
     },
     {
-      "question": "Was ist der Unterschied zwischen der Geschenkbox und einer normalen Upcrate Box?",
-      "answer": "Geschenkboxen sind eine einmalige Bestellung, d.h. es gibt kein Abonnement für diese Option, das sich automatisch erneuern würde. Eine Geschenkbox ist eine zufällige ausgewählte Box vorheriger Boxen, die zweimal pro Woche verschickt wird."
+      "question": "Was ist der Unterschied zwischen der Geschenkbox und einer upcrate Abobox?",
+      "answer": "2.Eine Geschenkbox ist eine einmalige Bestellung und kein Abonnement, das sich automatisch verlängert. Eine Geschenkbox ist eine zufällige Ziehung einer vorherigen Box, die zweimal wöchentlich versendet wird."
     },
     {
-      "question": "Wie werde ich einer der monatlichen Künstler von Upcrate?",
+      "question": "Wie werde ich einer der zweimonatlichen Künstler von Upcrate?",
       "answer": "Schicke uns eine Email mit einigen Bilddateien deiner Kunst an hello@upcrate.art und wir melden uns bei dir!."
     },
     {
@@ -456,11 +456,11 @@
     },
     {
       "question": "Wann wird mir der Betrag abgebucht?",
-      "answer": "Deine erste Bezahlung erfolgt sofort nachdem du dein Abonnement gebucht hast. Für alle folgenden Boxen ist das Zahlungsdatum immer der 5. eines jeden Monats. Die Häufigkeit der Zahlung hängt auch von Deinem gewählten Abonnement ab. Schaue dazu in deinem Konto nach."
+      "answer": "1.Deine Zahlung erfolgt, sobald du dein Abonnement startest. Für alle folgenden Boxen ist das Zahlungsdatum immer der 1. jedes zweiten Monats. Die genauen Daten sind der 1. Januar, 1. März, 1. Mai, 1. Juli, 1. September und 1. November."
     },
     {
       "question": "Bekomme ich mein Geld zurückerstattet, wenn ich vor Ablauf meines Abonnenement-Plans kündige?",
-      "answer": "Wenn du dein Abonnement kündigst wird es nicht wieder erneuert, aber du erhältst noch alle Boxen, für die du bezahlt hast, bis dein gebuchter Zeitraum abläuft. Falls du dein Geld zurückgezahlt bekommen möchtest hast du darauf eine Chance, wenn die nächsten Boxen noch nicht ausgesendet wurden. Schreib’ uns dazu gerne unter support@upcrate.art an."
+      "answer": "2.Die Kündigung deines Abonnements beendet lediglich das Abonnement und verhindert weitere Zahlungen. Die Box, die du vor der Kündigung bereits bezahlt hast, wirst du trotzdem erhalten. Sollte die Box noch nicht versendet worden sein, besteht eventuell die Möglichkeit einer Rückerstattung. Bitte kontaktiere uns in diesem Fall unter support@upcrate.art"
     },
     {
       "question": "Was mache ich, wenn ich keine Antwort auf meine Frage finde?",
