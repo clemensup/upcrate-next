@@ -28,27 +28,6 @@ export function InviteFriendsSection() {
                 {t("sections.invite_friends.text")}
               </div>
             </div>
-            <span
-              className="absolute left-0 right-0 text-right author text-xl hidden md:block"
-              style={{ top: "calc(100% - 2px)" }}
-            >
-              <svg
-                version="1.1"
-                id="Ebene_1"
-                xmlns="http://www.w3.org/2000/svg"
-                x="0px"
-                y="0px"
-                viewBox="0 0 354.49 34.01"
-                className="md:mb-3"
-              >
-                <path
-                  d="M0,0.5h258.97l34.82,32.36V0.5h60.69"
-                  stroke="#34234F"
-                  fill="white"
-                  strokeWidth={1}
-                />
-              </svg>
-            </span>
           </div>
           <div className="mt-10 md:mt-28 z-10">
             <Button
