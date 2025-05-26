@@ -7,7 +7,6 @@ import { Caret } from "../elements/svg";
 import Image from "next/image";
 
 export function InviteFriendsSection() {
-  const { t, lang } = useTranslation("common");
   const heads = useRandomHeads();
 
   return (
@@ -50,11 +49,6 @@ export function InviteFriendsSection() {
                 />
               </svg>
             </span>
-          </div>
-          <div className="mt-10 md:mt-28 z-10">
-            <Button className="bg-orange text-white hover:bg-red uppcercase">
-              <Caret />
-            </Button>
           </div>
         </div>
       </div>
