@@ -279,9 +279,7 @@ export function Footer(): JSX.Element {
             {t("navigation.info_headline")}
           </h4>
           <ul className="list-reset leading-normal text-blue text-xl">
-            <li>
-              
-            </li>
+      
             <li>
               <Link href="/contact">{t("navigation.help_contact")}</Link>
             </li>
