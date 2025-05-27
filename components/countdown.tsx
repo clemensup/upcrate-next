@@ -2,8 +2,8 @@ import moment from "moment";
 import useTranslation from "next-translate/useTranslation";
 import * as React from "react";
 
-export function Countdown() {
-  const { t } = useTranslation();
+export function Countdown(): JSX.Element {
+  const { t, lang } = useTranslation("common");
 
   const currentDate = moment();
   const currentMonth = currentDate.month(); // 0 = January, 11 = December
