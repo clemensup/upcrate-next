@@ -54,29 +54,29 @@ export function Countdown() {
   return (
     <div>
       <h3 className="font-display text-purple-dark text-xl sm:text-2xl md:text-5xl md:mt-20 md:max-w-2xl mx-auto">
-        {t("pages.countdown.title")}
+        {t("sections.countdown.title")}
       </h3>
 
       <div className="flex space-x-5 md:space-x-20 justify-between md:justify-center">
         <div className="font-display text-red text-7xl md:text-countdown">
           {nextCrateWeeks}
           <div className="text-xl md:text-5xl">
-            {t("pages.countdown.weeks")}
+            {t("sections.countdown.weeks")}
           </div>
         </div>
         <div className="font-display text-purple text-7xl md:text-countdown">
           {nextCrateDays}
-          <div className="text-xl md:text-5xl">{t("pages.countdown.days")}</div>
+          <div className="text-xl md:text-5xl">{t("sections.countdown.days")}</div>
         </div>
         <div className="font-display text-orange text-7xl md:text-countdown">
           {nextCrateHours}
           <div className="text-xl md:text-5xl">
-            {t("pages.countdown.hours")}
+            {t("sections.countdown.hours")}
           </div>
         </div>
       </div>
       <p className="text-lg md:text-3xl text-purple-dark mt-5 md:mt-20 border-2 inline-block py-2 px-4">
-        {t("pages.countdown.text")}
+        {t("sections.countdown.text")}
       </p>
     </div>
   );
