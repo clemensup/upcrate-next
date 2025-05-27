@@ -93,7 +93,7 @@ export function Footer(): JSX.Element {
           <Image src="/pen.svg" width="100%" height="auto" />
         </div>
         <div className="md:col-span-2 flex flex-col justify-between">
-          <FooterNewsletterForm />
+          <FooterNewsletterForm/>
         </div>
       </div>
 
@@ -168,7 +168,7 @@ export function Footer(): JSX.Element {
       </div>
 
       <div className="text-center bg-purple-light text-white p-4">
-        © Copyright 2019 - 2021 – Upcrate Art Pirates
+        © Copyright 2019 - 2025 – Upcrate Art Pirates
       </div>
 
       <Script
