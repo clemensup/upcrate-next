@@ -19,17 +19,9 @@ export function FooterNewsletterForm() {
   return (
     <div>
       <div className="mb-6">
-        <button
-          type="button"
-          className="bg-purple text-white px-6 py-3 rounded-lg hover:bg-purple-dark transition-colors duration-200 flex items-center space-x-2"
-          onClick={() => {
-            const formElement = document.querySelector('form');
-            formElement?.scrollIntoView({ behavior: 'smooth' });
-          }}
-        >
-          <span>{t("footer.newsletter_form.title")}</span>
-          <Caret className="transform rotate-90" />
-        </button>
+        <p className="text-white text-lg">
+          {t("footer.newsletter_form.title")}
+        </p>
       </div>
       <form onSubmit={handleSubmit}>
         <label className="mb-3 flex space-x-4 items-center cursor-pointer">
