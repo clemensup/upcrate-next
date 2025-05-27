@@ -2,7 +2,7 @@ import moment from "moment";
 import useTranslation from "next-translate/useTranslation";
 import * as React from "react";
 
-export function Countdown() {
+export default function Countdown() {
   const { t } = useTranslation("common");
 
   const currentDate = moment();
