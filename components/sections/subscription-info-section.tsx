@@ -1,10 +1,11 @@
+import Link from "next/link";
 import useTranslation from "next-translate/useTranslation";
 import Image from "next/image";
 import { CancelAnyTimeSvg } from "../elements/svg/cancel-any-time-svg";
 import { FreeShippingSvg } from "../elements/svg/free-shipping-svg";
 
 export function SubscriptionInfoSection() {
-  const { t } = useTranslation("common");
+  const { t, lang } = useTranslation("common");
 
   return (
     <section>
@@ -15,32 +16,32 @@ export function SubscriptionInfoSection() {
           </h4>
           <ul className="mt-5 underline flex flex-col gap-2">
             <li>
-              <a href="/faq">
+              <Link href={`/${lang}/faq`}>
                 {t(
                   "sections.subscription_info.columns.help_contact.links.0.text"
                 )}
-              </a>
+              </Link>
             </li>
             <li>
-              <a href="/faq">
+              <Link href={`/${lang}/faq`}>
                 {t(
                   "sections.subscription_info.columns.help_contact.links.1.text"
                 )}
-              </a>
+              </Link>
             </li>
             <li>
-              <a href="/newsletter">
+              <Link href={`/${lang}/newsletter`}>
                 {t(
                   "sections.subscription_info.columns.help_contact.links.2.text"
                 )}
-              </a>
+              </Link>
             </li>
             <li>
-              <a href="/contact">
+              <Link href={`/${lang}/contact`}>
                 {t(
                   "sections.subscription_info.columns.help_contact.links.3.text"
                 )}
-              </a>
+              </Link>
             </li>
           </ul>
         </div>
